@@ -57,12 +57,14 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
+import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.EcorePackage;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
 import org.eclipse.papyrus.sysml16.blocks.BlocksPackage;
 
+import org.eclipse.papyrus.sysml16.requirements.RequirementsPackage;
 import org.eclipse.papyrus.sysml16.sysml.SysMLPackage;
 
 import org.eclipse.uml2.types.TypesPackage;
@@ -544,6 +546,26 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
+	public EReference getSysD_Sd() {
+		return (EReference)sysDEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getSysD_Localclouddesign() {
+		return (EReference)sysDEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getSD() {
 		return sdEClass;
 	}
@@ -556,6 +578,16 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	@Override
 	public EAttribute getSD_MicroserviceName() {
 		return (EAttribute)sdEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getSD_Sysd() {
+		return (EReference)sdEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -584,8 +616,38 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
+	public EReference getArrowheadDSLRequirement_Arrowheadusecase() {
+		return (EReference)arrowheadDSLRequirementEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getArrowheadUseCase() {
 		return arrowheadUseCaseEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getArrowheadUseCase_Base_UseCase() {
+		return (EReference)arrowheadUseCaseEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getArrowheadUseCase_Arrowheaddslrequirement() {
+		return (EReference)arrowheadUseCaseEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -654,6 +716,26 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
+	public EReference getLocalCloudDesign_System_of_localcloudsdesign() {
+		return (EReference)localCloudDesignEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLocalCloudDesign_Sysd() {
+		return (EReference)localCloudDesignEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getSystem_of_LocalcloudsDesign() {
 		return system_of_LocalcloudsDesignEClass;
 	}
@@ -704,6 +786,16 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
+	public EReference getSystem_of_LocalcloudsDesign_Localclouddesign() {
+		return (EReference)system_of_LocalcloudsDesignEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getDeviceDesign() {
 		return deviceDesignEClass;
 	}
@@ -716,6 +808,26 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	@Override
 	public EAttribute getDeviceDesign_DeviceName() {
 		return (EAttribute)deviceDesignEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDeviceDesign_Intercloudnetworkdesign() {
+		return (EReference)deviceDesignEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDeviceDesign_Intracloudnetworkdesign() {
+		return (EReference)deviceDesignEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -754,6 +866,16 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
+	public EReference getIntracloudNetworkDesign_Devicedesign() {
+		return (EReference)intracloudNetworkDesignEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getIntercloudNetworkDesign() {
 		return intercloudNetworkDesignEClass;
 	}
@@ -776,6 +898,16 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	@Override
 	public EAttribute getIntercloudNetworkDesign_InterNetworkMacLayer() {
 		return (EAttribute)intercloudNetworkDesignEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getIntercloudNetworkDesign_Devicedesign() {
+		return (EReference)intercloudNetworkDesignEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -844,6 +976,26 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
+	public EReference getDeviceDesignDescription_Intercloudnetworkdesigndescription() {
+		return (EReference)deviceDesignDescriptionEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDeviceDesignDescription_Intracloudnetworkdesigndescription() {
+		return (EReference)deviceDesignDescriptionEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getIntracloudNetworkDesignDescription() {
 		return intracloudNetworkDesignDescriptionEClass;
 	}
@@ -866,6 +1018,16 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	@Override
 	public EAttribute getIntracloudNetworkDesignDescription_IntraNetworkRouterConfig() {
 		return (EAttribute)intracloudNetworkDesignDescriptionEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getIntracloudNetworkDesignDescription_Devicedesigndescription() {
+		return (EReference)intracloudNetworkDesignDescriptionEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -904,6 +1066,16 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
+	public EReference getIntercloudNetworkDesignDescription_Devicedesigndescription() {
+		return (EReference)intercloudNetworkDesignDescriptionEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getLocalcloudDesignDescription() {
 		return localcloudDesignDescriptionEClass;
 	}
@@ -926,6 +1098,26 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	@Override
 	public EAttribute getLocalcloudDesignDescription_LC_orchestration() {
 		return (EAttribute)localcloudDesignDescriptionEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLocalcloudDesignDescription_Systemoflocaclouddesigndescription() {
+		return (EReference)localcloudDesignDescriptionEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLocalcloudDesignDescription_Sysdd() {
+		return (EReference)localcloudDesignDescriptionEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -964,6 +1156,16 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
+	public EReference getSystem_of_LocacloudsDesignDescription_Localclouddesigndescription() {
+		return (EReference)system_of_LocacloudsDesignDescriptionEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getSystem_of_LocalcloudsImplementation() {
 		return system_of_LocalcloudsImplementationEClass;
 	}
@@ -976,6 +1178,16 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	@Override
 	public EAttribute getSystem_of_LocalcloudsImplementation_SoLC_Documentation() {
 		return (EAttribute)system_of_LocalcloudsImplementationEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getSystem_of_LocalcloudsImplementation_Localcloudimplementation() {
+		return (EReference)system_of_LocalcloudsImplementationEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -1004,8 +1216,48 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
+	public EReference getLocalcloudImplementation_Systemimplementation() {
+		return (EReference)localcloudImplementationEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLocalcloudImplementation_System_of_localcloudsimplementation() {
+		return (EReference)localcloudImplementationEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getSystem_Implementation() {
 		return system_ImplementationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getSystem_Implementation_Idd_implementation() {
+		return (EReference)system_ImplementationEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getSystem_Implementation_Loclacloudimplementation() {
+		return (EReference)system_ImplementationEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -1044,8 +1296,38 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
+	public EReference getSysDD_Idd() {
+		return (EReference)sysDDEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getSysDD_Localclouddesigndescription() {
+		return (EReference)sysDDEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getIDD_Implementation() {
 		return idD_ImplementationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getIDD_Implementation_Systemimplementation() {
+		return (EReference)idD_ImplementationEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -1146,6 +1428,16 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	@Override
 	public EAttribute getIDD_Datamodel() {
 		return (EAttribute)iddEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getIDD_Sysdd() {
+		return (EReference)iddEClass.getEStructuralFeatures().get(9);
 	}
 
 	/**
@@ -1472,14 +1764,13 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 		createEAttribute(sysDEClass, SYS_D__FUNCTIONAL_PROPERTIES);
 		createEAttribute(sysDEClass, SYS_D__SYSTEM_DATABASE);
 		createEAttribute(sysDEClass, SYS_D__MICROSYSTEM_BEHAVIOUR);
+		createEReference(sysDEClass, SYS_D__SD);
+		createEReference(sysDEClass, SYS_D__LOCALCLOUDDESIGN);
 
 		sdEClass = createEClass(SD);
 		createEAttribute(sdEClass, SD__MICROSERVICE_NAME);
+		createEReference(sdEClass, SD__SYSD);
 		createEOperation(sdEClass, SD___OPERATION);
-
-		arrowheadDSLRequirementEClass = createEClass(ARROWHEAD_DSL_REQUIREMENT);
-
-		arrowheadUseCaseEClass = createEClass(ARROWHEAD_USE_CASE);
 
 		localCloudDesignEClass = createEClass(LOCAL_CLOUD_DESIGN);
 		createEAttribute(localCloudDesignEClass, LOCAL_CLOUD_DESIGN__LC_NAME);
@@ -1487,23 +1778,37 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 		createEAttribute(localCloudDesignEClass, LOCAL_CLOUD_DESIGN__LC_SECURITY_STRATEGY);
 		createEAttribute(localCloudDesignEClass, LOCAL_CLOUD_DESIGN__LC_BUSINESS_STRATEGY);
 		createEAttribute(localCloudDesignEClass, LOCAL_CLOUD_DESIGN__LC_LIFECYCLE_STRATEGY);
+		createEReference(localCloudDesignEClass, LOCAL_CLOUD_DESIGN__SYSTEM_OF_LOCALCLOUDSDESIGN);
+		createEReference(localCloudDesignEClass, LOCAL_CLOUD_DESIGN__SYSD);
 
 		system_of_LocalcloudsDesignEClass = createEClass(SYSTEM_OF_LOCALCLOUDS_DESIGN);
 		createEAttribute(system_of_LocalcloudsDesignEClass, SYSTEM_OF_LOCALCLOUDS_DESIGN__SO_LC_NAME);
 		createEAttribute(system_of_LocalcloudsDesignEClass, SYSTEM_OF_LOCALCLOUDS_DESIGN__SO_LC_SECURITY_STRATEGY);
 		createEAttribute(system_of_LocalcloudsDesignEClass, SYSTEM_OF_LOCALCLOUDS_DESIGN__SO_LC_BUSINESS_STRATEGY);
 		createEAttribute(system_of_LocalcloudsDesignEClass, SYSTEM_OF_LOCALCLOUDS_DESIGN__SO_LC_LIFECYCLE_STRATEGY);
+		createEReference(system_of_LocalcloudsDesignEClass, SYSTEM_OF_LOCALCLOUDS_DESIGN__LOCALCLOUDDESIGN);
+
+		arrowheadDSLRequirementEClass = createEClass(ARROWHEAD_DSL_REQUIREMENT);
+		createEReference(arrowheadDSLRequirementEClass, ARROWHEAD_DSL_REQUIREMENT__ARROWHEADUSECASE);
+
+		arrowheadUseCaseEClass = createEClass(ARROWHEAD_USE_CASE);
+		createEReference(arrowheadUseCaseEClass, ARROWHEAD_USE_CASE__BASE_USE_CASE);
+		createEReference(arrowheadUseCaseEClass, ARROWHEAD_USE_CASE__ARROWHEADDSLREQUIREMENT);
 
 		deviceDesignEClass = createEClass(DEVICE_DESIGN);
 		createEAttribute(deviceDesignEClass, DEVICE_DESIGN__DEVICE_NAME);
-
-		intracloudNetworkDesignEClass = createEClass(INTRACLOUD_NETWORK_DESIGN);
-		createEAttribute(intracloudNetworkDesignEClass, INTRACLOUD_NETWORK_DESIGN__INTRA_NETWORK_DOMAIN);
-		createEAttribute(intracloudNetworkDesignEClass, INTRACLOUD_NETWORK_DESIGN__INTRA_NETWORK_MAC_LAYER);
+		createEReference(deviceDesignEClass, DEVICE_DESIGN__INTERCLOUDNETWORKDESIGN);
+		createEReference(deviceDesignEClass, DEVICE_DESIGN__INTRACLOUDNETWORKDESIGN);
 
 		intercloudNetworkDesignEClass = createEClass(INTERCLOUD_NETWORK_DESIGN);
 		createEAttribute(intercloudNetworkDesignEClass, INTERCLOUD_NETWORK_DESIGN__INTER_NETWORK_DOMAIN_NAME);
 		createEAttribute(intercloudNetworkDesignEClass, INTERCLOUD_NETWORK_DESIGN__INTER_NETWORK_MAC_LAYER);
+		createEReference(intercloudNetworkDesignEClass, INTERCLOUD_NETWORK_DESIGN__DEVICEDESIGN);
+
+		intracloudNetworkDesignEClass = createEClass(INTRACLOUD_NETWORK_DESIGN);
+		createEAttribute(intracloudNetworkDesignEClass, INTRACLOUD_NETWORK_DESIGN__INTRA_NETWORK_DOMAIN);
+		createEAttribute(intracloudNetworkDesignEClass, INTRACLOUD_NETWORK_DESIGN__INTRA_NETWORK_MAC_LAYER);
+		createEReference(intracloudNetworkDesignEClass, INTRACLOUD_NETWORK_DESIGN__DEVICEDESIGN);
 
 		deviceDesignDescriptionEClass = createEClass(DEVICE_DESIGN_DESCRIPTION);
 		createEAttribute(deviceDesignDescriptionEClass, DEVICE_DESIGN_DESCRIPTION__IOPORTS);
@@ -1511,36 +1816,35 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 		createEAttribute(deviceDesignDescriptionEClass, DEVICE_DESIGN_DESCRIPTION__PROCESSOR);
 		createEAttribute(deviceDesignDescriptionEClass, DEVICE_DESIGN_DESCRIPTION__OPERATING_SYSTEM);
 		createEAttribute(deviceDesignDescriptionEClass, DEVICE_DESIGN_DESCRIPTION__ARROWHEAD_CERTIFICATE);
-
-		intracloudNetworkDesignDescriptionEClass = createEClass(INTRACLOUD_NETWORK_DESIGN_DESCRIPTION);
-		createEAttribute(intracloudNetworkDesignDescriptionEClass, INTRACLOUD_NETWORK_DESIGN_DESCRIPTION__INTRA_NETWORK_ROUTER);
-		createEAttribute(intracloudNetworkDesignDescriptionEClass, INTRACLOUD_NETWORK_DESIGN_DESCRIPTION__INTRA_NETWORK_ROUTER_CONFIG);
+		createEReference(deviceDesignDescriptionEClass, DEVICE_DESIGN_DESCRIPTION__INTERCLOUDNETWORKDESIGNDESCRIPTION);
+		createEReference(deviceDesignDescriptionEClass, DEVICE_DESIGN_DESCRIPTION__INTRACLOUDNETWORKDESIGNDESCRIPTION);
 
 		intercloudNetworkDesignDescriptionEClass = createEClass(INTERCLOUD_NETWORK_DESIGN_DESCRIPTION);
 		createEAttribute(intercloudNetworkDesignDescriptionEClass, INTERCLOUD_NETWORK_DESIGN_DESCRIPTION__INTER_NETWORK_ROUTER);
 		createEAttribute(intercloudNetworkDesignDescriptionEClass, INTERCLOUD_NETWORK_DESIGN_DESCRIPTION__INTER_NETWORK_ROUTER_CONFIG);
+		createEReference(intercloudNetworkDesignDescriptionEClass, INTERCLOUD_NETWORK_DESIGN_DESCRIPTION__DEVICEDESIGNDESCRIPTION);
+
+		intracloudNetworkDesignDescriptionEClass = createEClass(INTRACLOUD_NETWORK_DESIGN_DESCRIPTION);
+		createEAttribute(intracloudNetworkDesignDescriptionEClass, INTRACLOUD_NETWORK_DESIGN_DESCRIPTION__INTRA_NETWORK_ROUTER);
+		createEAttribute(intracloudNetworkDesignDescriptionEClass, INTRACLOUD_NETWORK_DESIGN_DESCRIPTION__INTRA_NETWORK_ROUTER_CONFIG);
+		createEReference(intracloudNetworkDesignDescriptionEClass, INTRACLOUD_NETWORK_DESIGN_DESCRIPTION__DEVICEDESIGNDESCRIPTION);
 
 		localcloudDesignDescriptionEClass = createEClass(LOCALCLOUD_DESIGN_DESCRIPTION);
 		createEAttribute(localcloudDesignDescriptionEClass, LOCALCLOUD_DESIGN_DESCRIPTION__LC_WORKFLOW);
 		createEAttribute(localcloudDesignDescriptionEClass, LOCALCLOUD_DESIGN_DESCRIPTION__LC_ORCHESTRATION);
+		createEReference(localcloudDesignDescriptionEClass, LOCALCLOUD_DESIGN_DESCRIPTION__SYSTEMOFLOCACLOUDDESIGNDESCRIPTION);
+		createEReference(localcloudDesignDescriptionEClass, LOCALCLOUD_DESIGN_DESCRIPTION__SYSDD);
 
 		system_of_LocacloudsDesignDescriptionEClass = createEClass(SYSTEM_OF_LOCACLOUDS_DESIGN_DESCRIPTION);
 		createEAttribute(system_of_LocacloudsDesignDescriptionEClass, SYSTEM_OF_LOCACLOUDS_DESIGN_DESCRIPTION__SO_LC_ORCHESTRATION);
 		createEAttribute(system_of_LocacloudsDesignDescriptionEClass, SYSTEM_OF_LOCACLOUDS_DESIGN_DESCRIPTION__SO_LC_WORKFLOW);
-
-		system_of_LocalcloudsImplementationEClass = createEClass(SYSTEM_OF_LOCALCLOUDS_IMPLEMENTATION);
-		createEAttribute(system_of_LocalcloudsImplementationEClass, SYSTEM_OF_LOCALCLOUDS_IMPLEMENTATION__SO_LC_DOCUMENTATION);
-
-		localcloudImplementationEClass = createEClass(LOCALCLOUD_IMPLEMENTATION);
-		createEAttribute(localcloudImplementationEClass, LOCALCLOUD_IMPLEMENTATION__LC_DOCUMENTATION);
-
-		system_ImplementationEClass = createEClass(SYSTEM_IMPLEMENTATION);
+		createEReference(system_of_LocacloudsDesignDescriptionEClass, SYSTEM_OF_LOCACLOUDS_DESIGN_DESCRIPTION__LOCALCLOUDDESIGNDESCRIPTION);
 
 		sysDDEClass = createEClass(SYS_DD);
 		createEAttribute(sysDDEClass, SYS_DD__TIMEFORMAT);
 		createEAttribute(sysDDEClass, SYS_DD__ARROWHEAD_CERTIFICATE);
-
-		idD_ImplementationEClass = createEClass(IDD_IMPLEMENTATION);
+		createEReference(sysDDEClass, SYS_DD__IDD);
+		createEReference(sysDDEClass, SYS_DD__LOCALCLOUDDESIGNDESCRIPTION);
 
 		iddEClass = createEClass(IDD);
 		createEAttribute(iddEClass, IDD__PORT);
@@ -1552,6 +1856,23 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 		createEAttribute(iddEClass, IDD__TOKEN);
 		createEAttribute(iddEClass, IDD__CRYPTO_ALGORITHM);
 		createEAttribute(iddEClass, IDD__DATAMODEL);
+		createEReference(iddEClass, IDD__SYSDD);
+
+		system_of_LocalcloudsImplementationEClass = createEClass(SYSTEM_OF_LOCALCLOUDS_IMPLEMENTATION);
+		createEAttribute(system_of_LocalcloudsImplementationEClass, SYSTEM_OF_LOCALCLOUDS_IMPLEMENTATION__SO_LC_DOCUMENTATION);
+		createEReference(system_of_LocalcloudsImplementationEClass, SYSTEM_OF_LOCALCLOUDS_IMPLEMENTATION__LOCALCLOUDIMPLEMENTATION);
+
+		localcloudImplementationEClass = createEClass(LOCALCLOUD_IMPLEMENTATION);
+		createEAttribute(localcloudImplementationEClass, LOCALCLOUD_IMPLEMENTATION__LC_DOCUMENTATION);
+		createEReference(localcloudImplementationEClass, LOCALCLOUD_IMPLEMENTATION__SYSTEMIMPLEMENTATION);
+		createEReference(localcloudImplementationEClass, LOCALCLOUD_IMPLEMENTATION__SYSTEM_OF_LOCALCLOUDSIMPLEMENTATION);
+
+		system_ImplementationEClass = createEClass(SYSTEM_IMPLEMENTATION);
+		createEReference(system_ImplementationEClass, SYSTEM_IMPLEMENTATION__IDD_IMPLEMENTATION);
+		createEReference(system_ImplementationEClass, SYSTEM_IMPLEMENTATION__LOCLACLOUDIMPLEMENTATION);
+
+		idD_ImplementationEClass = createEClass(IDD_IMPLEMENTATION);
+		createEReference(idD_ImplementationEClass, IDD_IMPLEMENTATION__SYSTEMIMPLEMENTATION);
 
 		// Create enums
 		systemDatabaseKindEEnum = createEEnum(SYSTEM_DATABASE_KIND);
@@ -1611,6 +1932,8 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 		// Obtain other dependent packages
 		BlocksPackage theBlocksPackage = (BlocksPackage)EPackage.Registry.INSTANCE.getEPackage(BlocksPackage.eNS_URI);
 		TypesPackage theTypesPackage = (TypesPackage)EPackage.Registry.INSTANCE.getEPackage(TypesPackage.eNS_URI);
+		RequirementsPackage theRequirementsPackage = (RequirementsPackage)EPackage.Registry.INSTANCE.getEPackage(RequirementsPackage.eNS_URI);
+		UMLPackage theUMLPackage = (UMLPackage)EPackage.Registry.INSTANCE.getEPackage(UMLPackage.eNS_URI);
 
 		// Create type parameters
 
@@ -1619,26 +1942,23 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 		// Add supertypes to classes
 		sysDEClass.getESuperTypes().add(theBlocksPackage.getBlock());
 		sdEClass.getESuperTypes().add(theBlocksPackage.getBlock());
-		arrowheadDSLRequirementEClass.getESuperTypes().add(theBlocksPackage.getBlock());
-		arrowheadUseCaseEClass.getESuperTypes().add(theBlocksPackage.getBlock());
 		localCloudDesignEClass.getESuperTypes().add(theBlocksPackage.getBlock());
 		system_of_LocalcloudsDesignEClass.getESuperTypes().add(theBlocksPackage.getBlock());
+		arrowheadDSLRequirementEClass.getESuperTypes().add(theRequirementsPackage.getRequirement());
 		deviceDesignEClass.getESuperTypes().add(theBlocksPackage.getBlock());
-		intracloudNetworkDesignEClass.getESuperTypes().add(theBlocksPackage.getBlock());
 		intercloudNetworkDesignEClass.getESuperTypes().add(theBlocksPackage.getBlock());
-		deviceDesignDescriptionEClass.getESuperTypes().add(this.getIntercloudNetworkDesignDescription());
-		deviceDesignDescriptionEClass.getESuperTypes().add(this.getIntracloudNetworkDesignDescription());
+		intracloudNetworkDesignEClass.getESuperTypes().add(theBlocksPackage.getBlock());
 		deviceDesignDescriptionEClass.getESuperTypes().add(this.getDeviceDesign());
-		intracloudNetworkDesignDescriptionEClass.getESuperTypes().add(this.getIntracloudNetworkDesign());
 		intercloudNetworkDesignDescriptionEClass.getESuperTypes().add(this.getIntercloudNetworkDesign());
+		intracloudNetworkDesignDescriptionEClass.getESuperTypes().add(this.getIntracloudNetworkDesign());
 		localcloudDesignDescriptionEClass.getESuperTypes().add(this.getLocalCloudDesign());
 		system_of_LocacloudsDesignDescriptionEClass.getESuperTypes().add(this.getSystem_of_LocalcloudsDesign());
+		sysDDEClass.getESuperTypes().add(this.getSysD());
+		iddEClass.getESuperTypes().add(this.getSD());
 		system_of_LocalcloudsImplementationEClass.getESuperTypes().add(this.getSystem_of_LocacloudsDesignDescription());
 		localcloudImplementationEClass.getESuperTypes().add(this.getLocalcloudDesignDescription());
 		system_ImplementationEClass.getESuperTypes().add(this.getSysDD());
-		sysDDEClass.getESuperTypes().add(this.getSysD());
 		idD_ImplementationEClass.getESuperTypes().add(this.getIDD());
-		iddEClass.getESuperTypes().add(this.getSD());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(sysDEClass, SysD.class, "SysD", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -1646,15 +1966,14 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 		initEAttribute(getSysD_FunctionalProperties(), theTypesPackage.getUnlimitedNatural(), "FunctionalProperties", null, 1, -1, SysD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getSysD_SystemDatabase(), this.getSystemDatabaseKind(), "SystemDatabase", null, 1, 1, SysD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getSysD_MicrosystemBehaviour(), this.getBusinessPolicyKind(), "MicrosystemBehaviour", null, 1, -1, SysD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getSysD_Sd(), this.getSD(), this.getSD_Sysd(), "sd", null, 0, -1, SysD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getSysD_Localclouddesign(), this.getLocalCloudDesign(), this.getLocalCloudDesign_Sysd(), "localclouddesign", null, 0, -1, SysD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(sdEClass, ArrowheadDSL.SD.class, "SD", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getSD_MicroserviceName(), theTypesPackage.getString(), "MicroserviceName", null, 1, 1, ArrowheadDSL.SD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getSD_Sysd(), this.getSysD(), this.getSysD_Sd(), "sysd", null, 0, -1, ArrowheadDSL.SD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEOperation(getSD__Operation(), null, "Operation", 1, 1, IS_UNIQUE, !IS_ORDERED);
-
-		initEClass(arrowheadDSLRequirementEClass, ArrowheadDSLRequirement.class, "ArrowheadDSLRequirement", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-		initEClass(arrowheadUseCaseEClass, ArrowheadUseCase.class, "ArrowheadUseCase", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(localCloudDesignEClass, LocalCloudDesign.class, "LocalCloudDesign", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getLocalCloudDesign_LC_Name(), theTypesPackage.getString(), "LC_Name", null, 1, 1, LocalCloudDesign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -1662,23 +1981,37 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 		initEAttribute(getLocalCloudDesign_LC_SecurityStrategy(), this.getSecurityPolicyKind(), "LC_SecurityStrategy", null, 0, -1, LocalCloudDesign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getLocalCloudDesign_LC_BusinessStrategy(), this.getBusinessPolicyKind(), "LC_BusinessStrategy", null, 0, -1, LocalCloudDesign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getLocalCloudDesign_LC_LifecycleStrategy(), this.getLifecyclePolicyKind(), "LC_LifecycleStrategy", null, 1, 1, LocalCloudDesign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getLocalCloudDesign_System_of_localcloudsdesign(), this.getSystem_of_LocalcloudsDesign(), this.getSystem_of_LocalcloudsDesign_Localclouddesign(), "system_of_localcloudsdesign", null, 0, -1, LocalCloudDesign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getLocalCloudDesign_Sysd(), this.getSysD(), this.getSysD_Localclouddesign(), "sysd", null, 0, -1, LocalCloudDesign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(system_of_LocalcloudsDesignEClass, System_of_LocalcloudsDesign.class, "System_of_LocalcloudsDesign", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getSystem_of_LocalcloudsDesign_SoLCName(), theTypesPackage.getString(), "SoLCName", null, 1, 1, System_of_LocalcloudsDesign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getSystem_of_LocalcloudsDesign_SoLC_SecurityStrategy(), this.getSecurityPolicyKind(), "SoLC_SecurityStrategy", null, 0, -1, System_of_LocalcloudsDesign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getSystem_of_LocalcloudsDesign_SoLC_BusinessStrategy(), this.getBusinessPolicyKind(), "SoLC_BusinessStrategy", null, 0, -1, System_of_LocalcloudsDesign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getSystem_of_LocalcloudsDesign_SoLC_LifecycleStrategy(), this.getLifecyclePolicyKind(), "SoLC_LifecycleStrategy", null, 1, 1, System_of_LocalcloudsDesign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getSystem_of_LocalcloudsDesign_Localclouddesign(), this.getLocalCloudDesign(), this.getLocalCloudDesign_System_of_localcloudsdesign(), "localclouddesign", null, 0, -1, System_of_LocalcloudsDesign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(arrowheadDSLRequirementEClass, ArrowheadDSLRequirement.class, "ArrowheadDSLRequirement", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getArrowheadDSLRequirement_Arrowheadusecase(), this.getArrowheadUseCase(), this.getArrowheadUseCase_Arrowheaddslrequirement(), "arrowheadusecase", null, 0, -1, ArrowheadDSLRequirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(arrowheadUseCaseEClass, ArrowheadUseCase.class, "ArrowheadUseCase", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getArrowheadUseCase_Base_UseCase(), theUMLPackage.getUseCase(), null, "base_UseCase", null, 0, 1, ArrowheadUseCase.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getArrowheadUseCase_Arrowheaddslrequirement(), this.getArrowheadDSLRequirement(), this.getArrowheadDSLRequirement_Arrowheadusecase(), "arrowheaddslrequirement", null, 0, -1, ArrowheadUseCase.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(deviceDesignEClass, DeviceDesign.class, "DeviceDesign", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getDeviceDesign_DeviceName(), theTypesPackage.getString(), "DeviceName", null, 1, -1, DeviceDesign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-
-		initEClass(intracloudNetworkDesignEClass, IntracloudNetworkDesign.class, "IntracloudNetworkDesign", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getIntracloudNetworkDesign_IntraNetworkDomain(), theTypesPackage.getString(), "IntraNetworkDomain", null, 1, 1, IntracloudNetworkDesign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getIntracloudNetworkDesign_IntraNetworkMacLayer(), this.getMacLayerKind(), "IntraNetworkMacLayer", null, 1, -1, IntracloudNetworkDesign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getDeviceDesign_Intercloudnetworkdesign(), this.getIntercloudNetworkDesign(), this.getIntercloudNetworkDesign_Devicedesign(), "intercloudnetworkdesign", null, 0, -1, DeviceDesign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getDeviceDesign_Intracloudnetworkdesign(), this.getIntracloudNetworkDesign(), this.getIntracloudNetworkDesign_Devicedesign(), "intracloudnetworkdesign", null, 0, -1, DeviceDesign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(intercloudNetworkDesignEClass, IntercloudNetworkDesign.class, "IntercloudNetworkDesign", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getIntercloudNetworkDesign_InterNetworkDomainName(), theTypesPackage.getString(), "InterNetworkDomainName", null, 0, -1, IntercloudNetworkDesign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getIntercloudNetworkDesign_InterNetworkMacLayer(), this.getMacLayerKind(), "InterNetworkMacLayer", null, 1, -1, IntercloudNetworkDesign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getIntercloudNetworkDesign_Devicedesign(), this.getDeviceDesign(), this.getDeviceDesign_Intercloudnetworkdesign(), "devicedesign", null, 0, -1, IntercloudNetworkDesign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(intracloudNetworkDesignEClass, IntracloudNetworkDesign.class, "IntracloudNetworkDesign", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getIntracloudNetworkDesign_IntraNetworkDomain(), theTypesPackage.getString(), "IntraNetworkDomain", null, 1, 1, IntracloudNetworkDesign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getIntracloudNetworkDesign_IntraNetworkMacLayer(), this.getMacLayerKind(), "IntraNetworkMacLayer", null, 1, -1, IntracloudNetworkDesign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getIntracloudNetworkDesign_Devicedesign(), this.getDeviceDesign(), this.getDeviceDesign_Intracloudnetworkdesign(), "devicedesign", null, 0, -1, IntracloudNetworkDesign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(deviceDesignDescriptionEClass, DeviceDesignDescription.class, "DeviceDesignDescription", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getDeviceDesignDescription_IOports(), theTypesPackage.getString(), "IOports", null, 0, -1, DeviceDesignDescription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -1686,36 +2019,35 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 		initEAttribute(getDeviceDesignDescription_Processor(), theTypesPackage.getString(), "processor", null, 1, -1, DeviceDesignDescription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getDeviceDesignDescription_OperatingSystem(), this.getOSKind(), "operatingSystem", null, 1, 1, DeviceDesignDescription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getDeviceDesignDescription_ArrowheadCertificate(), this.getArrowheadCertificateKind(), "ArrowheadCertificate", null, 1, 1, DeviceDesignDescription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-
-		initEClass(intracloudNetworkDesignDescriptionEClass, IntracloudNetworkDesignDescription.class, "IntracloudNetworkDesignDescription", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getIntracloudNetworkDesignDescription_IntraNetworkRouter(), theTypesPackage.getUnlimitedNatural(), "IntraNetworkRouter", null, 1, -1, IntracloudNetworkDesignDescription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getIntracloudNetworkDesignDescription_IntraNetworkRouterConfig(), theTypesPackage.getUnlimitedNatural(), "IntraNetworkRouterConfig", null, 1, -1, IntracloudNetworkDesignDescription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getDeviceDesignDescription_Intercloudnetworkdesigndescription(), this.getIntercloudNetworkDesignDescription(), this.getIntercloudNetworkDesignDescription_Devicedesigndescription(), "intercloudnetworkdesigndescription", null, 0, -1, DeviceDesignDescription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getDeviceDesignDescription_Intracloudnetworkdesigndescription(), this.getIntracloudNetworkDesignDescription(), this.getIntracloudNetworkDesignDescription_Devicedesigndescription(), "intracloudnetworkdesigndescription", null, 0, -1, DeviceDesignDescription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(intercloudNetworkDesignDescriptionEClass, IntercloudNetworkDesignDescription.class, "IntercloudNetworkDesignDescription", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getIntercloudNetworkDesignDescription_InterNetworkRouter(), theTypesPackage.getUnlimitedNatural(), "InterNetworkRouter", null, 0, -1, IntercloudNetworkDesignDescription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getIntercloudNetworkDesignDescription_InterNetworkRouterConfig(), theTypesPackage.getUnlimitedNatural(), "InterNetworkRouterConfig", null, 0, -1, IntercloudNetworkDesignDescription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getIntercloudNetworkDesignDescription_Devicedesigndescription(), this.getDeviceDesignDescription(), this.getDeviceDesignDescription_Intercloudnetworkdesigndescription(), "devicedesigndescription", null, 0, -1, IntercloudNetworkDesignDescription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(intracloudNetworkDesignDescriptionEClass, IntracloudNetworkDesignDescription.class, "IntracloudNetworkDesignDescription", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getIntracloudNetworkDesignDescription_IntraNetworkRouter(), theTypesPackage.getUnlimitedNatural(), "IntraNetworkRouter", null, 1, -1, IntracloudNetworkDesignDescription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getIntracloudNetworkDesignDescription_IntraNetworkRouterConfig(), theTypesPackage.getUnlimitedNatural(), "IntraNetworkRouterConfig", null, 1, -1, IntracloudNetworkDesignDescription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getIntracloudNetworkDesignDescription_Devicedesigndescription(), this.getDeviceDesignDescription(), this.getDeviceDesignDescription_Intracloudnetworkdesigndescription(), "devicedesigndescription", null, 0, -1, IntracloudNetworkDesignDescription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(localcloudDesignDescriptionEClass, LocalcloudDesignDescription.class, "LocalcloudDesignDescription", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getLocalcloudDesignDescription_LC_workflow(), theTypesPackage.getString(), "LC_workflow", null, 1, 1, LocalcloudDesignDescription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getLocalcloudDesignDescription_LC_orchestration(), theTypesPackage.getString(), "LC_orchestration", null, 1, 1, LocalcloudDesignDescription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getLocalcloudDesignDescription_Systemoflocaclouddesigndescription(), this.getSystem_of_LocacloudsDesignDescription(), this.getSystem_of_LocacloudsDesignDescription_Localclouddesigndescription(), "systemoflocaclouddesigndescription", null, 0, -1, LocalcloudDesignDescription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getLocalcloudDesignDescription_Sysdd(), this.getSysDD(), this.getSysDD_Localclouddesigndescription(), "sysdd", null, 0, -1, LocalcloudDesignDescription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(system_of_LocacloudsDesignDescriptionEClass, System_of_LocacloudsDesignDescription.class, "System_of_LocacloudsDesignDescription", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getSystem_of_LocacloudsDesignDescription_SoLC_Orchestration(), theTypesPackage.getString(), "SoLC_Orchestration", null, 1, 1, System_of_LocacloudsDesignDescription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getSystem_of_LocacloudsDesignDescription_SoLC_Workflow(), theTypesPackage.getString(), "SoLC_Workflow", null, 1, 1, System_of_LocacloudsDesignDescription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-
-		initEClass(system_of_LocalcloudsImplementationEClass, System_of_LocalcloudsImplementation.class, "System_of_LocalcloudsImplementation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getSystem_of_LocalcloudsImplementation_SoLC_Documentation(), theTypesPackage.getUnlimitedNatural(), "SoLC_Documentation", null, 1, 1, System_of_LocalcloudsImplementation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-
-		initEClass(localcloudImplementationEClass, LocalcloudImplementation.class, "LocalcloudImplementation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getLocalcloudImplementation_LC_Documentation(), theTypesPackage.getUnlimitedNatural(), "LC_Documentation", null, 1, 1, LocalcloudImplementation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-
-		initEClass(system_ImplementationEClass, System_Implementation.class, "System_Implementation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getSystem_of_LocacloudsDesignDescription_Localclouddesigndescription(), this.getLocalcloudDesignDescription(), this.getLocalcloudDesignDescription_Systemoflocaclouddesigndescription(), "localclouddesigndescription", null, 0, -1, System_of_LocacloudsDesignDescription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(sysDDEClass, SysDD.class, "SysDD", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getSysDD_Timeformat(), this.getTimeFormatKind(), "Timeformat", null, 1, 1, SysDD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getSysDD_ArrowheadCertificate(), this.getArrowheadCertificateKind(), "ArrowheadCertificate", null, 1, 1, SysDD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-
-		initEClass(idD_ImplementationEClass, IDD_Implementation.class, "IDD_Implementation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getSysDD_Idd(), this.getIDD(), this.getIDD_Sysdd(), "idd", null, 0, -1, SysDD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getSysDD_Localclouddesigndescription(), this.getLocalcloudDesignDescription(), this.getLocalcloudDesignDescription_Sysdd(), "localclouddesigndescription", null, 0, -1, SysDD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(iddEClass, ArrowheadDSL.IDD.class, "IDD", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getIDD_Port(), theTypesPackage.getInteger(), "Port", null, 1, 1, ArrowheadDSL.IDD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -1727,6 +2059,23 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 		initEAttribute(getIDD_Token(), this.getTokenKind(), "Token", null, 1, 1, ArrowheadDSL.IDD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getIDD_Crypto_algorithm(), this.getCryptoAlgorithmKind(), "Crypto_algorithm", null, 1, 1, ArrowheadDSL.IDD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getIDD_Datamodel(), this.getDatamodelStandardKind(), "Datamodel", null, 1, 1, ArrowheadDSL.IDD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getIDD_Sysdd(), this.getSysDD(), this.getSysDD_Idd(), "sysdd", null, 0, -1, ArrowheadDSL.IDD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(system_of_LocalcloudsImplementationEClass, System_of_LocalcloudsImplementation.class, "System_of_LocalcloudsImplementation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getSystem_of_LocalcloudsImplementation_SoLC_Documentation(), theTypesPackage.getUnlimitedNatural(), "SoLC_Documentation", null, 1, 1, System_of_LocalcloudsImplementation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getSystem_of_LocalcloudsImplementation_Localcloudimplementation(), this.getLocalcloudImplementation(), this.getLocalcloudImplementation_System_of_localcloudsimplementation(), "localcloudimplementation", null, 0, -1, System_of_LocalcloudsImplementation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(localcloudImplementationEClass, LocalcloudImplementation.class, "LocalcloudImplementation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getLocalcloudImplementation_LC_Documentation(), theTypesPackage.getUnlimitedNatural(), "LC_Documentation", null, 1, 1, LocalcloudImplementation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getLocalcloudImplementation_Systemimplementation(), this.getSystem_Implementation(), this.getSystem_Implementation_Loclacloudimplementation(), "systemimplementation", null, 0, -1, LocalcloudImplementation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getLocalcloudImplementation_System_of_localcloudsimplementation(), this.getSystem_of_LocalcloudsImplementation(), this.getSystem_of_LocalcloudsImplementation_Localcloudimplementation(), "system_of_localcloudsimplementation", null, 0, -1, LocalcloudImplementation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(system_ImplementationEClass, System_Implementation.class, "System_Implementation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getSystem_Implementation_Idd_implementation(), this.getIDD_Implementation(), this.getIDD_Implementation_Systemimplementation(), "idd_implementation", null, 0, -1, System_Implementation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getSystem_Implementation_Loclacloudimplementation(), this.getLocalcloudImplementation(), this.getLocalcloudImplementation_Systemimplementation(), "loclacloudimplementation", null, 0, -1, System_Implementation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(idD_ImplementationEClass, IDD_Implementation.class, "IDD_Implementation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getIDD_Implementation_Systemimplementation(), this.getSystem_Implementation(), this.getSystem_Implementation_Idd_implementation(), "systemimplementation", null, 0, -1, IDD_Implementation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		// Initialize enums and add enum literals
 		initEEnum(systemDatabaseKindEEnum, SystemDatabaseKind.class, "SystemDatabaseKind");
@@ -1981,6 +2330,12 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 		   source,
 		   new String[] {
 			   "originalName", "I/O ports"
+		   });
+		addAnnotation
+		  (getLocalcloudDesignDescription_Systemoflocaclouddesigndescription(),
+		   source,
+		   new String[] {
+			   "originalName", "system-of-locaclouddesigndescription"
 		   });
 		addAnnotation
 		  (httP_11_MethodKindEEnum,

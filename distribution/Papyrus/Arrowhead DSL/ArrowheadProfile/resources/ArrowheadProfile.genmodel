@@ -251,36 +251,64 @@
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//SysD/FunctionalProperties"/>
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//SysD/SystemDatabase"/>
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//SysD/MicrosystemBehaviour"/>
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//SysD/sd"/>
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//SysD/localclouddesign"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//SD">
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//SD/MicroserviceName"/>
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//SD/sysd"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ArrowheadDSL.ecore#//SD/Operation"/>
     </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//ArrowheadDSLRequirement"/>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//ArrowheadUseCase"/>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//LocalCloudDesign">
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//LocalCloudDesign/LC_Name"/>
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//LocalCloudDesign/FunctionalProperties"/>
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//LocalCloudDesign/LC_SecurityStrategy"/>
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//LocalCloudDesign/LC_BusinessStrategy"/>
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//LocalCloudDesign/LC_LifecycleStrategy"/>
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//LocalCloudDesign/system_of_localcloudsdesign"/>
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//LocalCloudDesign/sysd"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//System_of_LocalcloudsDesign">
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//System_of_LocalcloudsDesign/SoLCName"/>
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//System_of_LocalcloudsDesign/SoLC_SecurityStrategy"/>
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//System_of_LocalcloudsDesign/SoLC_BusinessStrategy"/>
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//System_of_LocalcloudsDesign/SoLC_LifecycleStrategy"/>
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//System_of_LocalcloudsDesign/localclouddesign"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//ArrowheadDSLRequirement">
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//ArrowheadDSLRequirement/arrowheadusecase"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//ArrowheadUseCase">
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//ArrowheadUseCase/base_UseCase"/>
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//ArrowheadUseCase/arrowheaddslrequirement"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//DeviceDesign">
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//DeviceDesign/DeviceName"/>
-    </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//IntracloudNetworkDesign">
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//IntracloudNetworkDesign/IntraNetworkDomain"/>
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//IntracloudNetworkDesign/IntraNetworkMacLayer"/>
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//DeviceDesign/intercloudnetworkdesign"/>
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//DeviceDesign/intracloudnetworkdesign"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//IntercloudNetworkDesign">
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//IntercloudNetworkDesign/InterNetworkDomainName"/>
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//IntercloudNetworkDesign/InterNetworkMacLayer"/>
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//IntercloudNetworkDesign/devicedesign"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//IntracloudNetworkDesign">
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//IntracloudNetworkDesign/IntraNetworkDomain"/>
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//IntracloudNetworkDesign/IntraNetworkMacLayer"/>
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//IntracloudNetworkDesign/devicedesign"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//DeviceDesignDescription">
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//DeviceDesignDescription/IOports"/>
@@ -288,35 +316,45 @@
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//DeviceDesignDescription/processor"/>
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//DeviceDesignDescription/operatingSystem"/>
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//DeviceDesignDescription/ArrowheadCertificate"/>
-    </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//IntracloudNetworkDesignDescription">
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//IntracloudNetworkDesignDescription/IntraNetworkRouter"/>
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//IntracloudNetworkDesignDescription/IntraNetworkRouterConfig"/>
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//DeviceDesignDescription/intercloudnetworkdesigndescription"/>
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//DeviceDesignDescription/intracloudnetworkdesigndescription"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//IntercloudNetworkDesignDescription">
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//IntercloudNetworkDesignDescription/InterNetworkRouter"/>
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//IntercloudNetworkDesignDescription/InterNetworkRouterConfig"/>
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//IntercloudNetworkDesignDescription/devicedesigndescription"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//IntracloudNetworkDesignDescription">
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//IntracloudNetworkDesignDescription/IntraNetworkRouter"/>
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//IntracloudNetworkDesignDescription/IntraNetworkRouterConfig"/>
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//IntracloudNetworkDesignDescription/devicedesigndescription"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//LocalcloudDesignDescription">
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//LocalcloudDesignDescription/LC_workflow"/>
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//LocalcloudDesignDescription/LC_orchestration"/>
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//LocalcloudDesignDescription/systemoflocaclouddesigndescription"/>
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//LocalcloudDesignDescription/sysdd"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//System_of_LocacloudsDesignDescription">
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//System_of_LocacloudsDesignDescription/SoLC_Orchestration"/>
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//System_of_LocacloudsDesignDescription/SoLC_Workflow"/>
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//System_of_LocacloudsDesignDescription/localclouddesigndescription"/>
     </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//System_of_LocalcloudsImplementation">
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//System_of_LocalcloudsImplementation/SoLC_Documentation"/>
-    </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//LocalcloudImplementation">
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//LocalcloudImplementation/LC_Documentation"/>
-    </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//System_Implementation"/>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//SysDD">
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//SysDD/Timeformat"/>
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//SysDD/ArrowheadCertificate"/>
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//SysDD/idd"/>
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//SysDD/localclouddesigndescription"/>
     </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//IDD_Implementation"/>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//IDD">
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//IDD/Port"/>
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//IDD/Protocol"/>
@@ -327,6 +365,30 @@
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//IDD/Token"/>
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//IDD/Crypto_algorithm"/>
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//IDD/Datamodel"/>
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//IDD/sysdd"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//System_of_LocalcloudsImplementation">
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//System_of_LocalcloudsImplementation/SoLC_Documentation"/>
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//System_of_LocalcloudsImplementation/localcloudimplementation"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//LocalcloudImplementation">
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//LocalcloudImplementation/LC_Documentation"/>
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//LocalcloudImplementation/systemimplementation"/>
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//LocalcloudImplementation/system_of_localcloudsimplementation"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//System_Implementation">
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//System_Implementation/idd_implementation"/>
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//System_Implementation/loclacloudimplementation"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//IDD_Implementation">
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//IDD_Implementation/systemimplementation"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

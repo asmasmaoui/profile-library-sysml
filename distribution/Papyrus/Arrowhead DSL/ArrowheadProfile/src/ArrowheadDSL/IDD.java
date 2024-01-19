@@ -2,6 +2,8 @@
  */
 package ArrowheadDSL;
 
+import org.eclipse.emf.common.util.EList;
+
 
 /**
  * <!-- begin-user-doc -->
@@ -21,6 +23,7 @@ package ArrowheadDSL;
  *   <li>{@link ArrowheadDSL.IDD#getToken <em>Token</em>}</li>
  *   <li>{@link ArrowheadDSL.IDD#getCrypto_algorithm <em>Crypto algorithm</em>}</li>
  *   <li>{@link ArrowheadDSL.IDD#getDatamodel <em>Datamodel</em>}</li>
+ *   <li>{@link ArrowheadDSL.IDD#getSysdd <em>Sysdd</em>}</li>
  * </ul>
  *
  * @see ArrowheadDSL.ArrowheadDSLPackage#getIDD()
@@ -285,5 +288,23 @@ public interface IDD extends SD {
 	 * @generated
 	 */
 	void setDatamodel(DatamodelStandardKind value);
+
+	/**
+	 * Returns the value of the '<em><b>Sysdd</b></em>' reference list.
+	 * The list contents are of type {@link ArrowheadDSL.SysDD}.
+	 * It is bidirectional and its opposite is '{@link ArrowheadDSL.SysDD#getIdd <em>Idd</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Sysdd</em>' reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Sysdd</em>' reference list.
+	 * @see ArrowheadDSL.ArrowheadDSLPackage#getIDD_Sysdd()
+	 * @see ArrowheadDSL.SysDD#getIdd
+	 * @model opposite="idd" ordered="false"
+	 * @generated
+	 */
+	EList<SysDD> getSysdd();
 
 } // IDD

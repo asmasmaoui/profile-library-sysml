@@ -20,6 +20,8 @@ import org.eclipse.papyrus.sysml16.blocks.Block;
  *   <li>{@link ArrowheadDSL.LocalCloudDesign#getLC_SecurityStrategy <em>LC Security Strategy</em>}</li>
  *   <li>{@link ArrowheadDSL.LocalCloudDesign#getLC_BusinessStrategy <em>LC Business Strategy</em>}</li>
  *   <li>{@link ArrowheadDSL.LocalCloudDesign#getLC_LifecycleStrategy <em>LC Lifecycle Strategy</em>}</li>
+ *   <li>{@link ArrowheadDSL.LocalCloudDesign#getSystem_of_localcloudsdesign <em>System of localcloudsdesign</em>}</li>
+ *   <li>{@link ArrowheadDSL.LocalCloudDesign#getSysd <em>Sysd</em>}</li>
  * </ul>
  *
  * @see ArrowheadDSL.ArrowheadDSLPackage#getLocalCloudDesign()
@@ -143,5 +145,41 @@ public interface LocalCloudDesign extends Block {
 	 * @generated
 	 */
 	void setLC_LifecycleStrategy(LifecyclePolicyKind value);
+
+	/**
+	 * Returns the value of the '<em><b>System of localcloudsdesign</b></em>' reference list.
+	 * The list contents are of type {@link ArrowheadDSL.System_of_LocalcloudsDesign}.
+	 * It is bidirectional and its opposite is '{@link ArrowheadDSL.System_of_LocalcloudsDesign#getLocalclouddesign <em>Localclouddesign</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>System of localcloudsdesign</em>' reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>System of localcloudsdesign</em>' reference list.
+	 * @see ArrowheadDSL.ArrowheadDSLPackage#getLocalCloudDesign_System_of_localcloudsdesign()
+	 * @see ArrowheadDSL.System_of_LocalcloudsDesign#getLocalclouddesign
+	 * @model opposite="localclouddesign" ordered="false"
+	 * @generated
+	 */
+	EList<System_of_LocalcloudsDesign> getSystem_of_localcloudsdesign();
+
+	/**
+	 * Returns the value of the '<em><b>Sysd</b></em>' reference list.
+	 * The list contents are of type {@link ArrowheadDSL.SysD}.
+	 * It is bidirectional and its opposite is '{@link ArrowheadDSL.SysD#getLocalclouddesign <em>Localclouddesign</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Sysd</em>' reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Sysd</em>' reference list.
+	 * @see ArrowheadDSL.ArrowheadDSLPackage#getLocalCloudDesign_Sysd()
+	 * @see ArrowheadDSL.SysD#getLocalclouddesign
+	 * @model opposite="localclouddesign" ordered="false"
+	 * @generated
+	 */
+	EList<SysD> getSysd();
 
 } // LocalCloudDesign

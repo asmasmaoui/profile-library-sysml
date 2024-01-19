@@ -23,6 +23,8 @@ import org.eclipse.papyrus.sysml16.blocks.Block;
  *   <li>{@link ArrowheadDSL.SysD#getFunctionalProperties <em>Functional Properties</em>}</li>
  *   <li>{@link ArrowheadDSL.SysD#getSystemDatabase <em>System Database</em>}</li>
  *   <li>{@link ArrowheadDSL.SysD#getMicrosystemBehaviour <em>Microsystem Behaviour</em>}</li>
+ *   <li>{@link ArrowheadDSL.SysD#getSd <em>Sd</em>}</li>
+ *   <li>{@link ArrowheadDSL.SysD#getLocalclouddesign <em>Localclouddesign</em>}</li>
  * </ul>
  *
  * @see ArrowheadDSL.ArrowheadDSLPackage#getSysD()
@@ -108,5 +110,41 @@ public interface SysD extends Block {
 	 * @generated
 	 */
 	EList<BusinessPolicyKind> getMicrosystemBehaviour();
+
+	/**
+	 * Returns the value of the '<em><b>Sd</b></em>' reference list.
+	 * The list contents are of type {@link ArrowheadDSL.SD}.
+	 * It is bidirectional and its opposite is '{@link ArrowheadDSL.SD#getSysd <em>Sysd</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Sd</em>' reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Sd</em>' reference list.
+	 * @see ArrowheadDSL.ArrowheadDSLPackage#getSysD_Sd()
+	 * @see ArrowheadDSL.SD#getSysd
+	 * @model opposite="sysd" ordered="false"
+	 * @generated
+	 */
+	EList<SD> getSd();
+
+	/**
+	 * Returns the value of the '<em><b>Localclouddesign</b></em>' reference list.
+	 * The list contents are of type {@link ArrowheadDSL.LocalCloudDesign}.
+	 * It is bidirectional and its opposite is '{@link ArrowheadDSL.LocalCloudDesign#getSysd <em>Sysd</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Localclouddesign</em>' reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Localclouddesign</em>' reference list.
+	 * @see ArrowheadDSL.ArrowheadDSLPackage#getSysD_Localclouddesign()
+	 * @see ArrowheadDSL.LocalCloudDesign#getSysd
+	 * @model opposite="sysd" ordered="false"
+	 * @generated
+	 */
+	EList<LocalCloudDesign> getLocalclouddesign();
 
 } // SysD

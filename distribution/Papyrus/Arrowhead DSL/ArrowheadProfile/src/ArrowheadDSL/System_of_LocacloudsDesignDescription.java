@@ -2,6 +2,8 @@
  */
 package ArrowheadDSL;
 
+import org.eclipse.emf.common.util.EList;
+
 
 /**
  * <!-- begin-user-doc -->
@@ -14,6 +16,7 @@ package ArrowheadDSL;
  * <ul>
  *   <li>{@link ArrowheadDSL.System_of_LocacloudsDesignDescription#getSoLC_Orchestration <em>So LC Orchestration</em>}</li>
  *   <li>{@link ArrowheadDSL.System_of_LocacloudsDesignDescription#getSoLC_Workflow <em>So LC Workflow</em>}</li>
+ *   <li>{@link ArrowheadDSL.System_of_LocacloudsDesignDescription#getLocalclouddesigndescription <em>Localclouddesigndescription</em>}</li>
  * </ul>
  *
  * @see ArrowheadDSL.ArrowheadDSLPackage#getSystem_of_LocacloudsDesignDescription()
@@ -72,5 +75,23 @@ public interface System_of_LocacloudsDesignDescription extends System_of_Localcl
 	 * @generated
 	 */
 	void setSoLC_Workflow(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Localclouddesigndescription</b></em>' reference list.
+	 * The list contents are of type {@link ArrowheadDSL.LocalcloudDesignDescription}.
+	 * It is bidirectional and its opposite is '{@link ArrowheadDSL.LocalcloudDesignDescription#getSystemoflocaclouddesigndescription <em>Systemoflocaclouddesigndescription</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Localclouddesigndescription</em>' reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Localclouddesigndescription</em>' reference list.
+	 * @see ArrowheadDSL.ArrowheadDSLPackage#getSystem_of_LocacloudsDesignDescription_Localclouddesigndescription()
+	 * @see ArrowheadDSL.LocalcloudDesignDescription#getSystemoflocaclouddesigndescription
+	 * @model opposite="systemoflocaclouddesigndescription" ordered="false"
+	 * @generated
+	 */
+	EList<LocalcloudDesignDescription> getLocalclouddesigndescription();
 
 } // System_of_LocacloudsDesignDescription

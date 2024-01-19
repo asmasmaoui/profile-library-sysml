@@ -18,13 +18,15 @@ import org.eclipse.emf.common.util.EList;
  *   <li>{@link ArrowheadDSL.DeviceDesignDescription#getProcessor <em>Processor</em>}</li>
  *   <li>{@link ArrowheadDSL.DeviceDesignDescription#getOperatingSystem <em>Operating System</em>}</li>
  *   <li>{@link ArrowheadDSL.DeviceDesignDescription#getArrowheadCertificate <em>Arrowhead Certificate</em>}</li>
+ *   <li>{@link ArrowheadDSL.DeviceDesignDescription#getIntercloudnetworkdesigndescription <em>Intercloudnetworkdesigndescription</em>}</li>
+ *   <li>{@link ArrowheadDSL.DeviceDesignDescription#getIntracloudnetworkdesigndescription <em>Intracloudnetworkdesigndescription</em>}</li>
  * </ul>
  *
  * @see ArrowheadDSL.ArrowheadDSLPackage#getDeviceDesignDescription()
  * @model
  * @generated
  */
-public interface DeviceDesignDescription extends IntercloudNetworkDesignDescription, IntracloudNetworkDesignDescription, DeviceDesign {
+public interface DeviceDesignDescription extends DeviceDesign {
 	/**
 	 * Returns the value of the '<em><b>IOports</b></em>' attribute list.
 	 * The list contents are of type {@link java.lang.String}.
@@ -131,5 +133,41 @@ public interface DeviceDesignDescription extends IntercloudNetworkDesignDescript
 	 * @generated
 	 */
 	void setArrowheadCertificate(ArrowheadCertificateKind value);
+
+	/**
+	 * Returns the value of the '<em><b>Intercloudnetworkdesigndescription</b></em>' reference list.
+	 * The list contents are of type {@link ArrowheadDSL.IntercloudNetworkDesignDescription}.
+	 * It is bidirectional and its opposite is '{@link ArrowheadDSL.IntercloudNetworkDesignDescription#getDevicedesigndescription <em>Devicedesigndescription</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Intercloudnetworkdesigndescription</em>' reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Intercloudnetworkdesigndescription</em>' reference list.
+	 * @see ArrowheadDSL.ArrowheadDSLPackage#getDeviceDesignDescription_Intercloudnetworkdesigndescription()
+	 * @see ArrowheadDSL.IntercloudNetworkDesignDescription#getDevicedesigndescription
+	 * @model opposite="devicedesigndescription" ordered="false"
+	 * @generated
+	 */
+	EList<IntercloudNetworkDesignDescription> getIntercloudnetworkdesigndescription();
+
+	/**
+	 * Returns the value of the '<em><b>Intracloudnetworkdesigndescription</b></em>' reference list.
+	 * The list contents are of type {@link ArrowheadDSL.IntracloudNetworkDesignDescription}.
+	 * It is bidirectional and its opposite is '{@link ArrowheadDSL.IntracloudNetworkDesignDescription#getDevicedesigndescription <em>Devicedesigndescription</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Intracloudnetworkdesigndescription</em>' reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Intracloudnetworkdesigndescription</em>' reference list.
+	 * @see ArrowheadDSL.ArrowheadDSLPackage#getDeviceDesignDescription_Intracloudnetworkdesigndescription()
+	 * @see ArrowheadDSL.IntracloudNetworkDesignDescription#getDevicedesigndescription
+	 * @model opposite="devicedesigndescription" ordered="false"
+	 * @generated
+	 */
+	EList<IntracloudNetworkDesignDescription> getIntracloudnetworkdesigndescription();
 
 } // DeviceDesignDescription

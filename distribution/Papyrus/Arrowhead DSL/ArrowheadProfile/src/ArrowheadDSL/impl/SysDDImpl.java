@@ -4,14 +4,22 @@ package ArrowheadDSL.impl;
 
 import ArrowheadDSL.ArrowheadCertificateKind;
 import ArrowheadDSL.ArrowheadDSLPackage;
+import ArrowheadDSL.IDD;
+import ArrowheadDSL.LocalcloudDesignDescription;
 import ArrowheadDSL.SysDD;
 import ArrowheadDSL.TimeFormatKind;
 
+import java.util.Collection;
 import org.eclipse.emf.common.notify.Notification;
 
+import org.eclipse.emf.common.notify.NotificationChain;
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.util.EObjectWithInverseResolvingEList;
+import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -23,6 +31,8 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <ul>
  *   <li>{@link ArrowheadDSL.impl.SysDDImpl#getTimeformat <em>Timeformat</em>}</li>
  *   <li>{@link ArrowheadDSL.impl.SysDDImpl#getArrowheadCertificate <em>Arrowhead Certificate</em>}</li>
+ *   <li>{@link ArrowheadDSL.impl.SysDDImpl#getIdd <em>Idd</em>}</li>
+ *   <li>{@link ArrowheadDSL.impl.SysDDImpl#getLocalclouddesigndescription <em>Localclouddesigndescription</em>}</li>
  * </ul>
  *
  * @generated
@@ -67,6 +77,26 @@ public class SysDDImpl extends SysDImpl implements SysDD {
 	 * @ordered
 	 */
 	protected ArrowheadCertificateKind arrowheadCertificate = ARROWHEAD_CERTIFICATE_EDEFAULT;
+
+	/**
+	 * The cached value of the '{@link #getIdd() <em>Idd</em>}' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getIdd()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<IDD> idd;
+
+	/**
+	 * The cached value of the '{@link #getLocalclouddesigndescription() <em>Localclouddesigndescription</em>}' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getLocalclouddesigndescription()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<LocalcloudDesignDescription> localclouddesigndescription;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -139,12 +169,75 @@ public class SysDDImpl extends SysDImpl implements SysDD {
 	 * @generated
 	 */
 	@Override
+	public EList<IDD> getIdd() {
+		if (idd == null) {
+			idd = new EObjectWithInverseResolvingEList.ManyInverse<IDD>(IDD.class, this, ArrowheadDSLPackage.SYS_DD__IDD, ArrowheadDSLPackage.IDD__SYSDD);
+		}
+		return idd;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EList<LocalcloudDesignDescription> getLocalclouddesigndescription() {
+		if (localclouddesigndescription == null) {
+			localclouddesigndescription = new EObjectWithInverseResolvingEList.ManyInverse<LocalcloudDesignDescription>(LocalcloudDesignDescription.class, this, ArrowheadDSLPackage.SYS_DD__LOCALCLOUDDESIGNDESCRIPTION, ArrowheadDSLPackage.LOCALCLOUD_DESIGN_DESCRIPTION__SYSDD);
+		}
+		return localclouddesigndescription;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case ArrowheadDSLPackage.SYS_DD__IDD:
+				return ((InternalEList<InternalEObject>)(InternalEList<?>)getIdd()).basicAdd(otherEnd, msgs);
+			case ArrowheadDSLPackage.SYS_DD__LOCALCLOUDDESIGNDESCRIPTION:
+				return ((InternalEList<InternalEObject>)(InternalEList<?>)getLocalclouddesigndescription()).basicAdd(otherEnd, msgs);
+		}
+		return super.eInverseAdd(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case ArrowheadDSLPackage.SYS_DD__IDD:
+				return ((InternalEList<?>)getIdd()).basicRemove(otherEnd, msgs);
+			case ArrowheadDSLPackage.SYS_DD__LOCALCLOUDDESIGNDESCRIPTION:
+				return ((InternalEList<?>)getLocalclouddesigndescription()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case ArrowheadDSLPackage.SYS_DD__TIMEFORMAT:
 				return getTimeformat();
 			case ArrowheadDSLPackage.SYS_DD__ARROWHEAD_CERTIFICATE:
 				return getArrowheadCertificate();
+			case ArrowheadDSLPackage.SYS_DD__IDD:
+				return getIdd();
+			case ArrowheadDSLPackage.SYS_DD__LOCALCLOUDDESIGNDESCRIPTION:
+				return getLocalclouddesigndescription();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -154,6 +247,7 @@ public class SysDDImpl extends SysDImpl implements SysDD {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
@@ -162,6 +256,14 @@ public class SysDDImpl extends SysDImpl implements SysDD {
 				return;
 			case ArrowheadDSLPackage.SYS_DD__ARROWHEAD_CERTIFICATE:
 				setArrowheadCertificate((ArrowheadCertificateKind)newValue);
+				return;
+			case ArrowheadDSLPackage.SYS_DD__IDD:
+				getIdd().clear();
+				getIdd().addAll((Collection<? extends IDD>)newValue);
+				return;
+			case ArrowheadDSLPackage.SYS_DD__LOCALCLOUDDESIGNDESCRIPTION:
+				getLocalclouddesigndescription().clear();
+				getLocalclouddesigndescription().addAll((Collection<? extends LocalcloudDesignDescription>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -181,6 +283,12 @@ public class SysDDImpl extends SysDImpl implements SysDD {
 			case ArrowheadDSLPackage.SYS_DD__ARROWHEAD_CERTIFICATE:
 				setArrowheadCertificate(ARROWHEAD_CERTIFICATE_EDEFAULT);
 				return;
+			case ArrowheadDSLPackage.SYS_DD__IDD:
+				getIdd().clear();
+				return;
+			case ArrowheadDSLPackage.SYS_DD__LOCALCLOUDDESIGNDESCRIPTION:
+				getLocalclouddesigndescription().clear();
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -197,6 +305,10 @@ public class SysDDImpl extends SysDImpl implements SysDD {
 				return timeformat != TIMEFORMAT_EDEFAULT;
 			case ArrowheadDSLPackage.SYS_DD__ARROWHEAD_CERTIFICATE:
 				return arrowheadCertificate != ARROWHEAD_CERTIFICATE_EDEFAULT;
+			case ArrowheadDSLPackage.SYS_DD__IDD:
+				return idd != null && !idd.isEmpty();
+			case ArrowheadDSLPackage.SYS_DD__LOCALCLOUDDESIGNDESCRIPTION:
+				return localclouddesigndescription != null && !localclouddesigndescription.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

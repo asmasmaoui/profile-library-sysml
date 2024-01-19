@@ -12,6 +12,8 @@ import org.eclipse.emf.common.notify.impl.AdapterFactoryImpl;
 import org.eclipse.emf.ecore.EObject;
 
 import org.eclipse.papyrus.sysml16.blocks.Block;
+import org.eclipse.papyrus.sysml16.requirements.AbstractRequirement;
+import org.eclipse.papyrus.sysml16.requirements.Requirement;
 
 /**
  * <!-- begin-user-doc -->
@@ -78,14 +80,6 @@ public class ArrowheadDSLAdapterFactory extends AdapterFactoryImpl {
 				return createSDAdapter();
 			}
 			@Override
-			public Adapter caseArrowheadDSLRequirement(ArrowheadDSLRequirement object) {
-				return createArrowheadDSLRequirementAdapter();
-			}
-			@Override
-			public Adapter caseArrowheadUseCase(ArrowheadUseCase object) {
-				return createArrowheadUseCaseAdapter();
-			}
-			@Override
 			public Adapter caseLocalCloudDesign(LocalCloudDesign object) {
 				return createLocalCloudDesignAdapter();
 			}
@@ -94,28 +88,36 @@ public class ArrowheadDSLAdapterFactory extends AdapterFactoryImpl {
 				return createSystem_of_LocalcloudsDesignAdapter();
 			}
 			@Override
-			public Adapter caseDeviceDesign(DeviceDesign object) {
-				return createDeviceDesignAdapter();
+			public Adapter caseArrowheadDSLRequirement(ArrowheadDSLRequirement object) {
+				return createArrowheadDSLRequirementAdapter();
 			}
 			@Override
-			public Adapter caseIntracloudNetworkDesign(IntracloudNetworkDesign object) {
-				return createIntracloudNetworkDesignAdapter();
+			public Adapter caseArrowheadUseCase(ArrowheadUseCase object) {
+				return createArrowheadUseCaseAdapter();
+			}
+			@Override
+			public Adapter caseDeviceDesign(DeviceDesign object) {
+				return createDeviceDesignAdapter();
 			}
 			@Override
 			public Adapter caseIntercloudNetworkDesign(IntercloudNetworkDesign object) {
 				return createIntercloudNetworkDesignAdapter();
 			}
 			@Override
+			public Adapter caseIntracloudNetworkDesign(IntracloudNetworkDesign object) {
+				return createIntracloudNetworkDesignAdapter();
+			}
+			@Override
 			public Adapter caseDeviceDesignDescription(DeviceDesignDescription object) {
 				return createDeviceDesignDescriptionAdapter();
 			}
 			@Override
-			public Adapter caseIntracloudNetworkDesignDescription(IntracloudNetworkDesignDescription object) {
-				return createIntracloudNetworkDesignDescriptionAdapter();
-			}
-			@Override
 			public Adapter caseIntercloudNetworkDesignDescription(IntercloudNetworkDesignDescription object) {
 				return createIntercloudNetworkDesignDescriptionAdapter();
+			}
+			@Override
+			public Adapter caseIntracloudNetworkDesignDescription(IntracloudNetworkDesignDescription object) {
+				return createIntracloudNetworkDesignDescriptionAdapter();
 			}
 			@Override
 			public Adapter caseLocalcloudDesignDescription(LocalcloudDesignDescription object) {
@@ -124,6 +126,14 @@ public class ArrowheadDSLAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseSystem_of_LocacloudsDesignDescription(System_of_LocacloudsDesignDescription object) {
 				return createSystem_of_LocacloudsDesignDescriptionAdapter();
+			}
+			@Override
+			public Adapter caseSysDD(SysDD object) {
+				return createSysDDAdapter();
+			}
+			@Override
+			public Adapter caseIDD(IDD object) {
+				return createIDDAdapter();
 			}
 			@Override
 			public Adapter caseSystem_of_LocalcloudsImplementation(System_of_LocalcloudsImplementation object) {
@@ -138,20 +148,20 @@ public class ArrowheadDSLAdapterFactory extends AdapterFactoryImpl {
 				return createSystem_ImplementationAdapter();
 			}
 			@Override
-			public Adapter caseSysDD(SysDD object) {
-				return createSysDDAdapter();
-			}
-			@Override
 			public Adapter caseIDD_Implementation(IDD_Implementation object) {
 				return createIDD_ImplementationAdapter();
 			}
 			@Override
-			public Adapter caseIDD(IDD object) {
-				return createIDDAdapter();
-			}
-			@Override
 			public Adapter caseBlock(Block object) {
 				return createBlockAdapter();
+			}
+			@Override
+			public Adapter caseAbstractRequirement(AbstractRequirement object) {
+				return createAbstractRequirementAdapter();
+			}
+			@Override
+			public Adapter caseRequirement(Requirement object) {
+				return createRequirementAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -464,6 +474,34 @@ public class ArrowheadDSLAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createBlockAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.eclipse.papyrus.sysml16.requirements.AbstractRequirement <em>Abstract Requirement</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.eclipse.papyrus.sysml16.requirements.AbstractRequirement
+	 * @generated
+	 */
+	public Adapter createAbstractRequirementAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.eclipse.papyrus.sysml16.requirements.Requirement <em>Requirement</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.eclipse.papyrus.sysml16.requirements.Requirement
+	 * @generated
+	 */
+	public Adapter createRequirementAdapter() {
 		return null;
 	}
 

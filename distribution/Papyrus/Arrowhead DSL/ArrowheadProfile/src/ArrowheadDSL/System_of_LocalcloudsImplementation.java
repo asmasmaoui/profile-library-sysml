@@ -2,6 +2,8 @@
  */
 package ArrowheadDSL;
 
+import org.eclipse.emf.common.util.EList;
+
 
 /**
  * <!-- begin-user-doc -->
@@ -13,6 +15,7 @@ package ArrowheadDSL;
  * </p>
  * <ul>
  *   <li>{@link ArrowheadDSL.System_of_LocalcloudsImplementation#getSoLC_Documentation <em>So LC Documentation</em>}</li>
+ *   <li>{@link ArrowheadDSL.System_of_LocalcloudsImplementation#getLocalcloudimplementation <em>Localcloudimplementation</em>}</li>
  * </ul>
  *
  * @see ArrowheadDSL.ArrowheadDSLPackage#getSystem_of_LocalcloudsImplementation()
@@ -45,5 +48,23 @@ public interface System_of_LocalcloudsImplementation extends System_of_Locacloud
 	 * @generated
 	 */
 	void setSoLC_Documentation(int value);
+
+	/**
+	 * Returns the value of the '<em><b>Localcloudimplementation</b></em>' reference list.
+	 * The list contents are of type {@link ArrowheadDSL.LocalcloudImplementation}.
+	 * It is bidirectional and its opposite is '{@link ArrowheadDSL.LocalcloudImplementation#getSystem_of_localcloudsimplementation <em>System of localcloudsimplementation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Localcloudimplementation</em>' reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Localcloudimplementation</em>' reference list.
+	 * @see ArrowheadDSL.ArrowheadDSLPackage#getSystem_of_LocalcloudsImplementation_Localcloudimplementation()
+	 * @see ArrowheadDSL.LocalcloudImplementation#getSystem_of_localcloudsimplementation
+	 * @model opposite="system_of_localcloudsimplementation" ordered="false"
+	 * @generated
+	 */
+	EList<LocalcloudImplementation> getLocalcloudimplementation();
 
 } // System_of_LocalcloudsImplementation

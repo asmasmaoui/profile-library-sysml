@@ -15,6 +15,7 @@ import org.eclipse.emf.common.util.EList;
  * <ul>
  *   <li>{@link ArrowheadDSL.IntercloudNetworkDesignDescription#getInterNetworkRouter <em>Inter Network Router</em>}</li>
  *   <li>{@link ArrowheadDSL.IntercloudNetworkDesignDescription#getInterNetworkRouterConfig <em>Inter Network Router Config</em>}</li>
+ *   <li>{@link ArrowheadDSL.IntercloudNetworkDesignDescription#getDevicedesigndescription <em>Devicedesigndescription</em>}</li>
  * </ul>
  *
  * @see ArrowheadDSL.ArrowheadDSLPackage#getIntercloudNetworkDesignDescription()
@@ -53,5 +54,23 @@ public interface IntercloudNetworkDesignDescription extends IntercloudNetworkDes
 	 * @generated
 	 */
 	EList<Integer> getInterNetworkRouterConfig();
+
+	/**
+	 * Returns the value of the '<em><b>Devicedesigndescription</b></em>' reference list.
+	 * The list contents are of type {@link ArrowheadDSL.DeviceDesignDescription}.
+	 * It is bidirectional and its opposite is '{@link ArrowheadDSL.DeviceDesignDescription#getIntercloudnetworkdesigndescription <em>Intercloudnetworkdesigndescription</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Devicedesigndescription</em>' reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Devicedesigndescription</em>' reference list.
+	 * @see ArrowheadDSL.ArrowheadDSLPackage#getIntercloudNetworkDesignDescription_Devicedesigndescription()
+	 * @see ArrowheadDSL.DeviceDesignDescription#getIntercloudnetworkdesigndescription
+	 * @model opposite="intercloudnetworkdesigndescription" ordered="false"
+	 * @generated
+	 */
+	EList<DeviceDesignDescription> getDevicedesigndescription();
 
 } // IntercloudNetworkDesignDescription

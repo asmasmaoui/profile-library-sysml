@@ -4,25 +4,27 @@ package ArrowheadDSL.impl;
 
 import ArrowheadDSL.ArrowheadCertificateKind;
 import ArrowheadDSL.ArrowheadDSLPackage;
-import ArrowheadDSL.DeviceDesign;
 import ArrowheadDSL.DeviceDesignDescription;
-import ArrowheadDSL.IntracloudNetworkDesign;
+import ArrowheadDSL.IntercloudNetworkDesignDescription;
 import ArrowheadDSL.IntracloudNetworkDesignDescription;
-import ArrowheadDSL.MacLayerKind;
 import ArrowheadDSL.OSKind;
 
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
 
+import org.eclipse.emf.common.notify.NotificationChain;
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 import org.eclipse.emf.ecore.util.EDataTypeEList;
 import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
+import org.eclipse.emf.ecore.util.EObjectWithInverseResolvingEList;
+import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,81 +34,18 @@ import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link ArrowheadDSL.impl.DeviceDesignDescriptionImpl#getIntraNetworkDomain <em>Intra Network Domain</em>}</li>
- *   <li>{@link ArrowheadDSL.impl.DeviceDesignDescriptionImpl#getIntraNetworkMacLayer <em>Intra Network Mac Layer</em>}</li>
- *   <li>{@link ArrowheadDSL.impl.DeviceDesignDescriptionImpl#getIntraNetworkRouter <em>Intra Network Router</em>}</li>
- *   <li>{@link ArrowheadDSL.impl.DeviceDesignDescriptionImpl#getIntraNetworkRouterConfig <em>Intra Network Router Config</em>}</li>
- *   <li>{@link ArrowheadDSL.impl.DeviceDesignDescriptionImpl#getDeviceName <em>Device Name</em>}</li>
  *   <li>{@link ArrowheadDSL.impl.DeviceDesignDescriptionImpl#getIOports <em>IOports</em>}</li>
  *   <li>{@link ArrowheadDSL.impl.DeviceDesignDescriptionImpl#getMemory <em>Memory</em>}</li>
  *   <li>{@link ArrowheadDSL.impl.DeviceDesignDescriptionImpl#getProcessor <em>Processor</em>}</li>
  *   <li>{@link ArrowheadDSL.impl.DeviceDesignDescriptionImpl#getOperatingSystem <em>Operating System</em>}</li>
  *   <li>{@link ArrowheadDSL.impl.DeviceDesignDescriptionImpl#getArrowheadCertificate <em>Arrowhead Certificate</em>}</li>
+ *   <li>{@link ArrowheadDSL.impl.DeviceDesignDescriptionImpl#getIntercloudnetworkdesigndescription <em>Intercloudnetworkdesigndescription</em>}</li>
+ *   <li>{@link ArrowheadDSL.impl.DeviceDesignDescriptionImpl#getIntracloudnetworkdesigndescription <em>Intracloudnetworkdesigndescription</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class DeviceDesignDescriptionImpl extends IntercloudNetworkDesignDescriptionImpl implements DeviceDesignDescription {
-	/**
-	 * The default value of the '{@link #getIntraNetworkDomain() <em>Intra Network Domain</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getIntraNetworkDomain()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String INTRA_NETWORK_DOMAIN_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getIntraNetworkDomain() <em>Intra Network Domain</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getIntraNetworkDomain()
-	 * @generated
-	 * @ordered
-	 */
-	protected String intraNetworkDomain = INTRA_NETWORK_DOMAIN_EDEFAULT;
-
-	/**
-	 * The cached value of the '{@link #getIntraNetworkMacLayer() <em>Intra Network Mac Layer</em>}' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getIntraNetworkMacLayer()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<MacLayerKind> intraNetworkMacLayer;
-
-	/**
-	 * The cached value of the '{@link #getIntraNetworkRouter() <em>Intra Network Router</em>}' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getIntraNetworkRouter()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<Integer> intraNetworkRouter;
-
-	/**
-	 * The cached value of the '{@link #getIntraNetworkRouterConfig() <em>Intra Network Router Config</em>}' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getIntraNetworkRouterConfig()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<Integer> intraNetworkRouterConfig;
-
-	/**
-	 * The cached value of the '{@link #getDeviceName() <em>Device Name</em>}' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getDeviceName()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<String> deviceName;
-
+public class DeviceDesignDescriptionImpl extends DeviceDesignImpl implements DeviceDesignDescription {
 	/**
 	 * The cached value of the '{@link #getIOports() <em>IOports</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -178,6 +117,26 @@ public class DeviceDesignDescriptionImpl extends IntercloudNetworkDesignDescript
 	protected ArrowheadCertificateKind arrowheadCertificate = ARROWHEAD_CERTIFICATE_EDEFAULT;
 
 	/**
+	 * The cached value of the '{@link #getIntercloudnetworkdesigndescription() <em>Intercloudnetworkdesigndescription</em>}' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getIntercloudnetworkdesigndescription()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<IntercloudNetworkDesignDescription> intercloudnetworkdesigndescription;
+
+	/**
+	 * The cached value of the '{@link #getIntracloudnetworkdesigndescription() <em>Intracloudnetworkdesigndescription</em>}' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getIntracloudnetworkdesigndescription()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<IntracloudNetworkDesignDescription> intracloudnetworkdesigndescription;
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -194,81 +153,6 @@ public class DeviceDesignDescriptionImpl extends IntercloudNetworkDesignDescript
 	@Override
 	protected EClass eStaticClass() {
 		return ArrowheadDSLPackage.Literals.DEVICE_DESIGN_DESCRIPTION;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String getIntraNetworkDomain() {
-		return intraNetworkDomain;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setIntraNetworkDomain(String newIntraNetworkDomain) {
-		String oldIntraNetworkDomain = intraNetworkDomain;
-		intraNetworkDomain = newIntraNetworkDomain;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__INTRA_NETWORK_DOMAIN, oldIntraNetworkDomain, intraNetworkDomain));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<MacLayerKind> getIntraNetworkMacLayer() {
-		if (intraNetworkMacLayer == null) {
-			intraNetworkMacLayer = new EDataTypeEList<MacLayerKind>(MacLayerKind.class, this, ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__INTRA_NETWORK_MAC_LAYER);
-		}
-		return intraNetworkMacLayer;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<Integer> getIntraNetworkRouter() {
-		if (intraNetworkRouter == null) {
-			intraNetworkRouter = new EDataTypeEList<Integer>(Integer.class, this, ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__INTRA_NETWORK_ROUTER);
-		}
-		return intraNetworkRouter;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<Integer> getIntraNetworkRouterConfig() {
-		if (intraNetworkRouterConfig == null) {
-			intraNetworkRouterConfig = new EDataTypeEList<Integer>(Integer.class, this, ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__INTRA_NETWORK_ROUTER_CONFIG);
-		}
-		return intraNetworkRouterConfig;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<String> getDeviceName() {
-		if (deviceName == null) {
-			deviceName = new EDataTypeUniqueEList<String>(String.class, this, ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__DEVICE_NAME);
-		}
-		return deviceName;
 	}
 
 	/**
@@ -362,18 +246,67 @@ public class DeviceDesignDescriptionImpl extends IntercloudNetworkDesignDescript
 	 * @generated
 	 */
 	@Override
+	public EList<IntercloudNetworkDesignDescription> getIntercloudnetworkdesigndescription() {
+		if (intercloudnetworkdesigndescription == null) {
+			intercloudnetworkdesigndescription = new EObjectWithInverseResolvingEList.ManyInverse<IntercloudNetworkDesignDescription>(IntercloudNetworkDesignDescription.class, this, ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__INTERCLOUDNETWORKDESIGNDESCRIPTION, ArrowheadDSLPackage.INTERCLOUD_NETWORK_DESIGN_DESCRIPTION__DEVICEDESIGNDESCRIPTION);
+		}
+		return intercloudnetworkdesigndescription;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EList<IntracloudNetworkDesignDescription> getIntracloudnetworkdesigndescription() {
+		if (intracloudnetworkdesigndescription == null) {
+			intracloudnetworkdesigndescription = new EObjectWithInverseResolvingEList.ManyInverse<IntracloudNetworkDesignDescription>(IntracloudNetworkDesignDescription.class, this, ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__INTRACLOUDNETWORKDESIGNDESCRIPTION, ArrowheadDSLPackage.INTRACLOUD_NETWORK_DESIGN_DESCRIPTION__DEVICEDESIGNDESCRIPTION);
+		}
+		return intracloudnetworkdesigndescription;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__INTERCLOUDNETWORKDESIGNDESCRIPTION:
+				return ((InternalEList<InternalEObject>)(InternalEList<?>)getIntercloudnetworkdesigndescription()).basicAdd(otherEnd, msgs);
+			case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__INTRACLOUDNETWORKDESIGNDESCRIPTION:
+				return ((InternalEList<InternalEObject>)(InternalEList<?>)getIntracloudnetworkdesigndescription()).basicAdd(otherEnd, msgs);
+		}
+		return super.eInverseAdd(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__INTERCLOUDNETWORKDESIGNDESCRIPTION:
+				return ((InternalEList<?>)getIntercloudnetworkdesigndescription()).basicRemove(otherEnd, msgs);
+			case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__INTRACLOUDNETWORKDESIGNDESCRIPTION:
+				return ((InternalEList<?>)getIntracloudnetworkdesigndescription()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__INTRA_NETWORK_DOMAIN:
-				return getIntraNetworkDomain();
-			case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__INTRA_NETWORK_MAC_LAYER:
-				return getIntraNetworkMacLayer();
-			case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__INTRA_NETWORK_ROUTER:
-				return getIntraNetworkRouter();
-			case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__INTRA_NETWORK_ROUTER_CONFIG:
-				return getIntraNetworkRouterConfig();
-			case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__DEVICE_NAME:
-				return getDeviceName();
 			case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__IOPORTS:
 				return getIOports();
 			case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__MEMORY:
@@ -384,6 +317,10 @@ public class DeviceDesignDescriptionImpl extends IntercloudNetworkDesignDescript
 				return getOperatingSystem();
 			case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__ARROWHEAD_CERTIFICATE:
 				return getArrowheadCertificate();
+			case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__INTERCLOUDNETWORKDESIGNDESCRIPTION:
+				return getIntercloudnetworkdesigndescription();
+			case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__INTRACLOUDNETWORKDESIGNDESCRIPTION:
+				return getIntracloudnetworkdesigndescription();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -397,25 +334,6 @@ public class DeviceDesignDescriptionImpl extends IntercloudNetworkDesignDescript
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__INTRA_NETWORK_DOMAIN:
-				setIntraNetworkDomain((String)newValue);
-				return;
-			case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__INTRA_NETWORK_MAC_LAYER:
-				getIntraNetworkMacLayer().clear();
-				getIntraNetworkMacLayer().addAll((Collection<? extends MacLayerKind>)newValue);
-				return;
-			case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__INTRA_NETWORK_ROUTER:
-				getIntraNetworkRouter().clear();
-				getIntraNetworkRouter().addAll((Collection<? extends Integer>)newValue);
-				return;
-			case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__INTRA_NETWORK_ROUTER_CONFIG:
-				getIntraNetworkRouterConfig().clear();
-				getIntraNetworkRouterConfig().addAll((Collection<? extends Integer>)newValue);
-				return;
-			case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__DEVICE_NAME:
-				getDeviceName().clear();
-				getDeviceName().addAll((Collection<? extends String>)newValue);
-				return;
 			case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__IOPORTS:
 				getIOports().clear();
 				getIOports().addAll((Collection<? extends String>)newValue);
@@ -434,6 +352,14 @@ public class DeviceDesignDescriptionImpl extends IntercloudNetworkDesignDescript
 			case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__ARROWHEAD_CERTIFICATE:
 				setArrowheadCertificate((ArrowheadCertificateKind)newValue);
 				return;
+			case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__INTERCLOUDNETWORKDESIGNDESCRIPTION:
+				getIntercloudnetworkdesigndescription().clear();
+				getIntercloudnetworkdesigndescription().addAll((Collection<? extends IntercloudNetworkDesignDescription>)newValue);
+				return;
+			case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__INTRACLOUDNETWORKDESIGNDESCRIPTION:
+				getIntracloudnetworkdesigndescription().clear();
+				getIntracloudnetworkdesigndescription().addAll((Collection<? extends IntracloudNetworkDesignDescription>)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -446,21 +372,6 @@ public class DeviceDesignDescriptionImpl extends IntercloudNetworkDesignDescript
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__INTRA_NETWORK_DOMAIN:
-				setIntraNetworkDomain(INTRA_NETWORK_DOMAIN_EDEFAULT);
-				return;
-			case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__INTRA_NETWORK_MAC_LAYER:
-				getIntraNetworkMacLayer().clear();
-				return;
-			case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__INTRA_NETWORK_ROUTER:
-				getIntraNetworkRouter().clear();
-				return;
-			case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__INTRA_NETWORK_ROUTER_CONFIG:
-				getIntraNetworkRouterConfig().clear();
-				return;
-			case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__DEVICE_NAME:
-				getDeviceName().clear();
-				return;
 			case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__IOPORTS:
 				getIOports().clear();
 				return;
@@ -476,6 +387,12 @@ public class DeviceDesignDescriptionImpl extends IntercloudNetworkDesignDescript
 			case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__ARROWHEAD_CERTIFICATE:
 				setArrowheadCertificate(ARROWHEAD_CERTIFICATE_EDEFAULT);
 				return;
+			case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__INTERCLOUDNETWORKDESIGNDESCRIPTION:
+				getIntercloudnetworkdesigndescription().clear();
+				return;
+			case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__INTRACLOUDNETWORKDESIGNDESCRIPTION:
+				getIntracloudnetworkdesigndescription().clear();
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -488,16 +405,6 @@ public class DeviceDesignDescriptionImpl extends IntercloudNetworkDesignDescript
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__INTRA_NETWORK_DOMAIN:
-				return INTRA_NETWORK_DOMAIN_EDEFAULT == null ? intraNetworkDomain != null : !INTRA_NETWORK_DOMAIN_EDEFAULT.equals(intraNetworkDomain);
-			case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__INTRA_NETWORK_MAC_LAYER:
-				return intraNetworkMacLayer != null && !intraNetworkMacLayer.isEmpty();
-			case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__INTRA_NETWORK_ROUTER:
-				return intraNetworkRouter != null && !intraNetworkRouter.isEmpty();
-			case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__INTRA_NETWORK_ROUTER_CONFIG:
-				return intraNetworkRouterConfig != null && !intraNetworkRouterConfig.isEmpty();
-			case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__DEVICE_NAME:
-				return deviceName != null && !deviceName.isEmpty();
 			case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__IOPORTS:
 				return iOports != null && !iOports.isEmpty();
 			case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__MEMORY:
@@ -508,68 +415,12 @@ public class DeviceDesignDescriptionImpl extends IntercloudNetworkDesignDescript
 				return operatingSystem != OPERATING_SYSTEM_EDEFAULT;
 			case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__ARROWHEAD_CERTIFICATE:
 				return arrowheadCertificate != ARROWHEAD_CERTIFICATE_EDEFAULT;
+			case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__INTERCLOUDNETWORKDESIGNDESCRIPTION:
+				return intercloudnetworkdesigndescription != null && !intercloudnetworkdesigndescription.isEmpty();
+			case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__INTRACLOUDNETWORKDESIGNDESCRIPTION:
+				return intracloudnetworkdesigndescription != null && !intracloudnetworkdesigndescription.isEmpty();
 		}
 		return super.eIsSet(featureID);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public int eBaseStructuralFeatureID(int derivedFeatureID, Class<?> baseClass) {
-		if (baseClass == IntracloudNetworkDesign.class) {
-			switch (derivedFeatureID) {
-				case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__INTRA_NETWORK_DOMAIN: return ArrowheadDSLPackage.INTRACLOUD_NETWORK_DESIGN__INTRA_NETWORK_DOMAIN;
-				case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__INTRA_NETWORK_MAC_LAYER: return ArrowheadDSLPackage.INTRACLOUD_NETWORK_DESIGN__INTRA_NETWORK_MAC_LAYER;
-				default: return -1;
-			}
-		}
-		if (baseClass == IntracloudNetworkDesignDescription.class) {
-			switch (derivedFeatureID) {
-				case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__INTRA_NETWORK_ROUTER: return ArrowheadDSLPackage.INTRACLOUD_NETWORK_DESIGN_DESCRIPTION__INTRA_NETWORK_ROUTER;
-				case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__INTRA_NETWORK_ROUTER_CONFIG: return ArrowheadDSLPackage.INTRACLOUD_NETWORK_DESIGN_DESCRIPTION__INTRA_NETWORK_ROUTER_CONFIG;
-				default: return -1;
-			}
-		}
-		if (baseClass == DeviceDesign.class) {
-			switch (derivedFeatureID) {
-				case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__DEVICE_NAME: return ArrowheadDSLPackage.DEVICE_DESIGN__DEVICE_NAME;
-				default: return -1;
-			}
-		}
-		return super.eBaseStructuralFeatureID(derivedFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public int eDerivedStructuralFeatureID(int baseFeatureID, Class<?> baseClass) {
-		if (baseClass == IntracloudNetworkDesign.class) {
-			switch (baseFeatureID) {
-				case ArrowheadDSLPackage.INTRACLOUD_NETWORK_DESIGN__INTRA_NETWORK_DOMAIN: return ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__INTRA_NETWORK_DOMAIN;
-				case ArrowheadDSLPackage.INTRACLOUD_NETWORK_DESIGN__INTRA_NETWORK_MAC_LAYER: return ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__INTRA_NETWORK_MAC_LAYER;
-				default: return -1;
-			}
-		}
-		if (baseClass == IntracloudNetworkDesignDescription.class) {
-			switch (baseFeatureID) {
-				case ArrowheadDSLPackage.INTRACLOUD_NETWORK_DESIGN_DESCRIPTION__INTRA_NETWORK_ROUTER: return ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__INTRA_NETWORK_ROUTER;
-				case ArrowheadDSLPackage.INTRACLOUD_NETWORK_DESIGN_DESCRIPTION__INTRA_NETWORK_ROUTER_CONFIG: return ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__INTRA_NETWORK_ROUTER_CONFIG;
-				default: return -1;
-			}
-		}
-		if (baseClass == DeviceDesign.class) {
-			switch (baseFeatureID) {
-				case ArrowheadDSLPackage.DEVICE_DESIGN__DEVICE_NAME: return ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__DEVICE_NAME;
-				default: return -1;
-			}
-		}
-		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
 	}
 
 	/**
@@ -582,17 +433,7 @@ public class DeviceDesignDescriptionImpl extends IntercloudNetworkDesignDescript
 		if (eIsProxy()) return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (IntraNetworkDomain: ");
-		result.append(intraNetworkDomain);
-		result.append(", IntraNetworkMacLayer: ");
-		result.append(intraNetworkMacLayer);
-		result.append(", IntraNetworkRouter: ");
-		result.append(intraNetworkRouter);
-		result.append(", IntraNetworkRouterConfig: ");
-		result.append(intraNetworkRouterConfig);
-		result.append(", DeviceName: ");
-		result.append(deviceName);
-		result.append(", IOports: ");
+		result.append(" (IOports: ");
 		result.append(iOports);
 		result.append(", memory: ");
 		result.append(memory);

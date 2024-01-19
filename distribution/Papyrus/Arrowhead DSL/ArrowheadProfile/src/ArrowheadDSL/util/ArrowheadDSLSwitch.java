@@ -10,6 +10,8 @@ import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.util.Switch;
 
 import org.eclipse.papyrus.sysml16.blocks.Block;
+import org.eclipse.papyrus.sysml16.requirements.AbstractRequirement;
+import org.eclipse.papyrus.sysml16.requirements.Requirement;
 
 /**
  * <!-- begin-user-doc -->
@@ -82,20 +84,6 @@ public class ArrowheadDSLSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case ArrowheadDSLPackage.ARROWHEAD_DSL_REQUIREMENT: {
-				ArrowheadDSLRequirement arrowheadDSLRequirement = (ArrowheadDSLRequirement)theEObject;
-				T result = caseArrowheadDSLRequirement(arrowheadDSLRequirement);
-				if (result == null) result = caseBlock(arrowheadDSLRequirement);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case ArrowheadDSLPackage.ARROWHEAD_USE_CASE: {
-				ArrowheadUseCase arrowheadUseCase = (ArrowheadUseCase)theEObject;
-				T result = caseArrowheadUseCase(arrowheadUseCase);
-				if (result == null) result = caseBlock(arrowheadUseCase);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case ArrowheadDSLPackage.LOCAL_CLOUD_DESIGN: {
 				LocalCloudDesign localCloudDesign = (LocalCloudDesign)theEObject;
 				T result = caseLocalCloudDesign(localCloudDesign);
@@ -110,17 +98,24 @@ public class ArrowheadDSLSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case ArrowheadDSLPackage.ARROWHEAD_DSL_REQUIREMENT: {
+				ArrowheadDSLRequirement arrowheadDSLRequirement = (ArrowheadDSLRequirement)theEObject;
+				T result = caseArrowheadDSLRequirement(arrowheadDSLRequirement);
+				if (result == null) result = caseRequirement(arrowheadDSLRequirement);
+				if (result == null) result = caseAbstractRequirement(arrowheadDSLRequirement);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ArrowheadDSLPackage.ARROWHEAD_USE_CASE: {
+				ArrowheadUseCase arrowheadUseCase = (ArrowheadUseCase)theEObject;
+				T result = caseArrowheadUseCase(arrowheadUseCase);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case ArrowheadDSLPackage.DEVICE_DESIGN: {
 				DeviceDesign deviceDesign = (DeviceDesign)theEObject;
 				T result = caseDeviceDesign(deviceDesign);
 				if (result == null) result = caseBlock(deviceDesign);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case ArrowheadDSLPackage.INTRACLOUD_NETWORK_DESIGN: {
-				IntracloudNetworkDesign intracloudNetworkDesign = (IntracloudNetworkDesign)theEObject;
-				T result = caseIntracloudNetworkDesign(intracloudNetworkDesign);
-				if (result == null) result = caseBlock(intracloudNetworkDesign);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -131,23 +126,18 @@ public class ArrowheadDSLSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION: {
-				DeviceDesignDescription deviceDesignDescription = (DeviceDesignDescription)theEObject;
-				T result = caseDeviceDesignDescription(deviceDesignDescription);
-				if (result == null) result = caseIntercloudNetworkDesignDescription(deviceDesignDescription);
-				if (result == null) result = caseIntracloudNetworkDesignDescription(deviceDesignDescription);
-				if (result == null) result = caseDeviceDesign(deviceDesignDescription);
-				if (result == null) result = caseIntercloudNetworkDesign(deviceDesignDescription);
-				if (result == null) result = caseIntracloudNetworkDesign(deviceDesignDescription);
-				if (result == null) result = caseBlock(deviceDesignDescription);
+			case ArrowheadDSLPackage.INTRACLOUD_NETWORK_DESIGN: {
+				IntracloudNetworkDesign intracloudNetworkDesign = (IntracloudNetworkDesign)theEObject;
+				T result = caseIntracloudNetworkDesign(intracloudNetworkDesign);
+				if (result == null) result = caseBlock(intracloudNetworkDesign);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case ArrowheadDSLPackage.INTRACLOUD_NETWORK_DESIGN_DESCRIPTION: {
-				IntracloudNetworkDesignDescription intracloudNetworkDesignDescription = (IntracloudNetworkDesignDescription)theEObject;
-				T result = caseIntracloudNetworkDesignDescription(intracloudNetworkDesignDescription);
-				if (result == null) result = caseIntracloudNetworkDesign(intracloudNetworkDesignDescription);
-				if (result == null) result = caseBlock(intracloudNetworkDesignDescription);
+			case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION: {
+				DeviceDesignDescription deviceDesignDescription = (DeviceDesignDescription)theEObject;
+				T result = caseDeviceDesignDescription(deviceDesignDescription);
+				if (result == null) result = caseDeviceDesign(deviceDesignDescription);
+				if (result == null) result = caseBlock(deviceDesignDescription);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -156,6 +146,14 @@ public class ArrowheadDSLSwitch<T> extends Switch<T> {
 				T result = caseIntercloudNetworkDesignDescription(intercloudNetworkDesignDescription);
 				if (result == null) result = caseIntercloudNetworkDesign(intercloudNetworkDesignDescription);
 				if (result == null) result = caseBlock(intercloudNetworkDesignDescription);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ArrowheadDSLPackage.INTRACLOUD_NETWORK_DESIGN_DESCRIPTION: {
+				IntracloudNetworkDesignDescription intracloudNetworkDesignDescription = (IntracloudNetworkDesignDescription)theEObject;
+				T result = caseIntracloudNetworkDesignDescription(intracloudNetworkDesignDescription);
+				if (result == null) result = caseIntracloudNetworkDesign(intracloudNetworkDesignDescription);
+				if (result == null) result = caseBlock(intracloudNetworkDesignDescription);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -172,6 +170,22 @@ public class ArrowheadDSLSwitch<T> extends Switch<T> {
 				T result = caseSystem_of_LocacloudsDesignDescription(system_of_LocacloudsDesignDescription);
 				if (result == null) result = caseSystem_of_LocalcloudsDesign(system_of_LocacloudsDesignDescription);
 				if (result == null) result = caseBlock(system_of_LocacloudsDesignDescription);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ArrowheadDSLPackage.SYS_DD: {
+				SysDD sysDD = (SysDD)theEObject;
+				T result = caseSysDD(sysDD);
+				if (result == null) result = caseSysD(sysDD);
+				if (result == null) result = caseBlock(sysDD);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ArrowheadDSLPackage.IDD: {
+				IDD idd = (IDD)theEObject;
+				T result = caseIDD(idd);
+				if (result == null) result = caseSD(idd);
+				if (result == null) result = caseBlock(idd);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -202,28 +216,12 @@ public class ArrowheadDSLSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case ArrowheadDSLPackage.SYS_DD: {
-				SysDD sysDD = (SysDD)theEObject;
-				T result = caseSysDD(sysDD);
-				if (result == null) result = caseSysD(sysDD);
-				if (result == null) result = caseBlock(sysDD);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case ArrowheadDSLPackage.IDD_IMPLEMENTATION: {
 				IDD_Implementation idD_Implementation = (IDD_Implementation)theEObject;
 				T result = caseIDD_Implementation(idD_Implementation);
 				if (result == null) result = caseIDD(idD_Implementation);
 				if (result == null) result = caseSD(idD_Implementation);
 				if (result == null) result = caseBlock(idD_Implementation);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case ArrowheadDSLPackage.IDD: {
-				IDD idd = (IDD)theEObject;
-				T result = caseIDD(idd);
-				if (result == null) result = caseSD(idd);
-				if (result == null) result = caseBlock(idd);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -543,6 +541,36 @@ public class ArrowheadDSLSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseBlock(Block object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Abstract Requirement</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Abstract Requirement</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAbstractRequirement(AbstractRequirement object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Requirement</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Requirement</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseRequirement(Requirement object) {
 		return null;
 	}
 

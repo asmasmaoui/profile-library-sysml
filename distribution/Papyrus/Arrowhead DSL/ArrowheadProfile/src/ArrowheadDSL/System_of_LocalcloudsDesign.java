@@ -19,6 +19,7 @@ import org.eclipse.papyrus.sysml16.blocks.Block;
  *   <li>{@link ArrowheadDSL.System_of_LocalcloudsDesign#getSoLC_SecurityStrategy <em>So LC Security Strategy</em>}</li>
  *   <li>{@link ArrowheadDSL.System_of_LocalcloudsDesign#getSoLC_BusinessStrategy <em>So LC Business Strategy</em>}</li>
  *   <li>{@link ArrowheadDSL.System_of_LocalcloudsDesign#getSoLC_LifecycleStrategy <em>So LC Lifecycle Strategy</em>}</li>
+ *   <li>{@link ArrowheadDSL.System_of_LocalcloudsDesign#getLocalclouddesign <em>Localclouddesign</em>}</li>
  * </ul>
  *
  * @see ArrowheadDSL.ArrowheadDSLPackage#getSystem_of_LocalcloudsDesign()
@@ -117,5 +118,23 @@ public interface System_of_LocalcloudsDesign extends Block {
 	 * @generated
 	 */
 	void setSoLC_LifecycleStrategy(LifecyclePolicyKind value);
+
+	/**
+	 * Returns the value of the '<em><b>Localclouddesign</b></em>' reference list.
+	 * The list contents are of type {@link ArrowheadDSL.LocalCloudDesign}.
+	 * It is bidirectional and its opposite is '{@link ArrowheadDSL.LocalCloudDesign#getSystem_of_localcloudsdesign <em>System of localcloudsdesign</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Localclouddesign</em>' reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Localclouddesign</em>' reference list.
+	 * @see ArrowheadDSL.ArrowheadDSLPackage#getSystem_of_LocalcloudsDesign_Localclouddesign()
+	 * @see ArrowheadDSL.LocalCloudDesign#getSystem_of_localcloudsdesign
+	 * @model opposite="system_of_localcloudsdesign" ordered="false"
+	 * @generated
+	 */
+	EList<LocalCloudDesign> getLocalclouddesign();
 
 } // System_of_LocalcloudsDesign

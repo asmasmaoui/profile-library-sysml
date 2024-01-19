@@ -4,6 +4,8 @@ package ArrowheadDSL.impl;
 
 import ArrowheadDSL.ArrowheadDSLPackage;
 import ArrowheadDSL.BusinessPolicyKind;
+import ArrowheadDSL.LocalCloudDesign;
+import ArrowheadDSL.SD;
 import ArrowheadDSL.SysD;
 import ArrowheadDSL.SystemDatabaseKind;
 
@@ -11,15 +13,19 @@ import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
 
+import org.eclipse.emf.common.notify.NotificationChain;
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 import org.eclipse.emf.ecore.util.EDataTypeEList;
 import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
 
+import org.eclipse.emf.ecore.util.EObjectWithInverseResolvingEList;
+import org.eclipse.emf.ecore.util.InternalEList;
 import org.eclipse.papyrus.sysml16.blocks.internal.impl.BlockImpl;
 
 /**
@@ -34,6 +40,8 @@ import org.eclipse.papyrus.sysml16.blocks.internal.impl.BlockImpl;
  *   <li>{@link ArrowheadDSL.impl.SysDImpl#getFunctionalProperties <em>Functional Properties</em>}</li>
  *   <li>{@link ArrowheadDSL.impl.SysDImpl#getSystemDatabase <em>System Database</em>}</li>
  *   <li>{@link ArrowheadDSL.impl.SysDImpl#getMicrosystemBehaviour <em>Microsystem Behaviour</em>}</li>
+ *   <li>{@link ArrowheadDSL.impl.SysDImpl#getSd <em>Sd</em>}</li>
+ *   <li>{@link ArrowheadDSL.impl.SysDImpl#getLocalclouddesign <em>Localclouddesign</em>}</li>
  * </ul>
  *
  * @generated
@@ -88,6 +96,26 @@ public class SysDImpl extends BlockImpl implements SysD {
 	 * @ordered
 	 */
 	protected EList<BusinessPolicyKind> microsystemBehaviour;
+
+	/**
+	 * The cached value of the '{@link #getSd() <em>Sd</em>}' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSd()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<SD> sd;
+
+	/**
+	 * The cached value of the '{@link #getLocalclouddesign() <em>Localclouddesign</em>}' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getLocalclouddesign()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<LocalCloudDesign> localclouddesign;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -176,6 +204,65 @@ public class SysDImpl extends BlockImpl implements SysD {
 	 * @generated
 	 */
 	@Override
+	public EList<SD> getSd() {
+		if (sd == null) {
+			sd = new EObjectWithInverseResolvingEList.ManyInverse<SD>(SD.class, this, ArrowheadDSLPackage.SYS_D__SD, ArrowheadDSLPackage.SD__SYSD);
+		}
+		return sd;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EList<LocalCloudDesign> getLocalclouddesign() {
+		if (localclouddesign == null) {
+			localclouddesign = new EObjectWithInverseResolvingEList.ManyInverse<LocalCloudDesign>(LocalCloudDesign.class, this, ArrowheadDSLPackage.SYS_D__LOCALCLOUDDESIGN, ArrowheadDSLPackage.LOCAL_CLOUD_DESIGN__SYSD);
+		}
+		return localclouddesign;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case ArrowheadDSLPackage.SYS_D__SD:
+				return ((InternalEList<InternalEObject>)(InternalEList<?>)getSd()).basicAdd(otherEnd, msgs);
+			case ArrowheadDSLPackage.SYS_D__LOCALCLOUDDESIGN:
+				return ((InternalEList<InternalEObject>)(InternalEList<?>)getLocalclouddesign()).basicAdd(otherEnd, msgs);
+		}
+		return super.eInverseAdd(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case ArrowheadDSLPackage.SYS_D__SD:
+				return ((InternalEList<?>)getSd()).basicRemove(otherEnd, msgs);
+			case ArrowheadDSLPackage.SYS_D__LOCALCLOUDDESIGN:
+				return ((InternalEList<?>)getLocalclouddesign()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case ArrowheadDSLPackage.SYS_D__MICROSYSTEM_NAME:
@@ -186,6 +273,10 @@ public class SysDImpl extends BlockImpl implements SysD {
 				return getSystemDatabase();
 			case ArrowheadDSLPackage.SYS_D__MICROSYSTEM_BEHAVIOUR:
 				return getMicrosystemBehaviour();
+			case ArrowheadDSLPackage.SYS_D__SD:
+				return getSd();
+			case ArrowheadDSLPackage.SYS_D__LOCALCLOUDDESIGN:
+				return getLocalclouddesign();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -214,6 +305,14 @@ public class SysDImpl extends BlockImpl implements SysD {
 				getMicrosystemBehaviour().clear();
 				getMicrosystemBehaviour().addAll((Collection<? extends BusinessPolicyKind>)newValue);
 				return;
+			case ArrowheadDSLPackage.SYS_D__SD:
+				getSd().clear();
+				getSd().addAll((Collection<? extends SD>)newValue);
+				return;
+			case ArrowheadDSLPackage.SYS_D__LOCALCLOUDDESIGN:
+				getLocalclouddesign().clear();
+				getLocalclouddesign().addAll((Collection<? extends LocalCloudDesign>)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -238,6 +337,12 @@ public class SysDImpl extends BlockImpl implements SysD {
 			case ArrowheadDSLPackage.SYS_D__MICROSYSTEM_BEHAVIOUR:
 				getMicrosystemBehaviour().clear();
 				return;
+			case ArrowheadDSLPackage.SYS_D__SD:
+				getSd().clear();
+				return;
+			case ArrowheadDSLPackage.SYS_D__LOCALCLOUDDESIGN:
+				getLocalclouddesign().clear();
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -258,6 +363,10 @@ public class SysDImpl extends BlockImpl implements SysD {
 				return systemDatabase != SYSTEM_DATABASE_EDEFAULT;
 			case ArrowheadDSLPackage.SYS_D__MICROSYSTEM_BEHAVIOUR:
 				return microsystemBehaviour != null && !microsystemBehaviour.isEmpty();
+			case ArrowheadDSLPackage.SYS_D__SD:
+				return sd != null && !sd.isEmpty();
+			case ArrowheadDSLPackage.SYS_D__LOCALCLOUDDESIGN:
+				return localclouddesign != null && !localclouddesign.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

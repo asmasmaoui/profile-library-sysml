@@ -3,13 +3,20 @@
 package ArrowheadDSL.impl;
 
 import ArrowheadDSL.ArrowheadDSLPackage;
+import ArrowheadDSL.LocalcloudDesignDescription;
 import ArrowheadDSL.System_of_LocacloudsDesignDescription;
 
+import java.util.Collection;
 import org.eclipse.emf.common.notify.Notification;
 
+import org.eclipse.emf.common.notify.NotificationChain;
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.util.EObjectWithInverseResolvingEList;
+import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -21,6 +28,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <ul>
  *   <li>{@link ArrowheadDSL.impl.System_of_LocacloudsDesignDescriptionImpl#getSoLC_Orchestration <em>So LC Orchestration</em>}</li>
  *   <li>{@link ArrowheadDSL.impl.System_of_LocacloudsDesignDescriptionImpl#getSoLC_Workflow <em>So LC Workflow</em>}</li>
+ *   <li>{@link ArrowheadDSL.impl.System_of_LocacloudsDesignDescriptionImpl#getLocalclouddesigndescription <em>Localclouddesigndescription</em>}</li>
  * </ul>
  *
  * @generated
@@ -65,6 +73,16 @@ public class System_of_LocacloudsDesignDescriptionImpl extends System_of_Localcl
 	 * @ordered
 	 */
 	protected String soLC_Workflow = SO_LC_WORKFLOW_EDEFAULT;
+
+	/**
+	 * The cached value of the '{@link #getLocalclouddesigndescription() <em>Localclouddesigndescription</em>}' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getLocalclouddesigndescription()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<LocalcloudDesignDescription> localclouddesigndescription;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -137,12 +155,56 @@ public class System_of_LocacloudsDesignDescriptionImpl extends System_of_Localcl
 	 * @generated
 	 */
 	@Override
+	public EList<LocalcloudDesignDescription> getLocalclouddesigndescription() {
+		if (localclouddesigndescription == null) {
+			localclouddesigndescription = new EObjectWithInverseResolvingEList.ManyInverse<LocalcloudDesignDescription>(LocalcloudDesignDescription.class, this, ArrowheadDSLPackage.SYSTEM_OF_LOCACLOUDS_DESIGN_DESCRIPTION__LOCALCLOUDDESIGNDESCRIPTION, ArrowheadDSLPackage.LOCALCLOUD_DESIGN_DESCRIPTION__SYSTEMOFLOCACLOUDDESIGNDESCRIPTION);
+		}
+		return localclouddesigndescription;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case ArrowheadDSLPackage.SYSTEM_OF_LOCACLOUDS_DESIGN_DESCRIPTION__LOCALCLOUDDESIGNDESCRIPTION:
+				return ((InternalEList<InternalEObject>)(InternalEList<?>)getLocalclouddesigndescription()).basicAdd(otherEnd, msgs);
+		}
+		return super.eInverseAdd(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case ArrowheadDSLPackage.SYSTEM_OF_LOCACLOUDS_DESIGN_DESCRIPTION__LOCALCLOUDDESIGNDESCRIPTION:
+				return ((InternalEList<?>)getLocalclouddesigndescription()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case ArrowheadDSLPackage.SYSTEM_OF_LOCACLOUDS_DESIGN_DESCRIPTION__SO_LC_ORCHESTRATION:
 				return getSoLC_Orchestration();
 			case ArrowheadDSLPackage.SYSTEM_OF_LOCACLOUDS_DESIGN_DESCRIPTION__SO_LC_WORKFLOW:
 				return getSoLC_Workflow();
+			case ArrowheadDSLPackage.SYSTEM_OF_LOCACLOUDS_DESIGN_DESCRIPTION__LOCALCLOUDDESIGNDESCRIPTION:
+				return getLocalclouddesigndescription();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -152,6 +214,7 @@ public class System_of_LocacloudsDesignDescriptionImpl extends System_of_Localcl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
@@ -160,6 +223,10 @@ public class System_of_LocacloudsDesignDescriptionImpl extends System_of_Localcl
 				return;
 			case ArrowheadDSLPackage.SYSTEM_OF_LOCACLOUDS_DESIGN_DESCRIPTION__SO_LC_WORKFLOW:
 				setSoLC_Workflow((String)newValue);
+				return;
+			case ArrowheadDSLPackage.SYSTEM_OF_LOCACLOUDS_DESIGN_DESCRIPTION__LOCALCLOUDDESIGNDESCRIPTION:
+				getLocalclouddesigndescription().clear();
+				getLocalclouddesigndescription().addAll((Collection<? extends LocalcloudDesignDescription>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -179,6 +246,9 @@ public class System_of_LocacloudsDesignDescriptionImpl extends System_of_Localcl
 			case ArrowheadDSLPackage.SYSTEM_OF_LOCACLOUDS_DESIGN_DESCRIPTION__SO_LC_WORKFLOW:
 				setSoLC_Workflow(SO_LC_WORKFLOW_EDEFAULT);
 				return;
+			case ArrowheadDSLPackage.SYSTEM_OF_LOCACLOUDS_DESIGN_DESCRIPTION__LOCALCLOUDDESIGNDESCRIPTION:
+				getLocalclouddesigndescription().clear();
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -195,6 +265,8 @@ public class System_of_LocacloudsDesignDescriptionImpl extends System_of_Localcl
 				return SO_LC_ORCHESTRATION_EDEFAULT == null ? soLC_Orchestration != null : !SO_LC_ORCHESTRATION_EDEFAULT.equals(soLC_Orchestration);
 			case ArrowheadDSLPackage.SYSTEM_OF_LOCACLOUDS_DESIGN_DESCRIPTION__SO_LC_WORKFLOW:
 				return SO_LC_WORKFLOW_EDEFAULT == null ? soLC_Workflow != null : !SO_LC_WORKFLOW_EDEFAULT.equals(soLC_Workflow);
+			case ArrowheadDSLPackage.SYSTEM_OF_LOCACLOUDS_DESIGN_DESCRIPTION__LOCALCLOUDDESIGNDESCRIPTION:
+				return localclouddesigndescription != null && !localclouddesigndescription.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

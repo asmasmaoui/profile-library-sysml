@@ -17,6 +17,7 @@ import org.eclipse.papyrus.sysml16.blocks.Block;
  * <ul>
  *   <li>{@link ArrowheadDSL.IntercloudNetworkDesign#getInterNetworkDomainName <em>Inter Network Domain Name</em>}</li>
  *   <li>{@link ArrowheadDSL.IntercloudNetworkDesign#getInterNetworkMacLayer <em>Inter Network Mac Layer</em>}</li>
+ *   <li>{@link ArrowheadDSL.IntercloudNetworkDesign#getDevicedesign <em>Devicedesign</em>}</li>
  * </ul>
  *
  * @see ArrowheadDSL.ArrowheadDSLPackage#getIntercloudNetworkDesign()
@@ -57,5 +58,23 @@ public interface IntercloudNetworkDesign extends Block {
 	 * @generated
 	 */
 	EList<MacLayerKind> getInterNetworkMacLayer();
+
+	/**
+	 * Returns the value of the '<em><b>Devicedesign</b></em>' reference list.
+	 * The list contents are of type {@link ArrowheadDSL.DeviceDesign}.
+	 * It is bidirectional and its opposite is '{@link ArrowheadDSL.DeviceDesign#getIntercloudnetworkdesign <em>Intercloudnetworkdesign</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Devicedesign</em>' reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Devicedesign</em>' reference list.
+	 * @see ArrowheadDSL.ArrowheadDSLPackage#getIntercloudNetworkDesign_Devicedesign()
+	 * @see ArrowheadDSL.DeviceDesign#getIntercloudnetworkdesign
+	 * @model opposite="intercloudnetworkdesign" ordered="false"
+	 * @generated
+	 */
+	EList<DeviceDesign> getDevicedesign();
 
 } // IntercloudNetworkDesign

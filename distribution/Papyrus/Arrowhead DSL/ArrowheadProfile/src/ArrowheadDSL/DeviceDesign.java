@@ -16,6 +16,8 @@ import org.eclipse.papyrus.sysml16.blocks.Block;
  * </p>
  * <ul>
  *   <li>{@link ArrowheadDSL.DeviceDesign#getDeviceName <em>Device Name</em>}</li>
+ *   <li>{@link ArrowheadDSL.DeviceDesign#getIntercloudnetworkdesign <em>Intercloudnetworkdesign</em>}</li>
+ *   <li>{@link ArrowheadDSL.DeviceDesign#getIntracloudnetworkdesign <em>Intracloudnetworkdesign</em>}</li>
  * </ul>
  *
  * @see ArrowheadDSL.ArrowheadDSLPackage#getDeviceDesign()
@@ -39,5 +41,41 @@ public interface DeviceDesign extends Block {
 	 * @generated
 	 */
 	EList<String> getDeviceName();
+
+	/**
+	 * Returns the value of the '<em><b>Intercloudnetworkdesign</b></em>' reference list.
+	 * The list contents are of type {@link ArrowheadDSL.IntercloudNetworkDesign}.
+	 * It is bidirectional and its opposite is '{@link ArrowheadDSL.IntercloudNetworkDesign#getDevicedesign <em>Devicedesign</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Intercloudnetworkdesign</em>' reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Intercloudnetworkdesign</em>' reference list.
+	 * @see ArrowheadDSL.ArrowheadDSLPackage#getDeviceDesign_Intercloudnetworkdesign()
+	 * @see ArrowheadDSL.IntercloudNetworkDesign#getDevicedesign
+	 * @model opposite="devicedesign" ordered="false"
+	 * @generated
+	 */
+	EList<IntercloudNetworkDesign> getIntercloudnetworkdesign();
+
+	/**
+	 * Returns the value of the '<em><b>Intracloudnetworkdesign</b></em>' reference list.
+	 * The list contents are of type {@link ArrowheadDSL.IntracloudNetworkDesign}.
+	 * It is bidirectional and its opposite is '{@link ArrowheadDSL.IntracloudNetworkDesign#getDevicedesign <em>Devicedesign</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Intracloudnetworkdesign</em>' reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Intracloudnetworkdesign</em>' reference list.
+	 * @see ArrowheadDSL.ArrowheadDSLPackage#getDeviceDesign_Intracloudnetworkdesign()
+	 * @see ArrowheadDSL.IntracloudNetworkDesign#getDevicedesign
+	 * @model opposite="devicedesign" ordered="false"
+	 * @generated
+	 */
+	EList<IntracloudNetworkDesign> getIntracloudnetworkdesign();
 
 } // DeviceDesign

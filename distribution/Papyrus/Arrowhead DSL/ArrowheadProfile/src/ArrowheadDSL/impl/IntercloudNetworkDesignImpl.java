@@ -3,17 +3,22 @@
 package ArrowheadDSL.impl;
 
 import ArrowheadDSL.ArrowheadDSLPackage;
+import ArrowheadDSL.DeviceDesign;
 import ArrowheadDSL.IntercloudNetworkDesign;
 import ArrowheadDSL.MacLayerKind;
 
 import java.util.Collection;
 
+import org.eclipse.emf.common.notify.NotificationChain;
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.util.EDataTypeEList;
 
+import org.eclipse.emf.ecore.util.EObjectWithInverseResolvingEList;
+import org.eclipse.emf.ecore.util.InternalEList;
 import org.eclipse.papyrus.sysml16.blocks.internal.impl.BlockImpl;
 
 /**
@@ -26,6 +31,7 @@ import org.eclipse.papyrus.sysml16.blocks.internal.impl.BlockImpl;
  * <ul>
  *   <li>{@link ArrowheadDSL.impl.IntercloudNetworkDesignImpl#getInterNetworkDomainName <em>Inter Network Domain Name</em>}</li>
  *   <li>{@link ArrowheadDSL.impl.IntercloudNetworkDesignImpl#getInterNetworkMacLayer <em>Inter Network Mac Layer</em>}</li>
+ *   <li>{@link ArrowheadDSL.impl.IntercloudNetworkDesignImpl#getDevicedesign <em>Devicedesign</em>}</li>
  * </ul>
  *
  * @generated
@@ -50,6 +56,16 @@ public class IntercloudNetworkDesignImpl extends BlockImpl implements Intercloud
 	 * @ordered
 	 */
 	protected EList<MacLayerKind> interNetworkMacLayer;
+
+	/**
+	 * The cached value of the '{@link #getDevicedesign() <em>Devicedesign</em>}' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDevicedesign()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<DeviceDesign> devicedesign;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -102,12 +118,56 @@ public class IntercloudNetworkDesignImpl extends BlockImpl implements Intercloud
 	 * @generated
 	 */
 	@Override
+	public EList<DeviceDesign> getDevicedesign() {
+		if (devicedesign == null) {
+			devicedesign = new EObjectWithInverseResolvingEList.ManyInverse<DeviceDesign>(DeviceDesign.class, this, ArrowheadDSLPackage.INTERCLOUD_NETWORK_DESIGN__DEVICEDESIGN, ArrowheadDSLPackage.DEVICE_DESIGN__INTERCLOUDNETWORKDESIGN);
+		}
+		return devicedesign;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case ArrowheadDSLPackage.INTERCLOUD_NETWORK_DESIGN__DEVICEDESIGN:
+				return ((InternalEList<InternalEObject>)(InternalEList<?>)getDevicedesign()).basicAdd(otherEnd, msgs);
+		}
+		return super.eInverseAdd(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case ArrowheadDSLPackage.INTERCLOUD_NETWORK_DESIGN__DEVICEDESIGN:
+				return ((InternalEList<?>)getDevicedesign()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case ArrowheadDSLPackage.INTERCLOUD_NETWORK_DESIGN__INTER_NETWORK_DOMAIN_NAME:
 				return getInterNetworkDomainName();
 			case ArrowheadDSLPackage.INTERCLOUD_NETWORK_DESIGN__INTER_NETWORK_MAC_LAYER:
 				return getInterNetworkMacLayer();
+			case ArrowheadDSLPackage.INTERCLOUD_NETWORK_DESIGN__DEVICEDESIGN:
+				return getDevicedesign();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -129,6 +189,10 @@ public class IntercloudNetworkDesignImpl extends BlockImpl implements Intercloud
 				getInterNetworkMacLayer().clear();
 				getInterNetworkMacLayer().addAll((Collection<? extends MacLayerKind>)newValue);
 				return;
+			case ArrowheadDSLPackage.INTERCLOUD_NETWORK_DESIGN__DEVICEDESIGN:
+				getDevicedesign().clear();
+				getDevicedesign().addAll((Collection<? extends DeviceDesign>)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -147,6 +211,9 @@ public class IntercloudNetworkDesignImpl extends BlockImpl implements Intercloud
 			case ArrowheadDSLPackage.INTERCLOUD_NETWORK_DESIGN__INTER_NETWORK_MAC_LAYER:
 				getInterNetworkMacLayer().clear();
 				return;
+			case ArrowheadDSLPackage.INTERCLOUD_NETWORK_DESIGN__DEVICEDESIGN:
+				getDevicedesign().clear();
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -163,6 +230,8 @@ public class IntercloudNetworkDesignImpl extends BlockImpl implements Intercloud
 				return interNetworkDomainName != null && !interNetworkDomainName.isEmpty();
 			case ArrowheadDSLPackage.INTERCLOUD_NETWORK_DESIGN__INTER_NETWORK_MAC_LAYER:
 				return interNetworkMacLayer != null && !interNetworkMacLayer.isEmpty();
+			case ArrowheadDSLPackage.INTERCLOUD_NETWORK_DESIGN__DEVICEDESIGN:
+				return devicedesign != null && !devicedesign.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}
