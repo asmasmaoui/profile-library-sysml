@@ -1,0 +1,2131 @@
+/**
+ */
+package ArrowheadDSL.impl;
+
+import ArrowheadDSL.ApplicationProtocolKind;
+import ArrowheadDSL.ArrowheadCertificateKind;
+import ArrowheadDSL.ArrowheadDSLFactory;
+import ArrowheadDSL.ArrowheadDSLPackage;
+import ArrowheadDSL.ArrowheadDSLRequirement;
+import ArrowheadDSL.ArrowheadSecurityKind;
+import ArrowheadDSL.ArrowheadUseCase;
+import ArrowheadDSL.BusinessPolicyKind;
+import ArrowheadDSL.CertificateKind;
+import ArrowheadDSL.CoAPMethodKind;
+import ArrowheadDSL.ComprressionKind;
+import ArrowheadDSL.CryptoAlgorithmKind;
+import ArrowheadDSL.DatamodelStandardKind;
+import ArrowheadDSL.DeviceDesign;
+import ArrowheadDSL.DeviceDesignDescription;
+import ArrowheadDSL.EncodingKind;
+import ArrowheadDSL.HTTP2FrameKind;
+import ArrowheadDSL.HTTP_11_MethodKind;
+import ArrowheadDSL.IDD_Implementation;
+import ArrowheadDSL.IntercloudNetworkDesign;
+import ArrowheadDSL.IntercloudNetworkDesignDescription;
+import ArrowheadDSL.IntracloudNetworkDesign;
+import ArrowheadDSL.IntracloudNetworkDesignDescription;
+import ArrowheadDSL.LifecyclePolicyKind;
+import ArrowheadDSL.LocalCloudDesign;
+import ArrowheadDSL.LocalcloudDesignDescription;
+import ArrowheadDSL.LocalcloudImplementation;
+import ArrowheadDSL.MACProtocolKind;
+import ArrowheadDSL.MQTT311MessageTypeKind;
+import ArrowheadDSL.MQTT50MessageTypeKind;
+import ArrowheadDSL.MacLayerKind;
+import ArrowheadDSL.MonitoringPolicyKind;
+import ArrowheadDSL.OSKind;
+import ArrowheadDSL.PayloadEncryptionKind;
+import ArrowheadDSL.PhysicalLayerKind;
+import ArrowheadDSL.SecurityPolicyKind;
+import ArrowheadDSL.StatusKodKind;
+import ArrowheadDSL.SysD;
+import ArrowheadDSL.SysDD;
+import ArrowheadDSL.SystemDatabaseKind;
+import ArrowheadDSL.System_Implementation;
+import ArrowheadDSL.System_of_LocacloudsDesignDescription;
+import ArrowheadDSL.System_of_LocalcloudsDesign;
+import ArrowheadDSL.System_of_LocalcloudsImplementation;
+import ArrowheadDSL.TimeFormatKind;
+import ArrowheadDSL.TokenKind;
+import ArrowheadDSL.TransportLayerKind;
+import ArrowheadDSL.WebsocketDataFramingTypeKind;
+import ArrowheadDSL.WorkflowKind;
+
+import org.eclipse.emf.ecore.EAttribute;
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EEnum;
+import org.eclipse.emf.ecore.EOperation;
+import org.eclipse.emf.ecore.EPackage;
+import org.eclipse.emf.ecore.EcorePackage;
+
+import org.eclipse.emf.ecore.impl.EPackageImpl;
+
+import org.eclipse.papyrus.sysml16.blocks.BlocksPackage;
+
+import org.eclipse.papyrus.sysml16.sysml.SysMLPackage;
+
+import org.eclipse.uml2.types.TypesPackage;
+
+import org.eclipse.uml2.uml.UMLPackage;
+
+import org.eclipse.uml2.uml.profile.standard.StandardPackage;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model <b>Package</b>.
+ * <!-- end-user-doc -->
+ * @generated
+ */
+public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDSLPackage {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass sysDEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass sdEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass arrowheadDSLRequirementEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass arrowheadUseCaseEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass localCloudDesignEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass system_of_LocalcloudsDesignEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass deviceDesignEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass intracloudNetworkDesignEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass intercloudNetworkDesignEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass deviceDesignDescriptionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass intracloudNetworkDesignDescriptionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass intercloudNetworkDesignDescriptionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass localcloudDesignDescriptionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass system_of_LocacloudsDesignDescriptionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass system_of_LocalcloudsImplementationEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass localcloudImplementationEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass system_ImplementationEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass sysDDEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass idD_ImplementationEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass iddEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum systemDatabaseKindEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum businessPolicyKindEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum securityPolicyKindEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum lifecyclePolicyKindEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum macLayerKindEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum osKindEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum arrowheadCertificateKindEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum timeFormatKindEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum applicationProtocolKindEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum encodingKindEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum arrowheadSecurityKindEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum comprressionKindEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum tokenKindEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum cryptoAlgorithmKindEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum datamodelStandardKindEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum certificateKindEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum coAPMethodKindEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum httP_11_MethodKindEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum http2FrameKindEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum macProtocolKindEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum monitoringPolicyKindEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum mqtt311MessageTypeKindEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum mqtt50MessageTypeKindEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum payloadEncryptionKindEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum physicalLayerKindEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum statusKodKindEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum transportLayerKindEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum websocketDataFramingTypeKindEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum workflowKindEEnum = null;
+
+	/**
+	 * Creates an instance of the model <b>Package</b>, registered with
+	 * {@link org.eclipse.emf.ecore.EPackage.Registry EPackage.Registry} by the package
+	 * package URI value.
+	 * <p>Note: the correct way to create the package is via the static
+	 * factory method {@link #init init()}, which also performs
+	 * initialization of the package, or returns the registered package,
+	 * if one already exists.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.eclipse.emf.ecore.EPackage.Registry
+	 * @see ArrowheadDSL.ArrowheadDSLPackage#eNS_URI
+	 * @see #init()
+	 * @generated
+	 */
+	private ArrowheadDSLPackageImpl() {
+		super(eNS_URI, ArrowheadDSLFactory.eINSTANCE);
+	}
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private static boolean isInited = false;
+
+	/**
+	 * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
+	 *
+	 * <p>This method is used to initialize {@link ArrowheadDSLPackage#eINSTANCE} when that field is accessed.
+	 * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #eNS_URI
+	 * @see #createPackageContents()
+	 * @see #initializePackageContents()
+	 * @generated
+	 */
+	public static ArrowheadDSLPackage init() {
+		if (isInited) return (ArrowheadDSLPackage)EPackage.Registry.INSTANCE.getEPackage(ArrowheadDSLPackage.eNS_URI);
+
+		// Obtain or create and register package
+		Object registeredArrowheadDSLPackage = EPackage.Registry.INSTANCE.get(eNS_URI);
+		ArrowheadDSLPackageImpl theArrowheadDSLPackage = registeredArrowheadDSLPackage instanceof ArrowheadDSLPackageImpl ? (ArrowheadDSLPackageImpl)registeredArrowheadDSLPackage : new ArrowheadDSLPackageImpl();
+
+		isInited = true;
+
+		// Initialize simple dependencies
+		EcorePackage.eINSTANCE.eClass();
+		StandardPackage.eINSTANCE.eClass();
+		SysMLPackage.eINSTANCE.eClass();
+		TypesPackage.eINSTANCE.eClass();
+		UMLPackage.eINSTANCE.eClass();
+
+		// Create package meta-data objects
+		theArrowheadDSLPackage.createPackageContents();
+
+		// Initialize created meta-data
+		theArrowheadDSLPackage.initializePackageContents();
+
+		// Mark meta-data to indicate it can't be changed
+		theArrowheadDSLPackage.freeze();
+
+		// Update the registry and return the package
+		EPackage.Registry.INSTANCE.put(ArrowheadDSLPackage.eNS_URI, theArrowheadDSLPackage);
+		return theArrowheadDSLPackage;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getSysD() {
+		return sysDEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSysD_MicrosystemName() {
+		return (EAttribute)sysDEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSysD_FunctionalProperties() {
+		return (EAttribute)sysDEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSysD_SystemDatabase() {
+		return (EAttribute)sysDEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSysD_MicrosystemBehaviour() {
+		return (EAttribute)sysDEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getSD() {
+		return sdEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSD_MicroserviceName() {
+		return (EAttribute)sdEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getSD__Operation() {
+		return sdEClass.getEOperations().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getArrowheadDSLRequirement() {
+		return arrowheadDSLRequirementEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getArrowheadUseCase() {
+		return arrowheadUseCaseEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getLocalCloudDesign() {
+		return localCloudDesignEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLocalCloudDesign_LC_Name() {
+		return (EAttribute)localCloudDesignEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLocalCloudDesign_FunctionalProperties() {
+		return (EAttribute)localCloudDesignEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLocalCloudDesign_LC_SecurityStrategy() {
+		return (EAttribute)localCloudDesignEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLocalCloudDesign_LC_BusinessStrategy() {
+		return (EAttribute)localCloudDesignEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLocalCloudDesign_LC_LifecycleStrategy() {
+		return (EAttribute)localCloudDesignEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getSystem_of_LocalcloudsDesign() {
+		return system_of_LocalcloudsDesignEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSystem_of_LocalcloudsDesign_SoLCName() {
+		return (EAttribute)system_of_LocalcloudsDesignEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSystem_of_LocalcloudsDesign_SoLC_SecurityStrategy() {
+		return (EAttribute)system_of_LocalcloudsDesignEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSystem_of_LocalcloudsDesign_SoLC_BusinessStrategy() {
+		return (EAttribute)system_of_LocalcloudsDesignEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSystem_of_LocalcloudsDesign_SoLC_LifecycleStrategy() {
+		return (EAttribute)system_of_LocalcloudsDesignEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getDeviceDesign() {
+		return deviceDesignEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDeviceDesign_DeviceName() {
+		return (EAttribute)deviceDesignEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getIntracloudNetworkDesign() {
+		return intracloudNetworkDesignEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getIntracloudNetworkDesign_IntraNetworkDomain() {
+		return (EAttribute)intracloudNetworkDesignEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getIntracloudNetworkDesign_IntraNetworkMacLayer() {
+		return (EAttribute)intracloudNetworkDesignEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getIntercloudNetworkDesign() {
+		return intercloudNetworkDesignEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getIntercloudNetworkDesign_InterNetworkDomainName() {
+		return (EAttribute)intercloudNetworkDesignEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getIntercloudNetworkDesign_InterNetworkMacLayer() {
+		return (EAttribute)intercloudNetworkDesignEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getDeviceDesignDescription() {
+		return deviceDesignDescriptionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDeviceDesignDescription_IOports() {
+		return (EAttribute)deviceDesignDescriptionEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDeviceDesignDescription_Memory() {
+		return (EAttribute)deviceDesignDescriptionEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDeviceDesignDescription_Processor() {
+		return (EAttribute)deviceDesignDescriptionEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDeviceDesignDescription_OperatingSystem() {
+		return (EAttribute)deviceDesignDescriptionEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDeviceDesignDescription_ArrowheadCertificate() {
+		return (EAttribute)deviceDesignDescriptionEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getIntracloudNetworkDesignDescription() {
+		return intracloudNetworkDesignDescriptionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getIntracloudNetworkDesignDescription_IntraNetworkRouter() {
+		return (EAttribute)intracloudNetworkDesignDescriptionEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getIntracloudNetworkDesignDescription_IntraNetworkRouterConfig() {
+		return (EAttribute)intracloudNetworkDesignDescriptionEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getIntercloudNetworkDesignDescription() {
+		return intercloudNetworkDesignDescriptionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getIntercloudNetworkDesignDescription_InterNetworkRouter() {
+		return (EAttribute)intercloudNetworkDesignDescriptionEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getIntercloudNetworkDesignDescription_InterNetworkRouterConfig() {
+		return (EAttribute)intercloudNetworkDesignDescriptionEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getLocalcloudDesignDescription() {
+		return localcloudDesignDescriptionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLocalcloudDesignDescription_LC_workflow() {
+		return (EAttribute)localcloudDesignDescriptionEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLocalcloudDesignDescription_LC_orchestration() {
+		return (EAttribute)localcloudDesignDescriptionEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getSystem_of_LocacloudsDesignDescription() {
+		return system_of_LocacloudsDesignDescriptionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSystem_of_LocacloudsDesignDescription_SoLC_Orchestration() {
+		return (EAttribute)system_of_LocacloudsDesignDescriptionEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSystem_of_LocacloudsDesignDescription_SoLC_Workflow() {
+		return (EAttribute)system_of_LocacloudsDesignDescriptionEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getSystem_of_LocalcloudsImplementation() {
+		return system_of_LocalcloudsImplementationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSystem_of_LocalcloudsImplementation_SoLC_Documentation() {
+		return (EAttribute)system_of_LocalcloudsImplementationEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getLocalcloudImplementation() {
+		return localcloudImplementationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLocalcloudImplementation_LC_Documentation() {
+		return (EAttribute)localcloudImplementationEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getSystem_Implementation() {
+		return system_ImplementationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getSysDD() {
+		return sysDDEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSysDD_Timeformat() {
+		return (EAttribute)sysDDEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSysDD_ArrowheadCertificate() {
+		return (EAttribute)sysDDEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getIDD_Implementation() {
+		return idD_ImplementationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getIDD() {
+		return iddEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getIDD_Port() {
+		return (EAttribute)iddEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getIDD_Protocol() {
+		return (EAttribute)iddEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getIDD_Encoding() {
+		return (EAttribute)iddEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getIDD_Security() {
+		return (EAttribute)iddEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getIDD_Compression() {
+		return (EAttribute)iddEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getIDD_Certificate_level() {
+		return (EAttribute)iddEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getIDD_Token() {
+		return (EAttribute)iddEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getIDD_Crypto_algorithm() {
+		return (EAttribute)iddEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getIDD_Datamodel() {
+		return (EAttribute)iddEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getSystemDatabaseKind() {
+		return systemDatabaseKindEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getBusinessPolicyKind() {
+		return businessPolicyKindEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getSecurityPolicyKind() {
+		return securityPolicyKindEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getLifecyclePolicyKind() {
+		return lifecyclePolicyKindEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getMacLayerKind() {
+		return macLayerKindEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getOSKind() {
+		return osKindEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getArrowheadCertificateKind() {
+		return arrowheadCertificateKindEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getTimeFormatKind() {
+		return timeFormatKindEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getApplicationProtocolKind() {
+		return applicationProtocolKindEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getEncodingKind() {
+		return encodingKindEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getArrowheadSecurityKind() {
+		return arrowheadSecurityKindEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getComprressionKind() {
+		return comprressionKindEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getTokenKind() {
+		return tokenKindEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getCryptoAlgorithmKind() {
+		return cryptoAlgorithmKindEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getDatamodelStandardKind() {
+		return datamodelStandardKindEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getCertificateKind() {
+		return certificateKindEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getCoAPMethodKind() {
+		return coAPMethodKindEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getHTTP_11_MethodKind() {
+		return httP_11_MethodKindEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getHTTP2FrameKind() {
+		return http2FrameKindEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getMACProtocolKind() {
+		return macProtocolKindEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getMonitoringPolicyKind() {
+		return monitoringPolicyKindEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getMQTT311MessageTypeKind() {
+		return mqtt311MessageTypeKindEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getMQTT50MessageTypeKind() {
+		return mqtt50MessageTypeKindEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getPayloadEncryptionKind() {
+		return payloadEncryptionKindEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getPhysicalLayerKind() {
+		return physicalLayerKindEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getStatusKodKind() {
+		return statusKodKindEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getTransportLayerKind() {
+		return transportLayerKindEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getWebsocketDataFramingTypeKind() {
+		return websocketDataFramingTypeKindEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getWorkflowKind() {
+		return workflowKindEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ArrowheadDSLFactory getArrowheadDSLFactory() {
+		return (ArrowheadDSLFactory)getEFactoryInstance();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private boolean isCreated = false;
+
+	/**
+	 * Creates the meta-model objects for the package.  This method is
+	 * guarded to have no affect on any invocation but its first.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void createPackageContents() {
+		if (isCreated) return;
+		isCreated = true;
+
+		// Create classes and their features
+		sysDEClass = createEClass(SYS_D);
+		createEAttribute(sysDEClass, SYS_D__MICROSYSTEM_NAME);
+		createEAttribute(sysDEClass, SYS_D__FUNCTIONAL_PROPERTIES);
+		createEAttribute(sysDEClass, SYS_D__SYSTEM_DATABASE);
+		createEAttribute(sysDEClass, SYS_D__MICROSYSTEM_BEHAVIOUR);
+
+		sdEClass = createEClass(SD);
+		createEAttribute(sdEClass, SD__MICROSERVICE_NAME);
+		createEOperation(sdEClass, SD___OPERATION);
+
+		arrowheadDSLRequirementEClass = createEClass(ARROWHEAD_DSL_REQUIREMENT);
+
+		arrowheadUseCaseEClass = createEClass(ARROWHEAD_USE_CASE);
+
+		localCloudDesignEClass = createEClass(LOCAL_CLOUD_DESIGN);
+		createEAttribute(localCloudDesignEClass, LOCAL_CLOUD_DESIGN__LC_NAME);
+		createEAttribute(localCloudDesignEClass, LOCAL_CLOUD_DESIGN__FUNCTIONAL_PROPERTIES);
+		createEAttribute(localCloudDesignEClass, LOCAL_CLOUD_DESIGN__LC_SECURITY_STRATEGY);
+		createEAttribute(localCloudDesignEClass, LOCAL_CLOUD_DESIGN__LC_BUSINESS_STRATEGY);
+		createEAttribute(localCloudDesignEClass, LOCAL_CLOUD_DESIGN__LC_LIFECYCLE_STRATEGY);
+
+		system_of_LocalcloudsDesignEClass = createEClass(SYSTEM_OF_LOCALCLOUDS_DESIGN);
+		createEAttribute(system_of_LocalcloudsDesignEClass, SYSTEM_OF_LOCALCLOUDS_DESIGN__SO_LC_NAME);
+		createEAttribute(system_of_LocalcloudsDesignEClass, SYSTEM_OF_LOCALCLOUDS_DESIGN__SO_LC_SECURITY_STRATEGY);
+		createEAttribute(system_of_LocalcloudsDesignEClass, SYSTEM_OF_LOCALCLOUDS_DESIGN__SO_LC_BUSINESS_STRATEGY);
+		createEAttribute(system_of_LocalcloudsDesignEClass, SYSTEM_OF_LOCALCLOUDS_DESIGN__SO_LC_LIFECYCLE_STRATEGY);
+
+		deviceDesignEClass = createEClass(DEVICE_DESIGN);
+		createEAttribute(deviceDesignEClass, DEVICE_DESIGN__DEVICE_NAME);
+
+		intracloudNetworkDesignEClass = createEClass(INTRACLOUD_NETWORK_DESIGN);
+		createEAttribute(intracloudNetworkDesignEClass, INTRACLOUD_NETWORK_DESIGN__INTRA_NETWORK_DOMAIN);
+		createEAttribute(intracloudNetworkDesignEClass, INTRACLOUD_NETWORK_DESIGN__INTRA_NETWORK_MAC_LAYER);
+
+		intercloudNetworkDesignEClass = createEClass(INTERCLOUD_NETWORK_DESIGN);
+		createEAttribute(intercloudNetworkDesignEClass, INTERCLOUD_NETWORK_DESIGN__INTER_NETWORK_DOMAIN_NAME);
+		createEAttribute(intercloudNetworkDesignEClass, INTERCLOUD_NETWORK_DESIGN__INTER_NETWORK_MAC_LAYER);
+
+		deviceDesignDescriptionEClass = createEClass(DEVICE_DESIGN_DESCRIPTION);
+		createEAttribute(deviceDesignDescriptionEClass, DEVICE_DESIGN_DESCRIPTION__IOPORTS);
+		createEAttribute(deviceDesignDescriptionEClass, DEVICE_DESIGN_DESCRIPTION__MEMORY);
+		createEAttribute(deviceDesignDescriptionEClass, DEVICE_DESIGN_DESCRIPTION__PROCESSOR);
+		createEAttribute(deviceDesignDescriptionEClass, DEVICE_DESIGN_DESCRIPTION__OPERATING_SYSTEM);
+		createEAttribute(deviceDesignDescriptionEClass, DEVICE_DESIGN_DESCRIPTION__ARROWHEAD_CERTIFICATE);
+
+		intracloudNetworkDesignDescriptionEClass = createEClass(INTRACLOUD_NETWORK_DESIGN_DESCRIPTION);
+		createEAttribute(intracloudNetworkDesignDescriptionEClass, INTRACLOUD_NETWORK_DESIGN_DESCRIPTION__INTRA_NETWORK_ROUTER);
+		createEAttribute(intracloudNetworkDesignDescriptionEClass, INTRACLOUD_NETWORK_DESIGN_DESCRIPTION__INTRA_NETWORK_ROUTER_CONFIG);
+
+		intercloudNetworkDesignDescriptionEClass = createEClass(INTERCLOUD_NETWORK_DESIGN_DESCRIPTION);
+		createEAttribute(intercloudNetworkDesignDescriptionEClass, INTERCLOUD_NETWORK_DESIGN_DESCRIPTION__INTER_NETWORK_ROUTER);
+		createEAttribute(intercloudNetworkDesignDescriptionEClass, INTERCLOUD_NETWORK_DESIGN_DESCRIPTION__INTER_NETWORK_ROUTER_CONFIG);
+
+		localcloudDesignDescriptionEClass = createEClass(LOCALCLOUD_DESIGN_DESCRIPTION);
+		createEAttribute(localcloudDesignDescriptionEClass, LOCALCLOUD_DESIGN_DESCRIPTION__LC_WORKFLOW);
+		createEAttribute(localcloudDesignDescriptionEClass, LOCALCLOUD_DESIGN_DESCRIPTION__LC_ORCHESTRATION);
+
+		system_of_LocacloudsDesignDescriptionEClass = createEClass(SYSTEM_OF_LOCACLOUDS_DESIGN_DESCRIPTION);
+		createEAttribute(system_of_LocacloudsDesignDescriptionEClass, SYSTEM_OF_LOCACLOUDS_DESIGN_DESCRIPTION__SO_LC_ORCHESTRATION);
+		createEAttribute(system_of_LocacloudsDesignDescriptionEClass, SYSTEM_OF_LOCACLOUDS_DESIGN_DESCRIPTION__SO_LC_WORKFLOW);
+
+		system_of_LocalcloudsImplementationEClass = createEClass(SYSTEM_OF_LOCALCLOUDS_IMPLEMENTATION);
+		createEAttribute(system_of_LocalcloudsImplementationEClass, SYSTEM_OF_LOCALCLOUDS_IMPLEMENTATION__SO_LC_DOCUMENTATION);
+
+		localcloudImplementationEClass = createEClass(LOCALCLOUD_IMPLEMENTATION);
+		createEAttribute(localcloudImplementationEClass, LOCALCLOUD_IMPLEMENTATION__LC_DOCUMENTATION);
+
+		system_ImplementationEClass = createEClass(SYSTEM_IMPLEMENTATION);
+
+		sysDDEClass = createEClass(SYS_DD);
+		createEAttribute(sysDDEClass, SYS_DD__TIMEFORMAT);
+		createEAttribute(sysDDEClass, SYS_DD__ARROWHEAD_CERTIFICATE);
+
+		idD_ImplementationEClass = createEClass(IDD_IMPLEMENTATION);
+
+		iddEClass = createEClass(IDD);
+		createEAttribute(iddEClass, IDD__PORT);
+		createEAttribute(iddEClass, IDD__PROTOCOL);
+		createEAttribute(iddEClass, IDD__ENCODING);
+		createEAttribute(iddEClass, IDD__SECURITY);
+		createEAttribute(iddEClass, IDD__COMPRESSION);
+		createEAttribute(iddEClass, IDD__CERTIFICATE_LEVEL);
+		createEAttribute(iddEClass, IDD__TOKEN);
+		createEAttribute(iddEClass, IDD__CRYPTO_ALGORITHM);
+		createEAttribute(iddEClass, IDD__DATAMODEL);
+
+		// Create enums
+		systemDatabaseKindEEnum = createEEnum(SYSTEM_DATABASE_KIND);
+		businessPolicyKindEEnum = createEEnum(BUSINESS_POLICY_KIND);
+		securityPolicyKindEEnum = createEEnum(SECURITY_POLICY_KIND);
+		lifecyclePolicyKindEEnum = createEEnum(LIFECYCLE_POLICY_KIND);
+		macLayerKindEEnum = createEEnum(MAC_LAYER_KIND);
+		osKindEEnum = createEEnum(OS_KIND);
+		arrowheadCertificateKindEEnum = createEEnum(ARROWHEAD_CERTIFICATE_KIND);
+		timeFormatKindEEnum = createEEnum(TIME_FORMAT_KIND);
+		applicationProtocolKindEEnum = createEEnum(APPLICATION_PROTOCOL_KIND);
+		encodingKindEEnum = createEEnum(ENCODING_KIND);
+		arrowheadSecurityKindEEnum = createEEnum(ARROWHEAD_SECURITY_KIND);
+		comprressionKindEEnum = createEEnum(COMPRRESSION_KIND);
+		tokenKindEEnum = createEEnum(TOKEN_KIND);
+		cryptoAlgorithmKindEEnum = createEEnum(CRYPTO_ALGORITHM_KIND);
+		datamodelStandardKindEEnum = createEEnum(DATAMODEL_STANDARD_KIND);
+		certificateKindEEnum = createEEnum(CERTIFICATE_KIND);
+		coAPMethodKindEEnum = createEEnum(CO_AP_METHOD_KIND);
+		httP_11_MethodKindEEnum = createEEnum(HTTP_11_METHOD_KIND);
+		http2FrameKindEEnum = createEEnum(HTTP2_FRAME_KIND);
+		macProtocolKindEEnum = createEEnum(MAC_PROTOCOL_KIND);
+		monitoringPolicyKindEEnum = createEEnum(MONITORING_POLICY_KIND);
+		mqtt311MessageTypeKindEEnum = createEEnum(MQTT311_MESSAGE_TYPE_KIND);
+		mqtt50MessageTypeKindEEnum = createEEnum(MQTT50_MESSAGE_TYPE_KIND);
+		payloadEncryptionKindEEnum = createEEnum(PAYLOAD_ENCRYPTION_KIND);
+		physicalLayerKindEEnum = createEEnum(PHYSICAL_LAYER_KIND);
+		statusKodKindEEnum = createEEnum(STATUS_KOD_KIND);
+		transportLayerKindEEnum = createEEnum(TRANSPORT_LAYER_KIND);
+		websocketDataFramingTypeKindEEnum = createEEnum(WEBSOCKET_DATA_FRAMING_TYPE_KIND);
+		workflowKindEEnum = createEEnum(WORKFLOW_KIND);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private boolean isInitialized = false;
+
+	/**
+	 * Complete the initialization of the package and its meta-model.  This
+	 * method is guarded to have no affect on any invocation but its first.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void initializePackageContents() {
+		if (isInitialized) return;
+		isInitialized = true;
+
+		// Initialize package
+		setName(eNAME);
+		setNsPrefix(eNS_PREFIX);
+		setNsURI(eNS_URI);
+
+		// Obtain other dependent packages
+		BlocksPackage theBlocksPackage = (BlocksPackage)EPackage.Registry.INSTANCE.getEPackage(BlocksPackage.eNS_URI);
+		TypesPackage theTypesPackage = (TypesPackage)EPackage.Registry.INSTANCE.getEPackage(TypesPackage.eNS_URI);
+
+		// Create type parameters
+
+		// Set bounds for type parameters
+
+		// Add supertypes to classes
+		sysDEClass.getESuperTypes().add(theBlocksPackage.getBlock());
+		sdEClass.getESuperTypes().add(theBlocksPackage.getBlock());
+		arrowheadDSLRequirementEClass.getESuperTypes().add(theBlocksPackage.getBlock());
+		arrowheadUseCaseEClass.getESuperTypes().add(theBlocksPackage.getBlock());
+		localCloudDesignEClass.getESuperTypes().add(theBlocksPackage.getBlock());
+		system_of_LocalcloudsDesignEClass.getESuperTypes().add(theBlocksPackage.getBlock());
+		deviceDesignEClass.getESuperTypes().add(theBlocksPackage.getBlock());
+		intracloudNetworkDesignEClass.getESuperTypes().add(theBlocksPackage.getBlock());
+		intercloudNetworkDesignEClass.getESuperTypes().add(theBlocksPackage.getBlock());
+		deviceDesignDescriptionEClass.getESuperTypes().add(this.getIntercloudNetworkDesignDescription());
+		deviceDesignDescriptionEClass.getESuperTypes().add(this.getIntracloudNetworkDesignDescription());
+		deviceDesignDescriptionEClass.getESuperTypes().add(this.getDeviceDesign());
+		intracloudNetworkDesignDescriptionEClass.getESuperTypes().add(this.getIntracloudNetworkDesign());
+		intercloudNetworkDesignDescriptionEClass.getESuperTypes().add(this.getIntercloudNetworkDesign());
+		localcloudDesignDescriptionEClass.getESuperTypes().add(this.getLocalCloudDesign());
+		system_of_LocacloudsDesignDescriptionEClass.getESuperTypes().add(this.getSystem_of_LocalcloudsDesign());
+		system_of_LocalcloudsImplementationEClass.getESuperTypes().add(this.getSystem_of_LocacloudsDesignDescription());
+		localcloudImplementationEClass.getESuperTypes().add(this.getLocalcloudDesignDescription());
+		system_ImplementationEClass.getESuperTypes().add(this.getSysDD());
+		sysDDEClass.getESuperTypes().add(this.getSysD());
+		idD_ImplementationEClass.getESuperTypes().add(this.getIDD());
+		iddEClass.getESuperTypes().add(this.getSD());
+
+		// Initialize classes, features, and operations; add parameters
+		initEClass(sysDEClass, SysD.class, "SysD", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getSysD_MicrosystemName(), theTypesPackage.getString(), "MicrosystemName", null, 0, -1, SysD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getSysD_FunctionalProperties(), theTypesPackage.getUnlimitedNatural(), "FunctionalProperties", null, 1, -1, SysD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getSysD_SystemDatabase(), this.getSystemDatabaseKind(), "SystemDatabase", null, 1, 1, SysD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getSysD_MicrosystemBehaviour(), this.getBusinessPolicyKind(), "MicrosystemBehaviour", null, 1, -1, SysD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(sdEClass, ArrowheadDSL.SD.class, "SD", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getSD_MicroserviceName(), theTypesPackage.getString(), "MicroserviceName", null, 1, 1, ArrowheadDSL.SD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEOperation(getSD__Operation(), null, "Operation", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		initEClass(arrowheadDSLRequirementEClass, ArrowheadDSLRequirement.class, "ArrowheadDSLRequirement", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(arrowheadUseCaseEClass, ArrowheadUseCase.class, "ArrowheadUseCase", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(localCloudDesignEClass, LocalCloudDesign.class, "LocalCloudDesign", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getLocalCloudDesign_LC_Name(), theTypesPackage.getString(), "LC_Name", null, 1, 1, LocalCloudDesign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getLocalCloudDesign_FunctionalProperties(), theTypesPackage.getUnlimitedNatural(), "FunctionalProperties", null, 1, 1, LocalCloudDesign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getLocalCloudDesign_LC_SecurityStrategy(), this.getSecurityPolicyKind(), "LC_SecurityStrategy", null, 0, -1, LocalCloudDesign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getLocalCloudDesign_LC_BusinessStrategy(), this.getBusinessPolicyKind(), "LC_BusinessStrategy", null, 0, -1, LocalCloudDesign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getLocalCloudDesign_LC_LifecycleStrategy(), this.getLifecyclePolicyKind(), "LC_LifecycleStrategy", null, 1, 1, LocalCloudDesign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(system_of_LocalcloudsDesignEClass, System_of_LocalcloudsDesign.class, "System_of_LocalcloudsDesign", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getSystem_of_LocalcloudsDesign_SoLCName(), theTypesPackage.getString(), "SoLCName", null, 1, 1, System_of_LocalcloudsDesign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getSystem_of_LocalcloudsDesign_SoLC_SecurityStrategy(), this.getSecurityPolicyKind(), "SoLC_SecurityStrategy", null, 0, -1, System_of_LocalcloudsDesign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getSystem_of_LocalcloudsDesign_SoLC_BusinessStrategy(), this.getBusinessPolicyKind(), "SoLC_BusinessStrategy", null, 0, -1, System_of_LocalcloudsDesign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getSystem_of_LocalcloudsDesign_SoLC_LifecycleStrategy(), this.getLifecyclePolicyKind(), "SoLC_LifecycleStrategy", null, 1, 1, System_of_LocalcloudsDesign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(deviceDesignEClass, DeviceDesign.class, "DeviceDesign", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getDeviceDesign_DeviceName(), theTypesPackage.getString(), "DeviceName", null, 1, -1, DeviceDesign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(intracloudNetworkDesignEClass, IntracloudNetworkDesign.class, "IntracloudNetworkDesign", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getIntracloudNetworkDesign_IntraNetworkDomain(), theTypesPackage.getString(), "IntraNetworkDomain", null, 1, 1, IntracloudNetworkDesign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getIntracloudNetworkDesign_IntraNetworkMacLayer(), this.getMacLayerKind(), "IntraNetworkMacLayer", null, 1, -1, IntracloudNetworkDesign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(intercloudNetworkDesignEClass, IntercloudNetworkDesign.class, "IntercloudNetworkDesign", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getIntercloudNetworkDesign_InterNetworkDomainName(), theTypesPackage.getString(), "InterNetworkDomainName", null, 0, -1, IntercloudNetworkDesign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getIntercloudNetworkDesign_InterNetworkMacLayer(), this.getMacLayerKind(), "InterNetworkMacLayer", null, 1, -1, IntercloudNetworkDesign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(deviceDesignDescriptionEClass, DeviceDesignDescription.class, "DeviceDesignDescription", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getDeviceDesignDescription_IOports(), theTypesPackage.getString(), "IOports", null, 0, -1, DeviceDesignDescription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDeviceDesignDescription_Memory(), theTypesPackage.getString(), "memory", null, 0, -1, DeviceDesignDescription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDeviceDesignDescription_Processor(), theTypesPackage.getString(), "processor", null, 1, -1, DeviceDesignDescription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDeviceDesignDescription_OperatingSystem(), this.getOSKind(), "operatingSystem", null, 1, 1, DeviceDesignDescription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDeviceDesignDescription_ArrowheadCertificate(), this.getArrowheadCertificateKind(), "ArrowheadCertificate", null, 1, 1, DeviceDesignDescription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(intracloudNetworkDesignDescriptionEClass, IntracloudNetworkDesignDescription.class, "IntracloudNetworkDesignDescription", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getIntracloudNetworkDesignDescription_IntraNetworkRouter(), theTypesPackage.getUnlimitedNatural(), "IntraNetworkRouter", null, 1, -1, IntracloudNetworkDesignDescription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getIntracloudNetworkDesignDescription_IntraNetworkRouterConfig(), theTypesPackage.getUnlimitedNatural(), "IntraNetworkRouterConfig", null, 1, -1, IntracloudNetworkDesignDescription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(intercloudNetworkDesignDescriptionEClass, IntercloudNetworkDesignDescription.class, "IntercloudNetworkDesignDescription", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getIntercloudNetworkDesignDescription_InterNetworkRouter(), theTypesPackage.getUnlimitedNatural(), "InterNetworkRouter", null, 0, -1, IntercloudNetworkDesignDescription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getIntercloudNetworkDesignDescription_InterNetworkRouterConfig(), theTypesPackage.getUnlimitedNatural(), "InterNetworkRouterConfig", null, 0, -1, IntercloudNetworkDesignDescription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(localcloudDesignDescriptionEClass, LocalcloudDesignDescription.class, "LocalcloudDesignDescription", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getLocalcloudDesignDescription_LC_workflow(), theTypesPackage.getString(), "LC_workflow", null, 1, 1, LocalcloudDesignDescription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getLocalcloudDesignDescription_LC_orchestration(), theTypesPackage.getString(), "LC_orchestration", null, 1, 1, LocalcloudDesignDescription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(system_of_LocacloudsDesignDescriptionEClass, System_of_LocacloudsDesignDescription.class, "System_of_LocacloudsDesignDescription", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getSystem_of_LocacloudsDesignDescription_SoLC_Orchestration(), theTypesPackage.getString(), "SoLC_Orchestration", null, 1, 1, System_of_LocacloudsDesignDescription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getSystem_of_LocacloudsDesignDescription_SoLC_Workflow(), theTypesPackage.getString(), "SoLC_Workflow", null, 1, 1, System_of_LocacloudsDesignDescription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(system_of_LocalcloudsImplementationEClass, System_of_LocalcloudsImplementation.class, "System_of_LocalcloudsImplementation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getSystem_of_LocalcloudsImplementation_SoLC_Documentation(), theTypesPackage.getUnlimitedNatural(), "SoLC_Documentation", null, 1, 1, System_of_LocalcloudsImplementation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(localcloudImplementationEClass, LocalcloudImplementation.class, "LocalcloudImplementation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getLocalcloudImplementation_LC_Documentation(), theTypesPackage.getUnlimitedNatural(), "LC_Documentation", null, 1, 1, LocalcloudImplementation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(system_ImplementationEClass, System_Implementation.class, "System_Implementation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(sysDDEClass, SysDD.class, "SysDD", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getSysDD_Timeformat(), this.getTimeFormatKind(), "Timeformat", null, 1, 1, SysDD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getSysDD_ArrowheadCertificate(), this.getArrowheadCertificateKind(), "ArrowheadCertificate", null, 1, 1, SysDD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(idD_ImplementationEClass, IDD_Implementation.class, "IDD_Implementation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(iddEClass, ArrowheadDSL.IDD.class, "IDD", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getIDD_Port(), theTypesPackage.getInteger(), "Port", null, 1, 1, ArrowheadDSL.IDD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getIDD_Protocol(), this.getApplicationProtocolKind(), "Protocol", null, 1, 1, ArrowheadDSL.IDD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getIDD_Encoding(), this.getEncodingKind(), "Encoding", null, 1, 1, ArrowheadDSL.IDD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getIDD_Security(), this.getArrowheadSecurityKind(), "Security", null, 1, 1, ArrowheadDSL.IDD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getIDD_Compression(), this.getComprressionKind(), "Compression", null, 1, 1, ArrowheadDSL.IDD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getIDD_Certificate_level(), this.getArrowheadCertificateKind(), "Certificate_level", null, 1, 1, ArrowheadDSL.IDD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getIDD_Token(), this.getTokenKind(), "Token", null, 1, 1, ArrowheadDSL.IDD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getIDD_Crypto_algorithm(), this.getCryptoAlgorithmKind(), "Crypto_algorithm", null, 1, 1, ArrowheadDSL.IDD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getIDD_Datamodel(), this.getDatamodelStandardKind(), "Datamodel", null, 1, 1, ArrowheadDSL.IDD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		// Initialize enums and add enum literals
+		initEEnum(systemDatabaseKindEEnum, SystemDatabaseKind.class, "SystemDatabaseKind");
+		addEEnumLiteral(systemDatabaseKindEEnum, SystemDatabaseKind.MY_SQL);
+		addEEnumLiteral(systemDatabaseKindEEnum, SystemDatabaseKind.UNDEFINED);
+		addEEnumLiteral(systemDatabaseKindEEnum, SystemDatabaseKind.MARIA_DB);
+		addEEnumLiteral(systemDatabaseKindEEnum, SystemDatabaseKind.MONGO_DB);
+		addEEnumLiteral(systemDatabaseKindEEnum, SystemDatabaseKind.NEO4J);
+
+		initEEnum(businessPolicyKindEEnum, BusinessPolicyKind.class, "BusinessPolicyKind");
+		addEEnumLiteral(businessPolicyKindEEnum, BusinessPolicyKind.OTHER);
+
+		initEEnum(securityPolicyKindEEnum, SecurityPolicyKind.class, "SecurityPolicyKind");
+		addEEnumLiteral(securityPolicyKindEEnum, SecurityPolicyKind.NGAC);
+		addEEnumLiteral(securityPolicyKindEEnum, SecurityPolicyKind.OTHER);
+
+		initEEnum(lifecyclePolicyKindEEnum, LifecyclePolicyKind.class, "LifecyclePolicyKind");
+		addEEnumLiteral(lifecyclePolicyKindEEnum, LifecyclePolicyKind.OTHER);
+
+		initEEnum(macLayerKindEEnum, MacLayerKind.class, "MacLayerKind");
+		addEEnumLiteral(macLayerKindEEnum, MacLayerKind.TDMA);
+		addEEnumLiteral(macLayerKindEEnum, MacLayerKind.CDMA);
+		addEEnumLiteral(macLayerKindEEnum, MacLayerKind.OTHER_MAC_LAYER);
+
+		initEEnum(osKindEEnum, OSKind.class, "OSKind");
+		addEEnumLiteral(osKindEEnum, OSKind.WINDOWS);
+		addEEnumLiteral(osKindEEnum, OSKind.MAC_OS);
+		addEEnumLiteral(osKindEEnum, OSKind.LINUX);
+		addEEnumLiteral(osKindEEnum, OSKind.OTHER_OS);
+		addEEnumLiteral(osKindEEnum, OSKind.ROS);
+
+		initEEnum(arrowheadCertificateKindEEnum, ArrowheadCertificateKind.class, "ArrowheadCertificateKind");
+		addEEnumLiteral(arrowheadCertificateKindEEnum, ArrowheadCertificateKind.DEVICE);
+		addEEnumLiteral(arrowheadCertificateKindEEnum, ArrowheadCertificateKind.APPLICATION_SYSTEM);
+		addEEnumLiteral(arrowheadCertificateKindEEnum, ArrowheadCertificateKind.CORE_SYSTEM);
+		addEEnumLiteral(arrowheadCertificateKindEEnum, ArrowheadCertificateKind.MANAGEMENT);
+		addEEnumLiteral(arrowheadCertificateKindEEnum, ArrowheadCertificateKind.INTER_CLOUD);
+		addEEnumLiteral(arrowheadCertificateKindEEnum, ArrowheadCertificateKind.OTHER);
+
+		initEEnum(timeFormatKindEEnum, TimeFormatKind.class, "TimeFormatKind");
+		addEEnumLiteral(timeFormatKindEEnum, TimeFormatKind.RFC_3339);
+		addEEnumLiteral(timeFormatKindEEnum, TimeFormatKind.ISO_8601);
+		addEEnumLiteral(timeFormatKindEEnum, TimeFormatKind.UNIX_TIME);
+		addEEnumLiteral(timeFormatKindEEnum, TimeFormatKind.OTHER_TIME_FORMAT);
+
+		initEEnum(applicationProtocolKindEEnum, ApplicationProtocolKind.class, "ApplicationProtocolKind");
+		addEEnumLiteral(applicationProtocolKindEEnum, ApplicationProtocolKind.HTTP);
+		addEEnumLiteral(applicationProtocolKindEEnum, ApplicationProtocolKind.MQTT);
+		addEEnumLiteral(applicationProtocolKindEEnum, ApplicationProtocolKind.COAP);
+		addEEnumLiteral(applicationProtocolKindEEnum, ApplicationProtocolKind.WEBSOCKET);
+		addEEnumLiteral(applicationProtocolKindEEnum, ApplicationProtocolKind.OTHER_APPLICATION_PROTOCOL);
+
+		initEEnum(encodingKindEEnum, EncodingKind.class, "EncodingKind");
+		addEEnumLiteral(encodingKindEEnum, EncodingKind.XML);
+		addEEnumLiteral(encodingKindEEnum, EncodingKind.JSON);
+		addEEnumLiteral(encodingKindEEnum, EncodingKind.CBOR);
+		addEEnumLiteral(encodingKindEEnum, EncodingKind.OTHER_ENCODING);
+
+		initEEnum(arrowheadSecurityKindEEnum, ArrowheadSecurityKind.class, "ArrowheadSecurityKind");
+		addEEnumLiteral(arrowheadSecurityKindEEnum, ArrowheadSecurityKind.CERTIFICATE);
+		addEEnumLiteral(arrowheadSecurityKindEEnum, ArrowheadSecurityKind.TOKEN);
+		addEEnumLiteral(arrowheadSecurityKindEEnum, ArrowheadSecurityKind.NOT_SECURE);
+
+		initEEnum(comprressionKindEEnum, ComprressionKind.class, "ComprressionKind");
+		addEEnumLiteral(comprressionKindEEnum, ComprressionKind.EXI);
+		addEEnumLiteral(comprressionKindEEnum, ComprressionKind.NONE);
+		addEEnumLiteral(comprressionKindEEnum, ComprressionKind.OTHER_COMPRESSION);
+
+		initEEnum(tokenKindEEnum, TokenKind.class, "TokenKind");
+		addEEnumLiteral(tokenKindEEnum, TokenKind.ARROWHEAD_TOKEN);
+		addEEnumLiteral(tokenKindEEnum, TokenKind.OTHER_TOKEN);
+
+		initEEnum(cryptoAlgorithmKindEEnum, CryptoAlgorithmKind.class, "CryptoAlgorithmKind");
+		addEEnumLiteral(cryptoAlgorithmKindEEnum, CryptoAlgorithmKind.RSA);
+		addEEnumLiteral(cryptoAlgorithmKindEEnum, CryptoAlgorithmKind.ELIPTIC_CURVE);
+		addEEnumLiteral(cryptoAlgorithmKindEEnum, CryptoAlgorithmKind.DIFFIE_HELLMAN);
+		addEEnumLiteral(cryptoAlgorithmKindEEnum, CryptoAlgorithmKind.SERPENT);
+		addEEnumLiteral(cryptoAlgorithmKindEEnum, CryptoAlgorithmKind.AES);
+		addEEnumLiteral(cryptoAlgorithmKindEEnum, CryptoAlgorithmKind.OTHER);
+
+		initEEnum(datamodelStandardKindEEnum, DatamodelStandardKind.class, "DatamodelStandardKind");
+		addEEnumLiteral(datamodelStandardKindEEnum, DatamodelStandardKind.ISO_10303);
+		addEEnumLiteral(datamodelStandardKindEEnum, DatamodelStandardKind.ISO_15926);
+		addEEnumLiteral(datamodelStandardKindEEnum, DatamodelStandardKind.SEN_ML);
+		addEEnumLiteral(datamodelStandardKindEEnum, DatamodelStandardKind.ISO_12006);
+		addEEnumLiteral(datamodelStandardKindEEnum, DatamodelStandardKind.IEC_81346);
+		addEEnumLiteral(datamodelStandardKindEEnum, DatamodelStandardKind.ISO_15739_IFC);
+		addEEnumLiteral(datamodelStandardKindEEnum, DatamodelStandardKind.IEC_61850);
+		addEEnumLiteral(datamodelStandardKindEEnum, DatamodelStandardKind.OTHER_DATAMODEL_STANDARD);
+
+		initEEnum(certificateKindEEnum, CertificateKind.class, "CertificateKind");
+		addEEnumLiteral(certificateKindEEnum, CertificateKind.X509_ARROWHEAD);
+		addEEnumLiteral(certificateKindEEnum, CertificateKind.OTHER_CERTIFICATE);
+
+		initEEnum(coAPMethodKindEEnum, CoAPMethodKind.class, "CoAPMethodKind");
+		addEEnumLiteral(coAPMethodKindEEnum, CoAPMethodKind.GET);
+		addEEnumLiteral(coAPMethodKindEEnum, CoAPMethodKind.PUT);
+		addEEnumLiteral(coAPMethodKindEEnum, CoAPMethodKind.POST);
+		addEEnumLiteral(coAPMethodKindEEnum, CoAPMethodKind.DELETE);
+		addEEnumLiteral(coAPMethodKindEEnum, CoAPMethodKind.OTHER_CO_AP_METHOD);
+
+		initEEnum(httP_11_MethodKindEEnum, HTTP_11_MethodKind.class, "HTTP_11_MethodKind");
+		addEEnumLiteral(httP_11_MethodKindEEnum, HTTP_11_MethodKind.POST);
+		addEEnumLiteral(httP_11_MethodKindEEnum, HTTP_11_MethodKind.GET);
+		addEEnumLiteral(httP_11_MethodKindEEnum, HTTP_11_MethodKind.DELETE);
+		addEEnumLiteral(httP_11_MethodKindEEnum, HTTP_11_MethodKind.PUT);
+		addEEnumLiteral(httP_11_MethodKindEEnum, HTTP_11_MethodKind.HEAD);
+		addEEnumLiteral(httP_11_MethodKindEEnum, HTTP_11_MethodKind.OTHER_HTTP_METHOD);
+		addEEnumLiteral(httP_11_MethodKindEEnum, HTTP_11_MethodKind.CONNECT);
+		addEEnumLiteral(httP_11_MethodKindEEnum, HTTP_11_MethodKind.OPTIONS);
+		addEEnumLiteral(httP_11_MethodKindEEnum, HTTP_11_MethodKind.TRACE);
+
+		initEEnum(http2FrameKindEEnum, HTTP2FrameKind.class, "HTTP2FrameKind");
+		addEEnumLiteral(http2FrameKindEEnum, HTTP2FrameKind.OTHER_HTTP2_FRAME);
+		addEEnumLiteral(http2FrameKindEEnum, HTTP2FrameKind.HEADERS);
+		addEEnumLiteral(http2FrameKindEEnum, HTTP2FrameKind.DATA);
+		addEEnumLiteral(http2FrameKindEEnum, HTTP2FrameKind.PRIORITY);
+		addEEnumLiteral(http2FrameKindEEnum, HTTP2FrameKind.RST_STREAM);
+		addEEnumLiteral(http2FrameKindEEnum, HTTP2FrameKind.SETTINGS);
+		addEEnumLiteral(http2FrameKindEEnum, HTTP2FrameKind.PUSH_PROMISE);
+		addEEnumLiteral(http2FrameKindEEnum, HTTP2FrameKind.PING);
+		addEEnumLiteral(http2FrameKindEEnum, HTTP2FrameKind.GOAWAY);
+		addEEnumLiteral(http2FrameKindEEnum, HTTP2FrameKind.WINDOW_UPDATE);
+		addEEnumLiteral(http2FrameKindEEnum, HTTP2FrameKind.CONTINUATION);
+
+		initEEnum(macProtocolKindEEnum, MACProtocolKind.class, "MACProtocolKind");
+		addEEnumLiteral(macProtocolKindEEnum, MACProtocolKind._802_11B_MAC);
+		addEEnumLiteral(macProtocolKindEEnum, MACProtocolKind._802_11A_MAC);
+		addEEnumLiteral(macProtocolKindEEnum, MACProtocolKind.OTHER_MAC_PROTOCOL);
+
+		initEEnum(monitoringPolicyKindEEnum, MonitoringPolicyKind.class, "MonitoringPolicyKind");
+		addEEnumLiteral(monitoringPolicyKindEEnum, MonitoringPolicyKind.ISA95);
+		addEEnumLiteral(monitoringPolicyKindEEnum, MonitoringPolicyKind.OTHER_MONITORING_POLICY);
+
+		initEEnum(mqtt311MessageTypeKindEEnum, MQTT311MessageTypeKind.class, "MQTT311MessageTypeKind");
+		addEEnumLiteral(mqtt311MessageTypeKindEEnum, MQTT311MessageTypeKind.CONNACK);
+		addEEnumLiteral(mqtt311MessageTypeKindEEnum, MQTT311MessageTypeKind.CONNECT);
+		addEEnumLiteral(mqtt311MessageTypeKindEEnum, MQTT311MessageTypeKind.DISCONNECT);
+		addEEnumLiteral(mqtt311MessageTypeKindEEnum, MQTT311MessageTypeKind.PINGREQ);
+		addEEnumLiteral(mqtt311MessageTypeKindEEnum, MQTT311MessageTypeKind.PINGRESP);
+		addEEnumLiteral(mqtt311MessageTypeKindEEnum, MQTT311MessageTypeKind.PUBACK);
+		addEEnumLiteral(mqtt311MessageTypeKindEEnum, MQTT311MessageTypeKind.PUBCOMP);
+		addEEnumLiteral(mqtt311MessageTypeKindEEnum, MQTT311MessageTypeKind.PUBLISH);
+		addEEnumLiteral(mqtt311MessageTypeKindEEnum, MQTT311MessageTypeKind.PUBREC);
+		addEEnumLiteral(mqtt311MessageTypeKindEEnum, MQTT311MessageTypeKind.PUBREL);
+		addEEnumLiteral(mqtt311MessageTypeKindEEnum, MQTT311MessageTypeKind.SUBACK);
+		addEEnumLiteral(mqtt311MessageTypeKindEEnum, MQTT311MessageTypeKind.SUBSCRIBE);
+		addEEnumLiteral(mqtt311MessageTypeKindEEnum, MQTT311MessageTypeKind.UNSUBACK);
+		addEEnumLiteral(mqtt311MessageTypeKindEEnum, MQTT311MessageTypeKind.UNSUBSCRIBE);
+
+		initEEnum(mqtt50MessageTypeKindEEnum, MQTT50MessageTypeKind.class, "MQTT50MessageTypeKind");
+		addEEnumLiteral(mqtt50MessageTypeKindEEnum, MQTT50MessageTypeKind.CONNECT);
+		addEEnumLiteral(mqtt50MessageTypeKindEEnum, MQTT50MessageTypeKind.DISCONNECT);
+		addEEnumLiteral(mqtt50MessageTypeKindEEnum, MQTT50MessageTypeKind.PUBLISH);
+		addEEnumLiteral(mqtt50MessageTypeKindEEnum, MQTT50MessageTypeKind.CONNACK);
+		addEEnumLiteral(mqtt50MessageTypeKindEEnum, MQTT50MessageTypeKind.PUBACK);
+		addEEnumLiteral(mqtt50MessageTypeKindEEnum, MQTT50MessageTypeKind.PUBREC);
+		addEEnumLiteral(mqtt50MessageTypeKindEEnum, MQTT50MessageTypeKind.PUBREL);
+		addEEnumLiteral(mqtt50MessageTypeKindEEnum, MQTT50MessageTypeKind.PUBCOMP);
+		addEEnumLiteral(mqtt50MessageTypeKindEEnum, MQTT50MessageTypeKind.SUBSCRIBE);
+		addEEnumLiteral(mqtt50MessageTypeKindEEnum, MQTT50MessageTypeKind.SUBACK);
+		addEEnumLiteral(mqtt50MessageTypeKindEEnum, MQTT50MessageTypeKind.UNSUBSCRIBE);
+		addEEnumLiteral(mqtt50MessageTypeKindEEnum, MQTT50MessageTypeKind.UNSUBACK);
+		addEEnumLiteral(mqtt50MessageTypeKindEEnum, MQTT50MessageTypeKind.PINGREQ);
+		addEEnumLiteral(mqtt50MessageTypeKindEEnum, MQTT50MessageTypeKind.PINGRESP);
+		addEEnumLiteral(mqtt50MessageTypeKindEEnum, MQTT50MessageTypeKind.AUTH);
+
+		initEEnum(payloadEncryptionKindEEnum, PayloadEncryptionKind.class, "PayloadEncryptionKind");
+		addEEnumLiteral(payloadEncryptionKindEEnum, PayloadEncryptionKind.DTLS12);
+		addEEnumLiteral(payloadEncryptionKindEEnum, PayloadEncryptionKind.TLS12);
+		addEEnumLiteral(payloadEncryptionKindEEnum, PayloadEncryptionKind.OTHER);
+		addEEnumLiteral(payloadEncryptionKindEEnum, PayloadEncryptionKind.TLS13);
+		addEEnumLiteral(payloadEncryptionKindEEnum, PayloadEncryptionKind.DTLS13);
+
+		initEEnum(physicalLayerKindEEnum, PhysicalLayerKind.class, "PhysicalLayerKind");
+		addEEnumLiteral(physicalLayerKindEEnum, PhysicalLayerKind.IEEE802_3);
+		addEEnumLiteral(physicalLayerKindEEnum, PhysicalLayerKind.IEEE802_15_4);
+		addEEnumLiteral(physicalLayerKindEEnum, PhysicalLayerKind.IEEE802_11A);
+		addEEnumLiteral(physicalLayerKindEEnum, PhysicalLayerKind.IEEE802_11B);
+		addEEnumLiteral(physicalLayerKindEEnum, PhysicalLayerKind.OTHER_PHYSICAL_LAYER);
+
+		initEEnum(statusKodKindEEnum, StatusKodKind.class, "StatusKodKind");
+		addEEnumLiteral(statusKodKindEEnum, StatusKodKind._100_CONTINUE);
+		addEEnumLiteral(statusKodKindEEnum, StatusKodKind._101_SWITCHPROTOCOL);
+		addEEnumLiteral(statusKodKindEEnum, StatusKodKind._102_PROCESSING);
+		addEEnumLiteral(statusKodKindEEnum, StatusKodKind._103_EARLY_HINTS);
+		addEEnumLiteral(statusKodKindEEnum, StatusKodKind._200OK);
+		addEEnumLiteral(statusKodKindEEnum, StatusKodKind._201_CREATED);
+		addEEnumLiteral(statusKodKindEEnum, StatusKodKind._202_ACCEPTED);
+		addEEnumLiteral(statusKodKindEEnum, StatusKodKind._203_NON_AUTHORITATIVE_INFORMATION);
+		addEEnumLiteral(statusKodKindEEnum, StatusKodKind._204_NO_CONTENT);
+		addEEnumLiteral(statusKodKindEEnum, StatusKodKind._205_RESET_CONTENT);
+		addEEnumLiteral(statusKodKindEEnum, StatusKodKind._206_PARTIAL_CONTENT);
+		addEEnumLiteral(statusKodKindEEnum, StatusKodKind._207_MULTI_STATUS);
+		addEEnumLiteral(statusKodKindEEnum, StatusKodKind._208_ALREADY_REPORTED);
+
+		initEEnum(transportLayerKindEEnum, TransportLayerKind.class, "TransportLayerKind");
+		addEEnumLiteral(transportLayerKindEEnum, TransportLayerKind.TCP);
+		addEEnumLiteral(transportLayerKindEEnum, TransportLayerKind.UDP);
+
+		initEEnum(websocketDataFramingTypeKindEEnum, WebsocketDataFramingTypeKind.class, "WebsocketDataFramingTypeKind");
+		addEEnumLiteral(websocketDataFramingTypeKindEEnum, WebsocketDataFramingTypeKind.BASE_FRAMING_PROTOCOL);
+		addEEnumLiteral(websocketDataFramingTypeKindEEnum, WebsocketDataFramingTypeKind.CLIENTTO_SERVER_MASKING);
+		addEEnumLiteral(websocketDataFramingTypeKindEEnum, WebsocketDataFramingTypeKind.FRAGMENTATION);
+		addEEnumLiteral(websocketDataFramingTypeKindEEnum, WebsocketDataFramingTypeKind.ENUMERATION_LITERAL4);
+		addEEnumLiteral(websocketDataFramingTypeKindEEnum, WebsocketDataFramingTypeKind.CONTROL_FRAMES);
+		addEEnumLiteral(websocketDataFramingTypeKindEEnum, WebsocketDataFramingTypeKind.DATA_FRAMES);
+
+		initEEnum(workflowKindEEnum, WorkflowKind.class, "WorkflowKind");
+		addEEnumLiteral(workflowKindEEnum, WorkflowKind.BPMN);
+		addEEnumLiteral(workflowKindEEnum, WorkflowKind.SYS_ML_STATEMACHINE);
+		addEEnumLiteral(workflowKindEEnum, WorkflowKind.NODE_RED);
+		addEEnumLiteral(workflowKindEEnum, WorkflowKind.OTHER_WORKFLOW_LANGUAGE);
+		addEEnumLiteral(workflowKindEEnum, WorkflowKind.PETRI_NET);
+
+		// Create resource
+		createResource(eNS_URI);
+
+		// Create annotations
+		// http://www.eclipse.org/uml2/2.0.0/UML
+		createUMLAnnotations();
+	}
+
+	/**
+	 * Initializes the annotations for <b>http://www.eclipse.org/uml2/2.0.0/UML</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createUMLAnnotations() {
+		String source = "http://www.eclipse.org/uml2/2.0.0/UML";
+		addAnnotation
+		  (this,
+		   source,
+		   new String[] {
+			   "originalName", "Arrowhead DSL"
+		   });
+		addAnnotation
+		  (getSystem_of_LocalcloudsDesign_SoLCName(),
+		   source,
+		   new String[] {
+			   "originalName", "SoLC-Name"
+		   });
+		addAnnotation
+		  (getDeviceDesign_DeviceName(),
+		   source,
+		   new String[] {
+			   "originalName", "Device Name"
+		   });
+		addAnnotation
+		  (getDeviceDesignDescription_IOports(),
+		   source,
+		   new String[] {
+			   "originalName", "I/O ports"
+		   });
+		addAnnotation
+		  (httP_11_MethodKindEEnum,
+		   source,
+		   new String[] {
+			   "originalName", "HTTP_1.1_MethodKind"
+		   });
+		addAnnotation
+		  (http2FrameKindEEnum,
+		   source,
+		   new String[] {
+			   "originalName", "HTTP/2FrameKind"
+		   });
+		addAnnotation
+		  (macProtocolKindEEnum.getELiterals().get(0),
+		   source,
+		   new String[] {
+			   "originalName", "802_11b_MAC"
+		   });
+		addAnnotation
+		  (macProtocolKindEEnum.getELiterals().get(1),
+		   source,
+		   new String[] {
+			   "originalName", "802_11a_MAC"
+		   });
+		addAnnotation
+		  (mqtt311MessageTypeKindEEnum,
+		   source,
+		   new String[] {
+			   "originalName", "MQTT3.1.1-MessageTypeKind"
+		   });
+		addAnnotation
+		  (mqtt50MessageTypeKindEEnum,
+		   source,
+		   new String[] {
+			   "originalName", "MQTT5.0-MessageTypeKind"
+		   });
+		addAnnotation
+		  (payloadEncryptionKindEEnum.getELiterals().get(0),
+		   source,
+		   new String[] {
+			   "originalName", "DTLS 1.2"
+		   });
+		addAnnotation
+		  (payloadEncryptionKindEEnum.getELiterals().get(1),
+		   source,
+		   new String[] {
+			   "originalName", "TLS 1.2"
+		   });
+		addAnnotation
+		  (payloadEncryptionKindEEnum.getELiterals().get(3),
+		   source,
+		   new String[] {
+			   "originalName", "TLS 1.3"
+		   });
+		addAnnotation
+		  (payloadEncryptionKindEEnum.getELiterals().get(4),
+		   source,
+		   new String[] {
+			   "originalName", "DTLS 1.3"
+		   });
+		addAnnotation
+		  (statusKodKindEEnum.getELiterals().get(0),
+		   source,
+		   new String[] {
+			   "originalName", "100 - Continue"
+		   });
+		addAnnotation
+		  (statusKodKindEEnum.getELiterals().get(1),
+		   source,
+		   new String[] {
+			   "originalName", "101 - Switch protocol"
+		   });
+		addAnnotation
+		  (statusKodKindEEnum.getELiterals().get(2),
+		   source,
+		   new String[] {
+			   "originalName", "102 - Processing"
+		   });
+		addAnnotation
+		  (statusKodKindEEnum.getELiterals().get(3),
+		   source,
+		   new String[] {
+			   "originalName", "103 - Early Hints"
+		   });
+		addAnnotation
+		  (statusKodKindEEnum.getELiterals().get(4),
+		   source,
+		   new String[] {
+			   "originalName", "200 - OK"
+		   });
+		addAnnotation
+		  (statusKodKindEEnum.getELiterals().get(5),
+		   source,
+		   new String[] {
+			   "originalName", "201 - Created"
+		   });
+		addAnnotation
+		  (statusKodKindEEnum.getELiterals().get(6),
+		   source,
+		   new String[] {
+			   "originalName", "202 - Accepted"
+		   });
+		addAnnotation
+		  (statusKodKindEEnum.getELiterals().get(7),
+		   source,
+		   new String[] {
+			   "originalName", "203 - Non-Authoritative Information"
+		   });
+		addAnnotation
+		  (statusKodKindEEnum.getELiterals().get(8),
+		   source,
+		   new String[] {
+			   "originalName", "204 - No Content"
+		   });
+		addAnnotation
+		  (statusKodKindEEnum.getELiterals().get(9),
+		   source,
+		   new String[] {
+			   "originalName", "205 - Reset Content"
+		   });
+		addAnnotation
+		  (statusKodKindEEnum.getELiterals().get(10),
+		   source,
+		   new String[] {
+			   "originalName", "206 - Partial Content"
+		   });
+		addAnnotation
+		  (statusKodKindEEnum.getELiterals().get(11),
+		   source,
+		   new String[] {
+			   "originalName", "207 - Multi-Status"
+		   });
+		addAnnotation
+		  (statusKodKindEEnum.getELiterals().get(12),
+		   source,
+		   new String[] {
+			   "originalName", "208 - Already Reported"
+		   });
+		addAnnotation
+		  (websocketDataFramingTypeKindEEnum.getELiterals().get(1),
+		   source,
+		   new String[] {
+			   "originalName", "Client-to-Server_Masking"
+		   });
+	}
+
+} //ArrowheadDSLPackageImpl
