@@ -26,7 +26,6 @@ import org.eclipse.papyrus.sysml16.requirements.RequirementsPackage;
  * <!-- end-user-doc -->
  * @see ArrowheadDSL.ArrowheadDSLFactory
  * @model kind="package"
- *        annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Arrowhead DSL'"
  * @generated
  */
 public interface ArrowheadDSLPackage extends EPackage {

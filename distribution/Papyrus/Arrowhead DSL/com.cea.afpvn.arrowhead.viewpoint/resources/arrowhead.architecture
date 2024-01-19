@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<architecture:ArchitectureDomain xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:architecture="http://www.eclipse.org/papyrus/infra/core/architecture" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:gmfdiagrepresentation="http://www.eclipse.org/papyrus/infra/gmfdiag/representation" xmlns:paletteconfiguration="http://www.eclipse.org/papyrus/diagram/paletteconfiguration/0.8" xmlns:representation="http://www.eclipse.org/papyrus/infra/core/architecture/representation" xmi:id="_mWEBIGwyEe6CubzOdD5h_Q" id="com.cea.arrowhead" name="ArrowHead" description="ArrowHead DSL to create SOA Architecture models" icon="platform:/plugin/ArrowheadProfile/icons/arrowhead_icon.png">
+  <stakeholders xmi:type="architecture:Stakeholder" xmi:id="__epPIGwyEe6CubzOdD5h_Q" id="arrowhead_designer" name="arrowhead_designer" description="Arrowhead System designer" icon="platform:/plugin/org.eclipse.papyrus.oldas.profile/icons/ODD.png" concerns="_GpRCwGwzEe6CubzOdD5h_Q"/>
+  <concerns xmi:type="architecture:Concern" xmi:id="_GpRCwGwzEe6CubzOdD5h_Q" id="arrowhead.design" name="ArrowHead Architecture Design" description="Arrowhead System Architecture" icon="platform:/plugin/ArrowheadProfile/icons/arrowhead_icon.png"/>
+  <contexts xmi:type="architecture:ArchitectureDescriptionLanguage" xmi:id="_730GMLhAEe6pZqc0ssvC1Q" id="Arrowhead" name="Arrowhead" icon="platform:/plugin/ArrowheadProfile/icons/arrowhead_icon.png" defaultViewpoints="org.eclipse.papyrus.sysml16.standard.modeling" creationCommandClass="com.cea.afpvn.arrowhead.viewpoint.CreateArrowHeadModelCommand">
+    <viewpoints xmi:type="architecture:ArchitectureViewpoint" xmi:id="org.eclipse.papyrus.sysml16.standard.modeling" id="arrowhead.vp" name="ArrowHead SoA Modeling" description="A viewpoint allowing standard modeling with ArrowHead DSL" icon="platform:/plugin/org.eclipse.papyrus.uml.architecture/icons/viewpoint.gif" concerns="_GpRCwGwzEe6CubzOdD5h_Q" representationKinds="org.eclipse.papyrus.sysml16.diagram.blockdefinition"/>
+    <elementTypes xmi:type="elementtypesconfigurations:ElementTypeSetConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16.service.types.elementTypeSet.extension"/>
+    <elementTypes xmi:type="elementtypesconfigurations:ElementTypeSetConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.sysml16.service.types.elementTypeSet"/>
+    <elementTypes xmi:type="elementtypesconfigurations:ElementTypeSetConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.elementTypeSet.extension"/>
+    <elementTypes xmi:type="elementtypesconfigurations:ElementTypeSetConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/StandardProfile.elementtypesconfigurations#_jfoLkGT_EeSEqNuV3JpFCA"/>
+    <elementTypes xmi:type="elementtypesconfigurations:ElementTypeSetConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.diagram.clazz/model/classdiagram.elementtypesconfigurations#_rWI4YHPzEeSnGJwaJWHCSg"/>
+    <elementTypes xmi:type="elementtypesconfigurations:ElementTypeSetConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.elementTypes"/>
+    <elementTypes xmi:type="elementtypesconfigurations:ElementTypeSetConfiguration" href="platform:/plugin/org.eclipse.papyrus.infra.emf/model/infra-emf.elementtypesconfigurations#_rWI4YHPzEeSnGJwaJWHCSg"/>
+    <elementTypes xmi:type="elementtypesconfigurations:ElementTypeSetConfiguration" href="platform:/plugin/org.eclipse.papyrus.infra.gmfdiag.common/model/gmfdiag-common.elementtypesconfigurations#_rWI4YHPzEeSnGJwaJWHCSg"/>
+    <elementTypes xmi:type="elementtypesconfigurations:ElementTypeSetConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.diagram.interactionoverview/model/interactionOverviewDiagram.elementtypesconfigurations#_x8G0YGaNEeSyJIsxLao1Pw"/>
+    <elementTypes xmi:type="elementtypesconfigurations:ElementTypeSetConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#_ScP1oFYCEeS0WsAAtVmToA"/>
+    <elementTypes xmi:type="elementtypesconfigurations:ElementTypeSetConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#_ScP1oFYCEeS0WsAAtVmToA"/>
+    <elementTypes xmi:type="elementtypesconfigurations:ElementTypeSetConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml-containments.elementtypesconfigurations#_ScP1oFYCEeS0WsAAtVmToA"/>
+    <elementTypes xmi:type="elementtypesconfigurations:ElementTypeSetConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types.ui/model/uml-advice.elementtypesconfigurations#_ScP1oFYCEeS0WsAAtVmToA"/>
+    <elementTypes xmi:type="elementtypesconfigurations:ElementTypeSetConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.diagram.stereotype.edition/model/stereotype-edit.elementtypesconfigurations#_ScP1oFYCEeS0WsAAtVmToA"/>
+    <elementTypes xmi:type="elementtypesconfigurations:ElementTypeSetConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5.elementtypesconfigurations#com.example.arrowheadDSL.elementTypes"/>
+    <elementTypes xmi:type="elementtypesconfigurations:ElementTypeSetConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_IZQT4LhJEe6pZqc0ssvC1Q"/>
+    <elementTypes xmi:type="elementtypesconfigurations:ElementTypeSetConfiguration" href="platform:/plugin/org.eclipse.papyrus.infra.gmfdiag.common/model/notation.elementtypesconfigurations#_ScP1oFYCEeS0WsAAtVmToA"/>
+    <representationKinds xmi:type="gmfdiagrepresentation:PapyrusDiagram" xmi:id="org.eclipse.papyrus.sysml16.diagram.blockdefinition" id="org.eclipse.papyrus.sysml16.diagram.blockdefinition.arrowhead" name="ArrowHead Block Definition Diagram" description="BDD diagram" icon="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.blockdefinition/resources/icons/obj16/Diagram_BlockDefinition.gif" concerns="_GpRCwGwzEe6CubzOdD5h_Q" implementationID="PapyrusUMLClassDiagram" customStyle="platform:/plugin/com.cea.afpvn.arrowhead.viewpoint/resources/aht_style.css" creationCommandClass="org.eclipse.papyrus.uml.diagram.clazz.CreateClassDiagramCommand">
+      <modelRules xmi:type="representation:ModelRule" xmi:id="_ZrBf4ZaBEeS8eNvSwD0lgA" permit="true" elementMultiplicity="1" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
+      </modelRules>
+      <owningRules xmi:type="representation:OwningRule" xmi:id="_ZrBf45aBEeS8eNvSwD0lgA" permit="true" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
+      </owningRules>
+      <childRules xmi:type="gmfdiagrepresentation:ChildRule" xmi:id="_Hf65ILg-Ee6pZqc0ssvC1Q" permit="true"/>
+      <palettes xmi:type="paletteconfiguration:PaletteConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.viewpoint/resources/aht.paletteconfiguration#/"/>
+    </representationKinds>
+    <metamodel xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML#/"/>
+    <profiles xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/arrowhead#/"/>
+    <profiles xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
+    <profiles xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks"/>
+    <profiles xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows"/>
+    <profiles xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements"/>
+    <profiles xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//modelelements"/>
+    <profiles xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//deprecatedelements"/>
+  </contexts>
+</architecture:ArchitectureDomain>

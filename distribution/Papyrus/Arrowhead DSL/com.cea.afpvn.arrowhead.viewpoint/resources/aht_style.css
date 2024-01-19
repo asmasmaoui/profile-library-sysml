@@ -1,0 +1,40 @@
+* {
+	maskLabel: name;
+	elementIcon: false;
+}
+
+Property > Compartment[kind="internalstructure"]{
+    visible:true;
+}
+
+
+Class[appliedStereotypes~="ArrowheadDSL::SysDD"]{
+	fillColor: #808080; 
+	lineColor: black;
+	lineWidth: 2;
+	bold: true; 
+	displayStereotypes: true;
+}
+
+	
+Class[appliedStereotypes~="ArrowheadDSL::SysD"]{
+	fillColor: #ff8000;
+	lineColor: black;
+	lineWidth: 2;
+	bold: true; 
+	displayStereotypes: true;
+}
+
+Class[appliedStereotypes~="ArrowheadDSL::SD"]{
+	fillColor: #dfd869;
+	lineColor: black;
+	lineWidth: 2;
+	bold: true; 
+	displayStereotypes: true;
+}
+
+Shape {
+	shapeVisibility: true;
+}
+
+

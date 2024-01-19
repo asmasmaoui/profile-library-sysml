@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
-  <uml:Profile xmi:id="_sX4gkDIREe6ldMRwfXEyUg" name="Arrowhead DSL" metaclassReference="_sqJsIKo9Ee6fDNrwXJadFA _0Lct8LdwEe6i2JWyFlnI5w">
+  <uml:Profile xmi:id="_sX4gkDIREe6ldMRwfXEyUg" name="ArrowheadDSL" metaclassReference="_sqJsIKo9Ee6fDNrwXJadFA _0Lct8LdwEe6i2JWyFlnI5w">
     <ownedComment xmi:type="uml:Comment" xmi:id="_QmbfkDRFEe6hdPlp_7DYew">
       <body>Black box design
 </body>

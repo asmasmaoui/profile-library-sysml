@@ -2,9 +2,6 @@
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="ArrowheadDSL" nsURI="http://www.eclipse.org/papyrus/arrowhead"
     nsPrefix="ArrowheadDSL">
-  <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-    <details key="originalName" value="Arrowhead DSL"/>
-  </eAnnotations>
   <eClassifiers xsi:type="ecore:EClass" name="SysD" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//blocks/Block">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="Microservies SD to be added to a microsystem (SysD) as a full port."/>

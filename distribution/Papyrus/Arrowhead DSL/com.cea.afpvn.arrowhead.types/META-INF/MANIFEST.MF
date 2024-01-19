@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: com.cea.afpvn.arrowhead.types
+Bundle-SymbolicName: com.cea.afpvn.arrowhead.types;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: CEA
+Automatic-Module-Name: com.cea.afpvn.arrowhead.types
+Bundle-RequiredExecutionEnvironment: JavaSE-17
+Require-Bundle: org.eclipse.papyrus.infra.types.core;bundle-version="[5.1.0,6.0.0)",
+ ArrowheadProfile;bundle-version="1.0.0"

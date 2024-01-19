@@ -2308,12 +2308,6 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	protected void createUMLAnnotations() {
 		String source = "http://www.eclipse.org/uml2/2.0.0/UML";
 		addAnnotation
-		  (this,
-		   source,
-		   new String[] {
-			   "originalName", "Arrowhead DSL"
-		   });
-		addAnnotation
 		  (getSystem_of_LocalcloudsDesign_SoLCName(),
 		   source,
 		   new String[] {
