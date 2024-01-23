@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="ArrowheadDSL" nsURI="http://www.eclipse.org/papyrus/arrowhead"
+    nsPrefix="ArrowheadDSL">
+  <eClassifiers xsi:type="ecore:EClass" name="SysD" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//blocks/Block">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Microservies SD to be added to a microsystem (SysD) as a full port."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="MicrosystemName" ordered="false"
+        upperBound="-1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="FunctionalProperties" ordered="false"
+        unique="false" lowerBound="1" upperBound="-1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//UnlimitedNatural"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="SystemDatabase" ordered="false"
+        unique="false" lowerBound="1" eType="#//SystemDatabaseKind"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="MicrosystemBehaviour" ordered="false"
+        unique="false" lowerBound="1" upperBound="-1" eType="#//BusinessPolicyKind"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sd" ordered="false" upperBound="-1"
+        eType="#//SD" eOpposite="#//SD/sysd"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="localclouddesign" ordered="false"
+        upperBound="-1" eType="#//LocalCloudDesign" eOpposite="#//LocalCloudDesign/sysd"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="SystemDatabaseKind">
+    <eLiterals name="MySQL"/>
+    <eLiterals name="Undefined" value="1"/>
+    <eLiterals name="MariaDB" value="2"/>
+    <eLiterals name="mongoDB" value="3"/>
+    <eLiterals name="neo4j" value="4"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="BusinessPolicyKind">
+    <eLiterals name="Other"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SD" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//blocks/Block">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="ServiceInterfaces: add more if required. Define Method name and parameters&#xA; "/>
+    </eAnnotations>
+    <eOperations name="Operation" ordered="false" lowerBound="1"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="MicroserviceName" ordered="false"
+        unique="false" lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sysd" ordered="false" upperBound="-1"
+        eType="#//SysD" eOpposite="#//SysD/sd"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LocalCloudDesign" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//blocks/Block">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="LC_Name" ordered="false"
+        lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="FunctionalProperties" ordered="false"
+        unique="false" lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//UnlimitedNatural"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="LC_SecurityStrategy" ordered="false"
+        upperBound="-1" eType="#//SecurityPolicyKind"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="LC_BusinessStrategy" ordered="false"
+        upperBound="-1" eType="#//BusinessPolicyKind"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="LC_LifecycleStrategy" ordered="false"
+        unique="false" lowerBound="1" eType="#//LifecyclePolicyKind"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="system_of_localcloudsdesign"
+        ordered="false" upperBound="-1" eType="#//System_of_LocalcloudsDesign" eOpposite="#//System_of_LocalcloudsDesign/localclouddesign"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sysd" ordered="false" upperBound="-1"
+        eType="#//SysD" eOpposite="#//SysD/localclouddesign"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="SecurityPolicyKind">
+    <eLiterals name="NGAC"/>
+    <eLiterals name="Other" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="LifecyclePolicyKind">
+    <eLiterals name="Other"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="System_of_LocalcloudsDesign" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//blocks/Block">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="SoLCName" ordered="false"
+        lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details key="originalName" value="SoLC-Name"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="SoLC_SecurityStrategy"
+        ordered="false" unique="false" upperBound="-1" eType="#//SecurityPolicyKind"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="SoLC_BusinessStrategy"
+        ordered="false" unique="false" upperBound="-1" eType="#//BusinessPolicyKind"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="SoLC_LifecycleStrategy"
+        ordered="false" unique="false" lowerBound="1" eType="#//LifecyclePolicyKind"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="localclouddesign" ordered="false"
+        upperBound="-1" eType="#//LocalCloudDesign" eOpposite="#//LocalCloudDesign/system_of_localcloudsdesign"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ArrowheadDSLRequirement" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//requirements/Requirement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="arrowheadusecase" ordered="false"
+        upperBound="-1" eType="#//ArrowheadUseCase" eOpposite="#//ArrowheadUseCase/arrowheaddslrequirement"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ArrowheadUseCase">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="base_UseCase" ordered="false"
+        eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//UseCase"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="arrowheaddslrequirement"
+        ordered="false" upperBound="-1" eType="#//ArrowheadDSLRequirement" eOpposite="#//ArrowheadDSLRequirement/arrowheadusecase"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DeviceDesign" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//blocks/Block">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="DeviceName" ordered="false"
+        lowerBound="1" upperBound="-1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details key="originalName" value="Device Name"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="intercloudnetworkdesign"
+        ordered="false" upperBound="-1" eType="#//IntercloudNetworkDesign" eOpposite="#//IntercloudNetworkDesign/devicedesign"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="intracloudnetworkdesign"
+        ordered="false" upperBound="-1" eType="#//IntracloudNetworkDesign" eOpposite="#//IntracloudNetworkDesign/devicedesign"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IntercloudNetworkDesign" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//blocks/Block">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="InterNetworkDomainName"
+        ordered="false" unique="false" upperBound="-1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="InterNetworkMacLayer" ordered="false"
+        unique="false" lowerBound="1" upperBound="-1" eType="#//MacLayerKind"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="devicedesign" ordered="false"
+        upperBound="-1" eType="#//DeviceDesign" eOpposite="#//DeviceDesign/intercloudnetworkdesign"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="MacLayerKind">
+    <eLiterals name="TDMA"/>
+    <eLiterals name="CDMA" value="1"/>
+    <eLiterals name="OtherMacLayer" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IntracloudNetworkDesign" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//blocks/Block">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="IntraNetworkDomain" ordered="false"
+        unique="false" lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="IntraNetworkMacLayer" ordered="false"
+        unique="false" lowerBound="1" upperBound="-1" eType="#//MacLayerKind"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="devicedesign" ordered="false"
+        upperBound="-1" eType="#//DeviceDesign" eOpposite="#//DeviceDesign/intracloudnetworkdesign"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DeviceDesignDescription" eSuperTypes="#//DeviceDesign">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="IOports" ordered="false"
+        upperBound="-1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details key="originalName" value="I/O ports"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="memory" ordered="false"
+        unique="false" upperBound="-1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="processor" ordered="false"
+        lowerBound="1" upperBound="-1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="operatingSystem" ordered="false"
+        lowerBound="1" eType="#//OSKind"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ArrowheadCertificate" ordered="false"
+        unique="false" lowerBound="1" eType="#//ArrowheadCertificateKind"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="intercloudnetworkdesigndescription"
+        ordered="false" upperBound="-1" eType="#//IntercloudNetworkDesignDescription"
+        eOpposite="#//IntercloudNetworkDesignDescription/devicedesigndescription"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="intracloudnetworkdesigndescription"
+        ordered="false" upperBound="-1" eType="#//IntracloudNetworkDesignDescription"
+        eOpposite="#//IntracloudNetworkDesignDescription/devicedesigndescription"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="OSKind">
+    <eLiterals name="Windows"/>
+    <eLiterals name="MacOS" value="1"/>
+    <eLiterals name="Linux" value="2"/>
+    <eLiterals name="OtherOS" value="3"/>
+    <eLiterals name="ROS" value="4"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ArrowheadCertificateKind">
+    <eLiterals name="Device"/>
+    <eLiterals name="ApplicationSystem" value="1"/>
+    <eLiterals name="CoreSystem" value="2"/>
+    <eLiterals name="Management" value="3"/>
+    <eLiterals name="InterCloud" value="4"/>
+    <eLiterals name="Other" value="5"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IntercloudNetworkDesignDescription"
+      eSuperTypes="#//IntercloudNetworkDesign">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="InterNetworkRouter" ordered="false"
+        unique="false" upperBound="-1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//UnlimitedNatural"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="InterNetworkRouterConfig"
+        ordered="false" unique="false" upperBound="-1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//UnlimitedNatural"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="devicedesigndescription"
+        ordered="false" upperBound="-1" eType="#//DeviceDesignDescription" eOpposite="#//DeviceDesignDescription/intercloudnetworkdesigndescription"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IntracloudNetworkDesignDescription"
+      eSuperTypes="#//IntracloudNetworkDesign">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="IntraNetworkRouter" ordered="false"
+        unique="false" lowerBound="1" upperBound="-1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//UnlimitedNatural"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="IntraNetworkRouterConfig"
+        ordered="false" unique="false" lowerBound="1" upperBound="-1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//UnlimitedNatural"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="devicedesigndescription"
+        ordered="false" upperBound="-1" eType="#//DeviceDesignDescription" eOpposite="#//DeviceDesignDescription/intracloudnetworkdesigndescription"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LocalcloudDesignDescription" eSuperTypes="#//LocalCloudDesign">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="LC_workflow" ordered="false"
+        lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="LC_orchestration" ordered="false"
+        lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="systemoflocaclouddesigndescription"
+        ordered="false" upperBound="-1" eType="#//System_of_LocacloudsDesignDescription"
+        eOpposite="#//System_of_LocacloudsDesignDescription/localclouddesigndescription">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details key="originalName" value="system-of-locaclouddesigndescription"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sysdd" ordered="false"
+        upperBound="-1" eType="#//SysDD" eOpposite="#//SysDD/localclouddesigndescription"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="System_of_LocacloudsDesignDescription"
+      eSuperTypes="#//System_of_LocalcloudsDesign">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="SoLC_Orchestration" ordered="false"
+        lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="SoLC_Workflow" ordered="false"
+        lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="localclouddesigndescription"
+        ordered="false" upperBound="-1" eType="#//LocalcloudDesignDescription" eOpposite="#//LocalcloudDesignDescription/systemoflocaclouddesigndescription"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SysDD" eSuperTypes="#//SysD">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Timeformat" ordered="false"
+        unique="false" lowerBound="1" eType="#//TimeFormatKind"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ArrowheadCertificate" ordered="false"
+        unique="false" lowerBound="1" eType="#//ArrowheadCertificateKind"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="idd" ordered="false" upperBound="-1"
+        eType="#//IDD" eOpposite="#//IDD/sysdd"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="localclouddesigndescription"
+        ordered="false" upperBound="-1" eType="#//LocalcloudDesignDescription" eOpposite="#//LocalcloudDesignDescription/sysdd"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="TimeFormatKind">
+    <eLiterals name="RFC_3339"/>
+    <eLiterals name="ISO_8601" value="1"/>
+    <eLiterals name="Unix_time" value="2"/>
+    <eLiterals name="OtherTimeFormat" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IDD" eSuperTypes="#//SD">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Port" ordered="false" lowerBound="1"
+        eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Protocol" ordered="false"
+        unique="false" lowerBound="1" eType="#//ApplicationProtocolKind"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Encoding" ordered="false"
+        unique="false" lowerBound="1" eType="#//EncodingKind"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Security" ordered="false"
+        lowerBound="1" eType="#//ArrowheadSecurityKind"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Compression" ordered="false"
+        unique="false" lowerBound="1" eType="#//ComprressionKind"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Certificate_level" ordered="false"
+        unique="false" lowerBound="1" eType="#//ArrowheadCertificateKind"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Token" ordered="false"
+        unique="false" lowerBound="1" eType="#//TokenKind"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Crypto_algorithm" ordered="false"
+        unique="false" lowerBound="1" eType="#//CryptoAlgorithmKind"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Datamodel" ordered="false"
+        unique="false" lowerBound="1" eType="#//DatamodelStandardKind"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sysdd" ordered="false"
+        upperBound="-1" eType="#//SysDD" eOpposite="#//SysDD/idd"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ApplicationProtocolKind">
+    <eLiterals name="http"/>
+    <eLiterals name="mqtt" value="1"/>
+    <eLiterals name="coap" value="2"/>
+    <eLiterals name="websocket" value="3"/>
+    <eLiterals name="OtherApplicationProtocol" value="4"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EncodingKind">
+    <eLiterals name="XML"/>
+    <eLiterals name="JSON" value="1"/>
+    <eLiterals name="CBOR" value="2"/>
+    <eLiterals name="OtherEncoding" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ArrowheadSecurityKind">
+    <eLiterals name="CERTIFICATE"/>
+    <eLiterals name="TOKEN" value="1"/>
+    <eLiterals name="NOT_SECURE" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ComprressionKind">
+    <eLiterals name="EXI"/>
+    <eLiterals name="None" value="1"/>
+    <eLiterals name="OtherCompression" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="TokenKind">
+    <eLiterals name="ArrowheadToken"/>
+    <eLiterals name="OtherToken" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="CryptoAlgorithmKind">
+    <eLiterals name="RSA"/>
+    <eLiterals name="ElipticCurve" value="1"/>
+    <eLiterals name="DiffieHellman" value="2"/>
+    <eLiterals name="Serpent" value="3"/>
+    <eLiterals name="AES" value="4"/>
+    <eLiterals name="Other" value="5"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="DatamodelStandardKind">
+    <eLiterals name="ISO_10303"/>
+    <eLiterals name="ISO_15926" value="1"/>
+    <eLiterals name="SenML" value="2"/>
+    <eLiterals name="ISO_12006" value="3"/>
+    <eLiterals name="IEC_81346" value="4"/>
+    <eLiterals name="ISO_15739_IFC" value="5"/>
+    <eLiterals name="IEC_61850" value="6"/>
+    <eLiterals name="OtherDatamodelStandard" value="7"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="System_of_LocalcloudsImplementation"
+      eSuperTypes="#//System_of_LocacloudsDesignDescription">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="SoLC_Documentation" ordered="false"
+        lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//UnlimitedNatural"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="localcloudimplementation"
+        ordered="false" upperBound="-1" eType="#//LocalcloudImplementation" eOpposite="#//LocalcloudImplementation/system_of_localcloudsimplementation"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LocalcloudImplementation" eSuperTypes="#//LocalcloudDesignDescription">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="LC_Documentation" ordered="false"
+        lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//UnlimitedNatural"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="systemimplementation" ordered="false"
+        upperBound="-1" eType="#//System_Implementation" eOpposite="#//System_Implementation/loclacloudimplementation"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="system_of_localcloudsimplementation"
+        ordered="false" upperBound="-1" eType="#//System_of_LocalcloudsImplementation"
+        eOpposite="#//System_of_LocalcloudsImplementation/localcloudimplementation"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="System_Implementation" eSuperTypes="#//SysDD">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="idd_implementation" ordered="false"
+        upperBound="-1" eType="#//IDD_Implementation" eOpposite="#//IDD_Implementation/systemimplementation"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="loclacloudimplementation"
+        ordered="false" upperBound="-1" eType="#//LocalcloudImplementation" eOpposite="#//LocalcloudImplementation/systemimplementation"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IDD_Implementation" eSuperTypes="#//IDD">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="systemimplementation" ordered="false"
+        upperBound="-1" eType="#//System_Implementation" eOpposite="#//System_Implementation/idd_implementation"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="CertificateKind">
+    <eLiterals name="x509_Arrowhead"/>
+    <eLiterals name="OtherCertificate" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="CoAPMethodKind">
+    <eLiterals name="GET"/>
+    <eLiterals name="PUT" value="1"/>
+    <eLiterals name="POST" value="2"/>
+    <eLiterals name="DELETE" value="3"/>
+    <eLiterals name="OtherCoAPMethod" value="4"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="HTTP_11_MethodKind">
+    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details key="originalName" value="HTTP_1.1_MethodKind"/>
+    </eAnnotations>
+    <eLiterals name="POST"/>
+    <eLiterals name="GET" value="1"/>
+    <eLiterals name="DELETE" value="2"/>
+    <eLiterals name="PUT" value="3"/>
+    <eLiterals name="HEAD" value="4"/>
+    <eLiterals name="OtherHTTPMethod" value="5"/>
+    <eLiterals name="CONNECT" value="6"/>
+    <eLiterals name="OPTIONS" value="7"/>
+    <eLiterals name="TRACE" value="8"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="HTTP2FrameKind">
+    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details key="originalName" value="HTTP/2FrameKind"/>
+    </eAnnotations>
+    <eLiterals name="OtherHTTP2Frame"/>
+    <eLiterals name="HEADERS" value="1"/>
+    <eLiterals name="DATA" value="2"/>
+    <eLiterals name="PRIORITY" value="3"/>
+    <eLiterals name="RST_STREAM" value="4"/>
+    <eLiterals name="SETTINGS" value="5"/>
+    <eLiterals name="PUSH_PROMISE" value="6"/>
+    <eLiterals name="PING" value="7"/>
+    <eLiterals name="GOAWAY" value="8"/>
+    <eLiterals name="WINDOW_UPDATE" value="9"/>
+    <eLiterals name="CONTINUATION" value="10"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="MACProtocolKind">
+    <eLiterals name="_802_11b_MAC">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details key="originalName" value="802_11b_MAC"/>
+      </eAnnotations>
+    </eLiterals>
+    <eLiterals name="_802_11a_MAC" value="1">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details key="originalName" value="802_11a_MAC"/>
+      </eAnnotations>
+    </eLiterals>
+    <eLiterals name="OtherMacProtocol" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="MonitoringPolicyKind">
+    <eLiterals name="ISA95"/>
+    <eLiterals name="OtherMonitoringPolicy" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="MQTT311MessageTypeKind">
+    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details key="originalName" value="MQTT3.1.1-MessageTypeKind"/>
+    </eAnnotations>
+    <eLiterals name="CONNACK"/>
+    <eLiterals name="CONNECT" value="1"/>
+    <eLiterals name="DISCONNECT" value="2"/>
+    <eLiterals name="PINGREQ" value="3"/>
+    <eLiterals name="PINGRESP" value="4"/>
+    <eLiterals name="PUBACK" value="5"/>
+    <eLiterals name="PUBCOMP" value="6"/>
+    <eLiterals name="PUBLISH" value="7"/>
+    <eLiterals name="PUBREC" value="8"/>
+    <eLiterals name="PUBREL" value="9"/>
+    <eLiterals name="SUBACK" value="10"/>
+    <eLiterals name="SUBSCRIBE" value="11"/>
+    <eLiterals name="UNSUBACK" value="12"/>
+    <eLiterals name="UNSUBSCRIBE" value="13"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="MQTT50MessageTypeKind">
+    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details key="originalName" value="MQTT5.0-MessageTypeKind"/>
+    </eAnnotations>
+    <eLiterals name="CONNECT"/>
+    <eLiterals name="DISCONNECT" value="1"/>
+    <eLiterals name="PUBLISH" value="2"/>
+    <eLiterals name="CONNACK" value="3"/>
+    <eLiterals name="PUBACK" value="4"/>
+    <eLiterals name="PUBREC" value="5"/>
+    <eLiterals name="PUBREL" value="6"/>
+    <eLiterals name="PUBCOMP" value="7"/>
+    <eLiterals name="SUBSCRIBE" value="8"/>
+    <eLiterals name="SUBACK" value="9"/>
+    <eLiterals name="UNSUBSCRIBE" value="10"/>
+    <eLiterals name="UNSUBACK" value="11"/>
+    <eLiterals name="PINGREQ" value="12"/>
+    <eLiterals name="PINGRESP" value="13"/>
+    <eLiterals name="AUTH" value="14"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="PayloadEncryptionKind">
+    <eLiterals name="DTLS12">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details key="originalName" value="DTLS 1.2"/>
+      </eAnnotations>
+    </eLiterals>
+    <eLiterals name="TLS12" value="1">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details key="originalName" value="TLS 1.2"/>
+      </eAnnotations>
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="https://www.ietf.org/rfc/rfc5246.txt"/>
+      </eAnnotations>
+    </eLiterals>
+    <eLiterals name="Other" value="2"/>
+    <eLiterals name="TLS13" value="3">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details key="originalName" value="TLS 1.3"/>
+      </eAnnotations>
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="https://www.ietf.org/blog/tls13/&#xA;"/>
+      </eAnnotations>
+    </eLiterals>
+    <eLiterals name="DTLS13" value="4">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details key="originalName" value="DTLS 1.3"/>
+      </eAnnotations>
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="https://datatracker.ietf.org/doc/rfc9147/&#xA;"/>
+      </eAnnotations>
+    </eLiterals>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="PhysicalLayerKind">
+    <eLiterals name="IEEE802_3"/>
+    <eLiterals name="IEEE802_15_4" value="1"/>
+    <eLiterals name="IEEE802_11a" value="2"/>
+    <eLiterals name="IEEE802_11b" value="3"/>
+    <eLiterals name="OtherPhysicalLayer" value="4"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="StatusKodKind">
+    <eLiterals name="_100Continue">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details key="originalName" value="100 - Continue"/>
+      </eAnnotations>
+    </eLiterals>
+    <eLiterals name="_101Switchprotocol" value="1">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details key="originalName" value="101 - Switch protocol"/>
+      </eAnnotations>
+    </eLiterals>
+    <eLiterals name="_102Processing" value="2">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details key="originalName" value="102 - Processing"/>
+      </eAnnotations>
+    </eLiterals>
+    <eLiterals name="_103EarlyHints" value="3">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details key="originalName" value="103 - Early Hints"/>
+      </eAnnotations>
+    </eLiterals>
+    <eLiterals name="_200OK" value="4">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details key="originalName" value="200 - OK"/>
+      </eAnnotations>
+    </eLiterals>
+    <eLiterals name="_201Created" value="5">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details key="originalName" value="201 - Created"/>
+      </eAnnotations>
+    </eLiterals>
+    <eLiterals name="_202Accepted" value="6">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details key="originalName" value="202 - Accepted"/>
+      </eAnnotations>
+    </eLiterals>
+    <eLiterals name="_203NonAuthoritativeInformation" value="7">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details key="originalName" value="203 - Non-Authoritative Information"/>
+      </eAnnotations>
+    </eLiterals>
+    <eLiterals name="_204NoContent" value="8">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details key="originalName" value="204 - No Content"/>
+      </eAnnotations>
+    </eLiterals>
+    <eLiterals name="_205ResetContent" value="9">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details key="originalName" value="205 - Reset Content"/>
+      </eAnnotations>
+    </eLiterals>
+    <eLiterals name="_206PartialContent" value="10">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details key="originalName" value="206 - Partial Content"/>
+      </eAnnotations>
+    </eLiterals>
+    <eLiterals name="_207MultiStatus" value="11">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details key="originalName" value="207 - Multi-Status"/>
+      </eAnnotations>
+    </eLiterals>
+    <eLiterals name="_208AlreadyReported" value="12">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details key="originalName" value="208 - Already Reported"/>
+      </eAnnotations>
+    </eLiterals>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="TransportLayerKind">
+    <eLiterals name="TCP"/>
+    <eLiterals name="UDP" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="WebsocketDataFramingTypeKind">
+    <eLiterals name="BaseFramingProtocol"/>
+    <eLiterals name="ClienttoServer_Masking" value="1">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details key="originalName" value="Client-to-Server_Masking"/>
+      </eAnnotations>
+    </eLiterals>
+    <eLiterals name="Fragmentation" value="2"/>
+    <eLiterals name="EnumerationLiteral4" value="3"/>
+    <eLiterals name="ControlFrames" value="4"/>
+    <eLiterals name="DataFrames" value="5"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="WorkflowKind">
+    <eLiterals name="BPMN"/>
+    <eLiterals name="SysML_Statemachine" value="1"/>
+    <eLiterals name="NodeRed" value="2"/>
+    <eLiterals name="OtherWorkflowLanguage" value="3"/>
+    <eLiterals name="PetriNet" value="4"/>
+  </eClassifiers>
+</ecore:EPackage>
