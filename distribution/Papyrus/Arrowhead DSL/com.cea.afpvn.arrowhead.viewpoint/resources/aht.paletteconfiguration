@@ -4,12 +4,6 @@
     <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="aht.sysD" label="SysD" kind="CreationTool">
       <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.papyrus.sysml16.edit" iconPath="/icons/full/obj16/Block.gif"/>
       <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.SysD_Class_Shape"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.SysD_Class_Shape_CN"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
         <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.SysD_Class_MetaclassShape"/>
       </elementDescriptors>
       <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
@@ -19,7 +13,10 @@
         <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.SysD_Class_NestedClassifierLabel"/>
       </elementDescriptors>
       <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.SysD_Class_ClassNestedClassifierLabel"/>
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.SysD_Class_Shape"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.SysD_Class_Shape_CN"/>
       </elementDescriptors>
     </ownedConfigurations>
     <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="aht.SD" label="SD" kind="CreationTool">
@@ -68,6 +65,22 @@
     </ownedConfigurations>
     <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="aht.IDD" label="IDD" kind="CreationTool">
       <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.papyrus.sysml16.edit" iconPath="/icons/full/obj16/Block.gif"/>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_FG-eleB8Ee6xTsvtueAqag"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor"/>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_fReDELlMEe6vgdT8xLwaJw"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_FG93hOB8Ee6xTsvtueAqag"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_FG-ekeB8Ee6xTsvtueAqag"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_FG-ek-B8Ee6xTsvtueAqag"/>
+      </elementDescriptors>
     </ownedConfigurations>
   </drawerConfigurations>
   <drawerConfigurations xmi:type="paletteconfiguration:DrawerConfiguration" id="aht.implementation" label="Implementation Concepts">
@@ -79,10 +92,26 @@
     </ownedConfigurations>
   </drawerConfigurations>
   <drawerConfigurations xmi:type="paletteconfiguration:DrawerConfiguration" id="aht.general" label="General Concepts">
+    <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.papyrus.sysml16.edit" iconPath="icons/full/obj16/FlowProperty.gif"/>
     <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="org.eclipse.papyrus.sysML.palette.bdd.Generalization" label="Generalization" description="A Generalization is a taxonomic relationship between a more general Classifier and a more specific Classifier." kind="ConnectionTool">
       <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.uml2.uml.edit" iconPath="/icons/full/obj16/Generalization.gif"/>
       <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
         <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Generalization_Edge"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="org.eclipse.papyrus.sysML.palette.bdd.Class_Port" label="Port" description="A Port is a property of an EncapsulatedClassifier that specifies a distinct interaction point between that EncapsulatedClassifier and its environment or between the (behavior of the) EncapsulatedClassifier and its internal parts." kind="CreationTool">
+      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.uml2.uml.edit" iconPath="/icons/full/obj16/Port.gif"/>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.Class_Port"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="org.eclipse.papyrus.sysML.palette.bdd.Class_ProxyPort" label="ProxyPort" description="Proxy ports identify features of the owning block or its internal parts that are available to external blocks through external connectors to the ports." kind="CreationTool">
+      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.uml2.uml.edit" iconPath="/icons/full/obj16/Port.gif"/>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.Class_ProxyPort"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.ProxyPort_Label"/>
       </elementDescriptors>
     </ownedConfigurations>
     <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="org.eclipse.papyrus.sysML.palette.bdd.Class_FullPort" label="FullPort" description="Full ports specify a separate element of the system from the owning block or its internal parts." kind="CreationTool">

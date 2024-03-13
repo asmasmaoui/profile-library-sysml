@@ -15,7 +15,13 @@ Class[appliedStereotypes~="ArrowheadDSL::SysDD"]{
 	bold: true; 
 	displayStereotypes: true;
 }
-
+Class[appliedStereotypes~="ArrowheadDSL::IDD"]{
+	fillColor: #808080; 
+	lineColor: black;
+	lineWidth: 2;
+	bold: true; 
+	displayStereotypes: true;
+}
 	
 Class[appliedStereotypes~="ArrowheadDSL::SysD"]{
 	fillColor: #ff8000;
