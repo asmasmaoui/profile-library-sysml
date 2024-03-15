@@ -7,8 +7,66 @@ Property > Compartment[kind="internalstructure"]{
     visible:true;
 }
 
-
+Class[appliedStereotypes~="ArrowheadDSL::System_Implementation"]{
+	fillColor: #ff8000;
+	lineColor: black;
+	lineWidth: 2;
+	bold: true; 
+	displayStereotypes: true;
+	}
 Class[appliedStereotypes~="ArrowheadDSL::SysDD"]{
+	fillColor: #808080; 
+	lineColor: black;
+	lineWidth: 2;
+	bold: true; 
+	displayStereotypes: true;
+}
+Class[appliedStereotypes~="ArrowheadDSL::System_of_LocalcloudsDesign"]{
+	fillColor: #808080; 
+	lineColor: black;
+	lineWidth: 2;
+	bold: true; 
+	displayStereotypes: true;
+}
+Class[appliedStereotypes~="ArrowheadDSL::DeviceDesign"]{
+	fillColor: #808080; 
+	lineColor: black;
+	lineWidth: 2;
+	bold: true; 
+	displayStereotypes: true;
+}
+
+Class[appliedStereotypes~="ArrowheadDSL::LocalCloudDesign"]{
+	fillColor: #808080; 
+	lineColor: black;
+	lineWidth: 2;
+	bold: true; 
+	displayStereotypes: true;
+}
+
+Class[appliedStereotypes~="ArrowheadDSL::IntracloudNetworkDesign"]{
+	fillColor: #808080; 
+	lineColor: black;
+	lineWidth: 2;
+	bold: true; 
+	displayStereotypes: true;
+}
+Class[appliedStereotypes~="ArrowheadDSL::IntercloudNetworkDesign"]{
+	fillColor: #808080; 
+	lineColor: black;
+	lineWidth: 2;
+	bold: true; 
+	displayStereotypes: true;
+}
+Class[appliedStereotypes~="ArrowheadDSL::IDD_Implementation"]{
+	fillColor: #808080; 
+	lineColor: black;
+	lineWidth: 2;
+	bold: true; 
+	displayStereotypes: true;
+}
+
+Class[appliedStereotypes~="ArrowheadDSL::System_of_LocalcloudsImplementation"]{
 	fillColor: #808080; 
 	lineColor: black;
 	lineWidth: 2;
@@ -22,7 +80,44 @@ Class[appliedStereotypes~="ArrowheadDSL::IDD"]{
 	bold: true; 
 	displayStereotypes: true;
 }
-	
+Class[appliedStereotypes~="ArrowheadDSL::System_of_LocacloudsDesignDescription"]{
+	fillColor: #808080; 
+	lineColor: black;
+	lineWidth: 2;
+	bold: true; 
+	displayStereotypes: true;
+}
+Class[appliedStereotypes~="ArrowheadDSL::LocalcloudDesignDescription"]{
+	fillColor: #808080; 
+	lineColor: black;
+	lineWidth: 2;
+	bold: true; 
+	displayStereotypes: true;
+}
+
+Class[appliedStereotypes~="ArrowheadDSL::DeviceDesignDescription"]{
+	fillColor: #808080; 
+	lineColor: black;
+	lineWidth: 2;
+	bold: true; 
+	displayStereotypes: true;
+}
+
+Class[appliedStereotypes~="ArrowheadDSL::IntracloudNetworkDesignDescription"]{
+	fillColor: #808080; 
+	lineColor: black;
+	lineWidth: 2;
+	bold: true; 
+	displayStereotypes: true;
+}
+
+Class[appliedStereotypes~="ArrowheadDSL::IntercloudNetworkDesignDescription"]{
+	fillColor: #808080; 
+	lineColor: black;
+	lineWidth: 2;
+	bold: true; 
+	displayStereotypes: true;
+}
 Class[appliedStereotypes~="ArrowheadDSL::SysD"]{
 	fillColor: #ff8000;
 	lineColor: black;
@@ -30,6 +125,7 @@ Class[appliedStereotypes~="ArrowheadDSL::SysD"]{
 	bold: true; 
 	displayStereotypes: true;
 }
+
 
 Class[appliedStereotypes~="ArrowheadDSL::SD"]{
 	fillColor: #dfd869;
