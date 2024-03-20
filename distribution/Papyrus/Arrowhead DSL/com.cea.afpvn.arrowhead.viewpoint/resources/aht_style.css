@@ -14,6 +14,14 @@ Class[appliedStereotypes~="ArrowheadDSL::System_Implementation"]{
 	bold: true; 
 	displayStereotypes: true;
 	}
+	Class[appliedStereotypes~="ArrowheadDSL::LocalcloudImplementation"]{
+	fillColor: #ff8000;
+	lineColor: black;
+	lineWidth: 2;
+	bold: true; 
+	displayStereotypes: true;
+	}
+	
 Class[appliedStereotypes~="ArrowheadDSL::SysDD"]{
 	fillColor: #808080; 
 	lineColor: black;
@@ -134,7 +142,20 @@ Class[appliedStereotypes~="ArrowheadDSL::SD"]{
 	bold: true; 
 	displayStereotypes: true;
 }
-
+Class[appliedStereotypes~="ArrowheadDSL::ArrowheadDSLRequirement"]{
+	fillColor: #dfd869;
+	lineColor: black;
+	lineWidth: 2;
+	bold: true; 
+	displayStereotypes: true;
+}
+Class[appliedStereotypes~="SysML.profile::UseCase"]{
+	fillColor: #dfd869;
+	lineColor: black;
+	lineWidth: 2;
+	bold: true; 
+	displayStereotypes: true;
+}
 Shape {
 	shapeVisibility: true;
 }
