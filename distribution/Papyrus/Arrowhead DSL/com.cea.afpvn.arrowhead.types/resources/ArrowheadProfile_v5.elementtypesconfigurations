@@ -224,14 +224,6 @@
     </ownedConfigurations>
     <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.Viewpoint"/>
   </elementTypeConfigurations>
-  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.arrowheadDSL.IDD_UML__Class" identifier="com.example.arrowheadDSL.IDD_UML::Class" name="IDD (UML::Class block)" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_3vl4MOhGEe6HhsFjBIGGCw">
-    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_cpM04rhIEe6pZqc0ssvC1Q" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/ArrowheadProfile/resources/ArrowheadProfile_v5.0.profile.uml#_bDW0EI4vEe6ZtIoJ221FFA"/>
-    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_cpM047hIEe6pZqc0ssvC1Q" iconPath="/icons/full/obj16/Class.gif" bundleId="org.eclipse.uml2.uml.edit"/>
-    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_3vl4MOhGEe6HhsFjBIGGCw" identifier="aaa" target="com.example.arrowheadDSL.IDD_UML__Class" matchedType="com.example.arrowheadDSL.IDD_UML__Class">
-      <stereotypesQualifiedNames>ArrowheadDSL::IDD</stereotypesQualifiedNames>
-    </ownedConfigurations>
-    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
-  </elementTypeConfigurations>
   <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.arrowheadDSL.IntercloudNetworkDesignDescription_UML__Class" identifier="com.example.arrowheadDSL.IntercloudNetworkDesignDescription_UML::Class" name="IntercloudNetworkDesignDescription (UML::Class)" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
     <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_cpM0_rhIEe6pZqc0ssvC1Q" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/ArrowheadProfile/resources/ArrowheadProfile_v5.0.profile.uml#_4aMWgDRvEe6hdPlp_7DYew"/>
     <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_cpM0_7hIEe6pZqc0ssvC1Q" iconPath="/icons/full/obj16/Class.gif" bundleId="org.eclipse.uml2.uml.edit"/>
@@ -624,22 +616,6 @@
     </ownedConfigurations>
     <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.Viewpoint"/>
   </elementTypeConfigurations>
-  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.arrowheadDSL.SysDD_UML__Class" identifier="com.example.arrowheadDSL.SysDD_UML::Class" name="SysDD_Block (UML::Class)" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_cpM1-LhIEe6pZqc0ssvC1Q">
-    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_cpM19rhIEe6pZqc0ssvC1Q" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/ArrowheadProfile/resources/ArrowheadProfile_v5.0.profile.uml#_7a8dcI6SEe6cjupWzwXjHg"/>
-    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_cpM197hIEe6pZqc0ssvC1Q" iconPath="/icons/full/obj16/Class.gif" bundleId="org.eclipse.uml2.uml.edit"/>
-    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_cpM1-LhIEe6pZqc0ssvC1Q" description="Apply Stereotype SysDD" identifier="com.example.arrowheadDSL.sysDD_UML::Class" target="com.example.arrowheadDSL.SysDD_UML__Class" matchedType="com.example.arrowheadDSL.SysDD_UML__Class">
-      <stereotypesQualifiedNames>ArrowheadDSL::SysDD</stereotypesQualifiedNames>
-    </ownedConfigurations>
-    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
-  </elementTypeConfigurations>
-  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.arrowheadDSL.SysD_UML__Class" identifier="com.example.arrowheadDSL.SysD_UML::Class" name="SysD_Block (UML::Class)" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_zph4cLk4Ee6vgdT8xLwaJw">
-    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_cpM1-rhIEe6pZqc0ssvC1Q" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/ArrowheadProfile/resources/ArrowheadProfile_v5.0.profile.uml#_2RtnADLCEe6ldMRwfXEyUg"/>
-    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_cpM1-7hIEe6pZqc0ssvC1Q" iconPath="/icons/full/obj16/Class.gif" bundleId="org.eclipse.uml2.uml.edit"/>
-    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_zph4cLk4Ee6vgdT8xLwaJw" description="Apply Stereotype SysD" identifier="com.example.arrowheadDSL.SysD_Block_UML::Class" target="com.example.arrowheadDSL.SysD_UML__Class" matchedType="com.example.arrowheadDSL.SysD_UML__Class">
-      <stereotypesQualifiedNames>ArrowheadDSL::SysD</stereotypesQualifiedNames>
-    </ownedConfigurations>
-    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
-  </elementTypeConfigurations>
   <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.arrowheadDSL.System_Implementation_UML__Class" identifier="com.example.arrowheadDSL.System_Implementation_UML::Class" name="System_Implementation (UML::Class)" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
     <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_cpM2FrhIEe6pZqc0ssvC1Q" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/ArrowheadProfile/resources/ArrowheadProfile_v5.0.profile.uml#_AVrcgH8FEe6b-N5jlkvbYg"/>
     <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_cpM2F7hIEe6pZqc0ssvC1Q" iconPath="/icons/full/obj16/Class.gif" bundleId="org.eclipse.uml2.uml.edit"/>
@@ -864,11 +840,155 @@
     </ownedConfigurations>
     <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.Viewpoint"/>
   </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.arrowheadDSL.SysDD_UML__Class" identifier="com.example.arrowheadDSL.SysDD_UML::Class" name="SysDD_Block (UML::Class)" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_cpM1-LhIEe6pZqc0ssvC1Q">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_cpM19rhIEe6pZqc0ssvC1Q" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/ArrowheadProfile/resources/ArrowheadProfile_v5.0.profile.uml#_7a8dcI6SEe6cjupWzwXjHg"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_cpM197hIEe6pZqc0ssvC1Q" iconPath="/icons/full/obj16/Class.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_cpM1-LhIEe6pZqc0ssvC1Q" description="Apply Stereotype SysDD" identifier="com.example.arrowheadDSL.sysDD_UML::Class" target="com.example.arrowheadDSL.SysDD_UML__Class" matchedType="com.example.arrowheadDSL.SysDD_UML__Class">
+      <stereotypesQualifiedNames>ArrowheadDSL::SysDD</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.arrowheadDSL.SysD_UML__Class" identifier="com.example.arrowheadDSL.SysD_UML::Class" name="SysD_Block (UML::Class)" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_zph4cLk4Ee6vgdT8xLwaJw">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_cpM1-rhIEe6pZqc0ssvC1Q" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/ArrowheadProfile/resources/ArrowheadProfile_v5.0.profile.uml#_2RtnADLCEe6ldMRwfXEyUg"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_cpM1-7hIEe6pZqc0ssvC1Q" iconPath="/icons/full/obj16/Class.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_zph4cLk4Ee6vgdT8xLwaJw" description="Apply Stereotype SysD" identifier="com.example.arrowheadDSL.SysD_Block_UML::Class" target="com.example.arrowheadDSL.SysD_UML__Class" matchedType="com.example.arrowheadDSL.SysD_UML__Class">
+      <stereotypesQualifiedNames>ArrowheadDSL::SysD</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.arrowheadDSL.IDD_UML__Class" identifier="com.example.arrowheadDSL.IDD_UML::Class" name="IDD (UML::Class block)" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_3vl4MOhGEe6HhsFjBIGGCw">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_cpM04rhIEe6pZqc0ssvC1Q" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/ArrowheadProfile/resources/ArrowheadProfile_v5.0.profile.uml#_bDW0EI4vEe6ZtIoJ221FFA"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_cpM047hIEe6pZqc0ssvC1Q" iconPath="/icons/full/obj16/Class.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_3vl4MOhGEe6HhsFjBIGGCw" identifier="aaa" target="com.example.arrowheadDSL.IDD_UML__Class" matchedType="com.example.arrowheadDSL.IDD_UML__Class">
+      <stereotypesQualifiedNames>ArrowheadDSL::IDD</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
   <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_rvlPILmEEe6IOsSIzvZIhg" identifier="sd" name="SD (UML::Class)" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="__VXi8LmEEe6IOsSIzvZIhg">
     <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_zadQILmEEe6IOsSIzvZIhg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/ArrowheadProfile/resources/ArrowheadProfile_v5.0.profile.uml#_SF0lsGtvEe6kMpvvcnNq_g"/>
     <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_zad3MLmEEe6IOsSIzvZIhg" iconPath="/icons/full/obj16/Class.gif" bundleId="org.eclipse.uml2.uml.edit"/>
     <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="__VXi8LmEEe6IOsSIzvZIhg" description="sd apply ster" identifier="conf" target="_rvlPILmEEe6IOsSIzvZIhg" matchedType="_rvlPILmEEe6IOsSIzvZIhg">
       <stereotypesQualifiedNames>ArrowheadDSL::SD</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_KOcH8OtOEe6GDMPnxKPZEg" identifier="com.example.arrowheadDSL.System_Implementation_UML::Class" name="System_Implementation (UML::Class block)" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_KOcH8-tOEe6GDMPnxKPZEg">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_KOcH8etOEe6GDMPnxKPZEg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/ArrowheadProfile/resources/ArrowheadProfile_v5.0.profile.uml#_bDW0EI4vEe6ZtIoJ221FFA"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_KOcH8utOEe6GDMPnxKPZEg" iconPath="/icons/full/obj16/Class.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_KOcH8-tOEe6GDMPnxKPZEg" identifier="com.example.arrowheadDSL.System_Implementation_UML::Class" target="_KOcH8OtOEe6GDMPnxKPZEg" matchedType="_KOcH8OtOEe6GDMPnxKPZEg">
+      <stereotypesQualifiedNames>ArrowheadDSL::System_Implementation</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_UpGBlOtREe6GDMPnxKPZEg" identifier="com.example.arrowheadDSL.System_of_LocalcloudsDesign_UML::Class" name="System_of_LocalcloudsDesign (UML::Class block)" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_UpGBl-tREe6GDMPnxKPZEg">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_UpGBletREe6GDMPnxKPZEg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/ArrowheadProfile/resources/ArrowheadProfile_v5.0.profile.uml#_bDW0EI4vEe6ZtIoJ221FFA"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_UpGBlutREe6GDMPnxKPZEg" iconPath="/icons/full/obj16/Class.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_UpGBl-tREe6GDMPnxKPZEg" identifier="com.example.arrowheadDSL.System_of_LocalcloudsDesign_UML::Class" target="_UpGBlOtREe6GDMPnxKPZEg" matchedType="_UpGBlOtREe6GDMPnxKPZEg">
+      <stereotypesQualifiedNames>ArrowheadDSL::System_of_LocalcloudsDesign</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_UpGBkOtREe6GDMPnxKPZEg" identifier="com.example.arrowheadDSL.System_of_LocalcloudsImplementation_UML::Class" name="System_of_LocalcloudsImplementation (UML::Class block)" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_UpGBk-tREe6GDMPnxKPZEg">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_UpGBketREe6GDMPnxKPZEg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/ArrowheadProfile/resources/ArrowheadProfile_v5.0.profile.uml#_bDW0EI4vEe6ZtIoJ221FFA"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_UpGBkutREe6GDMPnxKPZEg" iconPath="/icons/full/obj16/Class.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_UpGBk-tREe6GDMPnxKPZEg" identifier="com.example.arrowheadDSL.System_of_LocalcloudsImplementation_UML::Class" target="_UpGBkOtREe6GDMPnxKPZEg" matchedType="_UpGBkOtREe6GDMPnxKPZEg">
+      <stereotypesQualifiedNames>ArrowheadDSL::System_of_LocalcloudsImplementation</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_UpGBmOtREe6GDMPnxKPZEg" identifier="com.example.arrowheadDSL.System_of_LocacloudsDesignDescription_UML::Class" name="System_of_LocacloudsDesignDescription (UML::Class block)" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_UpGooOtREe6GDMPnxKPZEg">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_UpGBmetREe6GDMPnxKPZEg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/ArrowheadProfile/resources/ArrowheadProfile_v5.0.profile.uml#_bDW0EI4vEe6ZtIoJ221FFA"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_UpGBmutREe6GDMPnxKPZEg" iconPath="/icons/full/obj16/Class.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_UpGooOtREe6GDMPnxKPZEg" identifier="com.example.arrowheadDSL.System_of_LocacloudsDesignDescription_UML::Class" target="_UpGBmOtREe6GDMPnxKPZEg" matchedType="_UpGBmOtREe6GDMPnxKPZEg">
+      <stereotypesQualifiedNames>ArrowheadDSL::System_of_LocacloudsDesignDescription</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_UpGooetREe6GDMPnxKPZEg" identifier="com.example.arrowheadDSL.LocalcloudImplementation_UML::Class" name="LocalcloudImplementation (UML::Class block)" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_UpGopOtREe6GDMPnxKPZEg">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_UpGooutREe6GDMPnxKPZEg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/ArrowheadProfile/resources/ArrowheadProfile_v5.0.profile.uml#_bDW0EI4vEe6ZtIoJ221FFA"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_UpGoo-tREe6GDMPnxKPZEg" iconPath="/icons/full/obj16/Class.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_UpGopOtREe6GDMPnxKPZEg" identifier="com.example.arrowheadDSL.LocalcloudImplementation_UML::Class" target="_UpGooetREe6GDMPnxKPZEg" matchedType="_UpGooetREe6GDMPnxKPZEg">
+      <stereotypesQualifiedNames>ArrowheadDSL::LocalcloudImplementation</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_UpGopetREe6GDMPnxKPZEg" identifier="com.example.arrowheadDSL.LocalcloudDesignDescription_UML::Class" name="LocalcloudDesignDescription(UML::Class block)" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_UpGoqOtREe6GDMPnxKPZEg">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_UpGoputREe6GDMPnxKPZEg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/ArrowheadProfile/resources/ArrowheadProfile_v5.0.profile.uml#_bDW0EI4vEe6ZtIoJ221FFA"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_UpGop-tREe6GDMPnxKPZEg" iconPath="/icons/full/obj16/Class.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_UpGoqOtREe6GDMPnxKPZEg" identifier="com.example.arrowheadDSL.LocalcloudDesignDescription_UML::Class" target="_UpGopetREe6GDMPnxKPZEg" matchedType="_UpGopetREe6GDMPnxKPZEg">
+      <stereotypesQualifiedNames>ArrowheadDSL::LocalcloudDesignDescription</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_UpGoqetREe6GDMPnxKPZEg" identifier="com.example.arrowheadDSL.LocalcloudDesign_UML::Class" name="LocalcloudDesign (UML::Class block)" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_UpGorOtREe6GDMPnxKPZEg">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_UpGoqutREe6GDMPnxKPZEg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/ArrowheadProfile/resources/ArrowheadProfile_v5.0.profile.uml#_bDW0EI4vEe6ZtIoJ221FFA"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_UpGoq-tREe6GDMPnxKPZEg" iconPath="/icons/full/obj16/Class.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_UpGorOtREe6GDMPnxKPZEg" identifier="com.example.arrowheadDSL.LocalcloudDesign_UML::Class" target="_UpGoqetREe6GDMPnxKPZEg" matchedType="_UpGoqetREe6GDMPnxKPZEg">
+      <stereotypesQualifiedNames>ArrowheadDSL::LocalcloudDesign </stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_UpGoretREe6GDMPnxKPZEg" identifier="com.example.arrowheadDSL.IntracloudNetworkDesign_UML::Class" name="IntracloudNetworkDesign (UML::Class block)" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_UpGosOtREe6GDMPnxKPZEg">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_UpGorutREe6GDMPnxKPZEg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/ArrowheadProfile/resources/ArrowheadProfile_v5.0.profile.uml#_bDW0EI4vEe6ZtIoJ221FFA"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_UpGor-tREe6GDMPnxKPZEg" iconPath="/icons/full/obj16/Class.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_UpGosOtREe6GDMPnxKPZEg" identifier="com.example.arrowheadDSL.IntracloudNetworkDesign_UML::Class" target="_UpGoretREe6GDMPnxKPZEg" matchedType="_UpGoretREe6GDMPnxKPZEg">
+      <stereotypesQualifiedNames>ArrowheadDSL::IntracloudNetworkDesign</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Sy6lQOtgEe6Te8yqmgsIoA" identifier="com.example.arrowheadDSL.IntracloudNetworkDesignDescription_UML::Class" name="IntracloudNetworkDesignDescription (UML::Class block)" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_Sy6lQ-tgEe6Te8yqmgsIoA">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_Sy6lQetgEe6Te8yqmgsIoA" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/ArrowheadProfile/resources/ArrowheadProfile_v5.0.profile.uml#_bDW0EI4vEe6ZtIoJ221FFA"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_Sy6lQutgEe6Te8yqmgsIoA" iconPath="/icons/full/obj16/Class.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_Sy6lQ-tgEe6Te8yqmgsIoA" identifier="com.example.arrowheadDSL.IntracloudNetworkDesignDescription_UML::Class" target="_Sy6lQOtgEe6Te8yqmgsIoA" matchedType="_Sy6lQOtgEe6Te8yqmgsIoA">
+      <stereotypesQualifiedNames>ArrowheadDSL::IntracloudNetworkDesignDescription</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Sy6lROtgEe6Te8yqmgsIoA" identifier="com.example.arrowheadDSL.IDD_Implementation_UML::Class" name="IDD_Implementation (UML::Class block)" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_Sy7MUutgEe6Te8yqmgsIoA">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_Sy7MUOtgEe6Te8yqmgsIoA" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/ArrowheadProfile/resources/ArrowheadProfile_v5.0.profile.uml#_bDW0EI4vEe6ZtIoJ221FFA"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_Sy7MUetgEe6Te8yqmgsIoA" iconPath="/icons/full/obj16/Class.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_Sy7MUutgEe6Te8yqmgsIoA" identifier="com.example.arrowheadDSL.IDD_Implementation_UML::Class" target="_Sy6lROtgEe6Te8yqmgsIoA" matchedType="_Sy6lROtgEe6Te8yqmgsIoA">
+      <stereotypesQualifiedNames>ArrowheadDSL::IDD_Implementation</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Sy7MU-tgEe6Te8yqmgsIoA" identifier="com.example.arrowheadDSL.DeviceDesign_UML::Class" name="DeviceDesign (UML::Class block)" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_Sy7MVutgEe6Te8yqmgsIoA">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_Sy7MVOtgEe6Te8yqmgsIoA" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/ArrowheadProfile/resources/ArrowheadProfile_v5.0.profile.uml#_bDW0EI4vEe6ZtIoJ221FFA"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_Sy7MVetgEe6Te8yqmgsIoA" iconPath="/icons/full/obj16/Class.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_Sy7MVutgEe6Te8yqmgsIoA" identifier="com.example.arrowheadDSL.DeviceDesign_UML::Class" target="_Sy7MU-tgEe6Te8yqmgsIoA" matchedType="_Sy7MU-tgEe6Te8yqmgsIoA">
+      <stereotypesQualifiedNames>ArrowheadDSL::DeviceDesign </stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_BzhAsOtnEe6Te8yqmgsIoA" identifier="com.example.arrowheadDSL.IntercloudNetworkDesign_UML::Class" name="IntercloudNetworkDesign (UML::Class block)" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_BzhAs-tnEe6Te8yqmgsIoA">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_BzhAsetnEe6Te8yqmgsIoA" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/ArrowheadProfile/resources/ArrowheadProfile_v5.0.profile.uml#_bDW0EI4vEe6ZtIoJ221FFA"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_BzhAsutnEe6Te8yqmgsIoA" iconPath="/icons/full/obj16/Class.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_BzhAs-tnEe6Te8yqmgsIoA" identifier="com.example.arrowheadDSL.IntercloudNetworkDesign_UML::Class" target="_BzhAsOtnEe6Te8yqmgsIoA" matchedType="_BzhAsOtnEe6Te8yqmgsIoA">
+      <stereotypesQualifiedNames>ArrowheadDSL::IntercloudNetworkDesign  </stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_GFG8QOtoEe6Te8yqmgsIoA" identifier="com.example.arrowheadDSL.IntercloudNetworkDesignDescription_UML::Class" name="IntercloudNetworkDesignDescription (UML::Class block)" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_GFG8Q-toEe6Te8yqmgsIoA">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_GFG8QetoEe6Te8yqmgsIoA" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/ArrowheadProfile/resources/ArrowheadProfile_v5.0.profile.uml#_bDW0EI4vEe6ZtIoJ221FFA"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_GFG8QutoEe6Te8yqmgsIoA" iconPath="/icons/full/obj16/Class.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_GFG8Q-toEe6Te8yqmgsIoA" identifier="com.example.arrowheadDSL.IntercloudNetworkDesignDescription_UML::Class" target="_GFG8QOtoEe6Te8yqmgsIoA" matchedType="_GFG8QOtoEe6Te8yqmgsIoA">
+      <stereotypesQualifiedNames>ArrowheadDSL::IntercloudNetworkDesignDescription </stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_vzJrMOtpEe6Te8yqmgsIoA" identifier="com.example.arrowheadDSL.DeviceDesignDescription_UML::Class" name="DeviceDesignDescription (UML::Class block)" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_vzJrM-tpEe6Te8yqmgsIoA">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_vzJrMetpEe6Te8yqmgsIoA" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/ArrowheadProfile/resources/ArrowheadProfile_v5.0.profile.uml#_bDW0EI4vEe6ZtIoJ221FFA"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_vzJrMutpEe6Te8yqmgsIoA" iconPath="/icons/full/obj16/Class.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_vzJrM-tpEe6Te8yqmgsIoA" identifier="com.example.arrowheadDSL.DeviceDesignDescription_UML::Class" target="_vzJrMOtpEe6Te8yqmgsIoA" matchedType="_vzJrMOtpEe6Te8yqmgsIoA">
+      <stereotypesQualifiedNames>ArrowheadDSL::DeviceDesignDescription  </stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_ynEu4OtqEe6Te8yqmgsIoA" identifier="com.example.arrowheadDSL.ArrowheadDSLRequirement_Class_UML::Class" name="ArrowheadDSLRequirement_Class (UML::Class block)" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_ynEu4-tqEe6Te8yqmgsIoA">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_ynEu4etqEe6Te8yqmgsIoA" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/ArrowheadProfile/resources/ArrowheadProfile_v5.0.profile.uml#_bDW0EI4vEe6ZtIoJ221FFA"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_ynEu4utqEe6Te8yqmgsIoA" iconPath="/icons/full/obj16/Class.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_ynEu4-tqEe6Te8yqmgsIoA" identifier="com.example.arrowheadDSL.ArrowheadDSLRequirement_Class_UML::Class" target="_ynEu4OtqEe6Te8yqmgsIoA" matchedType="_ynEu4OtqEe6Te8yqmgsIoA">
+      <stereotypesQualifiedNames>ArrowheadDSL::ArrowheadDSLRequirement_Class </stereotypesQualifiedNames>
     </ownedConfigurations>
     <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
   </elementTypeConfigurations>
