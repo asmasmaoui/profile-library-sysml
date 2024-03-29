@@ -976,11 +976,19 @@
     </ownedConfigurations>
     <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
   </elementTypeConfigurations>
-  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_ynEu4OtqEe6Te8yqmgsIoA" identifier="com.example.arrowheadDSL.ArrowheadDSLRequirement_Class_UML::Class" name="ArrowheadDSLRequirement_Class (UML::Class block)" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_ynEu4-tqEe6Te8yqmgsIoA">
-    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_5U7dAOwlEe6jY9QfK9xMMA" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/ArrowheadProfile/resources/ArrowheadProfile_v5.0.profile.uml#_Y58WkDLUEe6ldMRwfXEyUg"/>
-    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_ynEu4utqEe6Te8yqmgsIoA" iconPath="/icons/full/obj16/Class.gif" bundleId="org.eclipse.uml2.uml.edit"/>
-    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_ynEu4-tqEe6Te8yqmgsIoA" identifier="com.example.arrowheadDSL.ArrowheadDSLRequirement_Class_UML::Class" target="_ynEu4OtqEe6Te8yqmgsIoA" matchedType="_ynEu4OtqEe6Te8yqmgsIoA">
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_LUon4O2nEe6ZL98lbTtwUQ" identifier="com.example.arrowheadDSL.ArrowheadDSLRequirement_Class_UML::Class" name="ArrowheadDSLRequirement_Class (UML::Class block)" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_LUpO8u2nEe6ZL98lbTtwUQ">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_LUpO8O2nEe6ZL98lbTtwUQ" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/ArrowheadProfile/resources/ArrowheadProfile_v5.0.profile.uml#_Y58WkDLUEe6ldMRwfXEyUg"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_LUpO8e2nEe6ZL98lbTtwUQ" iconPath="/icons/full/obj16/Class.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_LUpO8u2nEe6ZL98lbTtwUQ" identifier="com.example.arrowheadDSL.ArrowheadDSLRequirement_Class_UML::Class" target="_LUon4O2nEe6ZL98lbTtwUQ" matchedType="_LUon4O2nEe6ZL98lbTtwUQ">
       <stereotypesQualifiedNames>ArrowheadDSL::ArrowheadDSLRequirement_Class </stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_ynEu4OtqEe6Te8yqmgsIoA" identifier="com.example.arrowheadDSL.LocalCloudDesign_UML::Class" name="LocalCloudDesign (UML::Class block)" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_ynEu4-tqEe6Te8yqmgsIoA">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_XrPYMO2nEe6ZL98lbTtwUQ" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/ArrowheadProfile/resources/ArrowheadProfile_v5.0.profile.uml#_q6FuwDODEe6hdPlp_7DYew"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_ynEu4utqEe6Te8yqmgsIoA" iconPath="/icons/full/obj16/Class.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_ynEu4-tqEe6Te8yqmgsIoA" identifier="com.example.arrowheadDSL.LocalCloudDesign_UML::Class" target="_ynEu4OtqEe6Te8yqmgsIoA" matchedType="_ynEu4OtqEe6Te8yqmgsIoA">
+      <stereotypesQualifiedNames>ArrowheadDSL::LocalCloudDesign </stereotypesQualifiedNames>
     </ownedConfigurations>
     <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
   </elementTypeConfigurations>
