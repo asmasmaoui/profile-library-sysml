@@ -156,6 +156,9 @@ Class[appliedStereotypes~="SysML.profile::UseCase"]{
 	bold: true; 
 	displayStereotypes: true;
 }
+Port {
+	fillColor: #ff8000;
+}
 Shape {
 	shapeVisibility: true;
 }
