@@ -7,10 +7,6 @@
     <packageImport xmi:type="uml:PackageImport" xmi:id="_bcV-IPDPEe6-wOgcBdOMfw">
       <importedPackage xmi:type="uml:Package" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries"/>
     </packageImport>
-    <packagedElement xmi:type="uml:Class" xmi:id="_c3SSIPDPEe6-wOgcBdOMfw" name="ServiceRegistry_Design">
-      <ownedAttribute xmi:type="uml:Port" xmi:id="_t5PkAPDfEe6-wOgcBdOMfw" name="ServiceDiscovery" aggregation="composite" subsettedProperty="_t5PkAPDfEe6-wOgcBdOMfw"/>
-      <ownedAttribute xmi:type="uml:Port" xmi:id="_vLWsIPDfEe6-wOgcBdOMfw" name="ServiceManagement" aggregation="composite"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_dZxUIPDPEe6-wOgcBdOMfw" name="ServiceDiscovery">
       <ownedOperation xmi:type="uml:Operation" xmi:id="_9twY4PDPEe6-wOgcBdOMfw" name="Register"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_eONMUPDQEe6-wOgcBdOMfw" name="Unregister"/>
@@ -30,11 +26,6 @@
         <ownedParameter xmi:type="uml:Parameter" xmi:id="_-aGksPDTEe6-wOgcBdOMfw" name="Echo_response" direction="out"/>
       </ownedOperation>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_e_pFwPDPEe6-wOgcBdOMfw" name="ServiceRegistry_DesignDescription">
-      <generalization xmi:type="uml:Generalization" xmi:id="_i6OE8PDPEe6-wOgcBdOMfw" general="_c3SSIPDPEe6-wOgcBdOMfw"/>
-      <ownedAttribute xmi:type="uml:Port" xmi:id="_xMnZQPDfEe6-wOgcBdOMfw" name="ServiceDiscovery_HTTP" aggregation="composite"/>
-      <ownedAttribute xmi:type="uml:Port" xmi:id="_x420MPDfEe6-wOgcBdOMfw" name="ServiceManagement_HTTP" aggregation="composite"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_falVUPDPEe6-wOgcBdOMfw" name="ServiceDiscovery_HTTP">
       <generalization xmi:type="uml:Generalization" xmi:id="_iJ8ekPDPEe6-wOgcBdOMfw" general="_dZxUIPDPEe6-wOgcBdOMfw"/>
     </packagedElement>
@@ -48,6 +39,15 @@
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedParameter>
       </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_6W-44PWGEe6Yh6YDAQnwLw" name="ServiceRegistry_Design">
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_B1xlsPWHEe6Yh6YDAQnwLw" name="ServiceDiscovery" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_CcwtMPWHEe6Yh6YDAQnwLw" name="ServiceManagement" aggregation="composite"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_-4jmoPWGEe6Yh6YDAQnwLw" name="ServiceRegistry_DesignDescription">
+      <generalization xmi:type="uml:Generalization" xmi:id="_Sl-McPWHEe6Yh6YDAQnwLw" general="_6W-44PWGEe6Yh6YDAQnwLw"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_C42MQPWHEe6Yh6YDAQnwLw" name="ServiceDiscovery_HTTP" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_DaSscPWHEe6Yh6YDAQnwLw" name="ServiceManagement_HTTP" aggregation="composite"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ba1iQPDPEe6-wOgcBdOMfw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ba1iQfDPEe6-wOgcBdOMfw" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -122,12 +122,12 @@
       <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
     </profileApplication>
   </uml:Model>
-  <ArrowheadDSL:SD xmi:id="_c4NfMPDPEe6-wOgcBdOMfw" base_Class="_c3SSIPDPEe6-wOgcBdOMfw"/>
   <ArrowheadDSL:SD xmi:id="_dZzwYPDPEe6-wOgcBdOMfw" base_Class="_dZxUIPDPEe6-wOgcBdOMfw"/>
   <ArrowheadDSL:SD xmi:id="_d7SFwPDPEe6-wOgcBdOMfw" base_Class="_d7PCcPDPEe6-wOgcBdOMfw"/>
   <ArrowheadDSL:SD xmi:id="_eUSboPDPEe6-wOgcBdOMfw" base_Class="_eUP_YPDPEe6-wOgcBdOMfw"/>
-  <ArrowheadDSL:IDD xmi:id="_e_riAPDPEe6-wOgcBdOMfw" base_Class="_e_pFwPDPEe6-wOgcBdOMfw"/>
   <ArrowheadDSL:IDD xmi:id="_faoYoPDPEe6-wOgcBdOMfw" base_Class="_falVUPDPEe6-wOgcBdOMfw"/>
   <ArrowheadDSL:IDD xmi:id="_f1hk4PDPEe6-wOgcBdOMfw" base_Class="_f1ehkPDPEe6-wOgcBdOMfw"/>
   <ArrowheadDSL:IDD xmi:id="_gL6roPDPEe6-wOgcBdOMfw" base_Class="_gL3oUPDPEe6-wOgcBdOMfw"/>
+  <ArrowheadDSL:SysD xmi:id="_6XSa4PWGEe6Yh6YDAQnwLw" base_Class="_6W-44PWGEe6Yh6YDAQnwLw"/>
+  <ArrowheadDSL:SysDD xmi:id="_-4ptQPWGEe6Yh6YDAQnwLw" base_Class="_-4jmoPWGEe6Yh6YDAQnwLw"/>
 </xmi:XMI>
