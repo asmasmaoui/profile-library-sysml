@@ -29,7 +29,7 @@
   <eClassifiers xsi:type="ecore:EEnum" name="BusinessPolicyKind">
     <eLiterals name="Other"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="SD" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//blocks/Block">
+  <eClassifiers xsi:type="ecore:EClass" name="SD" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//portsandflows/InterfaceBlock">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="ServiceInterfaces: add more if required. Define Method name and parameters&#xA; "/>
     </eAnnotations>

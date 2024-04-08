@@ -3,7 +3,7 @@
 package ArrowheadDSL;
 
 import org.eclipse.emf.common.util.EList;
-import org.eclipse.papyrus.sysml16.blocks.Block;
+import org.eclipse.papyrus.sysml16.portsandflows.InterfaceBlock;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +27,7 @@ import org.eclipse.papyrus.sysml16.blocks.Block;
  * @model
  * @generated
  */
-public interface SD extends Block {
+public interface SD extends InterfaceBlock {
 	/**
 	 * Returns the value of the '<em><b>Microservice Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->

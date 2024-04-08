@@ -21,7 +21,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 import org.eclipse.emf.ecore.util.EObjectWithInverseResolvingEList;
 import org.eclipse.emf.ecore.util.InternalEList;
-import org.eclipse.papyrus.sysml16.blocks.internal.impl.BlockImpl;
+import org.eclipse.papyrus.sysml16.portsandflows.internal.impl.InterfaceBlockImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -37,7 +37,7 @@ import org.eclipse.papyrus.sysml16.blocks.internal.impl.BlockImpl;
  *
  * @generated
  */
-public class SDImpl extends BlockImpl implements SD {
+public class SDImpl extends InterfaceBlockImpl implements SD {
 	/**
 	 * The default value of the '{@link #getMicroserviceName() <em>Microservice Name</em>}' attribute.
 	 * <!-- begin-user-doc -->

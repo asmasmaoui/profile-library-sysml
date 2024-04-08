@@ -865,7 +865,7 @@
     <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
   </elementTypeConfigurations>
   <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_rvlPILmEEe6IOsSIzvZIhg" identifier="sd" name="SD (UML::Class)" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="__VXi8LmEEe6IOsSIzvZIhg">
-    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_zadQILmEEe6IOsSIzvZIhg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/ArrowheadProfile/resources/ArrowheadProfile_v5.0.profile.uml#_SF0lsGtvEe6kMpvvcnNq_g"/>
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_zadQILmEEe6IOsSIzvZIhg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/ArrowheadProfile/resources/ArrowheadProfile_v5.0.profile.uml#_awzE4D0kEe60840L8fIbKA"/>
     <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_zad3MLmEEe6IOsSIzvZIhg" iconPath="/icons/full/obj16/Class.gif" bundleId="org.eclipse.uml2.uml.edit"/>
     <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="__VXi8LmEEe6IOsSIzvZIhg" description="sd apply ster" identifier="conf" target="_rvlPILmEEe6IOsSIzvZIhg" matchedType="_rvlPILmEEe6IOsSIzvZIhg">
       <stereotypesQualifiedNames>ArrowheadDSL::SD</stereotypesQualifiedNames>

@@ -10,6 +10,7 @@ import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.EReference;
 import org.eclipse.papyrus.sysml16.blocks.BlocksPackage;
+import org.eclipse.papyrus.sysml16.portsandflows.PortsAndFlowsPackage;
 import org.eclipse.papyrus.sysml16.requirements.RequirementsPackage;
 
 /**
@@ -205,7 +206,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SD__BASE_CLASS = BlocksPackage.BLOCK__BASE_CLASS;
+	int SD__BASE_CLASS = PortsAndFlowsPackage.INTERFACE_BLOCK__BASE_CLASS;
 
 	/**
 	 * The feature id for the '<em><b>Is Encapsulated</b></em>' attribute.
@@ -214,7 +215,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SD__IS_ENCAPSULATED = BlocksPackage.BLOCK__IS_ENCAPSULATED;
+	int SD__IS_ENCAPSULATED = PortsAndFlowsPackage.INTERFACE_BLOCK__IS_ENCAPSULATED;
 
 	/**
 	 * The feature id for the '<em><b>Microservice Name</b></em>' attribute.
@@ -223,7 +224,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SD__MICROSERVICE_NAME = BlocksPackage.BLOCK_FEATURE_COUNT + 0;
+	int SD__MICROSERVICE_NAME = PortsAndFlowsPackage.INTERFACE_BLOCK_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Sysd</b></em>' reference list.
@@ -232,7 +233,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SD__SYSD = BlocksPackage.BLOCK_FEATURE_COUNT + 1;
+	int SD__SYSD = PortsAndFlowsPackage.INTERFACE_BLOCK_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of structural features of the '<em>SD</em>' class.
@@ -241,7 +242,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SD_FEATURE_COUNT = BlocksPackage.BLOCK_FEATURE_COUNT + 2;
+	int SD_FEATURE_COUNT = PortsAndFlowsPackage.INTERFACE_BLOCK_FEATURE_COUNT + 2;
 
 	/**
 	 * The operation id for the '<em>Get References</em>' operation.
@@ -250,7 +251,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SD___GET_REFERENCES = BlocksPackage.BLOCK___GET_REFERENCES;
+	int SD___GET_REFERENCES = PortsAndFlowsPackage.INTERFACE_BLOCK___GET_REFERENCES;
 
 	/**
 	 * The operation id for the '<em>Get Parts</em>' operation.
@@ -259,7 +260,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SD___GET_PARTS = BlocksPackage.BLOCK___GET_PARTS;
+	int SD___GET_PARTS = PortsAndFlowsPackage.INTERFACE_BLOCK___GET_PARTS;
 
 	/**
 	 * The operation id for the '<em>Get Flow Properties</em>' operation.
@@ -268,7 +269,16 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SD___GET_FLOW_PROPERTIES = BlocksPackage.BLOCK___GET_FLOW_PROPERTIES;
+	int SD___GET_FLOW_PROPERTIES = PortsAndFlowsPackage.INTERFACE_BLOCK___GET_FLOW_PROPERTIES;
+
+	/**
+	 * The operation id for the '<em>Get Conjugated</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SD___GET_CONJUGATED = PortsAndFlowsPackage.INTERFACE_BLOCK___GET_CONJUGATED;
 
 	/**
 	 * The operation id for the '<em>Operation</em>' operation.
@@ -277,7 +287,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SD___OPERATION = BlocksPackage.BLOCK_OPERATION_COUNT + 0;
+	int SD___OPERATION = PortsAndFlowsPackage.INTERFACE_BLOCK_OPERATION_COUNT + 0;
 
 	/**
 	 * The number of operations of the '<em>SD</em>' class.
@@ -286,7 +296,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SD_OPERATION_COUNT = BlocksPackage.BLOCK_OPERATION_COUNT + 1;
+	int SD_OPERATION_COUNT = PortsAndFlowsPackage.INTERFACE_BLOCK_OPERATION_COUNT + 1;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.impl.ArrowheadDSLRequirementImpl <em>Requirement</em>}' class.
@@ -2187,6 +2197,15 @@ public interface ArrowheadDSLPackage extends EPackage {
 	int IDD___GET_FLOW_PROPERTIES = SD___GET_FLOW_PROPERTIES;
 
 	/**
+	 * The operation id for the '<em>Get Conjugated</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IDD___GET_CONJUGATED = SD___GET_CONJUGATED;
+
+	/**
 	 * The operation id for the '<em>Operation</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2897,6 +2916,15 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @ordered
 	 */
 	int IDD_IMPLEMENTATION___GET_FLOW_PROPERTIES = IDD___GET_FLOW_PROPERTIES;
+
+	/**
+	 * The operation id for the '<em>Get Conjugated</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IDD_IMPLEMENTATION___GET_CONJUGATED = IDD___GET_CONJUGATED;
 
 	/**
 	 * The operation id for the '<em>Operation</em>' operation.

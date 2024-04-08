@@ -10,6 +10,7 @@ import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.util.Switch;
 
 import org.eclipse.papyrus.sysml16.blocks.Block;
+import org.eclipse.papyrus.sysml16.portsandflows.InterfaceBlock;
 import org.eclipse.papyrus.sysml16.requirements.AbstractRequirement;
 import org.eclipse.papyrus.sysml16.requirements.Requirement;
 
@@ -80,6 +81,7 @@ public class ArrowheadDSLSwitch<T> extends Switch<T> {
 			case ArrowheadDSLPackage.SD: {
 				SD sd = (SD)theEObject;
 				T result = caseSD(sd);
+				if (result == null) result = caseInterfaceBlock(sd);
 				if (result == null) result = caseBlock(sd);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
@@ -185,6 +187,7 @@ public class ArrowheadDSLSwitch<T> extends Switch<T> {
 				IDD idd = (IDD)theEObject;
 				T result = caseIDD(idd);
 				if (result == null) result = caseSD(idd);
+				if (result == null) result = caseInterfaceBlock(idd);
 				if (result == null) result = caseBlock(idd);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
@@ -221,6 +224,7 @@ public class ArrowheadDSLSwitch<T> extends Switch<T> {
 				T result = caseIDD_Implementation(idD_Implementation);
 				if (result == null) result = caseIDD(idD_Implementation);
 				if (result == null) result = caseSD(idD_Implementation);
+				if (result == null) result = caseInterfaceBlock(idD_Implementation);
 				if (result == null) result = caseBlock(idD_Implementation);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
@@ -541,6 +545,21 @@ public class ArrowheadDSLSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseBlock(Block object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Interface Block</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Interface Block</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseInterfaceBlock(InterfaceBlock object) {
 		return null;
 	}
 

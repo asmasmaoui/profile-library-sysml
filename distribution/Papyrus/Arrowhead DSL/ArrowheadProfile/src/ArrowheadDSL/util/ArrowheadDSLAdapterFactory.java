@@ -12,6 +12,7 @@ import org.eclipse.emf.common.notify.impl.AdapterFactoryImpl;
 import org.eclipse.emf.ecore.EObject;
 
 import org.eclipse.papyrus.sysml16.blocks.Block;
+import org.eclipse.papyrus.sysml16.portsandflows.InterfaceBlock;
 import org.eclipse.papyrus.sysml16.requirements.AbstractRequirement;
 import org.eclipse.papyrus.sysml16.requirements.Requirement;
 
@@ -154,6 +155,10 @@ public class ArrowheadDSLAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseBlock(Block object) {
 				return createBlockAdapter();
+			}
+			@Override
+			public Adapter caseInterfaceBlock(InterfaceBlock object) {
+				return createInterfaceBlockAdapter();
 			}
 			@Override
 			public Adapter caseAbstractRequirement(AbstractRequirement object) {
@@ -474,6 +479,20 @@ public class ArrowheadDSLAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createBlockAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.eclipse.papyrus.sysml16.portsandflows.InterfaceBlock <em>Interface Block</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.eclipse.papyrus.sysml16.portsandflows.InterfaceBlock
+	 * @generated
+	 */
+	public Adapter createInterfaceBlockAdapter() {
 		return null;
 	}
 

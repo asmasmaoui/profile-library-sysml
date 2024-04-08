@@ -64,6 +64,7 @@ import org.eclipse.emf.ecore.impl.EPackageImpl;
 
 import org.eclipse.papyrus.sysml16.blocks.BlocksPackage;
 
+import org.eclipse.papyrus.sysml16.portsandflows.PortsAndFlowsPackage;
 import org.eclipse.papyrus.sysml16.requirements.RequirementsPackage;
 import org.eclipse.papyrus.sysml16.sysml.SysMLPackage;
 
@@ -1932,6 +1933,7 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 		// Obtain other dependent packages
 		BlocksPackage theBlocksPackage = (BlocksPackage)EPackage.Registry.INSTANCE.getEPackage(BlocksPackage.eNS_URI);
 		TypesPackage theTypesPackage = (TypesPackage)EPackage.Registry.INSTANCE.getEPackage(TypesPackage.eNS_URI);
+		PortsAndFlowsPackage thePortsAndFlowsPackage = (PortsAndFlowsPackage)EPackage.Registry.INSTANCE.getEPackage(PortsAndFlowsPackage.eNS_URI);
 		RequirementsPackage theRequirementsPackage = (RequirementsPackage)EPackage.Registry.INSTANCE.getEPackage(RequirementsPackage.eNS_URI);
 		UMLPackage theUMLPackage = (UMLPackage)EPackage.Registry.INSTANCE.getEPackage(UMLPackage.eNS_URI);
 
@@ -1941,7 +1943,7 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 
 		// Add supertypes to classes
 		sysDEClass.getESuperTypes().add(theBlocksPackage.getBlock());
-		sdEClass.getESuperTypes().add(theBlocksPackage.getBlock());
+		sdEClass.getESuperTypes().add(thePortsAndFlowsPackage.getInterfaceBlock());
 		localCloudDesignEClass.getESuperTypes().add(theBlocksPackage.getBlock());
 		system_of_LocalcloudsDesignEClass.getESuperTypes().add(theBlocksPackage.getBlock());
 		arrowheadDSLRequirementEClass.getESuperTypes().add(theRequirementsPackage.getRequirement());
