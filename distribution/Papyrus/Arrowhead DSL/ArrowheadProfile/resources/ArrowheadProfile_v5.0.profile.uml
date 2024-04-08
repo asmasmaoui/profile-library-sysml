@@ -321,8 +321,8 @@
       </eAnnotations>
     </packagedElement>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_awzE4D0kEe60840L8fIbKA" name="SD">
-      <generalization xmi:type="uml:Generalization" xmi:id="_QMTc8D9JEe6eT7ajKPAqxQ">
-        <general xmi:type="uml:Stereotype" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks.stereotype_packagedElement_Block"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="_CboLIPWPEe6gO_-x_7DuDg">
+        <general xmi:type="uml:Stereotype" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Ports_u0026Flows.stereotype_packagedElement_InterfaceBlock"/>
       </generalization>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_k3ExUD0kEe60840L8fIbKA" name="MicroserviceName" isStatic="true" isUnique="false">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
