@@ -3,6 +3,7 @@
 package ArrowheadDSL;
 
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.papyrus.sysml16.requirements.Requirement;
 
 /**
@@ -22,7 +23,6 @@ import org.eclipse.papyrus.sysml16.requirements.Requirement;
  * @generated
  */
 public interface ArrowheadDSLRequirement extends Requirement {
-
 	/**
 	 * Returns the value of the '<em><b>Arrowheadusecase</b></em>' reference list.
 	 * The list contents are of type {@link ArrowheadDSL.ArrowheadUseCase}.
@@ -40,4 +40,5 @@ public interface ArrowheadDSLRequirement extends Requirement {
 	 * @generated
 	 */
 	EList<ArrowheadUseCase> getArrowheadusecase();
+
 } // ArrowheadDSLRequirement

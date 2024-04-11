@@ -4,13 +4,17 @@ package ArrowheadDSL.impl;
 
 import ArrowheadDSL.ArrowheadDSLPackage;
 import ArrowheadDSL.IDD_Implementation;
-
 import ArrowheadDSL.System_Implementation;
+
 import java.util.Collection;
+
 import org.eclipse.emf.common.notify.NotificationChain;
+
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
+
 import org.eclipse.emf.ecore.util.EObjectWithInverseResolvingEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 

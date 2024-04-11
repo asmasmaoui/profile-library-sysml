@@ -7,10 +7,12 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
-
 import org.eclipse.emf.ecore.EReference;
+
 import org.eclipse.papyrus.sysml16.blocks.BlocksPackage;
+
 import org.eclipse.papyrus.sysml16.portsandflows.PortsAndFlowsPackage;
+
 import org.eclipse.papyrus.sysml16.requirements.RequirementsPackage;
 
 /**
@@ -299,26 +301,6 @@ public interface ArrowheadDSLPackage extends EPackage {
 	int SD_OPERATION_COUNT = PortsAndFlowsPackage.INTERFACE_BLOCK_OPERATION_COUNT + 1;
 
 	/**
-	 * The meta object id for the '{@link ArrowheadDSL.impl.ArrowheadDSLRequirementImpl <em>Requirement</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see ArrowheadDSL.impl.ArrowheadDSLRequirementImpl
-	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getArrowheadDSLRequirement()
-	 * @generated
-	 */
-	int ARROWHEAD_DSL_REQUIREMENT = 4;
-
-	/**
-	 * The meta object id for the '{@link ArrowheadDSL.impl.ArrowheadUseCaseImpl <em>Arrowhead Use Case</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see ArrowheadDSL.impl.ArrowheadUseCaseImpl
-	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getArrowheadUseCase()
-	 * @generated
-	 */
-	int ARROWHEAD_USE_CASE = 5;
-
-	/**
 	 * The meta object id for the '{@link ArrowheadDSL.impl.LocalCloudDesignImpl <em>Local Cloud Design</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -573,6 +555,16 @@ public interface ArrowheadDSLPackage extends EPackage {
 	int SYSTEM_OF_LOCALCLOUDS_DESIGN_OPERATION_COUNT = BlocksPackage.BLOCK_OPERATION_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link ArrowheadDSL.impl.ArrowheadDSLRequirementImpl <em>Requirement</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see ArrowheadDSL.impl.ArrowheadDSLRequirementImpl
+	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getArrowheadDSLRequirement()
+	 * @generated
+	 */
+	int ARROWHEAD_DSL_REQUIREMENT = 4;
+
+	/**
 	 * The feature id for the '<em><b>Base Named Element</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -762,6 +754,16 @@ public interface ArrowheadDSLPackage extends EPackage {
 	int ARROWHEAD_DSL_REQUIREMENT_OPERATION_COUNT = RequirementsPackage.REQUIREMENT_OPERATION_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link ArrowheadDSL.impl.ArrowheadUseCaseImpl <em>Arrowhead Use Case</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see ArrowheadDSL.impl.ArrowheadUseCaseImpl
+	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getArrowheadUseCase()
+	 * @generated
+	 */
+	int ARROWHEAD_USE_CASE = 5;
+
+	/**
 	 * The feature id for the '<em><b>Base Use Case</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -898,16 +900,6 @@ public interface ArrowheadDSLPackage extends EPackage {
 	int DEVICE_DESIGN_OPERATION_COUNT = BlocksPackage.BLOCK_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link ArrowheadDSL.impl.IntracloudNetworkDesignImpl <em>Intracloud Network Design</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see ArrowheadDSL.impl.IntracloudNetworkDesignImpl
-	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getIntracloudNetworkDesign()
-	 * @generated
-	 */
-	int INTRACLOUD_NETWORK_DESIGN = 8;
-
-	/**
 	 * The meta object id for the '{@link ArrowheadDSL.impl.IntercloudNetworkDesignImpl <em>Intercloud Network Design</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1008,6 +1000,16 @@ public interface ArrowheadDSLPackage extends EPackage {
 	int INTERCLOUD_NETWORK_DESIGN_OPERATION_COUNT = BlocksPackage.BLOCK_OPERATION_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link ArrowheadDSL.impl.IntracloudNetworkDesignImpl <em>Intracloud Network Design</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see ArrowheadDSL.impl.IntracloudNetworkDesignImpl
+	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getIntracloudNetworkDesign()
+	 * @generated
+	 */
+	int INTRACLOUD_NETWORK_DESIGN = 8;
+
+	/**
 	 * The feature id for the '<em><b>Base Class</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1096,16 +1098,6 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @ordered
 	 */
 	int INTRACLOUD_NETWORK_DESIGN_OPERATION_COUNT = BlocksPackage.BLOCK_OPERATION_COUNT + 0;
-
-	/**
-	 * The meta object id for the '{@link ArrowheadDSL.impl.IntercloudNetworkDesignDescriptionImpl <em>Intercloud Network Design Description</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see ArrowheadDSL.impl.IntercloudNetworkDesignDescriptionImpl
-	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getIntercloudNetworkDesignDescription()
-	 * @generated
-	 */
-	int INTERCLOUD_NETWORK_DESIGN_DESCRIPTION = 10;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.impl.DeviceDesignDescriptionImpl <em>Device Design Description</em>}' class.
@@ -1269,6 +1261,16 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @ordered
 	 */
 	int DEVICE_DESIGN_DESCRIPTION_OPERATION_COUNT = DEVICE_DESIGN_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link ArrowheadDSL.impl.IntercloudNetworkDesignDescriptionImpl <em>Intercloud Network Design Description</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see ArrowheadDSL.impl.IntercloudNetworkDesignDescriptionImpl
+	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getIntercloudNetworkDesignDescription()
+	 * @generated
+	 */
+	int INTERCLOUD_NETWORK_DESIGN_DESCRIPTION = 10;
 
 	/**
 	 * The feature id for the '<em><b>Base Class</b></em>' reference.
@@ -1832,26 +1834,6 @@ public interface ArrowheadDSLPackage extends EPackage {
 	int SYSTEM_OF_LOCACLOUDS_DESIGN_DESCRIPTION_OPERATION_COUNT = SYSTEM_OF_LOCALCLOUDS_DESIGN_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link ArrowheadDSL.impl.System_of_LocalcloudsImplementationImpl <em>System of Localclouds Implementation</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see ArrowheadDSL.impl.System_of_LocalcloudsImplementationImpl
-	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getSystem_of_LocalcloudsImplementation()
-	 * @generated
-	 */
-	int SYSTEM_OF_LOCALCLOUDS_IMPLEMENTATION = 16;
-
-	/**
-	 * The meta object id for the '{@link ArrowheadDSL.impl.LocalcloudImplementationImpl <em>Localcloud Implementation</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see ArrowheadDSL.impl.LocalcloudImplementationImpl
-	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getLocalcloudImplementation()
-	 * @generated
-	 */
-	int LOCALCLOUD_IMPLEMENTATION = 17;
-
-	/**
 	 * The meta object id for the '{@link ArrowheadDSL.impl.SysDDImpl <em>Sys DD</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2013,16 +1995,6 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @ordered
 	 */
 	int SYS_DD_OPERATION_COUNT = SYS_D_OPERATION_COUNT + 0;
-
-	/**
-	 * The meta object id for the '{@link ArrowheadDSL.impl.System_ImplementationImpl <em>System Implementation</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see ArrowheadDSL.impl.System_ImplementationImpl
-	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getSystem_Implementation()
-	 * @generated
-	 */
-	int SYSTEM_IMPLEMENTATION = 18;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.impl.IDDImpl <em>IDD</em>}' class.
@@ -2224,6 +2196,16 @@ public interface ArrowheadDSLPackage extends EPackage {
 	int IDD_OPERATION_COUNT = SD_OPERATION_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link ArrowheadDSL.impl.System_of_LocalcloudsImplementationImpl <em>System of Localclouds Implementation</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see ArrowheadDSL.impl.System_of_LocalcloudsImplementationImpl
+	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getSystem_of_LocalcloudsImplementation()
+	 * @generated
+	 */
+	int SYSTEM_OF_LOCALCLOUDS_IMPLEMENTATION = 16;
+
+	/**
 	 * The feature id for the '<em><b>Base Class</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2375,6 +2357,16 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @ordered
 	 */
 	int SYSTEM_OF_LOCALCLOUDS_IMPLEMENTATION_OPERATION_COUNT = SYSTEM_OF_LOCACLOUDS_DESIGN_DESCRIPTION_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link ArrowheadDSL.impl.LocalcloudImplementationImpl <em>Localcloud Implementation</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see ArrowheadDSL.impl.LocalcloudImplementationImpl
+	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getLocalcloudImplementation()
+	 * @generated
+	 */
+	int LOCALCLOUD_IMPLEMENTATION = 17;
 
 	/**
 	 * The feature id for the '<em><b>Base Class</b></em>' reference.
@@ -2564,6 +2556,16 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @ordered
 	 */
 	int LOCALCLOUD_IMPLEMENTATION_OPERATION_COUNT = LOCALCLOUD_DESIGN_DESCRIPTION_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link ArrowheadDSL.impl.System_ImplementationImpl <em>System Implementation</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see ArrowheadDSL.impl.System_ImplementationImpl
+	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getSystem_Implementation()
+	 * @generated
+	 */
+	int SYSTEM_IMPLEMENTATION = 18;
 
 	/**
 	 * The feature id for the '<em><b>Base Class</b></em>' reference.
@@ -2945,6 +2947,226 @@ public interface ArrowheadDSLPackage extends EPackage {
 	int IDD_IMPLEMENTATION_OPERATION_COUNT = IDD_OPERATION_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link ArrowheadDSL.impl.ArrowheadDSLOperationHTTPImpl <em>Operation HTTP</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see ArrowheadDSL.impl.ArrowheadDSLOperationHTTPImpl
+	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getArrowheadDSLOperationHTTP()
+	 * @generated
+	 */
+	int ARROWHEAD_DSL_OPERATION_HTTP = 20;
+
+	/**
+	 * The feature id for the '<em><b>Method</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ARROWHEAD_DSL_OPERATION_HTTP__METHOD = 0;
+
+	/**
+	 * The feature id for the '<em><b>Sub URL</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ARROWHEAD_DSL_OPERATION_HTTP__SUB_URL = 1;
+
+	/**
+	 * The feature id for the '<em><b>Base Operation</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ARROWHEAD_DSL_OPERATION_HTTP__BASE_OPERATION = 2;
+
+	/**
+	 * The number of structural features of the '<em>Operation HTTP</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ARROWHEAD_DSL_OPERATION_HTTP_FEATURE_COUNT = 3;
+
+	/**
+	 * The number of operations of the '<em>Operation HTTP</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ARROWHEAD_DSL_OPERATION_HTTP_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link ArrowheadDSL.impl.ArrowheadDSLRequirementMQTTImpl <em>Requirement MQTT</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see ArrowheadDSL.impl.ArrowheadDSLRequirementMQTTImpl
+	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getArrowheadDSLRequirementMQTT()
+	 * @generated
+	 */
+	int ARROWHEAD_DSL_REQUIREMENT_MQTT = 21;
+
+	/**
+	 * The feature id for the '<em><b>Method</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ARROWHEAD_DSL_REQUIREMENT_MQTT__METHOD = 0;
+
+	/**
+	 * The feature id for the '<em><b>Topic</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ARROWHEAD_DSL_REQUIREMENT_MQTT__TOPIC = 1;
+
+	/**
+	 * The feature id for the '<em><b>Base Operation</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ARROWHEAD_DSL_REQUIREMENT_MQTT__BASE_OPERATION = 2;
+
+	/**
+	 * The number of structural features of the '<em>Requirement MQTT</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ARROWHEAD_DSL_REQUIREMENT_MQTT_FEATURE_COUNT = 3;
+
+	/**
+	 * The number of operations of the '<em>Requirement MQTT</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ARROWHEAD_DSL_REQUIREMENT_MQTT_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link ArrowheadDSL.impl.ArrowheadDSLRequirementCOAPImpl <em>Requirement COAP</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see ArrowheadDSL.impl.ArrowheadDSLRequirementCOAPImpl
+	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getArrowheadDSLRequirementCOAP()
+	 * @generated
+	 */
+	int ARROWHEAD_DSL_REQUIREMENT_COAP = 22;
+
+	/**
+	 * The feature id for the '<em><b>Method</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ARROWHEAD_DSL_REQUIREMENT_COAP__METHOD = 0;
+
+	/**
+	 * The feature id for the '<em><b>Base Operation</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ARROWHEAD_DSL_REQUIREMENT_COAP__BASE_OPERATION = 1;
+
+	/**
+	 * The feature id for the '<em><b>Sub URL</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ARROWHEAD_DSL_REQUIREMENT_COAP__SUB_URL = 2;
+
+	/**
+	 * The number of structural features of the '<em>Requirement COAP</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ARROWHEAD_DSL_REQUIREMENT_COAP_FEATURE_COUNT = 3;
+
+	/**
+	 * The number of operations of the '<em>Requirement COAP</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ARROWHEAD_DSL_REQUIREMENT_COAP_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link ArrowheadDSL.impl.ArrowheadDSLRequirementWebsocketImpl <em>Requirement Websocket</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see ArrowheadDSL.impl.ArrowheadDSLRequirementWebsocketImpl
+	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getArrowheadDSLRequirementWebsocket()
+	 * @generated
+	 */
+	int ARROWHEAD_DSL_REQUIREMENT_WEBSOCKET = 23;
+
+	/**
+	 * The feature id for the '<em><b>Method</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ARROWHEAD_DSL_REQUIREMENT_WEBSOCKET__METHOD = 0;
+
+	/**
+	 * The feature id for the '<em><b>Sub URL</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ARROWHEAD_DSL_REQUIREMENT_WEBSOCKET__SUB_URL = 1;
+
+	/**
+	 * The feature id for the '<em><b>Base Operation</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ARROWHEAD_DSL_REQUIREMENT_WEBSOCKET__BASE_OPERATION = 2;
+
+	/**
+	 * The number of structural features of the '<em>Requirement Websocket</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ARROWHEAD_DSL_REQUIREMENT_WEBSOCKET_FEATURE_COUNT = 3;
+
+	/**
+	 * The number of operations of the '<em>Requirement Websocket</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ARROWHEAD_DSL_REQUIREMENT_WEBSOCKET_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link ArrowheadDSL.SystemDatabaseKind <em>System Database Kind</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2952,7 +3174,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getSystemDatabaseKind()
 	 * @generated
 	 */
-	int SYSTEM_DATABASE_KIND = 20;
+	int SYSTEM_DATABASE_KIND = 24;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.BusinessPolicyKind <em>Business Policy Kind</em>}' enum.
@@ -2962,7 +3184,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getBusinessPolicyKind()
 	 * @generated
 	 */
-	int BUSINESS_POLICY_KIND = 21;
+	int BUSINESS_POLICY_KIND = 25;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.SecurityPolicyKind <em>Security Policy Kind</em>}' enum.
@@ -2972,7 +3194,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getSecurityPolicyKind()
 	 * @generated
 	 */
-	int SECURITY_POLICY_KIND = 22;
+	int SECURITY_POLICY_KIND = 26;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.LifecyclePolicyKind <em>Lifecycle Policy Kind</em>}' enum.
@@ -2982,7 +3204,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getLifecyclePolicyKind()
 	 * @generated
 	 */
-	int LIFECYCLE_POLICY_KIND = 23;
+	int LIFECYCLE_POLICY_KIND = 27;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.MacLayerKind <em>Mac Layer Kind</em>}' enum.
@@ -2992,7 +3214,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getMacLayerKind()
 	 * @generated
 	 */
-	int MAC_LAYER_KIND = 24;
+	int MAC_LAYER_KIND = 28;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.OSKind <em>OS Kind</em>}' enum.
@@ -3002,7 +3224,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getOSKind()
 	 * @generated
 	 */
-	int OS_KIND = 25;
+	int OS_KIND = 29;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.ArrowheadCertificateKind <em>Arrowhead Certificate Kind</em>}' enum.
@@ -3012,7 +3234,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getArrowheadCertificateKind()
 	 * @generated
 	 */
-	int ARROWHEAD_CERTIFICATE_KIND = 26;
+	int ARROWHEAD_CERTIFICATE_KIND = 30;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.TimeFormatKind <em>Time Format Kind</em>}' enum.
@@ -3022,7 +3244,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getTimeFormatKind()
 	 * @generated
 	 */
-	int TIME_FORMAT_KIND = 27;
+	int TIME_FORMAT_KIND = 31;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.ApplicationProtocolKind <em>Application Protocol Kind</em>}' enum.
@@ -3032,7 +3254,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getApplicationProtocolKind()
 	 * @generated
 	 */
-	int APPLICATION_PROTOCOL_KIND = 28;
+	int APPLICATION_PROTOCOL_KIND = 32;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.EncodingKind <em>Encoding Kind</em>}' enum.
@@ -3042,7 +3264,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getEncodingKind()
 	 * @generated
 	 */
-	int ENCODING_KIND = 29;
+	int ENCODING_KIND = 33;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.ArrowheadSecurityKind <em>Arrowhead Security Kind</em>}' enum.
@@ -3052,7 +3274,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getArrowheadSecurityKind()
 	 * @generated
 	 */
-	int ARROWHEAD_SECURITY_KIND = 30;
+	int ARROWHEAD_SECURITY_KIND = 34;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.ComprressionKind <em>Comprression Kind</em>}' enum.
@@ -3062,7 +3284,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getComprressionKind()
 	 * @generated
 	 */
-	int COMPRRESSION_KIND = 31;
+	int COMPRRESSION_KIND = 35;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.TokenKind <em>Token Kind</em>}' enum.
@@ -3072,7 +3294,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getTokenKind()
 	 * @generated
 	 */
-	int TOKEN_KIND = 32;
+	int TOKEN_KIND = 36;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.CryptoAlgorithmKind <em>Crypto Algorithm Kind</em>}' enum.
@@ -3082,7 +3304,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getCryptoAlgorithmKind()
 	 * @generated
 	 */
-	int CRYPTO_ALGORITHM_KIND = 33;
+	int CRYPTO_ALGORITHM_KIND = 37;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.DatamodelStandardKind <em>Datamodel Standard Kind</em>}' enum.
@@ -3092,7 +3314,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getDatamodelStandardKind()
 	 * @generated
 	 */
-	int DATAMODEL_STANDARD_KIND = 34;
+	int DATAMODEL_STANDARD_KIND = 38;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.CertificateKind <em>Certificate Kind</em>}' enum.
@@ -3102,7 +3324,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getCertificateKind()
 	 * @generated
 	 */
-	int CERTIFICATE_KIND = 35;
+	int CERTIFICATE_KIND = 39;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.CoAPMethodKind <em>Co AP Method Kind</em>}' enum.
@@ -3112,17 +3334,17 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getCoAPMethodKind()
 	 * @generated
 	 */
-	int CO_AP_METHOD_KIND = 36;
+	int CO_AP_METHOD_KIND = 40;
 
 	/**
-	 * The meta object id for the '{@link ArrowheadDSL.HTTP_11_MethodKind <em>HTTP 11 Method Kind</em>}' enum.
+	 * The meta object id for the '{@link ArrowheadDSL.HTTP11MethodKind <em>HTTP11 Method Kind</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see ArrowheadDSL.HTTP_11_MethodKind
-	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getHTTP_11_MethodKind()
+	 * @see ArrowheadDSL.HTTP11MethodKind
+	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getHTTP11MethodKind()
 	 * @generated
 	 */
-	int HTTP_11_METHOD_KIND = 37;
+	int HTTP11_METHOD_KIND = 41;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.HTTP2FrameKind <em>HTTP2 Frame Kind</em>}' enum.
@@ -3132,7 +3354,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getHTTP2FrameKind()
 	 * @generated
 	 */
-	int HTTP2_FRAME_KIND = 38;
+	int HTTP2_FRAME_KIND = 42;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.MACProtocolKind <em>MAC Protocol Kind</em>}' enum.
@@ -3142,7 +3364,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getMACProtocolKind()
 	 * @generated
 	 */
-	int MAC_PROTOCOL_KIND = 39;
+	int MAC_PROTOCOL_KIND = 43;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.MonitoringPolicyKind <em>Monitoring Policy Kind</em>}' enum.
@@ -3152,7 +3374,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getMonitoringPolicyKind()
 	 * @generated
 	 */
-	int MONITORING_POLICY_KIND = 40;
+	int MONITORING_POLICY_KIND = 44;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.MQTT311MessageTypeKind <em>MQTT311 Message Type Kind</em>}' enum.
@@ -3162,7 +3384,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getMQTT311MessageTypeKind()
 	 * @generated
 	 */
-	int MQTT311_MESSAGE_TYPE_KIND = 41;
+	int MQTT311_MESSAGE_TYPE_KIND = 45;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.MQTT50MessageTypeKind <em>MQTT50 Message Type Kind</em>}' enum.
@@ -3172,7 +3394,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getMQTT50MessageTypeKind()
 	 * @generated
 	 */
-	int MQTT50_MESSAGE_TYPE_KIND = 42;
+	int MQTT50_MESSAGE_TYPE_KIND = 46;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.PayloadEncryptionKind <em>Payload Encryption Kind</em>}' enum.
@@ -3182,7 +3404,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getPayloadEncryptionKind()
 	 * @generated
 	 */
-	int PAYLOAD_ENCRYPTION_KIND = 43;
+	int PAYLOAD_ENCRYPTION_KIND = 47;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.PhysicalLayerKind <em>Physical Layer Kind</em>}' enum.
@@ -3192,17 +3414,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getPhysicalLayerKind()
 	 * @generated
 	 */
-	int PHYSICAL_LAYER_KIND = 44;
-
-	/**
-	 * The meta object id for the '{@link ArrowheadDSL.StatusKodKind <em>Status Kod Kind</em>}' enum.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see ArrowheadDSL.StatusKodKind
-	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getStatusKodKind()
-	 * @generated
-	 */
-	int STATUS_KOD_KIND = 45;
+	int PHYSICAL_LAYER_KIND = 48;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.TransportLayerKind <em>Transport Layer Kind</em>}' enum.
@@ -3212,7 +3424,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getTransportLayerKind()
 	 * @generated
 	 */
-	int TRANSPORT_LAYER_KIND = 46;
+	int TRANSPORT_LAYER_KIND = 49;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.WebsocketDataFramingTypeKind <em>Websocket Data Framing Type Kind</em>}' enum.
@@ -3222,7 +3434,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getWebsocketDataFramingTypeKind()
 	 * @generated
 	 */
-	int WEBSOCKET_DATA_FRAMING_TYPE_KIND = 47;
+	int WEBSOCKET_DATA_FRAMING_TYPE_KIND = 50;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.WorkflowKind <em>Workflow Kind</em>}' enum.
@@ -3232,7 +3444,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getWorkflowKind()
 	 * @generated
 	 */
-	int WORKFLOW_KIND = 48;
+	int WORKFLOW_KIND = 51;
 
 
 	/**
@@ -3352,59 +3564,6 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @generated
 	 */
 	EOperation getSD__Operation();
-
-	/**
-	 * Returns the meta object for class '{@link ArrowheadDSL.ArrowheadDSLRequirement <em>Requirement</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Requirement</em>'.
-	 * @see ArrowheadDSL.ArrowheadDSLRequirement
-	 * @generated
-	 */
-	EClass getArrowheadDSLRequirement();
-
-	/**
-	 * Returns the meta object for the reference list '{@link ArrowheadDSL.ArrowheadDSLRequirement#getArrowheadusecase <em>Arrowheadusecase</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Arrowheadusecase</em>'.
-	 * @see ArrowheadDSL.ArrowheadDSLRequirement#getArrowheadusecase()
-	 * @see #getArrowheadDSLRequirement()
-	 * @generated
-	 */
-	EReference getArrowheadDSLRequirement_Arrowheadusecase();
-
-	/**
-	 * Returns the meta object for class '{@link ArrowheadDSL.ArrowheadUseCase <em>Arrowhead Use Case</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Arrowhead Use Case</em>'.
-	 * @see ArrowheadDSL.ArrowheadUseCase
-	 * @generated
-	 */
-	EClass getArrowheadUseCase();
-
-	/**
-	 * Returns the meta object for the reference '{@link ArrowheadDSL.ArrowheadUseCase#getBase_UseCase <em>Base Use Case</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Base Use Case</em>'.
-	 * @see ArrowheadDSL.ArrowheadUseCase#getBase_UseCase()
-	 * @see #getArrowheadUseCase()
-	 * @generated
-	 */
-	EReference getArrowheadUseCase_Base_UseCase();
-
-	/**
-	 * Returns the meta object for the reference list '{@link ArrowheadDSL.ArrowheadUseCase#getArrowheaddslrequirement <em>Arrowheaddslrequirement</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Arrowheaddslrequirement</em>'.
-	 * @see ArrowheadDSL.ArrowheadUseCase#getArrowheaddslrequirement()
-	 * @see #getArrowheadUseCase()
-	 * @generated
-	 */
-	EReference getArrowheadUseCase_Arrowheaddslrequirement();
 
 	/**
 	 * Returns the meta object for class '{@link ArrowheadDSL.LocalCloudDesign <em>Local Cloud Design</em>}'.
@@ -3559,6 +3718,59 @@ public interface ArrowheadDSLPackage extends EPackage {
 	EReference getSystem_of_LocalcloudsDesign_Localclouddesign();
 
 	/**
+	 * Returns the meta object for class '{@link ArrowheadDSL.ArrowheadDSLRequirement <em>Requirement</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Requirement</em>'.
+	 * @see ArrowheadDSL.ArrowheadDSLRequirement
+	 * @generated
+	 */
+	EClass getArrowheadDSLRequirement();
+
+	/**
+	 * Returns the meta object for the reference list '{@link ArrowheadDSL.ArrowheadDSLRequirement#getArrowheadusecase <em>Arrowheadusecase</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Arrowheadusecase</em>'.
+	 * @see ArrowheadDSL.ArrowheadDSLRequirement#getArrowheadusecase()
+	 * @see #getArrowheadDSLRequirement()
+	 * @generated
+	 */
+	EReference getArrowheadDSLRequirement_Arrowheadusecase();
+
+	/**
+	 * Returns the meta object for class '{@link ArrowheadDSL.ArrowheadUseCase <em>Arrowhead Use Case</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Arrowhead Use Case</em>'.
+	 * @see ArrowheadDSL.ArrowheadUseCase
+	 * @generated
+	 */
+	EClass getArrowheadUseCase();
+
+	/**
+	 * Returns the meta object for the reference '{@link ArrowheadDSL.ArrowheadUseCase#getBase_UseCase <em>Base Use Case</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Base Use Case</em>'.
+	 * @see ArrowheadDSL.ArrowheadUseCase#getBase_UseCase()
+	 * @see #getArrowheadUseCase()
+	 * @generated
+	 */
+	EReference getArrowheadUseCase_Base_UseCase();
+
+	/**
+	 * Returns the meta object for the reference list '{@link ArrowheadDSL.ArrowheadUseCase#getArrowheaddslrequirement <em>Arrowheaddslrequirement</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Arrowheaddslrequirement</em>'.
+	 * @see ArrowheadDSL.ArrowheadUseCase#getArrowheaddslrequirement()
+	 * @see #getArrowheadUseCase()
+	 * @generated
+	 */
+	EReference getArrowheadUseCase_Arrowheaddslrequirement();
+
+	/**
 	 * Returns the meta object for class '{@link ArrowheadDSL.DeviceDesign <em>Device Design</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3602,49 +3814,6 @@ public interface ArrowheadDSLPackage extends EPackage {
 	EReference getDeviceDesign_Intracloudnetworkdesign();
 
 	/**
-	 * Returns the meta object for class '{@link ArrowheadDSL.IntracloudNetworkDesign <em>Intracloud Network Design</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Intracloud Network Design</em>'.
-	 * @see ArrowheadDSL.IntracloudNetworkDesign
-	 * @generated
-	 */
-	EClass getIntracloudNetworkDesign();
-
-	/**
-	 * Returns the meta object for the attribute '{@link ArrowheadDSL.IntracloudNetworkDesign#getIntraNetworkDomain <em>Intra Network Domain</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Intra Network Domain</em>'.
-	 * @see ArrowheadDSL.IntracloudNetworkDesign#getIntraNetworkDomain()
-	 * @see #getIntracloudNetworkDesign()
-	 * @generated
-	 */
-	EAttribute getIntracloudNetworkDesign_IntraNetworkDomain();
-
-	/**
-	 * Returns the meta object for the attribute list '{@link ArrowheadDSL.IntracloudNetworkDesign#getIntraNetworkMacLayer <em>Intra Network Mac Layer</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute list '<em>Intra Network Mac Layer</em>'.
-	 * @see ArrowheadDSL.IntracloudNetworkDesign#getIntraNetworkMacLayer()
-	 * @see #getIntracloudNetworkDesign()
-	 * @generated
-	 */
-	EAttribute getIntracloudNetworkDesign_IntraNetworkMacLayer();
-
-	/**
-	 * Returns the meta object for the reference list '{@link ArrowheadDSL.IntracloudNetworkDesign#getDevicedesign <em>Devicedesign</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Devicedesign</em>'.
-	 * @see ArrowheadDSL.IntracloudNetworkDesign#getDevicedesign()
-	 * @see #getIntracloudNetworkDesign()
-	 * @generated
-	 */
-	EReference getIntracloudNetworkDesign_Devicedesign();
-
-	/**
 	 * Returns the meta object for class '{@link ArrowheadDSL.IntercloudNetworkDesign <em>Intercloud Network Design</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3686,6 +3855,49 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getIntercloudNetworkDesign_Devicedesign();
+
+	/**
+	 * Returns the meta object for class '{@link ArrowheadDSL.IntracloudNetworkDesign <em>Intracloud Network Design</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Intracloud Network Design</em>'.
+	 * @see ArrowheadDSL.IntracloudNetworkDesign
+	 * @generated
+	 */
+	EClass getIntracloudNetworkDesign();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ArrowheadDSL.IntracloudNetworkDesign#getIntraNetworkDomain <em>Intra Network Domain</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Intra Network Domain</em>'.
+	 * @see ArrowheadDSL.IntracloudNetworkDesign#getIntraNetworkDomain()
+	 * @see #getIntracloudNetworkDesign()
+	 * @generated
+	 */
+	EAttribute getIntracloudNetworkDesign_IntraNetworkDomain();
+
+	/**
+	 * Returns the meta object for the attribute list '{@link ArrowheadDSL.IntracloudNetworkDesign#getIntraNetworkMacLayer <em>Intra Network Mac Layer</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute list '<em>Intra Network Mac Layer</em>'.
+	 * @see ArrowheadDSL.IntracloudNetworkDesign#getIntraNetworkMacLayer()
+	 * @see #getIntracloudNetworkDesign()
+	 * @generated
+	 */
+	EAttribute getIntracloudNetworkDesign_IntraNetworkMacLayer();
+
+	/**
+	 * Returns the meta object for the reference list '{@link ArrowheadDSL.IntracloudNetworkDesign#getDevicedesign <em>Devicedesign</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Devicedesign</em>'.
+	 * @see ArrowheadDSL.IntracloudNetworkDesign#getDevicedesign()
+	 * @see #getIntracloudNetworkDesign()
+	 * @generated
+	 */
+	EReference getIntracloudNetworkDesign_Devicedesign();
 
 	/**
 	 * Returns the meta object for class '{@link ArrowheadDSL.DeviceDesignDescription <em>Device Design Description</em>}'.
@@ -3775,49 +3987,6 @@ public interface ArrowheadDSLPackage extends EPackage {
 	EReference getDeviceDesignDescription_Intracloudnetworkdesigndescription();
 
 	/**
-	 * Returns the meta object for class '{@link ArrowheadDSL.IntracloudNetworkDesignDescription <em>Intracloud Network Design Description</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Intracloud Network Design Description</em>'.
-	 * @see ArrowheadDSL.IntracloudNetworkDesignDescription
-	 * @generated
-	 */
-	EClass getIntracloudNetworkDesignDescription();
-
-	/**
-	 * Returns the meta object for the attribute list '{@link ArrowheadDSL.IntracloudNetworkDesignDescription#getIntraNetworkRouter <em>Intra Network Router</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute list '<em>Intra Network Router</em>'.
-	 * @see ArrowheadDSL.IntracloudNetworkDesignDescription#getIntraNetworkRouter()
-	 * @see #getIntracloudNetworkDesignDescription()
-	 * @generated
-	 */
-	EAttribute getIntracloudNetworkDesignDescription_IntraNetworkRouter();
-
-	/**
-	 * Returns the meta object for the attribute list '{@link ArrowheadDSL.IntracloudNetworkDesignDescription#getIntraNetworkRouterConfig <em>Intra Network Router Config</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute list '<em>Intra Network Router Config</em>'.
-	 * @see ArrowheadDSL.IntracloudNetworkDesignDescription#getIntraNetworkRouterConfig()
-	 * @see #getIntracloudNetworkDesignDescription()
-	 * @generated
-	 */
-	EAttribute getIntracloudNetworkDesignDescription_IntraNetworkRouterConfig();
-
-	/**
-	 * Returns the meta object for the reference list '{@link ArrowheadDSL.IntracloudNetworkDesignDescription#getDevicedesigndescription <em>Devicedesigndescription</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Devicedesigndescription</em>'.
-	 * @see ArrowheadDSL.IntracloudNetworkDesignDescription#getDevicedesigndescription()
-	 * @see #getIntracloudNetworkDesignDescription()
-	 * @generated
-	 */
-	EReference getIntracloudNetworkDesignDescription_Devicedesigndescription();
-
-	/**
 	 * Returns the meta object for class '{@link ArrowheadDSL.IntercloudNetworkDesignDescription <em>Intercloud Network Design Description</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3859,6 +4028,49 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getIntercloudNetworkDesignDescription_Devicedesigndescription();
+
+	/**
+	 * Returns the meta object for class '{@link ArrowheadDSL.IntracloudNetworkDesignDescription <em>Intracloud Network Design Description</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Intracloud Network Design Description</em>'.
+	 * @see ArrowheadDSL.IntracloudNetworkDesignDescription
+	 * @generated
+	 */
+	EClass getIntracloudNetworkDesignDescription();
+
+	/**
+	 * Returns the meta object for the attribute list '{@link ArrowheadDSL.IntracloudNetworkDesignDescription#getIntraNetworkRouter <em>Intra Network Router</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute list '<em>Intra Network Router</em>'.
+	 * @see ArrowheadDSL.IntracloudNetworkDesignDescription#getIntraNetworkRouter()
+	 * @see #getIntracloudNetworkDesignDescription()
+	 * @generated
+	 */
+	EAttribute getIntracloudNetworkDesignDescription_IntraNetworkRouter();
+
+	/**
+	 * Returns the meta object for the attribute list '{@link ArrowheadDSL.IntracloudNetworkDesignDescription#getIntraNetworkRouterConfig <em>Intra Network Router Config</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute list '<em>Intra Network Router Config</em>'.
+	 * @see ArrowheadDSL.IntracloudNetworkDesignDescription#getIntraNetworkRouterConfig()
+	 * @see #getIntracloudNetworkDesignDescription()
+	 * @generated
+	 */
+	EAttribute getIntracloudNetworkDesignDescription_IntraNetworkRouterConfig();
+
+	/**
+	 * Returns the meta object for the reference list '{@link ArrowheadDSL.IntracloudNetworkDesignDescription#getDevicedesigndescription <em>Devicedesigndescription</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Devicedesigndescription</em>'.
+	 * @see ArrowheadDSL.IntracloudNetworkDesignDescription#getDevicedesigndescription()
+	 * @see #getIntracloudNetworkDesignDescription()
+	 * @generated
+	 */
+	EReference getIntracloudNetworkDesignDescription_Devicedesigndescription();
 
 	/**
 	 * Returns the meta object for class '{@link ArrowheadDSL.LocalcloudDesignDescription <em>Localcloud Design Description</em>}'.
@@ -3958,113 +4170,6 @@ public interface ArrowheadDSLPackage extends EPackage {
 	EReference getSystem_of_LocacloudsDesignDescription_Localclouddesigndescription();
 
 	/**
-	 * Returns the meta object for class '{@link ArrowheadDSL.System_of_LocalcloudsImplementation <em>System of Localclouds Implementation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>System of Localclouds Implementation</em>'.
-	 * @see ArrowheadDSL.System_of_LocalcloudsImplementation
-	 * @generated
-	 */
-	EClass getSystem_of_LocalcloudsImplementation();
-
-	/**
-	 * Returns the meta object for the attribute '{@link ArrowheadDSL.System_of_LocalcloudsImplementation#getSoLC_Documentation <em>So LC Documentation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>So LC Documentation</em>'.
-	 * @see ArrowheadDSL.System_of_LocalcloudsImplementation#getSoLC_Documentation()
-	 * @see #getSystem_of_LocalcloudsImplementation()
-	 * @generated
-	 */
-	EAttribute getSystem_of_LocalcloudsImplementation_SoLC_Documentation();
-
-	/**
-	 * Returns the meta object for the reference list '{@link ArrowheadDSL.System_of_LocalcloudsImplementation#getLocalcloudimplementation <em>Localcloudimplementation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Localcloudimplementation</em>'.
-	 * @see ArrowheadDSL.System_of_LocalcloudsImplementation#getLocalcloudimplementation()
-	 * @see #getSystem_of_LocalcloudsImplementation()
-	 * @generated
-	 */
-	EReference getSystem_of_LocalcloudsImplementation_Localcloudimplementation();
-
-	/**
-	 * Returns the meta object for class '{@link ArrowheadDSL.LocalcloudImplementation <em>Localcloud Implementation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Localcloud Implementation</em>'.
-	 * @see ArrowheadDSL.LocalcloudImplementation
-	 * @generated
-	 */
-	EClass getLocalcloudImplementation();
-
-	/**
-	 * Returns the meta object for the attribute '{@link ArrowheadDSL.LocalcloudImplementation#getLC_Documentation <em>LC Documentation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>LC Documentation</em>'.
-	 * @see ArrowheadDSL.LocalcloudImplementation#getLC_Documentation()
-	 * @see #getLocalcloudImplementation()
-	 * @generated
-	 */
-	EAttribute getLocalcloudImplementation_LC_Documentation();
-
-	/**
-	 * Returns the meta object for the reference list '{@link ArrowheadDSL.LocalcloudImplementation#getSystemimplementation <em>Systemimplementation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Systemimplementation</em>'.
-	 * @see ArrowheadDSL.LocalcloudImplementation#getSystemimplementation()
-	 * @see #getLocalcloudImplementation()
-	 * @generated
-	 */
-	EReference getLocalcloudImplementation_Systemimplementation();
-
-	/**
-	 * Returns the meta object for the reference list '{@link ArrowheadDSL.LocalcloudImplementation#getSystem_of_localcloudsimplementation <em>System of localcloudsimplementation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>System of localcloudsimplementation</em>'.
-	 * @see ArrowheadDSL.LocalcloudImplementation#getSystem_of_localcloudsimplementation()
-	 * @see #getLocalcloudImplementation()
-	 * @generated
-	 */
-	EReference getLocalcloudImplementation_System_of_localcloudsimplementation();
-
-	/**
-	 * Returns the meta object for class '{@link ArrowheadDSL.System_Implementation <em>System Implementation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>System Implementation</em>'.
-	 * @see ArrowheadDSL.System_Implementation
-	 * @generated
-	 */
-	EClass getSystem_Implementation();
-
-	/**
-	 * Returns the meta object for the reference list '{@link ArrowheadDSL.System_Implementation#getIdd_implementation <em>Idd implementation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Idd implementation</em>'.
-	 * @see ArrowheadDSL.System_Implementation#getIdd_implementation()
-	 * @see #getSystem_Implementation()
-	 * @generated
-	 */
-	EReference getSystem_Implementation_Idd_implementation();
-
-	/**
-	 * Returns the meta object for the reference list '{@link ArrowheadDSL.System_Implementation#getLoclacloudimplementation <em>Loclacloudimplementation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Loclacloudimplementation</em>'.
-	 * @see ArrowheadDSL.System_Implementation#getLoclacloudimplementation()
-	 * @see #getSystem_Implementation()
-	 * @generated
-	 */
-	EReference getSystem_Implementation_Loclacloudimplementation();
-
-	/**
 	 * Returns the meta object for class '{@link ArrowheadDSL.SysDD <em>Sys DD</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4117,27 +4222,6 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getSysDD_Localclouddesigndescription();
-
-	/**
-	 * Returns the meta object for class '{@link ArrowheadDSL.IDD_Implementation <em>IDD Implementation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>IDD Implementation</em>'.
-	 * @see ArrowheadDSL.IDD_Implementation
-	 * @generated
-	 */
-	EClass getIDD_Implementation();
-
-	/**
-	 * Returns the meta object for the reference list '{@link ArrowheadDSL.IDD_Implementation#getSystemimplementation <em>Systemimplementation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Systemimplementation</em>'.
-	 * @see ArrowheadDSL.IDD_Implementation#getSystemimplementation()
-	 * @see #getIDD_Implementation()
-	 * @generated
-	 */
-	EReference getIDD_Implementation_Systemimplementation();
 
 	/**
 	 * Returns the meta object for class '{@link ArrowheadDSL.IDD <em>IDD</em>}'.
@@ -4258,6 +4342,306 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getIDD_Sysdd();
+
+	/**
+	 * Returns the meta object for class '{@link ArrowheadDSL.System_of_LocalcloudsImplementation <em>System of Localclouds Implementation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>System of Localclouds Implementation</em>'.
+	 * @see ArrowheadDSL.System_of_LocalcloudsImplementation
+	 * @generated
+	 */
+	EClass getSystem_of_LocalcloudsImplementation();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ArrowheadDSL.System_of_LocalcloudsImplementation#getSoLC_Documentation <em>So LC Documentation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>So LC Documentation</em>'.
+	 * @see ArrowheadDSL.System_of_LocalcloudsImplementation#getSoLC_Documentation()
+	 * @see #getSystem_of_LocalcloudsImplementation()
+	 * @generated
+	 */
+	EAttribute getSystem_of_LocalcloudsImplementation_SoLC_Documentation();
+
+	/**
+	 * Returns the meta object for the reference list '{@link ArrowheadDSL.System_of_LocalcloudsImplementation#getLocalcloudimplementation <em>Localcloudimplementation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Localcloudimplementation</em>'.
+	 * @see ArrowheadDSL.System_of_LocalcloudsImplementation#getLocalcloudimplementation()
+	 * @see #getSystem_of_LocalcloudsImplementation()
+	 * @generated
+	 */
+	EReference getSystem_of_LocalcloudsImplementation_Localcloudimplementation();
+
+	/**
+	 * Returns the meta object for class '{@link ArrowheadDSL.LocalcloudImplementation <em>Localcloud Implementation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Localcloud Implementation</em>'.
+	 * @see ArrowheadDSL.LocalcloudImplementation
+	 * @generated
+	 */
+	EClass getLocalcloudImplementation();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ArrowheadDSL.LocalcloudImplementation#getLC_Documentation <em>LC Documentation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>LC Documentation</em>'.
+	 * @see ArrowheadDSL.LocalcloudImplementation#getLC_Documentation()
+	 * @see #getLocalcloudImplementation()
+	 * @generated
+	 */
+	EAttribute getLocalcloudImplementation_LC_Documentation();
+
+	/**
+	 * Returns the meta object for the reference list '{@link ArrowheadDSL.LocalcloudImplementation#getSystemimplementation <em>Systemimplementation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Systemimplementation</em>'.
+	 * @see ArrowheadDSL.LocalcloudImplementation#getSystemimplementation()
+	 * @see #getLocalcloudImplementation()
+	 * @generated
+	 */
+	EReference getLocalcloudImplementation_Systemimplementation();
+
+	/**
+	 * Returns the meta object for the reference list '{@link ArrowheadDSL.LocalcloudImplementation#getSystem_of_localcloudsimplementation <em>System of localcloudsimplementation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>System of localcloudsimplementation</em>'.
+	 * @see ArrowheadDSL.LocalcloudImplementation#getSystem_of_localcloudsimplementation()
+	 * @see #getLocalcloudImplementation()
+	 * @generated
+	 */
+	EReference getLocalcloudImplementation_System_of_localcloudsimplementation();
+
+	/**
+	 * Returns the meta object for class '{@link ArrowheadDSL.System_Implementation <em>System Implementation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>System Implementation</em>'.
+	 * @see ArrowheadDSL.System_Implementation
+	 * @generated
+	 */
+	EClass getSystem_Implementation();
+
+	/**
+	 * Returns the meta object for the reference list '{@link ArrowheadDSL.System_Implementation#getIdd_implementation <em>Idd implementation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Idd implementation</em>'.
+	 * @see ArrowheadDSL.System_Implementation#getIdd_implementation()
+	 * @see #getSystem_Implementation()
+	 * @generated
+	 */
+	EReference getSystem_Implementation_Idd_implementation();
+
+	/**
+	 * Returns the meta object for the reference list '{@link ArrowheadDSL.System_Implementation#getLoclacloudimplementation <em>Loclacloudimplementation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Loclacloudimplementation</em>'.
+	 * @see ArrowheadDSL.System_Implementation#getLoclacloudimplementation()
+	 * @see #getSystem_Implementation()
+	 * @generated
+	 */
+	EReference getSystem_Implementation_Loclacloudimplementation();
+
+	/**
+	 * Returns the meta object for class '{@link ArrowheadDSL.IDD_Implementation <em>IDD Implementation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>IDD Implementation</em>'.
+	 * @see ArrowheadDSL.IDD_Implementation
+	 * @generated
+	 */
+	EClass getIDD_Implementation();
+
+	/**
+	 * Returns the meta object for the reference list '{@link ArrowheadDSL.IDD_Implementation#getSystemimplementation <em>Systemimplementation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Systemimplementation</em>'.
+	 * @see ArrowheadDSL.IDD_Implementation#getSystemimplementation()
+	 * @see #getIDD_Implementation()
+	 * @generated
+	 */
+	EReference getIDD_Implementation_Systemimplementation();
+
+	/**
+	 * Returns the meta object for class '{@link ArrowheadDSL.ArrowheadDSLOperationHTTP <em>Operation HTTP</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Operation HTTP</em>'.
+	 * @see ArrowheadDSL.ArrowheadDSLOperationHTTP
+	 * @generated
+	 */
+	EClass getArrowheadDSLOperationHTTP();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ArrowheadDSL.ArrowheadDSLOperationHTTP#getMethod <em>Method</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Method</em>'.
+	 * @see ArrowheadDSL.ArrowheadDSLOperationHTTP#getMethod()
+	 * @see #getArrowheadDSLOperationHTTP()
+	 * @generated
+	 */
+	EAttribute getArrowheadDSLOperationHTTP_Method();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ArrowheadDSL.ArrowheadDSLOperationHTTP#getSubURL <em>Sub URL</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Sub URL</em>'.
+	 * @see ArrowheadDSL.ArrowheadDSLOperationHTTP#getSubURL()
+	 * @see #getArrowheadDSLOperationHTTP()
+	 * @generated
+	 */
+	EAttribute getArrowheadDSLOperationHTTP_SubURL();
+
+	/**
+	 * Returns the meta object for the reference '{@link ArrowheadDSL.ArrowheadDSLOperationHTTP#getBase_Operation <em>Base Operation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Base Operation</em>'.
+	 * @see ArrowheadDSL.ArrowheadDSLOperationHTTP#getBase_Operation()
+	 * @see #getArrowheadDSLOperationHTTP()
+	 * @generated
+	 */
+	EReference getArrowheadDSLOperationHTTP_Base_Operation();
+
+	/**
+	 * Returns the meta object for class '{@link ArrowheadDSL.ArrowheadDSLRequirementMQTT <em>Requirement MQTT</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Requirement MQTT</em>'.
+	 * @see ArrowheadDSL.ArrowheadDSLRequirementMQTT
+	 * @generated
+	 */
+	EClass getArrowheadDSLRequirementMQTT();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ArrowheadDSL.ArrowheadDSLRequirementMQTT#getMethod <em>Method</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Method</em>'.
+	 * @see ArrowheadDSL.ArrowheadDSLRequirementMQTT#getMethod()
+	 * @see #getArrowheadDSLRequirementMQTT()
+	 * @generated
+	 */
+	EAttribute getArrowheadDSLRequirementMQTT_Method();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ArrowheadDSL.ArrowheadDSLRequirementMQTT#getTopic <em>Topic</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Topic</em>'.
+	 * @see ArrowheadDSL.ArrowheadDSLRequirementMQTT#getTopic()
+	 * @see #getArrowheadDSLRequirementMQTT()
+	 * @generated
+	 */
+	EAttribute getArrowheadDSLRequirementMQTT_Topic();
+
+	/**
+	 * Returns the meta object for the reference '{@link ArrowheadDSL.ArrowheadDSLRequirementMQTT#getBase_Operation <em>Base Operation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Base Operation</em>'.
+	 * @see ArrowheadDSL.ArrowheadDSLRequirementMQTT#getBase_Operation()
+	 * @see #getArrowheadDSLRequirementMQTT()
+	 * @generated
+	 */
+	EReference getArrowheadDSLRequirementMQTT_Base_Operation();
+
+	/**
+	 * Returns the meta object for class '{@link ArrowheadDSL.ArrowheadDSLRequirementCOAP <em>Requirement COAP</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Requirement COAP</em>'.
+	 * @see ArrowheadDSL.ArrowheadDSLRequirementCOAP
+	 * @generated
+	 */
+	EClass getArrowheadDSLRequirementCOAP();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ArrowheadDSL.ArrowheadDSLRequirementCOAP#getMethod <em>Method</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Method</em>'.
+	 * @see ArrowheadDSL.ArrowheadDSLRequirementCOAP#getMethod()
+	 * @see #getArrowheadDSLRequirementCOAP()
+	 * @generated
+	 */
+	EAttribute getArrowheadDSLRequirementCOAP_Method();
+
+	/**
+	 * Returns the meta object for the reference '{@link ArrowheadDSL.ArrowheadDSLRequirementCOAP#getBase_Operation <em>Base Operation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Base Operation</em>'.
+	 * @see ArrowheadDSL.ArrowheadDSLRequirementCOAP#getBase_Operation()
+	 * @see #getArrowheadDSLRequirementCOAP()
+	 * @generated
+	 */
+	EReference getArrowheadDSLRequirementCOAP_Base_Operation();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ArrowheadDSL.ArrowheadDSLRequirementCOAP#getSubURL <em>Sub URL</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Sub URL</em>'.
+	 * @see ArrowheadDSL.ArrowheadDSLRequirementCOAP#getSubURL()
+	 * @see #getArrowheadDSLRequirementCOAP()
+	 * @generated
+	 */
+	EAttribute getArrowheadDSLRequirementCOAP_SubURL();
+
+	/**
+	 * Returns the meta object for class '{@link ArrowheadDSL.ArrowheadDSLRequirementWebsocket <em>Requirement Websocket</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Requirement Websocket</em>'.
+	 * @see ArrowheadDSL.ArrowheadDSLRequirementWebsocket
+	 * @generated
+	 */
+	EClass getArrowheadDSLRequirementWebsocket();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ArrowheadDSL.ArrowheadDSLRequirementWebsocket#getMethod <em>Method</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Method</em>'.
+	 * @see ArrowheadDSL.ArrowheadDSLRequirementWebsocket#getMethod()
+	 * @see #getArrowheadDSLRequirementWebsocket()
+	 * @generated
+	 */
+	EAttribute getArrowheadDSLRequirementWebsocket_Method();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ArrowheadDSL.ArrowheadDSLRequirementWebsocket#getSubURL <em>Sub URL</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Sub URL</em>'.
+	 * @see ArrowheadDSL.ArrowheadDSLRequirementWebsocket#getSubURL()
+	 * @see #getArrowheadDSLRequirementWebsocket()
+	 * @generated
+	 */
+	EAttribute getArrowheadDSLRequirementWebsocket_SubURL();
+
+	/**
+	 * Returns the meta object for the reference '{@link ArrowheadDSL.ArrowheadDSLRequirementWebsocket#getBase_Operation <em>Base Operation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Base Operation</em>'.
+	 * @see ArrowheadDSL.ArrowheadDSLRequirementWebsocket#getBase_Operation()
+	 * @see #getArrowheadDSLRequirementWebsocket()
+	 * @generated
+	 */
+	EReference getArrowheadDSLRequirementWebsocket_Base_Operation();
 
 	/**
 	 * Returns the meta object for enum '{@link ArrowheadDSL.SystemDatabaseKind <em>System Database Kind</em>}'.
@@ -4430,14 +4814,14 @@ public interface ArrowheadDSLPackage extends EPackage {
 	EEnum getCoAPMethodKind();
 
 	/**
-	 * Returns the meta object for enum '{@link ArrowheadDSL.HTTP_11_MethodKind <em>HTTP 11 Method Kind</em>}'.
+	 * Returns the meta object for enum '{@link ArrowheadDSL.HTTP11MethodKind <em>HTTP11 Method Kind</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>HTTP 11 Method Kind</em>'.
-	 * @see ArrowheadDSL.HTTP_11_MethodKind
+	 * @return the meta object for enum '<em>HTTP11 Method Kind</em>'.
+	 * @see ArrowheadDSL.HTTP11MethodKind
 	 * @generated
 	 */
-	EEnum getHTTP_11_MethodKind();
+	EEnum getHTTP11MethodKind();
 
 	/**
 	 * Returns the meta object for enum '{@link ArrowheadDSL.HTTP2FrameKind <em>HTTP2 Frame Kind</em>}'.
@@ -4508,16 +4892,6 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @generated
 	 */
 	EEnum getPhysicalLayerKind();
-
-	/**
-	 * Returns the meta object for enum '{@link ArrowheadDSL.StatusKodKind <em>Status Kod Kind</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>Status Kod Kind</em>'.
-	 * @see ArrowheadDSL.StatusKodKind
-	 * @generated
-	 */
-	EEnum getStatusKodKind();
 
 	/**
 	 * Returns the meta object for enum '{@link ArrowheadDSL.TransportLayerKind <em>Transport Layer Kind</em>}'.
@@ -4665,50 +5039,6 @@ public interface ArrowheadDSLPackage extends EPackage {
 		EOperation SD___OPERATION = eINSTANCE.getSD__Operation();
 
 		/**
-		 * The meta object literal for the '{@link ArrowheadDSL.impl.ArrowheadDSLRequirementImpl <em>Requirement</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see ArrowheadDSL.impl.ArrowheadDSLRequirementImpl
-		 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getArrowheadDSLRequirement()
-		 * @generated
-		 */
-		EClass ARROWHEAD_DSL_REQUIREMENT = eINSTANCE.getArrowheadDSLRequirement();
-
-		/**
-		 * The meta object literal for the '<em><b>Arrowheadusecase</b></em>' reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ARROWHEAD_DSL_REQUIREMENT__ARROWHEADUSECASE = eINSTANCE.getArrowheadDSLRequirement_Arrowheadusecase();
-
-		/**
-		 * The meta object literal for the '{@link ArrowheadDSL.impl.ArrowheadUseCaseImpl <em>Arrowhead Use Case</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see ArrowheadDSL.impl.ArrowheadUseCaseImpl
-		 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getArrowheadUseCase()
-		 * @generated
-		 */
-		EClass ARROWHEAD_USE_CASE = eINSTANCE.getArrowheadUseCase();
-
-		/**
-		 * The meta object literal for the '<em><b>Base Use Case</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ARROWHEAD_USE_CASE__BASE_USE_CASE = eINSTANCE.getArrowheadUseCase_Base_UseCase();
-
-		/**
-		 * The meta object literal for the '<em><b>Arrowheaddslrequirement</b></em>' reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ARROWHEAD_USE_CASE__ARROWHEADDSLREQUIREMENT = eINSTANCE.getArrowheadUseCase_Arrowheaddslrequirement();
-
-		/**
 		 * The meta object literal for the '{@link ArrowheadDSL.impl.LocalCloudDesignImpl <em>Local Cloud Design</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -4825,6 +5155,50 @@ public interface ArrowheadDSLPackage extends EPackage {
 		EReference SYSTEM_OF_LOCALCLOUDS_DESIGN__LOCALCLOUDDESIGN = eINSTANCE.getSystem_of_LocalcloudsDesign_Localclouddesign();
 
 		/**
+		 * The meta object literal for the '{@link ArrowheadDSL.impl.ArrowheadDSLRequirementImpl <em>Requirement</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see ArrowheadDSL.impl.ArrowheadDSLRequirementImpl
+		 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getArrowheadDSLRequirement()
+		 * @generated
+		 */
+		EClass ARROWHEAD_DSL_REQUIREMENT = eINSTANCE.getArrowheadDSLRequirement();
+
+		/**
+		 * The meta object literal for the '<em><b>Arrowheadusecase</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ARROWHEAD_DSL_REQUIREMENT__ARROWHEADUSECASE = eINSTANCE.getArrowheadDSLRequirement_Arrowheadusecase();
+
+		/**
+		 * The meta object literal for the '{@link ArrowheadDSL.impl.ArrowheadUseCaseImpl <em>Arrowhead Use Case</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see ArrowheadDSL.impl.ArrowheadUseCaseImpl
+		 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getArrowheadUseCase()
+		 * @generated
+		 */
+		EClass ARROWHEAD_USE_CASE = eINSTANCE.getArrowheadUseCase();
+
+		/**
+		 * The meta object literal for the '<em><b>Base Use Case</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ARROWHEAD_USE_CASE__BASE_USE_CASE = eINSTANCE.getArrowheadUseCase_Base_UseCase();
+
+		/**
+		 * The meta object literal for the '<em><b>Arrowheaddslrequirement</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ARROWHEAD_USE_CASE__ARROWHEADDSLREQUIREMENT = eINSTANCE.getArrowheadUseCase_Arrowheaddslrequirement();
+
+		/**
 		 * The meta object literal for the '{@link ArrowheadDSL.impl.DeviceDesignImpl <em>Device Design</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -4859,40 +5233,6 @@ public interface ArrowheadDSLPackage extends EPackage {
 		EReference DEVICE_DESIGN__INTRACLOUDNETWORKDESIGN = eINSTANCE.getDeviceDesign_Intracloudnetworkdesign();
 
 		/**
-		 * The meta object literal for the '{@link ArrowheadDSL.impl.IntracloudNetworkDesignImpl <em>Intracloud Network Design</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see ArrowheadDSL.impl.IntracloudNetworkDesignImpl
-		 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getIntracloudNetworkDesign()
-		 * @generated
-		 */
-		EClass INTRACLOUD_NETWORK_DESIGN = eINSTANCE.getIntracloudNetworkDesign();
-
-		/**
-		 * The meta object literal for the '<em><b>Intra Network Domain</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute INTRACLOUD_NETWORK_DESIGN__INTRA_NETWORK_DOMAIN = eINSTANCE.getIntracloudNetworkDesign_IntraNetworkDomain();
-
-		/**
-		 * The meta object literal for the '<em><b>Intra Network Mac Layer</b></em>' attribute list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute INTRACLOUD_NETWORK_DESIGN__INTRA_NETWORK_MAC_LAYER = eINSTANCE.getIntracloudNetworkDesign_IntraNetworkMacLayer();
-
-		/**
-		 * The meta object literal for the '<em><b>Devicedesign</b></em>' reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference INTRACLOUD_NETWORK_DESIGN__DEVICEDESIGN = eINSTANCE.getIntracloudNetworkDesign_Devicedesign();
-
-		/**
 		 * The meta object literal for the '{@link ArrowheadDSL.impl.IntercloudNetworkDesignImpl <em>Intercloud Network Design</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -4925,6 +5265,40 @@ public interface ArrowheadDSLPackage extends EPackage {
 		 * @generated
 		 */
 		EReference INTERCLOUD_NETWORK_DESIGN__DEVICEDESIGN = eINSTANCE.getIntercloudNetworkDesign_Devicedesign();
+
+		/**
+		 * The meta object literal for the '{@link ArrowheadDSL.impl.IntracloudNetworkDesignImpl <em>Intracloud Network Design</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see ArrowheadDSL.impl.IntracloudNetworkDesignImpl
+		 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getIntracloudNetworkDesign()
+		 * @generated
+		 */
+		EClass INTRACLOUD_NETWORK_DESIGN = eINSTANCE.getIntracloudNetworkDesign();
+
+		/**
+		 * The meta object literal for the '<em><b>Intra Network Domain</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INTRACLOUD_NETWORK_DESIGN__INTRA_NETWORK_DOMAIN = eINSTANCE.getIntracloudNetworkDesign_IntraNetworkDomain();
+
+		/**
+		 * The meta object literal for the '<em><b>Intra Network Mac Layer</b></em>' attribute list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INTRACLOUD_NETWORK_DESIGN__INTRA_NETWORK_MAC_LAYER = eINSTANCE.getIntracloudNetworkDesign_IntraNetworkMacLayer();
+
+		/**
+		 * The meta object literal for the '<em><b>Devicedesign</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference INTRACLOUD_NETWORK_DESIGN__DEVICEDESIGN = eINSTANCE.getIntracloudNetworkDesign_Devicedesign();
 
 		/**
 		 * The meta object literal for the '{@link ArrowheadDSL.impl.DeviceDesignDescriptionImpl <em>Device Design Description</em>}' class.
@@ -4993,40 +5367,6 @@ public interface ArrowheadDSLPackage extends EPackage {
 		EReference DEVICE_DESIGN_DESCRIPTION__INTRACLOUDNETWORKDESIGNDESCRIPTION = eINSTANCE.getDeviceDesignDescription_Intracloudnetworkdesigndescription();
 
 		/**
-		 * The meta object literal for the '{@link ArrowheadDSL.impl.IntracloudNetworkDesignDescriptionImpl <em>Intracloud Network Design Description</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see ArrowheadDSL.impl.IntracloudNetworkDesignDescriptionImpl
-		 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getIntracloudNetworkDesignDescription()
-		 * @generated
-		 */
-		EClass INTRACLOUD_NETWORK_DESIGN_DESCRIPTION = eINSTANCE.getIntracloudNetworkDesignDescription();
-
-		/**
-		 * The meta object literal for the '<em><b>Intra Network Router</b></em>' attribute list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute INTRACLOUD_NETWORK_DESIGN_DESCRIPTION__INTRA_NETWORK_ROUTER = eINSTANCE.getIntracloudNetworkDesignDescription_IntraNetworkRouter();
-
-		/**
-		 * The meta object literal for the '<em><b>Intra Network Router Config</b></em>' attribute list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute INTRACLOUD_NETWORK_DESIGN_DESCRIPTION__INTRA_NETWORK_ROUTER_CONFIG = eINSTANCE.getIntracloudNetworkDesignDescription_IntraNetworkRouterConfig();
-
-		/**
-		 * The meta object literal for the '<em><b>Devicedesigndescription</b></em>' reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference INTRACLOUD_NETWORK_DESIGN_DESCRIPTION__DEVICEDESIGNDESCRIPTION = eINSTANCE.getIntracloudNetworkDesignDescription_Devicedesigndescription();
-
-		/**
 		 * The meta object literal for the '{@link ArrowheadDSL.impl.IntercloudNetworkDesignDescriptionImpl <em>Intercloud Network Design Description</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -5059,6 +5399,40 @@ public interface ArrowheadDSLPackage extends EPackage {
 		 * @generated
 		 */
 		EReference INTERCLOUD_NETWORK_DESIGN_DESCRIPTION__DEVICEDESIGNDESCRIPTION = eINSTANCE.getIntercloudNetworkDesignDescription_Devicedesigndescription();
+
+		/**
+		 * The meta object literal for the '{@link ArrowheadDSL.impl.IntracloudNetworkDesignDescriptionImpl <em>Intracloud Network Design Description</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see ArrowheadDSL.impl.IntracloudNetworkDesignDescriptionImpl
+		 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getIntracloudNetworkDesignDescription()
+		 * @generated
+		 */
+		EClass INTRACLOUD_NETWORK_DESIGN_DESCRIPTION = eINSTANCE.getIntracloudNetworkDesignDescription();
+
+		/**
+		 * The meta object literal for the '<em><b>Intra Network Router</b></em>' attribute list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INTRACLOUD_NETWORK_DESIGN_DESCRIPTION__INTRA_NETWORK_ROUTER = eINSTANCE.getIntracloudNetworkDesignDescription_IntraNetworkRouter();
+
+		/**
+		 * The meta object literal for the '<em><b>Intra Network Router Config</b></em>' attribute list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INTRACLOUD_NETWORK_DESIGN_DESCRIPTION__INTRA_NETWORK_ROUTER_CONFIG = eINSTANCE.getIntracloudNetworkDesignDescription_IntraNetworkRouterConfig();
+
+		/**
+		 * The meta object literal for the '<em><b>Devicedesigndescription</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference INTRACLOUD_NETWORK_DESIGN_DESCRIPTION__DEVICEDESIGNDESCRIPTION = eINSTANCE.getIntracloudNetworkDesignDescription_Devicedesigndescription();
 
 		/**
 		 * The meta object literal for the '{@link ArrowheadDSL.impl.LocalcloudDesignDescriptionImpl <em>Localcloud Design Description</em>}' class.
@@ -5137,92 +5511,6 @@ public interface ArrowheadDSLPackage extends EPackage {
 		EReference SYSTEM_OF_LOCACLOUDS_DESIGN_DESCRIPTION__LOCALCLOUDDESIGNDESCRIPTION = eINSTANCE.getSystem_of_LocacloudsDesignDescription_Localclouddesigndescription();
 
 		/**
-		 * The meta object literal for the '{@link ArrowheadDSL.impl.System_of_LocalcloudsImplementationImpl <em>System of Localclouds Implementation</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see ArrowheadDSL.impl.System_of_LocalcloudsImplementationImpl
-		 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getSystem_of_LocalcloudsImplementation()
-		 * @generated
-		 */
-		EClass SYSTEM_OF_LOCALCLOUDS_IMPLEMENTATION = eINSTANCE.getSystem_of_LocalcloudsImplementation();
-
-		/**
-		 * The meta object literal for the '<em><b>So LC Documentation</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute SYSTEM_OF_LOCALCLOUDS_IMPLEMENTATION__SO_LC_DOCUMENTATION = eINSTANCE.getSystem_of_LocalcloudsImplementation_SoLC_Documentation();
-
-		/**
-		 * The meta object literal for the '<em><b>Localcloudimplementation</b></em>' reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference SYSTEM_OF_LOCALCLOUDS_IMPLEMENTATION__LOCALCLOUDIMPLEMENTATION = eINSTANCE.getSystem_of_LocalcloudsImplementation_Localcloudimplementation();
-
-		/**
-		 * The meta object literal for the '{@link ArrowheadDSL.impl.LocalcloudImplementationImpl <em>Localcloud Implementation</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see ArrowheadDSL.impl.LocalcloudImplementationImpl
-		 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getLocalcloudImplementation()
-		 * @generated
-		 */
-		EClass LOCALCLOUD_IMPLEMENTATION = eINSTANCE.getLocalcloudImplementation();
-
-		/**
-		 * The meta object literal for the '<em><b>LC Documentation</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute LOCALCLOUD_IMPLEMENTATION__LC_DOCUMENTATION = eINSTANCE.getLocalcloudImplementation_LC_Documentation();
-
-		/**
-		 * The meta object literal for the '<em><b>Systemimplementation</b></em>' reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference LOCALCLOUD_IMPLEMENTATION__SYSTEMIMPLEMENTATION = eINSTANCE.getLocalcloudImplementation_Systemimplementation();
-
-		/**
-		 * The meta object literal for the '<em><b>System of localcloudsimplementation</b></em>' reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference LOCALCLOUD_IMPLEMENTATION__SYSTEM_OF_LOCALCLOUDSIMPLEMENTATION = eINSTANCE.getLocalcloudImplementation_System_of_localcloudsimplementation();
-
-		/**
-		 * The meta object literal for the '{@link ArrowheadDSL.impl.System_ImplementationImpl <em>System Implementation</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see ArrowheadDSL.impl.System_ImplementationImpl
-		 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getSystem_Implementation()
-		 * @generated
-		 */
-		EClass SYSTEM_IMPLEMENTATION = eINSTANCE.getSystem_Implementation();
-
-		/**
-		 * The meta object literal for the '<em><b>Idd implementation</b></em>' reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference SYSTEM_IMPLEMENTATION__IDD_IMPLEMENTATION = eINSTANCE.getSystem_Implementation_Idd_implementation();
-
-		/**
-		 * The meta object literal for the '<em><b>Loclacloudimplementation</b></em>' reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference SYSTEM_IMPLEMENTATION__LOCLACLOUDIMPLEMENTATION = eINSTANCE.getSystem_Implementation_Loclacloudimplementation();
-
-		/**
 		 * The meta object literal for the '{@link ArrowheadDSL.impl.SysDDImpl <em>Sys DD</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -5263,24 +5551,6 @@ public interface ArrowheadDSLPackage extends EPackage {
 		 * @generated
 		 */
 		EReference SYS_DD__LOCALCLOUDDESIGNDESCRIPTION = eINSTANCE.getSysDD_Localclouddesigndescription();
-
-		/**
-		 * The meta object literal for the '{@link ArrowheadDSL.impl.IDD_ImplementationImpl <em>IDD Implementation</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see ArrowheadDSL.impl.IDD_ImplementationImpl
-		 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getIDD_Implementation()
-		 * @generated
-		 */
-		EClass IDD_IMPLEMENTATION = eINSTANCE.getIDD_Implementation();
-
-		/**
-		 * The meta object literal for the '<em><b>Systemimplementation</b></em>' reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference IDD_IMPLEMENTATION__SYSTEMIMPLEMENTATION = eINSTANCE.getIDD_Implementation_Systemimplementation();
 
 		/**
 		 * The meta object literal for the '{@link ArrowheadDSL.impl.IDDImpl <em>IDD</em>}' class.
@@ -5371,6 +5641,246 @@ public interface ArrowheadDSLPackage extends EPackage {
 		 * @generated
 		 */
 		EReference IDD__SYSDD = eINSTANCE.getIDD_Sysdd();
+
+		/**
+		 * The meta object literal for the '{@link ArrowheadDSL.impl.System_of_LocalcloudsImplementationImpl <em>System of Localclouds Implementation</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see ArrowheadDSL.impl.System_of_LocalcloudsImplementationImpl
+		 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getSystem_of_LocalcloudsImplementation()
+		 * @generated
+		 */
+		EClass SYSTEM_OF_LOCALCLOUDS_IMPLEMENTATION = eINSTANCE.getSystem_of_LocalcloudsImplementation();
+
+		/**
+		 * The meta object literal for the '<em><b>So LC Documentation</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SYSTEM_OF_LOCALCLOUDS_IMPLEMENTATION__SO_LC_DOCUMENTATION = eINSTANCE.getSystem_of_LocalcloudsImplementation_SoLC_Documentation();
+
+		/**
+		 * The meta object literal for the '<em><b>Localcloudimplementation</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SYSTEM_OF_LOCALCLOUDS_IMPLEMENTATION__LOCALCLOUDIMPLEMENTATION = eINSTANCE.getSystem_of_LocalcloudsImplementation_Localcloudimplementation();
+
+		/**
+		 * The meta object literal for the '{@link ArrowheadDSL.impl.LocalcloudImplementationImpl <em>Localcloud Implementation</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see ArrowheadDSL.impl.LocalcloudImplementationImpl
+		 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getLocalcloudImplementation()
+		 * @generated
+		 */
+		EClass LOCALCLOUD_IMPLEMENTATION = eINSTANCE.getLocalcloudImplementation();
+
+		/**
+		 * The meta object literal for the '<em><b>LC Documentation</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LOCALCLOUD_IMPLEMENTATION__LC_DOCUMENTATION = eINSTANCE.getLocalcloudImplementation_LC_Documentation();
+
+		/**
+		 * The meta object literal for the '<em><b>Systemimplementation</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference LOCALCLOUD_IMPLEMENTATION__SYSTEMIMPLEMENTATION = eINSTANCE.getLocalcloudImplementation_Systemimplementation();
+
+		/**
+		 * The meta object literal for the '<em><b>System of localcloudsimplementation</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference LOCALCLOUD_IMPLEMENTATION__SYSTEM_OF_LOCALCLOUDSIMPLEMENTATION = eINSTANCE.getLocalcloudImplementation_System_of_localcloudsimplementation();
+
+		/**
+		 * The meta object literal for the '{@link ArrowheadDSL.impl.System_ImplementationImpl <em>System Implementation</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see ArrowheadDSL.impl.System_ImplementationImpl
+		 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getSystem_Implementation()
+		 * @generated
+		 */
+		EClass SYSTEM_IMPLEMENTATION = eINSTANCE.getSystem_Implementation();
+
+		/**
+		 * The meta object literal for the '<em><b>Idd implementation</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SYSTEM_IMPLEMENTATION__IDD_IMPLEMENTATION = eINSTANCE.getSystem_Implementation_Idd_implementation();
+
+		/**
+		 * The meta object literal for the '<em><b>Loclacloudimplementation</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SYSTEM_IMPLEMENTATION__LOCLACLOUDIMPLEMENTATION = eINSTANCE.getSystem_Implementation_Loclacloudimplementation();
+
+		/**
+		 * The meta object literal for the '{@link ArrowheadDSL.impl.IDD_ImplementationImpl <em>IDD Implementation</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see ArrowheadDSL.impl.IDD_ImplementationImpl
+		 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getIDD_Implementation()
+		 * @generated
+		 */
+		EClass IDD_IMPLEMENTATION = eINSTANCE.getIDD_Implementation();
+
+		/**
+		 * The meta object literal for the '<em><b>Systemimplementation</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference IDD_IMPLEMENTATION__SYSTEMIMPLEMENTATION = eINSTANCE.getIDD_Implementation_Systemimplementation();
+
+		/**
+		 * The meta object literal for the '{@link ArrowheadDSL.impl.ArrowheadDSLOperationHTTPImpl <em>Operation HTTP</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see ArrowheadDSL.impl.ArrowheadDSLOperationHTTPImpl
+		 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getArrowheadDSLOperationHTTP()
+		 * @generated
+		 */
+		EClass ARROWHEAD_DSL_OPERATION_HTTP = eINSTANCE.getArrowheadDSLOperationHTTP();
+
+		/**
+		 * The meta object literal for the '<em><b>Method</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ARROWHEAD_DSL_OPERATION_HTTP__METHOD = eINSTANCE.getArrowheadDSLOperationHTTP_Method();
+
+		/**
+		 * The meta object literal for the '<em><b>Sub URL</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ARROWHEAD_DSL_OPERATION_HTTP__SUB_URL = eINSTANCE.getArrowheadDSLOperationHTTP_SubURL();
+
+		/**
+		 * The meta object literal for the '<em><b>Base Operation</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ARROWHEAD_DSL_OPERATION_HTTP__BASE_OPERATION = eINSTANCE.getArrowheadDSLOperationHTTP_Base_Operation();
+
+		/**
+		 * The meta object literal for the '{@link ArrowheadDSL.impl.ArrowheadDSLRequirementMQTTImpl <em>Requirement MQTT</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see ArrowheadDSL.impl.ArrowheadDSLRequirementMQTTImpl
+		 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getArrowheadDSLRequirementMQTT()
+		 * @generated
+		 */
+		EClass ARROWHEAD_DSL_REQUIREMENT_MQTT = eINSTANCE.getArrowheadDSLRequirementMQTT();
+
+		/**
+		 * The meta object literal for the '<em><b>Method</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ARROWHEAD_DSL_REQUIREMENT_MQTT__METHOD = eINSTANCE.getArrowheadDSLRequirementMQTT_Method();
+
+		/**
+		 * The meta object literal for the '<em><b>Topic</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ARROWHEAD_DSL_REQUIREMENT_MQTT__TOPIC = eINSTANCE.getArrowheadDSLRequirementMQTT_Topic();
+
+		/**
+		 * The meta object literal for the '<em><b>Base Operation</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ARROWHEAD_DSL_REQUIREMENT_MQTT__BASE_OPERATION = eINSTANCE.getArrowheadDSLRequirementMQTT_Base_Operation();
+
+		/**
+		 * The meta object literal for the '{@link ArrowheadDSL.impl.ArrowheadDSLRequirementCOAPImpl <em>Requirement COAP</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see ArrowheadDSL.impl.ArrowheadDSLRequirementCOAPImpl
+		 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getArrowheadDSLRequirementCOAP()
+		 * @generated
+		 */
+		EClass ARROWHEAD_DSL_REQUIREMENT_COAP = eINSTANCE.getArrowheadDSLRequirementCOAP();
+
+		/**
+		 * The meta object literal for the '<em><b>Method</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ARROWHEAD_DSL_REQUIREMENT_COAP__METHOD = eINSTANCE.getArrowheadDSLRequirementCOAP_Method();
+
+		/**
+		 * The meta object literal for the '<em><b>Base Operation</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ARROWHEAD_DSL_REQUIREMENT_COAP__BASE_OPERATION = eINSTANCE.getArrowheadDSLRequirementCOAP_Base_Operation();
+
+		/**
+		 * The meta object literal for the '<em><b>Sub URL</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ARROWHEAD_DSL_REQUIREMENT_COAP__SUB_URL = eINSTANCE.getArrowheadDSLRequirementCOAP_SubURL();
+
+		/**
+		 * The meta object literal for the '{@link ArrowheadDSL.impl.ArrowheadDSLRequirementWebsocketImpl <em>Requirement Websocket</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see ArrowheadDSL.impl.ArrowheadDSLRequirementWebsocketImpl
+		 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getArrowheadDSLRequirementWebsocket()
+		 * @generated
+		 */
+		EClass ARROWHEAD_DSL_REQUIREMENT_WEBSOCKET = eINSTANCE.getArrowheadDSLRequirementWebsocket();
+
+		/**
+		 * The meta object literal for the '<em><b>Method</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ARROWHEAD_DSL_REQUIREMENT_WEBSOCKET__METHOD = eINSTANCE.getArrowheadDSLRequirementWebsocket_Method();
+
+		/**
+		 * The meta object literal for the '<em><b>Sub URL</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ARROWHEAD_DSL_REQUIREMENT_WEBSOCKET__SUB_URL = eINSTANCE.getArrowheadDSLRequirementWebsocket_SubURL();
+
+		/**
+		 * The meta object literal for the '<em><b>Base Operation</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ARROWHEAD_DSL_REQUIREMENT_WEBSOCKET__BASE_OPERATION = eINSTANCE.getArrowheadDSLRequirementWebsocket_Base_Operation();
 
 		/**
 		 * The meta object literal for the '{@link ArrowheadDSL.SystemDatabaseKind <em>System Database Kind</em>}' enum.
@@ -5543,14 +6053,14 @@ public interface ArrowheadDSLPackage extends EPackage {
 		EEnum CO_AP_METHOD_KIND = eINSTANCE.getCoAPMethodKind();
 
 		/**
-		 * The meta object literal for the '{@link ArrowheadDSL.HTTP_11_MethodKind <em>HTTP 11 Method Kind</em>}' enum.
+		 * The meta object literal for the '{@link ArrowheadDSL.HTTP11MethodKind <em>HTTP11 Method Kind</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see ArrowheadDSL.HTTP_11_MethodKind
-		 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getHTTP_11_MethodKind()
+		 * @see ArrowheadDSL.HTTP11MethodKind
+		 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getHTTP11MethodKind()
 		 * @generated
 		 */
-		EEnum HTTP_11_METHOD_KIND = eINSTANCE.getHTTP_11_MethodKind();
+		EEnum HTTP11_METHOD_KIND = eINSTANCE.getHTTP11MethodKind();
 
 		/**
 		 * The meta object literal for the '{@link ArrowheadDSL.HTTP2FrameKind <em>HTTP2 Frame Kind</em>}' enum.
@@ -5621,16 +6131,6 @@ public interface ArrowheadDSLPackage extends EPackage {
 		 * @generated
 		 */
 		EEnum PHYSICAL_LAYER_KIND = eINSTANCE.getPhysicalLayerKind();
-
-		/**
-		 * The meta object literal for the '{@link ArrowheadDSL.StatusKodKind <em>Status Kod Kind</em>}' enum.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see ArrowheadDSL.StatusKodKind
-		 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getStatusKodKind()
-		 * @generated
-		 */
-		EEnum STATUS_KOD_KIND = eINSTANCE.getStatusKodKind();
 
 		/**
 		 * The meta object literal for the '{@link ArrowheadDSL.TransportLayerKind <em>Transport Layer Kind</em>}' enum.

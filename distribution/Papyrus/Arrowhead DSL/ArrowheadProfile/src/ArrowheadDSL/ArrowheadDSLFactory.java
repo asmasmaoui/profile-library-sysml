@@ -40,24 +40,6 @@ public interface ArrowheadDSLFactory extends EFactory {
 	SD createSD();
 
 	/**
-	 * Returns a new object of class '<em>Requirement</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Requirement</em>'.
-	 * @generated
-	 */
-	ArrowheadDSLRequirement createArrowheadDSLRequirement();
-
-	/**
-	 * Returns a new object of class '<em>Arrowhead Use Case</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Arrowhead Use Case</em>'.
-	 * @generated
-	 */
-	ArrowheadUseCase createArrowheadUseCase();
-
-	/**
 	 * Returns a new object of class '<em>Local Cloud Design</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -76,6 +58,24 @@ public interface ArrowheadDSLFactory extends EFactory {
 	System_of_LocalcloudsDesign createSystem_of_LocalcloudsDesign();
 
 	/**
+	 * Returns a new object of class '<em>Requirement</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Requirement</em>'.
+	 * @generated
+	 */
+	ArrowheadDSLRequirement createArrowheadDSLRequirement();
+
+	/**
+	 * Returns a new object of class '<em>Arrowhead Use Case</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Arrowhead Use Case</em>'.
+	 * @generated
+	 */
+	ArrowheadUseCase createArrowheadUseCase();
+
+	/**
 	 * Returns a new object of class '<em>Device Design</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -83,15 +83,6 @@ public interface ArrowheadDSLFactory extends EFactory {
 	 * @generated
 	 */
 	DeviceDesign createDeviceDesign();
-
-	/**
-	 * Returns a new object of class '<em>Intracloud Network Design</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Intracloud Network Design</em>'.
-	 * @generated
-	 */
-	IntracloudNetworkDesign createIntracloudNetworkDesign();
 
 	/**
 	 * Returns a new object of class '<em>Intercloud Network Design</em>'.
@@ -103,6 +94,15 @@ public interface ArrowheadDSLFactory extends EFactory {
 	IntercloudNetworkDesign createIntercloudNetworkDesign();
 
 	/**
+	 * Returns a new object of class '<em>Intracloud Network Design</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Intracloud Network Design</em>'.
+	 * @generated
+	 */
+	IntracloudNetworkDesign createIntracloudNetworkDesign();
+
+	/**
 	 * Returns a new object of class '<em>Device Design Description</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -112,15 +112,6 @@ public interface ArrowheadDSLFactory extends EFactory {
 	DeviceDesignDescription createDeviceDesignDescription();
 
 	/**
-	 * Returns a new object of class '<em>Intracloud Network Design Description</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Intracloud Network Design Description</em>'.
-	 * @generated
-	 */
-	IntracloudNetworkDesignDescription createIntracloudNetworkDesignDescription();
-
-	/**
 	 * Returns a new object of class '<em>Intercloud Network Design Description</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -128,6 +119,15 @@ public interface ArrowheadDSLFactory extends EFactory {
 	 * @generated
 	 */
 	IntercloudNetworkDesignDescription createIntercloudNetworkDesignDescription();
+
+	/**
+	 * Returns a new object of class '<em>Intracloud Network Design Description</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Intracloud Network Design Description</em>'.
+	 * @generated
+	 */
+	IntracloudNetworkDesignDescription createIntracloudNetworkDesignDescription();
 
 	/**
 	 * Returns a new object of class '<em>Localcloud Design Description</em>'.
@@ -146,6 +146,24 @@ public interface ArrowheadDSLFactory extends EFactory {
 	 * @generated
 	 */
 	System_of_LocacloudsDesignDescription createSystem_of_LocacloudsDesignDescription();
+
+	/**
+	 * Returns a new object of class '<em>Sys DD</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Sys DD</em>'.
+	 * @generated
+	 */
+	SysDD createSysDD();
+
+	/**
+	 * Returns a new object of class '<em>IDD</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>IDD</em>'.
+	 * @generated
+	 */
+	IDD createIDD();
 
 	/**
 	 * Returns a new object of class '<em>System of Localclouds Implementation</em>'.
@@ -175,15 +193,6 @@ public interface ArrowheadDSLFactory extends EFactory {
 	System_Implementation createSystem_Implementation();
 
 	/**
-	 * Returns a new object of class '<em>Sys DD</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Sys DD</em>'.
-	 * @generated
-	 */
-	SysDD createSysDD();
-
-	/**
 	 * Returns a new object of class '<em>IDD Implementation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -193,13 +202,40 @@ public interface ArrowheadDSLFactory extends EFactory {
 	IDD_Implementation createIDD_Implementation();
 
 	/**
-	 * Returns a new object of class '<em>IDD</em>'.
+	 * Returns a new object of class '<em>Operation HTTP</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>IDD</em>'.
+	 * @return a new object of class '<em>Operation HTTP</em>'.
 	 * @generated
 	 */
-	IDD createIDD();
+	ArrowheadDSLOperationHTTP createArrowheadDSLOperationHTTP();
+
+	/**
+	 * Returns a new object of class '<em>Requirement MQTT</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Requirement MQTT</em>'.
+	 * @generated
+	 */
+	ArrowheadDSLRequirementMQTT createArrowheadDSLRequirementMQTT();
+
+	/**
+	 * Returns a new object of class '<em>Requirement COAP</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Requirement COAP</em>'.
+	 * @generated
+	 */
+	ArrowheadDSLRequirementCOAP createArrowheadDSLRequirementCOAP();
+
+	/**
+	 * Returns a new object of class '<em>Requirement Websocket</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Requirement Websocket</em>'.
+	 * @generated
+	 */
+	ArrowheadDSLRequirementWebsocket createArrowheadDSLRequirementWebsocket();
 
 	/**
 	 * Returns the package supported by this factory.

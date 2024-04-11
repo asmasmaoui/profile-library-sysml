@@ -132,16 +132,16 @@
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//CoAPMethodKind/DELETE"/>
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//CoAPMethodKind/OtherCoAPMethod"/>
     </genEnums>
-    <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="ArrowheadDSL.ecore#//HTTP_11_MethodKind">
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//HTTP_11_MethodKind/POST"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//HTTP_11_MethodKind/GET"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//HTTP_11_MethodKind/DELETE"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//HTTP_11_MethodKind/PUT"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//HTTP_11_MethodKind/HEAD"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//HTTP_11_MethodKind/OtherHTTPMethod"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//HTTP_11_MethodKind/CONNECT"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//HTTP_11_MethodKind/OPTIONS"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//HTTP_11_MethodKind/TRACE"/>
+    <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="ArrowheadDSL.ecore#//HTTP11MethodKind">
+      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//HTTP11MethodKind/POST"/>
+      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//HTTP11MethodKind/GET"/>
+      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//HTTP11MethodKind/DELETE"/>
+      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//HTTP11MethodKind/PUT"/>
+      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//HTTP11MethodKind/HEAD"/>
+      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//HTTP11MethodKind/OtherHTTPMethod"/>
+      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//HTTP11MethodKind/CONNECT"/>
+      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//HTTP11MethodKind/OPTIONS"/>
+      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//HTTP11MethodKind/TRACE"/>
     </genEnums>
     <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="ArrowheadDSL.ecore#//HTTP2FrameKind">
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//HTTP2FrameKind/OtherHTTP2Frame"/>
@@ -211,21 +211,6 @@
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//PhysicalLayerKind/IEEE802_11a"/>
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//PhysicalLayerKind/IEEE802_11b"/>
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//PhysicalLayerKind/OtherPhysicalLayer"/>
-    </genEnums>
-    <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="ArrowheadDSL.ecore#//StatusKodKind">
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//StatusKodKind/_100Continue"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//StatusKodKind/_101Switchprotocol"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//StatusKodKind/_102Processing"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//StatusKodKind/_103EarlyHints"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//StatusKodKind/_200OK"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//StatusKodKind/_201Created"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//StatusKodKind/_202Accepted"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//StatusKodKind/_203NonAuthoritativeInformation"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//StatusKodKind/_204NoContent"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//StatusKodKind/_205ResetContent"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//StatusKodKind/_206PartialContent"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//StatusKodKind/_207MultiStatus"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//StatusKodKind/_208AlreadyReported"/>
     </genEnums>
     <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="ArrowheadDSL.ecore#//TransportLayerKind">
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//TransportLayerKind/TCP"/>
@@ -389,6 +374,30 @@
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//IDD_Implementation">
       <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
           propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//IDD_Implementation/systemimplementation"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//ArrowheadDSLOperationHTTP">
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//ArrowheadDSLOperationHTTP/Method"/>
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//ArrowheadDSLOperationHTTP/SubURL"/>
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//ArrowheadDSLOperationHTTP/base_Operation"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//ArrowheadDSLRequirementMQTT">
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//ArrowheadDSLRequirementMQTT/Method"/>
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//ArrowheadDSLRequirementMQTT/Topic"/>
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//ArrowheadDSLRequirementMQTT/base_Operation"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//ArrowheadDSLRequirementCOAP">
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//ArrowheadDSLRequirementCOAP/Method"/>
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//ArrowheadDSLRequirementCOAP/base_Operation"/>
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//ArrowheadDSLRequirementCOAP/SubURL"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//ArrowheadDSLRequirementWebsocket">
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//ArrowheadDSLRequirementWebsocket/Method"/>
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//ArrowheadDSLRequirementWebsocket/SubURL"/>
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//ArrowheadDSLRequirementWebsocket/base_Operation"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

@@ -10,7 +10,9 @@ import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.util.Switch;
 
 import org.eclipse.papyrus.sysml16.blocks.Block;
+
 import org.eclipse.papyrus.sysml16.portsandflows.InterfaceBlock;
+
 import org.eclipse.papyrus.sysml16.requirements.AbstractRequirement;
 import org.eclipse.papyrus.sysml16.requirements.Requirement;
 
@@ -229,6 +231,30 @@ public class ArrowheadDSLSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_HTTP: {
+				ArrowheadDSLOperationHTTP arrowheadDSLOperationHTTP = (ArrowheadDSLOperationHTTP)theEObject;
+				T result = caseArrowheadDSLOperationHTTP(arrowheadDSLOperationHTTP);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ArrowheadDSLPackage.ARROWHEAD_DSL_REQUIREMENT_MQTT: {
+				ArrowheadDSLRequirementMQTT arrowheadDSLRequirementMQTT = (ArrowheadDSLRequirementMQTT)theEObject;
+				T result = caseArrowheadDSLRequirementMQTT(arrowheadDSLRequirementMQTT);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ArrowheadDSLPackage.ARROWHEAD_DSL_REQUIREMENT_COAP: {
+				ArrowheadDSLRequirementCOAP arrowheadDSLRequirementCOAP = (ArrowheadDSLRequirementCOAP)theEObject;
+				T result = caseArrowheadDSLRequirementCOAP(arrowheadDSLRequirementCOAP);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ArrowheadDSLPackage.ARROWHEAD_DSL_REQUIREMENT_WEBSOCKET: {
+				ArrowheadDSLRequirementWebsocket arrowheadDSLRequirementWebsocket = (ArrowheadDSLRequirementWebsocket)theEObject;
+				T result = caseArrowheadDSLRequirementWebsocket(arrowheadDSLRequirementWebsocket);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			default: return defaultCase(theEObject);
 		}
 	}
@@ -264,36 +290,6 @@ public class ArrowheadDSLSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Requirement</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Requirement</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseArrowheadDSLRequirement(ArrowheadDSLRequirement object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Arrowhead Use Case</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Arrowhead Use Case</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseArrowheadUseCase(ArrowheadUseCase object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Local Cloud Design</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -324,6 +320,36 @@ public class ArrowheadDSLSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Requirement</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Requirement</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseArrowheadDSLRequirement(ArrowheadDSLRequirement object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Arrowhead Use Case</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Arrowhead Use Case</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseArrowheadUseCase(ArrowheadUseCase object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Device Design</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -335,21 +361,6 @@ public class ArrowheadDSLSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseDeviceDesign(DeviceDesign object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Intracloud Network Design</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Intracloud Network Design</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseIntracloudNetworkDesign(IntracloudNetworkDesign object) {
 		return null;
 	}
 
@@ -369,6 +380,21 @@ public class ArrowheadDSLSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Intracloud Network Design</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Intracloud Network Design</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseIntracloudNetworkDesign(IntracloudNetworkDesign object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Device Design Description</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -384,21 +410,6 @@ public class ArrowheadDSLSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Intracloud Network Design Description</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Intracloud Network Design Description</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseIntracloudNetworkDesignDescription(IntracloudNetworkDesignDescription object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Intercloud Network Design Description</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -410,6 +421,21 @@ public class ArrowheadDSLSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseIntercloudNetworkDesignDescription(IntercloudNetworkDesignDescription object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Intracloud Network Design Description</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Intracloud Network Design Description</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseIntracloudNetworkDesignDescription(IntracloudNetworkDesignDescription object) {
 		return null;
 	}
 
@@ -440,6 +466,36 @@ public class ArrowheadDSLSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseSystem_of_LocacloudsDesignDescription(System_of_LocacloudsDesignDescription object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Sys DD</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Sys DD</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSysDD(SysDD object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>IDD</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>IDD</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseIDD(IDD object) {
 		return null;
 	}
 
@@ -489,21 +545,6 @@ public class ArrowheadDSLSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Sys DD</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Sys DD</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseSysDD(SysDD object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>IDD Implementation</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -519,17 +560,62 @@ public class ArrowheadDSLSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>IDD</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Operation HTTP</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>IDD</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Operation HTTP</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseIDD(IDD object) {
+	public T caseArrowheadDSLOperationHTTP(ArrowheadDSLOperationHTTP object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Requirement MQTT</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Requirement MQTT</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseArrowheadDSLRequirementMQTT(ArrowheadDSLRequirementMQTT object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Requirement COAP</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Requirement COAP</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseArrowheadDSLRequirementCOAP(ArrowheadDSLRequirementCOAP object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Requirement Websocket</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Requirement Websocket</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseArrowheadDSLRequirementWebsocket(ArrowheadDSLRequirementWebsocket object) {
 		return null;
 	}
 

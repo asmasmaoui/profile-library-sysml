@@ -12,7 +12,9 @@ import org.eclipse.emf.common.notify.impl.AdapterFactoryImpl;
 import org.eclipse.emf.ecore.EObject;
 
 import org.eclipse.papyrus.sysml16.blocks.Block;
+
 import org.eclipse.papyrus.sysml16.portsandflows.InterfaceBlock;
+
 import org.eclipse.papyrus.sysml16.requirements.AbstractRequirement;
 import org.eclipse.papyrus.sysml16.requirements.Requirement;
 
@@ -153,6 +155,22 @@ public class ArrowheadDSLAdapterFactory extends AdapterFactoryImpl {
 				return createIDD_ImplementationAdapter();
 			}
 			@Override
+			public Adapter caseArrowheadDSLOperationHTTP(ArrowheadDSLOperationHTTP object) {
+				return createArrowheadDSLOperationHTTPAdapter();
+			}
+			@Override
+			public Adapter caseArrowheadDSLRequirementMQTT(ArrowheadDSLRequirementMQTT object) {
+				return createArrowheadDSLRequirementMQTTAdapter();
+			}
+			@Override
+			public Adapter caseArrowheadDSLRequirementCOAP(ArrowheadDSLRequirementCOAP object) {
+				return createArrowheadDSLRequirementCOAPAdapter();
+			}
+			@Override
+			public Adapter caseArrowheadDSLRequirementWebsocket(ArrowheadDSLRequirementWebsocket object) {
+				return createArrowheadDSLRequirementWebsocketAdapter();
+			}
+			@Override
 			public Adapter caseBlock(Block object) {
 				return createBlockAdapter();
 			}
@@ -217,34 +235,6 @@ public class ArrowheadDSLAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link ArrowheadDSL.ArrowheadDSLRequirement <em>Requirement</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see ArrowheadDSL.ArrowheadDSLRequirement
-	 * @generated
-	 */
-	public Adapter createArrowheadDSLRequirementAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link ArrowheadDSL.ArrowheadUseCase <em>Arrowhead Use Case</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see ArrowheadDSL.ArrowheadUseCase
-	 * @generated
-	 */
-	public Adapter createArrowheadUseCaseAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link ArrowheadDSL.LocalCloudDesign <em>Local Cloud Design</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -273,6 +263,34 @@ public class ArrowheadDSLAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link ArrowheadDSL.ArrowheadDSLRequirement <em>Requirement</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ArrowheadDSL.ArrowheadDSLRequirement
+	 * @generated
+	 */
+	public Adapter createArrowheadDSLRequirementAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ArrowheadDSL.ArrowheadUseCase <em>Arrowhead Use Case</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ArrowheadDSL.ArrowheadUseCase
+	 * @generated
+	 */
+	public Adapter createArrowheadUseCaseAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link ArrowheadDSL.DeviceDesign <em>Device Design</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -283,20 +301,6 @@ public class ArrowheadDSLAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createDeviceDesignAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link ArrowheadDSL.IntracloudNetworkDesign <em>Intracloud Network Design</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see ArrowheadDSL.IntracloudNetworkDesign
-	 * @generated
-	 */
-	public Adapter createIntracloudNetworkDesignAdapter() {
 		return null;
 	}
 
@@ -315,6 +319,20 @@ public class ArrowheadDSLAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link ArrowheadDSL.IntracloudNetworkDesign <em>Intracloud Network Design</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ArrowheadDSL.IntracloudNetworkDesign
+	 * @generated
+	 */
+	public Adapter createIntracloudNetworkDesignAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link ArrowheadDSL.DeviceDesignDescription <em>Device Design Description</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -329,20 +347,6 @@ public class ArrowheadDSLAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link ArrowheadDSL.IntracloudNetworkDesignDescription <em>Intracloud Network Design Description</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see ArrowheadDSL.IntracloudNetworkDesignDescription
-	 * @generated
-	 */
-	public Adapter createIntracloudNetworkDesignDescriptionAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link ArrowheadDSL.IntercloudNetworkDesignDescription <em>Intercloud Network Design Description</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -353,6 +357,20 @@ public class ArrowheadDSLAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createIntercloudNetworkDesignDescriptionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ArrowheadDSL.IntracloudNetworkDesignDescription <em>Intracloud Network Design Description</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ArrowheadDSL.IntracloudNetworkDesignDescription
+	 * @generated
+	 */
+	public Adapter createIntracloudNetworkDesignDescriptionAdapter() {
 		return null;
 	}
 
@@ -381,6 +399,34 @@ public class ArrowheadDSLAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createSystem_of_LocacloudsDesignDescriptionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ArrowheadDSL.SysDD <em>Sys DD</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ArrowheadDSL.SysDD
+	 * @generated
+	 */
+	public Adapter createSysDDAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ArrowheadDSL.IDD <em>IDD</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ArrowheadDSL.IDD
+	 * @generated
+	 */
+	public Adapter createIDDAdapter() {
 		return null;
 	}
 
@@ -427,20 +473,6 @@ public class ArrowheadDSLAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link ArrowheadDSL.SysDD <em>Sys DD</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see ArrowheadDSL.SysDD
-	 * @generated
-	 */
-	public Adapter createSysDDAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link ArrowheadDSL.IDD_Implementation <em>IDD Implementation</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -455,16 +487,58 @@ public class ArrowheadDSLAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link ArrowheadDSL.IDD <em>IDD</em>}'.
+	 * Creates a new adapter for an object of class '{@link ArrowheadDSL.ArrowheadDSLOperationHTTP <em>Operation HTTP</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see ArrowheadDSL.IDD
+	 * @see ArrowheadDSL.ArrowheadDSLOperationHTTP
 	 * @generated
 	 */
-	public Adapter createIDDAdapter() {
+	public Adapter createArrowheadDSLOperationHTTPAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ArrowheadDSL.ArrowheadDSLRequirementMQTT <em>Requirement MQTT</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ArrowheadDSL.ArrowheadDSLRequirementMQTT
+	 * @generated
+	 */
+	public Adapter createArrowheadDSLRequirementMQTTAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ArrowheadDSL.ArrowheadDSLRequirementCOAP <em>Requirement COAP</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ArrowheadDSL.ArrowheadDSLRequirementCOAP
+	 * @generated
+	 */
+	public Adapter createArrowheadDSLRequirementCOAPAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ArrowheadDSL.ArrowheadDSLRequirementWebsocket <em>Requirement Websocket</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ArrowheadDSL.ArrowheadDSLRequirementWebsocket
+	 * @generated
+	 */
+	public Adapter createArrowheadDSLRequirementWebsocketAdapter() {
 		return null;
 	}
 

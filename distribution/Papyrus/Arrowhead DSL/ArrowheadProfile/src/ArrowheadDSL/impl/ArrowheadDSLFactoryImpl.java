@@ -77,6 +77,10 @@ public class ArrowheadDSLFactoryImpl extends EFactoryImpl implements ArrowheadDS
 			case ArrowheadDSLPackage.LOCALCLOUD_IMPLEMENTATION: return createLocalcloudImplementation();
 			case ArrowheadDSLPackage.SYSTEM_IMPLEMENTATION: return createSystem_Implementation();
 			case ArrowheadDSLPackage.IDD_IMPLEMENTATION: return createIDD_Implementation();
+			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_HTTP: return createArrowheadDSLOperationHTTP();
+			case ArrowheadDSLPackage.ARROWHEAD_DSL_REQUIREMENT_MQTT: return createArrowheadDSLRequirementMQTT();
+			case ArrowheadDSLPackage.ARROWHEAD_DSL_REQUIREMENT_COAP: return createArrowheadDSLRequirementCOAP();
+			case ArrowheadDSLPackage.ARROWHEAD_DSL_REQUIREMENT_WEBSOCKET: return createArrowheadDSLRequirementWebsocket();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -124,8 +128,8 @@ public class ArrowheadDSLFactoryImpl extends EFactoryImpl implements ArrowheadDS
 				return createCertificateKindFromString(eDataType, initialValue);
 			case ArrowheadDSLPackage.CO_AP_METHOD_KIND:
 				return createCoAPMethodKindFromString(eDataType, initialValue);
-			case ArrowheadDSLPackage.HTTP_11_METHOD_KIND:
-				return createHTTP_11_MethodKindFromString(eDataType, initialValue);
+			case ArrowheadDSLPackage.HTTP11_METHOD_KIND:
+				return createHTTP11MethodKindFromString(eDataType, initialValue);
 			case ArrowheadDSLPackage.HTTP2_FRAME_KIND:
 				return createHTTP2FrameKindFromString(eDataType, initialValue);
 			case ArrowheadDSLPackage.MAC_PROTOCOL_KIND:
@@ -140,8 +144,6 @@ public class ArrowheadDSLFactoryImpl extends EFactoryImpl implements ArrowheadDS
 				return createPayloadEncryptionKindFromString(eDataType, initialValue);
 			case ArrowheadDSLPackage.PHYSICAL_LAYER_KIND:
 				return createPhysicalLayerKindFromString(eDataType, initialValue);
-			case ArrowheadDSLPackage.STATUS_KOD_KIND:
-				return createStatusKodKindFromString(eDataType, initialValue);
 			case ArrowheadDSLPackage.TRANSPORT_LAYER_KIND:
 				return createTransportLayerKindFromString(eDataType, initialValue);
 			case ArrowheadDSLPackage.WEBSOCKET_DATA_FRAMING_TYPE_KIND:
@@ -195,8 +197,8 @@ public class ArrowheadDSLFactoryImpl extends EFactoryImpl implements ArrowheadDS
 				return convertCertificateKindToString(eDataType, instanceValue);
 			case ArrowheadDSLPackage.CO_AP_METHOD_KIND:
 				return convertCoAPMethodKindToString(eDataType, instanceValue);
-			case ArrowheadDSLPackage.HTTP_11_METHOD_KIND:
-				return convertHTTP_11_MethodKindToString(eDataType, instanceValue);
+			case ArrowheadDSLPackage.HTTP11_METHOD_KIND:
+				return convertHTTP11MethodKindToString(eDataType, instanceValue);
 			case ArrowheadDSLPackage.HTTP2_FRAME_KIND:
 				return convertHTTP2FrameKindToString(eDataType, instanceValue);
 			case ArrowheadDSLPackage.MAC_PROTOCOL_KIND:
@@ -211,8 +213,6 @@ public class ArrowheadDSLFactoryImpl extends EFactoryImpl implements ArrowheadDS
 				return convertPayloadEncryptionKindToString(eDataType, instanceValue);
 			case ArrowheadDSLPackage.PHYSICAL_LAYER_KIND:
 				return convertPhysicalLayerKindToString(eDataType, instanceValue);
-			case ArrowheadDSLPackage.STATUS_KOD_KIND:
-				return convertStatusKodKindToString(eDataType, instanceValue);
 			case ArrowheadDSLPackage.TRANSPORT_LAYER_KIND:
 				return convertTransportLayerKindToString(eDataType, instanceValue);
 			case ArrowheadDSLPackage.WEBSOCKET_DATA_FRAMING_TYPE_KIND:
@@ -252,28 +252,6 @@ public class ArrowheadDSLFactoryImpl extends EFactoryImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public ArrowheadDSLRequirement createArrowheadDSLRequirement() {
-		ArrowheadDSLRequirementImpl arrowheadDSLRequirement = new ArrowheadDSLRequirementImpl();
-		return arrowheadDSLRequirement;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ArrowheadUseCase createArrowheadUseCase() {
-		ArrowheadUseCaseImpl arrowheadUseCase = new ArrowheadUseCaseImpl();
-		return arrowheadUseCase;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public LocalCloudDesign createLocalCloudDesign() {
 		LocalCloudDesignImpl localCloudDesign = new LocalCloudDesignImpl();
 		return localCloudDesign;
@@ -296,9 +274,9 @@ public class ArrowheadDSLFactoryImpl extends EFactoryImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public DeviceDesign createDeviceDesign() {
-		DeviceDesignImpl deviceDesign = new DeviceDesignImpl();
-		return deviceDesign;
+	public ArrowheadDSLRequirement createArrowheadDSLRequirement() {
+		ArrowheadDSLRequirementImpl arrowheadDSLRequirement = new ArrowheadDSLRequirementImpl();
+		return arrowheadDSLRequirement;
 	}
 
 	/**
@@ -307,9 +285,20 @@ public class ArrowheadDSLFactoryImpl extends EFactoryImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public IntracloudNetworkDesign createIntracloudNetworkDesign() {
-		IntracloudNetworkDesignImpl intracloudNetworkDesign = new IntracloudNetworkDesignImpl();
-		return intracloudNetworkDesign;
+	public ArrowheadUseCase createArrowheadUseCase() {
+		ArrowheadUseCaseImpl arrowheadUseCase = new ArrowheadUseCaseImpl();
+		return arrowheadUseCase;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public DeviceDesign createDeviceDesign() {
+		DeviceDesignImpl deviceDesign = new DeviceDesignImpl();
+		return deviceDesign;
 	}
 
 	/**
@@ -329,6 +318,17 @@ public class ArrowheadDSLFactoryImpl extends EFactoryImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
+	public IntracloudNetworkDesign createIntracloudNetworkDesign() {
+		IntracloudNetworkDesignImpl intracloudNetworkDesign = new IntracloudNetworkDesignImpl();
+		return intracloudNetworkDesign;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public DeviceDesignDescription createDeviceDesignDescription() {
 		DeviceDesignDescriptionImpl deviceDesignDescription = new DeviceDesignDescriptionImpl();
 		return deviceDesignDescription;
@@ -340,9 +340,9 @@ public class ArrowheadDSLFactoryImpl extends EFactoryImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public IntracloudNetworkDesignDescription createIntracloudNetworkDesignDescription() {
-		IntracloudNetworkDesignDescriptionImpl intracloudNetworkDesignDescription = new IntracloudNetworkDesignDescriptionImpl();
-		return intracloudNetworkDesignDescription;
+	public IntercloudNetworkDesignDescription createIntercloudNetworkDesignDescription() {
+		IntercloudNetworkDesignDescriptionImpl intercloudNetworkDesignDescription = new IntercloudNetworkDesignDescriptionImpl();
+		return intercloudNetworkDesignDescription;
 	}
 
 	/**
@@ -351,9 +351,9 @@ public class ArrowheadDSLFactoryImpl extends EFactoryImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public IntercloudNetworkDesignDescription createIntercloudNetworkDesignDescription() {
-		IntercloudNetworkDesignDescriptionImpl intercloudNetworkDesignDescription = new IntercloudNetworkDesignDescriptionImpl();
-		return intercloudNetworkDesignDescription;
+	public IntracloudNetworkDesignDescription createIntracloudNetworkDesignDescription() {
+		IntracloudNetworkDesignDescriptionImpl intracloudNetworkDesignDescription = new IntracloudNetworkDesignDescriptionImpl();
+		return intracloudNetworkDesignDescription;
 	}
 
 	/**
@@ -376,6 +376,28 @@ public class ArrowheadDSLFactoryImpl extends EFactoryImpl implements ArrowheadDS
 	public System_of_LocacloudsDesignDescription createSystem_of_LocacloudsDesignDescription() {
 		System_of_LocacloudsDesignDescriptionImpl system_of_LocacloudsDesignDescription = new System_of_LocacloudsDesignDescriptionImpl();
 		return system_of_LocacloudsDesignDescription;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public SysDD createSysDD() {
+		SysDDImpl sysDD = new SysDDImpl();
+		return sysDD;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public IDD createIDD() {
+		IDDImpl idd = new IDDImpl();
+		return idd;
 	}
 
 	/**
@@ -417,17 +439,6 @@ public class ArrowheadDSLFactoryImpl extends EFactoryImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public SysDD createSysDD() {
-		SysDDImpl sysDD = new SysDDImpl();
-		return sysDD;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public IDD_Implementation createIDD_Implementation() {
 		IDD_ImplementationImpl idD_Implementation = new IDD_ImplementationImpl();
 		return idD_Implementation;
@@ -439,9 +450,42 @@ public class ArrowheadDSLFactoryImpl extends EFactoryImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public IDD createIDD() {
-		IDDImpl idd = new IDDImpl();
-		return idd;
+	public ArrowheadDSLOperationHTTP createArrowheadDSLOperationHTTP() {
+		ArrowheadDSLOperationHTTPImpl arrowheadDSLOperationHTTP = new ArrowheadDSLOperationHTTPImpl();
+		return arrowheadDSLOperationHTTP;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ArrowheadDSLRequirementMQTT createArrowheadDSLRequirementMQTT() {
+		ArrowheadDSLRequirementMQTTImpl arrowheadDSLRequirementMQTT = new ArrowheadDSLRequirementMQTTImpl();
+		return arrowheadDSLRequirementMQTT;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ArrowheadDSLRequirementCOAP createArrowheadDSLRequirementCOAP() {
+		ArrowheadDSLRequirementCOAPImpl arrowheadDSLRequirementCOAP = new ArrowheadDSLRequirementCOAPImpl();
+		return arrowheadDSLRequirementCOAP;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ArrowheadDSLRequirementWebsocket createArrowheadDSLRequirementWebsocket() {
+		ArrowheadDSLRequirementWebsocketImpl arrowheadDSLRequirementWebsocket = new ArrowheadDSLRequirementWebsocketImpl();
+		return arrowheadDSLRequirementWebsocket;
 	}
 
 	/**
@@ -789,8 +833,8 @@ public class ArrowheadDSLFactoryImpl extends EFactoryImpl implements ArrowheadDS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public HTTP_11_MethodKind createHTTP_11_MethodKindFromString(EDataType eDataType, String initialValue) {
-		HTTP_11_MethodKind result = HTTP_11_MethodKind.get(initialValue);
+	public HTTP11MethodKind createHTTP11MethodKindFromString(EDataType eDataType, String initialValue) {
+		HTTP11MethodKind result = HTTP11MethodKind.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
@@ -800,7 +844,7 @@ public class ArrowheadDSLFactoryImpl extends EFactoryImpl implements ArrowheadDS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertHTTP_11_MethodKindToString(EDataType eDataType, Object instanceValue) {
+	public String convertHTTP11MethodKindToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -941,26 +985,6 @@ public class ArrowheadDSLFactoryImpl extends EFactoryImpl implements ArrowheadDS
 	 * @generated
 	 */
 	public String convertPhysicalLayerKindToString(EDataType eDataType, Object instanceValue) {
-		return instanceValue == null ? null : instanceValue.toString();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public StatusKodKind createStatusKodKindFromString(EDataType eDataType, String initialValue) {
-		StatusKodKind result = StatusKodKind.get(initialValue);
-		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
-		return result;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String convertStatusKodKindToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 

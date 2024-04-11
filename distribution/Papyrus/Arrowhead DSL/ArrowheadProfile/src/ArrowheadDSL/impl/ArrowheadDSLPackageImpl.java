@@ -5,8 +5,12 @@ package ArrowheadDSL.impl;
 import ArrowheadDSL.ApplicationProtocolKind;
 import ArrowheadDSL.ArrowheadCertificateKind;
 import ArrowheadDSL.ArrowheadDSLFactory;
+import ArrowheadDSL.ArrowheadDSLOperationHTTP;
 import ArrowheadDSL.ArrowheadDSLPackage;
 import ArrowheadDSL.ArrowheadDSLRequirement;
+import ArrowheadDSL.ArrowheadDSLRequirementCOAP;
+import ArrowheadDSL.ArrowheadDSLRequirementMQTT;
+import ArrowheadDSL.ArrowheadDSLRequirementWebsocket;
 import ArrowheadDSL.ArrowheadSecurityKind;
 import ArrowheadDSL.ArrowheadUseCase;
 import ArrowheadDSL.BusinessPolicyKind;
@@ -18,8 +22,8 @@ import ArrowheadDSL.DatamodelStandardKind;
 import ArrowheadDSL.DeviceDesign;
 import ArrowheadDSL.DeviceDesignDescription;
 import ArrowheadDSL.EncodingKind;
+import ArrowheadDSL.HTTP11MethodKind;
 import ArrowheadDSL.HTTP2FrameKind;
-import ArrowheadDSL.HTTP_11_MethodKind;
 import ArrowheadDSL.IDD_Implementation;
 import ArrowheadDSL.IntercloudNetworkDesign;
 import ArrowheadDSL.IntercloudNetworkDesignDescription;
@@ -38,7 +42,6 @@ import ArrowheadDSL.OSKind;
 import ArrowheadDSL.PayloadEncryptionKind;
 import ArrowheadDSL.PhysicalLayerKind;
 import ArrowheadDSL.SecurityPolicyKind;
-import ArrowheadDSL.StatusKodKind;
 import ArrowheadDSL.SysD;
 import ArrowheadDSL.SysDD;
 import ArrowheadDSL.SystemDatabaseKind;
@@ -65,7 +68,9 @@ import org.eclipse.emf.ecore.impl.EPackageImpl;
 import org.eclipse.papyrus.sysml16.blocks.BlocksPackage;
 
 import org.eclipse.papyrus.sysml16.portsandflows.PortsAndFlowsPackage;
+
 import org.eclipse.papyrus.sysml16.requirements.RequirementsPackage;
+
 import org.eclipse.papyrus.sysml16.sysml.SysMLPackage;
 
 import org.eclipse.uml2.types.TypesPackage;
@@ -100,20 +105,6 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass arrowheadDSLRequirementEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass arrowheadUseCaseEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	private EClass localCloudDesignEClass = null;
 
 	/**
@@ -128,14 +119,21 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass deviceDesignEClass = null;
+	private EClass arrowheadDSLRequirementEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass intracloudNetworkDesignEClass = null;
+	private EClass arrowheadUseCaseEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass deviceDesignEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -149,6 +147,13 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass intracloudNetworkDesignEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass deviceDesignDescriptionEClass = null;
 
 	/**
@@ -156,14 +161,14 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass intracloudNetworkDesignDescriptionEClass = null;
+	private EClass intercloudNetworkDesignDescriptionEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass intercloudNetworkDesignDescriptionEClass = null;
+	private EClass intracloudNetworkDesignDescriptionEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -178,6 +183,20 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	private EClass system_of_LocacloudsDesignDescriptionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass sysDDEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass iddEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -205,13 +224,6 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass sysDDEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	private EClass idD_ImplementationEClass = null;
 
 	/**
@@ -219,7 +231,28 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass iddEClass = null;
+	private EClass arrowheadDSLOperationHTTPEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass arrowheadDSLRequirementMQTTEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass arrowheadDSLRequirementCOAPEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass arrowheadDSLRequirementWebsocketEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -345,7 +378,7 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum httP_11_MethodKindEEnum = null;
+	private EEnum http11MethodKindEEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -395,13 +428,6 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	private EEnum physicalLayerKindEEnum = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EEnum statusKodKindEEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -607,56 +633,6 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public EClass getArrowheadDSLRequirement() {
-		return arrowheadDSLRequirementEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getArrowheadDSLRequirement_Arrowheadusecase() {
-		return (EReference)arrowheadDSLRequirementEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getArrowheadUseCase() {
-		return arrowheadUseCaseEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getArrowheadUseCase_Base_UseCase() {
-		return (EReference)arrowheadUseCaseEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getArrowheadUseCase_Arrowheaddslrequirement() {
-		return (EReference)arrowheadUseCaseEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getLocalCloudDesign() {
 		return localCloudDesignEClass;
 	}
@@ -797,6 +773,56 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
+	public EClass getArrowheadDSLRequirement() {
+		return arrowheadDSLRequirementEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getArrowheadDSLRequirement_Arrowheadusecase() {
+		return (EReference)arrowheadDSLRequirementEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getArrowheadUseCase() {
+		return arrowheadUseCaseEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getArrowheadUseCase_Base_UseCase() {
+		return (EReference)arrowheadUseCaseEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getArrowheadUseCase_Arrowheaddslrequirement() {
+		return (EReference)arrowheadUseCaseEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getDeviceDesign() {
 		return deviceDesignEClass;
 	}
@@ -837,46 +863,6 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public EClass getIntracloudNetworkDesign() {
-		return intracloudNetworkDesignEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getIntracloudNetworkDesign_IntraNetworkDomain() {
-		return (EAttribute)intracloudNetworkDesignEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getIntracloudNetworkDesign_IntraNetworkMacLayer() {
-		return (EAttribute)intracloudNetworkDesignEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getIntracloudNetworkDesign_Devicedesign() {
-		return (EReference)intracloudNetworkDesignEClass.getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getIntercloudNetworkDesign() {
 		return intercloudNetworkDesignEClass;
 	}
@@ -909,6 +895,46 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	@Override
 	public EReference getIntercloudNetworkDesign_Devicedesign() {
 		return (EReference)intercloudNetworkDesignEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getIntracloudNetworkDesign() {
+		return intracloudNetworkDesignEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getIntracloudNetworkDesign_IntraNetworkDomain() {
+		return (EAttribute)intracloudNetworkDesignEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getIntracloudNetworkDesign_IntraNetworkMacLayer() {
+		return (EAttribute)intracloudNetworkDesignEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getIntracloudNetworkDesign_Devicedesign() {
+		return (EReference)intracloudNetworkDesignEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -997,46 +1023,6 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public EClass getIntracloudNetworkDesignDescription() {
-		return intracloudNetworkDesignDescriptionEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getIntracloudNetworkDesignDescription_IntraNetworkRouter() {
-		return (EAttribute)intracloudNetworkDesignDescriptionEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getIntracloudNetworkDesignDescription_IntraNetworkRouterConfig() {
-		return (EAttribute)intracloudNetworkDesignDescriptionEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getIntracloudNetworkDesignDescription_Devicedesigndescription() {
-		return (EReference)intracloudNetworkDesignDescriptionEClass.getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getIntercloudNetworkDesignDescription() {
 		return intercloudNetworkDesignDescriptionEClass;
 	}
@@ -1069,6 +1055,46 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	@Override
 	public EReference getIntercloudNetworkDesignDescription_Devicedesigndescription() {
 		return (EReference)intercloudNetworkDesignDescriptionEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getIntracloudNetworkDesignDescription() {
+		return intracloudNetworkDesignDescriptionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getIntracloudNetworkDesignDescription_IntraNetworkRouter() {
+		return (EAttribute)intracloudNetworkDesignDescriptionEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getIntracloudNetworkDesignDescription_IntraNetworkRouterConfig() {
+		return (EAttribute)intracloudNetworkDesignDescriptionEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getIntracloudNetworkDesignDescription_Devicedesigndescription() {
+		return (EReference)intracloudNetworkDesignDescriptionEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -1167,106 +1193,6 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public EClass getSystem_of_LocalcloudsImplementation() {
-		return system_of_LocalcloudsImplementationEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getSystem_of_LocalcloudsImplementation_SoLC_Documentation() {
-		return (EAttribute)system_of_LocalcloudsImplementationEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getSystem_of_LocalcloudsImplementation_Localcloudimplementation() {
-		return (EReference)system_of_LocalcloudsImplementationEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getLocalcloudImplementation() {
-		return localcloudImplementationEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getLocalcloudImplementation_LC_Documentation() {
-		return (EAttribute)localcloudImplementationEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getLocalcloudImplementation_Systemimplementation() {
-		return (EReference)localcloudImplementationEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getLocalcloudImplementation_System_of_localcloudsimplementation() {
-		return (EReference)localcloudImplementationEClass.getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getSystem_Implementation() {
-		return system_ImplementationEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getSystem_Implementation_Idd_implementation() {
-		return (EReference)system_ImplementationEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getSystem_Implementation_Loclacloudimplementation() {
-		return (EReference)system_ImplementationEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getSysDD() {
 		return sysDDEClass;
 	}
@@ -1309,26 +1235,6 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	@Override
 	public EReference getSysDD_Localclouddesigndescription() {
 		return (EReference)sysDDEClass.getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getIDD_Implementation() {
-		return idD_ImplementationEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getIDD_Implementation_Systemimplementation() {
-		return (EReference)idD_ImplementationEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -1439,6 +1345,286 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	@Override
 	public EReference getIDD_Sysdd() {
 		return (EReference)iddEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getSystem_of_LocalcloudsImplementation() {
+		return system_of_LocalcloudsImplementationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSystem_of_LocalcloudsImplementation_SoLC_Documentation() {
+		return (EAttribute)system_of_LocalcloudsImplementationEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getSystem_of_LocalcloudsImplementation_Localcloudimplementation() {
+		return (EReference)system_of_LocalcloudsImplementationEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getLocalcloudImplementation() {
+		return localcloudImplementationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLocalcloudImplementation_LC_Documentation() {
+		return (EAttribute)localcloudImplementationEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLocalcloudImplementation_Systemimplementation() {
+		return (EReference)localcloudImplementationEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLocalcloudImplementation_System_of_localcloudsimplementation() {
+		return (EReference)localcloudImplementationEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getSystem_Implementation() {
+		return system_ImplementationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getSystem_Implementation_Idd_implementation() {
+		return (EReference)system_ImplementationEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getSystem_Implementation_Loclacloudimplementation() {
+		return (EReference)system_ImplementationEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getIDD_Implementation() {
+		return idD_ImplementationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getIDD_Implementation_Systemimplementation() {
+		return (EReference)idD_ImplementationEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getArrowheadDSLOperationHTTP() {
+		return arrowheadDSLOperationHTTPEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getArrowheadDSLOperationHTTP_Method() {
+		return (EAttribute)arrowheadDSLOperationHTTPEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getArrowheadDSLOperationHTTP_SubURL() {
+		return (EAttribute)arrowheadDSLOperationHTTPEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getArrowheadDSLOperationHTTP_Base_Operation() {
+		return (EReference)arrowheadDSLOperationHTTPEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getArrowheadDSLRequirementMQTT() {
+		return arrowheadDSLRequirementMQTTEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getArrowheadDSLRequirementMQTT_Method() {
+		return (EAttribute)arrowheadDSLRequirementMQTTEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getArrowheadDSLRequirementMQTT_Topic() {
+		return (EAttribute)arrowheadDSLRequirementMQTTEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getArrowheadDSLRequirementMQTT_Base_Operation() {
+		return (EReference)arrowheadDSLRequirementMQTTEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getArrowheadDSLRequirementCOAP() {
+		return arrowheadDSLRequirementCOAPEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getArrowheadDSLRequirementCOAP_Method() {
+		return (EAttribute)arrowheadDSLRequirementCOAPEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getArrowheadDSLRequirementCOAP_Base_Operation() {
+		return (EReference)arrowheadDSLRequirementCOAPEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getArrowheadDSLRequirementCOAP_SubURL() {
+		return (EAttribute)arrowheadDSLRequirementCOAPEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getArrowheadDSLRequirementWebsocket() {
+		return arrowheadDSLRequirementWebsocketEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getArrowheadDSLRequirementWebsocket_Method() {
+		return (EAttribute)arrowheadDSLRequirementWebsocketEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getArrowheadDSLRequirementWebsocket_SubURL() {
+		return (EAttribute)arrowheadDSLRequirementWebsocketEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getArrowheadDSLRequirementWebsocket_Base_Operation() {
+		return (EReference)arrowheadDSLRequirementWebsocketEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -1617,8 +1803,8 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public EEnum getHTTP_11_MethodKind() {
-		return httP_11_MethodKindEEnum;
+	public EEnum getHTTP11MethodKind() {
+		return http11MethodKindEEnum;
 	}
 
 	/**
@@ -1689,16 +1875,6 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	@Override
 	public EEnum getPhysicalLayerKind() {
 		return physicalLayerKindEEnum;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EEnum getStatusKodKind() {
-		return statusKodKindEEnum;
 	}
 
 	/**
@@ -1875,6 +2051,26 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 		idD_ImplementationEClass = createEClass(IDD_IMPLEMENTATION);
 		createEReference(idD_ImplementationEClass, IDD_IMPLEMENTATION__SYSTEMIMPLEMENTATION);
 
+		arrowheadDSLOperationHTTPEClass = createEClass(ARROWHEAD_DSL_OPERATION_HTTP);
+		createEAttribute(arrowheadDSLOperationHTTPEClass, ARROWHEAD_DSL_OPERATION_HTTP__METHOD);
+		createEAttribute(arrowheadDSLOperationHTTPEClass, ARROWHEAD_DSL_OPERATION_HTTP__SUB_URL);
+		createEReference(arrowheadDSLOperationHTTPEClass, ARROWHEAD_DSL_OPERATION_HTTP__BASE_OPERATION);
+
+		arrowheadDSLRequirementMQTTEClass = createEClass(ARROWHEAD_DSL_REQUIREMENT_MQTT);
+		createEAttribute(arrowheadDSLRequirementMQTTEClass, ARROWHEAD_DSL_REQUIREMENT_MQTT__METHOD);
+		createEAttribute(arrowheadDSLRequirementMQTTEClass, ARROWHEAD_DSL_REQUIREMENT_MQTT__TOPIC);
+		createEReference(arrowheadDSLRequirementMQTTEClass, ARROWHEAD_DSL_REQUIREMENT_MQTT__BASE_OPERATION);
+
+		arrowheadDSLRequirementCOAPEClass = createEClass(ARROWHEAD_DSL_REQUIREMENT_COAP);
+		createEAttribute(arrowheadDSLRequirementCOAPEClass, ARROWHEAD_DSL_REQUIREMENT_COAP__METHOD);
+		createEReference(arrowheadDSLRequirementCOAPEClass, ARROWHEAD_DSL_REQUIREMENT_COAP__BASE_OPERATION);
+		createEAttribute(arrowheadDSLRequirementCOAPEClass, ARROWHEAD_DSL_REQUIREMENT_COAP__SUB_URL);
+
+		arrowheadDSLRequirementWebsocketEClass = createEClass(ARROWHEAD_DSL_REQUIREMENT_WEBSOCKET);
+		createEAttribute(arrowheadDSLRequirementWebsocketEClass, ARROWHEAD_DSL_REQUIREMENT_WEBSOCKET__METHOD);
+		createEAttribute(arrowheadDSLRequirementWebsocketEClass, ARROWHEAD_DSL_REQUIREMENT_WEBSOCKET__SUB_URL);
+		createEReference(arrowheadDSLRequirementWebsocketEClass, ARROWHEAD_DSL_REQUIREMENT_WEBSOCKET__BASE_OPERATION);
+
 		// Create enums
 		systemDatabaseKindEEnum = createEEnum(SYSTEM_DATABASE_KIND);
 		businessPolicyKindEEnum = createEEnum(BUSINESS_POLICY_KIND);
@@ -1893,7 +2089,7 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 		datamodelStandardKindEEnum = createEEnum(DATAMODEL_STANDARD_KIND);
 		certificateKindEEnum = createEEnum(CERTIFICATE_KIND);
 		coAPMethodKindEEnum = createEEnum(CO_AP_METHOD_KIND);
-		httP_11_MethodKindEEnum = createEEnum(HTTP_11_METHOD_KIND);
+		http11MethodKindEEnum = createEEnum(HTTP11_METHOD_KIND);
 		http2FrameKindEEnum = createEEnum(HTTP2_FRAME_KIND);
 		macProtocolKindEEnum = createEEnum(MAC_PROTOCOL_KIND);
 		monitoringPolicyKindEEnum = createEEnum(MONITORING_POLICY_KIND);
@@ -1901,7 +2097,6 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 		mqtt50MessageTypeKindEEnum = createEEnum(MQTT50_MESSAGE_TYPE_KIND);
 		payloadEncryptionKindEEnum = createEEnum(PAYLOAD_ENCRYPTION_KIND);
 		physicalLayerKindEEnum = createEEnum(PHYSICAL_LAYER_KIND);
-		statusKodKindEEnum = createEEnum(STATUS_KOD_KIND);
 		transportLayerKindEEnum = createEEnum(TRANSPORT_LAYER_KIND);
 		websocketDataFramingTypeKindEEnum = createEEnum(WEBSOCKET_DATA_FRAMING_TYPE_KIND);
 		workflowKindEEnum = createEEnum(WORKFLOW_KIND);
@@ -2079,6 +2274,26 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 		initEClass(idD_ImplementationEClass, IDD_Implementation.class, "IDD_Implementation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getIDD_Implementation_Systemimplementation(), this.getSystem_Implementation(), this.getSystem_Implementation_Idd_implementation(), "systemimplementation", null, 0, -1, IDD_Implementation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
+		initEClass(arrowheadDSLOperationHTTPEClass, ArrowheadDSLOperationHTTP.class, "ArrowheadDSLOperationHTTP", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getArrowheadDSLOperationHTTP_Method(), this.getHTTP11MethodKind(), "Method", null, 1, 1, ArrowheadDSLOperationHTTP.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getArrowheadDSLOperationHTTP_SubURL(), theTypesPackage.getString(), "SubURL", null, 1, 1, ArrowheadDSLOperationHTTP.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getArrowheadDSLOperationHTTP_Base_Operation(), theUMLPackage.getOperation(), null, "base_Operation", null, 0, 1, ArrowheadDSLOperationHTTP.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(arrowheadDSLRequirementMQTTEClass, ArrowheadDSLRequirementMQTT.class, "ArrowheadDSLRequirementMQTT", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getArrowheadDSLRequirementMQTT_Method(), this.getHTTP11MethodKind(), "Method", null, 1, 1, ArrowheadDSLRequirementMQTT.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getArrowheadDSLRequirementMQTT_Topic(), theTypesPackage.getString(), "Topic", null, 1, 1, ArrowheadDSLRequirementMQTT.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getArrowheadDSLRequirementMQTT_Base_Operation(), theUMLPackage.getOperation(), null, "base_Operation", null, 0, 1, ArrowheadDSLRequirementMQTT.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(arrowheadDSLRequirementCOAPEClass, ArrowheadDSLRequirementCOAP.class, "ArrowheadDSLRequirementCOAP", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getArrowheadDSLRequirementCOAP_Method(), this.getCoAPMethodKind(), "Method", null, 1, 1, ArrowheadDSLRequirementCOAP.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getArrowheadDSLRequirementCOAP_Base_Operation(), theUMLPackage.getOperation(), null, "base_Operation", null, 0, 1, ArrowheadDSLRequirementCOAP.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getArrowheadDSLRequirementCOAP_SubURL(), theTypesPackage.getString(), "SubURL", null, 1, 1, ArrowheadDSLRequirementCOAP.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(arrowheadDSLRequirementWebsocketEClass, ArrowheadDSLRequirementWebsocket.class, "ArrowheadDSLRequirementWebsocket", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getArrowheadDSLRequirementWebsocket_Method(), this.getWebsocketDataFramingTypeKind(), "Method", null, 1, 1, ArrowheadDSLRequirementWebsocket.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getArrowheadDSLRequirementWebsocket_SubURL(), theTypesPackage.getString(), "SubURL", null, 1, 1, ArrowheadDSLRequirementWebsocket.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getArrowheadDSLRequirementWebsocket_Base_Operation(), theUMLPackage.getOperation(), null, "base_Operation", null, 0, 1, ArrowheadDSLRequirementWebsocket.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
 		// Initialize enums and add enum literals
 		initEEnum(systemDatabaseKindEEnum, SystemDatabaseKind.class, "SystemDatabaseKind");
 		addEEnumLiteral(systemDatabaseKindEEnum, SystemDatabaseKind.MY_SQL);
@@ -2179,16 +2394,16 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 		addEEnumLiteral(coAPMethodKindEEnum, CoAPMethodKind.DELETE);
 		addEEnumLiteral(coAPMethodKindEEnum, CoAPMethodKind.OTHER_CO_AP_METHOD);
 
-		initEEnum(httP_11_MethodKindEEnum, HTTP_11_MethodKind.class, "HTTP_11_MethodKind");
-		addEEnumLiteral(httP_11_MethodKindEEnum, HTTP_11_MethodKind.POST);
-		addEEnumLiteral(httP_11_MethodKindEEnum, HTTP_11_MethodKind.GET);
-		addEEnumLiteral(httP_11_MethodKindEEnum, HTTP_11_MethodKind.DELETE);
-		addEEnumLiteral(httP_11_MethodKindEEnum, HTTP_11_MethodKind.PUT);
-		addEEnumLiteral(httP_11_MethodKindEEnum, HTTP_11_MethodKind.HEAD);
-		addEEnumLiteral(httP_11_MethodKindEEnum, HTTP_11_MethodKind.OTHER_HTTP_METHOD);
-		addEEnumLiteral(httP_11_MethodKindEEnum, HTTP_11_MethodKind.CONNECT);
-		addEEnumLiteral(httP_11_MethodKindEEnum, HTTP_11_MethodKind.OPTIONS);
-		addEEnumLiteral(httP_11_MethodKindEEnum, HTTP_11_MethodKind.TRACE);
+		initEEnum(http11MethodKindEEnum, HTTP11MethodKind.class, "HTTP11MethodKind");
+		addEEnumLiteral(http11MethodKindEEnum, HTTP11MethodKind.POST);
+		addEEnumLiteral(http11MethodKindEEnum, HTTP11MethodKind.GET);
+		addEEnumLiteral(http11MethodKindEEnum, HTTP11MethodKind.DELETE);
+		addEEnumLiteral(http11MethodKindEEnum, HTTP11MethodKind.PUT);
+		addEEnumLiteral(http11MethodKindEEnum, HTTP11MethodKind.HEAD);
+		addEEnumLiteral(http11MethodKindEEnum, HTTP11MethodKind.OTHER_HTTP_METHOD);
+		addEEnumLiteral(http11MethodKindEEnum, HTTP11MethodKind.CONNECT);
+		addEEnumLiteral(http11MethodKindEEnum, HTTP11MethodKind.OPTIONS);
+		addEEnumLiteral(http11MethodKindEEnum, HTTP11MethodKind.TRACE);
 
 		initEEnum(http2FrameKindEEnum, HTTP2FrameKind.class, "HTTP2FrameKind");
 		addEEnumLiteral(http2FrameKindEEnum, HTTP2FrameKind.OTHER_HTTP2_FRAME);
@@ -2259,21 +2474,6 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 		addEEnumLiteral(physicalLayerKindEEnum, PhysicalLayerKind.IEEE802_11B);
 		addEEnumLiteral(physicalLayerKindEEnum, PhysicalLayerKind.OTHER_PHYSICAL_LAYER);
 
-		initEEnum(statusKodKindEEnum, StatusKodKind.class, "StatusKodKind");
-		addEEnumLiteral(statusKodKindEEnum, StatusKodKind._100_CONTINUE);
-		addEEnumLiteral(statusKodKindEEnum, StatusKodKind._101_SWITCHPROTOCOL);
-		addEEnumLiteral(statusKodKindEEnum, StatusKodKind._102_PROCESSING);
-		addEEnumLiteral(statusKodKindEEnum, StatusKodKind._103_EARLY_HINTS);
-		addEEnumLiteral(statusKodKindEEnum, StatusKodKind._200OK);
-		addEEnumLiteral(statusKodKindEEnum, StatusKodKind._201_CREATED);
-		addEEnumLiteral(statusKodKindEEnum, StatusKodKind._202_ACCEPTED);
-		addEEnumLiteral(statusKodKindEEnum, StatusKodKind._203_NON_AUTHORITATIVE_INFORMATION);
-		addEEnumLiteral(statusKodKindEEnum, StatusKodKind._204_NO_CONTENT);
-		addEEnumLiteral(statusKodKindEEnum, StatusKodKind._205_RESET_CONTENT);
-		addEEnumLiteral(statusKodKindEEnum, StatusKodKind._206_PARTIAL_CONTENT);
-		addEEnumLiteral(statusKodKindEEnum, StatusKodKind._207_MULTI_STATUS);
-		addEEnumLiteral(statusKodKindEEnum, StatusKodKind._208_ALREADY_REPORTED);
-
 		initEEnum(transportLayerKindEEnum, TransportLayerKind.class, "TransportLayerKind");
 		addEEnumLiteral(transportLayerKindEEnum, TransportLayerKind.TCP);
 		addEEnumLiteral(transportLayerKindEEnum, TransportLayerKind.UDP);
@@ -2334,10 +2534,10 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 			   "originalName", "system-of-locaclouddesigndescription"
 		   });
 		addAnnotation
-		  (httP_11_MethodKindEEnum,
+		  (http11MethodKindEEnum,
 		   source,
 		   new String[] {
-			   "originalName", "HTTP_1.1_MethodKind"
+			   "originalName", "HTTP1.1MethodKind"
 		   });
 		addAnnotation
 		  (http2FrameKindEEnum,
@@ -2392,84 +2592,6 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 		   source,
 		   new String[] {
 			   "originalName", "DTLS 1.3"
-		   });
-		addAnnotation
-		  (statusKodKindEEnum.getELiterals().get(0),
-		   source,
-		   new String[] {
-			   "originalName", "100 - Continue"
-		   });
-		addAnnotation
-		  (statusKodKindEEnum.getELiterals().get(1),
-		   source,
-		   new String[] {
-			   "originalName", "101 - Switch protocol"
-		   });
-		addAnnotation
-		  (statusKodKindEEnum.getELiterals().get(2),
-		   source,
-		   new String[] {
-			   "originalName", "102 - Processing"
-		   });
-		addAnnotation
-		  (statusKodKindEEnum.getELiterals().get(3),
-		   source,
-		   new String[] {
-			   "originalName", "103 - Early Hints"
-		   });
-		addAnnotation
-		  (statusKodKindEEnum.getELiterals().get(4),
-		   source,
-		   new String[] {
-			   "originalName", "200 - OK"
-		   });
-		addAnnotation
-		  (statusKodKindEEnum.getELiterals().get(5),
-		   source,
-		   new String[] {
-			   "originalName", "201 - Created"
-		   });
-		addAnnotation
-		  (statusKodKindEEnum.getELiterals().get(6),
-		   source,
-		   new String[] {
-			   "originalName", "202 - Accepted"
-		   });
-		addAnnotation
-		  (statusKodKindEEnum.getELiterals().get(7),
-		   source,
-		   new String[] {
-			   "originalName", "203 - Non-Authoritative Information"
-		   });
-		addAnnotation
-		  (statusKodKindEEnum.getELiterals().get(8),
-		   source,
-		   new String[] {
-			   "originalName", "204 - No Content"
-		   });
-		addAnnotation
-		  (statusKodKindEEnum.getELiterals().get(9),
-		   source,
-		   new String[] {
-			   "originalName", "205 - Reset Content"
-		   });
-		addAnnotation
-		  (statusKodKindEEnum.getELiterals().get(10),
-		   source,
-		   new String[] {
-			   "originalName", "206 - Partial Content"
-		   });
-		addAnnotation
-		  (statusKodKindEEnum.getELiterals().get(11),
-		   source,
-		   new String[] {
-			   "originalName", "207 - Multi-Status"
-		   });
-		addAnnotation
-		  (statusKodKindEEnum.getELiterals().get(12),
-		   source,
-		   new String[] {
-			   "originalName", "208 - Already Reported"
 		   });
 		addAnnotation
 		  (websocketDataFramingTypeKindEEnum.getELiterals().get(1),

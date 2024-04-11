@@ -320,9 +320,9 @@
     <eLiterals name="DELETE" value="3"/>
     <eLiterals name="OtherCoAPMethod" value="4"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="HTTP_11_MethodKind">
+  <eClassifiers xsi:type="ecore:EEnum" name="HTTP11MethodKind">
     <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <details key="originalName" value="HTTP_1.1_MethodKind"/>
+      <details key="originalName" value="HTTP1.1MethodKind"/>
     </eAnnotations>
     <eLiterals name="POST"/>
     <eLiterals name="GET" value="1"/>
@@ -445,73 +445,6 @@
     <eLiterals name="IEEE802_11b" value="3"/>
     <eLiterals name="OtherPhysicalLayer" value="4"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="StatusKodKind">
-    <eLiterals name="_100Continue">
-      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <details key="originalName" value="100 - Continue"/>
-      </eAnnotations>
-    </eLiterals>
-    <eLiterals name="_101Switchprotocol" value="1">
-      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <details key="originalName" value="101 - Switch protocol"/>
-      </eAnnotations>
-    </eLiterals>
-    <eLiterals name="_102Processing" value="2">
-      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <details key="originalName" value="102 - Processing"/>
-      </eAnnotations>
-    </eLiterals>
-    <eLiterals name="_103EarlyHints" value="3">
-      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <details key="originalName" value="103 - Early Hints"/>
-      </eAnnotations>
-    </eLiterals>
-    <eLiterals name="_200OK" value="4">
-      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <details key="originalName" value="200 - OK"/>
-      </eAnnotations>
-    </eLiterals>
-    <eLiterals name="_201Created" value="5">
-      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <details key="originalName" value="201 - Created"/>
-      </eAnnotations>
-    </eLiterals>
-    <eLiterals name="_202Accepted" value="6">
-      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <details key="originalName" value="202 - Accepted"/>
-      </eAnnotations>
-    </eLiterals>
-    <eLiterals name="_203NonAuthoritativeInformation" value="7">
-      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <details key="originalName" value="203 - Non-Authoritative Information"/>
-      </eAnnotations>
-    </eLiterals>
-    <eLiterals name="_204NoContent" value="8">
-      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <details key="originalName" value="204 - No Content"/>
-      </eAnnotations>
-    </eLiterals>
-    <eLiterals name="_205ResetContent" value="9">
-      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <details key="originalName" value="205 - Reset Content"/>
-      </eAnnotations>
-    </eLiterals>
-    <eLiterals name="_206PartialContent" value="10">
-      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <details key="originalName" value="206 - Partial Content"/>
-      </eAnnotations>
-    </eLiterals>
-    <eLiterals name="_207MultiStatus" value="11">
-      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <details key="originalName" value="207 - Multi-Status"/>
-      </eAnnotations>
-    </eLiterals>
-    <eLiterals name="_208AlreadyReported" value="12">
-      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <details key="originalName" value="208 - Already Reported"/>
-      </eAnnotations>
-    </eLiterals>
-  </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="TransportLayerKind">
     <eLiterals name="TCP"/>
     <eLiterals name="UDP" value="1"/>
@@ -534,5 +467,37 @@
     <eLiterals name="NodeRed" value="2"/>
     <eLiterals name="OtherWorkflowLanguage" value="3"/>
     <eLiterals name="PetriNet" value="4"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ArrowheadDSLOperationHTTP">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Method" ordered="false"
+        lowerBound="1" eType="#//HTTP11MethodKind"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="SubURL" ordered="false"
+        lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="base_Operation" ordered="false"
+        eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Operation"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ArrowheadDSLRequirementMQTT">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Method" ordered="false"
+        lowerBound="1" eType="#//HTTP11MethodKind"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Topic" ordered="false"
+        lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="base_Operation" ordered="false"
+        eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Operation"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ArrowheadDSLRequirementCOAP">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Method" ordered="false"
+        lowerBound="1" eType="#//CoAPMethodKind"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="base_Operation" ordered="false"
+        eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Operation"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="SubURL" ordered="false"
+        lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ArrowheadDSLRequirementWebsocket">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Method" ordered="false"
+        lowerBound="1" eType="#//WebsocketDataFramingTypeKind"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="SubURL" ordered="false"
+        lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="base_Operation" ordered="false"
+        eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Operation"/>
   </eClassifiers>
 </ecore:EPackage>

@@ -8,10 +8,14 @@ import ArrowheadDSL.LocalcloudImplementation;
 import ArrowheadDSL.System_Implementation;
 
 import java.util.Collection;
+
 import org.eclipse.emf.common.notify.NotificationChain;
+
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
+
 import org.eclipse.emf.ecore.util.EObjectWithInverseResolvingEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
@@ -39,6 +43,7 @@ public class System_ImplementationImpl extends SysDDImpl implements System_Imple
 	 * @ordered
 	 */
 	protected EList<IDD_Implementation> idd_implementation;
+
 	/**
 	 * The cached value of the '{@link #getLoclacloudimplementation() <em>Loclacloudimplementation</em>}' reference list.
 	 * <!-- begin-user-doc -->

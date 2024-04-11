@@ -3,7 +3,9 @@
 package ArrowheadDSL;
 
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EObject;
+
 import org.eclipse.uml2.uml.UseCase;
 
 /**
@@ -24,7 +26,6 @@ import org.eclipse.uml2.uml.UseCase;
  * @generated
  */
 public interface ArrowheadUseCase extends EObject {
-
 	/**
 	 * Returns the value of the '<em><b>Base Use Case</b></em>' reference.
 	 * <!-- begin-user-doc -->
@@ -68,4 +69,5 @@ public interface ArrowheadUseCase extends EObject {
 	 * @generated
 	 */
 	EList<ArrowheadDSLRequirement> getArrowheaddslrequirement();
+
 } // ArrowheadUseCase

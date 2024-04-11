@@ -506,7 +506,7 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-hhw7aOEe6et-4ox6TWyg" name="CBOR"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-hhxLaOEe6et-4ox6TWyg" name="OtherEncoding"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_g-hhxbaOEe6et-4ox6TWyg" name="HTTP_1.1_MethodKind">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_g-hhxbaOEe6et-4ox6TWyg" name="HTTP1.1MethodKind">
       <ownedComment xmi:type="uml:Comment" xmi:id="_g-hhxraOEe6et-4ox6TWyg">
         <ownedComment xmi:type="uml:Comment" xmi:id="_g-hhx7aOEe6et-4ox6TWyg" annotatedElement="_g-hhxraOEe6et-4ox6TWyg">
           <body>https://www.rfc-editor.org/rfc/rfc9110.html
@@ -633,27 +633,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-klF7aOEe6et-4ox6TWyg" name="NGAC"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-klGLaOEe6et-4ox6TWyg" name="Other"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_g-klGbaOEe6et-4ox6TWyg" name="StatusKodKind">
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-klGraOEe6et-4ox6TWyg" name="100 - Continue">
-        <specification xmi:type="uml:LiteralString" xmi:id="_g-klG7aOEe6et-4ox6TWyg" value="The server has received the request headers and the client should proceed to send the request body (in the case of a request for which a body needs to be sent; for example, a POST request). Sending a large request body to a server after a request has been rejected for inappropriate headers would be inefficient. To have a server check the request's headers, a client must send Expect: 100-continue as a header in its initial request and receive a 100 Continue status code in response before sending the body. If the client receives an error code such as 403 (Forbidden) or 405 (Method Not Allowed) then it should not send the request's body. The response 417 Expectation Failed indicates that the request should be repeated without the Expect header as it indicates that the server does not support expectations (this is the case, for example, of HTTP/1.0 servers)"/>
-      </ownedLiteral>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-klHLaOEe6et-4ox6TWyg" name="101 - Switch protocol">
-        <specification xmi:type="uml:LiteralString" xmi:id="_g-klHbaOEe6et-4ox6TWyg" name="101" value="The requester has asked the server to switch protocols and the server has agreed to do so.&#xA;&#xA;"/>
-      </ownedLiteral>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-klHraOEe6et-4ox6TWyg" name="102 - Processing"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-klH7aOEe6et-4ox6TWyg" name="103 - Early Hints"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-klILaOEe6et-4ox6TWyg" name="200 - OK"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-klIbaOEe6et-4ox6TWyg" name="201 - Created"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-klIraOEe6et-4ox6TWyg" name="202 - Accepted"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-klI7aOEe6et-4ox6TWyg" name="203 - Non-Authoritative Information"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-klJLaOEe6et-4ox6TWyg" name="204 - No Content"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-klJbaOEe6et-4ox6TWyg" name="205 - Reset Content"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-klJraOEe6et-4ox6TWyg" name="206 - Partial Content"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-klJ7aOEe6et-4ox6TWyg" name="207 - Multi-Status"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-klKLaOEe6et-4ox6TWyg" name="208 - Already Reported">
-        <specification xmi:type="uml:LiteralString" xmi:id="_g-klKbaOEe6et-4ox6TWyg"/>
-      </ownedLiteral>
-    </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_g-lMILaOEe6et-4ox6TWyg" name="SystemDatabaseKind">
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-lMIbaOEe6et-4ox6TWyg" name="MySQL"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-lMIraOEe6et-4ox6TWyg" name="Undefined"/>
@@ -709,6 +688,58 @@
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iHl_kLdzEe6i2JWyFlnI5w" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iHmmoLdzEe6i2JWyFlnI5w" key="nature" value="UML_Nature"/>
       </eAnnotations>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_X13jIPfUEe6gwtrMxoScjw" name="ArrowheadDSLOperationHTTP">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_lofJAPfVEe6gwtrMxoScjw" name="Method" type="_g-hhxbaOEe6et-4ox6TWyg"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_1TJEAPfVEe6gwtrMxoScjw" name="SubURL">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_EZ6M0ffsEe68Gq79QBA0lw" name="base_Operation" association="_EZ3JgPfsEe68Gq79QBA0lw">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Operation"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EZ6M0vfsEe68Gq79QBA0lw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_ZIVQkPfUEe6gwtrMxoScjw" name="ArrowheadDSLRequirementMQTT">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_5puCsPfVEe6gwtrMxoScjw" name="Method" type="_g-hhxbaOEe6et-4ox6TWyg"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_9V4LYPfVEe6gwtrMxoScjw" name="Topic">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_GOS7kffsEe68Gq79QBA0lw" name="base_Operation" association="_GOSUgPfsEe68Gq79QBA0lw">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Operation"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GOS7kvfsEe68Gq79QBA0lw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_aPjXUPfUEe6gwtrMxoScjw" name="ArrowheadDSLRequirementCOAP">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_BuM2gPfWEe6gwtrMxoScjw" name="Method" type="_g-gToLaOEe6et-4ox6TWyg"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_H1_SIffsEe68Gq79QBA0lw" name="base_Operation" association="_H1-rEPfsEe68Gq79QBA0lw">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Operation"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_H1_SIvfsEe68Gq79QBA0lw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_P46mwPfsEe68Gq79QBA0lw" name="SubURL">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_EZ3JgPfsEe68Gq79QBA0lw" name="E_ArrowheadDSLOperationHTTP_Operation90" memberEnd="_EZ6M0PfsEe68Gq79QBA0lw _EZ6M0ffsEe68Gq79QBA0lw">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_EZ6M0PfsEe68Gq79QBA0lw" name="extension_ArrowheadDSLOperationHTTP" type="_X13jIPfUEe6gwtrMxoScjw" aggregation="composite" association="_EZ3JgPfsEe68Gq79QBA0lw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_GOSUgPfsEe68Gq79QBA0lw" name="E_ArrowheadDSLRequirementMQTT_Operation91" memberEnd="_GOS7kPfsEe68Gq79QBA0lw _GOS7kffsEe68Gq79QBA0lw">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_GOS7kPfsEe68Gq79QBA0lw" name="extension_ArrowheadDSLRequirementMQTT" type="_ZIVQkPfUEe6gwtrMxoScjw" aggregation="composite" association="_GOSUgPfsEe68Gq79QBA0lw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_H1-rEPfsEe68Gq79QBA0lw" name="E_ArrowheadDSLRequirementCOAP_Operation92" memberEnd="_H1_SIPfsEe68Gq79QBA0lw _H1_SIffsEe68Gq79QBA0lw">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_H1_SIPfsEe68Gq79QBA0lw" name="extension_ArrowheadDSLRequirementCOAP" type="_aPjXUPfUEe6gwtrMxoScjw" aggregation="composite" association="_H1-rEPfsEe68Gq79QBA0lw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_bH1g0PftEe68Gq79QBA0lw" name="ArrowheadDSLRequirementWebsocket">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_hSDAUPftEe68Gq79QBA0lw" name="Method" type="_g-lzNraOEe6et-4ox6TWyg"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_iPkYgPftEe68Gq79QBA0lw" name="SubURL">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_woipMfftEe68Gq79QBA0lw" name="base_Operation" association="_woiCIPftEe68Gq79QBA0lw">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Operation"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_woipMvftEe68Gq79QBA0lw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_woiCIPftEe68Gq79QBA0lw" name="E_ArrowheadDSLRequirementWebsocket_Operation95" memberEnd="_woipMPftEe68Gq79QBA0lw _woipMfftEe68Gq79QBA0lw">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_woipMPftEe68Gq79QBA0lw" name="extension_ArrowheadDSLRequirementWebsocket" type="_bH1g0PftEe68Gq79QBA0lw" aggregation="composite" association="_woiCIPftEe68Gq79QBA0lw"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_HPL28LaoEe6zC_b0ESqWTw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HPgAALaoEe6zC_b0ESqWTw" source="http://www.eclipse.org/uml2/2.0.0/UML">

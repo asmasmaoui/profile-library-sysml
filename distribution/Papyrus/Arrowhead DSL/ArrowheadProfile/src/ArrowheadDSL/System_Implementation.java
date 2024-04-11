@@ -4,7 +4,6 @@ package ArrowheadDSL;
 
 import org.eclipse.emf.common.util.EList;
 
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>System Implementation</b></em>'.
@@ -23,7 +22,6 @@ import org.eclipse.emf.common.util.EList;
  * @generated
  */
 public interface System_Implementation extends SysDD {
-
 	/**
 	 * Returns the value of the '<em><b>Idd implementation</b></em>' reference list.
 	 * The list contents are of type {@link ArrowheadDSL.IDD_Implementation}.
@@ -59,4 +57,5 @@ public interface System_Implementation extends SysDD {
 	 * @generated
 	 */
 	EList<LocalcloudImplementation> getLoclacloudimplementation();
+
 } // System_Implementation

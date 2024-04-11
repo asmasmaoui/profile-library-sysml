@@ -3,6 +3,7 @@
 package ArrowheadDSL;
 
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.papyrus.sysml16.portsandflows.InterfaceBlock;
 
 /**
