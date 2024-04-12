@@ -1,11 +1,25 @@
 * {
 	maskLabel: name;
 	elementIcon: false;
+	
 }
 
+/*Block > Compartment[kind=operations]{
+	visible: true;
+	showTitle: true;
+	
+}*/
 Property > Compartment[kind="internalstructure"]{
     visible:true;
 }
+
+Class [appliedStereotypes~="ArrowheadDSL::SysDD"] > Compartment[kind=attributes],
+Class [appliedStereotypes~="ArrowheadDSL::SysDD"] > Compartment[kind=operations],
+Class [appliedStereotypes~="ArrowheadDSL::SysDD"] > Compartment[type=StereotypeCompartment]{
+	visible: true;
+	showTitle: true;
+}
+
 
 Class[appliedStereotypes~="ArrowheadDSL::System_Implementation"]{
 	fillColor: #ff8000;
@@ -158,6 +172,7 @@ Class[appliedStereotypes~="SysML.profile::UseCase"]{
 }
 Port {
 	fillColor: #ff8000;
+	visibile: true;
 }
 Shape {
 	shapeVisibility: true;
