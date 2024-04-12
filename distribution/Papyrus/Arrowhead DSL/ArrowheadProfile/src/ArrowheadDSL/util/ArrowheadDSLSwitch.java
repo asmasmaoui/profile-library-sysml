@@ -237,21 +237,21 @@ public class ArrowheadDSLSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case ArrowheadDSLPackage.ARROWHEAD_DSL_REQUIREMENT_MQTT: {
-				ArrowheadDSLRequirementMQTT arrowheadDSLRequirementMQTT = (ArrowheadDSLRequirementMQTT)theEObject;
-				T result = caseArrowheadDSLRequirementMQTT(arrowheadDSLRequirementMQTT);
+			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_MQTT: {
+				ArrowheadDSLOperationMQTT arrowheadDSLOperationMQTT = (ArrowheadDSLOperationMQTT)theEObject;
+				T result = caseArrowheadDSLOperationMQTT(arrowheadDSLOperationMQTT);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case ArrowheadDSLPackage.ARROWHEAD_DSL_REQUIREMENT_COAP: {
-				ArrowheadDSLRequirementCOAP arrowheadDSLRequirementCOAP = (ArrowheadDSLRequirementCOAP)theEObject;
-				T result = caseArrowheadDSLRequirementCOAP(arrowheadDSLRequirementCOAP);
+			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_COAP: {
+				ArrowheadDSLOperationCOAP arrowheadDSLOperationCOAP = (ArrowheadDSLOperationCOAP)theEObject;
+				T result = caseArrowheadDSLOperationCOAP(arrowheadDSLOperationCOAP);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case ArrowheadDSLPackage.ARROWHEAD_DSL_REQUIREMENT_WEBSOCKET: {
-				ArrowheadDSLRequirementWebsocket arrowheadDSLRequirementWebsocket = (ArrowheadDSLRequirementWebsocket)theEObject;
-				T result = caseArrowheadDSLRequirementWebsocket(arrowheadDSLRequirementWebsocket);
+			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_WEBSOCKET: {
+				ArrowheadDSLOperationWebsocket arrowheadDSLOperationWebsocket = (ArrowheadDSLOperationWebsocket)theEObject;
+				T result = caseArrowheadDSLOperationWebsocket(arrowheadDSLOperationWebsocket);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -575,47 +575,47 @@ public class ArrowheadDSLSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Requirement MQTT</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Operation MQTT</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Requirement MQTT</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Operation MQTT</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseArrowheadDSLRequirementMQTT(ArrowheadDSLRequirementMQTT object) {
+	public T caseArrowheadDSLOperationMQTT(ArrowheadDSLOperationMQTT object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Requirement COAP</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Operation COAP</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Requirement COAP</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Operation COAP</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseArrowheadDSLRequirementCOAP(ArrowheadDSLRequirementCOAP object) {
+	public T caseArrowheadDSLOperationCOAP(ArrowheadDSLOperationCOAP object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Requirement Websocket</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Operation Websocket</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Requirement Websocket</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Operation Websocket</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseArrowheadDSLRequirementWebsocket(ArrowheadDSLRequirementWebsocket object) {
+	public T caseArrowheadDSLOperationWebsocket(ArrowheadDSLOperationWebsocket object) {
 		return null;
 	}
 

@@ -159,16 +159,16 @@ public class ArrowheadDSLAdapterFactory extends AdapterFactoryImpl {
 				return createArrowheadDSLOperationHTTPAdapter();
 			}
 			@Override
-			public Adapter caseArrowheadDSLRequirementMQTT(ArrowheadDSLRequirementMQTT object) {
-				return createArrowheadDSLRequirementMQTTAdapter();
+			public Adapter caseArrowheadDSLOperationMQTT(ArrowheadDSLOperationMQTT object) {
+				return createArrowheadDSLOperationMQTTAdapter();
 			}
 			@Override
-			public Adapter caseArrowheadDSLRequirementCOAP(ArrowheadDSLRequirementCOAP object) {
-				return createArrowheadDSLRequirementCOAPAdapter();
+			public Adapter caseArrowheadDSLOperationCOAP(ArrowheadDSLOperationCOAP object) {
+				return createArrowheadDSLOperationCOAPAdapter();
 			}
 			@Override
-			public Adapter caseArrowheadDSLRequirementWebsocket(ArrowheadDSLRequirementWebsocket object) {
-				return createArrowheadDSLRequirementWebsocketAdapter();
+			public Adapter caseArrowheadDSLOperationWebsocket(ArrowheadDSLOperationWebsocket object) {
+				return createArrowheadDSLOperationWebsocketAdapter();
 			}
 			@Override
 			public Adapter caseBlock(Block object) {
@@ -501,44 +501,44 @@ public class ArrowheadDSLAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link ArrowheadDSL.ArrowheadDSLRequirementMQTT <em>Requirement MQTT</em>}'.
+	 * Creates a new adapter for an object of class '{@link ArrowheadDSL.ArrowheadDSLOperationMQTT <em>Operation MQTT</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see ArrowheadDSL.ArrowheadDSLRequirementMQTT
+	 * @see ArrowheadDSL.ArrowheadDSLOperationMQTT
 	 * @generated
 	 */
-	public Adapter createArrowheadDSLRequirementMQTTAdapter() {
+	public Adapter createArrowheadDSLOperationMQTTAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link ArrowheadDSL.ArrowheadDSLRequirementCOAP <em>Requirement COAP</em>}'.
+	 * Creates a new adapter for an object of class '{@link ArrowheadDSL.ArrowheadDSLOperationCOAP <em>Operation COAP</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see ArrowheadDSL.ArrowheadDSLRequirementCOAP
+	 * @see ArrowheadDSL.ArrowheadDSLOperationCOAP
 	 * @generated
 	 */
-	public Adapter createArrowheadDSLRequirementCOAPAdapter() {
+	public Adapter createArrowheadDSLOperationCOAPAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link ArrowheadDSL.ArrowheadDSLRequirementWebsocket <em>Requirement Websocket</em>}'.
+	 * Creates a new adapter for an object of class '{@link ArrowheadDSL.ArrowheadDSLOperationWebsocket <em>Operation Websocket</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see ArrowheadDSL.ArrowheadDSLRequirementWebsocket
+	 * @see ArrowheadDSL.ArrowheadDSLOperationWebsocket
 	 * @generated
 	 */
-	public Adapter createArrowheadDSLRequirementWebsocketAdapter() {
+	public Adapter createArrowheadDSLOperationWebsocketAdapter() {
 		return null;
 	}
 

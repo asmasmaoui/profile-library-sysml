@@ -78,9 +78,9 @@ public class ArrowheadDSLFactoryImpl extends EFactoryImpl implements ArrowheadDS
 			case ArrowheadDSLPackage.SYSTEM_IMPLEMENTATION: return createSystem_Implementation();
 			case ArrowheadDSLPackage.IDD_IMPLEMENTATION: return createIDD_Implementation();
 			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_HTTP: return createArrowheadDSLOperationHTTP();
-			case ArrowheadDSLPackage.ARROWHEAD_DSL_REQUIREMENT_MQTT: return createArrowheadDSLRequirementMQTT();
-			case ArrowheadDSLPackage.ARROWHEAD_DSL_REQUIREMENT_COAP: return createArrowheadDSLRequirementCOAP();
-			case ArrowheadDSLPackage.ARROWHEAD_DSL_REQUIREMENT_WEBSOCKET: return createArrowheadDSLRequirementWebsocket();
+			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_MQTT: return createArrowheadDSLOperationMQTT();
+			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_COAP: return createArrowheadDSLOperationCOAP();
+			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_WEBSOCKET: return createArrowheadDSLOperationWebsocket();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -461,9 +461,9 @@ public class ArrowheadDSLFactoryImpl extends EFactoryImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public ArrowheadDSLRequirementMQTT createArrowheadDSLRequirementMQTT() {
-		ArrowheadDSLRequirementMQTTImpl arrowheadDSLRequirementMQTT = new ArrowheadDSLRequirementMQTTImpl();
-		return arrowheadDSLRequirementMQTT;
+	public ArrowheadDSLOperationMQTT createArrowheadDSLOperationMQTT() {
+		ArrowheadDSLOperationMQTTImpl arrowheadDSLOperationMQTT = new ArrowheadDSLOperationMQTTImpl();
+		return arrowheadDSLOperationMQTT;
 	}
 
 	/**
@@ -472,9 +472,9 @@ public class ArrowheadDSLFactoryImpl extends EFactoryImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public ArrowheadDSLRequirementCOAP createArrowheadDSLRequirementCOAP() {
-		ArrowheadDSLRequirementCOAPImpl arrowheadDSLRequirementCOAP = new ArrowheadDSLRequirementCOAPImpl();
-		return arrowheadDSLRequirementCOAP;
+	public ArrowheadDSLOperationCOAP createArrowheadDSLOperationCOAP() {
+		ArrowheadDSLOperationCOAPImpl arrowheadDSLOperationCOAP = new ArrowheadDSLOperationCOAPImpl();
+		return arrowheadDSLOperationCOAP;
 	}
 
 	/**
@@ -483,9 +483,9 @@ public class ArrowheadDSLFactoryImpl extends EFactoryImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public ArrowheadDSLRequirementWebsocket createArrowheadDSLRequirementWebsocket() {
-		ArrowheadDSLRequirementWebsocketImpl arrowheadDSLRequirementWebsocket = new ArrowheadDSLRequirementWebsocketImpl();
-		return arrowheadDSLRequirementWebsocket;
+	public ArrowheadDSLOperationWebsocket createArrowheadDSLOperationWebsocket() {
+		ArrowheadDSLOperationWebsocketImpl arrowheadDSLOperationWebsocket = new ArrowheadDSLOperationWebsocketImpl();
+		return arrowheadDSLOperationWebsocket;
 	}
 
 	/**

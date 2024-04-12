@@ -211,31 +211,31 @@ public interface ArrowheadDSLFactory extends EFactory {
 	ArrowheadDSLOperationHTTP createArrowheadDSLOperationHTTP();
 
 	/**
-	 * Returns a new object of class '<em>Requirement MQTT</em>'.
+	 * Returns a new object of class '<em>Operation MQTT</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Requirement MQTT</em>'.
+	 * @return a new object of class '<em>Operation MQTT</em>'.
 	 * @generated
 	 */
-	ArrowheadDSLRequirementMQTT createArrowheadDSLRequirementMQTT();
+	ArrowheadDSLOperationMQTT createArrowheadDSLOperationMQTT();
 
 	/**
-	 * Returns a new object of class '<em>Requirement COAP</em>'.
+	 * Returns a new object of class '<em>Operation COAP</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Requirement COAP</em>'.
+	 * @return a new object of class '<em>Operation COAP</em>'.
 	 * @generated
 	 */
-	ArrowheadDSLRequirementCOAP createArrowheadDSLRequirementCOAP();
+	ArrowheadDSLOperationCOAP createArrowheadDSLOperationCOAP();
 
 	/**
-	 * Returns a new object of class '<em>Requirement Websocket</em>'.
+	 * Returns a new object of class '<em>Operation Websocket</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Requirement Websocket</em>'.
+	 * @return a new object of class '<em>Operation Websocket</em>'.
 	 * @generated
 	 */
-	ArrowheadDSLRequirementWebsocket createArrowheadDSLRequirementWebsocket();
+	ArrowheadDSLOperationWebsocket createArrowheadDSLOperationWebsocket();
 
 	/**
 	 * Returns the package supported by this factory.

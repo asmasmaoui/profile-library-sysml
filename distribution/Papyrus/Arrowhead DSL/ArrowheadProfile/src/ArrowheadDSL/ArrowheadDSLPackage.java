@@ -3002,14 +3002,14 @@ public interface ArrowheadDSLPackage extends EPackage {
 	int ARROWHEAD_DSL_OPERATION_HTTP_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link ArrowheadDSL.impl.ArrowheadDSLRequirementMQTTImpl <em>Requirement MQTT</em>}' class.
+	 * The meta object id for the '{@link ArrowheadDSL.impl.ArrowheadDSLOperationMQTTImpl <em>Operation MQTT</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see ArrowheadDSL.impl.ArrowheadDSLRequirementMQTTImpl
-	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getArrowheadDSLRequirementMQTT()
+	 * @see ArrowheadDSL.impl.ArrowheadDSLOperationMQTTImpl
+	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getArrowheadDSLOperationMQTT()
 	 * @generated
 	 */
-	int ARROWHEAD_DSL_REQUIREMENT_MQTT = 21;
+	int ARROWHEAD_DSL_OPERATION_MQTT = 21;
 
 	/**
 	 * The feature id for the '<em><b>Method</b></em>' attribute.
@@ -3018,7 +3018,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ARROWHEAD_DSL_REQUIREMENT_MQTT__METHOD = 0;
+	int ARROWHEAD_DSL_OPERATION_MQTT__METHOD = 0;
 
 	/**
 	 * The feature id for the '<em><b>Topic</b></em>' attribute.
@@ -3027,7 +3027,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ARROWHEAD_DSL_REQUIREMENT_MQTT__TOPIC = 1;
+	int ARROWHEAD_DSL_OPERATION_MQTT__TOPIC = 1;
 
 	/**
 	 * The feature id for the '<em><b>Base Operation</b></em>' reference.
@@ -3036,35 +3036,35 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ARROWHEAD_DSL_REQUIREMENT_MQTT__BASE_OPERATION = 2;
+	int ARROWHEAD_DSL_OPERATION_MQTT__BASE_OPERATION = 2;
 
 	/**
-	 * The number of structural features of the '<em>Requirement MQTT</em>' class.
+	 * The number of structural features of the '<em>Operation MQTT</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ARROWHEAD_DSL_REQUIREMENT_MQTT_FEATURE_COUNT = 3;
+	int ARROWHEAD_DSL_OPERATION_MQTT_FEATURE_COUNT = 3;
 
 	/**
-	 * The number of operations of the '<em>Requirement MQTT</em>' class.
+	 * The number of operations of the '<em>Operation MQTT</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ARROWHEAD_DSL_REQUIREMENT_MQTT_OPERATION_COUNT = 0;
+	int ARROWHEAD_DSL_OPERATION_MQTT_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link ArrowheadDSL.impl.ArrowheadDSLRequirementCOAPImpl <em>Requirement COAP</em>}' class.
+	 * The meta object id for the '{@link ArrowheadDSL.impl.ArrowheadDSLOperationCOAPImpl <em>Operation COAP</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see ArrowheadDSL.impl.ArrowheadDSLRequirementCOAPImpl
-	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getArrowheadDSLRequirementCOAP()
+	 * @see ArrowheadDSL.impl.ArrowheadDSLOperationCOAPImpl
+	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getArrowheadDSLOperationCOAP()
 	 * @generated
 	 */
-	int ARROWHEAD_DSL_REQUIREMENT_COAP = 22;
+	int ARROWHEAD_DSL_OPERATION_COAP = 22;
 
 	/**
 	 * The feature id for the '<em><b>Method</b></em>' attribute.
@@ -3073,7 +3073,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ARROWHEAD_DSL_REQUIREMENT_COAP__METHOD = 0;
+	int ARROWHEAD_DSL_OPERATION_COAP__METHOD = 0;
 
 	/**
 	 * The feature id for the '<em><b>Base Operation</b></em>' reference.
@@ -3082,7 +3082,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ARROWHEAD_DSL_REQUIREMENT_COAP__BASE_OPERATION = 1;
+	int ARROWHEAD_DSL_OPERATION_COAP__BASE_OPERATION = 1;
 
 	/**
 	 * The feature id for the '<em><b>Sub URL</b></em>' attribute.
@@ -3091,35 +3091,35 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ARROWHEAD_DSL_REQUIREMENT_COAP__SUB_URL = 2;
+	int ARROWHEAD_DSL_OPERATION_COAP__SUB_URL = 2;
 
 	/**
-	 * The number of structural features of the '<em>Requirement COAP</em>' class.
+	 * The number of structural features of the '<em>Operation COAP</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ARROWHEAD_DSL_REQUIREMENT_COAP_FEATURE_COUNT = 3;
+	int ARROWHEAD_DSL_OPERATION_COAP_FEATURE_COUNT = 3;
 
 	/**
-	 * The number of operations of the '<em>Requirement COAP</em>' class.
+	 * The number of operations of the '<em>Operation COAP</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ARROWHEAD_DSL_REQUIREMENT_COAP_OPERATION_COUNT = 0;
+	int ARROWHEAD_DSL_OPERATION_COAP_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link ArrowheadDSL.impl.ArrowheadDSLRequirementWebsocketImpl <em>Requirement Websocket</em>}' class.
+	 * The meta object id for the '{@link ArrowheadDSL.impl.ArrowheadDSLOperationWebsocketImpl <em>Operation Websocket</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see ArrowheadDSL.impl.ArrowheadDSLRequirementWebsocketImpl
-	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getArrowheadDSLRequirementWebsocket()
+	 * @see ArrowheadDSL.impl.ArrowheadDSLOperationWebsocketImpl
+	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getArrowheadDSLOperationWebsocket()
 	 * @generated
 	 */
-	int ARROWHEAD_DSL_REQUIREMENT_WEBSOCKET = 23;
+	int ARROWHEAD_DSL_OPERATION_WEBSOCKET = 23;
 
 	/**
 	 * The feature id for the '<em><b>Method</b></em>' attribute.
@@ -3128,7 +3128,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ARROWHEAD_DSL_REQUIREMENT_WEBSOCKET__METHOD = 0;
+	int ARROWHEAD_DSL_OPERATION_WEBSOCKET__METHOD = 0;
 
 	/**
 	 * The feature id for the '<em><b>Sub URL</b></em>' attribute.
@@ -3137,7 +3137,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ARROWHEAD_DSL_REQUIREMENT_WEBSOCKET__SUB_URL = 1;
+	int ARROWHEAD_DSL_OPERATION_WEBSOCKET__SUB_URL = 1;
 
 	/**
 	 * The feature id for the '<em><b>Base Operation</b></em>' reference.
@@ -3146,25 +3146,25 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ARROWHEAD_DSL_REQUIREMENT_WEBSOCKET__BASE_OPERATION = 2;
+	int ARROWHEAD_DSL_OPERATION_WEBSOCKET__BASE_OPERATION = 2;
 
 	/**
-	 * The number of structural features of the '<em>Requirement Websocket</em>' class.
+	 * The number of structural features of the '<em>Operation Websocket</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ARROWHEAD_DSL_REQUIREMENT_WEBSOCKET_FEATURE_COUNT = 3;
+	int ARROWHEAD_DSL_OPERATION_WEBSOCKET_FEATURE_COUNT = 3;
 
 	/**
-	 * The number of operations of the '<em>Requirement Websocket</em>' class.
+	 * The number of operations of the '<em>Operation Websocket</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ARROWHEAD_DSL_REQUIREMENT_WEBSOCKET_OPERATION_COUNT = 0;
+	int ARROWHEAD_DSL_OPERATION_WEBSOCKET_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.SystemDatabaseKind <em>System Database Kind</em>}' enum.
@@ -4515,133 +4515,133 @@ public interface ArrowheadDSLPackage extends EPackage {
 	EReference getArrowheadDSLOperationHTTP_Base_Operation();
 
 	/**
-	 * Returns the meta object for class '{@link ArrowheadDSL.ArrowheadDSLRequirementMQTT <em>Requirement MQTT</em>}'.
+	 * Returns the meta object for class '{@link ArrowheadDSL.ArrowheadDSLOperationMQTT <em>Operation MQTT</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Requirement MQTT</em>'.
-	 * @see ArrowheadDSL.ArrowheadDSLRequirementMQTT
+	 * @return the meta object for class '<em>Operation MQTT</em>'.
+	 * @see ArrowheadDSL.ArrowheadDSLOperationMQTT
 	 * @generated
 	 */
-	EClass getArrowheadDSLRequirementMQTT();
+	EClass getArrowheadDSLOperationMQTT();
 
 	/**
-	 * Returns the meta object for the attribute '{@link ArrowheadDSL.ArrowheadDSLRequirementMQTT#getMethod <em>Method</em>}'.
+	 * Returns the meta object for the attribute '{@link ArrowheadDSL.ArrowheadDSLOperationMQTT#getMethod <em>Method</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Method</em>'.
-	 * @see ArrowheadDSL.ArrowheadDSLRequirementMQTT#getMethod()
-	 * @see #getArrowheadDSLRequirementMQTT()
+	 * @see ArrowheadDSL.ArrowheadDSLOperationMQTT#getMethod()
+	 * @see #getArrowheadDSLOperationMQTT()
 	 * @generated
 	 */
-	EAttribute getArrowheadDSLRequirementMQTT_Method();
+	EAttribute getArrowheadDSLOperationMQTT_Method();
 
 	/**
-	 * Returns the meta object for the attribute '{@link ArrowheadDSL.ArrowheadDSLRequirementMQTT#getTopic <em>Topic</em>}'.
+	 * Returns the meta object for the attribute '{@link ArrowheadDSL.ArrowheadDSLOperationMQTT#getTopic <em>Topic</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Topic</em>'.
-	 * @see ArrowheadDSL.ArrowheadDSLRequirementMQTT#getTopic()
-	 * @see #getArrowheadDSLRequirementMQTT()
+	 * @see ArrowheadDSL.ArrowheadDSLOperationMQTT#getTopic()
+	 * @see #getArrowheadDSLOperationMQTT()
 	 * @generated
 	 */
-	EAttribute getArrowheadDSLRequirementMQTT_Topic();
+	EAttribute getArrowheadDSLOperationMQTT_Topic();
 
 	/**
-	 * Returns the meta object for the reference '{@link ArrowheadDSL.ArrowheadDSLRequirementMQTT#getBase_Operation <em>Base Operation</em>}'.
+	 * Returns the meta object for the reference '{@link ArrowheadDSL.ArrowheadDSLOperationMQTT#getBase_Operation <em>Base Operation</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Base Operation</em>'.
-	 * @see ArrowheadDSL.ArrowheadDSLRequirementMQTT#getBase_Operation()
-	 * @see #getArrowheadDSLRequirementMQTT()
+	 * @see ArrowheadDSL.ArrowheadDSLOperationMQTT#getBase_Operation()
+	 * @see #getArrowheadDSLOperationMQTT()
 	 * @generated
 	 */
-	EReference getArrowheadDSLRequirementMQTT_Base_Operation();
+	EReference getArrowheadDSLOperationMQTT_Base_Operation();
 
 	/**
-	 * Returns the meta object for class '{@link ArrowheadDSL.ArrowheadDSLRequirementCOAP <em>Requirement COAP</em>}'.
+	 * Returns the meta object for class '{@link ArrowheadDSL.ArrowheadDSLOperationCOAP <em>Operation COAP</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Requirement COAP</em>'.
-	 * @see ArrowheadDSL.ArrowheadDSLRequirementCOAP
+	 * @return the meta object for class '<em>Operation COAP</em>'.
+	 * @see ArrowheadDSL.ArrowheadDSLOperationCOAP
 	 * @generated
 	 */
-	EClass getArrowheadDSLRequirementCOAP();
+	EClass getArrowheadDSLOperationCOAP();
 
 	/**
-	 * Returns the meta object for the attribute '{@link ArrowheadDSL.ArrowheadDSLRequirementCOAP#getMethod <em>Method</em>}'.
+	 * Returns the meta object for the attribute '{@link ArrowheadDSL.ArrowheadDSLOperationCOAP#getMethod <em>Method</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Method</em>'.
-	 * @see ArrowheadDSL.ArrowheadDSLRequirementCOAP#getMethod()
-	 * @see #getArrowheadDSLRequirementCOAP()
+	 * @see ArrowheadDSL.ArrowheadDSLOperationCOAP#getMethod()
+	 * @see #getArrowheadDSLOperationCOAP()
 	 * @generated
 	 */
-	EAttribute getArrowheadDSLRequirementCOAP_Method();
+	EAttribute getArrowheadDSLOperationCOAP_Method();
 
 	/**
-	 * Returns the meta object for the reference '{@link ArrowheadDSL.ArrowheadDSLRequirementCOAP#getBase_Operation <em>Base Operation</em>}'.
+	 * Returns the meta object for the reference '{@link ArrowheadDSL.ArrowheadDSLOperationCOAP#getBase_Operation <em>Base Operation</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Base Operation</em>'.
-	 * @see ArrowheadDSL.ArrowheadDSLRequirementCOAP#getBase_Operation()
-	 * @see #getArrowheadDSLRequirementCOAP()
+	 * @see ArrowheadDSL.ArrowheadDSLOperationCOAP#getBase_Operation()
+	 * @see #getArrowheadDSLOperationCOAP()
 	 * @generated
 	 */
-	EReference getArrowheadDSLRequirementCOAP_Base_Operation();
+	EReference getArrowheadDSLOperationCOAP_Base_Operation();
 
 	/**
-	 * Returns the meta object for the attribute '{@link ArrowheadDSL.ArrowheadDSLRequirementCOAP#getSubURL <em>Sub URL</em>}'.
+	 * Returns the meta object for the attribute '{@link ArrowheadDSL.ArrowheadDSLOperationCOAP#getSubURL <em>Sub URL</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Sub URL</em>'.
-	 * @see ArrowheadDSL.ArrowheadDSLRequirementCOAP#getSubURL()
-	 * @see #getArrowheadDSLRequirementCOAP()
+	 * @see ArrowheadDSL.ArrowheadDSLOperationCOAP#getSubURL()
+	 * @see #getArrowheadDSLOperationCOAP()
 	 * @generated
 	 */
-	EAttribute getArrowheadDSLRequirementCOAP_SubURL();
+	EAttribute getArrowheadDSLOperationCOAP_SubURL();
 
 	/**
-	 * Returns the meta object for class '{@link ArrowheadDSL.ArrowheadDSLRequirementWebsocket <em>Requirement Websocket</em>}'.
+	 * Returns the meta object for class '{@link ArrowheadDSL.ArrowheadDSLOperationWebsocket <em>Operation Websocket</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Requirement Websocket</em>'.
-	 * @see ArrowheadDSL.ArrowheadDSLRequirementWebsocket
+	 * @return the meta object for class '<em>Operation Websocket</em>'.
+	 * @see ArrowheadDSL.ArrowheadDSLOperationWebsocket
 	 * @generated
 	 */
-	EClass getArrowheadDSLRequirementWebsocket();
+	EClass getArrowheadDSLOperationWebsocket();
 
 	/**
-	 * Returns the meta object for the attribute '{@link ArrowheadDSL.ArrowheadDSLRequirementWebsocket#getMethod <em>Method</em>}'.
+	 * Returns the meta object for the attribute '{@link ArrowheadDSL.ArrowheadDSLOperationWebsocket#getMethod <em>Method</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Method</em>'.
-	 * @see ArrowheadDSL.ArrowheadDSLRequirementWebsocket#getMethod()
-	 * @see #getArrowheadDSLRequirementWebsocket()
+	 * @see ArrowheadDSL.ArrowheadDSLOperationWebsocket#getMethod()
+	 * @see #getArrowheadDSLOperationWebsocket()
 	 * @generated
 	 */
-	EAttribute getArrowheadDSLRequirementWebsocket_Method();
+	EAttribute getArrowheadDSLOperationWebsocket_Method();
 
 	/**
-	 * Returns the meta object for the attribute '{@link ArrowheadDSL.ArrowheadDSLRequirementWebsocket#getSubURL <em>Sub URL</em>}'.
+	 * Returns the meta object for the attribute '{@link ArrowheadDSL.ArrowheadDSLOperationWebsocket#getSubURL <em>Sub URL</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Sub URL</em>'.
-	 * @see ArrowheadDSL.ArrowheadDSLRequirementWebsocket#getSubURL()
-	 * @see #getArrowheadDSLRequirementWebsocket()
+	 * @see ArrowheadDSL.ArrowheadDSLOperationWebsocket#getSubURL()
+	 * @see #getArrowheadDSLOperationWebsocket()
 	 * @generated
 	 */
-	EAttribute getArrowheadDSLRequirementWebsocket_SubURL();
+	EAttribute getArrowheadDSLOperationWebsocket_SubURL();
 
 	/**
-	 * Returns the meta object for the reference '{@link ArrowheadDSL.ArrowheadDSLRequirementWebsocket#getBase_Operation <em>Base Operation</em>}'.
+	 * Returns the meta object for the reference '{@link ArrowheadDSL.ArrowheadDSLOperationWebsocket#getBase_Operation <em>Base Operation</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Base Operation</em>'.
-	 * @see ArrowheadDSL.ArrowheadDSLRequirementWebsocket#getBase_Operation()
-	 * @see #getArrowheadDSLRequirementWebsocket()
+	 * @see ArrowheadDSL.ArrowheadDSLOperationWebsocket#getBase_Operation()
+	 * @see #getArrowheadDSLOperationWebsocket()
 	 * @generated
 	 */
-	EReference getArrowheadDSLRequirementWebsocket_Base_Operation();
+	EReference getArrowheadDSLOperationWebsocket_Base_Operation();
 
 	/**
 	 * Returns the meta object for enum '{@link ArrowheadDSL.SystemDatabaseKind <em>System Database Kind</em>}'.
@@ -5781,14 +5781,14 @@ public interface ArrowheadDSLPackage extends EPackage {
 		EReference ARROWHEAD_DSL_OPERATION_HTTP__BASE_OPERATION = eINSTANCE.getArrowheadDSLOperationHTTP_Base_Operation();
 
 		/**
-		 * The meta object literal for the '{@link ArrowheadDSL.impl.ArrowheadDSLRequirementMQTTImpl <em>Requirement MQTT</em>}' class.
+		 * The meta object literal for the '{@link ArrowheadDSL.impl.ArrowheadDSLOperationMQTTImpl <em>Operation MQTT</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see ArrowheadDSL.impl.ArrowheadDSLRequirementMQTTImpl
-		 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getArrowheadDSLRequirementMQTT()
+		 * @see ArrowheadDSL.impl.ArrowheadDSLOperationMQTTImpl
+		 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getArrowheadDSLOperationMQTT()
 		 * @generated
 		 */
-		EClass ARROWHEAD_DSL_REQUIREMENT_MQTT = eINSTANCE.getArrowheadDSLRequirementMQTT();
+		EClass ARROWHEAD_DSL_OPERATION_MQTT = eINSTANCE.getArrowheadDSLOperationMQTT();
 
 		/**
 		 * The meta object literal for the '<em><b>Method</b></em>' attribute feature.
@@ -5796,7 +5796,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute ARROWHEAD_DSL_REQUIREMENT_MQTT__METHOD = eINSTANCE.getArrowheadDSLRequirementMQTT_Method();
+		EAttribute ARROWHEAD_DSL_OPERATION_MQTT__METHOD = eINSTANCE.getArrowheadDSLOperationMQTT_Method();
 
 		/**
 		 * The meta object literal for the '<em><b>Topic</b></em>' attribute feature.
@@ -5804,7 +5804,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute ARROWHEAD_DSL_REQUIREMENT_MQTT__TOPIC = eINSTANCE.getArrowheadDSLRequirementMQTT_Topic();
+		EAttribute ARROWHEAD_DSL_OPERATION_MQTT__TOPIC = eINSTANCE.getArrowheadDSLOperationMQTT_Topic();
 
 		/**
 		 * The meta object literal for the '<em><b>Base Operation</b></em>' reference feature.
@@ -5812,17 +5812,17 @@ public interface ArrowheadDSLPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ARROWHEAD_DSL_REQUIREMENT_MQTT__BASE_OPERATION = eINSTANCE.getArrowheadDSLRequirementMQTT_Base_Operation();
+		EReference ARROWHEAD_DSL_OPERATION_MQTT__BASE_OPERATION = eINSTANCE.getArrowheadDSLOperationMQTT_Base_Operation();
 
 		/**
-		 * The meta object literal for the '{@link ArrowheadDSL.impl.ArrowheadDSLRequirementCOAPImpl <em>Requirement COAP</em>}' class.
+		 * The meta object literal for the '{@link ArrowheadDSL.impl.ArrowheadDSLOperationCOAPImpl <em>Operation COAP</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see ArrowheadDSL.impl.ArrowheadDSLRequirementCOAPImpl
-		 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getArrowheadDSLRequirementCOAP()
+		 * @see ArrowheadDSL.impl.ArrowheadDSLOperationCOAPImpl
+		 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getArrowheadDSLOperationCOAP()
 		 * @generated
 		 */
-		EClass ARROWHEAD_DSL_REQUIREMENT_COAP = eINSTANCE.getArrowheadDSLRequirementCOAP();
+		EClass ARROWHEAD_DSL_OPERATION_COAP = eINSTANCE.getArrowheadDSLOperationCOAP();
 
 		/**
 		 * The meta object literal for the '<em><b>Method</b></em>' attribute feature.
@@ -5830,7 +5830,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute ARROWHEAD_DSL_REQUIREMENT_COAP__METHOD = eINSTANCE.getArrowheadDSLRequirementCOAP_Method();
+		EAttribute ARROWHEAD_DSL_OPERATION_COAP__METHOD = eINSTANCE.getArrowheadDSLOperationCOAP_Method();
 
 		/**
 		 * The meta object literal for the '<em><b>Base Operation</b></em>' reference feature.
@@ -5838,7 +5838,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ARROWHEAD_DSL_REQUIREMENT_COAP__BASE_OPERATION = eINSTANCE.getArrowheadDSLRequirementCOAP_Base_Operation();
+		EReference ARROWHEAD_DSL_OPERATION_COAP__BASE_OPERATION = eINSTANCE.getArrowheadDSLOperationCOAP_Base_Operation();
 
 		/**
 		 * The meta object literal for the '<em><b>Sub URL</b></em>' attribute feature.
@@ -5846,17 +5846,17 @@ public interface ArrowheadDSLPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute ARROWHEAD_DSL_REQUIREMENT_COAP__SUB_URL = eINSTANCE.getArrowheadDSLRequirementCOAP_SubURL();
+		EAttribute ARROWHEAD_DSL_OPERATION_COAP__SUB_URL = eINSTANCE.getArrowheadDSLOperationCOAP_SubURL();
 
 		/**
-		 * The meta object literal for the '{@link ArrowheadDSL.impl.ArrowheadDSLRequirementWebsocketImpl <em>Requirement Websocket</em>}' class.
+		 * The meta object literal for the '{@link ArrowheadDSL.impl.ArrowheadDSLOperationWebsocketImpl <em>Operation Websocket</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see ArrowheadDSL.impl.ArrowheadDSLRequirementWebsocketImpl
-		 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getArrowheadDSLRequirementWebsocket()
+		 * @see ArrowheadDSL.impl.ArrowheadDSLOperationWebsocketImpl
+		 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getArrowheadDSLOperationWebsocket()
 		 * @generated
 		 */
-		EClass ARROWHEAD_DSL_REQUIREMENT_WEBSOCKET = eINSTANCE.getArrowheadDSLRequirementWebsocket();
+		EClass ARROWHEAD_DSL_OPERATION_WEBSOCKET = eINSTANCE.getArrowheadDSLOperationWebsocket();
 
 		/**
 		 * The meta object literal for the '<em><b>Method</b></em>' attribute feature.
@@ -5864,7 +5864,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute ARROWHEAD_DSL_REQUIREMENT_WEBSOCKET__METHOD = eINSTANCE.getArrowheadDSLRequirementWebsocket_Method();
+		EAttribute ARROWHEAD_DSL_OPERATION_WEBSOCKET__METHOD = eINSTANCE.getArrowheadDSLOperationWebsocket_Method();
 
 		/**
 		 * The meta object literal for the '<em><b>Sub URL</b></em>' attribute feature.
@@ -5872,7 +5872,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute ARROWHEAD_DSL_REQUIREMENT_WEBSOCKET__SUB_URL = eINSTANCE.getArrowheadDSLRequirementWebsocket_SubURL();
+		EAttribute ARROWHEAD_DSL_OPERATION_WEBSOCKET__SUB_URL = eINSTANCE.getArrowheadDSLOperationWebsocket_SubURL();
 
 		/**
 		 * The meta object literal for the '<em><b>Base Operation</b></em>' reference feature.
@@ -5880,7 +5880,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ARROWHEAD_DSL_REQUIREMENT_WEBSOCKET__BASE_OPERATION = eINSTANCE.getArrowheadDSLRequirementWebsocket_Base_Operation();
+		EReference ARROWHEAD_DSL_OPERATION_WEBSOCKET__BASE_OPERATION = eINSTANCE.getArrowheadDSLOperationWebsocket_Base_Operation();
 
 		/**
 		 * The meta object literal for the '{@link ArrowheadDSL.SystemDatabaseKind <em>System Database Kind</em>}' enum.

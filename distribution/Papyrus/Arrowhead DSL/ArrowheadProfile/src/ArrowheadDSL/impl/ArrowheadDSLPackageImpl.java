@@ -5,12 +5,12 @@ package ArrowheadDSL.impl;
 import ArrowheadDSL.ApplicationProtocolKind;
 import ArrowheadDSL.ArrowheadCertificateKind;
 import ArrowheadDSL.ArrowheadDSLFactory;
+import ArrowheadDSL.ArrowheadDSLOperationCOAP;
 import ArrowheadDSL.ArrowheadDSLOperationHTTP;
+import ArrowheadDSL.ArrowheadDSLOperationMQTT;
+import ArrowheadDSL.ArrowheadDSLOperationWebsocket;
 import ArrowheadDSL.ArrowheadDSLPackage;
 import ArrowheadDSL.ArrowheadDSLRequirement;
-import ArrowheadDSL.ArrowheadDSLRequirementCOAP;
-import ArrowheadDSL.ArrowheadDSLRequirementMQTT;
-import ArrowheadDSL.ArrowheadDSLRequirementWebsocket;
 import ArrowheadDSL.ArrowheadSecurityKind;
 import ArrowheadDSL.ArrowheadUseCase;
 import ArrowheadDSL.BusinessPolicyKind;
@@ -238,21 +238,21 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass arrowheadDSLRequirementMQTTEClass = null;
+	private EClass arrowheadDSLOperationMQTTEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass arrowheadDSLRequirementCOAPEClass = null;
+	private EClass arrowheadDSLOperationCOAPEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass arrowheadDSLRequirementWebsocketEClass = null;
+	private EClass arrowheadDSLOperationWebsocketEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1513,8 +1513,8 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public EClass getArrowheadDSLRequirementMQTT() {
-		return arrowheadDSLRequirementMQTTEClass;
+	public EClass getArrowheadDSLOperationMQTT() {
+		return arrowheadDSLOperationMQTTEClass;
 	}
 
 	/**
@@ -1523,8 +1523,8 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public EAttribute getArrowheadDSLRequirementMQTT_Method() {
-		return (EAttribute)arrowheadDSLRequirementMQTTEClass.getEStructuralFeatures().get(0);
+	public EAttribute getArrowheadDSLOperationMQTT_Method() {
+		return (EAttribute)arrowheadDSLOperationMQTTEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -1533,8 +1533,8 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public EAttribute getArrowheadDSLRequirementMQTT_Topic() {
-		return (EAttribute)arrowheadDSLRequirementMQTTEClass.getEStructuralFeatures().get(1);
+	public EAttribute getArrowheadDSLOperationMQTT_Topic() {
+		return (EAttribute)arrowheadDSLOperationMQTTEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -1543,8 +1543,8 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public EReference getArrowheadDSLRequirementMQTT_Base_Operation() {
-		return (EReference)arrowheadDSLRequirementMQTTEClass.getEStructuralFeatures().get(2);
+	public EReference getArrowheadDSLOperationMQTT_Base_Operation() {
+		return (EReference)arrowheadDSLOperationMQTTEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -1553,8 +1553,8 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public EClass getArrowheadDSLRequirementCOAP() {
-		return arrowheadDSLRequirementCOAPEClass;
+	public EClass getArrowheadDSLOperationCOAP() {
+		return arrowheadDSLOperationCOAPEClass;
 	}
 
 	/**
@@ -1563,8 +1563,8 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public EAttribute getArrowheadDSLRequirementCOAP_Method() {
-		return (EAttribute)arrowheadDSLRequirementCOAPEClass.getEStructuralFeatures().get(0);
+	public EAttribute getArrowheadDSLOperationCOAP_Method() {
+		return (EAttribute)arrowheadDSLOperationCOAPEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -1573,8 +1573,8 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public EReference getArrowheadDSLRequirementCOAP_Base_Operation() {
-		return (EReference)arrowheadDSLRequirementCOAPEClass.getEStructuralFeatures().get(1);
+	public EReference getArrowheadDSLOperationCOAP_Base_Operation() {
+		return (EReference)arrowheadDSLOperationCOAPEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -1583,8 +1583,8 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public EAttribute getArrowheadDSLRequirementCOAP_SubURL() {
-		return (EAttribute)arrowheadDSLRequirementCOAPEClass.getEStructuralFeatures().get(2);
+	public EAttribute getArrowheadDSLOperationCOAP_SubURL() {
+		return (EAttribute)arrowheadDSLOperationCOAPEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -1593,8 +1593,8 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public EClass getArrowheadDSLRequirementWebsocket() {
-		return arrowheadDSLRequirementWebsocketEClass;
+	public EClass getArrowheadDSLOperationWebsocket() {
+		return arrowheadDSLOperationWebsocketEClass;
 	}
 
 	/**
@@ -1603,8 +1603,8 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public EAttribute getArrowheadDSLRequirementWebsocket_Method() {
-		return (EAttribute)arrowheadDSLRequirementWebsocketEClass.getEStructuralFeatures().get(0);
+	public EAttribute getArrowheadDSLOperationWebsocket_Method() {
+		return (EAttribute)arrowheadDSLOperationWebsocketEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -1613,8 +1613,8 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public EAttribute getArrowheadDSLRequirementWebsocket_SubURL() {
-		return (EAttribute)arrowheadDSLRequirementWebsocketEClass.getEStructuralFeatures().get(1);
+	public EAttribute getArrowheadDSLOperationWebsocket_SubURL() {
+		return (EAttribute)arrowheadDSLOperationWebsocketEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -1623,8 +1623,8 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public EReference getArrowheadDSLRequirementWebsocket_Base_Operation() {
-		return (EReference)arrowheadDSLRequirementWebsocketEClass.getEStructuralFeatures().get(2);
+	public EReference getArrowheadDSLOperationWebsocket_Base_Operation() {
+		return (EReference)arrowheadDSLOperationWebsocketEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -2056,20 +2056,20 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 		createEAttribute(arrowheadDSLOperationHTTPEClass, ARROWHEAD_DSL_OPERATION_HTTP__SUB_URL);
 		createEReference(arrowheadDSLOperationHTTPEClass, ARROWHEAD_DSL_OPERATION_HTTP__BASE_OPERATION);
 
-		arrowheadDSLRequirementMQTTEClass = createEClass(ARROWHEAD_DSL_REQUIREMENT_MQTT);
-		createEAttribute(arrowheadDSLRequirementMQTTEClass, ARROWHEAD_DSL_REQUIREMENT_MQTT__METHOD);
-		createEAttribute(arrowheadDSLRequirementMQTTEClass, ARROWHEAD_DSL_REQUIREMENT_MQTT__TOPIC);
-		createEReference(arrowheadDSLRequirementMQTTEClass, ARROWHEAD_DSL_REQUIREMENT_MQTT__BASE_OPERATION);
+		arrowheadDSLOperationMQTTEClass = createEClass(ARROWHEAD_DSL_OPERATION_MQTT);
+		createEAttribute(arrowheadDSLOperationMQTTEClass, ARROWHEAD_DSL_OPERATION_MQTT__METHOD);
+		createEAttribute(arrowheadDSLOperationMQTTEClass, ARROWHEAD_DSL_OPERATION_MQTT__TOPIC);
+		createEReference(arrowheadDSLOperationMQTTEClass, ARROWHEAD_DSL_OPERATION_MQTT__BASE_OPERATION);
 
-		arrowheadDSLRequirementCOAPEClass = createEClass(ARROWHEAD_DSL_REQUIREMENT_COAP);
-		createEAttribute(arrowheadDSLRequirementCOAPEClass, ARROWHEAD_DSL_REQUIREMENT_COAP__METHOD);
-		createEReference(arrowheadDSLRequirementCOAPEClass, ARROWHEAD_DSL_REQUIREMENT_COAP__BASE_OPERATION);
-		createEAttribute(arrowheadDSLRequirementCOAPEClass, ARROWHEAD_DSL_REQUIREMENT_COAP__SUB_URL);
+		arrowheadDSLOperationCOAPEClass = createEClass(ARROWHEAD_DSL_OPERATION_COAP);
+		createEAttribute(arrowheadDSLOperationCOAPEClass, ARROWHEAD_DSL_OPERATION_COAP__METHOD);
+		createEReference(arrowheadDSLOperationCOAPEClass, ARROWHEAD_DSL_OPERATION_COAP__BASE_OPERATION);
+		createEAttribute(arrowheadDSLOperationCOAPEClass, ARROWHEAD_DSL_OPERATION_COAP__SUB_URL);
 
-		arrowheadDSLRequirementWebsocketEClass = createEClass(ARROWHEAD_DSL_REQUIREMENT_WEBSOCKET);
-		createEAttribute(arrowheadDSLRequirementWebsocketEClass, ARROWHEAD_DSL_REQUIREMENT_WEBSOCKET__METHOD);
-		createEAttribute(arrowheadDSLRequirementWebsocketEClass, ARROWHEAD_DSL_REQUIREMENT_WEBSOCKET__SUB_URL);
-		createEReference(arrowheadDSLRequirementWebsocketEClass, ARROWHEAD_DSL_REQUIREMENT_WEBSOCKET__BASE_OPERATION);
+		arrowheadDSLOperationWebsocketEClass = createEClass(ARROWHEAD_DSL_OPERATION_WEBSOCKET);
+		createEAttribute(arrowheadDSLOperationWebsocketEClass, ARROWHEAD_DSL_OPERATION_WEBSOCKET__METHOD);
+		createEAttribute(arrowheadDSLOperationWebsocketEClass, ARROWHEAD_DSL_OPERATION_WEBSOCKET__SUB_URL);
+		createEReference(arrowheadDSLOperationWebsocketEClass, ARROWHEAD_DSL_OPERATION_WEBSOCKET__BASE_OPERATION);
 
 		// Create enums
 		systemDatabaseKindEEnum = createEEnum(SYSTEM_DATABASE_KIND);
@@ -2279,20 +2279,20 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 		initEAttribute(getArrowheadDSLOperationHTTP_SubURL(), theTypesPackage.getString(), "SubURL", null, 1, 1, ArrowheadDSLOperationHTTP.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getArrowheadDSLOperationHTTP_Base_Operation(), theUMLPackage.getOperation(), null, "base_Operation", null, 0, 1, ArrowheadDSLOperationHTTP.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
-		initEClass(arrowheadDSLRequirementMQTTEClass, ArrowheadDSLRequirementMQTT.class, "ArrowheadDSLRequirementMQTT", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getArrowheadDSLRequirementMQTT_Method(), this.getHTTP11MethodKind(), "Method", null, 1, 1, ArrowheadDSLRequirementMQTT.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getArrowheadDSLRequirementMQTT_Topic(), theTypesPackage.getString(), "Topic", null, 1, 1, ArrowheadDSLRequirementMQTT.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getArrowheadDSLRequirementMQTT_Base_Operation(), theUMLPackage.getOperation(), null, "base_Operation", null, 0, 1, ArrowheadDSLRequirementMQTT.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEClass(arrowheadDSLOperationMQTTEClass, ArrowheadDSLOperationMQTT.class, "ArrowheadDSLOperationMQTT", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getArrowheadDSLOperationMQTT_Method(), this.getHTTP11MethodKind(), "Method", null, 1, 1, ArrowheadDSLOperationMQTT.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getArrowheadDSLOperationMQTT_Topic(), theTypesPackage.getString(), "Topic", null, 1, 1, ArrowheadDSLOperationMQTT.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getArrowheadDSLOperationMQTT_Base_Operation(), theUMLPackage.getOperation(), null, "base_Operation", null, 0, 1, ArrowheadDSLOperationMQTT.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
-		initEClass(arrowheadDSLRequirementCOAPEClass, ArrowheadDSLRequirementCOAP.class, "ArrowheadDSLRequirementCOAP", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getArrowheadDSLRequirementCOAP_Method(), this.getCoAPMethodKind(), "Method", null, 1, 1, ArrowheadDSLRequirementCOAP.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getArrowheadDSLRequirementCOAP_Base_Operation(), theUMLPackage.getOperation(), null, "base_Operation", null, 0, 1, ArrowheadDSLRequirementCOAP.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getArrowheadDSLRequirementCOAP_SubURL(), theTypesPackage.getString(), "SubURL", null, 1, 1, ArrowheadDSLRequirementCOAP.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEClass(arrowheadDSLOperationCOAPEClass, ArrowheadDSLOperationCOAP.class, "ArrowheadDSLOperationCOAP", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getArrowheadDSLOperationCOAP_Method(), this.getCoAPMethodKind(), "Method", null, 1, 1, ArrowheadDSLOperationCOAP.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getArrowheadDSLOperationCOAP_Base_Operation(), theUMLPackage.getOperation(), null, "base_Operation", null, 0, 1, ArrowheadDSLOperationCOAP.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getArrowheadDSLOperationCOAP_SubURL(), theTypesPackage.getString(), "SubURL", null, 1, 1, ArrowheadDSLOperationCOAP.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
-		initEClass(arrowheadDSLRequirementWebsocketEClass, ArrowheadDSLRequirementWebsocket.class, "ArrowheadDSLRequirementWebsocket", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getArrowheadDSLRequirementWebsocket_Method(), this.getWebsocketDataFramingTypeKind(), "Method", null, 1, 1, ArrowheadDSLRequirementWebsocket.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getArrowheadDSLRequirementWebsocket_SubURL(), theTypesPackage.getString(), "SubURL", null, 1, 1, ArrowheadDSLRequirementWebsocket.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getArrowheadDSLRequirementWebsocket_Base_Operation(), theUMLPackage.getOperation(), null, "base_Operation", null, 0, 1, ArrowheadDSLRequirementWebsocket.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEClass(arrowheadDSLOperationWebsocketEClass, ArrowheadDSLOperationWebsocket.class, "ArrowheadDSLOperationWebsocket", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getArrowheadDSLOperationWebsocket_Method(), this.getWebsocketDataFramingTypeKind(), "Method", null, 1, 1, ArrowheadDSLOperationWebsocket.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getArrowheadDSLOperationWebsocket_SubURL(), theTypesPackage.getString(), "SubURL", null, 1, 1, ArrowheadDSLOperationWebsocket.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getArrowheadDSLOperationWebsocket_Base_Operation(), theUMLPackage.getOperation(), null, "base_Operation", null, 0, 1, ArrowheadDSLOperationWebsocket.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		// Initialize enums and add enum literals
 		initEEnum(systemDatabaseKindEEnum, SystemDatabaseKind.class, "SystemDatabaseKind");
