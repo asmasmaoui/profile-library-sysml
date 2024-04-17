@@ -81,6 +81,8 @@ public class ArrowheadDSLFactoryImpl extends EFactoryImpl implements ArrowheadDS
 			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_MQTT: return createArrowheadDSLOperationMQTT();
 			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_COAP: return createArrowheadDSLOperationCOAP();
 			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_WEBSOCKET: return createArrowheadDSLOperationWebsocket();
+			case ArrowheadDSLPackage.FULL_PORT: return createFullPort();
+			case ArrowheadDSLPackage.PROXY_PORT: return createProxyPort();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -486,6 +488,28 @@ public class ArrowheadDSLFactoryImpl extends EFactoryImpl implements ArrowheadDS
 	public ArrowheadDSLOperationWebsocket createArrowheadDSLOperationWebsocket() {
 		ArrowheadDSLOperationWebsocketImpl arrowheadDSLOperationWebsocket = new ArrowheadDSLOperationWebsocketImpl();
 		return arrowheadDSLOperationWebsocket;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public FullPort createFullPort() {
+		FullPortImpl fullPort = new FullPortImpl();
+		return fullPort;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProxyPort createProxyPort() {
+		ProxyPortImpl proxyPort = new ProxyPortImpl();
+		return proxyPort;
 	}
 
 	/**

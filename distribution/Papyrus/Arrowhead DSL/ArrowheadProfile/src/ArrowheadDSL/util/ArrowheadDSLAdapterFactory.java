@@ -171,6 +171,14 @@ public class ArrowheadDSLAdapterFactory extends AdapterFactoryImpl {
 				return createArrowheadDSLOperationWebsocketAdapter();
 			}
 			@Override
+			public Adapter caseFullPort(FullPort object) {
+				return createFullPortAdapter();
+			}
+			@Override
+			public Adapter caseProxyPort(ProxyPort object) {
+				return createProxyPortAdapter();
+			}
+			@Override
 			public Adapter caseBlock(Block object) {
 				return createBlockAdapter();
 			}
@@ -539,6 +547,34 @@ public class ArrowheadDSLAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createArrowheadDSLOperationWebsocketAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ArrowheadDSL.FullPort <em>Full Port</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ArrowheadDSL.FullPort
+	 * @generated
+	 */
+	public Adapter createFullPortAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ArrowheadDSL.ProxyPort <em>Proxy Port</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ArrowheadDSL.ProxyPort
+	 * @generated
+	 */
+	public Adapter createProxyPortAdapter() {
 		return null;
 	}
 

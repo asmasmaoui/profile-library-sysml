@@ -1,443 +1,1067 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<paletteconfiguration:PaletteConfiguration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:paletteconfiguration="http://www.eclipse.org/papyrus/diagram/paletteconfiguration/0.8" id="AHT BDD">
-  <drawerConfigurations xmi:type="paletteconfiguration:DrawerConfiguration" id="aht.design" label="Design Concepts">
-    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="aht.sysD" label="SysD" kind="CreationTool">
-      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.papyrus.sysml16.edit" iconPath="/icons/full/obj16/Block.gif"/>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.SysD_Class_MetaclassShape"/>
+<paletteconfiguration:PaletteConfiguration
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2"
+    xmlns:paletteconfiguration="http://www.eclipse.org/papyrus/diagram/paletteconfiguration/0.8"
+    id="AHT BDD">
+  <drawerConfigurations
+      xmi:type="paletteconfiguration:DrawerConfiguration"
+      id="aht.design"
+      label="Design Concepts">
+    <ownedConfigurations
+        xmi:type="paletteconfiguration:ToolConfiguration"
+        id="aht.sysD"
+        label="SysD"
+        kind="CreationTool">
+      <icon
+          xmi:type="paletteconfiguration:IconDescriptor"
+          pluginID="org.eclipse.papyrus.sysml16.edit"
+          iconPath="/icons/full/obj16/Block.gif"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.SysD_Class_MetaclassShape"/>
       </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.SysD_Class_MetaclassShape_CN"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.SysD_Class_MetaclassShape_CN"/>
       </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.SysD_Class_NestedClassifierLabel"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.SysD_Class_NestedClassifierLabel"/>
       </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.SysD_Class_Shape"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.SysD_Class_Shape"/>
       </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.SysD_Class_Shape_CN"/>
-      </elementDescriptors>
-    </ownedConfigurations>
-    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="aht.SD" label="SD" kind="CreationTool">
-      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.papyrus.sysml16.edit" iconPath="/icons/full/obj16/Block.gif"/>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_K0DpQLmEEe6IOsSIzvZIhg"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_du3GYLmEEe6IOsSIzvZIhg"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.SD_Class_MetaclassShape"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.SD_Class_MetaclassShape_CN"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.SD_Class_NestedClassifierLabel"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.SD_Class_ClassNestedClassifierLabel"/>
-      </elementDescriptors>
-    </ownedConfigurations>
-    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="aht.System_of_LocalcloudsDesign" label="System_of_LocalcloudsDesign" kind="CreationTool">
-      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.papyrus.sysml16.edit" iconPath="/icons/full/obj16/Block.gif"/>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_m_Kh5OH5Ee6gsb892QdG0g"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_m_Kh5uH5Ee6gsb892QdG0g"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_m_J61eH5Ee6gsb892QdG0g"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_m_Kh4OH5Ee6gsb892QdG0g"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_m_Kh4uH5Ee6gsb892QdG0g"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_m_JTwOH5Ee6gsb892QdG0g"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.SysD_Class_Shape_CN"/>
       </elementDescriptors>
     </ownedConfigurations>
-    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="aht.DeviceDesign" label="DeviceDesign" kind="CreationTool">
-      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.papyrus.sysml16.edit" iconPath="/icons/full/obj16/Block.gif"/>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_c8Mxs-IFEe6gsb892QdG0g"/>
+    <ownedConfigurations
+        xmi:type="paletteconfiguration:ToolConfiguration"
+        id="aht.SD"
+        label="SD"
+        kind="CreationTool">
+      <icon
+          xmi:type="paletteconfiguration:IconDescriptor"
+          pluginID="org.eclipse.papyrus.sysml16.edit"
+          iconPath="/icons/full/obj16/Block.gif"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_K0DpQLmEEe6IOsSIzvZIhg"/>
       </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_c8MxteIFEe6gsb892QdG0g"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_du3GYLmEEe6IOsSIzvZIhg"/>
       </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_c8MKpuIFEe6gsb892QdG0g"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.SD_Class_MetaclassShape"/>
       </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_c8MKqOIFEe6gsb892QdG0g"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.SD_Class_MetaclassShape_CN"/>
       </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_c8MxseIFEe6gsb892QdG0g"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.SD_Class_NestedClassifierLabel"/>
       </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_c8MKoOIFEe6gsb892QdG0g"/>
-      </elementDescriptors>
-    </ownedConfigurations>
-    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="aht.LocalCloudDesign" label="LocalCloudDesign" kind="CreationTool">
-      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.papyrus.sysml16.edit" iconPath="/icons/full/obj16/Block.gif"/>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_0pES0-IJEe6gsb892QdG0g"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_0pES1eIJEe6gsb892QdG0g"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_0pDrxOIJEe6gsb892QdG0g"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_0pDrxuIJEe6gsb892QdG0g"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_0pES0eIJEe6gsb892QdG0g"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_0pDEsOIJEe6gsb892QdG0g"/>
-      </elementDescriptors>
-    </ownedConfigurations>
-    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="aht.IntracloudNetworkDesign" label="IntracloudNetworkDesign" kind="CreationTool">
-      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.papyrus.sysml16.edit" iconPath="/icons/full/obj16/Block.gif"/>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_Onjw8-IREe6gsb892QdG0g"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_OnjJ5OIREe6gsb892QdG0g"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_OnjJ5uIREe6gsb892QdG0g"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_Onjw9eIREe6gsb892QdG0g"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_Onjw8eIREe6gsb892QdG0g"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_Onii0OIREe6gsb892QdG0g"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.SD_Class_ClassNestedClassifierLabel"/>
       </elementDescriptors>
     </ownedConfigurations>
-    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="aht.IntercloudNetworkDesign" label="IntercloudNetworkDesign" kind="CreationTool">
-      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.papyrus.sysml16.edit" iconPath="/icons/full/obj16/Block.gif"/>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_PaL98eKkEe6ymp6102DUfA"/>
+    <ownedConfigurations
+        xmi:type="paletteconfiguration:ToolConfiguration"
+        id="aht.System_of_LocalcloudsDesign"
+        label="System_of_LocalcloudsDesign"
+        kind="CreationTool">
+      <icon
+          xmi:type="paletteconfiguration:IconDescriptor"
+          pluginID="org.eclipse.papyrus.sysml16.edit"
+          iconPath="/icons/full/obj16/Block.gif"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_m_Kh5OH5Ee6gsb892QdG0g"/>
       </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_PaLW4OKkEe6ymp6102DUfA"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_m_Kh5uH5Ee6gsb892QdG0g"/>
       </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_PaLW4uKkEe6ymp6102DUfA"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_m_J61eH5Ee6gsb892QdG0g"/>
       </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_PaL98-KkEe6ymp6102DUfA"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_m_Kh4OH5Ee6gsb892QdG0g"/>
       </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_PaLW5OKkEe6ymp6102DUfA"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_m_Kh4uH5Ee6gsb892QdG0g"/>
       </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_PaKIwOKkEe6ymp6102DUfA"/>
-      </elementDescriptors>
-    </ownedConfigurations>
-  </drawerConfigurations>
-  <drawerConfigurations xmi:type="paletteconfiguration:DrawerConfiguration" id="aht.dd" label="Design Description Concepts">
-    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="aht.sysDD" label="sysDD" kind="CreationTool">
-      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.papyrus.sysml16.edit" iconPath="/icons/full/obj16/Block.gif"/>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_qX_2ILlNEe6vgdT8xLwaJw"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_qX_2IrlNEe6vgdT8xLwaJw"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_fReDELlMEe6vgdT8xLwaJw"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_fRfRMLlMEe6vgdT8xLwaJw"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_fRfRMrlMEe6vgdT8xLwaJw"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_fRf4QLlMEe6vgdT8xLwaJw"/>
-      </elementDescriptors>
-    </ownedConfigurations>
-    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="aht.IDD" label="IDD" kind="CreationTool">
-      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.papyrus.sysml16.edit" iconPath="/icons/full/obj16/Block.gif"/>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_FG93hOB8Ee6xTsvtueAqag"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_FG-ekeB8Ee6xTsvtueAqag"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_FG-ek-B8Ee6xTsvtueAqag"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_FG-eleB8Ee6xTsvtueAqag"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_FG_FoeB8Ee6xTsvtueAqag"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_m_JTwOH5Ee6gsb892QdG0g"/>
       </elementDescriptors>
     </ownedConfigurations>
-    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="aht.System_of_LocacloudsDesignDescription" label="System_of_LocacloudsDesignDescription" kind="CreationTool">
-      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.papyrus.sysml16.edit" iconPath="/icons/full/obj16/Block.gif"/>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_-8uTsuKoEe6ymp6102DUfA"/>
+    <ownedConfigurations
+        xmi:type="paletteconfiguration:ToolConfiguration"
+        id="aht.DeviceDesign"
+        label="DeviceDesign"
+        kind="CreationTool">
+      <icon
+          xmi:type="paletteconfiguration:IconDescriptor"
+          pluginID="org.eclipse.papyrus.sysml16.edit"
+          iconPath="/icons/full/obj16/Block.gif"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_c8Mxs-IFEe6gsb892QdG0g"/>
       </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_-8tsoOKoEe6ymp6102DUfA"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_c8MxteIFEe6gsb892QdG0g"/>
       </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_-8tsouKoEe6ymp6102DUfA"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_c8MKpuIFEe6gsb892QdG0g"/>
       </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_-8uTtOKoEe6ymp6102DUfA"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_c8MKqOIFEe6gsb892QdG0g"/>
       </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_-8uTsOKoEe6ymp6102DUfA"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_c8MxseIFEe6gsb892QdG0g"/>
       </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_-8segOKoEe6ymp6102DUfA"/>
-      </elementDescriptors>
-    </ownedConfigurations>
-    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="aht.LocalcloudDesignDescription" label="LocalcloudDesignDescription" kind="CreationTool">
-      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.papyrus.sysml16.edit" iconPath="/icons/full/obj16/Block.gif"/>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_2PIQceKzEe6ymp6102DUfA"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_2PIQc-KzEe6ymp6102DUfA"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_2PHpYeKzEe6ymp6102DUfA"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_2PHpY-KzEe6ymp6102DUfA"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_2PHpZeKzEe6ymp6102DUfA"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_2PHCUOKzEe6ymp6102DUfA"/>
-      </elementDescriptors>
-    </ownedConfigurations>
-    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="aht.DeviceDesignDescription" label="DeviceDesignDescription" kind="CreationTool">
-      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.papyrus.sysml16.edit" iconPath="/icons/full/obj16/Block.gif"/>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_hcDYNOK1Ee6ymp6102DUfA"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_hcD_QOK1Ee6ymp6102DUfA"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_hcCxJOK1Ee6ymp6102DUfA"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_hcDYMOK1Ee6ymp6102DUfA"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_hcDYMuK1Ee6ymp6102DUfA"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_hcCKEOK1Ee6ymp6102DUfA"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_c8MKoOIFEe6gsb892QdG0g"/>
       </elementDescriptors>
     </ownedConfigurations>
-    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="aht.IntracloudNetworkDesignDescription" label="IntracloudNetworkDesignDescription" kind="CreationTool">
-      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.papyrus.sysml16.edit" iconPath="/icons/full/obj16/Block.gif"/>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_Q6bcJ-K5Ee6ymp6102DUfA"/>
+    <ownedConfigurations
+        xmi:type="paletteconfiguration:ToolConfiguration"
+        id="aht.LocalCloudDesign"
+        label="LocalCloudDesign"
+        kind="CreationTool">
+      <icon
+          xmi:type="paletteconfiguration:IconDescriptor"
+          pluginID="org.eclipse.papyrus.sysml16.edit"
+          iconPath="/icons/full/obj16/Block.gif"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_0pES0-IJEe6gsb892QdG0g"/>
       </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_Q6cDMeK5Ee6ymp6102DUfA"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_0pES1eIJEe6gsb892QdG0g"/>
       </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_Q6bcIeK5Ee6ymp6102DUfA"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_0pDrxOIJEe6gsb892QdG0g"/>
       </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_Q6bcI-K5Ee6ymp6102DUfA"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_0pDrxuIJEe6gsb892QdG0g"/>
       </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_Q6bcJeK5Ee6ymp6102DUfA"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_0pES0eIJEe6gsb892QdG0g"/>
       </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_Q6a1EOK5Ee6ymp6102DUfA"/>
-      </elementDescriptors>
-    </ownedConfigurations>
-    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="aht.IntercloudNetworkDesignDescription" label="IntercloudNetworkDesignDescription" kind="CreationTool">
-      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.papyrus.sysml16.edit" iconPath="/icons/full/obj16/Block.gif"/>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_ncyKlOLAEe6ymp6102DUfA"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_ncyxoOLAEe6ymp6102DUfA"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_ncxjhOLAEe6ymp6102DUfA"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_ncyKkOLAEe6ymp6102DUfA"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_ncyKkuLAEe6ymp6102DUfA"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_ncw8cOLAEe6ymp6102DUfA"/>
-      </elementDescriptors>
-    </ownedConfigurations>
-  </drawerConfigurations>
-  <drawerConfigurations xmi:type="paletteconfiguration:DrawerConfiguration" id="aht.implementation" label="Implementation Concepts">
-    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="aht.SysD_Imp" label="System_Implementation" kind="CreationTool">
-      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.papyrus.sysml16.edit" iconPath="/icons/full/obj16/Block.gif"/>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_nKhGputXEe6GDMPnxKPZEg"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_nKhGqOtXEe6GDMPnxKPZEg"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_nKhGrOtXEe6GDMPnxKPZEg"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_nKhGrutXEe6GDMPnxKPZEg"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_nKhGqutXEe6GDMPnxKPZEg"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_nKhGoOtXEe6GDMPnxKPZEg"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_0pDEsOIJEe6gsb892QdG0g"/>
       </elementDescriptors>
     </ownedConfigurations>
-    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="aht.IDD_Imp" label="IDD_Implementation" kind="CreationTool">
-      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.papyrus.sysml16.edit" iconPath="/icons/full/obj16/Block.gif"/>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_oSzVAOHuEe6gsb892QdG0g"/>
+    <ownedConfigurations
+        xmi:type="paletteconfiguration:ToolConfiguration"
+        id="aht.IntracloudNetworkDesign"
+        label="IntracloudNetworkDesign"
+        kind="CreationTool">
+      <icon
+          xmi:type="paletteconfiguration:IconDescriptor"
+          pluginID="org.eclipse.papyrus.sysml16.edit"
+          iconPath="/icons/full/obj16/Block.gif"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_Onjw8-IREe6gsb892QdG0g"/>
       </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_oSyt8OHuEe6gsb892QdG0g"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_OnjJ5OIREe6gsb892QdG0g"/>
       </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_oSyt8uHuEe6gsb892QdG0g"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_OnjJ5uIREe6gsb892QdG0g"/>
       </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_oSyt9OHuEe6gsb892QdG0g"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_Onjw9eIREe6gsb892QdG0g"/>
       </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_oSzVAuHuEe6gsb892QdG0g"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_Onjw8eIREe6gsb892QdG0g"/>
       </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_oSyG5OHuEe6gsb892QdG0g"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_Onii0OIREe6gsb892QdG0g"/>
       </elementDescriptors>
     </ownedConfigurations>
-    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="aht.System_of_LocalcloudsImplementation" label="System_of_LocalcloudsImplementation" kind="CreationTool">
-      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.papyrus.sysml16.edit" iconPath="/icons/full/obj16/Block.gif"/>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_P6SetuLCEe6ymp6102DUfA"/>
+    <ownedConfigurations
+        xmi:type="paletteconfiguration:ToolConfiguration"
+        id="aht.IntercloudNetworkDesign"
+        label="IntercloudNetworkDesign"
+        kind="CreationTool">
+      <icon
+          xmi:type="paletteconfiguration:IconDescriptor"
+          pluginID="org.eclipse.papyrus.sysml16.edit"
+          iconPath="/icons/full/obj16/Block.gif"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_PaL98eKkEe6ymp6102DUfA"/>
       </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_P6SeuOLCEe6ymp6102DUfA"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_PaLW4OKkEe6ymp6102DUfA"/>
       </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_P6SesOLCEe6ymp6102DUfA"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_PaLW4uKkEe6ymp6102DUfA"/>
       </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_P6SesuLCEe6ymp6102DUfA"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_PaL98-KkEe6ymp6102DUfA"/>
       </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_P6SetOLCEe6ymp6102DUfA"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_PaLW5OKkEe6ymp6102DUfA"/>
       </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_P6R3oOLCEe6ymp6102DUfA"/>
-      </elementDescriptors>
-    </ownedConfigurations>
-    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="aht.LocalcloudImplementation" label="LocalcloudImplementation" kind="CreationTool">
-      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.papyrus.sysml16.edit" iconPath="/icons/full/obj16/Block.gif"/>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_SowaouU0Ee6UDrknhMCnwA"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_SovzkeU0Ee6UDrknhMCnwA"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_Sovzk-U0Ee6UDrknhMCnwA"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_SowapOU0Ee6UDrknhMCnwA"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_SoulcOU0Ee6UDrknhMCnwA"/>
-      </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_SowaoOU0Ee6UDrknhMCnwA"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_PaKIwOKkEe6ymp6102DUfA"/>
       </elementDescriptors>
     </ownedConfigurations>
   </drawerConfigurations>
-  <drawerConfigurations xmi:type="paletteconfiguration:DrawerConfiguration" id="aht.general" label="General Concepts">
-    <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.papyrus.sysml16.edit" iconPath="icons/full/obj16/FlowProperty.gif"/>
-    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="org.eclipse.papyrus.sysML.palette.bdd.Generalization" label="Generalization" description="A Generalization is a taxonomic relationship between a more general Classifier and a more specific Classifier." kind="ConnectionTool">
-      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.uml2.uml.edit" iconPath="/icons/full/obj16/Generalization.gif"/>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Generalization_Edge"/>
+  <drawerConfigurations
+      xmi:type="paletteconfiguration:DrawerConfiguration"
+      id="aht.dd"
+      label="Design Description Concepts">
+    <ownedConfigurations
+        xmi:type="paletteconfiguration:ToolConfiguration"
+        id="aht.sysDD"
+        label="sysDD"
+        kind="CreationTool">
+      <icon
+          xmi:type="paletteconfiguration:IconDescriptor"
+          pluginID="org.eclipse.papyrus.sysml16.edit"
+          iconPath="/icons/full/obj16/Block.gif"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_qX_2ILlNEe6vgdT8xLwaJw"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_qX_2IrlNEe6vgdT8xLwaJw"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_fReDELlMEe6vgdT8xLwaJw"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_fRfRMLlMEe6vgdT8xLwaJw"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_fRfRMrlMEe6vgdT8xLwaJw"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_fRf4QLlMEe6vgdT8xLwaJw"/>
       </elementDescriptors>
     </ownedConfigurations>
-    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="org.eclipse.papyrus.sysML.palette.bdd.Port" label="Port" description="Create new Port" kind="CreationTool">
-      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.uml2.uml.edit" iconPath="/icons/full/obj16/Port.gif"/>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Port_Shape"/>
+    <ownedConfigurations
+        xmi:type="paletteconfiguration:ToolConfiguration"
+        id="aht.IDD"
+        label="IDD"
+        kind="CreationTool">
+      <icon
+          xmi:type="paletteconfiguration:IconDescriptor"
+          pluginID="org.eclipse.papyrus.sysml16.edit"
+          iconPath="/icons/full/obj16/Block.gif"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_FG93hOB8Ee6xTsvtueAqag"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_FG-ekeB8Ee6xTsvtueAqag"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_FG-ek-B8Ee6xTsvtueAqag"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_FG-eleB8Ee6xTsvtueAqag"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_FG_FoeB8Ee6xTsvtueAqag"/>
       </elementDescriptors>
     </ownedConfigurations>
-    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="aht.ArrowheadDSLRequirement" label="ArrowheadDSLRequirement" kind="CreationTool">
-      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.papyrus.sysml16.edit" iconPath="icons/full/obj16/Requirement.gif"/>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_KY3R8uU9Ee6UDrknhMCnwA"/>
+    <ownedConfigurations
+        xmi:type="paletteconfiguration:ToolConfiguration"
+        id="aht.System_of_LocacloudsDesignDescription"
+        label="System_of_LocacloudsDesignDescription"
+        kind="CreationTool">
+      <icon
+          xmi:type="paletteconfiguration:IconDescriptor"
+          pluginID="org.eclipse.papyrus.sysml16.edit"
+          iconPath="/icons/full/obj16/Block.gif"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_-8uTsuKoEe6ymp6102DUfA"/>
       </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_KY35AeU9Ee6UDrknhMCnwA"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_-8tsoOKoEe6ymp6102DUfA"/>
       </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_KY4gEOU9Ee6UDrknhMCnwA"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_-8tsouKoEe6ymp6102DUfA"/>
       </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_KY4gEuU9Ee6UDrknhMCnwA"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_-8uTtOKoEe6ymp6102DUfA"/>
       </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_KY3R8OU9Ee6UDrknhMCnwA"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_-8uTsOKoEe6ymp6102DUfA"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_-8segOKoEe6ymp6102DUfA"/>
       </elementDescriptors>
     </ownedConfigurations>
-    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="aht.ArrowheadUseCase" label="ArrowheadUseCase" description="Create Use Case" kind="CreationTool" toolClassName="">
-      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.uml2.uml.edit" iconPath="/icons/full/obj16/UseCase.gif"/>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.UseCase_Shape"/>
+    <ownedConfigurations
+        xmi:type="paletteconfiguration:ToolConfiguration"
+        id="aht.LocalcloudDesignDescription"
+        label="LocalcloudDesignDescription"
+        kind="CreationTool">
+      <icon
+          xmi:type="paletteconfiguration:IconDescriptor"
+          pluginID="org.eclipse.papyrus.sysml16.edit"
+          iconPath="/icons/full/obj16/Block.gif"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_2PIQceKzEe6ymp6102DUfA"/>
       </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.UseCase_Shape_CCN"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_2PIQc-KzEe6ymp6102DUfA"/>
       </elementDescriptors>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.UseCase_Shape_CN"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_2PHpYeKzEe6ymp6102DUfA"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_2PHpY-KzEe6ymp6102DUfA"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_2PHpZeKzEe6ymp6102DUfA"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_2PHCUOKzEe6ymp6102DUfA"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations
+        xmi:type="paletteconfiguration:ToolConfiguration"
+        id="aht.DeviceDesignDescription"
+        label="DeviceDesignDescription"
+        kind="CreationTool">
+      <icon
+          xmi:type="paletteconfiguration:IconDescriptor"
+          pluginID="org.eclipse.papyrus.sysml16.edit"
+          iconPath="/icons/full/obj16/Block.gif"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_hcDYNOK1Ee6ymp6102DUfA"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_hcD_QOK1Ee6ymp6102DUfA"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_hcCxJOK1Ee6ymp6102DUfA"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_hcDYMOK1Ee6ymp6102DUfA"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_hcDYMuK1Ee6ymp6102DUfA"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_hcCKEOK1Ee6ymp6102DUfA"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations
+        xmi:type="paletteconfiguration:ToolConfiguration"
+        id="aht.IntracloudNetworkDesignDescription"
+        label="IntracloudNetworkDesignDescription"
+        kind="CreationTool">
+      <icon
+          xmi:type="paletteconfiguration:IconDescriptor"
+          pluginID="org.eclipse.papyrus.sysml16.edit"
+          iconPath="/icons/full/obj16/Block.gif"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_Q6bcJ-K5Ee6ymp6102DUfA"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_Q6cDMeK5Ee6ymp6102DUfA"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_Q6bcIeK5Ee6ymp6102DUfA"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_Q6bcI-K5Ee6ymp6102DUfA"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_Q6bcJeK5Ee6ymp6102DUfA"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_Q6a1EOK5Ee6ymp6102DUfA"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations
+        xmi:type="paletteconfiguration:ToolConfiguration"
+        id="aht.IntercloudNetworkDesignDescription"
+        label="IntercloudNetworkDesignDescription"
+        kind="CreationTool">
+      <icon
+          xmi:type="paletteconfiguration:IconDescriptor"
+          pluginID="org.eclipse.papyrus.sysml16.edit"
+          iconPath="/icons/full/obj16/Block.gif"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_ncyKlOLAEe6ymp6102DUfA"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_ncyxoOLAEe6ymp6102DUfA"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_ncxjhOLAEe6ymp6102DUfA"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_ncyKkOLAEe6ymp6102DUfA"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_ncyKkuLAEe6ymp6102DUfA"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_ncw8cOLAEe6ymp6102DUfA"/>
       </elementDescriptors>
     </ownedConfigurations>
   </drawerConfigurations>
-  <drawerConfigurations xmi:type="paletteconfiguration:DrawerConfiguration" id="aht.operation" label="Arrowhead operation">
-    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="aht.operationHTTP" label="HTTP operation" kind="CreationTool">
-      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.uml2.uml.edit" iconPath="/icons/full/obj16/Operation.gif"/>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_hir_Nvf_Ee6-O5ufzNujzw"/>
+  <drawerConfigurations
+      xmi:type="paletteconfiguration:DrawerConfiguration"
+      id="aht.implementation"
+      label="Implementation Concepts">
+    <ownedConfigurations
+        xmi:type="paletteconfiguration:ToolConfiguration"
+        id="aht.SysD_Imp"
+        label="System_Implementation"
+        kind="CreationTool">
+      <icon
+          xmi:type="paletteconfiguration:IconDescriptor"
+          pluginID="org.eclipse.papyrus.sysml16.edit"
+          iconPath="/icons/full/obj16/Block.gif"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_nKhGputXEe6GDMPnxKPZEg"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_nKhGqOtXEe6GDMPnxKPZEg"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_nKhGrOtXEe6GDMPnxKPZEg"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_nKhGrutXEe6GDMPnxKPZEg"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_nKhGqutXEe6GDMPnxKPZEg"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_nKhGoOtXEe6GDMPnxKPZEg"/>
       </elementDescriptors>
     </ownedConfigurations>
-    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="aht.operationCOAP" label="COAP operation" kind="CreationTool">
-      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.uml2.uml.edit" iconPath="/icons/full/obj16/Operation.gif"/>
+    <ownedConfigurations
+        xmi:type="paletteconfiguration:ToolConfiguration"
+        id="aht.IDD_Imp"
+        label="IDD_Implementation"
+        kind="CreationTool">
+      <icon
+          xmi:type="paletteconfiguration:IconDescriptor"
+          pluginID="org.eclipse.papyrus.sysml16.edit"
+          iconPath="/icons/full/obj16/Block.gif"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_oSzVAOHuEe6gsb892QdG0g"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_oSyt8OHuEe6gsb892QdG0g"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_oSyt8uHuEe6gsb892QdG0g"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_oSyt9OHuEe6gsb892QdG0g"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_oSzVAuHuEe6gsb892QdG0g"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_oSyG5OHuEe6gsb892QdG0g"/>
+      </elementDescriptors>
     </ownedConfigurations>
-    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="aht.operationWebsocket" label="Websocket operation" kind="CreationTool">
-      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.uml2.uml.edit" iconPath="/icons/full/obj16/Operation.gif"/>
+    <ownedConfigurations
+        xmi:type="paletteconfiguration:ToolConfiguration"
+        id="aht.System_of_LocalcloudsImplementation"
+        label="System_of_LocalcloudsImplementation"
+        kind="CreationTool">
+      <icon
+          xmi:type="paletteconfiguration:IconDescriptor"
+          pluginID="org.eclipse.papyrus.sysml16.edit"
+          iconPath="/icons/full/obj16/Block.gif"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_P6SetuLCEe6ymp6102DUfA"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_P6SeuOLCEe6ymp6102DUfA"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_P6SesOLCEe6ymp6102DUfA"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_P6SesuLCEe6ymp6102DUfA"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_P6SetOLCEe6ymp6102DUfA"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_P6R3oOLCEe6ymp6102DUfA"/>
+      </elementDescriptors>
     </ownedConfigurations>
-    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="aht.operationMQTT" label="MQTT operation" kind="CreationTool">
-      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.uml2.uml.edit" iconPath="/icons/full/obj16/Operation.gif"/>
+    <ownedConfigurations
+        xmi:type="paletteconfiguration:ToolConfiguration"
+        id="aht.LocalcloudImplementation"
+        label="LocalcloudImplementation"
+        kind="CreationTool">
+      <icon
+          xmi:type="paletteconfiguration:IconDescriptor"
+          pluginID="org.eclipse.papyrus.sysml16.edit"
+          iconPath="/icons/full/obj16/Block.gif"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_SowaouU0Ee6UDrknhMCnwA"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_SovzkeU0Ee6UDrknhMCnwA"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_Sovzk-U0Ee6UDrknhMCnwA"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_SowapOU0Ee6UDrknhMCnwA"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_SoulcOU0Ee6UDrknhMCnwA"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_SowaoOU0Ee6UDrknhMCnwA"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+  </drawerConfigurations>
+  <drawerConfigurations
+      xmi:type="paletteconfiguration:DrawerConfiguration"
+      id="aht.general"
+      label="General Concepts">
+    <icon xmi:type="paletteconfiguration:IconDescriptor"
+        pluginID="org.eclipse.papyrus.sysml16.edit"
+        iconPath="icons/full/obj16/FlowProperty.gif"/>
+    <ownedConfigurations
+        xmi:type="paletteconfiguration:ToolConfiguration"
+        id="org.eclipse.papyrus.sysML.palette.bdd.Generalization"
+        label="Generalization"
+        description="A Generalization is a taxonomic relationship between a more general Classifier and a more specific Classifier."
+        kind="ConnectionTool">
+      <icon
+          xmi:type="paletteconfiguration:IconDescriptor"
+          pluginID="org.eclipse.uml2.uml.edit"
+          iconPath="/icons/full/obj16/Generalization.gif"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Generalization_Edge"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations
+        xmi:type="paletteconfiguration:ToolConfiguration"
+        id="org.eclipse.papyrus.sysML.palette.bdd.Port"
+        label="Port"
+        description="Create new Port"
+        kind="CreationTool">
+      <icon
+          xmi:type="paletteconfiguration:IconDescriptor"
+          pluginID="org.eclipse.uml2.uml.edit"
+          iconPath="/icons/full/obj16/Port.gif"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Port_Shape"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations
+        xmi:type="paletteconfiguration:ToolConfiguration"
+        id="aht.ArrowheadDSLRequirement"
+        label="ArrowheadDSLRequirement"
+        kind="CreationTool">
+      <icon
+          xmi:type="paletteconfiguration:IconDescriptor"
+          pluginID="org.eclipse.papyrus.sysml16.edit"
+          iconPath="icons/full/obj16/Requirement.gif"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_KY3R8uU9Ee6UDrknhMCnwA"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_KY35AeU9Ee6UDrknhMCnwA"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_KY4gEOU9Ee6UDrknhMCnwA"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_KY4gEuU9Ee6UDrknhMCnwA"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_KY3R8OU9Ee6UDrknhMCnwA"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations
+        xmi:type="paletteconfiguration:ToolConfiguration"
+        id="aht.ArrowheadUseCase"
+        label="ArrowheadUseCase"
+        description="Create Use Case"
+        kind="CreationTool"
+        toolClassName="">
+      <icon
+          xmi:type="paletteconfiguration:IconDescriptor"
+          pluginID="org.eclipse.uml2.uml.edit"
+          iconPath="/icons/full/obj16/UseCase.gif"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.UseCase_Shape"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.UseCase_Shape_CCN"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.UseCase_Shape_CN"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations
+        xmi:type="paletteconfiguration:ToolConfiguration"
+        id="org.eclipse.papyrus.sysML.palette.bdd.Opertaion"
+        label="Operation"
+        description=""
+        kind="CreationTool">
+      <icon
+          xmi:type="paletteconfiguration:IconDescriptor"
+          pluginID="org.eclipse.uml2.uml.edit"
+          iconPath="/icons/full/obj16/Operation.gif"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Operation_ComponentOperationLabel"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Operation_InterfaceOperationLabel"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Operation_ClassOperationLabel"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Operation_DataTypeOperationLabel"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Operation_PrimitiveTypeOperationLabel"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+  </drawerConfigurations>
+  <drawerConfigurations
+      xmi:type="paletteconfiguration:DrawerConfiguration"
+      id="aht.operation"
+      label="Arrowhead operation">
+    <ownedConfigurations
+        xmi:type="paletteconfiguration:ToolConfiguration"
+        id="aht.operationHTTP"
+        label="HTTP operation"
+        kind="CreationTool">
+      <icon
+          xmi:type="paletteconfiguration:IconDescriptor"
+          pluginID="org.eclipse.uml2.uml.edit"
+          iconPath="/icons/full/obj16/Operation.gif"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_xm57dPy6Ee6MDucytuqm6Q"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_xm6igPy6Ee6MDucytuqm6Q"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_xm6igvy6Ee6MDucytuqm6Q"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_xm6ihPy6Ee6MDucytuqm6Q"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_xm6ihvy6Ee6MDucytuqm6Q"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations
+        xmi:type="paletteconfiguration:ToolConfiguration"
+        id="aht.operationCOAP"
+        label="COAP operation"
+        kind="CreationTool">
+      <icon
+          xmi:type="paletteconfiguration:IconDescriptor"
+          pluginID="org.eclipse.uml2.uml.edit"
+          iconPath="/icons/full/obj16/Operation.gif"/>
+    </ownedConfigurations>
+    <ownedConfigurations
+        xmi:type="paletteconfiguration:ToolConfiguration"
+        id="aht.operationWebsocket"
+        label="Websocket operation"
+        kind="CreationTool">
+      <icon
+          xmi:type="paletteconfiguration:IconDescriptor"
+          pluginID="org.eclipse.uml2.uml.edit"
+          iconPath="/icons/full/obj16/Operation.gif"/>
+    </ownedConfigurations>
+    <ownedConfigurations
+        xmi:type="paletteconfiguration:ToolConfiguration"
+        id="aht.operationMQTT"
+        label="MQTT operation"
+        kind="CreationTool">
+      <icon
+          xmi:type="paletteconfiguration:IconDescriptor"
+          pluginID="org.eclipse.uml2.uml.edit"
+          iconPath="/icons/full/obj16/Operation.gif"/>
     </ownedConfigurations>
   </drawerConfigurations>
 </paletteconfiguration:PaletteConfiguration>

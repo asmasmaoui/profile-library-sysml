@@ -399,5 +399,13 @@
       <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
           propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//ArrowheadDSLOperationWebsocket/base_Operation"/>
     </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//FullPort">
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//FullPort/base_Port"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//ProxyPort">
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//ProxyPort/base_Port"/>
+    </genClasses>
   </genPackages>
 </genmodel:GenModel>

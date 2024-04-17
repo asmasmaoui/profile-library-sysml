@@ -255,6 +255,18 @@ public class ArrowheadDSLSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case ArrowheadDSLPackage.FULL_PORT: {
+				FullPort fullPort = (FullPort)theEObject;
+				T result = caseFullPort(fullPort);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ArrowheadDSLPackage.PROXY_PORT: {
+				ProxyPort proxyPort = (ProxyPort)theEObject;
+				T result = caseProxyPort(proxyPort);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			default: return defaultCase(theEObject);
 		}
 	}
@@ -616,6 +628,36 @@ public class ArrowheadDSLSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseArrowheadDSLOperationWebsocket(ArrowheadDSLOperationWebsocket object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Full Port</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Full Port</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseFullPort(FullPort object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Proxy Port</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Proxy Port</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProxyPort(ProxyPort object) {
 		return null;
 	}
 
