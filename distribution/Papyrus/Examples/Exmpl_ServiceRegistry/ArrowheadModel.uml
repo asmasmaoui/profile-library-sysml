@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ArrowheadDSL="http://www.eclipse.org/papyrus/arrowhead" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Model xmi:id="_mCIsAPyfEe6i9Z5w4wqK2A" name="ArrowheadModel">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_mEdAMvyfEe6i9Z5w4wqK2A">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_mEljEPyfEe6i9Z5w4wqK2A">
+      <importedPackage xmi:type="uml:Package" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_HIisMPygEe6i9Z5w4wqK2A" name="ServiceDiscovery">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_IB5rMPyiEe6i9Z5w4wqK2A" name="Register">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_xQFNUPyuEe6i9Z5w4wqK2A" name="ServiceRegistryRequest"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_DIH30PytEe6i9Z5w4wqK2A" name="Unregister">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_FEgPgPyuEe6i9Z5w4wqK2A" name="ServiceRegestryRequest"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_e_Hh8PyvEe6i9Z5w4wqK2A" name="Echo "/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_qrzLgPyvEe6i9Z5w4wqK2A" name="Query" isQuery="true">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_yPeYUPyvEe6i9Z5w4wqK2A" name="ServiceQueryForm"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_9S4bYPyvEe6i9Z5w4wqK2A" name="ServiceQueryList"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_SWNrQPywEe6i9Z5w4wqK2A" name="ServiceDiscovery_DD">
+      <generalization xmi:type="uml:Generalization" xmi:id="_f2H24Py5Ee6i9Z5w4wqK2A" general="_HIisMPygEe6i9Z5w4wqK2A"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_bGEXUPywEe6i9Z5w4wqK2A" name="Register">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_9b4w8PywEe6i9Z5w4wqK2A" name="ServiceRegestryRequest"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_chmrwPyxEe6i9Z5w4wqK2A" name="Unregister">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_mKhGwPyxEe6i9Z5w4wqK2A" name="ServiceRegestryRequest"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_qUvEcPyxEe6i9Z5w4wqK2A" name="Echo "/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_qUw5oPyxEe6i9Z5w4wqK2A" name="Query" isQuery="true">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_qUw5ofyxEe6i9Z5w4wqK2A" name="ServiceQueryForm"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_qUw5ovyxEe6i9Z5w4wqK2A" name="ServiceQueryList"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_OUlFAPy0Ee6i9Z5w4wqK2A" name="ServiceDescovery_MQTT">
+      <generalization xmi:type="uml:Generalization" xmi:id="_geVtcPy5Ee6i9Z5w4wqK2A" general="_HIisMPygEe6i9Z5w4wqK2A"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_mL44YPy0Ee6i9Z5w4wqK2A" name="Register">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_mL44Yfy0Ee6i9Z5w4wqK2A" name="ServiceRegestryForm"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_mL44Yvy0Ee6i9Z5w4wqK2A" name="ServiceRegistryFormReturn"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_mL5fcPy0Ee6i9Z5w4wqK2A" name="Unregister">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_mL5fcfy0Ee6i9Z5w4wqK2A" name="ServiceRegestryForm"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_RHA68Py1Ee6i9Z5w4wqK2A" name="Status"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_mL6GgPy0Ee6i9Z5w4wqK2A" name="Echo ">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_f4z7UPy1Ee6i9Z5w4wqK2A" name="EchoRequest"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_jUVnAPy1Ee6i9Z5w4wqK2A" name="EchoResponse"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_mL6Ggfy0Ee6i9Z5w4wqK2A" name="Query" isQuery="true">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_mL6Ggvy0Ee6i9Z5w4wqK2A" name="ServiceQueryForm_MQTT"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_mL6Gg_y0Ee6i9Z5w4wqK2A" name="ServiceQueryList"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NUzGMPy4Ee6i9Z5w4wqK2A" name="ServiceDescovery_CoAP">
+      <generalization xmi:type="uml:Generalization" xmi:id="_kJkCAPy5Ee6i9Z5w4wqK2A" general="_HIisMPygEe6i9Z5w4wqK2A"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_j2H-EPy4Ee6i9Z5w4wqK2A" name="Register">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_j2H-Efy4Ee6i9Z5w4wqK2A" name="ServiceRegestryForm"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_j2JMMPy4Ee6i9Z5w4wqK2A" name="Unregister">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_j2JMMfy4Ee6i9Z5w4wqK2A" name="ServiceRegestryForm"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_j2JMMvy4Ee6i9Z5w4wqK2A" name="Response"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_j2KaUPy4Ee6i9Z5w4wqK2A" name="Echo ">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_j2KaUvy4Ee6i9Z5w4wqK2A" name="EchoResponse"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_j2LocPy4Ee6i9Z5w4wqK2A" name="Query" isQuery="true">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_j2Locfy4Ee6i9Z5w4wqK2A" name="ServiceQueryForm"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_j2Locvy4Ee6i9Z5w4wqK2A" name="ServiceQueryList"/>
+      </ownedOperation>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_mCnNIPyfEe6i9Z5w4wqK2A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mCnNIfyfEe6i9Z5w4wqK2A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/arrowhead#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Arrowhead_Profile/ArrowheadProfile_v5.0.profile.uml#_sX4gkDIREe6ldMRwfXEyUg"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_mEaj8PyfEe6i9Z5w4wqK2A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mEbLAPyfEe6i9Z5w4wqK2A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_mEbLAfyfEe6i9Z5w4wqK2A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mEbLAvyfEe6i9Z5w4wqK2A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//activities"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Activities"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_mEbyEPyfEe6i9Z5w4wqK2A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mEbyEfyfEe6i9Z5w4wqK2A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//allocations"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Allocations"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_mEbyEvyfEe6i9Z5w4wqK2A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mEbyE_yfEe6i9Z5w4wqK2A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_mEbyFPyfEe6i9Z5w4wqK2A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mEbyFfyfEe6i9Z5w4wqK2A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//constraintblocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ConstraintBlocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_mEbyFvyfEe6i9Z5w4wqK2A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mEbyF_yfEe6i9Z5w4wqK2A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//deprecatedelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_DeprecatedElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_mEcZIPyfEe6i9Z5w4wqK2A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mEcZIfyfEe6i9Z5w4wqK2A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//modelelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ModelElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_mEcZIvyfEe6i9Z5w4wqK2A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mEcZI_yfEe6i9Z5w4wqK2A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Ports_u0026Flows"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_mEcZJPyfEe6i9Z5w4wqK2A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mEcZJfyfEe6i9Z5w4wqK2A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_mEdAMPyfEe6i9Z5w4wqK2A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mEdAMfyfEe6i9Z5w4wqK2A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <ArrowheadDSL:SD xmi:id="_HInksPygEe6i9Z5w4wqK2A" base_Class="_HIisMPygEe6i9Z5w4wqK2A"/>
+  <ArrowheadDSL:IDD xmi:id="_SWQukPywEe6i9Z5w4wqK2A" base_Class="_SWNrQPywEe6i9Z5w4wqK2A"/>
+  <ArrowheadDSL:ArrowheadDSLOperationHTTP xmi:id="_p6nJsPywEe6i9Z5w4wqK2A" SubURL="/serviceregistry/register" base_Operation="_bGEXUPywEe6i9Z5w4wqK2A"/>
+  <ArrowheadDSL:ArrowheadDSLOperationHTTP xmi:id="_J90LAPyyEe6i9Z5w4wqK2A" SubURL="/serviceregistry/unregiter" base_Operation="_chmrwPyxEe6i9Z5w4wqK2A"/>
+  <ArrowheadDSL:ArrowheadDSLOperationHTTP xmi:id="_e3Xz0PyyEe6i9Z5w4wqK2A" Method="GET" SubURL="/serviceRegistry/echo" base_Operation="_qUvEcPyxEe6i9Z5w4wqK2A"/>
+  <ArrowheadDSL:ArrowheadDSLOperationHTTP xmi:id="_9AlDEPyyEe6i9Z5w4wqK2A" SubURL="/serviceregistry/query" base_Operation="_qUw5oPyxEe6i9Z5w4wqK2A"/>
+  <ArrowheadDSL:IDD xmi:id="_OUnhQPy0Ee6i9Z5w4wqK2A" base_Class="_OUlFAPy0Ee6i9Z5w4wqK2A"/>
+  <ArrowheadDSL:ArrowheadDSLOperationMQTT xmi:id="_pUVQAPy0Ee6i9Z5w4wqK2A" Topic="/ah/serviceregistry/register" base_Operation="_mL44YPy0Ee6i9Z5w4wqK2A"/>
+  <ArrowheadDSL:ArrowheadDSLOperationMQTT xmi:id="_TaLQYPy1Ee6i9Z5w4wqK2A" Topic="/ah/serviceregistry/unregister" base_Operation="_mL5fcPy0Ee6i9Z5w4wqK2A"/>
+  <ArrowheadDSL:ArrowheadDSLOperationMQTT xmi:id="_lwe5UPy1Ee6i9Z5w4wqK2A" Method="GET" Topic="/ah/serviceregistry/echo" base_Operation="_mL6GgPy0Ee6i9Z5w4wqK2A"/>
+  <ArrowheadDSL:ArrowheadDSLOperationMQTT xmi:id="_l0tnIPy3Ee6i9Z5w4wqK2A" Topic="/ah/serviceregistry/query" base_Operation="_mL6Ggfy0Ee6i9Z5w4wqK2A"/>
+  <ArrowheadDSL:IDD xmi:id="_NU1icPy4Ee6i9Z5w4wqK2A" base_Class="_NUzGMPy4Ee6i9Z5w4wqK2A"/>
+  <ArrowheadDSL:ArrowheadDSLOperationCOAP xmi:id="_qhIdgPy4Ee6i9Z5w4wqK2A" Method="POST" base_Operation="_j2H-EPy4Ee6i9Z5w4wqK2A" SubURL="/serviceregistry/register"/>
+  <ArrowheadDSL:ArrowheadDSLOperationCOAP xmi:id="_-6tlwPy4Ee6i9Z5w4wqK2A" Method="POST" base_Operation="_j2JMMPy4Ee6i9Z5w4wqK2A" SubURL="/serviceregistry/unregister"/>
+  <ArrowheadDSL:ArrowheadDSLOperationCOAP xmi:id="_LFNzwPy5Ee6i9Z5w4wqK2A" base_Operation="_j2KaUPy4Ee6i9Z5w4wqK2A" SubURL="/serviceregistry/echo"/>
+  <ArrowheadDSL:ArrowheadDSLOperationCOAP xmi:id="_RoxAUPy5Ee6i9Z5w4wqK2A" Method="POST" base_Operation="_j2LocPy4Ee6i9Z5w4wqK2A" SubURL="/serviceregistry/query"/>
+</xmi:XMI>
