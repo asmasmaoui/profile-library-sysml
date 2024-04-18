@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ArrowheadDSL="http://www.eclipse.org/papyrus/arrowhead" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ArrowheadDSL="http://www.eclipse.org/papyrus/arrowhead" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks">
   <uml:Model xmi:id="_mCIsAPyfEe6i9Z5w4wqK2A" name="ArrowheadModel">
     <packageImport xmi:type="uml:PackageImport" xmi:id="_mEdAMvyfEe6i9Z5w4wqK2A">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
@@ -9,24 +9,24 @@
     </packageImport>
     <packagedElement xmi:type="uml:Class" xmi:id="_HIisMPygEe6i9Z5w4wqK2A" name="ServiceDiscovery">
       <ownedOperation xmi:type="uml:Operation" xmi:id="_IB5rMPyiEe6i9Z5w4wqK2A" name="Register">
-        <ownedParameter xmi:type="uml:Parameter" xmi:id="_xQFNUPyuEe6i9Z5w4wqK2A" name="ServiceRegistryRequest"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_xQFNUPyuEe6i9Z5w4wqK2A" name="ServiceRegistryRequest" type="_DQWwEP1YEe6dPJLtMaqiPg"/>
       </ownedOperation>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_DIH30PytEe6i9Z5w4wqK2A" name="Unregister">
-        <ownedParameter xmi:type="uml:Parameter" xmi:id="_FEgPgPyuEe6i9Z5w4wqK2A" name="ServiceRegestryRequest"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_FEgPgPyuEe6i9Z5w4wqK2A" name="ServiceRegestryRequest" type="_DQWwEP1YEe6dPJLtMaqiPg"/>
       </ownedOperation>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_e_Hh8PyvEe6i9Z5w4wqK2A" name="Echo "/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_qrzLgPyvEe6i9Z5w4wqK2A" name="Query" isQuery="true">
-        <ownedParameter xmi:type="uml:Parameter" xmi:id="_yPeYUPyvEe6i9Z5w4wqK2A" name="ServiceQueryForm"/>
-        <ownedParameter xmi:type="uml:Parameter" xmi:id="_9S4bYPyvEe6i9Z5w4wqK2A" name="ServiceQueryList"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_yPeYUPyvEe6i9Z5w4wqK2A" name="ServiceQueryForm" type="_DQWwEP1YEe6dPJLtMaqiPg"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_9S4bYPyvEe6i9Z5w4wqK2A" name="ServiceQueryList" type="_DQWwEP1YEe6dPJLtMaqiPg"/>
       </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_SWNrQPywEe6i9Z5w4wqK2A" name="ServiceDiscovery_DD">
       <generalization xmi:type="uml:Generalization" xmi:id="_f2H24Py5Ee6i9Z5w4wqK2A" general="_HIisMPygEe6i9Z5w4wqK2A"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_bGEXUPywEe6i9Z5w4wqK2A" name="Register">
-        <ownedParameter xmi:type="uml:Parameter" xmi:id="_9b4w8PywEe6i9Z5w4wqK2A" name="ServiceRegestryRequest"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_9b4w8PywEe6i9Z5w4wqK2A" name="ServiceRegestryRequest" type="_DQWwEP1YEe6dPJLtMaqiPg"/>
       </ownedOperation>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_chmrwPyxEe6i9Z5w4wqK2A" name="Unregister">
-        <ownedParameter xmi:type="uml:Parameter" xmi:id="_mKhGwPyxEe6i9Z5w4wqK2A" name="ServiceRegestryRequest"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_mKhGwPyxEe6i9Z5w4wqK2A" name="ServiceRegestryRequest" type="_DQWwEP1YEe6dPJLtMaqiPg"/>
       </ownedOperation>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_qUvEcPyxEe6i9Z5w4wqK2A" name="Echo "/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_qUw5oPyxEe6i9Z5w4wqK2A" name="Query" isQuery="true">
@@ -37,11 +37,11 @@
     <packagedElement xmi:type="uml:Class" xmi:id="_OUlFAPy0Ee6i9Z5w4wqK2A" name="ServiceDescovery_MQTT">
       <generalization xmi:type="uml:Generalization" xmi:id="_geVtcPy5Ee6i9Z5w4wqK2A" general="_HIisMPygEe6i9Z5w4wqK2A"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_mL44YPy0Ee6i9Z5w4wqK2A" name="Register">
-        <ownedParameter xmi:type="uml:Parameter" xmi:id="_mL44Yfy0Ee6i9Z5w4wqK2A" name="ServiceRegestryForm"/>
-        <ownedParameter xmi:type="uml:Parameter" xmi:id="_mL44Yvy0Ee6i9Z5w4wqK2A" name="ServiceRegistryFormReturn"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_mL44Yfy0Ee6i9Z5w4wqK2A" name="ServiceRegestryForm" type="_DQWwEP1YEe6dPJLtMaqiPg"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_mL44Yvy0Ee6i9Z5w4wqK2A" name="ServiceRegistryFormReturn" type="_DQWwEP1YEe6dPJLtMaqiPg"/>
       </ownedOperation>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_mL5fcPy0Ee6i9Z5w4wqK2A" name="Unregister">
-        <ownedParameter xmi:type="uml:Parameter" xmi:id="_mL5fcfy0Ee6i9Z5w4wqK2A" name="ServiceRegestryForm"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_mL5fcfy0Ee6i9Z5w4wqK2A" name="ServiceRegestryForm" type="_DQWwEP1YEe6dPJLtMaqiPg"/>
         <ownedParameter xmi:type="uml:Parameter" xmi:id="_RHA68Py1Ee6i9Z5w4wqK2A" name="Status"/>
       </ownedOperation>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_mL6GgPy0Ee6i9Z5w4wqK2A" name="Echo ">
@@ -56,10 +56,10 @@
     <packagedElement xmi:type="uml:Class" xmi:id="_NUzGMPy4Ee6i9Z5w4wqK2A" name="ServiceDescovery_CoAP">
       <generalization xmi:type="uml:Generalization" xmi:id="_kJkCAPy5Ee6i9Z5w4wqK2A" general="_HIisMPygEe6i9Z5w4wqK2A"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_j2H-EPy4Ee6i9Z5w4wqK2A" name="Register">
-        <ownedParameter xmi:type="uml:Parameter" xmi:id="_j2H-Efy4Ee6i9Z5w4wqK2A" name="ServiceRegestryForm"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_j2H-Efy4Ee6i9Z5w4wqK2A" name="ServiceRegestryForm" type="_DQWwEP1YEe6dPJLtMaqiPg"/>
       </ownedOperation>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_j2JMMPy4Ee6i9Z5w4wqK2A" name="Unregister">
-        <ownedParameter xmi:type="uml:Parameter" xmi:id="_j2JMMfy4Ee6i9Z5w4wqK2A" name="ServiceRegestryForm"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_j2JMMfy4Ee6i9Z5w4wqK2A" name="ServiceRegestryForm" type="_DQWwEP1YEe6dPJLtMaqiPg"/>
         <ownedParameter xmi:type="uml:Parameter" xmi:id="_j2JMMvy4Ee6i9Z5w4wqK2A" name="Response"/>
       </ownedOperation>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_j2KaUPy4Ee6i9Z5w4wqK2A" name="Echo ">
@@ -70,6 +70,7 @@
         <ownedParameter xmi:type="uml:Parameter" xmi:id="_j2Locvy4Ee6i9Z5w4wqK2A" name="ServiceQueryList"/>
       </ownedOperation>
     </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_DQWwEP1YEe6dPJLtMaqiPg" name="ServiceRegistryRequest"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_mCnNIPyfEe6i9Z5w4wqK2A">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mCnNIfyfEe6i9Z5w4wqK2A" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/arrowhead#/"/>
@@ -153,4 +154,5 @@
   <ArrowheadDSL:ArrowheadDSLOperationCOAP xmi:id="_-6tlwPy4Ee6i9Z5w4wqK2A" Method="POST" base_Operation="_j2JMMPy4Ee6i9Z5w4wqK2A" SubURL="/serviceregistry/unregister"/>
   <ArrowheadDSL:ArrowheadDSLOperationCOAP xmi:id="_LFNzwPy5Ee6i9Z5w4wqK2A" base_Operation="_j2KaUPy4Ee6i9Z5w4wqK2A" SubURL="/serviceregistry/echo"/>
   <ArrowheadDSL:ArrowheadDSLOperationCOAP xmi:id="_RoxAUPy5Ee6i9Z5w4wqK2A" Method="POST" base_Operation="_j2LocPy4Ee6i9Z5w4wqK2A" SubURL="/serviceregistry/query"/>
+  <Blocks:Block xmi:id="_DQtVYP1YEe6dPJLtMaqiPg" base_Class="_DQWwEP1YEe6dPJLtMaqiPg"/>
 </xmi:XMI>
