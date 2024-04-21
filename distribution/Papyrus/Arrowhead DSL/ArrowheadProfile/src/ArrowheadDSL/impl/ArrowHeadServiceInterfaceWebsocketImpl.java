@@ -2,7 +2,7 @@
  */
 package ArrowheadDSL.impl;
 
-import ArrowheadDSL.ArrowheadDSLOperationWebsocket;
+import ArrowheadDSL.ArrowHeadServiceInterfaceWebsocket;
 import ArrowheadDSL.ArrowheadDSLPackage;
 import ArrowheadDSL.WebsocketDataFramingTypeKind;
 
@@ -18,20 +18,20 @@ import org.eclipse.uml2.uml.Operation;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Operation Websocket</b></em>'.
+ * An implementation of the model object '<em><b>Arrow Head Service Interface Websocket</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link ArrowheadDSL.impl.ArrowheadDSLOperationWebsocketImpl#getMethod <em>Method</em>}</li>
- *   <li>{@link ArrowheadDSL.impl.ArrowheadDSLOperationWebsocketImpl#getSubURL <em>Sub URL</em>}</li>
- *   <li>{@link ArrowheadDSL.impl.ArrowheadDSLOperationWebsocketImpl#getBase_Operation <em>Base Operation</em>}</li>
+ *   <li>{@link ArrowheadDSL.impl.ArrowHeadServiceInterfaceWebsocketImpl#getMethod <em>Method</em>}</li>
+ *   <li>{@link ArrowheadDSL.impl.ArrowHeadServiceInterfaceWebsocketImpl#getSubURL <em>Sub URL</em>}</li>
+ *   <li>{@link ArrowheadDSL.impl.ArrowHeadServiceInterfaceWebsocketImpl#getBase_Operation <em>Base Operation</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class ArrowheadDSLOperationWebsocketImpl extends MinimalEObjectImpl.Container implements ArrowheadDSLOperationWebsocket {
+public class ArrowHeadServiceInterfaceWebsocketImpl extends MinimalEObjectImpl.Container implements ArrowHeadServiceInterfaceWebsocket {
 	/**
 	 * The default value of the '{@link #getMethod() <em>Method</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -87,7 +87,7 @@ public class ArrowheadDSLOperationWebsocketImpl extends MinimalEObjectImpl.Conta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected ArrowheadDSLOperationWebsocketImpl() {
+	protected ArrowHeadServiceInterfaceWebsocketImpl() {
 		super();
 	}
 
@@ -98,7 +98,7 @@ public class ArrowheadDSLOperationWebsocketImpl extends MinimalEObjectImpl.Conta
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return ArrowheadDSLPackage.Literals.ARROWHEAD_DSL_OPERATION_WEBSOCKET;
+		return ArrowheadDSLPackage.Literals.ARROW_HEAD_SERVICE_INTERFACE_WEBSOCKET;
 	}
 
 	/**
@@ -121,7 +121,7 @@ public class ArrowheadDSLOperationWebsocketImpl extends MinimalEObjectImpl.Conta
 		WebsocketDataFramingTypeKind oldMethod = method;
 		method = newMethod == null ? METHOD_EDEFAULT : newMethod;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_WEBSOCKET__METHOD, oldMethod, method));
+			eNotify(new ENotificationImpl(this, Notification.SET, ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_WEBSOCKET__METHOD, oldMethod, method));
 	}
 
 	/**
@@ -144,7 +144,7 @@ public class ArrowheadDSLOperationWebsocketImpl extends MinimalEObjectImpl.Conta
 		String oldSubURL = subURL;
 		subURL = newSubURL;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_WEBSOCKET__SUB_URL, oldSubURL, subURL));
+			eNotify(new ENotificationImpl(this, Notification.SET, ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_WEBSOCKET__SUB_URL, oldSubURL, subURL));
 	}
 
 	/**
@@ -159,7 +159,7 @@ public class ArrowheadDSLOperationWebsocketImpl extends MinimalEObjectImpl.Conta
 			base_Operation = (Operation)eResolveProxy(oldBase_Operation);
 			if (base_Operation != oldBase_Operation) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_WEBSOCKET__BASE_OPERATION, oldBase_Operation, base_Operation));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_WEBSOCKET__BASE_OPERATION, oldBase_Operation, base_Operation));
 			}
 		}
 		return base_Operation;
@@ -184,7 +184,7 @@ public class ArrowheadDSLOperationWebsocketImpl extends MinimalEObjectImpl.Conta
 		Operation oldBase_Operation = base_Operation;
 		base_Operation = newBase_Operation;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_WEBSOCKET__BASE_OPERATION, oldBase_Operation, base_Operation));
+			eNotify(new ENotificationImpl(this, Notification.SET, ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_WEBSOCKET__BASE_OPERATION, oldBase_Operation, base_Operation));
 	}
 
 	/**
@@ -195,11 +195,11 @@ public class ArrowheadDSLOperationWebsocketImpl extends MinimalEObjectImpl.Conta
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_WEBSOCKET__METHOD:
+			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_WEBSOCKET__METHOD:
 				return getMethod();
-			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_WEBSOCKET__SUB_URL:
+			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_WEBSOCKET__SUB_URL:
 				return getSubURL();
-			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_WEBSOCKET__BASE_OPERATION:
+			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_WEBSOCKET__BASE_OPERATION:
 				if (resolve) return getBase_Operation();
 				return basicGetBase_Operation();
 		}
@@ -214,13 +214,13 @@ public class ArrowheadDSLOperationWebsocketImpl extends MinimalEObjectImpl.Conta
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_WEBSOCKET__METHOD:
+			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_WEBSOCKET__METHOD:
 				setMethod((WebsocketDataFramingTypeKind)newValue);
 				return;
-			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_WEBSOCKET__SUB_URL:
+			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_WEBSOCKET__SUB_URL:
 				setSubURL((String)newValue);
 				return;
-			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_WEBSOCKET__BASE_OPERATION:
+			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_WEBSOCKET__BASE_OPERATION:
 				setBase_Operation((Operation)newValue);
 				return;
 		}
@@ -235,13 +235,13 @@ public class ArrowheadDSLOperationWebsocketImpl extends MinimalEObjectImpl.Conta
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_WEBSOCKET__METHOD:
+			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_WEBSOCKET__METHOD:
 				setMethod(METHOD_EDEFAULT);
 				return;
-			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_WEBSOCKET__SUB_URL:
+			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_WEBSOCKET__SUB_URL:
 				setSubURL(SUB_URL_EDEFAULT);
 				return;
-			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_WEBSOCKET__BASE_OPERATION:
+			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_WEBSOCKET__BASE_OPERATION:
 				setBase_Operation((Operation)null);
 				return;
 		}
@@ -256,11 +256,11 @@ public class ArrowheadDSLOperationWebsocketImpl extends MinimalEObjectImpl.Conta
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_WEBSOCKET__METHOD:
+			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_WEBSOCKET__METHOD:
 				return method != METHOD_EDEFAULT;
-			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_WEBSOCKET__SUB_URL:
+			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_WEBSOCKET__SUB_URL:
 				return SUB_URL_EDEFAULT == null ? subURL != null : !SUB_URL_EDEFAULT.equals(subURL);
-			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_WEBSOCKET__BASE_OPERATION:
+			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_WEBSOCKET__BASE_OPERATION:
 				return base_Operation != null;
 		}
 		return super.eIsSet(featureID);
@@ -284,4 +284,4 @@ public class ArrowheadDSLOperationWebsocketImpl extends MinimalEObjectImpl.Conta
 		return result.toString();
 	}
 
-} //ArrowheadDSLOperationWebsocketImpl
+} //ArrowHeadServiceInterfaceWebsocketImpl

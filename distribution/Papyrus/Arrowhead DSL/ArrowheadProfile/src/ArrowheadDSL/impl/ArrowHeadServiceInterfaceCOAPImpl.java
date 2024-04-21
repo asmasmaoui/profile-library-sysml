@@ -2,7 +2,7 @@
  */
 package ArrowheadDSL.impl;
 
-import ArrowheadDSL.ArrowheadDSLOperationCOAP;
+import ArrowheadDSL.ArrowHeadServiceInterfaceCOAP;
 import ArrowheadDSL.ArrowheadDSLPackage;
 import ArrowheadDSL.CoAPMethodKind;
 
@@ -18,20 +18,20 @@ import org.eclipse.uml2.uml.Operation;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Operation COAP</b></em>'.
+ * An implementation of the model object '<em><b>Arrow Head Service Interface COAP</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link ArrowheadDSL.impl.ArrowheadDSLOperationCOAPImpl#getMethod <em>Method</em>}</li>
- *   <li>{@link ArrowheadDSL.impl.ArrowheadDSLOperationCOAPImpl#getBase_Operation <em>Base Operation</em>}</li>
- *   <li>{@link ArrowheadDSL.impl.ArrowheadDSLOperationCOAPImpl#getSubURL <em>Sub URL</em>}</li>
+ *   <li>{@link ArrowheadDSL.impl.ArrowHeadServiceInterfaceCOAPImpl#getMethod <em>Method</em>}</li>
+ *   <li>{@link ArrowheadDSL.impl.ArrowHeadServiceInterfaceCOAPImpl#getBase_Operation <em>Base Operation</em>}</li>
+ *   <li>{@link ArrowheadDSL.impl.ArrowHeadServiceInterfaceCOAPImpl#getSubURL <em>Sub URL</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class ArrowheadDSLOperationCOAPImpl extends MinimalEObjectImpl.Container implements ArrowheadDSLOperationCOAP {
+public class ArrowHeadServiceInterfaceCOAPImpl extends MinimalEObjectImpl.Container implements ArrowHeadServiceInterfaceCOAP {
 	/**
 	 * The default value of the '{@link #getMethod() <em>Method</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -87,7 +87,7 @@ public class ArrowheadDSLOperationCOAPImpl extends MinimalEObjectImpl.Container 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected ArrowheadDSLOperationCOAPImpl() {
+	protected ArrowHeadServiceInterfaceCOAPImpl() {
 		super();
 	}
 
@@ -98,7 +98,7 @@ public class ArrowheadDSLOperationCOAPImpl extends MinimalEObjectImpl.Container 
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return ArrowheadDSLPackage.Literals.ARROWHEAD_DSL_OPERATION_COAP;
+		return ArrowheadDSLPackage.Literals.ARROW_HEAD_SERVICE_INTERFACE_COAP;
 	}
 
 	/**
@@ -121,7 +121,7 @@ public class ArrowheadDSLOperationCOAPImpl extends MinimalEObjectImpl.Container 
 		CoAPMethodKind oldMethod = method;
 		method = newMethod == null ? METHOD_EDEFAULT : newMethod;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_COAP__METHOD, oldMethod, method));
+			eNotify(new ENotificationImpl(this, Notification.SET, ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_COAP__METHOD, oldMethod, method));
 	}
 
 	/**
@@ -136,7 +136,7 @@ public class ArrowheadDSLOperationCOAPImpl extends MinimalEObjectImpl.Container 
 			base_Operation = (Operation)eResolveProxy(oldBase_Operation);
 			if (base_Operation != oldBase_Operation) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_COAP__BASE_OPERATION, oldBase_Operation, base_Operation));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_COAP__BASE_OPERATION, oldBase_Operation, base_Operation));
 			}
 		}
 		return base_Operation;
@@ -161,7 +161,7 @@ public class ArrowheadDSLOperationCOAPImpl extends MinimalEObjectImpl.Container 
 		Operation oldBase_Operation = base_Operation;
 		base_Operation = newBase_Operation;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_COAP__BASE_OPERATION, oldBase_Operation, base_Operation));
+			eNotify(new ENotificationImpl(this, Notification.SET, ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_COAP__BASE_OPERATION, oldBase_Operation, base_Operation));
 	}
 
 	/**
@@ -184,7 +184,7 @@ public class ArrowheadDSLOperationCOAPImpl extends MinimalEObjectImpl.Container 
 		String oldSubURL = subURL;
 		subURL = newSubURL;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_COAP__SUB_URL, oldSubURL, subURL));
+			eNotify(new ENotificationImpl(this, Notification.SET, ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_COAP__SUB_URL, oldSubURL, subURL));
 	}
 
 	/**
@@ -195,12 +195,12 @@ public class ArrowheadDSLOperationCOAPImpl extends MinimalEObjectImpl.Container 
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_COAP__METHOD:
+			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_COAP__METHOD:
 				return getMethod();
-			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_COAP__BASE_OPERATION:
+			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_COAP__BASE_OPERATION:
 				if (resolve) return getBase_Operation();
 				return basicGetBase_Operation();
-			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_COAP__SUB_URL:
+			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_COAP__SUB_URL:
 				return getSubURL();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -214,13 +214,13 @@ public class ArrowheadDSLOperationCOAPImpl extends MinimalEObjectImpl.Container 
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_COAP__METHOD:
+			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_COAP__METHOD:
 				setMethod((CoAPMethodKind)newValue);
 				return;
-			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_COAP__BASE_OPERATION:
+			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_COAP__BASE_OPERATION:
 				setBase_Operation((Operation)newValue);
 				return;
-			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_COAP__SUB_URL:
+			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_COAP__SUB_URL:
 				setSubURL((String)newValue);
 				return;
 		}
@@ -235,13 +235,13 @@ public class ArrowheadDSLOperationCOAPImpl extends MinimalEObjectImpl.Container 
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_COAP__METHOD:
+			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_COAP__METHOD:
 				setMethod(METHOD_EDEFAULT);
 				return;
-			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_COAP__BASE_OPERATION:
+			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_COAP__BASE_OPERATION:
 				setBase_Operation((Operation)null);
 				return;
-			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_COAP__SUB_URL:
+			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_COAP__SUB_URL:
 				setSubURL(SUB_URL_EDEFAULT);
 				return;
 		}
@@ -256,11 +256,11 @@ public class ArrowheadDSLOperationCOAPImpl extends MinimalEObjectImpl.Container 
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_COAP__METHOD:
+			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_COAP__METHOD:
 				return method != METHOD_EDEFAULT;
-			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_COAP__BASE_OPERATION:
+			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_COAP__BASE_OPERATION:
 				return base_Operation != null;
-			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_COAP__SUB_URL:
+			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_COAP__SUB_URL:
 				return SUB_URL_EDEFAULT == null ? subURL != null : !SUB_URL_EDEFAULT.equals(subURL);
 		}
 		return super.eIsSet(featureID);
@@ -284,4 +284,4 @@ public class ArrowheadDSLOperationCOAPImpl extends MinimalEObjectImpl.Container 
 		return result.toString();
 	}
 
-} //ArrowheadDSLOperationCOAPImpl
+} //ArrowHeadServiceInterfaceCOAPImpl

@@ -689,7 +689,7 @@
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iHmmoLdzEe6i2JWyFlnI5w" key="nature" value="UML_Nature"/>
       </eAnnotations>
     </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_X13jIPfUEe6gwtrMxoScjw" name="ArrowheadDSLOperationHTTP">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_X13jIPfUEe6gwtrMxoScjw" name="ArrowHeadServiceInterfaceHTTP">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_lofJAPfVEe6gwtrMxoScjw" name="Method" type="_g-hhxbaOEe6et-4ox6TWyg"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_1TJEAPfVEe6gwtrMxoScjw" name="SubURL">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -699,7 +699,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EZ6M0vfsEe68Gq79QBA0lw"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_ZIVQkPfUEe6gwtrMxoScjw" name="ArrowheadDSLOperationMQTT">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_ZIVQkPfUEe6gwtrMxoScjw" name="ArrowHeadServiceInterfaceMQTT">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_5puCsPfVEe6gwtrMxoScjw" name="Method" type="_g-hhxbaOEe6et-4ox6TWyg"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_9V4LYPfVEe6gwtrMxoScjw" name="Topic">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -709,7 +709,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GOS7kvfsEe68Gq79QBA0lw"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_aPjXUPfUEe6gwtrMxoScjw" name="ArrowheadDSLOperationCOAP">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_aPjXUPfUEe6gwtrMxoScjw" name="ArrowHeadServiceInterfaceCOAP">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_BuM2gPfWEe6gwtrMxoScjw" name="Method" type="_g-gToLaOEe6et-4ox6TWyg"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_H1_SIffsEe68Gq79QBA0lw" name="base_Operation" association="_H1-rEPfsEe68Gq79QBA0lw">
         <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Operation"/>
@@ -719,16 +719,16 @@
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Extension" xmi:id="_EZ3JgPfsEe68Gq79QBA0lw" name="E_ArrowheadDSLOperationHTTP_Operation90" memberEnd="_EZ6M0PfsEe68Gq79QBA0lw _EZ6M0ffsEe68Gq79QBA0lw">
-      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_EZ6M0PfsEe68Gq79QBA0lw" name="extension_ArrowheadDSLOperationHTTP" type="_X13jIPfUEe6gwtrMxoScjw" aggregation="composite" association="_EZ3JgPfsEe68Gq79QBA0lw"/>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_EZ3JgPfsEe68Gq79QBA0lw" name="E_ArrowHeadServiceInterfaceHTTP_Operation1" memberEnd="_EZ6M0PfsEe68Gq79QBA0lw _EZ6M0ffsEe68Gq79QBA0lw">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_EZ6M0PfsEe68Gq79QBA0lw" name="extension_ArrowHeadServiceInterfaceHTTP" type="_X13jIPfUEe6gwtrMxoScjw" aggregation="composite" association="_EZ3JgPfsEe68Gq79QBA0lw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Extension" xmi:id="_GOSUgPfsEe68Gq79QBA0lw" name="E_ArrowheadDSLOperationMQTT_Operation1" memberEnd="_GOS7kPfsEe68Gq79QBA0lw _GOS7kffsEe68Gq79QBA0lw">
-      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_GOS7kPfsEe68Gq79QBA0lw" name="extension_ArrowheadDSLOperationMQTT" type="_ZIVQkPfUEe6gwtrMxoScjw" aggregation="composite" association="_GOSUgPfsEe68Gq79QBA0lw"/>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_GOSUgPfsEe68Gq79QBA0lw" name="E_ArrowHeadServiceInterfaceMQTT_Operation1" memberEnd="_GOS7kPfsEe68Gq79QBA0lw _GOS7kffsEe68Gq79QBA0lw">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_GOS7kPfsEe68Gq79QBA0lw" name="extension_ArrowHeadServiceInterfaceMQTT" type="_ZIVQkPfUEe6gwtrMxoScjw" aggregation="composite" association="_GOSUgPfsEe68Gq79QBA0lw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Extension" xmi:id="_H1-rEPfsEe68Gq79QBA0lw" name="E_ArrowheadDSLOperationCOAP_Operation1" memberEnd="_H1_SIPfsEe68Gq79QBA0lw _H1_SIffsEe68Gq79QBA0lw">
-      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_H1_SIPfsEe68Gq79QBA0lw" name="extension_ArrowheadDSLOperationCOAP" type="_aPjXUPfUEe6gwtrMxoScjw" aggregation="composite" association="_H1-rEPfsEe68Gq79QBA0lw"/>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_H1-rEPfsEe68Gq79QBA0lw" name="E_ArrowHeadServiceInterfaceCOAP_Operation1" memberEnd="_H1_SIPfsEe68Gq79QBA0lw _H1_SIffsEe68Gq79QBA0lw">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_H1_SIPfsEe68Gq79QBA0lw" name="extension_ArrowHeadServiceInterfaceCOAP" type="_aPjXUPfUEe6gwtrMxoScjw" aggregation="composite" association="_H1-rEPfsEe68Gq79QBA0lw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_bH1g0PftEe68Gq79QBA0lw" name="ArrowheadDSLOperationWebsocket">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_bH1g0PftEe68Gq79QBA0lw" name="ArrowHeadServiceInterfaceWebsocket">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_hSDAUPftEe68Gq79QBA0lw" name="Method" type="_g-lzNraOEe6et-4ox6TWyg"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_iPkYgPftEe68Gq79QBA0lw" name="SubURL">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -738,8 +738,8 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_woipMvftEe68Gq79QBA0lw"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Extension" xmi:id="_woiCIPftEe68Gq79QBA0lw" name="E_ArrowheadDSLOperationWebsocket_Operation1" memberEnd="_woipMPftEe68Gq79QBA0lw _woipMfftEe68Gq79QBA0lw">
-      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_woipMPftEe68Gq79QBA0lw" name="extension_ArrowheadDSLOperationWebsocket" type="_bH1g0PftEe68Gq79QBA0lw" aggregation="composite" association="_woiCIPftEe68Gq79QBA0lw"/>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_woiCIPftEe68Gq79QBA0lw" name="E_ArrowHeadServiceInterfaceWebsocket_Operation1" memberEnd="_woipMPftEe68Gq79QBA0lw _woipMfftEe68Gq79QBA0lw">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_woipMPftEe68Gq79QBA0lw" name="extension_ArrowHeadServiceInterfaceWebsocket" type="_bH1g0PftEe68Gq79QBA0lw" aggregation="composite" association="_woiCIPftEe68Gq79QBA0lw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_oXf0IPyPEe6MDucytuqm6Q" name="FullPort">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_raE0UfyPEe6MDucytuqm6Q" name="base_Port" association="_raENQPyPEe6MDucytuqm6Q">

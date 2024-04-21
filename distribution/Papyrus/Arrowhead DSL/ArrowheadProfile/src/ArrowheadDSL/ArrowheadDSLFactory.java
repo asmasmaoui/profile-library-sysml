@@ -202,40 +202,40 @@ public interface ArrowheadDSLFactory extends EFactory {
 	IDD_Implementation createIDD_Implementation();
 
 	/**
-	 * Returns a new object of class '<em>Operation HTTP</em>'.
+	 * Returns a new object of class '<em>Arrow Head Service Interface HTTP</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Operation HTTP</em>'.
+	 * @return a new object of class '<em>Arrow Head Service Interface HTTP</em>'.
 	 * @generated
 	 */
-	ArrowheadDSLOperationHTTP createArrowheadDSLOperationHTTP();
+	ArrowHeadServiceInterfaceHTTP createArrowHeadServiceInterfaceHTTP();
 
 	/**
-	 * Returns a new object of class '<em>Operation MQTT</em>'.
+	 * Returns a new object of class '<em>Arrow Head Service Interface MQTT</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Operation MQTT</em>'.
+	 * @return a new object of class '<em>Arrow Head Service Interface MQTT</em>'.
 	 * @generated
 	 */
-	ArrowheadDSLOperationMQTT createArrowheadDSLOperationMQTT();
+	ArrowHeadServiceInterfaceMQTT createArrowHeadServiceInterfaceMQTT();
 
 	/**
-	 * Returns a new object of class '<em>Operation COAP</em>'.
+	 * Returns a new object of class '<em>Arrow Head Service Interface COAP</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Operation COAP</em>'.
+	 * @return a new object of class '<em>Arrow Head Service Interface COAP</em>'.
 	 * @generated
 	 */
-	ArrowheadDSLOperationCOAP createArrowheadDSLOperationCOAP();
+	ArrowHeadServiceInterfaceCOAP createArrowHeadServiceInterfaceCOAP();
 
 	/**
-	 * Returns a new object of class '<em>Operation Websocket</em>'.
+	 * Returns a new object of class '<em>Arrow Head Service Interface Websocket</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Operation Websocket</em>'.
+	 * @return a new object of class '<em>Arrow Head Service Interface Websocket</em>'.
 	 * @generated
 	 */
-	ArrowheadDSLOperationWebsocket createArrowheadDSLOperationWebsocket();
+	ArrowHeadServiceInterfaceWebsocket createArrowHeadServiceInterfaceWebsocket();
 
 	/**
 	 * Returns a new object of class '<em>Full Port</em>'.

@@ -231,27 +231,27 @@ public class ArrowheadDSLSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_HTTP: {
-				ArrowheadDSLOperationHTTP arrowheadDSLOperationHTTP = (ArrowheadDSLOperationHTTP)theEObject;
-				T result = caseArrowheadDSLOperationHTTP(arrowheadDSLOperationHTTP);
+			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_HTTP: {
+				ArrowHeadServiceInterfaceHTTP arrowHeadServiceInterfaceHTTP = (ArrowHeadServiceInterfaceHTTP)theEObject;
+				T result = caseArrowHeadServiceInterfaceHTTP(arrowHeadServiceInterfaceHTTP);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_MQTT: {
-				ArrowheadDSLOperationMQTT arrowheadDSLOperationMQTT = (ArrowheadDSLOperationMQTT)theEObject;
-				T result = caseArrowheadDSLOperationMQTT(arrowheadDSLOperationMQTT);
+			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_MQTT: {
+				ArrowHeadServiceInterfaceMQTT arrowHeadServiceInterfaceMQTT = (ArrowHeadServiceInterfaceMQTT)theEObject;
+				T result = caseArrowHeadServiceInterfaceMQTT(arrowHeadServiceInterfaceMQTT);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_COAP: {
-				ArrowheadDSLOperationCOAP arrowheadDSLOperationCOAP = (ArrowheadDSLOperationCOAP)theEObject;
-				T result = caseArrowheadDSLOperationCOAP(arrowheadDSLOperationCOAP);
+			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_COAP: {
+				ArrowHeadServiceInterfaceCOAP arrowHeadServiceInterfaceCOAP = (ArrowHeadServiceInterfaceCOAP)theEObject;
+				T result = caseArrowHeadServiceInterfaceCOAP(arrowHeadServiceInterfaceCOAP);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_WEBSOCKET: {
-				ArrowheadDSLOperationWebsocket arrowheadDSLOperationWebsocket = (ArrowheadDSLOperationWebsocket)theEObject;
-				T result = caseArrowheadDSLOperationWebsocket(arrowheadDSLOperationWebsocket);
+			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_WEBSOCKET: {
+				ArrowHeadServiceInterfaceWebsocket arrowHeadServiceInterfaceWebsocket = (ArrowHeadServiceInterfaceWebsocket)theEObject;
+				T result = caseArrowHeadServiceInterfaceWebsocket(arrowHeadServiceInterfaceWebsocket);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -572,62 +572,62 @@ public class ArrowheadDSLSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Operation HTTP</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Arrow Head Service Interface HTTP</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Operation HTTP</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Arrow Head Service Interface HTTP</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseArrowheadDSLOperationHTTP(ArrowheadDSLOperationHTTP object) {
+	public T caseArrowHeadServiceInterfaceHTTP(ArrowHeadServiceInterfaceHTTP object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Operation MQTT</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Arrow Head Service Interface MQTT</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Operation MQTT</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Arrow Head Service Interface MQTT</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseArrowheadDSLOperationMQTT(ArrowheadDSLOperationMQTT object) {
+	public T caseArrowHeadServiceInterfaceMQTT(ArrowHeadServiceInterfaceMQTT object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Operation COAP</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Arrow Head Service Interface COAP</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Operation COAP</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Arrow Head Service Interface COAP</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseArrowheadDSLOperationCOAP(ArrowheadDSLOperationCOAP object) {
+	public T caseArrowHeadServiceInterfaceCOAP(ArrowHeadServiceInterfaceCOAP object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Operation Websocket</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Arrow Head Service Interface Websocket</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Operation Websocket</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Arrow Head Service Interface Websocket</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseArrowheadDSLOperationWebsocket(ArrowheadDSLOperationWebsocket object) {
+	public T caseArrowHeadServiceInterfaceWebsocket(ArrowHeadServiceInterfaceWebsocket object) {
 		return null;
 	}
 

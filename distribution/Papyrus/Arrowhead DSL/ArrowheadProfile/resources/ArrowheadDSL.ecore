@@ -468,7 +468,7 @@
     <eLiterals name="OtherWorkflowLanguage" value="3"/>
     <eLiterals name="PetriNet" value="4"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ArrowheadDSLOperationHTTP">
+  <eClassifiers xsi:type="ecore:EClass" name="ArrowHeadServiceInterfaceHTTP">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Method" ordered="false"
         lowerBound="1" eType="#//HTTP11MethodKind"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="SubURL" ordered="false"
@@ -476,7 +476,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="base_Operation" ordered="false"
         eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Operation"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ArrowheadDSLOperationMQTT">
+  <eClassifiers xsi:type="ecore:EClass" name="ArrowHeadServiceInterfaceMQTT">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Method" ordered="false"
         lowerBound="1" eType="#//HTTP11MethodKind"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Topic" ordered="false"
@@ -484,7 +484,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="base_Operation" ordered="false"
         eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Operation"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ArrowheadDSLOperationCOAP">
+  <eClassifiers xsi:type="ecore:EClass" name="ArrowHeadServiceInterfaceCOAP">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Method" ordered="false"
         lowerBound="1" eType="#//CoAPMethodKind"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="base_Operation" ordered="false"
@@ -492,7 +492,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="SubURL" ordered="false"
         lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ArrowheadDSLOperationWebsocket">
+  <eClassifiers xsi:type="ecore:EClass" name="ArrowHeadServiceInterfaceWebsocket">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Method" ordered="false"
         lowerBound="1" eType="#//WebsocketDataFramingTypeKind"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="SubURL" ordered="false"

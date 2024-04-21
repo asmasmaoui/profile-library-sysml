@@ -77,10 +77,10 @@ public class ArrowheadDSLFactoryImpl extends EFactoryImpl implements ArrowheadDS
 			case ArrowheadDSLPackage.LOCALCLOUD_IMPLEMENTATION: return createLocalcloudImplementation();
 			case ArrowheadDSLPackage.SYSTEM_IMPLEMENTATION: return createSystem_Implementation();
 			case ArrowheadDSLPackage.IDD_IMPLEMENTATION: return createIDD_Implementation();
-			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_HTTP: return createArrowheadDSLOperationHTTP();
-			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_MQTT: return createArrowheadDSLOperationMQTT();
-			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_COAP: return createArrowheadDSLOperationCOAP();
-			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_WEBSOCKET: return createArrowheadDSLOperationWebsocket();
+			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_HTTP: return createArrowHeadServiceInterfaceHTTP();
+			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_MQTT: return createArrowHeadServiceInterfaceMQTT();
+			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_COAP: return createArrowHeadServiceInterfaceCOAP();
+			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_WEBSOCKET: return createArrowHeadServiceInterfaceWebsocket();
 			case ArrowheadDSLPackage.FULL_PORT: return createFullPort();
 			case ArrowheadDSLPackage.PROXY_PORT: return createProxyPort();
 			default:
@@ -452,9 +452,9 @@ public class ArrowheadDSLFactoryImpl extends EFactoryImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public ArrowheadDSLOperationHTTP createArrowheadDSLOperationHTTP() {
-		ArrowheadDSLOperationHTTPImpl arrowheadDSLOperationHTTP = new ArrowheadDSLOperationHTTPImpl();
-		return arrowheadDSLOperationHTTP;
+	public ArrowHeadServiceInterfaceHTTP createArrowHeadServiceInterfaceHTTP() {
+		ArrowHeadServiceInterfaceHTTPImpl arrowHeadServiceInterfaceHTTP = new ArrowHeadServiceInterfaceHTTPImpl();
+		return arrowHeadServiceInterfaceHTTP;
 	}
 
 	/**
@@ -463,9 +463,9 @@ public class ArrowheadDSLFactoryImpl extends EFactoryImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public ArrowheadDSLOperationMQTT createArrowheadDSLOperationMQTT() {
-		ArrowheadDSLOperationMQTTImpl arrowheadDSLOperationMQTT = new ArrowheadDSLOperationMQTTImpl();
-		return arrowheadDSLOperationMQTT;
+	public ArrowHeadServiceInterfaceMQTT createArrowHeadServiceInterfaceMQTT() {
+		ArrowHeadServiceInterfaceMQTTImpl arrowHeadServiceInterfaceMQTT = new ArrowHeadServiceInterfaceMQTTImpl();
+		return arrowHeadServiceInterfaceMQTT;
 	}
 
 	/**
@@ -474,9 +474,9 @@ public class ArrowheadDSLFactoryImpl extends EFactoryImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public ArrowheadDSLOperationCOAP createArrowheadDSLOperationCOAP() {
-		ArrowheadDSLOperationCOAPImpl arrowheadDSLOperationCOAP = new ArrowheadDSLOperationCOAPImpl();
-		return arrowheadDSLOperationCOAP;
+	public ArrowHeadServiceInterfaceCOAP createArrowHeadServiceInterfaceCOAP() {
+		ArrowHeadServiceInterfaceCOAPImpl arrowHeadServiceInterfaceCOAP = new ArrowHeadServiceInterfaceCOAPImpl();
+		return arrowHeadServiceInterfaceCOAP;
 	}
 
 	/**
@@ -485,9 +485,9 @@ public class ArrowheadDSLFactoryImpl extends EFactoryImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public ArrowheadDSLOperationWebsocket createArrowheadDSLOperationWebsocket() {
-		ArrowheadDSLOperationWebsocketImpl arrowheadDSLOperationWebsocket = new ArrowheadDSLOperationWebsocketImpl();
-		return arrowheadDSLOperationWebsocket;
+	public ArrowHeadServiceInterfaceWebsocket createArrowHeadServiceInterfaceWebsocket() {
+		ArrowHeadServiceInterfaceWebsocketImpl arrowHeadServiceInterfaceWebsocket = new ArrowHeadServiceInterfaceWebsocketImpl();
+		return arrowHeadServiceInterfaceWebsocket;
 	}
 
 	/**

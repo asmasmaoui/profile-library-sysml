@@ -3,12 +3,12 @@
 package ArrowheadDSL.impl;
 
 import ArrowheadDSL.ApplicationProtocolKind;
+import ArrowheadDSL.ArrowHeadServiceInterfaceCOAP;
+import ArrowheadDSL.ArrowHeadServiceInterfaceHTTP;
+import ArrowheadDSL.ArrowHeadServiceInterfaceMQTT;
+import ArrowheadDSL.ArrowHeadServiceInterfaceWebsocket;
 import ArrowheadDSL.ArrowheadCertificateKind;
 import ArrowheadDSL.ArrowheadDSLFactory;
-import ArrowheadDSL.ArrowheadDSLOperationCOAP;
-import ArrowheadDSL.ArrowheadDSLOperationHTTP;
-import ArrowheadDSL.ArrowheadDSLOperationMQTT;
-import ArrowheadDSL.ArrowheadDSLOperationWebsocket;
 import ArrowheadDSL.ArrowheadDSLPackage;
 import ArrowheadDSL.ArrowheadDSLRequirement;
 import ArrowheadDSL.ArrowheadSecurityKind;
@@ -233,28 +233,28 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass arrowheadDSLOperationHTTPEClass = null;
+	private EClass arrowHeadServiceInterfaceHTTPEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass arrowheadDSLOperationMQTTEClass = null;
+	private EClass arrowHeadServiceInterfaceMQTTEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass arrowheadDSLOperationCOAPEClass = null;
+	private EClass arrowHeadServiceInterfaceCOAPEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass arrowheadDSLOperationWebsocketEClass = null;
+	private EClass arrowHeadServiceInterfaceWebsocketEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1489,8 +1489,8 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public EClass getArrowheadDSLOperationHTTP() {
-		return arrowheadDSLOperationHTTPEClass;
+	public EClass getArrowHeadServiceInterfaceHTTP() {
+		return arrowHeadServiceInterfaceHTTPEClass;
 	}
 
 	/**
@@ -1499,8 +1499,8 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public EAttribute getArrowheadDSLOperationHTTP_Method() {
-		return (EAttribute)arrowheadDSLOperationHTTPEClass.getEStructuralFeatures().get(0);
+	public EAttribute getArrowHeadServiceInterfaceHTTP_Method() {
+		return (EAttribute)arrowHeadServiceInterfaceHTTPEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -1509,8 +1509,8 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public EAttribute getArrowheadDSLOperationHTTP_SubURL() {
-		return (EAttribute)arrowheadDSLOperationHTTPEClass.getEStructuralFeatures().get(1);
+	public EAttribute getArrowHeadServiceInterfaceHTTP_SubURL() {
+		return (EAttribute)arrowHeadServiceInterfaceHTTPEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -1519,8 +1519,8 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public EReference getArrowheadDSLOperationHTTP_Base_Operation() {
-		return (EReference)arrowheadDSLOperationHTTPEClass.getEStructuralFeatures().get(2);
+	public EReference getArrowHeadServiceInterfaceHTTP_Base_Operation() {
+		return (EReference)arrowHeadServiceInterfaceHTTPEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -1529,8 +1529,8 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public EClass getArrowheadDSLOperationMQTT() {
-		return arrowheadDSLOperationMQTTEClass;
+	public EClass getArrowHeadServiceInterfaceMQTT() {
+		return arrowHeadServiceInterfaceMQTTEClass;
 	}
 
 	/**
@@ -1539,8 +1539,8 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public EAttribute getArrowheadDSLOperationMQTT_Method() {
-		return (EAttribute)arrowheadDSLOperationMQTTEClass.getEStructuralFeatures().get(0);
+	public EAttribute getArrowHeadServiceInterfaceMQTT_Method() {
+		return (EAttribute)arrowHeadServiceInterfaceMQTTEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -1549,8 +1549,8 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public EAttribute getArrowheadDSLOperationMQTT_Topic() {
-		return (EAttribute)arrowheadDSLOperationMQTTEClass.getEStructuralFeatures().get(1);
+	public EAttribute getArrowHeadServiceInterfaceMQTT_Topic() {
+		return (EAttribute)arrowHeadServiceInterfaceMQTTEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -1559,8 +1559,8 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public EReference getArrowheadDSLOperationMQTT_Base_Operation() {
-		return (EReference)arrowheadDSLOperationMQTTEClass.getEStructuralFeatures().get(2);
+	public EReference getArrowHeadServiceInterfaceMQTT_Base_Operation() {
+		return (EReference)arrowHeadServiceInterfaceMQTTEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -1569,8 +1569,8 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public EClass getArrowheadDSLOperationCOAP() {
-		return arrowheadDSLOperationCOAPEClass;
+	public EClass getArrowHeadServiceInterfaceCOAP() {
+		return arrowHeadServiceInterfaceCOAPEClass;
 	}
 
 	/**
@@ -1579,8 +1579,8 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public EAttribute getArrowheadDSLOperationCOAP_Method() {
-		return (EAttribute)arrowheadDSLOperationCOAPEClass.getEStructuralFeatures().get(0);
+	public EAttribute getArrowHeadServiceInterfaceCOAP_Method() {
+		return (EAttribute)arrowHeadServiceInterfaceCOAPEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -1589,8 +1589,8 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public EReference getArrowheadDSLOperationCOAP_Base_Operation() {
-		return (EReference)arrowheadDSLOperationCOAPEClass.getEStructuralFeatures().get(1);
+	public EReference getArrowHeadServiceInterfaceCOAP_Base_Operation() {
+		return (EReference)arrowHeadServiceInterfaceCOAPEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -1599,8 +1599,8 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public EAttribute getArrowheadDSLOperationCOAP_SubURL() {
-		return (EAttribute)arrowheadDSLOperationCOAPEClass.getEStructuralFeatures().get(2);
+	public EAttribute getArrowHeadServiceInterfaceCOAP_SubURL() {
+		return (EAttribute)arrowHeadServiceInterfaceCOAPEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -1609,8 +1609,8 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public EClass getArrowheadDSLOperationWebsocket() {
-		return arrowheadDSLOperationWebsocketEClass;
+	public EClass getArrowHeadServiceInterfaceWebsocket() {
+		return arrowHeadServiceInterfaceWebsocketEClass;
 	}
 
 	/**
@@ -1619,8 +1619,8 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public EAttribute getArrowheadDSLOperationWebsocket_Method() {
-		return (EAttribute)arrowheadDSLOperationWebsocketEClass.getEStructuralFeatures().get(0);
+	public EAttribute getArrowHeadServiceInterfaceWebsocket_Method() {
+		return (EAttribute)arrowHeadServiceInterfaceWebsocketEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -1629,8 +1629,8 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public EAttribute getArrowheadDSLOperationWebsocket_SubURL() {
-		return (EAttribute)arrowheadDSLOperationWebsocketEClass.getEStructuralFeatures().get(1);
+	public EAttribute getArrowHeadServiceInterfaceWebsocket_SubURL() {
+		return (EAttribute)arrowHeadServiceInterfaceWebsocketEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -1639,8 +1639,8 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public EReference getArrowheadDSLOperationWebsocket_Base_Operation() {
-		return (EReference)arrowheadDSLOperationWebsocketEClass.getEStructuralFeatures().get(2);
+	public EReference getArrowHeadServiceInterfaceWebsocket_Base_Operation() {
+		return (EReference)arrowHeadServiceInterfaceWebsocketEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -2107,25 +2107,25 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 		idD_ImplementationEClass = createEClass(IDD_IMPLEMENTATION);
 		createEReference(idD_ImplementationEClass, IDD_IMPLEMENTATION__SYSTEMIMPLEMENTATION);
 
-		arrowheadDSLOperationHTTPEClass = createEClass(ARROWHEAD_DSL_OPERATION_HTTP);
-		createEAttribute(arrowheadDSLOperationHTTPEClass, ARROWHEAD_DSL_OPERATION_HTTP__METHOD);
-		createEAttribute(arrowheadDSLOperationHTTPEClass, ARROWHEAD_DSL_OPERATION_HTTP__SUB_URL);
-		createEReference(arrowheadDSLOperationHTTPEClass, ARROWHEAD_DSL_OPERATION_HTTP__BASE_OPERATION);
+		arrowHeadServiceInterfaceHTTPEClass = createEClass(ARROW_HEAD_SERVICE_INTERFACE_HTTP);
+		createEAttribute(arrowHeadServiceInterfaceHTTPEClass, ARROW_HEAD_SERVICE_INTERFACE_HTTP__METHOD);
+		createEAttribute(arrowHeadServiceInterfaceHTTPEClass, ARROW_HEAD_SERVICE_INTERFACE_HTTP__SUB_URL);
+		createEReference(arrowHeadServiceInterfaceHTTPEClass, ARROW_HEAD_SERVICE_INTERFACE_HTTP__BASE_OPERATION);
 
-		arrowheadDSLOperationMQTTEClass = createEClass(ARROWHEAD_DSL_OPERATION_MQTT);
-		createEAttribute(arrowheadDSLOperationMQTTEClass, ARROWHEAD_DSL_OPERATION_MQTT__METHOD);
-		createEAttribute(arrowheadDSLOperationMQTTEClass, ARROWHEAD_DSL_OPERATION_MQTT__TOPIC);
-		createEReference(arrowheadDSLOperationMQTTEClass, ARROWHEAD_DSL_OPERATION_MQTT__BASE_OPERATION);
+		arrowHeadServiceInterfaceMQTTEClass = createEClass(ARROW_HEAD_SERVICE_INTERFACE_MQTT);
+		createEAttribute(arrowHeadServiceInterfaceMQTTEClass, ARROW_HEAD_SERVICE_INTERFACE_MQTT__METHOD);
+		createEAttribute(arrowHeadServiceInterfaceMQTTEClass, ARROW_HEAD_SERVICE_INTERFACE_MQTT__TOPIC);
+		createEReference(arrowHeadServiceInterfaceMQTTEClass, ARROW_HEAD_SERVICE_INTERFACE_MQTT__BASE_OPERATION);
 
-		arrowheadDSLOperationCOAPEClass = createEClass(ARROWHEAD_DSL_OPERATION_COAP);
-		createEAttribute(arrowheadDSLOperationCOAPEClass, ARROWHEAD_DSL_OPERATION_COAP__METHOD);
-		createEReference(arrowheadDSLOperationCOAPEClass, ARROWHEAD_DSL_OPERATION_COAP__BASE_OPERATION);
-		createEAttribute(arrowheadDSLOperationCOAPEClass, ARROWHEAD_DSL_OPERATION_COAP__SUB_URL);
+		arrowHeadServiceInterfaceCOAPEClass = createEClass(ARROW_HEAD_SERVICE_INTERFACE_COAP);
+		createEAttribute(arrowHeadServiceInterfaceCOAPEClass, ARROW_HEAD_SERVICE_INTERFACE_COAP__METHOD);
+		createEReference(arrowHeadServiceInterfaceCOAPEClass, ARROW_HEAD_SERVICE_INTERFACE_COAP__BASE_OPERATION);
+		createEAttribute(arrowHeadServiceInterfaceCOAPEClass, ARROW_HEAD_SERVICE_INTERFACE_COAP__SUB_URL);
 
-		arrowheadDSLOperationWebsocketEClass = createEClass(ARROWHEAD_DSL_OPERATION_WEBSOCKET);
-		createEAttribute(arrowheadDSLOperationWebsocketEClass, ARROWHEAD_DSL_OPERATION_WEBSOCKET__METHOD);
-		createEAttribute(arrowheadDSLOperationWebsocketEClass, ARROWHEAD_DSL_OPERATION_WEBSOCKET__SUB_URL);
-		createEReference(arrowheadDSLOperationWebsocketEClass, ARROWHEAD_DSL_OPERATION_WEBSOCKET__BASE_OPERATION);
+		arrowHeadServiceInterfaceWebsocketEClass = createEClass(ARROW_HEAD_SERVICE_INTERFACE_WEBSOCKET);
+		createEAttribute(arrowHeadServiceInterfaceWebsocketEClass, ARROW_HEAD_SERVICE_INTERFACE_WEBSOCKET__METHOD);
+		createEAttribute(arrowHeadServiceInterfaceWebsocketEClass, ARROW_HEAD_SERVICE_INTERFACE_WEBSOCKET__SUB_URL);
+		createEReference(arrowHeadServiceInterfaceWebsocketEClass, ARROW_HEAD_SERVICE_INTERFACE_WEBSOCKET__BASE_OPERATION);
 
 		fullPortEClass = createEClass(FULL_PORT);
 		createEReference(fullPortEClass, FULL_PORT__BASE_PORT);
@@ -2336,25 +2336,25 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 		initEClass(idD_ImplementationEClass, IDD_Implementation.class, "IDD_Implementation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getIDD_Implementation_Systemimplementation(), this.getSystem_Implementation(), this.getSystem_Implementation_Idd_implementation(), "systemimplementation", null, 0, -1, IDD_Implementation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
-		initEClass(arrowheadDSLOperationHTTPEClass, ArrowheadDSLOperationHTTP.class, "ArrowheadDSLOperationHTTP", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getArrowheadDSLOperationHTTP_Method(), this.getHTTP11MethodKind(), "Method", null, 1, 1, ArrowheadDSLOperationHTTP.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getArrowheadDSLOperationHTTP_SubURL(), theTypesPackage.getString(), "SubURL", null, 1, 1, ArrowheadDSLOperationHTTP.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getArrowheadDSLOperationHTTP_Base_Operation(), theUMLPackage.getOperation(), null, "base_Operation", null, 0, 1, ArrowheadDSLOperationHTTP.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEClass(arrowHeadServiceInterfaceHTTPEClass, ArrowHeadServiceInterfaceHTTP.class, "ArrowHeadServiceInterfaceHTTP", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getArrowHeadServiceInterfaceHTTP_Method(), this.getHTTP11MethodKind(), "Method", null, 1, 1, ArrowHeadServiceInterfaceHTTP.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getArrowHeadServiceInterfaceHTTP_SubURL(), theTypesPackage.getString(), "SubURL", null, 1, 1, ArrowHeadServiceInterfaceHTTP.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getArrowHeadServiceInterfaceHTTP_Base_Operation(), theUMLPackage.getOperation(), null, "base_Operation", null, 0, 1, ArrowHeadServiceInterfaceHTTP.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
-		initEClass(arrowheadDSLOperationMQTTEClass, ArrowheadDSLOperationMQTT.class, "ArrowheadDSLOperationMQTT", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getArrowheadDSLOperationMQTT_Method(), this.getHTTP11MethodKind(), "Method", null, 1, 1, ArrowheadDSLOperationMQTT.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getArrowheadDSLOperationMQTT_Topic(), theTypesPackage.getString(), "Topic", null, 1, 1, ArrowheadDSLOperationMQTT.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getArrowheadDSLOperationMQTT_Base_Operation(), theUMLPackage.getOperation(), null, "base_Operation", null, 0, 1, ArrowheadDSLOperationMQTT.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEClass(arrowHeadServiceInterfaceMQTTEClass, ArrowHeadServiceInterfaceMQTT.class, "ArrowHeadServiceInterfaceMQTT", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getArrowHeadServiceInterfaceMQTT_Method(), this.getHTTP11MethodKind(), "Method", null, 1, 1, ArrowHeadServiceInterfaceMQTT.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getArrowHeadServiceInterfaceMQTT_Topic(), theTypesPackage.getString(), "Topic", null, 1, 1, ArrowHeadServiceInterfaceMQTT.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getArrowHeadServiceInterfaceMQTT_Base_Operation(), theUMLPackage.getOperation(), null, "base_Operation", null, 0, 1, ArrowHeadServiceInterfaceMQTT.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
-		initEClass(arrowheadDSLOperationCOAPEClass, ArrowheadDSLOperationCOAP.class, "ArrowheadDSLOperationCOAP", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getArrowheadDSLOperationCOAP_Method(), this.getCoAPMethodKind(), "Method", null, 1, 1, ArrowheadDSLOperationCOAP.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getArrowheadDSLOperationCOAP_Base_Operation(), theUMLPackage.getOperation(), null, "base_Operation", null, 0, 1, ArrowheadDSLOperationCOAP.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getArrowheadDSLOperationCOAP_SubURL(), theTypesPackage.getString(), "SubURL", null, 1, 1, ArrowheadDSLOperationCOAP.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEClass(arrowHeadServiceInterfaceCOAPEClass, ArrowHeadServiceInterfaceCOAP.class, "ArrowHeadServiceInterfaceCOAP", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getArrowHeadServiceInterfaceCOAP_Method(), this.getCoAPMethodKind(), "Method", null, 1, 1, ArrowHeadServiceInterfaceCOAP.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getArrowHeadServiceInterfaceCOAP_Base_Operation(), theUMLPackage.getOperation(), null, "base_Operation", null, 0, 1, ArrowHeadServiceInterfaceCOAP.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getArrowHeadServiceInterfaceCOAP_SubURL(), theTypesPackage.getString(), "SubURL", null, 1, 1, ArrowHeadServiceInterfaceCOAP.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
-		initEClass(arrowheadDSLOperationWebsocketEClass, ArrowheadDSLOperationWebsocket.class, "ArrowheadDSLOperationWebsocket", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getArrowheadDSLOperationWebsocket_Method(), this.getWebsocketDataFramingTypeKind(), "Method", null, 1, 1, ArrowheadDSLOperationWebsocket.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getArrowheadDSLOperationWebsocket_SubURL(), theTypesPackage.getString(), "SubURL", null, 1, 1, ArrowheadDSLOperationWebsocket.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getArrowheadDSLOperationWebsocket_Base_Operation(), theUMLPackage.getOperation(), null, "base_Operation", null, 0, 1, ArrowheadDSLOperationWebsocket.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEClass(arrowHeadServiceInterfaceWebsocketEClass, ArrowHeadServiceInterfaceWebsocket.class, "ArrowHeadServiceInterfaceWebsocket", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getArrowHeadServiceInterfaceWebsocket_Method(), this.getWebsocketDataFramingTypeKind(), "Method", null, 1, 1, ArrowHeadServiceInterfaceWebsocket.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getArrowHeadServiceInterfaceWebsocket_SubURL(), theTypesPackage.getString(), "SubURL", null, 1, 1, ArrowHeadServiceInterfaceWebsocket.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getArrowHeadServiceInterfaceWebsocket_Base_Operation(), theUMLPackage.getOperation(), null, "base_Operation", null, 0, 1, ArrowHeadServiceInterfaceWebsocket.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(fullPortEClass, FullPort.class, "FullPort", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getFullPort_Base_Port(), theUMLPackage.getPort(), null, "base_Port", null, 0, 1, FullPort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);

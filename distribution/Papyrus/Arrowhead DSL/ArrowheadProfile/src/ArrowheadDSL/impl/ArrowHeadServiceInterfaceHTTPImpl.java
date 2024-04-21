@@ -2,7 +2,7 @@
  */
 package ArrowheadDSL.impl;
 
-import ArrowheadDSL.ArrowheadDSLOperationMQTT;
+import ArrowheadDSL.ArrowHeadServiceInterfaceHTTP;
 import ArrowheadDSL.ArrowheadDSLPackage;
 import ArrowheadDSL.HTTP11MethodKind;
 
@@ -18,20 +18,20 @@ import org.eclipse.uml2.uml.Operation;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Operation MQTT</b></em>'.
+ * An implementation of the model object '<em><b>Arrow Head Service Interface HTTP</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link ArrowheadDSL.impl.ArrowheadDSLOperationMQTTImpl#getMethod <em>Method</em>}</li>
- *   <li>{@link ArrowheadDSL.impl.ArrowheadDSLOperationMQTTImpl#getTopic <em>Topic</em>}</li>
- *   <li>{@link ArrowheadDSL.impl.ArrowheadDSLOperationMQTTImpl#getBase_Operation <em>Base Operation</em>}</li>
+ *   <li>{@link ArrowheadDSL.impl.ArrowHeadServiceInterfaceHTTPImpl#getMethod <em>Method</em>}</li>
+ *   <li>{@link ArrowheadDSL.impl.ArrowHeadServiceInterfaceHTTPImpl#getSubURL <em>Sub URL</em>}</li>
+ *   <li>{@link ArrowheadDSL.impl.ArrowHeadServiceInterfaceHTTPImpl#getBase_Operation <em>Base Operation</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class ArrowheadDSLOperationMQTTImpl extends MinimalEObjectImpl.Container implements ArrowheadDSLOperationMQTT {
+public class ArrowHeadServiceInterfaceHTTPImpl extends MinimalEObjectImpl.Container implements ArrowHeadServiceInterfaceHTTP {
 	/**
 	 * The default value of the '{@link #getMethod() <em>Method</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -53,24 +53,24 @@ public class ArrowheadDSLOperationMQTTImpl extends MinimalEObjectImpl.Container 
 	protected HTTP11MethodKind method = METHOD_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getTopic() <em>Topic</em>}' attribute.
+	 * The default value of the '{@link #getSubURL() <em>Sub URL</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getTopic()
+	 * @see #getSubURL()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String TOPIC_EDEFAULT = null;
+	protected static final String SUB_URL_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getTopic() <em>Topic</em>}' attribute.
+	 * The cached value of the '{@link #getSubURL() <em>Sub URL</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getTopic()
+	 * @see #getSubURL()
 	 * @generated
 	 * @ordered
 	 */
-	protected String topic = TOPIC_EDEFAULT;
+	protected String subURL = SUB_URL_EDEFAULT;
 
 	/**
 	 * The cached value of the '{@link #getBase_Operation() <em>Base Operation</em>}' reference.
@@ -87,7 +87,7 @@ public class ArrowheadDSLOperationMQTTImpl extends MinimalEObjectImpl.Container 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected ArrowheadDSLOperationMQTTImpl() {
+	protected ArrowHeadServiceInterfaceHTTPImpl() {
 		super();
 	}
 
@@ -98,7 +98,7 @@ public class ArrowheadDSLOperationMQTTImpl extends MinimalEObjectImpl.Container 
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return ArrowheadDSLPackage.Literals.ARROWHEAD_DSL_OPERATION_MQTT;
+		return ArrowheadDSLPackage.Literals.ARROW_HEAD_SERVICE_INTERFACE_HTTP;
 	}
 
 	/**
@@ -121,7 +121,7 @@ public class ArrowheadDSLOperationMQTTImpl extends MinimalEObjectImpl.Container 
 		HTTP11MethodKind oldMethod = method;
 		method = newMethod == null ? METHOD_EDEFAULT : newMethod;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_MQTT__METHOD, oldMethod, method));
+			eNotify(new ENotificationImpl(this, Notification.SET, ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_HTTP__METHOD, oldMethod, method));
 	}
 
 	/**
@@ -130,8 +130,8 @@ public class ArrowheadDSLOperationMQTTImpl extends MinimalEObjectImpl.Container 
 	 * @generated
 	 */
 	@Override
-	public String getTopic() {
-		return topic;
+	public String getSubURL() {
+		return subURL;
 	}
 
 	/**
@@ -140,11 +140,11 @@ public class ArrowheadDSLOperationMQTTImpl extends MinimalEObjectImpl.Container 
 	 * @generated
 	 */
 	@Override
-	public void setTopic(String newTopic) {
-		String oldTopic = topic;
-		topic = newTopic;
+	public void setSubURL(String newSubURL) {
+		String oldSubURL = subURL;
+		subURL = newSubURL;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_MQTT__TOPIC, oldTopic, topic));
+			eNotify(new ENotificationImpl(this, Notification.SET, ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_HTTP__SUB_URL, oldSubURL, subURL));
 	}
 
 	/**
@@ -159,7 +159,7 @@ public class ArrowheadDSLOperationMQTTImpl extends MinimalEObjectImpl.Container 
 			base_Operation = (Operation)eResolveProxy(oldBase_Operation);
 			if (base_Operation != oldBase_Operation) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_MQTT__BASE_OPERATION, oldBase_Operation, base_Operation));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_HTTP__BASE_OPERATION, oldBase_Operation, base_Operation));
 			}
 		}
 		return base_Operation;
@@ -184,7 +184,7 @@ public class ArrowheadDSLOperationMQTTImpl extends MinimalEObjectImpl.Container 
 		Operation oldBase_Operation = base_Operation;
 		base_Operation = newBase_Operation;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_MQTT__BASE_OPERATION, oldBase_Operation, base_Operation));
+			eNotify(new ENotificationImpl(this, Notification.SET, ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_HTTP__BASE_OPERATION, oldBase_Operation, base_Operation));
 	}
 
 	/**
@@ -195,11 +195,11 @@ public class ArrowheadDSLOperationMQTTImpl extends MinimalEObjectImpl.Container 
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_MQTT__METHOD:
+			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_HTTP__METHOD:
 				return getMethod();
-			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_MQTT__TOPIC:
-				return getTopic();
-			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_MQTT__BASE_OPERATION:
+			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_HTTP__SUB_URL:
+				return getSubURL();
+			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_HTTP__BASE_OPERATION:
 				if (resolve) return getBase_Operation();
 				return basicGetBase_Operation();
 		}
@@ -214,13 +214,13 @@ public class ArrowheadDSLOperationMQTTImpl extends MinimalEObjectImpl.Container 
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_MQTT__METHOD:
+			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_HTTP__METHOD:
 				setMethod((HTTP11MethodKind)newValue);
 				return;
-			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_MQTT__TOPIC:
-				setTopic((String)newValue);
+			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_HTTP__SUB_URL:
+				setSubURL((String)newValue);
 				return;
-			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_MQTT__BASE_OPERATION:
+			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_HTTP__BASE_OPERATION:
 				setBase_Operation((Operation)newValue);
 				return;
 		}
@@ -235,13 +235,13 @@ public class ArrowheadDSLOperationMQTTImpl extends MinimalEObjectImpl.Container 
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_MQTT__METHOD:
+			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_HTTP__METHOD:
 				setMethod(METHOD_EDEFAULT);
 				return;
-			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_MQTT__TOPIC:
-				setTopic(TOPIC_EDEFAULT);
+			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_HTTP__SUB_URL:
+				setSubURL(SUB_URL_EDEFAULT);
 				return;
-			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_MQTT__BASE_OPERATION:
+			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_HTTP__BASE_OPERATION:
 				setBase_Operation((Operation)null);
 				return;
 		}
@@ -256,11 +256,11 @@ public class ArrowheadDSLOperationMQTTImpl extends MinimalEObjectImpl.Container 
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_MQTT__METHOD:
+			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_HTTP__METHOD:
 				return method != METHOD_EDEFAULT;
-			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_MQTT__TOPIC:
-				return TOPIC_EDEFAULT == null ? topic != null : !TOPIC_EDEFAULT.equals(topic);
-			case ArrowheadDSLPackage.ARROWHEAD_DSL_OPERATION_MQTT__BASE_OPERATION:
+			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_HTTP__SUB_URL:
+				return SUB_URL_EDEFAULT == null ? subURL != null : !SUB_URL_EDEFAULT.equals(subURL);
+			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_HTTP__BASE_OPERATION:
 				return base_Operation != null;
 		}
 		return super.eIsSet(featureID);
@@ -278,10 +278,10 @@ public class ArrowheadDSLOperationMQTTImpl extends MinimalEObjectImpl.Container 
 		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (Method: ");
 		result.append(method);
-		result.append(", Topic: ");
-		result.append(topic);
+		result.append(", SubURL: ");
+		result.append(subURL);
 		result.append(')');
 		return result.toString();
 	}
 
-} //ArrowheadDSLOperationMQTTImpl
+} //ArrowHeadServiceInterfaceHTTPImpl
