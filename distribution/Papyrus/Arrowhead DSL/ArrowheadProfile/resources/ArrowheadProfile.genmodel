@@ -375,29 +375,29 @@
       <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
           propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//IDD_Implementation/systemimplementation"/>
     </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//ArrowheadDSLOperationHTTP">
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//ArrowheadDSLOperationHTTP/Method"/>
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//ArrowheadDSLOperationHTTP/SubURL"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//ArrowHeadServiceInterfaceHTTP">
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//ArrowHeadServiceInterfaceHTTP/Method"/>
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//ArrowHeadServiceInterfaceHTTP/SubURL"/>
       <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
-          propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//ArrowheadDSLOperationHTTP/base_Operation"/>
+          propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//ArrowHeadServiceInterfaceHTTP/base_Operation"/>
     </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//ArrowheadDSLOperationMQTT">
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//ArrowheadDSLOperationMQTT/Method"/>
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//ArrowheadDSLOperationMQTT/Topic"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//ArrowHeadServiceInterfaceMQTT">
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//ArrowHeadServiceInterfaceMQTT/Method"/>
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//ArrowHeadServiceInterfaceMQTT/Topic"/>
       <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
-          propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//ArrowheadDSLOperationMQTT/base_Operation"/>
+          propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//ArrowHeadServiceInterfaceMQTT/base_Operation"/>
     </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//ArrowheadDSLOperationCOAP">
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//ArrowheadDSLOperationCOAP/Method"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//ArrowHeadServiceInterfaceCOAP">
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//ArrowHeadServiceInterfaceCOAP/Method"/>
       <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
-          propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//ArrowheadDSLOperationCOAP/base_Operation"/>
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//ArrowheadDSLOperationCOAP/SubURL"/>
+          propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//ArrowHeadServiceInterfaceCOAP/base_Operation"/>
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//ArrowHeadServiceInterfaceCOAP/SubURL"/>
     </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//ArrowheadDSLOperationWebsocket">
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//ArrowheadDSLOperationWebsocket/Method"/>
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//ArrowheadDSLOperationWebsocket/SubURL"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//ArrowHeadServiceInterfaceWebsocket">
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//ArrowHeadServiceInterfaceWebsocket/Method"/>
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//ArrowHeadServiceInterfaceWebsocket/SubURL"/>
       <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
-          propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//ArrowheadDSLOperationWebsocket/base_Operation"/>
+          propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//ArrowHeadServiceInterfaceWebsocket/base_Operation"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//FullPort">
       <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
