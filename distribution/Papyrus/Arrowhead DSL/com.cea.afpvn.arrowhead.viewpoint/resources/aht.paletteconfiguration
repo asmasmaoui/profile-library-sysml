@@ -992,11 +992,11 @@
   <drawerConfigurations
       xmi:type="paletteconfiguration:DrawerConfiguration"
       id="aht.operation"
-      label="Arrowhead operation">
+      label="ArrowHead Service Interface">
     <ownedConfigurations
         xmi:type="paletteconfiguration:ToolConfiguration"
         id="aht.operationHTTP"
-        label="HTTP operation"
+        label="ArrowHeadServiceInterface HTTP"
         kind="CreationTool">
       <icon
           xmi:type="paletteconfiguration:IconDescriptor"

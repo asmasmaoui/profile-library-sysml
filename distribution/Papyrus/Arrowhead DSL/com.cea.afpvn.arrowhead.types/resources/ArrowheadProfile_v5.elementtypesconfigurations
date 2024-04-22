@@ -992,11 +992,11 @@
     </ownedConfigurations>
     <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
   </elementTypeConfigurations>
-  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_4cc7UPf2Ee64e-CH3LqKlg" identifier="com.example.arrowheadDSL.ArrowheadDSLOperationHTTP" name="ArrowheadDSLOperationHTTP" hint="UML::Operation" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_4cc7U_f2Ee64e-CH3LqKlg">
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_4cc7UPf2Ee64e-CH3LqKlg" identifier="com.example.arrowheadDSL.ArrowHeadServiceInterfaceHTTP" name="ArrowHeadServiceInterfaceHTTP" hint="UML::Operation" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_4cc7U_f2Ee64e-CH3LqKlg">
     <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_4cc7Uff2Ee64e-CH3LqKlg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/ArrowheadProfile/resources/ArrowheadProfile_v5.0.profile.uml#_X13jIPfUEe6gwtrMxoScjw"/>
     <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_4cc7Uvf2Ee64e-CH3LqKlg" iconPath="/icons/full/obj16/Operation.gif" bundleId="org.eclipse.uml2.uml.edit"/>
-    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_4cc7U_f2Ee64e-CH3LqKlg" description="Apply Stereotype ArrowheadDSLOperationHTTP" identifier="com.example.arrowheadDSL.arrowheadDSLOperationHTTP" target="_4cc7UPf2Ee64e-CH3LqKlg" matchedType="_4cc7UPf2Ee64e-CH3LqKlg">
-      <stereotypesQualifiedNames>ArrowheadDSL::ArrowheadDSLOperationHTTP</stereotypesQualifiedNames>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_4cc7U_f2Ee64e-CH3LqKlg" description="Apply Stereotype ArrowHeadServiceInterfaceHTTP" identifier="com.example.arrowheadDSL.ArrowHeadServiceInterfaceHTTP" target="_4cc7UPf2Ee64e-CH3LqKlg" matchedType="_4cc7UPf2Ee64e-CH3LqKlg">
+      <stereotypesQualifiedNames>ArrowheadDSL::ArrowHeadServiceInterfaceHTTP</stereotypesQualifiedNames>
     </ownedConfigurations>
     <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Operation"/>
   </elementTypeConfigurations>
