@@ -1024,7 +1024,7 @@
           xmi:type="paletteconfiguration:ElementDescriptor">
         <elementType
             xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
-            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_xm6ihPy6Ee6MDucytuqm6Q"/>
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_xm57cvy6Ee6MDucytuqm6Q"/>
       </elementDescriptors>
       <elementDescriptors
           xmi:type="paletteconfiguration:ElementDescriptor">
@@ -1032,36 +1032,6 @@
             xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
             href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_xm6ihvy6Ee6MDucytuqm6Q"/>
       </elementDescriptors>
-    </ownedConfigurations>
-    <ownedConfigurations
-        xmi:type="paletteconfiguration:ToolConfiguration"
-        id="aht.operationCOAP"
-        label="COAP operation"
-        kind="CreationTool">
-      <icon
-          xmi:type="paletteconfiguration:IconDescriptor"
-          pluginID="org.eclipse.uml2.uml.edit"
-          iconPath="/icons/full/obj16/Operation.gif"/>
-    </ownedConfigurations>
-    <ownedConfigurations
-        xmi:type="paletteconfiguration:ToolConfiguration"
-        id="aht.operationWebsocket"
-        label="Websocket operation"
-        kind="CreationTool">
-      <icon
-          xmi:type="paletteconfiguration:IconDescriptor"
-          pluginID="org.eclipse.uml2.uml.edit"
-          iconPath="/icons/full/obj16/Operation.gif"/>
-    </ownedConfigurations>
-    <ownedConfigurations
-        xmi:type="paletteconfiguration:ToolConfiguration"
-        id="aht.operationMQTT"
-        label="MQTT operation"
-        kind="CreationTool">
-      <icon
-          xmi:type="paletteconfiguration:IconDescriptor"
-          pluginID="org.eclipse.uml2.uml.edit"
-          iconPath="/icons/full/obj16/Operation.gif"/>
     </ownedConfigurations>
   </drawerConfigurations>
 </paletteconfiguration:PaletteConfiguration>
