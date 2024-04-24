@@ -862,23 +862,6 @@
     </ownedConfigurations>
     <ownedConfigurations
         xmi:type="paletteconfiguration:ToolConfiguration"
-        id="org.eclipse.papyrus.sysML.palette.bdd.Port"
-        label="Port"
-        description="Create new Port"
-        kind="CreationTool">
-      <icon
-          xmi:type="paletteconfiguration:IconDescriptor"
-          pluginID="org.eclipse.uml2.uml.edit"
-          iconPath="/icons/full/obj16/Port.gif"/>
-      <elementDescriptors
-          xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType
-            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
-            href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Port_Shape"/>
-      </elementDescriptors>
-    </ownedConfigurations>
-    <ownedConfigurations
-        xmi:type="paletteconfiguration:ToolConfiguration"
         id="aht.ArrowheadDSLRequirement"
         label="ArrowheadDSLRequirement"
         kind="CreationTool">
@@ -945,6 +928,57 @@
         <elementType
             xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
             href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.UseCase_Shape_CN"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations
+        xmi:type="paletteconfiguration:ToolConfiguration"
+        id="org.eclipse.papyrus.sysML.palette.bdd.Port"
+        label="Port"
+        description="Create new Port"
+        kind="CreationTool">
+      <icon
+          xmi:type="paletteconfiguration:IconDescriptor"
+          pluginID="org.eclipse.uml2.uml.edit"
+          iconPath="/icons/full/obj16/Port.gif"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Port_Shape"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations
+        xmi:type="paletteconfiguration:ToolConfiguration"
+        id="aht.fullPort"
+        label="FullPort"
+        description="Full ports specify a separate element of the system from the owning block or its internal parts."
+        kind="CreationTool">
+      <icon
+          xmi:type="paletteconfiguration:IconDescriptor"
+          pluginID="org.eclipse.papyrus.sysml16.edit"
+          iconPath="icons/full/obj16/FullPort.gif"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_BV8C5QIbEe-rrMtPA4vagQ"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations
+        xmi:type="paletteconfiguration:ToolConfiguration"
+        id="aht.proxyPort"
+        label="ProxyPort"
+        description="Proxy ports identify features of the owning block or its internal parts that are available to external blocks through external connectors to the ports."
+        kind="CreationTool">
+      <icon
+          xmi:type="paletteconfiguration:IconDescriptor"
+          pluginID="org.eclipse.papyrus.sysml16.edit"
+          iconPath="icons/full/obj16/ProxyPort.gif"/>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_lDVqxwIsEe-rrMtPA4vagQ"/>
       </elementDescriptors>
     </ownedConfigurations>
   </drawerConfigurations>

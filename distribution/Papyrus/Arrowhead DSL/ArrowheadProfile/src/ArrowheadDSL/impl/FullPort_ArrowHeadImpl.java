@@ -3,7 +3,7 @@
 package ArrowheadDSL.impl;
 
 import ArrowheadDSL.ArrowheadDSLPackage;
-import ArrowheadDSL.ProxyPort;
+import ArrowheadDSL.FullPort_ArrowHead;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -17,18 +17,18 @@ import org.eclipse.uml2.uml.Port;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Proxy Port</b></em>'.
+ * An implementation of the model object '<em><b>Full Port Arrow Head</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link ArrowheadDSL.impl.ProxyPortImpl#getBase_Port <em>Base Port</em>}</li>
+ *   <li>{@link ArrowheadDSL.impl.FullPort_ArrowHeadImpl#getBase_Port <em>Base Port</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class ProxyPortImpl extends MinimalEObjectImpl.Container implements ProxyPort {
+public class FullPort_ArrowHeadImpl extends MinimalEObjectImpl.Container implements FullPort_ArrowHead {
 	/**
 	 * The cached value of the '{@link #getBase_Port() <em>Base Port</em>}' reference.
 	 * <!-- begin-user-doc -->
@@ -44,7 +44,7 @@ public class ProxyPortImpl extends MinimalEObjectImpl.Container implements Proxy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected ProxyPortImpl() {
+	protected FullPort_ArrowHeadImpl() {
 		super();
 	}
 
@@ -55,7 +55,7 @@ public class ProxyPortImpl extends MinimalEObjectImpl.Container implements Proxy
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return ArrowheadDSLPackage.Literals.PROXY_PORT;
+		return ArrowheadDSLPackage.Literals.FULL_PORT_ARROW_HEAD;
 	}
 
 	/**
@@ -70,7 +70,7 @@ public class ProxyPortImpl extends MinimalEObjectImpl.Container implements Proxy
 			base_Port = (Port)eResolveProxy(oldBase_Port);
 			if (base_Port != oldBase_Port) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, ArrowheadDSLPackage.PROXY_PORT__BASE_PORT, oldBase_Port, base_Port));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, ArrowheadDSLPackage.FULL_PORT_ARROW_HEAD__BASE_PORT, oldBase_Port, base_Port));
 			}
 		}
 		return base_Port;
@@ -95,7 +95,7 @@ public class ProxyPortImpl extends MinimalEObjectImpl.Container implements Proxy
 		Port oldBase_Port = base_Port;
 		base_Port = newBase_Port;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ArrowheadDSLPackage.PROXY_PORT__BASE_PORT, oldBase_Port, base_Port));
+			eNotify(new ENotificationImpl(this, Notification.SET, ArrowheadDSLPackage.FULL_PORT_ARROW_HEAD__BASE_PORT, oldBase_Port, base_Port));
 	}
 
 	/**
@@ -106,7 +106,7 @@ public class ProxyPortImpl extends MinimalEObjectImpl.Container implements Proxy
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case ArrowheadDSLPackage.PROXY_PORT__BASE_PORT:
+			case ArrowheadDSLPackage.FULL_PORT_ARROW_HEAD__BASE_PORT:
 				if (resolve) return getBase_Port();
 				return basicGetBase_Port();
 		}
@@ -121,7 +121,7 @@ public class ProxyPortImpl extends MinimalEObjectImpl.Container implements Proxy
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case ArrowheadDSLPackage.PROXY_PORT__BASE_PORT:
+			case ArrowheadDSLPackage.FULL_PORT_ARROW_HEAD__BASE_PORT:
 				setBase_Port((Port)newValue);
 				return;
 		}
@@ -136,7 +136,7 @@ public class ProxyPortImpl extends MinimalEObjectImpl.Container implements Proxy
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case ArrowheadDSLPackage.PROXY_PORT__BASE_PORT:
+			case ArrowheadDSLPackage.FULL_PORT_ARROW_HEAD__BASE_PORT:
 				setBase_Port((Port)null);
 				return;
 		}
@@ -151,10 +151,10 @@ public class ProxyPortImpl extends MinimalEObjectImpl.Container implements Proxy
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case ArrowheadDSLPackage.PROXY_PORT__BASE_PORT:
+			case ArrowheadDSLPackage.FULL_PORT_ARROW_HEAD__BASE_PORT:
 				return base_Port != null;
 		}
 		return super.eIsSet(featureID);
 	}
 
-} //ProxyPortImpl
+} //FullPort_ArrowHeadImpl

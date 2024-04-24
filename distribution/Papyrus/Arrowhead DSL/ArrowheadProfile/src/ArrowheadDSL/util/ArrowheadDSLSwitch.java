@@ -255,15 +255,15 @@ public class ArrowheadDSLSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case ArrowheadDSLPackage.FULL_PORT: {
-				FullPort fullPort = (FullPort)theEObject;
-				T result = caseFullPort(fullPort);
+			case ArrowheadDSLPackage.FULL_PORT_ARROW_HEAD: {
+				FullPort_ArrowHead fullPort_ArrowHead = (FullPort_ArrowHead)theEObject;
+				T result = caseFullPort_ArrowHead(fullPort_ArrowHead);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case ArrowheadDSLPackage.PROXY_PORT: {
-				ProxyPort proxyPort = (ProxyPort)theEObject;
-				T result = caseProxyPort(proxyPort);
+			case ArrowheadDSLPackage.PROXY_PORT_ARROW_HEAD: {
+				ProxyPort_ArrowHead proxyPort_ArrowHead = (ProxyPort_ArrowHead)theEObject;
+				T result = caseProxyPort_ArrowHead(proxyPort_ArrowHead);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -632,32 +632,32 @@ public class ArrowheadDSLSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Full Port</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Full Port Arrow Head</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Full Port</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Full Port Arrow Head</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseFullPort(FullPort object) {
+	public T caseFullPort_ArrowHead(FullPort_ArrowHead object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Proxy Port</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Proxy Port Arrow Head</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Proxy Port</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Proxy Port Arrow Head</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseProxyPort(ProxyPort object) {
+	public T caseProxyPort_ArrowHead(ProxyPort_ArrowHead object) {
 		return null;
 	}
 

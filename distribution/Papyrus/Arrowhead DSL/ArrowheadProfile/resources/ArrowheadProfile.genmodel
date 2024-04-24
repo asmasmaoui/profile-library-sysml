@@ -399,13 +399,13 @@
       <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
           propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//ArrowHeadServiceInterfaceWebsocket/base_Operation"/>
     </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//FullPort">
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//FullPort_ArrowHead">
       <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
-          propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//FullPort/base_Port"/>
+          propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//FullPort_ArrowHead/base_Port"/>
     </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//ProxyPort">
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//ProxyPort_ArrowHead">
       <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
-          propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//ProxyPort/base_Port"/>
+          propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//ProxyPort_ArrowHead/base_Port"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

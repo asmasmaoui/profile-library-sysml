@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <elementtypesconfigurations:ElementTypeSetConfiguration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:stereotypematcher="http://www.eclipse.org/papyrus/uml/types/stereotypematcher/1.1" xmi:id="com.example.arrowheadDSL.elementTypes" identifier="com.example.arrowheadDSL.elementTypes" name="ArrowheadDSL" metamodelNsURI="http://www.eclipse.org/uml2/5.0.0/UML">
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_8nYJYAIXEe-rrMtPA4vagQ" identifier="com.example.arrowheadDSL.FullPort_ArrowHead" name="FullPort__ArrowHead" hint="UML::Port" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_8nYwcgIXEe-rrMtPA4vagQ">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_8nYwcAIXEe-rrMtPA4vagQ" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/ArrowheadProfile/resources/ArrowheadProfile_v5.0.profile.uml#_oXf0IPyPEe6MDucytuqm6Q"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_8nYwcQIXEe-rrMtPA4vagQ" iconPath="/icons/full/obj16/Port.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_8nYwcgIXEe-rrMtPA4vagQ" description="Apply Stereotype FullPort" identifier="com.example.arrowheadDSL.fullPort_ArrowHead" target="_8nYJYAIXEe-rrMtPA4vagQ" matchedType="_8nYJYAIXEe-rrMtPA4vagQ">
+      <stereotypesQualifiedNames>ArrowheadDSL::FullPort_ArrowHead</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Port"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_9udtQAIXEe-rrMtPA4vagQ" identifier="com.example.arrowheadDSL.ProxyPort_ArrowHead" name="ProxyPort_ArrowHead" hint="UML::Port" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_9ueUUAIXEe-rrMtPA4vagQ">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_9udtQQIXEe-rrMtPA4vagQ" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/ArrowheadProfile/resources/ArrowheadProfile_v5.0.profile.uml#_o2e2MPyPEe6MDucytuqm6Q"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_9udtQgIXEe-rrMtPA4vagQ" iconPath="/icons/full/obj16/Port.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_9ueUUAIXEe-rrMtPA4vagQ" description="Apply Stereotype ProxyPort" identifier="com.example.arrowheadDSL.proxyPort_ArrowHead" target="_9udtQAIXEe-rrMtPA4vagQ" matchedType="_9udtQAIXEe-rrMtPA4vagQ">
+      <stereotypesQualifiedNames>ArrowheadDSL::ProxyPort_ArrowHead</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Port"/>
+  </elementTypeConfigurations>
   <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.arrowheadDSL.ArrowheadDSLRequirement_Class_UML__Class" identifier="com.example.arrowheadDSL.ArrowheadDSLRequirement_Class_UML::Class" name="ArrowheadDSLRequirement (UML::Class)" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
     <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_cpM0crhIEe6pZqc0ssvC1Q" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/ArrowheadProfile/resources/ArrowheadProfile_v5.0.profile.uml#_Y58WkDLUEe6ldMRwfXEyUg"/>
     <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_cpM0c7hIEe6pZqc0ssvC1Q" iconPath="/icons/full/obj16/Class.gif" bundleId="org.eclipse.uml2.uml.edit"/>

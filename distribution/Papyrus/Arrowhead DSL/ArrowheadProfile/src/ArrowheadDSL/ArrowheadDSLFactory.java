@@ -238,22 +238,22 @@ public interface ArrowheadDSLFactory extends EFactory {
 	ArrowHeadServiceInterfaceWebsocket createArrowHeadServiceInterfaceWebsocket();
 
 	/**
-	 * Returns a new object of class '<em>Full Port</em>'.
+	 * Returns a new object of class '<em>Full Port Arrow Head</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Full Port</em>'.
+	 * @return a new object of class '<em>Full Port Arrow Head</em>'.
 	 * @generated
 	 */
-	FullPort createFullPort();
+	FullPort_ArrowHead createFullPort_ArrowHead();
 
 	/**
-	 * Returns a new object of class '<em>Proxy Port</em>'.
+	 * Returns a new object of class '<em>Proxy Port Arrow Head</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Proxy Port</em>'.
+	 * @return a new object of class '<em>Proxy Port Arrow Head</em>'.
 	 * @generated
 	 */
-	ProxyPort createProxyPort();
+	ProxyPort_ArrowHead createProxyPort_ArrowHead();
 
 	/**
 	 * Returns the package supported by this factory.
