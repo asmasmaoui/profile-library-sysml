@@ -3,7 +3,7 @@
 package ArrowheadDSL.impl;
 
 import ArrowheadDSL.ArrowheadDSLPackage;
-import ArrowheadDSL.ProxyPort_ArrowHead;
+import ArrowheadDSL.FullPort;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -17,18 +17,18 @@ import org.eclipse.uml2.uml.Port;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Proxy Port Arrow Head</b></em>'.
+ * An implementation of the model object '<em><b>Full Port</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link ArrowheadDSL.impl.ProxyPort_ArrowHeadImpl#getBase_Port <em>Base Port</em>}</li>
+ *   <li>{@link ArrowheadDSL.impl.FullPortImpl#getBase_Port <em>Base Port</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class ProxyPort_ArrowHeadImpl extends MinimalEObjectImpl.Container implements ProxyPort_ArrowHead {
+public class FullPortImpl extends MinimalEObjectImpl.Container implements FullPort {
 	/**
 	 * The cached value of the '{@link #getBase_Port() <em>Base Port</em>}' reference.
 	 * <!-- begin-user-doc -->
@@ -44,7 +44,7 @@ public class ProxyPort_ArrowHeadImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected ProxyPort_ArrowHeadImpl() {
+	protected FullPortImpl() {
 		super();
 	}
 
@@ -55,7 +55,7 @@ public class ProxyPort_ArrowHeadImpl extends MinimalEObjectImpl.Container implem
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return ArrowheadDSLPackage.Literals.PROXY_PORT_ARROW_HEAD;
+		return ArrowheadDSLPackage.Literals.FULL_PORT;
 	}
 
 	/**
@@ -70,7 +70,7 @@ public class ProxyPort_ArrowHeadImpl extends MinimalEObjectImpl.Container implem
 			base_Port = (Port)eResolveProxy(oldBase_Port);
 			if (base_Port != oldBase_Port) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, ArrowheadDSLPackage.PROXY_PORT_ARROW_HEAD__BASE_PORT, oldBase_Port, base_Port));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, ArrowheadDSLPackage.FULL_PORT__BASE_PORT, oldBase_Port, base_Port));
 			}
 		}
 		return base_Port;
@@ -95,7 +95,7 @@ public class ProxyPort_ArrowHeadImpl extends MinimalEObjectImpl.Container implem
 		Port oldBase_Port = base_Port;
 		base_Port = newBase_Port;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ArrowheadDSLPackage.PROXY_PORT_ARROW_HEAD__BASE_PORT, oldBase_Port, base_Port));
+			eNotify(new ENotificationImpl(this, Notification.SET, ArrowheadDSLPackage.FULL_PORT__BASE_PORT, oldBase_Port, base_Port));
 	}
 
 	/**
@@ -106,7 +106,7 @@ public class ProxyPort_ArrowHeadImpl extends MinimalEObjectImpl.Container implem
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case ArrowheadDSLPackage.PROXY_PORT_ARROW_HEAD__BASE_PORT:
+			case ArrowheadDSLPackage.FULL_PORT__BASE_PORT:
 				if (resolve) return getBase_Port();
 				return basicGetBase_Port();
 		}
@@ -121,7 +121,7 @@ public class ProxyPort_ArrowHeadImpl extends MinimalEObjectImpl.Container implem
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case ArrowheadDSLPackage.PROXY_PORT_ARROW_HEAD__BASE_PORT:
+			case ArrowheadDSLPackage.FULL_PORT__BASE_PORT:
 				setBase_Port((Port)newValue);
 				return;
 		}
@@ -136,7 +136,7 @@ public class ProxyPort_ArrowHeadImpl extends MinimalEObjectImpl.Container implem
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case ArrowheadDSLPackage.PROXY_PORT_ARROW_HEAD__BASE_PORT:
+			case ArrowheadDSLPackage.FULL_PORT__BASE_PORT:
 				setBase_Port((Port)null);
 				return;
 		}
@@ -151,10 +151,10 @@ public class ProxyPort_ArrowHeadImpl extends MinimalEObjectImpl.Container implem
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case ArrowheadDSLPackage.PROXY_PORT_ARROW_HEAD__BASE_PORT:
+			case ArrowheadDSLPackage.FULL_PORT__BASE_PORT:
 				return base_Port != null;
 		}
 		return super.eIsSet(featureID);
 	}
 
-} //ProxyPort_ArrowHeadImpl
+} //FullPortImpl

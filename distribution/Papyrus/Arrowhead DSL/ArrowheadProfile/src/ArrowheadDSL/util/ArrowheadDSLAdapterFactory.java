@@ -171,12 +171,12 @@ public class ArrowheadDSLAdapterFactory extends AdapterFactoryImpl {
 				return createArrowHeadServiceInterfaceWebsocketAdapter();
 			}
 			@Override
-			public Adapter caseFullPort_ArrowHead(FullPort_ArrowHead object) {
-				return createFullPort_ArrowHeadAdapter();
+			public Adapter caseFullPort(FullPort object) {
+				return createFullPortAdapter();
 			}
 			@Override
-			public Adapter caseProxyPort_ArrowHead(ProxyPort_ArrowHead object) {
-				return createProxyPort_ArrowHeadAdapter();
+			public Adapter caseProxyPort(ProxyPort object) {
+				return createProxyPortAdapter();
 			}
 			@Override
 			public Adapter caseBlock(Block object) {
@@ -551,30 +551,30 @@ public class ArrowheadDSLAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link ArrowheadDSL.FullPort_ArrowHead <em>Full Port Arrow Head</em>}'.
+	 * Creates a new adapter for an object of class '{@link ArrowheadDSL.FullPort <em>Full Port</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see ArrowheadDSL.FullPort_ArrowHead
+	 * @see ArrowheadDSL.FullPort
 	 * @generated
 	 */
-	public Adapter createFullPort_ArrowHeadAdapter() {
+	public Adapter createFullPortAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link ArrowheadDSL.ProxyPort_ArrowHead <em>Proxy Port Arrow Head</em>}'.
+	 * Creates a new adapter for an object of class '{@link ArrowheadDSL.ProxyPort <em>Proxy Port</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see ArrowheadDSL.ProxyPort_ArrowHead
+	 * @see ArrowheadDSL.ProxyPort
 	 * @generated
 	 */
-	public Adapter createProxyPort_ArrowHeadAdapter() {
+	public Adapter createProxyPortAdapter() {
 		return null;
 	}
 

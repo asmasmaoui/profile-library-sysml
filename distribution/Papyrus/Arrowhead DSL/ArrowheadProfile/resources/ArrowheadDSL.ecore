@@ -500,11 +500,11 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="base_Operation" ordered="false"
         eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Operation"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="FullPort_ArrowHead">
+  <eClassifiers xsi:type="ecore:EClass" name="FullPort">
     <eStructuralFeatures xsi:type="ecore:EReference" name="base_Port" ordered="false"
         eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Port"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ProxyPort_ArrowHead">
+  <eClassifiers xsi:type="ecore:EClass" name="ProxyPort">
     <eStructuralFeatures xsi:type="ecore:EReference" name="base_Port" ordered="false"
         eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Port"/>
   </eClassifiers>

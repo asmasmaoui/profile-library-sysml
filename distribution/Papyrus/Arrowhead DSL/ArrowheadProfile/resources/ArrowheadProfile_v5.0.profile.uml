@@ -741,23 +741,23 @@
     <packagedElement xmi:type="uml:Extension" xmi:id="_woiCIPftEe68Gq79QBA0lw" name="E_ArrowHeadServiceInterfaceWebsocket_Operation1" memberEnd="_woipMPftEe68Gq79QBA0lw _woipMfftEe68Gq79QBA0lw">
       <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_woipMPftEe68Gq79QBA0lw" name="extension_ArrowHeadServiceInterfaceWebsocket" type="_bH1g0PftEe68Gq79QBA0lw" aggregation="composite" association="_woiCIPftEe68Gq79QBA0lw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_oXf0IPyPEe6MDucytuqm6Q" name="FullPort_ArrowHead">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_oXf0IPyPEe6MDucytuqm6Q" name="FullPort">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_raE0UfyPEe6MDucytuqm6Q" name="base_Port" association="_raENQPyPEe6MDucytuqm6Q">
         <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Port"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_raE0UvyPEe6MDucytuqm6Q"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_o2e2MPyPEe6MDucytuqm6Q" name="ProxyPort_ArrowHead">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_o2e2MPyPEe6MDucytuqm6Q" name="ProxyPort">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_pkhA4PyPEe6MDucytuqm6Q" name="base_Port" association="_pkfLsPyPEe6MDucytuqm6Q">
         <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Port"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pkhA4fyPEe6MDucytuqm6Q"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Extension" xmi:id="_pkfLsPyPEe6MDucytuqm6Q" name="E_ProxyPort_ArrowHead_Port1" memberEnd="_pkgZ0PyPEe6MDucytuqm6Q _pkhA4PyPEe6MDucytuqm6Q">
-      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_pkgZ0PyPEe6MDucytuqm6Q" name="extension_ProxyPort_ArrowHead" type="_o2e2MPyPEe6MDucytuqm6Q" aggregation="composite" association="_pkfLsPyPEe6MDucytuqm6Q"/>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_pkfLsPyPEe6MDucytuqm6Q" name="E_ProxyPort_Port1" memberEnd="_pkgZ0PyPEe6MDucytuqm6Q _pkhA4PyPEe6MDucytuqm6Q">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_pkgZ0PyPEe6MDucytuqm6Q" name="extension_ProxyPort" type="_o2e2MPyPEe6MDucytuqm6Q" aggregation="composite" association="_pkfLsPyPEe6MDucytuqm6Q"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Extension" xmi:id="_raENQPyPEe6MDucytuqm6Q" name="E_FullPort_ArrowHead_Port1" memberEnd="_raE0UPyPEe6MDucytuqm6Q _raE0UfyPEe6MDucytuqm6Q">
-      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_raE0UPyPEe6MDucytuqm6Q" name="extension_FullPort_ArrowHead" type="_oXf0IPyPEe6MDucytuqm6Q" aggregation="composite" association="_raENQPyPEe6MDucytuqm6Q"/>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_raENQPyPEe6MDucytuqm6Q" name="E_FullPort_Port1" memberEnd="_raE0UPyPEe6MDucytuqm6Q _raE0UfyPEe6MDucytuqm6Q">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_raE0UPyPEe6MDucytuqm6Q" name="extension_FullPort" type="_oXf0IPyPEe6MDucytuqm6Q" aggregation="composite" association="_raENQPyPEe6MDucytuqm6Q"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_HPL28LaoEe6zC_b0ESqWTw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HPgAALaoEe6zC_b0ESqWTw" source="http://www.eclipse.org/uml2/2.0.0/UML">

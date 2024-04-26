@@ -81,8 +81,8 @@ public class ArrowheadDSLFactoryImpl extends EFactoryImpl implements ArrowheadDS
 			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_MQTT: return createArrowHeadServiceInterfaceMQTT();
 			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_COAP: return createArrowHeadServiceInterfaceCOAP();
 			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_WEBSOCKET: return createArrowHeadServiceInterfaceWebsocket();
-			case ArrowheadDSLPackage.FULL_PORT_ARROW_HEAD: return createFullPort_ArrowHead();
-			case ArrowheadDSLPackage.PROXY_PORT_ARROW_HEAD: return createProxyPort_ArrowHead();
+			case ArrowheadDSLPackage.FULL_PORT: return createFullPort();
+			case ArrowheadDSLPackage.PROXY_PORT: return createProxyPort();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -496,9 +496,9 @@ public class ArrowheadDSLFactoryImpl extends EFactoryImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public FullPort_ArrowHead createFullPort_ArrowHead() {
-		FullPort_ArrowHeadImpl fullPort_ArrowHead = new FullPort_ArrowHeadImpl();
-		return fullPort_ArrowHead;
+	public FullPort createFullPort() {
+		FullPortImpl fullPort = new FullPortImpl();
+		return fullPort;
 	}
 
 	/**
@@ -507,9 +507,9 @@ public class ArrowheadDSLFactoryImpl extends EFactoryImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public ProxyPort_ArrowHead createProxyPort_ArrowHead() {
-		ProxyPort_ArrowHeadImpl proxyPort_ArrowHead = new ProxyPort_ArrowHeadImpl();
-		return proxyPort_ArrowHead;
+	public ProxyPort createProxyPort() {
+		ProxyPortImpl proxyPort = new ProxyPortImpl();
+		return proxyPort;
 	}
 
 	/**

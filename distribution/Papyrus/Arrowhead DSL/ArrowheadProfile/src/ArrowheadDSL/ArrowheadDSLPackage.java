@@ -3167,14 +3167,14 @@ public interface ArrowheadDSLPackage extends EPackage {
 	int ARROW_HEAD_SERVICE_INTERFACE_WEBSOCKET_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link ArrowheadDSL.impl.FullPort_ArrowHeadImpl <em>Full Port Arrow Head</em>}' class.
+	 * The meta object id for the '{@link ArrowheadDSL.impl.FullPortImpl <em>Full Port</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see ArrowheadDSL.impl.FullPort_ArrowHeadImpl
-	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getFullPort_ArrowHead()
+	 * @see ArrowheadDSL.impl.FullPortImpl
+	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getFullPort()
 	 * @generated
 	 */
-	int FULL_PORT_ARROW_HEAD = 24;
+	int FULL_PORT = 24;
 
 	/**
 	 * The feature id for the '<em><b>Base Port</b></em>' reference.
@@ -3183,35 +3183,35 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FULL_PORT_ARROW_HEAD__BASE_PORT = 0;
+	int FULL_PORT__BASE_PORT = 0;
 
 	/**
-	 * The number of structural features of the '<em>Full Port Arrow Head</em>' class.
+	 * The number of structural features of the '<em>Full Port</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FULL_PORT_ARROW_HEAD_FEATURE_COUNT = 1;
+	int FULL_PORT_FEATURE_COUNT = 1;
 
 	/**
-	 * The number of operations of the '<em>Full Port Arrow Head</em>' class.
+	 * The number of operations of the '<em>Full Port</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FULL_PORT_ARROW_HEAD_OPERATION_COUNT = 0;
+	int FULL_PORT_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link ArrowheadDSL.impl.ProxyPort_ArrowHeadImpl <em>Proxy Port Arrow Head</em>}' class.
+	 * The meta object id for the '{@link ArrowheadDSL.impl.ProxyPortImpl <em>Proxy Port</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see ArrowheadDSL.impl.ProxyPort_ArrowHeadImpl
-	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getProxyPort_ArrowHead()
+	 * @see ArrowheadDSL.impl.ProxyPortImpl
+	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getProxyPort()
 	 * @generated
 	 */
-	int PROXY_PORT_ARROW_HEAD = 25;
+	int PROXY_PORT = 25;
 
 	/**
 	 * The feature id for the '<em><b>Base Port</b></em>' reference.
@@ -3220,25 +3220,25 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROXY_PORT_ARROW_HEAD__BASE_PORT = 0;
+	int PROXY_PORT__BASE_PORT = 0;
 
 	/**
-	 * The number of structural features of the '<em>Proxy Port Arrow Head</em>' class.
+	 * The number of structural features of the '<em>Proxy Port</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PROXY_PORT_ARROW_HEAD_FEATURE_COUNT = 1;
+	int PROXY_PORT_FEATURE_COUNT = 1;
 
 	/**
-	 * The number of operations of the '<em>Proxy Port Arrow Head</em>' class.
+	 * The number of operations of the '<em>Proxy Port</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PROXY_PORT_ARROW_HEAD_OPERATION_COUNT = 0;
+	int PROXY_PORT_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.SystemDatabaseKind <em>System Database Kind</em>}' enum.
@@ -4718,46 +4718,46 @@ public interface ArrowheadDSLPackage extends EPackage {
 	EReference getArrowHeadServiceInterfaceWebsocket_Base_Operation();
 
 	/**
-	 * Returns the meta object for class '{@link ArrowheadDSL.FullPort_ArrowHead <em>Full Port Arrow Head</em>}'.
+	 * Returns the meta object for class '{@link ArrowheadDSL.FullPort <em>Full Port</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Full Port Arrow Head</em>'.
-	 * @see ArrowheadDSL.FullPort_ArrowHead
+	 * @return the meta object for class '<em>Full Port</em>'.
+	 * @see ArrowheadDSL.FullPort
 	 * @generated
 	 */
-	EClass getFullPort_ArrowHead();
+	EClass getFullPort();
 
 	/**
-	 * Returns the meta object for the reference '{@link ArrowheadDSL.FullPort_ArrowHead#getBase_Port <em>Base Port</em>}'.
+	 * Returns the meta object for the reference '{@link ArrowheadDSL.FullPort#getBase_Port <em>Base Port</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Base Port</em>'.
-	 * @see ArrowheadDSL.FullPort_ArrowHead#getBase_Port()
-	 * @see #getFullPort_ArrowHead()
+	 * @see ArrowheadDSL.FullPort#getBase_Port()
+	 * @see #getFullPort()
 	 * @generated
 	 */
-	EReference getFullPort_ArrowHead_Base_Port();
+	EReference getFullPort_Base_Port();
 
 	/**
-	 * Returns the meta object for class '{@link ArrowheadDSL.ProxyPort_ArrowHead <em>Proxy Port Arrow Head</em>}'.
+	 * Returns the meta object for class '{@link ArrowheadDSL.ProxyPort <em>Proxy Port</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Proxy Port Arrow Head</em>'.
-	 * @see ArrowheadDSL.ProxyPort_ArrowHead
+	 * @return the meta object for class '<em>Proxy Port</em>'.
+	 * @see ArrowheadDSL.ProxyPort
 	 * @generated
 	 */
-	EClass getProxyPort_ArrowHead();
+	EClass getProxyPort();
 
 	/**
-	 * Returns the meta object for the reference '{@link ArrowheadDSL.ProxyPort_ArrowHead#getBase_Port <em>Base Port</em>}'.
+	 * Returns the meta object for the reference '{@link ArrowheadDSL.ProxyPort#getBase_Port <em>Base Port</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Base Port</em>'.
-	 * @see ArrowheadDSL.ProxyPort_ArrowHead#getBase_Port()
-	 * @see #getProxyPort_ArrowHead()
+	 * @see ArrowheadDSL.ProxyPort#getBase_Port()
+	 * @see #getProxyPort()
 	 * @generated
 	 */
-	EReference getProxyPort_ArrowHead_Base_Port();
+	EReference getProxyPort_Base_Port();
 
 	/**
 	 * Returns the meta object for enum '{@link ArrowheadDSL.SystemDatabaseKind <em>System Database Kind</em>}'.
@@ -5999,14 +5999,14 @@ public interface ArrowheadDSLPackage extends EPackage {
 		EReference ARROW_HEAD_SERVICE_INTERFACE_WEBSOCKET__BASE_OPERATION = eINSTANCE.getArrowHeadServiceInterfaceWebsocket_Base_Operation();
 
 		/**
-		 * The meta object literal for the '{@link ArrowheadDSL.impl.FullPort_ArrowHeadImpl <em>Full Port Arrow Head</em>}' class.
+		 * The meta object literal for the '{@link ArrowheadDSL.impl.FullPortImpl <em>Full Port</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see ArrowheadDSL.impl.FullPort_ArrowHeadImpl
-		 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getFullPort_ArrowHead()
+		 * @see ArrowheadDSL.impl.FullPortImpl
+		 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getFullPort()
 		 * @generated
 		 */
-		EClass FULL_PORT_ARROW_HEAD = eINSTANCE.getFullPort_ArrowHead();
+		EClass FULL_PORT = eINSTANCE.getFullPort();
 
 		/**
 		 * The meta object literal for the '<em><b>Base Port</b></em>' reference feature.
@@ -6014,17 +6014,17 @@ public interface ArrowheadDSLPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FULL_PORT_ARROW_HEAD__BASE_PORT = eINSTANCE.getFullPort_ArrowHead_Base_Port();
+		EReference FULL_PORT__BASE_PORT = eINSTANCE.getFullPort_Base_Port();
 
 		/**
-		 * The meta object literal for the '{@link ArrowheadDSL.impl.ProxyPort_ArrowHeadImpl <em>Proxy Port Arrow Head</em>}' class.
+		 * The meta object literal for the '{@link ArrowheadDSL.impl.ProxyPortImpl <em>Proxy Port</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see ArrowheadDSL.impl.ProxyPort_ArrowHeadImpl
-		 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getProxyPort_ArrowHead()
+		 * @see ArrowheadDSL.impl.ProxyPortImpl
+		 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getProxyPort()
 		 * @generated
 		 */
-		EClass PROXY_PORT_ARROW_HEAD = eINSTANCE.getProxyPort_ArrowHead();
+		EClass PROXY_PORT = eINSTANCE.getProxyPort();
 
 		/**
 		 * The meta object literal for the '<em><b>Base Port</b></em>' reference feature.
@@ -6032,7 +6032,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PROXY_PORT_ARROW_HEAD__BASE_PORT = eINSTANCE.getProxyPort_ArrowHead_Base_Port();
+		EReference PROXY_PORT__BASE_PORT = eINSTANCE.getProxyPort_Base_Port();
 
 		/**
 		 * The meta object literal for the '{@link ArrowheadDSL.SystemDatabaseKind <em>System Database Kind</em>}' enum.

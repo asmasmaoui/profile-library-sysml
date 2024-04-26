@@ -22,7 +22,7 @@ import ArrowheadDSL.DatamodelStandardKind;
 import ArrowheadDSL.DeviceDesign;
 import ArrowheadDSL.DeviceDesignDescription;
 import ArrowheadDSL.EncodingKind;
-import ArrowheadDSL.FullPort_ArrowHead;
+import ArrowheadDSL.FullPort;
 import ArrowheadDSL.HTTP11MethodKind;
 import ArrowheadDSL.HTTP2FrameKind;
 import ArrowheadDSL.IDD_Implementation;
@@ -42,7 +42,7 @@ import ArrowheadDSL.MonitoringPolicyKind;
 import ArrowheadDSL.OSKind;
 import ArrowheadDSL.PayloadEncryptionKind;
 import ArrowheadDSL.PhysicalLayerKind;
-import ArrowheadDSL.ProxyPort_ArrowHead;
+import ArrowheadDSL.ProxyPort;
 import ArrowheadDSL.SecurityPolicyKind;
 import ArrowheadDSL.SysD;
 import ArrowheadDSL.SysDD;
@@ -261,14 +261,14 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass fullPort_ArrowHeadEClass = null;
+	private EClass fullPortEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass proxyPort_ArrowHeadEClass = null;
+	private EClass proxyPortEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1649,8 +1649,8 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public EClass getFullPort_ArrowHead() {
-		return fullPort_ArrowHeadEClass;
+	public EClass getFullPort() {
+		return fullPortEClass;
 	}
 
 	/**
@@ -1659,8 +1659,8 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public EReference getFullPort_ArrowHead_Base_Port() {
-		return (EReference)fullPort_ArrowHeadEClass.getEStructuralFeatures().get(0);
+	public EReference getFullPort_Base_Port() {
+		return (EReference)fullPortEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -1669,8 +1669,8 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public EClass getProxyPort_ArrowHead() {
-		return proxyPort_ArrowHeadEClass;
+	public EClass getProxyPort() {
+		return proxyPortEClass;
 	}
 
 	/**
@@ -1679,8 +1679,8 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public EReference getProxyPort_ArrowHead_Base_Port() {
-		return (EReference)proxyPort_ArrowHeadEClass.getEStructuralFeatures().get(0);
+	public EReference getProxyPort_Base_Port() {
+		return (EReference)proxyPortEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -2127,11 +2127,11 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 		createEAttribute(arrowHeadServiceInterfaceWebsocketEClass, ARROW_HEAD_SERVICE_INTERFACE_WEBSOCKET__SUB_URL);
 		createEReference(arrowHeadServiceInterfaceWebsocketEClass, ARROW_HEAD_SERVICE_INTERFACE_WEBSOCKET__BASE_OPERATION);
 
-		fullPort_ArrowHeadEClass = createEClass(FULL_PORT_ARROW_HEAD);
-		createEReference(fullPort_ArrowHeadEClass, FULL_PORT_ARROW_HEAD__BASE_PORT);
+		fullPortEClass = createEClass(FULL_PORT);
+		createEReference(fullPortEClass, FULL_PORT__BASE_PORT);
 
-		proxyPort_ArrowHeadEClass = createEClass(PROXY_PORT_ARROW_HEAD);
-		createEReference(proxyPort_ArrowHeadEClass, PROXY_PORT_ARROW_HEAD__BASE_PORT);
+		proxyPortEClass = createEClass(PROXY_PORT);
+		createEReference(proxyPortEClass, PROXY_PORT__BASE_PORT);
 
 		// Create enums
 		systemDatabaseKindEEnum = createEEnum(SYSTEM_DATABASE_KIND);
@@ -2356,11 +2356,11 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 		initEAttribute(getArrowHeadServiceInterfaceWebsocket_SubURL(), theTypesPackage.getString(), "SubURL", null, 1, 1, ArrowHeadServiceInterfaceWebsocket.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getArrowHeadServiceInterfaceWebsocket_Base_Operation(), theUMLPackage.getOperation(), null, "base_Operation", null, 0, 1, ArrowHeadServiceInterfaceWebsocket.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
-		initEClass(fullPort_ArrowHeadEClass, FullPort_ArrowHead.class, "FullPort_ArrowHead", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getFullPort_ArrowHead_Base_Port(), theUMLPackage.getPort(), null, "base_Port", null, 0, 1, FullPort_ArrowHead.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEClass(fullPortEClass, FullPort.class, "FullPort", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getFullPort_Base_Port(), theUMLPackage.getPort(), null, "base_Port", null, 0, 1, FullPort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
-		initEClass(proxyPort_ArrowHeadEClass, ProxyPort_ArrowHead.class, "ProxyPort_ArrowHead", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getProxyPort_ArrowHead_Base_Port(), theUMLPackage.getPort(), null, "base_Port", null, 0, 1, ProxyPort_ArrowHead.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEClass(proxyPortEClass, ProxyPort.class, "ProxyPort", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getProxyPort_Base_Port(), theUMLPackage.getPort(), null, "base_Port", null, 0, 1, ProxyPort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		// Initialize enums and add enum literals
 		initEEnum(systemDatabaseKindEEnum, SystemDatabaseKind.class, "SystemDatabaseKind");

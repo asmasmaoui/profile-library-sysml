@@ -961,7 +961,13 @@
           xmi:type="paletteconfiguration:ElementDescriptor">
         <elementType
             xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
-            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_BV8C5QIbEe-rrMtPA4vagQ"/>
+            href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.Class_FullPort"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.FullPort_Label"/>
       </elementDescriptors>
     </ownedConfigurations>
     <ownedConfigurations
@@ -978,7 +984,13 @@
           xmi:type="paletteconfiguration:ElementDescriptor">
         <elementType
             xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
-            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_lDVqxwIsEe-rrMtPA4vagQ"/>
+            href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.Class_ProxyPort"/>
+      </elementDescriptors>
+      <elementDescriptors
+          xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType
+            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
+            href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.ProxyPort_Label"/>
       </elementDescriptors>
     </ownedConfigurations>
   </drawerConfigurations>
