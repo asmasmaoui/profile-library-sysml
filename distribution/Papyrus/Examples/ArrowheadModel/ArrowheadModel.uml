@@ -16,12 +16,12 @@
       </ownedOperation>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_e_Hh8PyvEe6i9Z5w4wqK2A" name="Echo "/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_qrzLgPyvEe6i9Z5w4wqK2A" name="Query" isQuery="true">
-        <ownedParameter xmi:type="uml:Parameter" xmi:id="_yPeYUPyvEe6i9Z5w4wqK2A" name="ServiceQueryForm" type="_DQWwEP1YEe6dPJLtMaqiPg"/>
-        <ownedParameter xmi:type="uml:Parameter" xmi:id="_9S4bYPyvEe6i9Z5w4wqK2A" name="ServiceQueryList" type="_DQWwEP1YEe6dPJLtMaqiPg"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_yPeYUPyvEe6i9Z5w4wqK2A" name="ServiceQueryForm" type="_PgcYoAOuEe-RispB8iR56w"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_9S4bYPyvEe6i9Z5w4wqK2A" name="ServiceQueryList" type="_QOVZYAOuEe-RispB8iR56w"/>
       </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_SWNrQPywEe6i9Z5w4wqK2A" name="ServiceDiscovery_DD">
-      <generalization xmi:type="uml:Generalization" xmi:id="_f2H24Py5Ee6i9Z5w4wqK2A" general="_HIisMPygEe6i9Z5w4wqK2A"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="_IveGAAOsEe-RispB8iR56w" general="_HIisMPygEe6i9Z5w4wqK2A"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_bGEXUPywEe6i9Z5w4wqK2A" name="Register">
         <ownedParameter xmi:type="uml:Parameter" xmi:id="_9b4w8PywEe6i9Z5w4wqK2A" name="ServiceRegestryRequest" type="_DQWwEP1YEe6dPJLtMaqiPg"/>
       </ownedOperation>
@@ -35,7 +35,7 @@
       </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_OUlFAPy0Ee6i9Z5w4wqK2A" name="ServiceDescovery_MQTT">
-      <generalization xmi:type="uml:Generalization" xmi:id="_geVtcPy5Ee6i9Z5w4wqK2A" general="_HIisMPygEe6i9Z5w4wqK2A"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="_KLOSUAOsEe-RispB8iR56w" general="_HIisMPygEe6i9Z5w4wqK2A"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_mL44YPy0Ee6i9Z5w4wqK2A" name="Register">
         <ownedParameter xmi:type="uml:Parameter" xmi:id="_mL44Yfy0Ee6i9Z5w4wqK2A" name="ServiceRegestryForm" type="_DQWwEP1YEe6dPJLtMaqiPg"/>
         <ownedParameter xmi:type="uml:Parameter" xmi:id="_mL44Yvy0Ee6i9Z5w4wqK2A" name="ServiceRegistryFormReturn" type="_DQWwEP1YEe6dPJLtMaqiPg"/>
@@ -45,16 +45,16 @@
         <ownedParameter xmi:type="uml:Parameter" xmi:id="_RHA68Py1Ee6i9Z5w4wqK2A" name="Status"/>
       </ownedOperation>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_mL6GgPy0Ee6i9Z5w4wqK2A" name="Echo ">
-        <ownedParameter xmi:type="uml:Parameter" xmi:id="_f4z7UPy1Ee6i9Z5w4wqK2A" name="EchoRequest"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_f4z7UPy1Ee6i9Z5w4wqK2A" name="EchoRequest" type="_DRRGAAOuEe-RispB8iR56w"/>
         <ownedParameter xmi:type="uml:Parameter" xmi:id="_jUVnAPy1Ee6i9Z5w4wqK2A" name="EchoResponse"/>
       </ownedOperation>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_mL6Ggfy0Ee6i9Z5w4wqK2A" name="Query" isQuery="true">
-        <ownedParameter xmi:type="uml:Parameter" xmi:id="_mL6Ggvy0Ee6i9Z5w4wqK2A" name="ServiceQueryForm_MQTT"/>
-        <ownedParameter xmi:type="uml:Parameter" xmi:id="_mL6Gg_y0Ee6i9Z5w4wqK2A" name="ServiceQueryList"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_mL6Ggvy0Ee6i9Z5w4wqK2A" name="ServiceQueryForm_MQTT" type="_xKVD4AOvEe-RispB8iR56w"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_mL6Gg_y0Ee6i9Z5w4wqK2A" name="ServiceQueryList" type="_QOVZYAOuEe-RispB8iR56w"/>
       </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_NUzGMPy4Ee6i9Z5w4wqK2A" name="ServiceDescovery_CoAP">
-      <generalization xmi:type="uml:Generalization" xmi:id="_kJkCAPy5Ee6i9Z5w4wqK2A" general="_HIisMPygEe6i9Z5w4wqK2A"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="_LzkwMAOsEe-RispB8iR56w" general="_HIisMPygEe6i9Z5w4wqK2A"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_j2H-EPy4Ee6i9Z5w4wqK2A" name="Register">
         <ownedParameter xmi:type="uml:Parameter" xmi:id="_j2H-Efy4Ee6i9Z5w4wqK2A" name="ServiceRegestryForm" type="_DQWwEP1YEe6dPJLtMaqiPg"/>
       </ownedOperation>
@@ -66,11 +66,16 @@
         <ownedParameter xmi:type="uml:Parameter" xmi:id="_j2KaUvy4Ee6i9Z5w4wqK2A" name="EchoResponse"/>
       </ownedOperation>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_j2LocPy4Ee6i9Z5w4wqK2A" name="Query" isQuery="true">
-        <ownedParameter xmi:type="uml:Parameter" xmi:id="_j2Locfy4Ee6i9Z5w4wqK2A" name="ServiceQueryForm"/>
-        <ownedParameter xmi:type="uml:Parameter" xmi:id="_j2Locvy4Ee6i9Z5w4wqK2A" name="ServiceQueryList"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_j2Locfy4Ee6i9Z5w4wqK2A" name="ServiceQueryForm" type="_PgcYoAOuEe-RispB8iR56w"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_j2Locvy4Ee6i9Z5w4wqK2A" name="ServiceQueryList" type="_QOVZYAOuEe-RispB8iR56w"/>
       </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_DQWwEP1YEe6dPJLtMaqiPg" name="ServiceRegistryRequest"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_DRRGAAOuEe-RispB8iR56w" name="Echo_ResponsePath_MQTT"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_PgcYoAOuEe-RispB8iR56w" name="ServiceQueryForm"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_QOVZYAOuEe-RispB8iR56w" name="ServiceQueryList"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_4weyYAOuEe-RispB8iR56w" name="Echo_ResponsePath_MQTT"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xKVD4AOvEe-RispB8iR56w" name="ServiceQueryForm_MQTT"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_mCnNIPyfEe6i9Z5w4wqK2A">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mCnNIfyfEe6i9Z5w4wqK2A" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/arrowhead#/"/>
@@ -140,19 +145,24 @@
   </uml:Model>
   <ArrowheadDSL:SD xmi:id="_HInksPygEe6i9Z5w4wqK2A" base_Class="_HIisMPygEe6i9Z5w4wqK2A"/>
   <ArrowheadDSL:IDD xmi:id="_SWQukPywEe6i9Z5w4wqK2A" base_Class="_SWNrQPywEe6i9Z5w4wqK2A"/>
-  <ArrowheadDSL:ArrowheadDSLOperationHTTP xmi:id="_p6nJsPywEe6i9Z5w4wqK2A" SubURL="/serviceregistry/register" base_Operation="_bGEXUPywEe6i9Z5w4wqK2A"/>
-  <ArrowheadDSL:ArrowheadDSLOperationHTTP xmi:id="_J90LAPyyEe6i9Z5w4wqK2A" SubURL="/serviceregistry/unregiter" base_Operation="_chmrwPyxEe6i9Z5w4wqK2A"/>
-  <ArrowheadDSL:ArrowheadDSLOperationHTTP xmi:id="_e3Xz0PyyEe6i9Z5w4wqK2A" Method="GET" SubURL="/serviceRegistry/echo" base_Operation="_qUvEcPyxEe6i9Z5w4wqK2A"/>
-  <ArrowheadDSL:ArrowheadDSLOperationHTTP xmi:id="_9AlDEPyyEe6i9Z5w4wqK2A" SubURL="/serviceregistry/query" base_Operation="_qUw5oPyxEe6i9Z5w4wqK2A"/>
-  <ArrowheadDSL:IDD xmi:id="_OUnhQPy0Ee6i9Z5w4wqK2A" base_Class="_OUlFAPy0Ee6i9Z5w4wqK2A"/>
-  <ArrowheadDSL:ArrowheadDSLOperationMQTT xmi:id="_pUVQAPy0Ee6i9Z5w4wqK2A" Topic="/ah/serviceregistry/register" base_Operation="_mL44YPy0Ee6i9Z5w4wqK2A"/>
-  <ArrowheadDSL:ArrowheadDSLOperationMQTT xmi:id="_TaLQYPy1Ee6i9Z5w4wqK2A" Topic="/ah/serviceregistry/unregister" base_Operation="_mL5fcPy0Ee6i9Z5w4wqK2A"/>
-  <ArrowheadDSL:ArrowheadDSLOperationMQTT xmi:id="_lwe5UPy1Ee6i9Z5w4wqK2A" Method="GET" Topic="/ah/serviceregistry/echo" base_Operation="_mL6GgPy0Ee6i9Z5w4wqK2A"/>
-  <ArrowheadDSL:ArrowheadDSLOperationMQTT xmi:id="_l0tnIPy3Ee6i9Z5w4wqK2A" Topic="/ah/serviceregistry/query" base_Operation="_mL6Ggfy0Ee6i9Z5w4wqK2A"/>
-  <ArrowheadDSL:IDD xmi:id="_NU1icPy4Ee6i9Z5w4wqK2A" base_Class="_NUzGMPy4Ee6i9Z5w4wqK2A"/>
-  <ArrowheadDSL:ArrowheadDSLOperationCOAP xmi:id="_qhIdgPy4Ee6i9Z5w4wqK2A" Method="POST" base_Operation="_j2H-EPy4Ee6i9Z5w4wqK2A" SubURL="/serviceregistry/register"/>
-  <ArrowheadDSL:ArrowheadDSLOperationCOAP xmi:id="_-6tlwPy4Ee6i9Z5w4wqK2A" Method="POST" base_Operation="_j2JMMPy4Ee6i9Z5w4wqK2A" SubURL="/serviceregistry/unregister"/>
-  <ArrowheadDSL:ArrowheadDSLOperationCOAP xmi:id="_LFNzwPy5Ee6i9Z5w4wqK2A" base_Operation="_j2KaUPy4Ee6i9Z5w4wqK2A" SubURL="/serviceregistry/echo"/>
-  <ArrowheadDSL:ArrowheadDSLOperationCOAP xmi:id="_RoxAUPy5Ee6i9Z5w4wqK2A" Method="POST" base_Operation="_j2LocPy4Ee6i9Z5w4wqK2A" SubURL="/serviceregistry/query"/>
+  <ArrowheadDSL:IDD xmi:id="_OUnhQPy0Ee6i9Z5w4wqK2A" base_Class="_OUlFAPy0Ee6i9Z5w4wqK2A" Protocol="mqtt"/>
+  <ArrowheadDSL:IDD xmi:id="_NU1icPy4Ee6i9Z5w4wqK2A" base_Class="_NUzGMPy4Ee6i9Z5w4wqK2A" Protocol="coap"/>
   <Blocks:Block xmi:id="_DQtVYP1YEe6dPJLtMaqiPg" base_Class="_DQWwEP1YEe6dPJLtMaqiPg"/>
+  <ArrowheadDSL:ArrowHeadServiceInterfaceHTTP xmi:id="_TewakAOpEe-RispB8iR56w" base_Operation="_bGEXUPywEe6i9Z5w4wqK2A"/>
+  <ArrowheadDSL:ArrowHeadServiceInterfaceHTTP xmi:id="_U_9HkAOpEe-RispB8iR56w" base_Operation="_chmrwPyxEe6i9Z5w4wqK2A"/>
+  <ArrowheadDSL:ArrowHeadServiceInterfaceHTTP xmi:id="_Wr1akAOpEe-RispB8iR56w" base_Operation="_qUvEcPyxEe6i9Z5w4wqK2A"/>
+  <ArrowheadDSL:ArrowHeadServiceInterfaceHTTP xmi:id="_YEFm8AOpEe-RispB8iR56w" base_Operation="_qUw5oPyxEe6i9Z5w4wqK2A"/>
+  <ArrowheadDSL:ArrowHeadServiceInterfaceMQTT xmi:id="_bj2SYAOpEe-RispB8iR56w" base_Operation="_mL44YPy0Ee6i9Z5w4wqK2A"/>
+  <ArrowheadDSL:ArrowHeadServiceInterfaceMQTT xmi:id="_c3DmsAOpEe-RispB8iR56w" base_Operation="_mL5fcPy0Ee6i9Z5w4wqK2A"/>
+  <ArrowheadDSL:ArrowHeadServiceInterfaceMQTT xmi:id="_gUWM8AOpEe-RispB8iR56w" base_Operation="_mL6Ggfy0Ee6i9Z5w4wqK2A"/>
+  <ArrowheadDSL:ArrowHeadServiceInterfaceMQTT xmi:id="_jjAhUAOpEe-RispB8iR56w" base_Operation="_mL6GgPy0Ee6i9Z5w4wqK2A"/>
+  <ArrowheadDSL:ArrowHeadServiceInterfaceCOAP xmi:id="_sRhwoAOpEe-RispB8iR56w" base_Operation="_j2H-EPy4Ee6i9Z5w4wqK2A"/>
+  <ArrowheadDSL:ArrowHeadServiceInterfaceCOAP xmi:id="_wVJXEAOpEe-RispB8iR56w" base_Operation="_j2JMMPy4Ee6i9Z5w4wqK2A"/>
+  <ArrowheadDSL:ArrowHeadServiceInterfaceCOAP xmi:id="_yB1iYAOpEe-RispB8iR56w" base_Operation="_j2KaUPy4Ee6i9Z5w4wqK2A"/>
+  <ArrowheadDSL:ArrowHeadServiceInterfaceCOAP xmi:id="_7o_C0AOpEe-RispB8iR56w" base_Operation="_j2LocPy4Ee6i9Z5w4wqK2A"/>
+  <Blocks:Block xmi:id="_DRXMoAOuEe-RispB8iR56w" base_Class="_DRRGAAOuEe-RispB8iR56w"/>
+  <Blocks:Block xmi:id="_Pgfb8AOuEe-RispB8iR56w" base_Class="_PgcYoAOuEe-RispB8iR56w"/>
+  <Blocks:Block xmi:id="_QOZDwAOuEe-RispB8iR56w" base_Class="_QOVZYAOuEe-RispB8iR56w"/>
+  <Blocks:Block xmi:id="_4wjq4AOuEe-RispB8iR56w" base_Class="_4weyYAOuEe-RispB8iR56w"/>
+  <Blocks:Block xmi:id="_xKYHMAOvEe-RispB8iR56w" base_Class="_xKVD4AOvEe-RispB8iR56w"/>
 </xmi:XMI>
