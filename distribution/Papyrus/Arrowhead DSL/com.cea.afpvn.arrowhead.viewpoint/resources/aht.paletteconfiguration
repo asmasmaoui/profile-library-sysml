@@ -961,13 +961,13 @@
           xmi:type="paletteconfiguration:ElementDescriptor">
         <elementType
             xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
-            href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.Class_FullPort"/>
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di_extension.elementtypesconfigurations#_dQjUcAbNEe-VW4xH_8ZmHg"/>
       </elementDescriptors>
       <elementDescriptors
           xmi:type="paletteconfiguration:ElementDescriptor">
         <elementType
             xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
-            href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.FullPort_Label"/>
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5.elementtypesconfigurations#_aE8SUAPTEe-BKJM5JZGesg"/>
       </elementDescriptors>
     </ownedConfigurations>
     <ownedConfigurations
@@ -984,13 +984,13 @@
           xmi:type="paletteconfiguration:ElementDescriptor">
         <elementType
             xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
-            href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.Class_ProxyPort"/>
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di_extension.elementtypesconfigurations#_dQitZgbNEe-VW4xH_8ZmHg"/>
       </elementDescriptors>
       <elementDescriptors
           xmi:type="paletteconfiguration:ElementDescriptor">
         <elementType
             xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
-            href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.ProxyPort_Label"/>
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di_extension.elementtypesconfigurations#_dQiGUAbNEe-VW4xH_8ZmHg"/>
       </elementDescriptors>
     </ownedConfigurations>
   </drawerConfigurations>

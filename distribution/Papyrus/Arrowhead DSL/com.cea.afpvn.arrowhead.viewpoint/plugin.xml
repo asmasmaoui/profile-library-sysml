@@ -7,5 +7,20 @@
             path="resources/arrowhead.architecture">
       </model>
    </extension>
+   
+   <extension
+         point="org.eclipse.papyrus.infra.gmfdiag.common.diagramExpansion">
+      <diagramexpansion
+            model="resources/configuration/blockDefinitionDiagramConfig.expansionmodel">
+      </diagramexpansion>
+   </extension>
+   
+   <!-- Parser provider declaration -->
+<extension point="org.eclipse.gmf.runtime.common.ui.services.parserProviders">
+	<ParserProvider class="com.cea.afpvn.arrowhead.viewpoint.ParserProvider">
+		<Priority name="Low"/>
+	</ParserProvider>
+</extension>
+
 
 </plugin>
