@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elementtypesconfigurations:ElementTypeSetConfiguration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:stereotypematcher="http://www.eclipse.org/papyrus/uml/types/stereotypematcher/1.1" xmi:id="_WDZKMAbNEe-VW4xH_8ZmHg" identifier="com.example.arrowheadDSLdi.elementTypes" name="ArrowheadDSLdi_extension" metamodelNsURI="http://www.eclipse.org/uml2/5.0.0/UML">
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_dQiGUAbNEe-VW4xH_8ZmHg" description="" identifier="org.eclipse.papyrus.sysml16di.ProxyPort_Label" name="ProxyPort_A (ProxyPort_Label)" hint="ProxyPort_Label" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_dQitYAbNEe-VW4xH_8ZmHg">
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_dQiGUQbNEe-VW4xH_8ZmHg" iconPath="/icons/full/obj16/Property.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_dQitYAbNEe-VW4xH_8ZmHg" matchedType="_dQiGUAbNEe-VW4xH_8ZmHg">
+      <stereotypesQualifiedNames>ArrowheadDSL::DataTypes::ProxyPort</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5.elementtypesconfigurations#_Q8OvcAPVEe-BKJM5JZGesg"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_dQitYQbNEe-VW4xH_8ZmHg" description="" identifier="org.eclipse.papyrus.sysml16di.FullPort_Label" name="FullPort_A (FullPort_Label)" hint="FullPort_Label" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_dQitYwbNEe-VW4xH_8ZmHg">
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_dQitYgbNEe-VW4xH_8ZmHg" iconPath="/icons/full/obj16/Property.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_dQitYwbNEe-VW4xH_8ZmHg" matchedType="_dQitYQbNEe-VW4xH_8ZmHg">
+      <stereotypesQualifiedNames>ArrowheadDSL::DataTypes::ProxyPort</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5.elementtypesconfigurations#_aE8SUAPTEe-BKJM5JZGesg"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_dQitZAbNEe-VW4xH_8ZmHg" description="Create an UML Port in an UML Class Diagram" identifier="org.eclipse.papyrus.sysml16di.Class_Port" name="Class_Port_A" hint="Class_Port" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_dQitZQbNEe-VW4xH_8ZmHg">
+    <ownedConfigurations xmi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_dQitZQbNEe-VW4xH_8ZmHg" matchedType="_dQitZAbNEe-VW4xH_8ZmHg" matcherClassName="com.cea.afpvn.arrowhead.types.matcher.ArrowheadProfileMatcher"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Port"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_dQitZgbNEe-VW4xH_8ZmHg" description="Create an UML ProxyPort in an UML Class Diagram" identifier="org.eclipse.papyrus.sysml16di.Class_ProxyPort" name="Class_ProxyPort_A" hint="Class_ProxyPort" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_dQitZwbNEe-VW4xH_8ZmHg">
+    <ownedConfigurations xmi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_dQitZwbNEe-VW4xH_8ZmHg" matchedType="_dQitZgbNEe-VW4xH_8ZmHg" matcherClassName="com.cea.afpvn.arrowhead.types.matcher.ArrowheadProfileMatcher"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.ProxyPort"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_dQjUcAbNEe-VW4xH_8ZmHg" description="Create an UML FullPort in an UML Class Diagram" identifier="org.eclipse.papyrus.sysml16di.Class_FullPort" name="Class_FullPort_A" hint="Class_FullPort" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_dQjUcQbNEe-VW4xH_8ZmHg">
+    <ownedConfigurations xmi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_dQjUcQbNEe-VW4xH_8ZmHg" matchedType="_dQjUcAbNEe-VW4xH_8ZmHg" matcherClassName="com.cea.afpvn.arrowhead.types.matcher.ArrowheadProfileMatcher"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.FullPort"/>
+  </elementTypeConfigurations>
+</elementtypesconfigurations:ElementTypeSetConfiguration>
