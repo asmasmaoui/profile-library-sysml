@@ -13,7 +13,7 @@
  *
  *****************************************************************************/
 
-package com.cea.afpvn.arrowhead.viewpoint;
+package com.cea.afpvn.arrowhead.viewpoint.provider;
 
 import java.util.HashMap;
 import java.util.Map;

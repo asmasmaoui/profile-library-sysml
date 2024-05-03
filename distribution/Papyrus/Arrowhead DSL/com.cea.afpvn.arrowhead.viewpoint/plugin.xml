@@ -8,16 +8,16 @@
       </model>
    </extension>
    
-   <extension
+  <extension
          point="org.eclipse.papyrus.infra.gmfdiag.common.diagramExpansion">
       <diagramexpansion
-            model="resources/configuration/blockDefinitionDiagramConfig.expansionmodel">
+            model="resources/configuration/blockDefinitionDiagramConfigArrowhead.expansionmodel">
       </diagramexpansion>
    </extension>
    
-   <!-- Parser provider declaration -->
+ <!-- Parser provider declaration -->
 <extension point="org.eclipse.gmf.runtime.common.ui.services.parserProviders">
-	<ParserProvider class="com.cea.afpvn.arrowhead.viewpoint.ParserProvider">
+	<ParserProvider class="com.cea.afpvn.arrowhead.viewpoint.provider.ParserProvider">
 		<Priority name="Low"/>
 	</ParserProvider>
 </extension>
