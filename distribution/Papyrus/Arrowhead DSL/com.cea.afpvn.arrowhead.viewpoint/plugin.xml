@@ -18,7 +18,7 @@
  <!-- Parser provider declaration -->
 <extension point="org.eclipse.gmf.runtime.common.ui.services.parserProviders">
 	<ParserProvider class="com.cea.afpvn.arrowhead.viewpoint.provider.ParserProvider">
-		<Priority name="Low"/>
+		<Priority name="Lowest"/>
 	</ParserProvider>
 </extension>
 
