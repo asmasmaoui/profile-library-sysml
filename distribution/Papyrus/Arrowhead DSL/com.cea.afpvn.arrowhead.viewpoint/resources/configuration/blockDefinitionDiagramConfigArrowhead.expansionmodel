@@ -1,83 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <expansionmodel:DiagramExpansion xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:expansionmodel="http:///expansionmodel.ecore" xmi:id="org.eclipse.papyrus.sysml16.bbd.expansionmodel" ID="ArrowheadDSL BDD">
   <usages xmi:id="_rC19oNnoEeSqwOe5_frWm1" diagramType="ArrowHead Block Definition Diagram" representations="_rC19oNnoEeSqwOe5_frWm2 _CvN1kFVqEeW77p7V_ZuW3Q _dq31kGdDEeW5JrLha2pcnA" name="ArrowHead Block Definition Diagram">
-    <gmftRepresentations xmi:id="_rC19oNnoEeSqwOe5_frWm2" editPartQualifiedName="org.eclipse.papyrus.uml.diagram.clazz.edit.parts.ClassEditPart" name="Block based on Class representation of class diagram" viewFactory="com.cea.afpvn.arrowhead.viewpoint.BlockClassifierViewFactory" inducedRepresentations="_rC19oNnoEeSqwOe5_frWm6 _CvPDslVqEeW77p7V_ZuW3Q _rC19oNnoEeSqwOe5_frWm7 _CvPDs1VqEeW77p7V_ZuW3Q _CvPDtFVqEeW77p7V_ZuW3Q _CvPDtVVqEeW77p7V_ZuW3Q _CSMSEGFBEeWbSMDuSXx8SQ _59LCcACiEeabH6-I0dvpUQ" subRepresentations="_CvN1kVVqEeW77p7V_ZuW3Q _CvOcoVVqEeW77p7V_ZuW3Q _CvOcolVqEeW77p7V_ZuW3Q _CvOco1VqEeW77p7V_ZuW3Q _rC19oNnoEeSqwOe5_frWm2 _CvN1kFVqEeW77p7V_ZuW3Q _dq31kGdDEeW5JrLha2pcnA _rC19oNnoEeSqwOe5_frWm4 _CvOcoFVqEeW77p7V_ZuW3Q _CvOcpFVqEeW77p7V_ZuW3Q _CvOcpVVqEeW77p7V_ZuW3Q _CvOcplVqEeW77p7V_ZuW3Q _SZt_kFVqEeW77p7V_ZuW3Q _y-W7oGFAEeWbSMDuSXx8SQ _vBCFAACiEeabH6-I0dvpUQ" reusedID="Class_Shape"/>
+    <gmftRepresentations xmi:id="_rC19oNnoEeSqwOe5_frWm2" editPartQualifiedName="org.eclipse.papyrus.uml.diagram.clazz.edit.parts.ClassEditPart" name="Block based on Class representation of class diagram" viewFactory="com.cea.afpvn.arrowhead.viewpoint.BlockClassifierViewFactory" subRepresentations="_CvN1kVVqEeW77p7V_ZuW3Q _CvOcoVVqEeW77p7V_ZuW3Q _CvOcolVqEeW77p7V_ZuW3Q _CvOco1VqEeW77p7V_ZuW3Q _rC19oNnoEeSqwOe5_frWm2 _CvN1kFVqEeW77p7V_ZuW3Q _dq31kGdDEeW5JrLha2pcnA _rC19oNnoEeSqwOe5_frWm4 _CvOcoFVqEeW77p7V_ZuW3Q _CvOcpFVqEeW77p7V_ZuW3Q _CvOcpVVqEeW77p7V_ZuW3Q _CvOcplVqEeW77p7V_ZuW3Q _SZt_kFVqEeW77p7V_ZuW3Q _y-W7oGFAEeWbSMDuSXx8SQ _vBCFAACiEeabH6-I0dvpUQ" reusedID="Class_Shape"/>
     <gmftRepresentations xmi:id="_dq31kGdDEeW5JrLha2pcnA" editPartQualifiedName="org.eclipse.papyrus.uml.diagram.clazz.edit.parts.InterfaceEditPart" name="FlowSpecification based on Interface representation of class diagram" viewFactory="com.cea.afpvn.arrowhead.viewpoint.FlowSpecificationClassifierViewFactory" inducedRepresentations="_CSMSEGFBEeWbSMDuSXx8SQ" subRepresentations="_CvN1kVVqEeW77p7V_ZuW3Q" reusedID="Interface_Shape"/>
   </usages>
-  <libraries name="Independent Representations" xmi:id="_rC19oNnoEeSqwOe5_frWm3">
-    <representations editPartQualifiedName="org.eclipse.papyrus.uml.diagram.clazz.edit.parts.PropertyForClassEditPart" name="Flow Port As Label" viewFactory="org.eclipse.gmf.runtime.diagram.ui.view.factories.optimal.ShapeViewFactory" xmi:id="_rC19oNnoEeSqwOe5_frWm4" xsi:type="expansionmodel:Representation">
-      <graphicalElementTypeRef href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.FlowPort_Label" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration"/>
+  <libraries xmi:id="_rC19oNnoEeSqwOe5_frWm3" name="Independent Representations">
+    <representations xsi:type="expansionmodel:Representation" xmi:id="_rC19oNnoEeSqwOe5_frWm4" editPartQualifiedName="org.eclipse.papyrus.uml.diagram.clazz.edit.parts.PropertyForClassEditPart" name="Flow Port As Label" viewFactory="org.eclipse.gmf.runtime.diagram.ui.view.factories.optimal.ShapeViewFactory">
+      <graphicalElementTypeRef xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.FlowPort_Label"/>
     </representations>
-    <representations editPartQualifiedName="org.eclipse.papyrus.uml.diagram.clazz.edit.parts.DependencyEditPart" name="Verify Link" viewFactory="org.eclipse.gmf.runtime.diagram.ui.view.factories.optimal.ConnectorViewFactory" xmi:id="_CvN1kFVqEeW77p7V_ZuW3Q" xsi:type="expansionmodel:Representation">
-      <graphicalElementTypeRef href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.Verify_Abstraction_Verify_Link" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration"/>
+    <representations xsi:type="expansionmodel:Representation" xmi:id="_CvN1kFVqEeW77p7V_ZuW3Q" editPartQualifiedName="org.eclipse.papyrus.uml.diagram.clazz.edit.parts.DependencyEditPart" name="Verify Link" viewFactory="org.eclipse.gmf.runtime.diagram.ui.view.factories.optimal.ConnectorViewFactory">
+      <graphicalElementTypeRef xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.Verify_Abstraction_Verify_Link"/>
     </representations>
-    <representations inducedRepresentations="_CvPDsVVqEeW77p7V_ZuW3Q _CvPDsFVqEeW77p7V_ZuW3Q" name="Operation Border Item" viewFactory="org.eclipse.papyrus.sysml16.diagram.blockdefinition.internal.factory.OperationPortViewFactory" xmi:id="_CvN1kVVqEeW77p7V_ZuW3Q" xsi:type="expansionmodel:Representation">
+    <representations xsi:type="expansionmodel:Representation" xmi:id="_CvN1kVVqEeW77p7V_ZuW3Q" name="Operation Border Item" viewFactory="org.eclipse.papyrus.sysml16.diagram.blockdefinition.internal.factory.OperationPortViewFactory" inducedRepresentations="_CvPDsVVqEeW77p7V_ZuW3Q _CvPDsFVqEeW77p7V_ZuW3Q">
       <kind href="platform:/plugin/org.eclipse.papyrus.uml.diagram.common/model/UMLRepresentationKind.xmi#_EoAOIN0DEeSiOexlyH3Ifw"/>
-    <graphicalElementTypeRef href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di." xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration"/>
+      <graphicalElementTypeRef xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di."/>
     </representations>
-    <representations editPartQualifiedName="org.eclipse.papyrus.uml.diagram.common.editparts.EditableLabelForNodeEditPart" name="Constraint As Label" viewFactory="org.eclipse.gmf.runtime.diagram.ui.view.factories.optimal.ShapeViewFactory" xmi:id="_CvOcoFVqEeW77p7V_ZuW3Q" xsi:type="expansionmodel:Representation">
-      <graphicalElementTypeRef href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.Constraint_Label" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration"/>
+    <representations xsi:type="expansionmodel:Representation" xmi:id="_CvOcoFVqEeW77p7V_ZuW3Q" editPartQualifiedName="org.eclipse.papyrus.uml.diagram.common.editparts.EditableLabelForNodeEditPart" name="Constraint As Label" viewFactory="org.eclipse.gmf.runtime.diagram.ui.view.factories.optimal.ShapeViewFactory">
+      <graphicalElementTypeRef xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.Constraint_Label"/>
     </representations>
-    <representations inducedRepresentations="_CvPDsVVqEeW77p7V_ZuW3Q" name="Class Port" viewFactory="org.eclipse.papyrus.sysml16.diagram.blockdefinition.internal.factory.PortViewFactory" xmi:id="_CvOcoVVqEeW77p7V_ZuW3Q" xsi:type="expansionmodel:Representation">
+    <representations xsi:type="expansionmodel:Representation" xmi:id="_CvOcoVVqEeW77p7V_ZuW3Q" name="Class Port" viewFactory="com.cea.afpvn.arrowhead.viewpoint.PortViewFactory" inducedRepresentations="_CvPDsVVqEeW77p7V_ZuW3Q">
       <kind href="platform:/plugin/org.eclipse.papyrus.uml.diagram.common/model/UMLRepresentationKind.xmi#_EoAOIN0DEeSiOexlyH3Ifw"/>
-    <graphicalElementTypeRef href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.Class_Port" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration"/>
+      <graphicalElementTypeRef xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.Class_Port"/>
     </representations>
-    <representations inducedRepresentations="_CvPDsVVqEeW77p7V_ZuW3Q" name="Class ProxyPort" viewFactory="org.eclipse.papyrus.sysml16.diagram.blockdefinition.internal.factory.PortViewFactory" xmi:id="_CvOcolVqEeW77p7V_ZuW3Q" xsi:type="expansionmodel:Representation">
+    <representations xsi:type="expansionmodel:Representation" xmi:id="_CvOcolVqEeW77p7V_ZuW3Q" name="Class ProxyPort" viewFactory="com.cea.afpvn.arrowhead.viewpoint.PortViewFactory" inducedRepresentations="_CvPDsVVqEeW77p7V_ZuW3Q">
       <kind href="platform:/plugin/org.eclipse.papyrus.uml.diagram.common/model/UMLRepresentationKind.xmi#_EoAOIN0DEeSiOexlyH3Ifw"/>
-    <graphicalElementTypeRef href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.Class_ProxyPort" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration"/>
+      <graphicalElementTypeRef xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.Class_ProxyPort"/>
     </representations>
-    <representations inducedRepresentations="_CvPDsVVqEeW77p7V_ZuW3Q" name="Class FullPort" viewFactory="org.eclipse.papyrus.sysml16.diagram.blockdefinition.internal.factory.PortViewFactory" xmi:id="_CvOco1VqEeW77p7V_ZuW3Q" xsi:type="expansionmodel:Representation">
+    <representations xsi:type="expansionmodel:Representation" xmi:id="_CvOco1VqEeW77p7V_ZuW3Q" name="Class FullPort" viewFactory="com.cea.afpvn.arrowhead.viewpoint.PortViewFactory" inducedRepresentations="_CvPDsVVqEeW77p7V_ZuW3Q">
       <kind href="platform:/plugin/org.eclipse.papyrus.uml.diagram.common/model/UMLRepresentationKind.xmi#_EoAOIN0DEeSiOexlyH3Ifw"/>
-    <graphicalElementTypeRef href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.Class_FullPort" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration"/>
+      <graphicalElementTypeRef xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.Class_FullPort"/>
     </representations>
-    <representations editPartQualifiedName="org.eclipse.papyrus.uml.diagram.clazz.edit.parts.PropertyForClassEditPart" name="ProxyPort As Label" viewFactory="org.eclipse.gmf.runtime.diagram.ui.view.factories.optimal.ShapeViewFactory" xmi:id="_CvOcpFVqEeW77p7V_ZuW3Q" xsi:type="expansionmodel:Representation">
-      <graphicalElementTypeRef href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.ProxyPort_Label" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration"/>
+    <representations xsi:type="expansionmodel:Representation" xmi:id="_CvOcpFVqEeW77p7V_ZuW3Q" editPartQualifiedName="org.eclipse.papyrus.uml.diagram.clazz.edit.parts.PropertyForClassEditPart" name="ProxyPort As Label" viewFactory="org.eclipse.gmf.runtime.diagram.ui.view.factories.optimal.ShapeViewFactory">
+      <graphicalElementTypeRef xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.ProxyPort_Label"/>
     </representations>
-    <representations editPartQualifiedName="org.eclipse.papyrus.uml.diagram.clazz.edit.parts.PropertyForClassEditPart" name="FullPort As Label" viewFactory="org.eclipse.gmf.runtime.diagram.ui.view.factories.optimal.ShapeViewFactory" xmi:id="_CvOcpVVqEeW77p7V_ZuW3Q" xsi:type="expansionmodel:Representation">
-      <graphicalElementTypeRef href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.FullPort_Label" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration"/>
+    <representations xsi:type="expansionmodel:Representation" xmi:id="_CvOcpVVqEeW77p7V_ZuW3Q" editPartQualifiedName="org.eclipse.papyrus.uml.diagram.clazz.edit.parts.PropertyForClassEditPart" name="FullPort As Label" viewFactory="org.eclipse.gmf.runtime.diagram.ui.view.factories.optimal.ShapeViewFactory">
+      <graphicalElementTypeRef xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.FullPort_Label"/>
     </representations>
-    <representations editPartQualifiedName="org.eclipse.papyrus.uml.diagram.clazz.edit.parts.PropertyForClassEditPart" name="References As Label" viewFactory="org.eclipse.gmf.runtime.diagram.ui.view.factories.optimal.ShapeViewFactory" xmi:id="_CvOcplVqEeW77p7V_ZuW3Q" xsi:type="expansionmodel:Representation">
-      <graphicalElementTypeRef href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.Reference_label" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration"/>
+    <representations xsi:type="expansionmodel:Representation" xmi:id="_CvOcplVqEeW77p7V_ZuW3Q" editPartQualifiedName="org.eclipse.papyrus.uml.diagram.clazz.edit.parts.PropertyForClassEditPart" name="References As Label" viewFactory="org.eclipse.gmf.runtime.diagram.ui.view.factories.optimal.ShapeViewFactory">
+      <graphicalElementTypeRef xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.Reference_label"/>
     </representations>
-    <representations editPartQualifiedName="org.eclipse.papyrus.uml.diagram.clazz.edit.parts.PropertyForClassEditPart" name="Parts As Label" viewFactory="org.eclipse.gmf.runtime.diagram.ui.view.factories.optimal.ShapeViewFactory" xmi:id="_SZt_kFVqEeW77p7V_ZuW3Q" xsi:type="expansionmodel:Representation">
-      <graphicalElementTypeRef href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.Part_label" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration"/>
+    <representations xsi:type="expansionmodel:Representation" xmi:id="_SZt_kFVqEeW77p7V_ZuW3Q" editPartQualifiedName="org.eclipse.papyrus.uml.diagram.clazz.edit.parts.PropertyForClassEditPart" name="Parts As Label" viewFactory="org.eclipse.gmf.runtime.diagram.ui.view.factories.optimal.ShapeViewFactory">
+      <graphicalElementTypeRef xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.Part_label"/>
     </representations>
-    <representations editPartQualifiedName="org.eclipse.papyrus.uml.diagram.clazz.edit.parts.PropertyForClassEditPart" name="FlowProperty As Label" viewFactory="org.eclipse.gmf.runtime.diagram.ui.view.factories.optimal.ShapeViewFactory" xmi:id="_y-W7oGFAEeWbSMDuSXx8SQ" xsi:type="expansionmodel:Representation">
-      <graphicalElementTypeRef href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.FlowProperty_label" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration"/>
+    <representations xsi:type="expansionmodel:Representation" xmi:id="_y-W7oGFAEeWbSMDuSXx8SQ" editPartQualifiedName="org.eclipse.papyrus.uml.diagram.clazz.edit.parts.PropertyForClassEditPart" name="FlowProperty As Label" viewFactory="org.eclipse.gmf.runtime.diagram.ui.view.factories.optimal.ShapeViewFactory">
+      <graphicalElementTypeRef xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.FlowProperty_label"/>
     </representations>
-    <representations editPartQualifiedName="org.eclipse.papyrus.uml.diagram.clazz.edit.parts.PropertyForClassEditPart" name="Parameters As Label" viewFactory="org.eclipse.gmf.runtime.diagram.ui.view.factories.optimal.ShapeViewFactory" xmi:id="_vBCFAACiEeabH6-I0dvpUQ" xsi:type="expansionmodel:Representation">
-      <graphicalElementTypeRef href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.Parameter_label" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration"/>
+    <representations xsi:type="expansionmodel:Representation" xmi:id="_vBCFAACiEeabH6-I0dvpUQ" editPartQualifiedName="org.eclipse.papyrus.uml.diagram.clazz.edit.parts.PropertyForClassEditPart" name="Parameters As Label" viewFactory="org.eclipse.gmf.runtime.diagram.ui.view.factories.optimal.ShapeViewFactory">
+      <graphicalElementTypeRef xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.Parameter_label"/>
     </representations>
   </libraries>
-  <libraries name="Independant Compartments" xmi:id="_rC19oNnoEeSqwOe5_frWm5">
-    <representations children="_rC19oNnoEeSqwOe5_frWm4" hint="Flow Ports" name="FlowPort Compartment" xmi:id="_rC19oNnoEeSqwOe5_frWm6" xsi:type="expansionmodel:InducedRepresentation">
+  <libraries xmi:id="_rC19oNnoEeSqwOe5_frWm5" name="Independant Compartments">
+    <representations xsi:type="expansionmodel:InducedRepresentation" xmi:id="_rC19oNnoEeSqwOe5_frWm6" name="FlowPort Compartment" hint="Flow Ports" children="_rC19oNnoEeSqwOe5_frWm4">
       <kind href="platform:/plugin/org.eclipse.papyrus.uml.diagram.common/model/UMLRepresentationKind.xmi#_vbTKYN0DEeS-X4lB2Ut-YA"/>
     </representations>
-    <representations children="_SZt_kFVqEeW77p7V_ZuW3Q" editPartQualifiedName="" hint="Parts" name="Parts Compartment" xmi:id="_rC19oNnoEeSqwOe5_frWm7" xsi:type="expansionmodel:InducedRepresentation">
+    <representations xsi:type="expansionmodel:InducedRepresentation" xmi:id="_rC19oNnoEeSqwOe5_frWm7" editPartQualifiedName="" name="Parts Compartment" hint="Parts" children="_SZt_kFVqEeW77p7V_ZuW3Q">
       <kind href="platform:/plugin/org.eclipse.papyrus.uml.diagram.common/model/UMLRepresentationKind.xmi#_vbTKYN0DEeS-X4lB2Ut-YA"/>
     </representations>
-    <representations children="_vBCFAACiEeabH6-I0dvpUQ" hint="Parameters" name="Parameters Compartment" xmi:id="_59LCcACiEeabH6-I0dvpUQ" xsi:type="expansionmodel:InducedRepresentation">
+    <representations xsi:type="expansionmodel:InducedRepresentation" xmi:id="_59LCcACiEeabH6-I0dvpUQ" name="Parameters Compartment" hint="Parameters" children="_vBCFAACiEeabH6-I0dvpUQ">
       <kind href="platform:/plugin/org.eclipse.papyrus.uml.diagram.common/model/UMLRepresentationKind.xmi#_vbTKYN0DEeS-X4lB2Ut-YA"/>
     </representations>
-    <representations editPartQualifiedName="" hint="Operation_BorderItem_Stereotype_Label" name="Stereotype Label representation for BorderItem" xmi:id="_CvPDsFVqEeW77p7V_ZuW3Q" xsi:type="expansionmodel:InducedRepresentation">
+    <representations xsi:type="expansionmodel:InducedRepresentation" xmi:id="_CvPDsFVqEeW77p7V_ZuW3Q" editPartQualifiedName="" name="Stereotype Label representation for BorderItem" hint="Operation_BorderItem_Stereotype_Label">
       <kind href="platform:/plugin/org.eclipse.papyrus.uml.diagram.common/model/UMLRepresentationKind.xmi#_dG-hoN0HEeSfTfTnKh2G1Q"/>
     </representations>
-    <representations editPartQualifiedName="" hint="Operation_BorderItem_Label" name=" Name Label representation for BorderItem" xmi:id="_CvPDsVVqEeW77p7V_ZuW3Q" xsi:type="expansionmodel:InducedRepresentation">
+    <representations xsi:type="expansionmodel:InducedRepresentation" xmi:id="_CvPDsVVqEeW77p7V_ZuW3Q" editPartQualifiedName="" name=" Name Label representation for BorderItem" hint="Operation_BorderItem_Label">
       <kind href="platform:/plugin/org.eclipse.papyrus.uml.diagram.common/model/UMLRepresentationKind.xmi#_dG-hoN0HEeSfTfTnKh2G1Q"/>
     </representations>
-    <representations children="_CvOcoFVqEeW77p7V_ZuW3Q" hint="constraints" name="Constraint Compartment" xmi:id="_CvPDslVqEeW77p7V_ZuW3Q" xsi:type="expansionmodel:InducedRepresentation">
+    <representations xsi:type="expansionmodel:InducedRepresentation" xmi:id="_CvPDslVqEeW77p7V_ZuW3Q" name="Constraint Compartment" hint="constraints" children="_CvOcoFVqEeW77p7V_ZuW3Q">
       <kind href="platform:/plugin/org.eclipse.papyrus.uml.diagram.common/model/UMLRepresentationKind.xmi#_vbTKYN0DEeS-X4lB2Ut-YA"/>
     </representations>
-    <representations children="_CvOcpFVqEeW77p7V_ZuW3Q" hint="Proxy Ports" name="ProxyPort Compartment" xmi:id="_CvPDs1VqEeW77p7V_ZuW3Q" xsi:type="expansionmodel:InducedRepresentation">
+    <representations xsi:type="expansionmodel:InducedRepresentation" xmi:id="_CvPDs1VqEeW77p7V_ZuW3Q" name="ProxyPort Compartment" hint="Proxy Ports" children="_CvOcpFVqEeW77p7V_ZuW3Q">
       <kind href="platform:/plugin/org.eclipse.papyrus.uml.diagram.common/model/UMLRepresentationKind.xmi#_vbTKYN0DEeS-X4lB2Ut-YA"/>
     </representations>
-    <representations children="_CvOcpVVqEeW77p7V_ZuW3Q" hint="Full Ports" name="FullPort Compartment" xmi:id="_CvPDtFVqEeW77p7V_ZuW3Q" xsi:type="expansionmodel:InducedRepresentation">
+    <representations xsi:type="expansionmodel:InducedRepresentation" xmi:id="_CvPDtFVqEeW77p7V_ZuW3Q" name="FullPort Compartment" hint="Full Ports" children="_CvOcpVVqEeW77p7V_ZuW3Q">
       <kind href="platform:/plugin/org.eclipse.papyrus.uml.diagram.common/model/UMLRepresentationKind.xmi#_vbTKYN0DEeS-X4lB2Ut-YA"/>
     </representations>
-    <representations children="_CvOcplVqEeW77p7V_ZuW3Q" hint="References" name="References Compartment" xmi:id="_CvPDtVVqEeW77p7V_ZuW3Q" xsi:type="expansionmodel:InducedRepresentation">
+    <representations xsi:type="expansionmodel:InducedRepresentation" xmi:id="_CvPDtVVqEeW77p7V_ZuW3Q" name="References Compartment" hint="References" children="_CvOcplVqEeW77p7V_ZuW3Q">
       <kind href="platform:/plugin/org.eclipse.papyrus.uml.diagram.common/model/UMLRepresentationKind.xmi#_vbTKYN0DEeS-X4lB2Ut-YA"/>
     </representations>
-    <representations children="_y-W7oGFAEeWbSMDuSXx8SQ" hint="Flow Properties" name="FlowProperties Compartment" xmi:id="_CSMSEGFBEeWbSMDuSXx8SQ" xsi:type="expansionmodel:InducedRepresentation">
+    <representations xsi:type="expansionmodel:InducedRepresentation" xmi:id="_CSMSEGFBEeWbSMDuSXx8SQ" name="FlowProperties Compartment" hint="Flow Properties" children="_y-W7oGFAEeWbSMDuSXx8SQ">
       <kind href="platform:/plugin/org.eclipse.papyrus.uml.diagram.common/model/UMLRepresentationKind.xmi#_vbTKYN0DEeS-X4lB2Ut-YA"/>
     </representations>
   </libraries>

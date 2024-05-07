@@ -63,8 +63,8 @@ public class BlockClassifierViewFactory extends AbstractBasicViewFactory {
 		location8510.setY(5);
 		createCompartment(node, UMLVisualIDRegistry.getType(ClassAttributeCompartmentEditPart.VISUAL_ID), true, true, true, true);
 		createCompartment(node, UMLVisualIDRegistry.getType(ClassOperationCompartmentEditPart.VISUAL_ID), true, true, true, true);
-		createCompartment(node, UMLVisualIDRegistry.getType(ClassNestedClassifierCompartmentEditPart.VISUAL_ID), true, true, true, true);
-		PreferenceInitializerForElementHelper.initCompartmentsStatusFromPrefs(node, prefStore, CLASS);
+		//createCompartment(node, UMLVisualIDRegistry.getType(ClassNestedClassifierCompartmentEditPart.VISUAL_ID), true, true, true, true);
+		//PreferenceInitializerForElementHelper.initCompartmentsStatusFromPrefs(node, prefStore, CLASS);
 		return node;
 	}
 }
