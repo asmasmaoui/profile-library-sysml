@@ -4,7 +4,8 @@
     xmlns:xmi="http://www.omg.org/XMI"
     xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2"
     xmlns:paletteconfiguration="http://www.eclipse.org/papyrus/diagram/paletteconfiguration/0.8"
-    id="AHT BDD">
+    id="AHT BDD"
+    label="AHT BDD">
   <drawerConfigurations
       xmi:type="paletteconfiguration:DrawerConfiguration"
       id="aht.design"
@@ -932,23 +933,6 @@
     </ownedConfigurations>
     <ownedConfigurations
         xmi:type="paletteconfiguration:ToolConfiguration"
-        id="org.eclipse.papyrus.sysML.palette.bdd.Port"
-        label="Port"
-        description="Create new Port"
-        kind="CreationTool">
-      <icon
-          xmi:type="paletteconfiguration:IconDescriptor"
-          pluginID="org.eclipse.uml2.uml.edit"
-          iconPath="/icons/full/obj16/Port.gif"/>
-      <elementDescriptors
-          xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType
-            xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
-            href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Port_Shape"/>
-      </elementDescriptors>
-    </ownedConfigurations>
-    <ownedConfigurations
-        xmi:type="paletteconfiguration:ToolConfiguration"
         id="aht.fullPort"
         label="FullPort"
         description="Full ports specify a separate element of the system from the owning block or its internal parts."
@@ -990,7 +974,7 @@
           xmi:type="paletteconfiguration:ElementDescriptor">
         <elementType
             xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
-            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di_extension.elementtypesconfigurations#_dQiGUAbNEe-VW4xH_8ZmHg"/>
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5.elementtypesconfigurations#_Q8OvcAPVEe-BKJM5JZGesg"/>
       </elementDescriptors>
     </ownedConfigurations>
   </drawerConfigurations>
