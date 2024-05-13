@@ -24,11 +24,11 @@
     </representations>
     <representations xsi:type="expansionmodel:Representation" xmi:id="_CvOcolVqEeW77p7V_ZuW3Q" name="Class ProxyPort" viewFactory="com.cea.afpvn.arrowhead.viewpoint.PortViewFactory" inducedRepresentations="_CvPDsVVqEeW77p7V_ZuW3Q">
       <kind href="platform:/plugin/org.eclipse.papyrus.uml.diagram.common/model/UMLRepresentationKind.xmi#_EoAOIN0DEeSiOexlyH3Ifw"/>
-      <graphicalElementTypeRef xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.Class_ProxyPort"/>
+      <graphicalElementTypeRef xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di_extension.elementtypesconfigurations#_dQitZgbNEe-VW4xH_8ZmHg"/>
     </representations>
     <representations xsi:type="expansionmodel:Representation" xmi:id="_CvOco1VqEeW77p7V_ZuW3Q" name="Class FullPort" viewFactory="com.cea.afpvn.arrowhead.viewpoint.PortViewFactory" inducedRepresentations="_CvPDsVVqEeW77p7V_ZuW3Q">
       <kind href="platform:/plugin/org.eclipse.papyrus.uml.diagram.common/model/UMLRepresentationKind.xmi#_EoAOIN0DEeSiOexlyH3Ifw"/>
-      <graphicalElementTypeRef xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.Class_FullPort"/>
+      <graphicalElementTypeRef xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di_extension.elementtypesconfigurations#_dQjUcAbNEe-VW4xH_8ZmHg"/>
     </representations>
     <representations xsi:type="expansionmodel:Representation" xmi:id="_CvOcpFVqEeW77p7V_ZuW3Q" editPartQualifiedName="org.eclipse.papyrus.uml.diagram.clazz.edit.parts.PropertyForClassEditPart" name="ProxyPort As Label" viewFactory="org.eclipse.gmf.runtime.diagram.ui.view.factories.optimal.ShapeViewFactory">
       <graphicalElementTypeRef xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.ProxyPort_Label"/>
