@@ -76,6 +76,21 @@
     <packagedElement xmi:type="uml:Class" xmi:id="_QOVZYAOuEe-RispB8iR56w" name="ServiceQueryList"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_4weyYAOuEe-RispB8iR56w" name="Echo_ResponsePath_MQTT"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_xKVD4AOvEe-RispB8iR56w" name="ServiceQueryForm_MQTT"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_IfOgcBHXEe-d2_bu2CdnGg" name="ServiceDiscovery_DDP">
+      <generalization xmi:type="uml:Generalization" xmi:id="_X5DhcBHoEe-lBNkUCrShDQ" general="_HIisMPygEe6i9Z5w4wqK2A"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_YVVfsBHmEe-lBNkUCrShDQ" name="P2" type="_NUzGMPy4Ee6i9Z5w4wqK2A" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_bEgbsBHmEe-lBNkUCrShDQ" name="P6" type="_OUlFAPy0Ee6i9Z5w4wqK2A" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_bi0IUBHmEe-lBNkUCrShDQ" name="P5" type="_NUzGMPy4Ee6i9Z5w4wqK2A" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_cDDuoBHmEe-lBNkUCrShDQ" name="P4" type="_SWNrQPywEe6i9Z5w4wqK2A" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_cea08BHmEe-lBNkUCrShDQ" name="P3" type="_OUlFAPy0Ee6i9Z5w4wqK2A" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_c8a_kBHmEe-lBNkUCrShDQ" name="P1" visibility="package" type="_SWNrQPywEe6i9Z5w4wqK2A" aggregation="composite"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_lO4TEBHoEe-lBNkUCrShDQ" name="ServiceDiscovery_DOC">
+      <generalization xmi:type="uml:Generalization" xmi:id="_ouRgMBHqEe-lBNkUCrShDQ" general="_HIisMPygEe6i9Z5w4wqK2A"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_qn9QkBHoEe-lBNkUCrShDQ" name="P1" type="_SWNrQPywEe6i9Z5w4wqK2A" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_rDShsBHoEe-lBNkUCrShDQ" name="P2" type="_NUzGMPy4Ee6i9Z5w4wqK2A" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_xBflgBHoEe-lBNkUCrShDQ" name="P3" type="_OUlFAPy0Ee6i9Z5w4wqK2A" aggregation="composite"/>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_mCnNIPyfEe6i9Z5w4wqK2A">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mCnNIfyfEe6i9Z5w4wqK2A" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/arrowhead#/"/>
@@ -165,4 +180,15 @@
   <Blocks:Block xmi:id="_QOZDwAOuEe-RispB8iR56w" base_Class="_QOVZYAOuEe-RispB8iR56w"/>
   <Blocks:Block xmi:id="_4wjq4AOuEe-RispB8iR56w" base_Class="_4weyYAOuEe-RispB8iR56w"/>
   <Blocks:Block xmi:id="_xKYHMAOvEe-RispB8iR56w" base_Class="_xKVD4AOvEe-RispB8iR56w"/>
+  <ArrowheadDSL:SysDD xmi:id="_IfRjwBHXEe-d2_bu2CdnGg" base_Class="_IfOgcBHXEe-d2_bu2CdnGg"/>
+  <ArrowheadDSL:ProxyPort xmi:id="_YVZxIBHmEe-lBNkUCrShDQ" base_Port="_YVVfsBHmEe-lBNkUCrShDQ"/>
+  <ArrowheadDSL:ProxyPort xmi:id="_bEjfABHmEe-lBNkUCrShDQ" base_Port="_bEgbsBHmEe-lBNkUCrShDQ"/>
+  <ArrowheadDSL:ProxyPort xmi:id="_bi3LoBHmEe-lBNkUCrShDQ" base_Port="_bi0IUBHmEe-lBNkUCrShDQ"/>
+  <ArrowheadDSL:ProxyPort xmi:id="_cDGx8BHmEe-lBNkUCrShDQ" base_Port="_cDDuoBHmEe-lBNkUCrShDQ"/>
+  <ArrowheadDSL:ProxyPort xmi:id="_ced4QBHmEe-lBNkUCrShDQ" base_Port="_cea08BHmEe-lBNkUCrShDQ"/>
+  <ArrowheadDSL:ProxyPort xmi:id="_c8db0BHmEe-lBNkUCrShDQ" base_Port="_c8a_kBHmEe-lBNkUCrShDQ"/>
+  <ArrowheadDSL:SysDD xmi:id="_lO8kgBHoEe-lBNkUCrShDQ" base_Class="_lO4TEBHoEe-lBNkUCrShDQ"/>
+  <ArrowheadDSL:ProxyPort xmi:id="_qoAT4BHoEe-lBNkUCrShDQ" base_Port="_qn9QkBHoEe-lBNkUCrShDQ"/>
+  <ArrowheadDSL:ProxyPort xmi:id="_rDVlABHoEe-lBNkUCrShDQ" base_Port="_rDShsBHoEe-lBNkUCrShDQ"/>
+  <ArrowheadDSL:ProxyPort xmi:id="_xBio0BHoEe-lBNkUCrShDQ" base_Port="_xBflgBHoEe-lBNkUCrShDQ"/>
 </xmi:XMI>
