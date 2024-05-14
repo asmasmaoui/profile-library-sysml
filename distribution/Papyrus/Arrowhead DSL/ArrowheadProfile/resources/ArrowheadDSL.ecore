@@ -78,15 +78,10 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="localclouddesign" ordered="false"
         upperBound="-1" eType="#//LocalCloudDesign" eOpposite="#//LocalCloudDesign/system_of_localcloudsdesign"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ArrowheadDSLRequirement" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//requirements/Requirement">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="arrowheadusecase" ordered="false"
-        upperBound="-1" eType="#//ArrowheadUseCase" eOpposite="#//ArrowheadUseCase/arrowheaddslrequirement"/>
-  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ArrowheadDSLRequirement" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//requirements/Requirement"/>
   <eClassifiers xsi:type="ecore:EClass" name="ArrowheadUseCase">
     <eStructuralFeatures xsi:type="ecore:EReference" name="base_UseCase" ordered="false"
         eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//UseCase"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="arrowheaddslrequirement"
-        ordered="false" upperBound="-1" eType="#//ArrowheadDSLRequirement" eOpposite="#//ArrowheadDSLRequirement/arrowheadusecase"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="DeviceDesign" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//blocks/Block">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="DeviceName" ordered="false"

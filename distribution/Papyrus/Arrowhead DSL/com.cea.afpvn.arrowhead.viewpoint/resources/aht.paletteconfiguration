@@ -916,19 +916,19 @@
           xmi:type="paletteconfiguration:ElementDescriptor">
         <elementType
             xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
-            href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.UseCase_Shape"/>
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5.elementtypesconfigurations#_OtKKsBHJEe-zY5od4in-3A"/>
       </elementDescriptors>
       <elementDescriptors
           xmi:type="paletteconfiguration:ElementDescriptor">
         <elementType
             xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
-            href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.UseCase_Shape_CCN"/>
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_BaflURHKEe-zY5od4in-3A"/>
       </elementDescriptors>
       <elementDescriptors
           xmi:type="paletteconfiguration:ElementDescriptor">
         <elementType
             xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration"
-            href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.UseCase_Shape_CN"/>
+            href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_Bae-TBHKEe-zY5od4in-3A"/>
       </elementDescriptors>
     </ownedConfigurations>
     <ownedConfigurations

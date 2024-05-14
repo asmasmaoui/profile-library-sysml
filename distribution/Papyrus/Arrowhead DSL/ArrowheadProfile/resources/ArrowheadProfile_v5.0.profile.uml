@@ -97,19 +97,11 @@
       <generalization xmi:type="uml:Generalization" xmi:id="_6tVYkDLUEe6ldMRwfXEyUg">
         <general xmi:type="uml:Stereotype" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements.stereotype_packagedElement_Requirement"/>
       </generalization>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_mGq8sFDHEe6dd44TFP4A2A" name="arrowheadusecase" type="_Xegd4DLVEe6ldMRwfXEyUg" association="_mGpHgFDHEe6dd44TFP4A2A">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EH9jELdzEe6i2JWyFlnI5w"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EI268LdzEe6i2JWyFlnI5w" value="*"/>
-      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_Xegd4DLVEe6ldMRwfXEyUg" name="ArrowheadUseCase">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_6TXHYLdwEe6i2JWyFlnI5w" name="base_UseCase" association="_6TGosLdwEe6i2JWyFlnI5w">
         <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#UseCase"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6TXHYbdwEe6i2JWyFlnI5w"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_mGrjwFDHEe6dd44TFP4A2A" name="arrowheaddslrequirement" type="_Y58WkDLUEe6ldMRwfXEyUg" association="_mGpHgFDHEe6dd44TFP4A2A">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Eq87YLdzEe6i2JWyFlnI5w"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ErzP8LdzEe6i2JWyFlnI5w" value="*"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_ILHE8DLYEe6ldMRwfXEyUg" name="LocalCloudDesign">
@@ -336,11 +328,6 @@
     <packagedElement xmi:type="uml:Association" xmi:id="_d8gWED9MEe6BGOWVtNQ9Cw" memberEnd="_d8kAcD9MEe6BGOWVtNQ9Cw _d8kAcT9MEe6BGOWVtNQ9Cw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_d8jZYD9MEe6BGOWVtNQ9Cw" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_d8jZYT9MEe6BGOWVtNQ9Cw" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_mGpHgFDHEe6dd44TFP4A2A" memberEnd="_mGq8sFDHEe6dd44TFP4A2A _mGrjwFDHEe6dd44TFP4A2A">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mGqVoFDHEe6dd44TFP4A2A" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_mGqVoVDHEe6dd44TFP4A2A" key="nature" value="UML_Nature"/>
       </eAnnotations>
     </packagedElement>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_SF0lsGtvEe6kMpvvcnNq_g" name="System_of_LocalcloudsImplementation">

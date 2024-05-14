@@ -664,22 +664,13 @@ public interface ArrowheadDSLPackage extends EPackage {
 	int ARROWHEAD_DSL_REQUIREMENT__BASE_CLASS = RequirementsPackage.REQUIREMENT__BASE_CLASS;
 
 	/**
-	 * The feature id for the '<em><b>Arrowheadusecase</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ARROWHEAD_DSL_REQUIREMENT__ARROWHEADUSECASE = RequirementsPackage.REQUIREMENT_FEATURE_COUNT + 0;
-
-	/**
 	 * The number of structural features of the '<em>Requirement</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ARROWHEAD_DSL_REQUIREMENT_FEATURE_COUNT = RequirementsPackage.REQUIREMENT_FEATURE_COUNT + 1;
+	int ARROWHEAD_DSL_REQUIREMENT_FEATURE_COUNT = RequirementsPackage.REQUIREMENT_FEATURE_COUNT + 0;
 
 	/**
 	 * The operation id for the '<em>Get Satisfied By</em>' operation.
@@ -773,22 +764,13 @@ public interface ArrowheadDSLPackage extends EPackage {
 	int ARROWHEAD_USE_CASE__BASE_USE_CASE = 0;
 
 	/**
-	 * The feature id for the '<em><b>Arrowheaddslrequirement</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ARROWHEAD_USE_CASE__ARROWHEADDSLREQUIREMENT = 1;
-
-	/**
 	 * The number of structural features of the '<em>Arrowhead Use Case</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ARROWHEAD_USE_CASE_FEATURE_COUNT = 2;
+	int ARROWHEAD_USE_CASE_FEATURE_COUNT = 1;
 
 	/**
 	 * The number of operations of the '<em>Arrowhead Use Case</em>' class.
@@ -3802,17 +3784,6 @@ public interface ArrowheadDSLPackage extends EPackage {
 	EClass getArrowheadDSLRequirement();
 
 	/**
-	 * Returns the meta object for the reference list '{@link ArrowheadDSL.ArrowheadDSLRequirement#getArrowheadusecase <em>Arrowheadusecase</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Arrowheadusecase</em>'.
-	 * @see ArrowheadDSL.ArrowheadDSLRequirement#getArrowheadusecase()
-	 * @see #getArrowheadDSLRequirement()
-	 * @generated
-	 */
-	EReference getArrowheadDSLRequirement_Arrowheadusecase();
-
-	/**
 	 * Returns the meta object for class '{@link ArrowheadDSL.ArrowheadUseCase <em>Arrowhead Use Case</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3832,17 +3803,6 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getArrowheadUseCase_Base_UseCase();
-
-	/**
-	 * Returns the meta object for the reference list '{@link ArrowheadDSL.ArrowheadUseCase#getArrowheaddslrequirement <em>Arrowheaddslrequirement</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Arrowheaddslrequirement</em>'.
-	 * @see ArrowheadDSL.ArrowheadUseCase#getArrowheaddslrequirement()
-	 * @see #getArrowheadUseCase()
-	 * @generated
-	 */
-	EReference getArrowheadUseCase_Arrowheaddslrequirement();
 
 	/**
 	 * Returns the meta object for class '{@link ArrowheadDSL.DeviceDesign <em>Device Design</em>}'.
@@ -5281,14 +5241,6 @@ public interface ArrowheadDSLPackage extends EPackage {
 		EClass ARROWHEAD_DSL_REQUIREMENT = eINSTANCE.getArrowheadDSLRequirement();
 
 		/**
-		 * The meta object literal for the '<em><b>Arrowheadusecase</b></em>' reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ARROWHEAD_DSL_REQUIREMENT__ARROWHEADUSECASE = eINSTANCE.getArrowheadDSLRequirement_Arrowheadusecase();
-
-		/**
 		 * The meta object literal for the '{@link ArrowheadDSL.impl.ArrowheadUseCaseImpl <em>Arrowhead Use Case</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -5305,14 +5257,6 @@ public interface ArrowheadDSLPackage extends EPackage {
 		 * @generated
 		 */
 		EReference ARROWHEAD_USE_CASE__BASE_USE_CASE = eINSTANCE.getArrowheadUseCase_Base_UseCase();
-
-		/**
-		 * The meta object literal for the '<em><b>Arrowheaddslrequirement</b></em>' reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ARROWHEAD_USE_CASE__ARROWHEADDSLREQUIREMENT = eINSTANCE.getArrowheadUseCase_Arrowheaddslrequirement();
 
 		/**
 		 * The meta object literal for the '{@link ArrowheadDSL.impl.DeviceDesignImpl <em>Device Design</em>}' class.

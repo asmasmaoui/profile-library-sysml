@@ -266,15 +266,10 @@
       <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
           propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//System_of_LocalcloudsDesign/localclouddesign"/>
     </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//ArrowheadDSLRequirement">
-      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
-          propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//ArrowheadDSLRequirement/arrowheadusecase"/>
-    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//ArrowheadDSLRequirement"/>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//ArrowheadUseCase">
       <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
           propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//ArrowheadUseCase/base_UseCase"/>
-      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
-          propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//ArrowheadUseCase/arrowheaddslrequirement"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//DeviceDesign">
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//DeviceDesign/DeviceName"/>

@@ -799,16 +799,6 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public EReference getArrowheadDSLRequirement_Arrowheadusecase() {
-		return (EReference)arrowheadDSLRequirementEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getArrowheadUseCase() {
 		return arrowheadUseCaseEClass;
 	}
@@ -821,16 +811,6 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	@Override
 	public EReference getArrowheadUseCase_Base_UseCase() {
 		return (EReference)arrowheadUseCaseEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getArrowheadUseCase_Arrowheaddslrequirement() {
-		return (EReference)arrowheadUseCaseEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -2022,11 +2002,9 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 		createEReference(system_of_LocalcloudsDesignEClass, SYSTEM_OF_LOCALCLOUDS_DESIGN__LOCALCLOUDDESIGN);
 
 		arrowheadDSLRequirementEClass = createEClass(ARROWHEAD_DSL_REQUIREMENT);
-		createEReference(arrowheadDSLRequirementEClass, ARROWHEAD_DSL_REQUIREMENT__ARROWHEADUSECASE);
 
 		arrowheadUseCaseEClass = createEClass(ARROWHEAD_USE_CASE);
 		createEReference(arrowheadUseCaseEClass, ARROWHEAD_USE_CASE__BASE_USE_CASE);
-		createEReference(arrowheadUseCaseEClass, ARROWHEAD_USE_CASE__ARROWHEADDSLREQUIREMENT);
 
 		deviceDesignEClass = createEClass(DEVICE_DESIGN);
 		createEAttribute(deviceDesignEClass, DEVICE_DESIGN__DEVICE_NAME);
@@ -2251,11 +2229,9 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 		initEReference(getSystem_of_LocalcloudsDesign_Localclouddesign(), this.getLocalCloudDesign(), this.getLocalCloudDesign_System_of_localcloudsdesign(), "localclouddesign", null, 0, -1, System_of_LocalcloudsDesign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(arrowheadDSLRequirementEClass, ArrowheadDSLRequirement.class, "ArrowheadDSLRequirement", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getArrowheadDSLRequirement_Arrowheadusecase(), this.getArrowheadUseCase(), this.getArrowheadUseCase_Arrowheaddslrequirement(), "arrowheadusecase", null, 0, -1, ArrowheadDSLRequirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(arrowheadUseCaseEClass, ArrowheadUseCase.class, "ArrowheadUseCase", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getArrowheadUseCase_Base_UseCase(), theUMLPackage.getUseCase(), null, "base_UseCase", null, 0, 1, ArrowheadUseCase.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getArrowheadUseCase_Arrowheaddslrequirement(), this.getArrowheadDSLRequirement(), this.getArrowheadDSLRequirement_Arrowheadusecase(), "arrowheaddslrequirement", null, 0, -1, ArrowheadUseCase.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(deviceDesignEClass, DeviceDesign.class, "DeviceDesign", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getDeviceDesign_DeviceName(), theTypesPackage.getString(), "DeviceName", null, 1, -1, DeviceDesign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);

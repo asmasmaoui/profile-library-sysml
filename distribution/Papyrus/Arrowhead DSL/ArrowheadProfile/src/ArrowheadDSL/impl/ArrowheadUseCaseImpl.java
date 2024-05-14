@@ -3,25 +3,13 @@
 package ArrowheadDSL.impl;
 
 import ArrowheadDSL.ArrowheadDSLPackage;
-import ArrowheadDSL.ArrowheadDSLRequirement;
 import ArrowheadDSL.ArrowheadUseCase;
-
-import java.util.Collection;
-
 import org.eclipse.emf.common.notify.Notification;
-import org.eclipse.emf.common.notify.NotificationChain;
-
-import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
-
-import org.eclipse.emf.ecore.util.EObjectWithInverseResolvingEList;
-import org.eclipse.emf.ecore.util.InternalEList;
-
 import org.eclipse.uml2.uml.UseCase;
 
 /**
@@ -33,7 +21,6 @@ import org.eclipse.uml2.uml.UseCase;
  * </p>
  * <ul>
  *   <li>{@link ArrowheadDSL.impl.ArrowheadUseCaseImpl#getBase_UseCase <em>Base Use Case</em>}</li>
- *   <li>{@link ArrowheadDSL.impl.ArrowheadUseCaseImpl#getArrowheaddslrequirement <em>Arrowheaddslrequirement</em>}</li>
  * </ul>
  *
  * @generated
@@ -48,16 +35,6 @@ public class ArrowheadUseCaseImpl extends MinimalEObjectImpl.Container implement
 	 * @ordered
 	 */
 	protected UseCase base_UseCase;
-
-	/**
-	 * The cached value of the '{@link #getArrowheaddslrequirement() <em>Arrowheaddslrequirement</em>}' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getArrowheaddslrequirement()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<ArrowheadDSLRequirement> arrowheaddslrequirement;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -124,55 +101,11 @@ public class ArrowheadUseCaseImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 */
 	@Override
-	public EList<ArrowheadDSLRequirement> getArrowheaddslrequirement() {
-		if (arrowheaddslrequirement == null) {
-			arrowheaddslrequirement = new EObjectWithInverseResolvingEList.ManyInverse<ArrowheadDSLRequirement>(ArrowheadDSLRequirement.class, this, ArrowheadDSLPackage.ARROWHEAD_USE_CASE__ARROWHEADDSLREQUIREMENT, ArrowheadDSLPackage.ARROWHEAD_DSL_REQUIREMENT__ARROWHEADUSECASE);
-		}
-		return arrowheaddslrequirement;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	@Override
-	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case ArrowheadDSLPackage.ARROWHEAD_USE_CASE__ARROWHEADDSLREQUIREMENT:
-				return ((InternalEList<InternalEObject>)(InternalEList<?>)getArrowheaddslrequirement()).basicAdd(otherEnd, msgs);
-		}
-		return super.eInverseAdd(otherEnd, featureID, msgs);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case ArrowheadDSLPackage.ARROWHEAD_USE_CASE__ARROWHEADDSLREQUIREMENT:
-				return ((InternalEList<?>)getArrowheaddslrequirement()).basicRemove(otherEnd, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case ArrowheadDSLPackage.ARROWHEAD_USE_CASE__BASE_USE_CASE:
 				if (resolve) return getBase_UseCase();
 				return basicGetBase_UseCase();
-			case ArrowheadDSLPackage.ARROWHEAD_USE_CASE__ARROWHEADDSLREQUIREMENT:
-				return getArrowheaddslrequirement();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -189,10 +122,6 @@ public class ArrowheadUseCaseImpl extends MinimalEObjectImpl.Container implement
 			case ArrowheadDSLPackage.ARROWHEAD_USE_CASE__BASE_USE_CASE:
 				setBase_UseCase((UseCase)newValue);
 				return;
-			case ArrowheadDSLPackage.ARROWHEAD_USE_CASE__ARROWHEADDSLREQUIREMENT:
-				getArrowheaddslrequirement().clear();
-				getArrowheaddslrequirement().addAll((Collection<? extends ArrowheadDSLRequirement>)newValue);
-				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -208,9 +137,6 @@ public class ArrowheadUseCaseImpl extends MinimalEObjectImpl.Container implement
 			case ArrowheadDSLPackage.ARROWHEAD_USE_CASE__BASE_USE_CASE:
 				setBase_UseCase((UseCase)null);
 				return;
-			case ArrowheadDSLPackage.ARROWHEAD_USE_CASE__ARROWHEADDSLREQUIREMENT:
-				getArrowheaddslrequirement().clear();
-				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -225,8 +151,6 @@ public class ArrowheadUseCaseImpl extends MinimalEObjectImpl.Container implement
 		switch (featureID) {
 			case ArrowheadDSLPackage.ARROWHEAD_USE_CASE__BASE_USE_CASE:
 				return base_UseCase != null;
-			case ArrowheadDSLPackage.ARROWHEAD_USE_CASE__ARROWHEADDSLREQUIREMENT:
-				return arrowheaddslrequirement != null && !arrowheaddslrequirement.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

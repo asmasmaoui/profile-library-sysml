@@ -4,11 +4,7 @@
 	
 }
 
-/*Block > Compartment[kind=operations]{
-	visible: true;
-	showTitle: true;
-	
-}*/
+
 Property > Compartment[kind="internalstructure"]{
     visible:true;
 }
@@ -163,19 +159,21 @@ Class[appliedStereotypes~="ArrowheadDSL::ArrowheadDSLRequirement"]{
 	bold: true; 
 	displayStereotypes: true;
 }
-Class[appliedStereotypes~="SysML.profile::UseCase"]{
-	fillColor: #dfd869;
+[ArrowheadUseCase]{
+	fillColor: #FF6E33;
 	lineColor: black;
 	lineWidth: 2;
 	bold: true; 
 	displayStereotypes: true;
 }
-Port {
-	fillColor: #ff8000;
+[appliedStereotypes~="ArrowheadDSL::FullPort"] {
+	fillColor: #42FF33;
+	visibile: true;
+}
+[appliedStereotypes~="ArrowheadDSL::ProxyPort"]{
+	fillColor: #0000FF;
 	visibile: true;
 }
 Shape {
 	shapeVisibility: true;
 }
-
-

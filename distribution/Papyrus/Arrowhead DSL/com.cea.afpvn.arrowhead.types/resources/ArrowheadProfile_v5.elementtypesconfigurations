@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <elementtypesconfigurations:ElementTypeSetConfiguration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:stereotypematcher="http://www.eclipse.org/papyrus/uml/types/stereotypematcher/1.1" xmi:id="com.example.arrowheadDSL.elementTypes" identifier="com.example.arrowheadDSL.elementTypes" name="ArrowheadDSL" metamodelNsURI="http://www.eclipse.org/uml2/5.0.0/UML">
-  
-  
   <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_aE8SUAPTEe-BKJM5JZGesg" identifier="com.example.arrowheadDSL.FullPort" name="FullPort_A" hint="UML::Port" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_dQAwYBEqEe-8pedTrDdzWw">
     <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_aE8SUQPTEe-BKJM5JZGesg" iconPath="/icons/full/obj16/Port.gif" bundleId="org.eclipse.uml2.uml.edit"/>
     <ownedConfigurations xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_aE8SUgPTEe-BKJM5JZGesg" profileUri="http://www.eclipse.org/papyrus/arrowhead">
@@ -12,10 +10,6 @@
     </ownedConfigurations>
     <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Port"/>
   </elementTypeConfigurations>
-  
-  
-  
-  
   <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Q8OvcAPVEe-BKJM5JZGesg" identifier="com.example.arrowheadDSL.ProxyPort" name="ProxyPort_A" hint="UML::Port" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_UzvK0BEuEe-8pedTrDdzWw">
     <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_Q8OvcQPVEe-BKJM5JZGesg" iconPath="/icons/full/obj16/Port.gif" bundleId="org.eclipse.uml2.uml.edit"/>
     <ownedConfigurations xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_Q8OvcgPVEe-BKJM5JZGesg" profileUri="http://www.eclipse.org/papyrus/arrowhead">
@@ -26,8 +20,6 @@
     </ownedConfigurations>
     <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Port"/>
   </elementTypeConfigurations>
-  
-  
   <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.arrowheadDSL.ArrowheadDSLRequirement_Class_UML__Class" identifier="com.example.arrowheadDSL.ArrowheadDSLRequirement_Class_UML::Class" name="ArrowheadDSLRequirement (UML::Class)" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
     <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_cpM0crhIEe6pZqc0ssvC1Q" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/ArrowheadProfile/resources/ArrowheadProfile_v5.0.profile.uml#_Y58WkDLUEe6ldMRwfXEyUg"/>
     <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_cpM0c7hIEe6pZqc0ssvC1Q" iconPath="/icons/full/obj16/Class.gif" bundleId="org.eclipse.uml2.uml.edit"/>
@@ -1051,5 +1043,13 @@
       <stereotypesQualifiedNames>ArrowheadDSL::ArrowHeadServiceInterfaceWebsocket</stereotypesQualifiedNames>
     </ownedConfigurations>
     <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Operation"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_OtKKsBHJEe-zY5od4in-3A" identifier="com.example.arrowheadDSL.ArrowheadUseCase" name="ArrowheadUseCase" hint="UML::UseCase" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_OtKKsxHJEe-zY5od4in-3A">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_OtKKsRHJEe-zY5od4in-3A" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/ArrowheadProfile/resources/ArrowheadProfile_v5.0.profile.uml#_Xegd4DLVEe6ldMRwfXEyUg"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_OtKKshHJEe-zY5od4in-3A" iconPath="/icons/full/obj16/UseCase.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_OtKKsxHJEe-zY5od4in-3A" description="Apply Stereotype ArrowheadUseCase" identifier="com.example.arrowheadDSL.arrowheadUseCase" target="_OtKKsBHJEe-zY5od4in-3A" matchedType="_OtKKsBHJEe-zY5od4in-3A">
+      <stereotypesQualifiedNames>ArrowheadDSL::ArrowheadUseCase</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.UseCase"/>
   </elementTypeConfigurations>
 </elementtypesconfigurations:ElementTypeSetConfiguration>
