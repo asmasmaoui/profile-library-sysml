@@ -152,6 +152,8 @@ public class ArrowheadDSLFactoryImpl extends EFactoryImpl implements ArrowheadDS
 				return createWebsocketDataFramingTypeKindFromString(eDataType, initialValue);
 			case ArrowheadDSLPackage.WORKFLOW_KIND:
 				return createWorkflowKindFromString(eDataType, initialValue);
+			case ArrowheadDSLPackage.STATUS_KOD_KIND:
+				return createStatusKodKindFromString(eDataType, initialValue);
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -221,6 +223,8 @@ public class ArrowheadDSLFactoryImpl extends EFactoryImpl implements ArrowheadDS
 				return convertWebsocketDataFramingTypeKindToString(eDataType, instanceValue);
 			case ArrowheadDSLPackage.WORKFLOW_KIND:
 				return convertWorkflowKindToString(eDataType, instanceValue);
+			case ArrowheadDSLPackage.STATUS_KOD_KIND:
+				return convertStatusKodKindToString(eDataType, instanceValue);
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -1069,6 +1073,26 @@ public class ArrowheadDSLFactoryImpl extends EFactoryImpl implements ArrowheadDS
 	 * @generated
 	 */
 	public String convertWorkflowKindToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public StatusKodKind createStatusKodKindFromString(EDataType eDataType, String initialValue) {
+		StatusKodKind result = StatusKodKind.get(initialValue);
+		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertStatusKodKindToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 

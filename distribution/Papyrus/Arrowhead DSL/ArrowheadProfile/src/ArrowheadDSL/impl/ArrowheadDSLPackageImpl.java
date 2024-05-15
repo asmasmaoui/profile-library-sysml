@@ -44,6 +44,7 @@ import ArrowheadDSL.PayloadEncryptionKind;
 import ArrowheadDSL.PhysicalLayerKind;
 import ArrowheadDSL.ProxyPort;
 import ArrowheadDSL.SecurityPolicyKind;
+import ArrowheadDSL.StatusKodKind;
 import ArrowheadDSL.SysD;
 import ArrowheadDSL.SysDD;
 import ArrowheadDSL.SystemDatabaseKind;
@@ -467,6 +468,13 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	private EEnum workflowKindEEnum = null;
 
 	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum statusKodKindEEnum = null;
+
+	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
 	 * {@link org.eclipse.emf.ecore.EPackage.Registry EPackage.Registry} by the package
 	 * package URI value.
@@ -799,6 +807,16 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
+	public EReference getArrowheadDSLRequirement_Arrowheadusecase() {
+		return (EReference)arrowheadDSLRequirementEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getArrowheadUseCase() {
 		return arrowheadUseCaseEClass;
 	}
@@ -811,6 +829,16 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	@Override
 	public EReference getArrowheadUseCase_Base_UseCase() {
 		return (EReference)arrowheadUseCaseEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getArrowheadUseCase_Arrowheaddslrequirement() {
+		return (EReference)arrowheadUseCaseEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -1949,6 +1977,16 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
+	public EEnum getStatusKodKind() {
+		return statusKodKindEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public ArrowheadDSLFactory getArrowheadDSLFactory() {
 		return (ArrowheadDSLFactory)getEFactoryInstance();
 	}
@@ -2002,9 +2040,11 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 		createEReference(system_of_LocalcloudsDesignEClass, SYSTEM_OF_LOCALCLOUDS_DESIGN__LOCALCLOUDDESIGN);
 
 		arrowheadDSLRequirementEClass = createEClass(ARROWHEAD_DSL_REQUIREMENT);
+		createEReference(arrowheadDSLRequirementEClass, ARROWHEAD_DSL_REQUIREMENT__ARROWHEADUSECASE);
 
 		arrowheadUseCaseEClass = createEClass(ARROWHEAD_USE_CASE);
 		createEReference(arrowheadUseCaseEClass, ARROWHEAD_USE_CASE__BASE_USE_CASE);
+		createEReference(arrowheadUseCaseEClass, ARROWHEAD_USE_CASE__ARROWHEADDSLREQUIREMENT);
 
 		deviceDesignEClass = createEClass(DEVICE_DESIGN);
 		createEAttribute(deviceDesignEClass, DEVICE_DESIGN__DEVICE_NAME);
@@ -2140,6 +2180,7 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 		transportLayerKindEEnum = createEEnum(TRANSPORT_LAYER_KIND);
 		websocketDataFramingTypeKindEEnum = createEEnum(WEBSOCKET_DATA_FRAMING_TYPE_KIND);
 		workflowKindEEnum = createEEnum(WORKFLOW_KIND);
+		statusKodKindEEnum = createEEnum(STATUS_KOD_KIND);
 	}
 
 	/**
@@ -2229,9 +2270,11 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 		initEReference(getSystem_of_LocalcloudsDesign_Localclouddesign(), this.getLocalCloudDesign(), this.getLocalCloudDesign_System_of_localcloudsdesign(), "localclouddesign", null, 0, -1, System_of_LocalcloudsDesign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(arrowheadDSLRequirementEClass, ArrowheadDSLRequirement.class, "ArrowheadDSLRequirement", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getArrowheadDSLRequirement_Arrowheadusecase(), this.getArrowheadUseCase(), this.getArrowheadUseCase_Arrowheaddslrequirement(), "arrowheadusecase", null, 0, -1, ArrowheadDSLRequirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(arrowheadUseCaseEClass, ArrowheadUseCase.class, "ArrowheadUseCase", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getArrowheadUseCase_Base_UseCase(), theUMLPackage.getUseCase(), null, "base_UseCase", null, 0, 1, ArrowheadUseCase.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getArrowheadUseCase_Arrowheaddslrequirement(), this.getArrowheadDSLRequirement(), this.getArrowheadDSLRequirement_Arrowheadusecase(), "arrowheaddslrequirement", null, 0, -1, ArrowheadUseCase.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(deviceDesignEClass, DeviceDesign.class, "DeviceDesign", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getDeviceDesign_DeviceName(), theTypesPackage.getString(), "DeviceName", null, 1, -1, DeviceDesign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -2537,6 +2580,21 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 		addEEnumLiteral(workflowKindEEnum, WorkflowKind.OTHER_WORKFLOW_LANGUAGE);
 		addEEnumLiteral(workflowKindEEnum, WorkflowKind.PETRI_NET);
 
+		initEEnum(statusKodKindEEnum, StatusKodKind.class, "StatusKodKind");
+		addEEnumLiteral(statusKodKindEEnum, StatusKodKind._100_CONTINUE);
+		addEEnumLiteral(statusKodKindEEnum, StatusKodKind._101_SWITCHPROTOCOL);
+		addEEnumLiteral(statusKodKindEEnum, StatusKodKind._102_PROCESSING);
+		addEEnumLiteral(statusKodKindEEnum, StatusKodKind._103_EARLY_HINTS);
+		addEEnumLiteral(statusKodKindEEnum, StatusKodKind._200OK);
+		addEEnumLiteral(statusKodKindEEnum, StatusKodKind._201_CREATED);
+		addEEnumLiteral(statusKodKindEEnum, StatusKodKind._202_ACCEPTED);
+		addEEnumLiteral(statusKodKindEEnum, StatusKodKind._203_NON_AUTHORITATIVE_INFORMATION);
+		addEEnumLiteral(statusKodKindEEnum, StatusKodKind._204_NO_CONTENT);
+		addEEnumLiteral(statusKodKindEEnum, StatusKodKind._205_RESET_CONTENT);
+		addEEnumLiteral(statusKodKindEEnum, StatusKodKind._206_PARTIAL_CONTENT);
+		addEEnumLiteral(statusKodKindEEnum, StatusKodKind._207_MULTI_STATUS);
+		addEEnumLiteral(statusKodKindEEnum, StatusKodKind._208_ALREADY_REPORTED);
+
 		// Create resource
 		createResource(eNS_URI);
 
@@ -2642,6 +2700,84 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 		   source,
 		   new String[] {
 			   "originalName", "Client-to-Server_Masking"
+		   });
+		addAnnotation
+		  (statusKodKindEEnum.getELiterals().get(0),
+		   source,
+		   new String[] {
+			   "originalName", "100 - Continue"
+		   });
+		addAnnotation
+		  (statusKodKindEEnum.getELiterals().get(1),
+		   source,
+		   new String[] {
+			   "originalName", "101 - Switch protocol"
+		   });
+		addAnnotation
+		  (statusKodKindEEnum.getELiterals().get(2),
+		   source,
+		   new String[] {
+			   "originalName", "102 - Processing"
+		   });
+		addAnnotation
+		  (statusKodKindEEnum.getELiterals().get(3),
+		   source,
+		   new String[] {
+			   "originalName", "103 - Early Hints"
+		   });
+		addAnnotation
+		  (statusKodKindEEnum.getELiterals().get(4),
+		   source,
+		   new String[] {
+			   "originalName", "200 - OK"
+		   });
+		addAnnotation
+		  (statusKodKindEEnum.getELiterals().get(5),
+		   source,
+		   new String[] {
+			   "originalName", "201 - Created"
+		   });
+		addAnnotation
+		  (statusKodKindEEnum.getELiterals().get(6),
+		   source,
+		   new String[] {
+			   "originalName", "202 - Accepted"
+		   });
+		addAnnotation
+		  (statusKodKindEEnum.getELiterals().get(7),
+		   source,
+		   new String[] {
+			   "originalName", "203 - Non-Authoritative Information"
+		   });
+		addAnnotation
+		  (statusKodKindEEnum.getELiterals().get(8),
+		   source,
+		   new String[] {
+			   "originalName", "204 - No Content"
+		   });
+		addAnnotation
+		  (statusKodKindEEnum.getELiterals().get(9),
+		   source,
+		   new String[] {
+			   "originalName", "205 - Reset Content"
+		   });
+		addAnnotation
+		  (statusKodKindEEnum.getELiterals().get(10),
+		   source,
+		   new String[] {
+			   "originalName", "206 - Partial Content"
+		   });
+		addAnnotation
+		  (statusKodKindEEnum.getELiterals().get(11),
+		   source,
+		   new String[] {
+			   "originalName", "207 - Multi-Status"
+		   });
+		addAnnotation
+		  (statusKodKindEEnum.getELiterals().get(12),
+		   source,
+		   new String[] {
+			   "originalName", "208 - Already Reported"
 		   });
 	}
 

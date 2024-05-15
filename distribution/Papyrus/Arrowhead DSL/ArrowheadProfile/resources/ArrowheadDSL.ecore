@@ -78,10 +78,15 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="localclouddesign" ordered="false"
         upperBound="-1" eType="#//LocalCloudDesign" eOpposite="#//LocalCloudDesign/system_of_localcloudsdesign"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ArrowheadDSLRequirement" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//requirements/Requirement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ArrowheadDSLRequirement" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//requirements/Requirement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="arrowheadusecase" ordered="false"
+        upperBound="-1" eType="#//ArrowheadUseCase" eOpposite="#//ArrowheadUseCase/arrowheaddslrequirement"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ArrowheadUseCase">
     <eStructuralFeatures xsi:type="ecore:EReference" name="base_UseCase" ordered="false"
         eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//UseCase"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="arrowheaddslrequirement"
+        ordered="false" upperBound="-1" eType="#//ArrowheadDSLRequirement" eOpposite="#//ArrowheadDSLRequirement/arrowheadusecase"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="DeviceDesign" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//blocks/Block">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="DeviceName" ordered="false"
@@ -502,5 +507,72 @@
   <eClassifiers xsi:type="ecore:EClass" name="ProxyPort">
     <eStructuralFeatures xsi:type="ecore:EReference" name="base_Port" ordered="false"
         eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Port"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="StatusKodKind">
+    <eLiterals name="_100Continue">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details key="originalName" value="100 - Continue"/>
+      </eAnnotations>
+    </eLiterals>
+    <eLiterals name="_101Switchprotocol" value="1">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details key="originalName" value="101 - Switch protocol"/>
+      </eAnnotations>
+    </eLiterals>
+    <eLiterals name="_102Processing" value="2">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details key="originalName" value="102 - Processing"/>
+      </eAnnotations>
+    </eLiterals>
+    <eLiterals name="_103EarlyHints" value="3">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details key="originalName" value="103 - Early Hints"/>
+      </eAnnotations>
+    </eLiterals>
+    <eLiterals name="_200OK" value="4">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details key="originalName" value="200 - OK"/>
+      </eAnnotations>
+    </eLiterals>
+    <eLiterals name="_201Created" value="5">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details key="originalName" value="201 - Created"/>
+      </eAnnotations>
+    </eLiterals>
+    <eLiterals name="_202Accepted" value="6">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details key="originalName" value="202 - Accepted"/>
+      </eAnnotations>
+    </eLiterals>
+    <eLiterals name="_203NonAuthoritativeInformation" value="7">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details key="originalName" value="203 - Non-Authoritative Information"/>
+      </eAnnotations>
+    </eLiterals>
+    <eLiterals name="_204NoContent" value="8">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details key="originalName" value="204 - No Content"/>
+      </eAnnotations>
+    </eLiterals>
+    <eLiterals name="_205ResetContent" value="9">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details key="originalName" value="205 - Reset Content"/>
+      </eAnnotations>
+    </eLiterals>
+    <eLiterals name="_206PartialContent" value="10">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details key="originalName" value="206 - Partial Content"/>
+      </eAnnotations>
+    </eLiterals>
+    <eLiterals name="_207MultiStatus" value="11">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details key="originalName" value="207 - Multi-Status"/>
+      </eAnnotations>
+    </eLiterals>
+    <eLiterals name="_208AlreadyReported" value="12">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details key="originalName" value="208 - Already Reported"/>
+      </eAnnotations>
+    </eLiterals>
   </eClassifiers>
 </ecore:EPackage>
