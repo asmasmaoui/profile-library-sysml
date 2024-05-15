@@ -44,6 +44,7 @@ import ArrowheadDSL.PayloadEncryptionKind;
 import ArrowheadDSL.PhysicalLayerKind;
 import ArrowheadDSL.ProxyPort;
 import ArrowheadDSL.SecurityPolicyKind;
+import ArrowheadDSL.StatusKodKind;
 import ArrowheadDSL.SysD;
 import ArrowheadDSL.SysDD;
 import ArrowheadDSL.SystemDatabaseKind;
@@ -465,6 +466,13 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	private EEnum workflowKindEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum statusKodKindEEnum = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -1949,6 +1957,16 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
+	public EEnum getStatusKodKind() {
+		return statusKodKindEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public ArrowheadDSLFactory getArrowheadDSLFactory() {
 		return (ArrowheadDSLFactory)getEFactoryInstance();
 	}
@@ -2140,6 +2158,7 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 		transportLayerKindEEnum = createEEnum(TRANSPORT_LAYER_KIND);
 		websocketDataFramingTypeKindEEnum = createEEnum(WEBSOCKET_DATA_FRAMING_TYPE_KIND);
 		workflowKindEEnum = createEEnum(WORKFLOW_KIND);
+		statusKodKindEEnum = createEEnum(STATUS_KOD_KIND);
 	}
 
 	/**
@@ -2537,6 +2556,21 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 		addEEnumLiteral(workflowKindEEnum, WorkflowKind.OTHER_WORKFLOW_LANGUAGE);
 		addEEnumLiteral(workflowKindEEnum, WorkflowKind.PETRI_NET);
 
+		initEEnum(statusKodKindEEnum, StatusKodKind.class, "StatusKodKind");
+		addEEnumLiteral(statusKodKindEEnum, StatusKodKind._100_CONTINUE);
+		addEEnumLiteral(statusKodKindEEnum, StatusKodKind._101_SWITCHPROTOCOL);
+		addEEnumLiteral(statusKodKindEEnum, StatusKodKind._102_PROCESSING);
+		addEEnumLiteral(statusKodKindEEnum, StatusKodKind._103_EARLY_HINTS);
+		addEEnumLiteral(statusKodKindEEnum, StatusKodKind._200OK);
+		addEEnumLiteral(statusKodKindEEnum, StatusKodKind._201_CREATED);
+		addEEnumLiteral(statusKodKindEEnum, StatusKodKind._202_ACCEPTED);
+		addEEnumLiteral(statusKodKindEEnum, StatusKodKind._203_NON_AUTHORITATIVE_INFORMATION);
+		addEEnumLiteral(statusKodKindEEnum, StatusKodKind._204_NO_CONTENT);
+		addEEnumLiteral(statusKodKindEEnum, StatusKodKind._205_RESET_CONTENT);
+		addEEnumLiteral(statusKodKindEEnum, StatusKodKind._206_PARTIAL_CONTENT);
+		addEEnumLiteral(statusKodKindEEnum, StatusKodKind._207_MULTI_STATUS);
+		addEEnumLiteral(statusKodKindEEnum, StatusKodKind._208_ALREADY_REPORTED);
+
 		// Create resource
 		createResource(eNS_URI);
 
@@ -2642,6 +2676,84 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 		   source,
 		   new String[] {
 			   "originalName", "Client-to-Server_Masking"
+		   });
+		addAnnotation
+		  (statusKodKindEEnum.getELiterals().get(0),
+		   source,
+		   new String[] {
+			   "originalName", "100 - Continue"
+		   });
+		addAnnotation
+		  (statusKodKindEEnum.getELiterals().get(1),
+		   source,
+		   new String[] {
+			   "originalName", "101 - Switch protocol"
+		   });
+		addAnnotation
+		  (statusKodKindEEnum.getELiterals().get(2),
+		   source,
+		   new String[] {
+			   "originalName", "102 - Processing"
+		   });
+		addAnnotation
+		  (statusKodKindEEnum.getELiterals().get(3),
+		   source,
+		   new String[] {
+			   "originalName", "103 - Early Hints"
+		   });
+		addAnnotation
+		  (statusKodKindEEnum.getELiterals().get(4),
+		   source,
+		   new String[] {
+			   "originalName", "200 - OK"
+		   });
+		addAnnotation
+		  (statusKodKindEEnum.getELiterals().get(5),
+		   source,
+		   new String[] {
+			   "originalName", "201 - Created"
+		   });
+		addAnnotation
+		  (statusKodKindEEnum.getELiterals().get(6),
+		   source,
+		   new String[] {
+			   "originalName", "202 - Accepted"
+		   });
+		addAnnotation
+		  (statusKodKindEEnum.getELiterals().get(7),
+		   source,
+		   new String[] {
+			   "originalName", "203 - Non-Authoritative Information"
+		   });
+		addAnnotation
+		  (statusKodKindEEnum.getELiterals().get(8),
+		   source,
+		   new String[] {
+			   "originalName", "204 - No Content"
+		   });
+		addAnnotation
+		  (statusKodKindEEnum.getELiterals().get(9),
+		   source,
+		   new String[] {
+			   "originalName", "205 - Reset Content"
+		   });
+		addAnnotation
+		  (statusKodKindEEnum.getELiterals().get(10),
+		   source,
+		   new String[] {
+			   "originalName", "206 - Partial Content"
+		   });
+		addAnnotation
+		  (statusKodKindEEnum.getELiterals().get(11),
+		   source,
+		   new String[] {
+			   "originalName", "207 - Multi-Status"
+		   });
+		addAnnotation
+		  (statusKodKindEEnum.getELiterals().get(12),
+		   source,
+		   new String[] {
+			   "originalName", "208 - Already Reported"
 		   });
 	}
 

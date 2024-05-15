@@ -746,6 +746,27 @@
     <packagedElement xmi:type="uml:Extension" xmi:id="_raENQPyPEe6MDucytuqm6Q" name="E_FullPort_Port1" memberEnd="_raE0UPyPEe6MDucytuqm6Q _raE0UfyPEe6MDucytuqm6Q">
       <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_raE0UPyPEe6MDucytuqm6Q" name="extension_FullPort" type="_oXf0IPyPEe6MDucytuqm6Q" aggregation="composite" association="_raENQPyPEe6MDucytuqm6Q"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_qEsekBIAEe-Pu-YQlZuncw" name="StatusKodKind">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_NAvKsBIBEe-Pu-YQlZuncw" name="100 - Continue">
+        <specification xmi:type="uml:LiteralString" xmi:id="_kGb68BIBEe-Pu-YQlZuncw" value="The server has received the request headers and the client should proceed to send the request body (in the case of a request for which a body needs to be sent; for example, a POST request). Sending a large request body to a server after a request has been rejected for inappropriate headers would be inefficient. To have a server check the request's headers, a client must send Expect: 100-continue as a header in its initial request and receive a 100 Continue status code in response before sending the body. If the client receives an error code such as 403 (Forbidden) or 405 (Method Not Allowed) then it should not send the request's body. The response 417 Expectation Failed indicates that the request should be repeated without the Expect header as it indicates that the server does not support expectations (this is the case, for example, of HTTP/1.0 servers)"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_NxwX8BIBEe-Pu-YQlZuncw" name="101 - Switch protocol">
+        <specification xmi:type="uml:LiteralString" xmi:id="_J0ImMBKNEe-2EvZLzkcjBQ" name="101" value="The requester has asked the server to switch protocols and the server has agreed to do so.&#xD;&#xA;&#xD;&#xA;"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_OeMAIBIBEe-Pu-YQlZuncw" name="102 - Processing"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_PmDAEBIBEe-Pu-YQlZuncw" name="103 - Early Hints"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_QWLcgBIBEe-Pu-YQlZuncw" name="200 - OK"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_RN_OQBIBEe-Pu-YQlZuncw" name="201 - Created"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_SFWUEBIBEe-Pu-YQlZuncw" name="202 - Accepted"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_TTCPMBIBEe-Pu-YQlZuncw" name="203 - Non-Authoritative Information"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_e9wrUBKNEe-2EvZLzkcjBQ" name="204 - No Content"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_fsZS8BKNEe-2EvZLzkcjBQ" name="205 - Reset Content"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_gqR3gBKNEe-2EvZLzkcjBQ" name="206 - Partial Content"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_hpvwcBKNEe-2EvZLzkcjBQ" name="207 - Multi-Status"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_jAgvEBKNEe-2EvZLzkcjBQ" name="208 - Already Reported">
+        <specification xmi:type="uml:LiteralString" xmi:id="_zlgycBKNEe-2EvZLzkcjBQ"/>
+      </ownedLiteral>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_HPL28LaoEe6zC_b0ESqWTw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HPgAALaoEe6zC_b0ESqWTw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>

@@ -3504,6 +3504,17 @@ public interface ArrowheadDSLPackage extends EPackage {
 
 
 	/**
+	 * The meta object id for the '{@link ArrowheadDSL.StatusKodKind <em>Status Kod Kind</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see ArrowheadDSL.StatusKodKind
+	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getStatusKodKind()
+	 * @generated
+	 */
+	int STATUS_KOD_KIND = 54;
+
+
+	/**
 	 * Returns the meta object for class '{@link ArrowheadDSL.SysD <em>Sys D</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5000,6 +5011,16 @@ public interface ArrowheadDSLPackage extends EPackage {
 	EEnum getWorkflowKind();
 
 	/**
+	 * Returns the meta object for enum '{@link ArrowheadDSL.StatusKodKind <em>Status Kod Kind</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Status Kod Kind</em>'.
+	 * @see ArrowheadDSL.StatusKodKind
+	 * @generated
+	 */
+	EEnum getStatusKodKind();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -6257,6 +6278,16 @@ public interface ArrowheadDSLPackage extends EPackage {
 		 * @generated
 		 */
 		EEnum WORKFLOW_KIND = eINSTANCE.getWorkflowKind();
+
+		/**
+		 * The meta object literal for the '{@link ArrowheadDSL.StatusKodKind <em>Status Kod Kind</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see ArrowheadDSL.StatusKodKind
+		 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getStatusKodKind()
+		 * @generated
+		 */
+		EEnum STATUS_KOD_KIND = eINSTANCE.getStatusKodKind();
 
 	}
 
