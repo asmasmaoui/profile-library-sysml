@@ -8,13 +8,13 @@
       <importedPackage xmi:type="uml:Package" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries"/>
     </packageImport>
     <packagedElement xmi:type="uml:Class" xmi:id="_FKoKwBNZEe-QDpCYPjiDnA" name="ServiceRegistry_Design">
-      <ownedAttribute xmi:type="uml:Port" xmi:id="_zhD2kBNZEe-QDpCYPjiDnA" name="ServiceManagement" aggregation="composite"/>
-      <ownedAttribute xmi:type="uml:Port" xmi:id="_0ECAwBNZEe-QDpCYPjiDnA" name="ServiceDiscovery" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_zhD2kBNZEe-QDpCYPjiDnA" name="ServiceManagement" type="_kXaLUBNjEe-QDpCYPjiDnA" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_0ECAwBNZEe-QDpCYPjiDnA" name="ServiceDiscovery" type="_wSocoBNiEe-QDpCYPjiDnA" aggregation="composite"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_LN1qYBNZEe-QDpCYPjiDnA" name="ServiceRegistry_DesignDescription">
       <generalization xmi:type="uml:Generalization" xmi:id="_PQiq0BNZEe-QDpCYPjiDnA" general="_FKoKwBNZEe-QDpCYPjiDnA"/>
-      <ownedAttribute xmi:type="uml:Port" xmi:id="_yoGxIBNgEe-QDpCYPjiDnA" name="ServiceDiscovery_HTTP" aggregation="composite"/>
-      <ownedAttribute xmi:type="uml:Port" xmi:id="_A18v4BNhEe-QDpCYPjiDnA" name="ServiceManagement_HTTP" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_yoGxIBNgEe-QDpCYPjiDnA" name="ServiceDiscovery_HTTP" aggregation="composite" subsettedProperty="_0ECAwBNZEe-QDpCYPjiDnA"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_A18v4BNhEe-QDpCYPjiDnA" name="ServiceManagement_HTTP" aggregation="composite" subsettedProperty="_zhD2kBNZEe-QDpCYPjiDnA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_wSocoBNiEe-QDpCYPjiDnA" name="ServiceDiscovery">
       <ownedOperation xmi:type="uml:Operation" xmi:id="_J3ZQUBNjEe-QDpCYPjiDnA" name="Register"/>
@@ -119,8 +119,6 @@
   </uml:Model>
   <ArrowheadDSL:SysD xmi:id="_FKr1IBNZEe-QDpCYPjiDnA" base_Class="_FKoKwBNZEe-QDpCYPjiDnA"/>
   <ArrowheadDSL:SysDD xmi:id="_LN4tsBNZEe-QDpCYPjiDnA" base_Class="_LN1qYBNZEe-QDpCYPjiDnA"/>
-  <ArrowheadDSL:ProxyPort xmi:id="_zhIvEBNZEe-QDpCYPjiDnA" base_Port="_zhD2kBNZEe-QDpCYPjiDnA"/>
-  <ArrowheadDSL:ProxyPort xmi:id="_0EEdABNZEe-QDpCYPjiDnA" base_Port="_0ECAwBNZEe-QDpCYPjiDnA"/>
   <ArrowheadDSL:ProxyPort xmi:id="_yoKbgBNgEe-QDpCYPjiDnA" base_Port="_yoGxIBNgEe-QDpCYPjiDnA"/>
   <ArrowheadDSL:ProxyPort xmi:id="_A1_zMBNhEe-QDpCYPjiDnA" base_Port="_A18v4BNhEe-QDpCYPjiDnA"/>
   <ArrowheadDSL:SD xmi:id="_wSrf8BNiEe-QDpCYPjiDnA" base_Class="_wSocoBNiEe-QDpCYPjiDnA"/>
@@ -140,4 +138,6 @@
   <ArrowheadDSL:ArrowHeadServiceInterfaceHTTP xmi:id="_Tii1EBNlEe-QDpCYPjiDnA" base_Operation="_J3aecBNjEe-QDpCYPjiDnA"/>
   <ArrowheadDSL:ArrowHeadServiceInterfaceHTTP xmi:id="_UtQ7wBNlEe-QDpCYPjiDnA" base_Operation="_J3bFgBNjEe-QDpCYPjiDnA"/>
   <ArrowheadDSL:ArrowHeadServiceInterfaceHTTP xmi:id="_e-iXQBNlEe-QDpCYPjiDnA" base_Operation="_-9-aQBNjEe-QDpCYPjiDnA"/>
+  <ArrowheadDSL:FullPort xmi:id="_eHX2sBwhEe-zz8M_4YmCJw" base_Port="_zhD2kBNZEe-QDpCYPjiDnA"/>
+  <ArrowheadDSL:FullPort xmi:id="_gGqN4BwhEe-zz8M_4YmCJw" base_Port="_0ECAwBNZEe-QDpCYPjiDnA"/>
 </xmi:XMI>
