@@ -17,12 +17,12 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_Yc2hABNnEe-QDpCYPjiDnA" name="ServiceOrchestration_DesignDescription">
       <generalization xmi:type="uml:Generalization" xmi:id="_vq2McBN5Ee-QDpCYPjiDnA" general="_X1Jn0BNnEe-QDpCYPjiDnA"/>
-      <ownedAttribute xmi:type="uml:Port" xmi:id="_KYFA4BN2Ee-QDpCYPjiDnA" name="TokenGeneration_HTTP" aggregation="composite"/>
-      <ownedAttribute xmi:type="uml:Port" xmi:id="_K2zkQBN2Ee-QDpCYPjiDnA" name="ServiceDiscovery_HTTP" aggregation="composite"/>
-      <ownedAttribute xmi:type="uml:Port" xmi:id="_LPIksBN2Ee-QDpCYPjiDnA" name="ServiceDiscovery_HTTP" aggregation="composite"/>
-      <ownedAttribute xmi:type="uml:Port" xmi:id="_LiGkABN2Ee-QDpCYPjiDnA" name="OrchestrationStoreManagement-HTTP" aggregation="composite"/>
-      <ownedAttribute xmi:type="uml:Port" xmi:id="_L4wwgBN2Ee-QDpCYPjiDnA" name="ServiceOrchestration-HTTP" aggregation="composite"/>
-      <ownedAttribute xmi:type="uml:Port" xmi:id="_mJjR0BN4Ee-QDpCYPjiDnA" name="GlobalServiceDiscovery_HTTP" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_KYFA4BN2Ee-QDpCYPjiDnA" name="TokenGeneration_HTTP" aggregation="composite" subsettedProperty="_kQCbMBNnEe-QDpCYPjiDnA"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_K2zkQBN2Ee-QDpCYPjiDnA" name="ServiceDiscovery_HTTP" aggregation="composite" subsettedProperty="_k7EVMBNnEe-QDpCYPjiDnA"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_LiGkABN2Ee-QDpCYPjiDnA" name="OrchestrationStoreManagement-HTTP" aggregation="composite" subsettedProperty="_lRreYBNnEe-QDpCYPjiDnA"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_L4wwgBN2Ee-QDpCYPjiDnA" name="ServiceOrchestration_HTTP" aggregation="composite" subsettedProperty="_ljUoABNnEe-QDpCYPjiDnA"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_mJjR0BN4Ee-QDpCYPjiDnA" name="GlobalServiceDiscovery_HTTP" aggregation="composite" subsettedProperty="_mJjR0BN4Ee-QDpCYPjiDnA"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_Myq8EBweEe-zz8M_4YmCJw" name="GetPublicKey_HTTP" aggregation="composite" subsettedProperty="_koLOYBNnEe-QDpCYPjiDnA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_0kYHMBN5Ee-QDpCYPjiDnA" name="ServiceOrchestration">
       <ownedOperation xmi:type="uml:Operation" xmi:id="_NrjnABN6Ee-QDpCYPjiDnA" name="Orchestration"/>
@@ -112,15 +112,8 @@
   </uml:Model>
   <ArrowheadDSL:SysD xmi:id="_X2BxkBNnEe-QDpCYPjiDnA" base_Class="_X1Jn0BNnEe-QDpCYPjiDnA"/>
   <ArrowheadDSL:SysDD xmi:id="_Yc4WMBNnEe-QDpCYPjiDnA" base_Class="_Yc2hABNnEe-QDpCYPjiDnA"/>
-  <ArrowheadDSL:ProxyPort xmi:id="_jvUTwBNnEe-QDpCYPjiDnA" base_Port="_jvR3gBNnEe-QDpCYPjiDnA"/>
-  <ArrowheadDSL:ProxyPort xmi:id="_kQEQYBNnEe-QDpCYPjiDnA" base_Port="_kQCbMBNnEe-QDpCYPjiDnA"/>
-  <ArrowheadDSL:ProxyPort xmi:id="_koNDkBNnEe-QDpCYPjiDnA" base_Port="_koLOYBNnEe-QDpCYPjiDnA"/>
-  <ArrowheadDSL:ProxyPort xmi:id="_k7GxcBNnEe-QDpCYPjiDnA" base_Port="_k7EVMBNnEe-QDpCYPjiDnA"/>
-  <ArrowheadDSL:ProxyPort xmi:id="_lRtTkBNnEe-QDpCYPjiDnA" base_Port="_lRreYBNnEe-QDpCYPjiDnA"/>
-  <ArrowheadDSL:ProxyPort xmi:id="_ljXEQBNnEe-QDpCYPjiDnA" base_Port="_ljUoABNnEe-QDpCYPjiDnA"/>
   <ArrowheadDSL:ProxyPort xmi:id="_KYHdIBN2Ee-QDpCYPjiDnA" base_Port="_KYFA4BN2Ee-QDpCYPjiDnA"/>
   <ArrowheadDSL:ProxyPort xmi:id="_K22AgBN2Ee-QDpCYPjiDnA" base_Port="_K2zkQBN2Ee-QDpCYPjiDnA"/>
-  <ArrowheadDSL:ProxyPort xmi:id="_LPKZ4BN2Ee-QDpCYPjiDnA" base_Port="_LPIksBN2Ee-QDpCYPjiDnA"/>
   <ArrowheadDSL:ProxyPort xmi:id="_LiJAQBN2Ee-QDpCYPjiDnA" base_Port="_LiGkABN2Ee-QDpCYPjiDnA"/>
   <ArrowheadDSL:ProxyPort xmi:id="_L4ylsBN2Ee-QDpCYPjiDnA" base_Port="_L4wwgBN2Ee-QDpCYPjiDnA"/>
   <ArrowheadDSL:ProxyPort xmi:id="_mJlHABN4Ee-QDpCYPjiDnA" base_Port="_mJjR0BN4Ee-QDpCYPjiDnA"/>
@@ -137,4 +130,11 @@
   <ArrowheadDSL:ArrowHeadServiceInterfaceHTTP xmi:id="_fVk8QBN7Ee-QDpCYPjiDnA" base_Operation="_fVh48BN7Ee-QDpCYPjiDnA"/>
   <ArrowheadDSL:ArrowHeadServiceInterfaceHTTP xmi:id="_hfM7MBN7Ee-QDpCYPjiDnA" base_Operation="_hfJ34BN7Ee-QDpCYPjiDnA"/>
   <ArrowheadDSL:ArrowHeadServiceInterfaceHTTP xmi:id="_jmk3YBN7Ee-QDpCYPjiDnA" base_Operation="_jmibIBN7Ee-QDpCYPjiDnA"/>
+  <ArrowheadDSL:FullPort xmi:id="_eIY8oBwcEe-zz8M_4YmCJw" base_Port="_jvR3gBNnEe-QDpCYPjiDnA"/>
+  <ArrowheadDSL:FullPort xmi:id="_goQRUBwcEe-zz8M_4YmCJw" base_Port="_kQCbMBNnEe-QDpCYPjiDnA"/>
+  <ArrowheadDSL:FullPort xmi:id="_iOWscBwcEe-zz8M_4YmCJw" base_Port="_koLOYBNnEe-QDpCYPjiDnA"/>
+  <ArrowheadDSL:FullPort xmi:id="_kDJq4BwcEe-zz8M_4YmCJw" base_Port="_k7EVMBNnEe-QDpCYPjiDnA"/>
+  <ArrowheadDSL:FullPort xmi:id="_lxCJABwcEe-zz8M_4YmCJw" base_Port="_lRreYBNnEe-QDpCYPjiDnA"/>
+  <ArrowheadDSL:FullPort xmi:id="_nlvA0BwcEe-zz8M_4YmCJw" base_Port="_ljUoABNnEe-QDpCYPjiDnA"/>
+  <ArrowheadDSL:ProxyPort xmi:id="_My_FIBweEe-zz8M_4YmCJw" base_Port="_Myq8EBweEe-zz8M_4YmCJw"/>
 </xmi:XMI>
