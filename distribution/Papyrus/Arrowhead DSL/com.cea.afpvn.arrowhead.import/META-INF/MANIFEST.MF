@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Import
+Bundle-SymbolicName: com.cea.afpvn.arrowhead.import;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Require-Bundle: org.eclipse.ui
+Bundle-Vendor: CEA
+Automatic-Module-Name: com.cea.afpvn.arrowhead.import
+Bundle-RequiredExecutionEnvironment: JavaSE-17
