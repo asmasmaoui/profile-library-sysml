@@ -4,10 +4,10 @@
                                   point="org.eclipse.ui.importWizards">
                                <wizard
                                      category="org.eclipse.papyrus.infra.core.importcategory"
-                                     class="transformations.Import_AFPVN"
+                                     class="com.cea.afpvn.arrowhead.wizards.ImportAFPVNWizard"
                                      icon="icons/import_wiz_16x16-papyrusColor.gif"
-                                     id="com.cea.afpvn.arrowhead.import.wizard1"
-                                     name="TransformationUML1UML2">
+                                     id="org.eclipse.papyrus.aasx.import.category"
+                                     name="Transformation_Sysml1toSysml2">
                                   <description>
                                      This wizard allows tranformation from UML1 to UML2 for AFPVN
                                   </description>
