@@ -50,7 +50,9 @@ import org.eclipse.papyrus.infra.core.services.ExtensionServicesRegistry;
 import org.eclipse.papyrus.infra.core.services.ServiceException;
 import org.eclipse.papyrus.infra.core.services.ServicesRegistry;
 import org.eclipse.papyrus.uml.diagram.wizards.Activator;
+import org.eclipse.papyrus.uml.diagram.wizards.messages.Messages;
 import org.eclipse.papyrus.uml.diagram.wizards.pages.NewModelWizardData;
+import org.eclipse.papyrus.uml.diagram.wizards.pages.PapyrusProjectCreationPage;
 import org.eclipse.papyrus.uml.diagram.wizards.pages.SelectArchitectureContextPage;
 import org.eclipse.papyrus.uml.diagram.wizards.pages.SelectRepresentationKindPage;
 import org.eclipse.papyrus.uml.diagram.wizards.pages.SelectStorageProviderPage;
@@ -86,6 +88,8 @@ public class ImportAFPVNWizard extends CreateModelWizard implements INewWizard {
 
 	/** The Constant NEW_MODEL_SETTINGS. */
 	public static final String NEW_MODEL_SETTINGS = "NewModelWizard"; //$NON-NLS-1$
+	
+	private PapyrusProjectCreationPage myProjectPage;
 
 	private SelectStorageProviderPage selectStorageProviderPage;
 
@@ -201,7 +205,7 @@ public class ImportAFPVNWizard extends CreateModelWizard implements INewWizard {
 
 		this.selection = selection;
 		initStorageProvider(workbench, selection);
-
+		setWindowTitle("New Transformation Project");
 		IDialogSettings workbenchSettings = Activator.getDefault().getDialogSettings();
 		IDialogSettings section = workbenchSettings.getSection(NEW_MODEL_SETTINGS);
 		if (section == null) {
@@ -216,6 +220,7 @@ public class ImportAFPVNWizard extends CreateModelWizard implements INewWizard {
 		}
 
 		selectRepresentationKindPage = createSelectRepresentationKindPage();
+		
 
 		try {
 
@@ -227,7 +232,7 @@ public class ImportAFPVNWizard extends CreateModelWizard implements INewWizard {
 
 			} else {
 				project = createNewProject();
-				saveInProject( project);
+				
 				
 				
 			}
@@ -245,6 +250,7 @@ public class ImportAFPVNWizard extends CreateModelWizard implements INewWizard {
 	 */
 	@Override
 	public boolean performFinish() {
+		saveInProject( project);
 		
 		return true;
 
@@ -437,7 +443,7 @@ public class ImportAFPVNWizard extends CreateModelWizard implements INewWizard {
 	public IWizardPage getNextPage(IWizardPage page) {
 		final List<IWizardPage> allPages = Arrays.asList(getPages());
 		IWizardPage result = null;
-
+	
 		INewModelStorageProvider provider = providersByPage.get(page);
 		if (provider != null) {
 			// it's contributed by a provider. Get the next in the list
@@ -567,7 +573,7 @@ public class ImportAFPVNWizard extends CreateModelWizard implements INewWizard {
 	
 	protected static void saveInProject(IProject project) {
 		if( project!=null) {
-			IFile file = project.getFile("Sysml2Transfo.sysml");
+			IFile file = project.getFile("Test.sysml");
 			File myfile = new File(file.getLocationURI());
 
 			generateFile(myfile, project);
