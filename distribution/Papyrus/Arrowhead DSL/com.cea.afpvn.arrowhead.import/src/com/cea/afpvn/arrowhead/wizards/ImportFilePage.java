@@ -21,13 +21,14 @@ import org.eclipse.jface.dialogs.IDialogSettings;
 import org.eclipse.jface.viewers.IStructuredSelection;
 import org.eclipse.ui.IWorkbench;
 import org.eclipse.ui.internal.wizards.datatransfer.WizardArchiveFileResourceImportPage1;
+import org.eclipse.ui.internal.wizards.datatransfer.WizardFileSystemResourceImportPage1;
 
 /**
  *
  * Import page
  *
  */
-public class ImportFilePage extends WizardArchiveFileResourceImportPage1 {
+public class ImportFilePage extends WizardFileSystemResourceImportPage1 {
 
 	
 	private static final String STORE_SOURCE_NAMES_ID = "WizardZipFileResourceImportPage1.STORE_SOURCE_NAMES_ID"; //$NON-NLS-1$
@@ -53,14 +54,14 @@ public class ImportFilePage extends WizardArchiveFileResourceImportPage1 {
 	 */
 	public ImportFilePage(IWorkbench name,
 			IStructuredSelection selection, String[] allowedfiles) {
-		super(name,selection, allowedfiles);
+		super(name,selection);
 		
 		this.selectedFilePath = null;
 	}
 
 	public ImportFilePage(IWorkbench workbench, IStructuredSelection selection, String[] allowedfiles,
 			IPath newFilePath) {
-		super(workbench,selection, allowedfiles);
+		super(workbench,selection);
 		this.selectedFilePath = newFilePath;
 		setContainerFieldValue(newFilePath.lastSegment());
 		// TODO Auto-generated constructor stub
