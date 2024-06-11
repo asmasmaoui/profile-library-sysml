@@ -26,6 +26,7 @@ import java.util.List;
 import java.util.Map;
 import java.io.File;
 
+import org.eclipse.core.resources.IContainer;
 import org.eclipse.core.resources.IFile;
 import org.eclipse.core.resources.IProject;
 import org.eclipse.core.resources.IProjectDescription;
@@ -127,6 +128,8 @@ public class ImportAFPVNWizard extends CreateModelWizard implements INewWizard {
 	private ImportFilePage importPage;
 
 	private IProject project;
+	
+	private static String fileName;
 
 	private IStructuredSelection selection;
 
@@ -172,8 +175,9 @@ public class ImportAFPVNWizard extends CreateModelWizard implements INewWizard {
 
 		
 
-		projectPath = project.getFullPath();
+		projectPath = project.getFullPath();	
 		this.importPage = new ImportFilePage(workbench, selection, allowedFiles, projectPath);
+		//fileName = projectPath.lastSegment();
 		addPage(this.importPage);
 	}
 
@@ -573,7 +577,7 @@ public class ImportAFPVNWizard extends CreateModelWizard implements INewWizard {
 	
 	protected static void saveInProject(IProject project) {
 		if( project!=null) {
-			IFile file = project.getFile("Test.sysml");
+			IFile file = project.getFile(fileName);
 			File myfile = new File(file.getLocationURI());
 
 			generateFile(myfile, project);
@@ -602,5 +606,16 @@ public class ImportAFPVNWizard extends CreateModelWizard implements INewWizard {
 		} catch (CoreException e) {
 			e.printStackTrace();
 		}
+	}
+	public IFile findFileRecursively(IResource container, String extention) throws CoreException {
+		if (container != null && container instanceof IContainer) {
+
+			for (IResource r : ((IContainer) container).members()) {
+				if (r instanceof IFile && r.getFileExtension().equals("uml")) {
+					return (IFile) r;
+				}
+			}
+		}
+		return null;
 	}
 }
