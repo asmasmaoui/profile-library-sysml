@@ -26,6 +26,7 @@ import java.util.List;
 import java.util.Map;
 import java.io.File;
 
+import org.eclipse.core.commands.ExecutionException;
 import org.eclipse.core.resources.IFile;
 import org.eclipse.core.resources.IProject;
 import org.eclipse.core.resources.IProjectDescription;
@@ -245,6 +246,16 @@ public class ImportAFPVNWizard extends CreateModelWizard implements INewWizard {
 	 */
 	@Override
 	public boolean performFinish() {
+		// import the sysml file 
+				importPage.finish();
+				// execute the transformation
+				ImportSysml2Handler importer = new ImportSysml2Handler();
+				try {
+					((ImportSysml2Handler) importer).execute(project);
+				} catch (ExecutionException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 		
 		return true;
 
@@ -567,7 +578,7 @@ public class ImportAFPVNWizard extends CreateModelWizard implements INewWizard {
 	
 	protected static void saveInProject(IProject project) {
 		if( project!=null) {
-			IFile file = project.getFile("Sysml2Transfo.sysml");
+			IFile file = project.getFile("Sysml2.sysml");
 			File myfile = new File(file.getLocationURI());
 
 			generateFile(myfile, project);

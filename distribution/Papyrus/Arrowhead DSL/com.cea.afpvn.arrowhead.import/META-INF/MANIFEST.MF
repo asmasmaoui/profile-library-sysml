@@ -22,7 +22,17 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.ui.ide,
  org.eclipse.papyrus.uml.tools,
  org.eclipse.papyrus.uml.m2m.qvto.common,
- com.google.guava
+ com.google.guava,
+ org.eclipse.m2m.qvt.oml,
+ org.eclipse.papyrus.uml.tools.utils,
+ org.eclipse.papyrus.infra.emf,
+ org.eclipse.gmf.runtime.notation.edit,
+ org.eclipse.gmf.runtime.common.core,
+ org.eclipse.gmf.runtime.emf.commands.core,
+ org.eclipse.gmf.runtime.emf.type.core,
+ org.eclipse.papyrus.infra.emf.gmf,
+ org.eclipse.papyrus.uml.service.types,
+ org.eclipse.papyrus.infra.services.edit
 Bundle-Vendor: CEA
 Automatic-Module-Name: com.cea.afpvn.arrowhead.import
 Bundle-RequiredExecutionEnvironment: JavaSE-17

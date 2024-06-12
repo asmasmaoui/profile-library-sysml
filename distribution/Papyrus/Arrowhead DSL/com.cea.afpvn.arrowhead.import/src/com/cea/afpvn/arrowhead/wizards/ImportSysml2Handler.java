@@ -1,18 +1,3 @@
-/*****************************************************************************
- * Copyright (c) 2023 CEA LIST.
- *
- *
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License 2.0
- * which accompanies this distribution, and is available at
- * https://www.eclipse.org/legal/epl-2.0/
- *
- * SPDX-License-Identifier: EPL-2.0
- *
- * Contributors:
- *  Asma Smaoui (CEA LIST) asma.smaoui@cea.fr - Initial API and implementation
- *
- *****************************************************************************/
 package com.cea.afpvn.arrowhead.wizards;
 
 import java.io.File;
@@ -45,33 +30,23 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
-import com.google.common.collect.Sets;
+import com.cea.afpvn.arrowhead.transformations.Sysml2fromSysml1TransformationLauncher;
 
-/**
- * The handler to run AASX import action when a file is selected.
- */
-public class ImportAASXHandler {
-
-	/**
-	 * the extensions of the files to import
-	 */
+public class ImportSysml2Handler {
 	private Set<String> extensionOfFilesToImport;
 
 	IResource project;
-
-	/**
-	 * Constructor.
-	 */
-	public ImportAASXHandler() {
-
-		extensionOfFilesToImport = Sets.newHashSet(Messages.RELS_FILE_EXTENSION);
+	
+	public ImportSysml2Handler() {
+		super();
+		// TODO Auto-generated constructor stub
 	}
 
 	public void importFiles(Set<IFile> filesToImport) {
 
 		Control baseControl = PlatformUI.getWorkbench().getActiveWorkbenchWindow().getShell();
 
-		//runTransformation(null, baseControl, filesToImport);
+		runTransformation(null, baseControl, filesToImport);
 
 	}
 
@@ -90,9 +65,9 @@ public class ImportAASXHandler {
 
 			for (IResource iR : iResources) {
 
-				if (iR.getType() == IResource.FOLDER && iR.getName().equals("aasx")) {
-
-					IPath path2 = iR.getLocation();
+				if (iR.getType() == IResource.FOLDER && iR.getName().equals(/*"sysml2"*//*"aasx"*/"")) { ////IK
+					returnedfile = (IFile) iR;
+					/*IPath path2 = iR.getLocation();
 					IContainer container2 = myWorkspaceRoot.getContainerForLocation(path2);
 					IResource[] iResources2 = container2.members();
 					for (IResource iR2 : iResources2) {
@@ -108,13 +83,14 @@ public class ImportAASXHandler {
 										returnedfile = (IFile) iR3;
 								}
 							}
-						}
+							}
+						}*/
 
 					}
 
 				}
 
-			}
+			
 		} catch (CoreException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -157,13 +133,13 @@ public class ImportAASXHandler {
 				doc.getDocumentElement().normalize();
 
 				System.out.println("Root element :" + doc.getDocumentElement().getNodeName());
-				NodeList relationships = doc.getElementsByTagName("Relationship"); // IK???
+				NodeList relationships = doc.getElementsByTagName("Relationship");
 				for (int temp = 0; temp < relationships.getLength(); temp++) {
 					Node nNode = relationships.item(temp);
 					if (nNode.getNodeType() == Node.ELEMENT_NODE) {
 						Element eElement = (Element) nNode;
 						if (eElement.getAttribute("Type")
-								.equals("http://www.admin-shell.io/aasx/relationships/aas-spec")) { /// IK ???
+								.equals("http://www.admin-shell.io/aasx/relationships/aas-spec")) {
 							aasx_path = eElement.getAttribute("Target");
 							IWorkspaceRoot myWorkspaceRoot = ResourcesPlugin.getWorkspace().getRoot();
 							IProject myProject = myWorkspaceRoot.getProject(project.getName());
@@ -218,8 +194,7 @@ public class ImportAASXHandler {
 							IResource[] iResources3 = container3.members();
 							for (IResource iR3 : iResources3) {
 								if (iR3 instanceof IFile) {
-									if ("rels".equalsIgnoreCase(iR3.getFileExtension()) // IK ????
-											&& iR3.getName().equals(file_name))
+									if (iR3.getName().equals(file_name))/// IK
 										returnedfile = (IFile) iR3;
 								}
 							}
@@ -238,24 +213,24 @@ public class ImportAASXHandler {
 		return returnedfile;
 	}
 
-	/*
-	 * protected void runTransformation(final ThreadConfig config, final Control
-	 * baseControl, final Set<IFile> filesToImport) { List<URI> urisToImport = new
-	 * LinkedList<URI>();
-	 * 
-	 * for (IFile selectedFile : filesToImport) {
-	 * 
-	 * URI uri =
-	 * URI.createPlatformResourceURI(selectedFile.getFullPath().toString(), true);
-	 * 
-	 * urisToImport.add(uri); } runTransformation(config, baseControl, urisToImport,
-	 * project); }
-	 */
+	protected void runTransformation(final ThreadConfig config, final Control baseControl,
+			final Set<IFile> filesToImport) {
+		List<URI> urisToImport = new LinkedList<URI>();
 
-	//protected void runTransformation(final ThreadConfig config, final Control baseControl, final List<URI> urisToImport,
-	//		IResource project) {
-	//	UMLfromAASXTransformationLauncher launcher = new UMLfromAASXTransformationLauncher(config, baseControl,
-	//			project);
-	//	launcher.run(urisToImport);
-	//}
+		for (IFile selectedFile : filesToImport) {
+
+			URI uri = URI.createPlatformResourceURI(selectedFile.getFullPath().toString(), true);
+
+			urisToImport.add(uri);
+		}
+		runTransformation(config, baseControl, urisToImport, project);
+	}
+
+	protected void runTransformation(final ThreadConfig config, final Control baseControl, final List<URI> urisToImport,
+			IResource project) {
+		Sysml2fromSysml1TransformationLauncher launcher = new Sysml2fromSysml1TransformationLauncher(config, baseControl,
+				project);
+		launcher.run(urisToImport);
+	}
+
 }
