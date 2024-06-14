@@ -33,8 +33,6 @@ import org.xml.sax.SAXException;
 import com.cea.afpvn.arrowhead.transformations.Sysml2fromSysml1TransformationLauncher;
 
 public class ImportSysml2Handler {
-	private Set<String> extensionOfFilesToImport;
-
 	IResource project;
 	
 	public ImportSysml2Handler() {
@@ -45,58 +43,7 @@ public class ImportSysml2Handler {
 	public void importFiles(Set<IFile> filesToImport) {
 
 		Control baseControl = PlatformUI.getWorkbench().getActiveWorkbenchWindow().getShell();
-
 		runTransformation(null, baseControl, filesToImport);
-
-	}
-
-	public IFile getAASXRelationshipRootFile(IResource project) {
-
-		this.project = project;
-		IFile returnedfile = null;
-		IWorkspaceRoot myWorkspaceRoot = ResourcesPlugin.getWorkspace().getRoot();
-		IPath path = project.getLocation();
-		System.out.println(path);
-		IContainer container = myWorkspaceRoot.getContainerForLocation(path);
-
-		IResource[] iResources;
-		try {
-			iResources = container.members();
-
-			for (IResource iR : iResources) {
-
-				if (iR.getType() == IResource.FOLDER && iR.getName().equals(/*"sysml2"*//*"aasx"*/"")) { ////IK
-					returnedfile = (IFile) iR;
-					/*IPath path2 = iR.getLocation();
-					IContainer container2 = myWorkspaceRoot.getContainerForLocation(path2);
-					IResource[] iResources2 = container2.members();
-					for (IResource iR2 : iResources2) {
-
-						if (iR2.getType() == IResource.FOLDER && iR2.getName().equals("_rels")) {
-							IPath path3 = iR2.getLocation();
-							IContainer container3 = myWorkspaceRoot.getContainerForLocation(path3);
-							IResource[] iResources3 = container3.members();
-							for (IResource iR3 : iResources3) {
-								if (iR3 instanceof IFile) {
-									if ("rels".equalsIgnoreCase(iR3.getFileExtension())
-											&& iR3.getName().equals("aasx-origin.rels"))
-										returnedfile = (IFile) iR3;
-								}
-							}
-							}
-						}*/
-
-					}
-
-				}
-
-			
-		} catch (CoreException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-
-		return returnedfile;
 
 	}
 
@@ -105,113 +52,14 @@ public class ImportSysml2Handler {
 		// get the Project and parse its sub folder
 
 		Set<IFile> filesToImport = new HashSet<IFile>();
-
-		IFile selectedFile = getAASXRootFile(project);
-
-		filesToImport.add(selectedFile);
-
-		importFiles(filesToImport);
+        importFiles(filesToImport);
 
 		return null;
 	}
 
-	private IFile getAASXRootFile(IProject project) {
-		IFile aasx_origin = getAASXRelationshipRootFile(project);
-		IFile aasx_root = null;
-		String aasx_path = null;
-		try {
-			if (aasx_origin != null) {
-				File fXmlFile = new File(aasx_origin.getLocationURI());
-				DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
-				DocumentBuilder dBuilder;
-				dBuilder = dbFactory.newDocumentBuilder();
-				Document doc = dBuilder.parse(fXmlFile);
+	
 
-				// optional, but recommended
-				// read this -
-				// http://stackoverflow.com/questions/13786607/normalization-in-dom-parsing-with-java-how-does-it-work
-				doc.getDocumentElement().normalize();
-
-				System.out.println("Root element :" + doc.getDocumentElement().getNodeName());
-				NodeList relationships = doc.getElementsByTagName("Relationship");
-				for (int temp = 0; temp < relationships.getLength(); temp++) {
-					Node nNode = relationships.item(temp);
-					if (nNode.getNodeType() == Node.ELEMENT_NODE) {
-						Element eElement = (Element) nNode;
-						if (eElement.getAttribute("Type")
-								.equals("http://www.admin-shell.io/aasx/relationships/aas-spec")) {
-							aasx_path = eElement.getAttribute("Target");
-							IWorkspaceRoot myWorkspaceRoot = ResourcesPlugin.getWorkspace().getRoot();
-							IProject myProject = myWorkspaceRoot.getProject(project.getName());
-							IContainer container = (IContainer) myProject;
-							IResource file = container.findMember(aasx_path);
-
-							if (file != null && file instanceof IFile) {
-								// set the result to be the first file found
-								aasx_root = (IFile) file;
-							}
-
-						}	            
-
-					}
-				}
-			}
-		} catch (ParserConfigurationException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (SAXException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		System.out.println(aasx_root.getLocationURI());
-		System.out.println(aasx_root.getFullPath());
-		System.out.println(aasx_root.getFileExtension());
-		return aasx_root;
-	}
-
-	private IFile getFileInProject(IContainer myProject, String file_name) {
-		IFile returnedfile = null;
-		IResource[] iResources;
-		IWorkspaceRoot myWorkspaceRoot = ResourcesPlugin.getWorkspace().getRoot();
-		try {
-			iResources = myProject.members();
-
-			for (IResource iR : iResources) {
-
-				if (iR.getType() == IResource.FOLDER) {
-
-					IPath path2 = iR.getLocation();
-					IContainer container2 = myWorkspaceRoot.getContainerForLocation(path2);
-					IResource[] iResources2 = container2.members();
-					for (IResource iR2 : iResources2) {
-
-						if (iR2.getType() == IResource.FOLDER) {
-							IPath path3 = iR2.getLocation();
-							IContainer container3 = myWorkspaceRoot.getContainerForLocation(path3);
-							IResource[] iResources3 = container3.members();
-							for (IResource iR3 : iResources3) {
-								if (iR3 instanceof IFile) {
-									if (iR3.getName().equals(file_name))/// IK
-										returnedfile = (IFile) iR3;
-								}
-							}
-						}
-
-					}
-
-				}
-
-			}
-		} catch (CoreException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-
-		return returnedfile;
-	}
+	
 
 	protected void runTransformation(final ThreadConfig config, final Control baseControl,
 			final Set<IFile> filesToImport) {

@@ -20,7 +20,6 @@ import org.eclipse.core.runtime.IPath;
 import org.eclipse.jface.dialogs.IDialogSettings;
 import org.eclipse.jface.viewers.IStructuredSelection;
 import org.eclipse.ui.IWorkbench;
-import org.eclipse.ui.internal.wizards.datatransfer.WizardArchiveFileResourceImportPage1;
 import org.eclipse.ui.internal.wizards.datatransfer.WizardFileSystemResourceImportPage1;
 
 /**
@@ -28,7 +27,8 @@ import org.eclipse.ui.internal.wizards.datatransfer.WizardFileSystemResourceImpo
  * Import page
  *
  */
-public class ImportFilePage extends WizardFileSystemResourceImportPage1 {
+@SuppressWarnings("restriction")
+public class ImportFilePage extends WizardFileSystemResourceImportPage1{
 
 	
 	private static final String STORE_SOURCE_NAMES_ID = "WizardZipFileResourceImportPage1.STORE_SOURCE_NAMES_ID"; //$NON-NLS-1$

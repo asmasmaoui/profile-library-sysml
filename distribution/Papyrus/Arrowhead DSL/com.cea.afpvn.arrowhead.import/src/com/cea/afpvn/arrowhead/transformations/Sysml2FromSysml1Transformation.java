@@ -13,13 +13,13 @@
  *  Asma Smaoui (CEA LIST) asma.smaoui@cea.fr - Initial API and implementation
  *
  *****************************************************************************/
+
 package com.cea.afpvn.arrowhead.transformations;
 
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Map;
 
 import org.eclipse.core.resources.IContainer;
@@ -35,10 +35,7 @@ import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.xmi.XMLResource;
-import org.eclipse.m2m.qvt.oml.ExecutionContextImpl;
-import org.eclipse.m2m.qvt.oml.ModelExtent;
 import org.eclipse.papyrus.uml.m2m.qvto.common.MigrationParameters.ThreadConfig;
-import org.eclipse.papyrus.uml.m2m.qvto.common.transformation.AbstractImportTransformation;
 import org.eclipse.papyrus.uml.m2m.qvto.common.transformation.IDependencyAnalysisHelper;
 import org.eclipse.papyrus.uml.m2m.qvto.common.transformation.MigrationResourceSetImpl;
 import org.eclipse.uml2.uml.resource.UMLResource;
@@ -51,7 +48,7 @@ public class Sysml2FromSysml1Transformation extends AbstractImportTransformation
 
 	protected URI umlResourceURI;
 	protected Resource umlResource;
-	protected Resource Sysml2Resource;//IK
+	protected Resource aasxResource;
 	protected IResource project;
 
 	/**
@@ -154,7 +151,7 @@ public class Sysml2FromSysml1Transformation extends AbstractImportTransformation
 
 			SysmtoSysml2Switch aas2uml = new SysmtoSysml2Switch();
 
-			umlResource = aas2uml.doTransform(Sysml2Resource, umlResource);
+			umlResource = aas2uml.doTransform(aasxResource, umlResource);
 
 			// populate the xml Resource
 
@@ -206,10 +203,10 @@ public class Sysml2FromSysml1Transformation extends AbstractImportTransformation
 	 * @see org.eclipse.papyrus.migration.common.transformation.AbstractImportTransformation#getInOutUMLModel()
 	 */
 	@Override
-	public ModelExtent getInOutUMLModel() {
+	public URI getInOutUMLModel() {
 		Resource oldUMLResource = resourceSet.getResource(sourceURI, true);
 
-		return (ModelExtent) oldUMLResource.getURI();
+		return oldUMLResource.getURI();
 	}
 
 	protected void configureResource(XMLResource resource) {
@@ -257,33 +254,26 @@ public class Sysml2FromSysml1Transformation extends AbstractImportTransformation
 		resourceSet.getLoadOptions().put(XMLResource.OPTION_LAX_FEATURE_PROCESSING, Boolean.TRUE);
 		resourceSet.getLoadOptions().put(XMLResource.OPTION_RECORD_UNKNOWN_FEATURE, Boolean.TRUE);
 		resourceSet.getLoadOptions().put(XMLResource.OPTION_USE_PACKAGE_NS_URI_AS_LOCATION, Boolean.TRUE);
-		// load AASX Register Factory and AASX resource to be loaded by an EMF
-		// resourceSet
-		//resourceSet.getResourceFactoryRegistry().getExtensionToFactoryMap().put("xml", new _0ResourceFactoryImpl());
-		//resourceSet.getPackageRegistry().put(_0Package.eNS_URI, _0Package.eINSTANCE);
-
 		monitor.subTask("Loading source model " + getModelName());
+	}
+		/*try {
 
-		try {
-
-			Sysml2Resource = resourceSet.getResource(sourceURI, true);
-			if (Sysml2Resource != null) {
-				configureResource((XMLResource) Sysml2Resource);
-				IFile umlFile = findFileRecursively(project, "uml");
+			aasxResource = resourceSet.getResource(sourceURI, true);
+			if (aasxResource != null) {
+				IFile umlFile = findFileRecursively(project, "sysml");
 				umlResourceURI = URI.createPlatformResourceURI(umlFile.getFullPath().toString(), true);
 				umlResource = resourceSet.getResource(umlResourceURI, true);
-				configureResource((XMLResource) umlResource);
 			}
 		} catch (Exception ex) {
 			Activator.log.error("An error occurred while loading " + getModelName(), ex);
 		}
-	}
+	}*/ // IK 18/06/24
 
 	public IFile findFileRecursively(IResource container, String extention) throws CoreException {
 		if (container != null && container instanceof IContainer) {
 
 			for (IResource r : ((IContainer) container).members()) {
-				if (r instanceof IFile && r.getFileExtension().equals("uml")) {
+				if (r instanceof IFile && r.getFileExtension().equals("sysml")) {
 					return (IFile) r;
 				}
 			}
@@ -310,36 +300,6 @@ public class Sysml2FromSysml1Transformation extends AbstractImportTransformation
 	protected Collection<URI> getDiagramTransformationURIs() {
 		// TODO Auto-generated method stub
 		return null;
-	}
-
-	@Override
-	protected URI convertToPapyrus(URI arg0, String arg1) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	protected Collection<URI> getAllTransformationURIs() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	protected List<ModelExtent> getModelExtents() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	protected URI getSemanticTransformationURI() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	protected void initTransformationProperties(ExecutionContextImpl arg0) {
-		// TODO Auto-generated method stub
-		
 	}
 
 }

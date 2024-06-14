@@ -45,14 +45,14 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
-import com.cea.afpvn.arrowhead.transformations.UMLfromAASXTransformationLauncher;
+import com.cea.afpvn.arrowhead.transformations.Sysml2fromSysml1TransformationLauncher;
 import com.cea.afpvn.arrowhead.wizards.Messages;
 import com.google.common.collect.Sets;
 
 /**
  * The handler to run AASX import action when a file is selected.
  */
-public class ImportAASXHandler {
+public class TransfoSysmlHandler {
 
 	/**
 	 * the extensions of the files to import
@@ -64,7 +64,7 @@ public class ImportAASXHandler {
 	/**
 	 * Constructor.
 	 */
-	public ImportAASXHandler() {
+	public TransfoSysmlHandler() {
 
 		extensionOfFilesToImport = Sets.newHashSet(Messages.RELS_FILE_EXTENSION);
 	}
@@ -255,7 +255,7 @@ public class ImportAASXHandler {
 
 	protected void runTransformation(final ThreadConfig config, final Control baseControl, final List<URI> urisToImport,
 			IResource project) {
-		UMLfromAASXTransformationLauncher launcher = new UMLfromAASXTransformationLauncher(config, baseControl,
+		Sysml2fromSysml1TransformationLauncher launcher = new Sysml2fromSysml1TransformationLauncher(config, baseControl,
 				project);
 		launcher.run(urisToImport);
 	}

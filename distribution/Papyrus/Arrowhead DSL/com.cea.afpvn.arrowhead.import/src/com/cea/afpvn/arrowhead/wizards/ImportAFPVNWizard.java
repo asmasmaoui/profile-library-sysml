@@ -117,9 +117,9 @@ public class ImportAFPVNWizard extends CreateModelWizard implements INewWizard {
 
 	protected IWizardPage newProjectPage;
 
-	private final NewModelWizardData wizardData = new NewModelWizardData();
+	//private final NewModelWizardData wizardData = new NewModelWizardData();
 
-	protected static final String EXTENSION_POINT_ID = "org.eclipse.papyrus.uml.diagram.wizards.templates"; //$NON-NLS-1$
+	//protected static final String EXTENSION_POINT_ID = "org.eclipse.papyrus.uml.diagram.wizards.templates"; //$NON-NLS-1$
 
 	private ImportFilePage importPage;
 
@@ -158,6 +158,7 @@ public class ImportAFPVNWizard extends CreateModelWizard implements INewWizard {
 				if (page != null) {
 					pageList.add(page);
 					providersByPage.put(page, next);
+					page.setDescription("Choise the project for Sysml2 transformation");
 					if (!page.equals(getSelectedStorageProvider().getArchitectureContextPage())) {
 						addPage(page);
 					}
@@ -170,6 +171,7 @@ public class ImportAFPVNWizard extends CreateModelWizard implements INewWizard {
 		
 
 		projectPath = project.getFullPath();
+		
 		this.importPage = new ImportFilePage(workbench, selection, allowedFiles, projectPath);
 		addPage(this.importPage);
 	}
@@ -202,6 +204,9 @@ public class ImportAFPVNWizard extends CreateModelWizard implements INewWizard {
 
 		this.selection = selection;
 		initStorageProvider(workbench, selection);
+		setWindowTitle("New Import for transformation"); 
+		
+		
 
 		IDialogSettings workbenchSettings = Activator.getDefault().getDialogSettings();
 		IDialogSettings section = workbenchSettings.getSection(NEW_MODEL_SETTINGS);
@@ -228,7 +233,7 @@ public class ImportAFPVNWizard extends CreateModelWizard implements INewWizard {
 
 			} else {
 				project = createNewProject();
-				saveInProject( project);
+				
 				
 				
 			}
@@ -246,8 +251,8 @@ public class ImportAFPVNWizard extends CreateModelWizard implements INewWizard {
 	 */
 	@Override
 	public boolean performFinish() {
-		// import the sysml file 
-				importPage.finish();
+		
+				//importPage.finish();// import the UML file 
 				// execute the transformation
 				ImportSysml2Handler importer = new ImportSysml2Handler();
 				try {
@@ -256,7 +261,9 @@ public class ImportAFPVNWizard extends CreateModelWizard implements INewWizard {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-		
+				String fileName = "Transformation";
+				
+				saveInProject( project,fileName);
 		return true;
 
 	}
@@ -326,6 +333,7 @@ public class ImportAFPVNWizard extends CreateModelWizard implements INewWizard {
 		return getSelectedStorageProvider().createEditorInput(uri);
 	}
 
+	@SuppressWarnings("deprecation")
 	protected String getPreferredEditorID(IEditorInput input) throws PartInitException {
 		IEditorDescriptor desc;
 
@@ -576,9 +584,9 @@ public class ImportAFPVNWizard extends CreateModelWizard implements INewWizard {
 	}
 	/// save file into project//
 	
-	protected static void saveInProject(IProject project) {
+	protected static void saveInProject(IProject project,String fileName) {
 		if( project!=null) {
-			IFile file = project.getFile("Sysml2.sysml");
+			IFile file = project.getFile(fileName+".sysml");
 			File myfile = new File(file.getLocationURI());
 
 			generateFile(myfile, project);
