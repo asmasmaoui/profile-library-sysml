@@ -59,10 +59,10 @@ public class ArrowheadDSLFactoryImpl extends EFactoryImpl implements ArrowheadDS
 		switch (eClass.getClassifierID()) {
 			case ArrowheadDSLPackage.SYS_D: return createSysD();
 			case ArrowheadDSLPackage.SD: return createSD();
-			case ArrowheadDSLPackage.LOCAL_CLOUD_DESIGN: return createLocalCloudDesign();
-			case ArrowheadDSLPackage.SYSTEM_OF_LOCALCLOUDS_DESIGN: return createSystem_of_LocalcloudsDesign();
 			case ArrowheadDSLPackage.ARROWHEAD_DSL_REQUIREMENT: return createArrowheadDSLRequirement();
 			case ArrowheadDSLPackage.ARROWHEAD_USE_CASE: return createArrowheadUseCase();
+			case ArrowheadDSLPackage.LOCAL_CLOUD_DESIGN: return createLocalCloudDesign();
+			case ArrowheadDSLPackage.SYSTEM_OF_LOCALCLOUDS_DESIGN: return createSystem_of_LocalcloudsDesign();
 			case ArrowheadDSLPackage.DEVICE_DESIGN: return createDeviceDesign();
 			case ArrowheadDSLPackage.INTERCLOUD_NETWORK_DESIGN: return createIntercloudNetworkDesign();
 			case ArrowheadDSLPackage.INTRACLOUD_NETWORK_DESIGN: return createIntracloudNetworkDesign();
@@ -71,12 +71,12 @@ public class ArrowheadDSLFactoryImpl extends EFactoryImpl implements ArrowheadDS
 			case ArrowheadDSLPackage.INTRACLOUD_NETWORK_DESIGN_DESCRIPTION: return createIntracloudNetworkDesignDescription();
 			case ArrowheadDSLPackage.LOCALCLOUD_DESIGN_DESCRIPTION: return createLocalcloudDesignDescription();
 			case ArrowheadDSLPackage.SYSTEM_OF_LOCACLOUDS_DESIGN_DESCRIPTION: return createSystem_of_LocacloudsDesignDescription();
-			case ArrowheadDSLPackage.SYS_DD: return createSysDD();
-			case ArrowheadDSLPackage.IDD: return createIDD();
 			case ArrowheadDSLPackage.SYSTEM_OF_LOCALCLOUDS_IMPLEMENTATION: return createSystem_of_LocalcloudsImplementation();
 			case ArrowheadDSLPackage.LOCALCLOUD_IMPLEMENTATION: return createLocalcloudImplementation();
 			case ArrowheadDSLPackage.SYSTEM_IMPLEMENTATION: return createSystem_Implementation();
+			case ArrowheadDSLPackage.SYS_DD: return createSysDD();
 			case ArrowheadDSLPackage.IDD_IMPLEMENTATION: return createIDD_Implementation();
+			case ArrowheadDSLPackage.IDD: return createIDD();
 			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_HTTP: return createArrowHeadServiceInterfaceHTTP();
 			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_MQTT: return createArrowHeadServiceInterfaceMQTT();
 			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_COAP: return createArrowHeadServiceInterfaceCOAP();

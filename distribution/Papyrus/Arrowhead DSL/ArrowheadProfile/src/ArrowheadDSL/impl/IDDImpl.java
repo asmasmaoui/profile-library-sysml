@@ -11,23 +11,10 @@ import ArrowheadDSL.CryptoAlgorithmKind;
 import ArrowheadDSL.DatamodelStandardKind;
 import ArrowheadDSL.EncodingKind;
 import ArrowheadDSL.IDD;
-import ArrowheadDSL.SysDD;
 import ArrowheadDSL.TokenKind;
-
-import java.util.Collection;
-
 import org.eclipse.emf.common.notify.Notification;
-import org.eclipse.emf.common.notify.NotificationChain;
-
-import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.InternalEObject;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-
-import org.eclipse.emf.ecore.util.EObjectWithInverseResolvingEList;
-import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -46,7 +33,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link ArrowheadDSL.impl.IDDImpl#getToken <em>Token</em>}</li>
  *   <li>{@link ArrowheadDSL.impl.IDDImpl#getCrypto_algorithm <em>Crypto algorithm</em>}</li>
  *   <li>{@link ArrowheadDSL.impl.IDDImpl#getDatamodel <em>Datamodel</em>}</li>
- *   <li>{@link ArrowheadDSL.impl.IDDImpl#getSysdd <em>Sysdd</em>}</li>
  * </ul>
  *
  * @generated
@@ -231,16 +217,6 @@ public class IDDImpl extends SDImpl implements IDD {
 	 * @ordered
 	 */
 	protected DatamodelStandardKind datamodel = DATAMODEL_EDEFAULT;
-
-	/**
-	 * The cached value of the '{@link #getSysdd() <em>Sysdd</em>}' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getSysdd()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<SysDD> sysdd;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -474,48 +450,6 @@ public class IDDImpl extends SDImpl implements IDD {
 	 * @generated
 	 */
 	@Override
-	public EList<SysDD> getSysdd() {
-		if (sysdd == null) {
-			sysdd = new EObjectWithInverseResolvingEList.ManyInverse<SysDD>(SysDD.class, this, ArrowheadDSLPackage.IDD__SYSDD, ArrowheadDSLPackage.SYS_DD__IDD);
-		}
-		return sysdd;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	@Override
-	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case ArrowheadDSLPackage.IDD__SYSDD:
-				return ((InternalEList<InternalEObject>)(InternalEList<?>)getSysdd()).basicAdd(otherEnd, msgs);
-		}
-		return super.eInverseAdd(otherEnd, featureID, msgs);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case ArrowheadDSLPackage.IDD__SYSDD:
-				return ((InternalEList<?>)getSysdd()).basicRemove(otherEnd, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case ArrowheadDSLPackage.IDD__PORT:
@@ -536,8 +470,6 @@ public class IDDImpl extends SDImpl implements IDD {
 				return getCrypto_algorithm();
 			case ArrowheadDSLPackage.IDD__DATAMODEL:
 				return getDatamodel();
-			case ArrowheadDSLPackage.IDD__SYSDD:
-				return getSysdd();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -578,10 +510,6 @@ public class IDDImpl extends SDImpl implements IDD {
 			case ArrowheadDSLPackage.IDD__DATAMODEL:
 				setDatamodel((DatamodelStandardKind)newValue);
 				return;
-			case ArrowheadDSLPackage.IDD__SYSDD:
-				getSysdd().clear();
-				getSysdd().addAll((Collection<? extends SysDD>)newValue);
-				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -621,9 +549,6 @@ public class IDDImpl extends SDImpl implements IDD {
 			case ArrowheadDSLPackage.IDD__DATAMODEL:
 				setDatamodel(DATAMODEL_EDEFAULT);
 				return;
-			case ArrowheadDSLPackage.IDD__SYSDD:
-				getSysdd().clear();
-				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -654,8 +579,6 @@ public class IDDImpl extends SDImpl implements IDD {
 				return crypto_algorithm != CRYPTO_ALGORITHM_EDEFAULT;
 			case ArrowheadDSLPackage.IDD__DATAMODEL:
 				return datamodel != DATAMODEL_EDEFAULT;
-			case ArrowheadDSLPackage.IDD__SYSDD:
-				return sysdd != null && !sysdd.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

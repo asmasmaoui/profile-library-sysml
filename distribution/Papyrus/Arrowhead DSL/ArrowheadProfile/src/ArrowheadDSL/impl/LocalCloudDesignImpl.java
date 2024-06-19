@@ -7,7 +7,6 @@ import ArrowheadDSL.BusinessPolicyKind;
 import ArrowheadDSL.LifecyclePolicyKind;
 import ArrowheadDSL.LocalCloudDesign;
 import ArrowheadDSL.SecurityPolicyKind;
-import ArrowheadDSL.SysD;
 import ArrowheadDSL.System_of_LocalcloudsDesign;
 
 import java.util.Collection;
@@ -42,7 +41,6 @@ import org.eclipse.papyrus.sysml16.blocks.internal.impl.BlockImpl;
  *   <li>{@link ArrowheadDSL.impl.LocalCloudDesignImpl#getLC_BusinessStrategy <em>LC Business Strategy</em>}</li>
  *   <li>{@link ArrowheadDSL.impl.LocalCloudDesignImpl#getLC_LifecycleStrategy <em>LC Lifecycle Strategy</em>}</li>
  *   <li>{@link ArrowheadDSL.impl.LocalCloudDesignImpl#getSystem_of_localcloudsdesign <em>System of localcloudsdesign</em>}</li>
- *   <li>{@link ArrowheadDSL.impl.LocalCloudDesignImpl#getSysd <em>Sysd</em>}</li>
  * </ul>
  *
  * @generated
@@ -137,16 +135,6 @@ public class LocalCloudDesignImpl extends BlockImpl implements LocalCloudDesign 
 	 * @ordered
 	 */
 	protected EList<System_of_LocalcloudsDesign> system_of_localcloudsdesign;
-
-	/**
-	 * The cached value of the '{@link #getSysd() <em>Sysd</em>}' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getSysd()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<SysD> sysd;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -280,27 +268,12 @@ public class LocalCloudDesignImpl extends BlockImpl implements LocalCloudDesign 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<SysD> getSysd() {
-		if (sysd == null) {
-			sysd = new EObjectWithInverseResolvingEList.ManyInverse<SysD>(SysD.class, this, ArrowheadDSLPackage.LOCAL_CLOUD_DESIGN__SYSD, ArrowheadDSLPackage.SYS_D__LOCALCLOUDDESIGN);
-		}
-		return sysd;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case ArrowheadDSLPackage.LOCAL_CLOUD_DESIGN__SYSTEM_OF_LOCALCLOUDSDESIGN:
 				return ((InternalEList<InternalEObject>)(InternalEList<?>)getSystem_of_localcloudsdesign()).basicAdd(otherEnd, msgs);
-			case ArrowheadDSLPackage.LOCAL_CLOUD_DESIGN__SYSD:
-				return ((InternalEList<InternalEObject>)(InternalEList<?>)getSysd()).basicAdd(otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
 	}
@@ -315,8 +288,6 @@ public class LocalCloudDesignImpl extends BlockImpl implements LocalCloudDesign 
 		switch (featureID) {
 			case ArrowheadDSLPackage.LOCAL_CLOUD_DESIGN__SYSTEM_OF_LOCALCLOUDSDESIGN:
 				return ((InternalEList<?>)getSystem_of_localcloudsdesign()).basicRemove(otherEnd, msgs);
-			case ArrowheadDSLPackage.LOCAL_CLOUD_DESIGN__SYSD:
-				return ((InternalEList<?>)getSysd()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -341,8 +312,6 @@ public class LocalCloudDesignImpl extends BlockImpl implements LocalCloudDesign 
 				return getLC_LifecycleStrategy();
 			case ArrowheadDSLPackage.LOCAL_CLOUD_DESIGN__SYSTEM_OF_LOCALCLOUDSDESIGN:
 				return getSystem_of_localcloudsdesign();
-			case ArrowheadDSLPackage.LOCAL_CLOUD_DESIGN__SYSD:
-				return getSysd();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -377,10 +346,6 @@ public class LocalCloudDesignImpl extends BlockImpl implements LocalCloudDesign 
 				getSystem_of_localcloudsdesign().clear();
 				getSystem_of_localcloudsdesign().addAll((Collection<? extends System_of_LocalcloudsDesign>)newValue);
 				return;
-			case ArrowheadDSLPackage.LOCAL_CLOUD_DESIGN__SYSD:
-				getSysd().clear();
-				getSysd().addAll((Collection<? extends SysD>)newValue);
-				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -411,9 +376,6 @@ public class LocalCloudDesignImpl extends BlockImpl implements LocalCloudDesign 
 			case ArrowheadDSLPackage.LOCAL_CLOUD_DESIGN__SYSTEM_OF_LOCALCLOUDSDESIGN:
 				getSystem_of_localcloudsdesign().clear();
 				return;
-			case ArrowheadDSLPackage.LOCAL_CLOUD_DESIGN__SYSD:
-				getSysd().clear();
-				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -438,8 +400,6 @@ public class LocalCloudDesignImpl extends BlockImpl implements LocalCloudDesign 
 				return lC_LifecycleStrategy != LC_LIFECYCLE_STRATEGY_EDEFAULT;
 			case ArrowheadDSLPackage.LOCAL_CLOUD_DESIGN__SYSTEM_OF_LOCALCLOUDSDESIGN:
 				return system_of_localcloudsdesign != null && !system_of_localcloudsdesign.isEmpty();
-			case ArrowheadDSLPackage.LOCAL_CLOUD_DESIGN__SYSD:
-				return sysd != null && !sysd.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

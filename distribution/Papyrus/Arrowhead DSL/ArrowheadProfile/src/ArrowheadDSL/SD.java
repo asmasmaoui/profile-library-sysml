@@ -2,8 +2,6 @@
  */
 package ArrowheadDSL;
 
-import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.papyrus.sysml16.portsandflows.InterfaceBlock;
 
 /**
@@ -21,7 +19,6 @@ import org.eclipse.papyrus.sysml16.portsandflows.InterfaceBlock;
  * </p>
  * <ul>
  *   <li>{@link ArrowheadDSL.SD#getMicroserviceName <em>Microservice Name</em>}</li>
- *   <li>{@link ArrowheadDSL.SD#getSysd <em>Sysd</em>}</li>
  * </ul>
  *
  * @see ArrowheadDSL.ArrowheadDSLPackage#getSD()
@@ -54,24 +51,6 @@ public interface SD extends InterfaceBlock {
 	 * @generated
 	 */
 	void setMicroserviceName(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Sysd</b></em>' reference list.
-	 * The list contents are of type {@link ArrowheadDSL.SysD}.
-	 * It is bidirectional and its opposite is '{@link ArrowheadDSL.SysD#getSd <em>Sd</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Sysd</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Sysd</em>' reference list.
-	 * @see ArrowheadDSL.ArrowheadDSLPackage#getSD_Sysd()
-	 * @see ArrowheadDSL.SysD#getSd
-	 * @model opposite="sd" ordered="false"
-	 * @generated
-	 */
-	EList<SysD> getSysd();
 
 	/**
 	 * <!-- begin-user-doc -->

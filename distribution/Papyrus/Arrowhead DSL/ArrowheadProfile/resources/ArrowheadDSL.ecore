@@ -14,10 +14,6 @@
         unique="false" lowerBound="1" eType="#//SystemDatabaseKind"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="MicrosystemBehaviour" ordered="false"
         unique="false" lowerBound="1" upperBound="-1" eType="#//BusinessPolicyKind"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="sd" ordered="false" upperBound="-1"
-        eType="#//SD" eOpposite="#//SD/sysd"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="localclouddesign" ordered="false"
-        upperBound="-1" eType="#//LocalCloudDesign" eOpposite="#//LocalCloudDesign/sysd"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="SystemDatabaseKind">
     <eLiterals name="MySQL"/>
@@ -36,8 +32,16 @@
     <eOperations name="Operation" ordered="false" lowerBound="1"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="MicroserviceName" ordered="false"
         unique="false" lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="sysd" ordered="false" upperBound="-1"
-        eType="#//SysD" eOpposite="#//SysD/sd"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ArrowheadDSLRequirement" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//requirements/Requirement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="arrowheadusecase" ordered="false"
+        upperBound="-1" eType="#//ArrowheadUseCase" eOpposite="#//ArrowheadUseCase/arrowheaddslrequirement"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ArrowheadUseCase">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="base_UseCase" ordered="false"
+        eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//UseCase"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="arrowheaddslrequirement"
+        ordered="false" upperBound="-1" eType="#//ArrowheadDSLRequirement" eOpposite="#//ArrowheadDSLRequirement/arrowheadusecase"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="LocalCloudDesign" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//blocks/Block">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="LC_Name" ordered="false"
@@ -52,8 +56,6 @@
         unique="false" lowerBound="1" eType="#//LifecyclePolicyKind"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="system_of_localcloudsdesign"
         ordered="false" upperBound="-1" eType="#//System_of_LocalcloudsDesign" eOpposite="#//System_of_LocalcloudsDesign/localclouddesign"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="sysd" ordered="false" upperBound="-1"
-        eType="#//SysD" eOpposite="#//SysD/localclouddesign"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="SecurityPolicyKind">
     <eLiterals name="NGAC"/>
@@ -77,16 +79,6 @@
         ordered="false" unique="false" lowerBound="1" eType="#//LifecyclePolicyKind"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="localclouddesign" ordered="false"
         upperBound="-1" eType="#//LocalCloudDesign" eOpposite="#//LocalCloudDesign/system_of_localcloudsdesign"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ArrowheadDSLRequirement" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//requirements/Requirement">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="arrowheadusecase" ordered="false"
-        upperBound="-1" eType="#//ArrowheadUseCase" eOpposite="#//ArrowheadUseCase/arrowheaddslrequirement"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ArrowheadUseCase">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="base_UseCase" ordered="false"
-        eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//UseCase"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="arrowheaddslrequirement"
-        ordered="false" upperBound="-1" eType="#//ArrowheadDSLRequirement" eOpposite="#//ArrowheadDSLRequirement/arrowheadusecase"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="DeviceDesign" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//blocks/Block">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="DeviceName" ordered="false"
@@ -188,8 +180,6 @@
         <details key="originalName" value="system-of-locaclouddesigndescription"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="sysdd" ordered="false"
-        upperBound="-1" eType="#//SysDD" eOpposite="#//SysDD/localclouddesigndescription"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="System_of_LocacloudsDesignDescription"
       eSuperTypes="#//System_of_LocalcloudsDesign">
@@ -200,21 +190,43 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="localclouddesigndescription"
         ordered="false" upperBound="-1" eType="#//LocalcloudDesignDescription" eOpposite="#//LocalcloudDesignDescription/systemoflocaclouddesigndescription"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="System_of_LocalcloudsImplementation"
+      eSuperTypes="#//System_of_LocacloudsDesignDescription">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="SoLC_Documentation" ordered="false"
+        lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//UnlimitedNatural"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="localcloudimplementation"
+        ordered="false" upperBound="-1" eType="#//LocalcloudImplementation" eOpposite="#//LocalcloudImplementation/system_of_localcloudsimplementation"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LocalcloudImplementation" eSuperTypes="#//LocalcloudDesignDescription">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="LC_Documentation" ordered="false"
+        lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//UnlimitedNatural"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="systemimplementation" ordered="false"
+        upperBound="-1" eType="#//System_Implementation" eOpposite="#//System_Implementation/loclacloudimplementation"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="system_of_localcloudsimplementation"
+        ordered="false" upperBound="-1" eType="#//System_of_LocalcloudsImplementation"
+        eOpposite="#//System_of_LocalcloudsImplementation/localcloudimplementation"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="System_Implementation" eSuperTypes="#//SysDD">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="idd_implementation" ordered="false"
+        upperBound="-1" eType="#//IDD_Implementation" eOpposite="#//IDD_Implementation/systemimplementation"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="loclacloudimplementation"
+        ordered="false" upperBound="-1" eType="#//LocalcloudImplementation" eOpposite="#//LocalcloudImplementation/systemimplementation"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="SysDD" eSuperTypes="#//SysD">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Timeformat" ordered="false"
         unique="false" lowerBound="1" eType="#//TimeFormatKind"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="ArrowheadCertificate" ordered="false"
         unique="false" lowerBound="1" eType="#//ArrowheadCertificateKind"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="idd" ordered="false" upperBound="-1"
-        eType="#//IDD" eOpposite="#//IDD/sysdd"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="localclouddesigndescription"
-        ordered="false" upperBound="-1" eType="#//LocalcloudDesignDescription" eOpposite="#//LocalcloudDesignDescription/sysdd"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="TimeFormatKind">
     <eLiterals name="RFC_3339"/>
     <eLiterals name="ISO_8601" value="1"/>
     <eLiterals name="Unix_time" value="2"/>
     <eLiterals name="OtherTimeFormat" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IDD_Implementation" eSuperTypes="#//IDD">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="systemimplementation" ordered="false"
+        upperBound="-1" eType="#//System_Implementation" eOpposite="#//System_Implementation/idd_implementation"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="IDD" eSuperTypes="#//SD">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Port" ordered="false" lowerBound="1"
@@ -235,8 +247,6 @@
         unique="false" lowerBound="1" eType="#//CryptoAlgorithmKind"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Datamodel" ordered="false"
         unique="false" lowerBound="1" eType="#//DatamodelStandardKind"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="sysdd" ordered="false"
-        upperBound="-1" eType="#//SysDD" eOpposite="#//SysDD/idd"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="ApplicationProtocolKind">
     <eLiterals name="http"/>
@@ -282,32 +292,6 @@
     <eLiterals name="ISO_15739_IFC" value="5"/>
     <eLiterals name="IEC_61850" value="6"/>
     <eLiterals name="OtherDatamodelStandard" value="7"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="System_of_LocalcloudsImplementation"
-      eSuperTypes="#//System_of_LocacloudsDesignDescription">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="SoLC_Documentation" ordered="false"
-        lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//UnlimitedNatural"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="localcloudimplementation"
-        ordered="false" upperBound="-1" eType="#//LocalcloudImplementation" eOpposite="#//LocalcloudImplementation/system_of_localcloudsimplementation"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="LocalcloudImplementation" eSuperTypes="#//LocalcloudDesignDescription">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="LC_Documentation" ordered="false"
-        lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//UnlimitedNatural"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="systemimplementation" ordered="false"
-        upperBound="-1" eType="#//System_Implementation" eOpposite="#//System_Implementation/loclacloudimplementation"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="system_of_localcloudsimplementation"
-        ordered="false" upperBound="-1" eType="#//System_of_LocalcloudsImplementation"
-        eOpposite="#//System_of_LocalcloudsImplementation/localcloudimplementation"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="System_Implementation" eSuperTypes="#//SysDD">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="idd_implementation" ordered="false"
-        upperBound="-1" eType="#//IDD_Implementation" eOpposite="#//IDD_Implementation/systemimplementation"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="loclacloudimplementation"
-        ordered="false" upperBound="-1" eType="#//LocalcloudImplementation" eOpposite="#//LocalcloudImplementation/systemimplementation"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="IDD_Implementation" eSuperTypes="#//IDD">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="systemimplementation" ordered="false"
-        upperBound="-1" eType="#//System_Implementation" eOpposite="#//System_Implementation/idd_implementation"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="CertificateKind">
     <eLiterals name="x509_Arrowhead"/>

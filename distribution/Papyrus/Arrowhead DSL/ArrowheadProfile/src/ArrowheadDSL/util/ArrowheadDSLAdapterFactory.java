@@ -83,20 +83,20 @@ public class ArrowheadDSLAdapterFactory extends AdapterFactoryImpl {
 				return createSDAdapter();
 			}
 			@Override
-			public Adapter caseLocalCloudDesign(LocalCloudDesign object) {
-				return createLocalCloudDesignAdapter();
-			}
-			@Override
-			public Adapter caseSystem_of_LocalcloudsDesign(System_of_LocalcloudsDesign object) {
-				return createSystem_of_LocalcloudsDesignAdapter();
-			}
-			@Override
 			public Adapter caseArrowheadDSLRequirement(ArrowheadDSLRequirement object) {
 				return createArrowheadDSLRequirementAdapter();
 			}
 			@Override
 			public Adapter caseArrowheadUseCase(ArrowheadUseCase object) {
 				return createArrowheadUseCaseAdapter();
+			}
+			@Override
+			public Adapter caseLocalCloudDesign(LocalCloudDesign object) {
+				return createLocalCloudDesignAdapter();
+			}
+			@Override
+			public Adapter caseSystem_of_LocalcloudsDesign(System_of_LocalcloudsDesign object) {
+				return createSystem_of_LocalcloudsDesignAdapter();
 			}
 			@Override
 			public Adapter caseDeviceDesign(DeviceDesign object) {
@@ -131,14 +131,6 @@ public class ArrowheadDSLAdapterFactory extends AdapterFactoryImpl {
 				return createSystem_of_LocacloudsDesignDescriptionAdapter();
 			}
 			@Override
-			public Adapter caseSysDD(SysDD object) {
-				return createSysDDAdapter();
-			}
-			@Override
-			public Adapter caseIDD(IDD object) {
-				return createIDDAdapter();
-			}
-			@Override
 			public Adapter caseSystem_of_LocalcloudsImplementation(System_of_LocalcloudsImplementation object) {
 				return createSystem_of_LocalcloudsImplementationAdapter();
 			}
@@ -151,8 +143,16 @@ public class ArrowheadDSLAdapterFactory extends AdapterFactoryImpl {
 				return createSystem_ImplementationAdapter();
 			}
 			@Override
+			public Adapter caseSysDD(SysDD object) {
+				return createSysDDAdapter();
+			}
+			@Override
 			public Adapter caseIDD_Implementation(IDD_Implementation object) {
 				return createIDD_ImplementationAdapter();
+			}
+			@Override
+			public Adapter caseIDD(IDD object) {
+				return createIDDAdapter();
 			}
 			@Override
 			public Adapter caseArrowHeadServiceInterfaceHTTP(ArrowHeadServiceInterfaceHTTP object) {

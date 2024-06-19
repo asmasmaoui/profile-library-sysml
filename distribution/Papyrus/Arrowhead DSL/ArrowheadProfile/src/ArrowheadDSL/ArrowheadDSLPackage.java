@@ -129,31 +129,13 @@ public interface ArrowheadDSLPackage extends EPackage {
 	int SYS_D__MICROSYSTEM_BEHAVIOUR = BlocksPackage.BLOCK_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Sd</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SYS_D__SD = BlocksPackage.BLOCK_FEATURE_COUNT + 4;
-
-	/**
-	 * The feature id for the '<em><b>Localclouddesign</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SYS_D__LOCALCLOUDDESIGN = BlocksPackage.BLOCK_FEATURE_COUNT + 5;
-
-	/**
 	 * The number of structural features of the '<em>Sys D</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SYS_D_FEATURE_COUNT = BlocksPackage.BLOCK_FEATURE_COUNT + 6;
+	int SYS_D_FEATURE_COUNT = BlocksPackage.BLOCK_FEATURE_COUNT + 4;
 
 	/**
 	 * The operation id for the '<em>Get References</em>' operation.
@@ -229,22 +211,13 @@ public interface ArrowheadDSLPackage extends EPackage {
 	int SD__MICROSERVICE_NAME = PortsAndFlowsPackage.INTERFACE_BLOCK_FEATURE_COUNT + 0;
 
 	/**
-	 * The feature id for the '<em><b>Sysd</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SD__SYSD = PortsAndFlowsPackage.INTERFACE_BLOCK_FEATURE_COUNT + 1;
-
-	/**
 	 * The number of structural features of the '<em>SD</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SD_FEATURE_COUNT = PortsAndFlowsPackage.INTERFACE_BLOCK_FEATURE_COUNT + 2;
+	int SD_FEATURE_COUNT = PortsAndFlowsPackage.INTERFACE_BLOCK_FEATURE_COUNT + 1;
 
 	/**
 	 * The operation id for the '<em>Get References</em>' operation.
@@ -308,133 +281,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getLocalCloudDesign()
 	 * @generated
 	 */
-	int LOCAL_CLOUD_DESIGN = 2;
-
-	/**
-	 * The feature id for the '<em><b>Base Class</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LOCAL_CLOUD_DESIGN__BASE_CLASS = BlocksPackage.BLOCK__BASE_CLASS;
-
-	/**
-	 * The feature id for the '<em><b>Is Encapsulated</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LOCAL_CLOUD_DESIGN__IS_ENCAPSULATED = BlocksPackage.BLOCK__IS_ENCAPSULATED;
-
-	/**
-	 * The feature id for the '<em><b>LC Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LOCAL_CLOUD_DESIGN__LC_NAME = BlocksPackage.BLOCK_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Functional Properties</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LOCAL_CLOUD_DESIGN__FUNCTIONAL_PROPERTIES = BlocksPackage.BLOCK_FEATURE_COUNT + 1;
-
-	/**
-	 * The feature id for the '<em><b>LC Security Strategy</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LOCAL_CLOUD_DESIGN__LC_SECURITY_STRATEGY = BlocksPackage.BLOCK_FEATURE_COUNT + 2;
-
-	/**
-	 * The feature id for the '<em><b>LC Business Strategy</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LOCAL_CLOUD_DESIGN__LC_BUSINESS_STRATEGY = BlocksPackage.BLOCK_FEATURE_COUNT + 3;
-
-	/**
-	 * The feature id for the '<em><b>LC Lifecycle Strategy</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LOCAL_CLOUD_DESIGN__LC_LIFECYCLE_STRATEGY = BlocksPackage.BLOCK_FEATURE_COUNT + 4;
-
-	/**
-	 * The feature id for the '<em><b>System of localcloudsdesign</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LOCAL_CLOUD_DESIGN__SYSTEM_OF_LOCALCLOUDSDESIGN = BlocksPackage.BLOCK_FEATURE_COUNT + 5;
-
-	/**
-	 * The feature id for the '<em><b>Sysd</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LOCAL_CLOUD_DESIGN__SYSD = BlocksPackage.BLOCK_FEATURE_COUNT + 6;
-
-	/**
-	 * The number of structural features of the '<em>Local Cloud Design</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LOCAL_CLOUD_DESIGN_FEATURE_COUNT = BlocksPackage.BLOCK_FEATURE_COUNT + 7;
-
-	/**
-	 * The operation id for the '<em>Get References</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LOCAL_CLOUD_DESIGN___GET_REFERENCES = BlocksPackage.BLOCK___GET_REFERENCES;
-
-	/**
-	 * The operation id for the '<em>Get Parts</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LOCAL_CLOUD_DESIGN___GET_PARTS = BlocksPackage.BLOCK___GET_PARTS;
-
-	/**
-	 * The operation id for the '<em>Get Flow Properties</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LOCAL_CLOUD_DESIGN___GET_FLOW_PROPERTIES = BlocksPackage.BLOCK___GET_FLOW_PROPERTIES;
-
-	/**
-	 * The number of operations of the '<em>Local Cloud Design</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LOCAL_CLOUD_DESIGN_OPERATION_COUNT = BlocksPackage.BLOCK_OPERATION_COUNT + 0;
+	int LOCAL_CLOUD_DESIGN = 4;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.impl.System_of_LocalcloudsDesignImpl <em>System of Localclouds Design</em>}' class.
@@ -444,115 +291,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getSystem_of_LocalcloudsDesign()
 	 * @generated
 	 */
-	int SYSTEM_OF_LOCALCLOUDS_DESIGN = 3;
-
-	/**
-	 * The feature id for the '<em><b>Base Class</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SYSTEM_OF_LOCALCLOUDS_DESIGN__BASE_CLASS = BlocksPackage.BLOCK__BASE_CLASS;
-
-	/**
-	 * The feature id for the '<em><b>Is Encapsulated</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SYSTEM_OF_LOCALCLOUDS_DESIGN__IS_ENCAPSULATED = BlocksPackage.BLOCK__IS_ENCAPSULATED;
-
-	/**
-	 * The feature id for the '<em><b>So LC Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SYSTEM_OF_LOCALCLOUDS_DESIGN__SO_LC_NAME = BlocksPackage.BLOCK_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>So LC Security Strategy</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SYSTEM_OF_LOCALCLOUDS_DESIGN__SO_LC_SECURITY_STRATEGY = BlocksPackage.BLOCK_FEATURE_COUNT + 1;
-
-	/**
-	 * The feature id for the '<em><b>So LC Business Strategy</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SYSTEM_OF_LOCALCLOUDS_DESIGN__SO_LC_BUSINESS_STRATEGY = BlocksPackage.BLOCK_FEATURE_COUNT + 2;
-
-	/**
-	 * The feature id for the '<em><b>So LC Lifecycle Strategy</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SYSTEM_OF_LOCALCLOUDS_DESIGN__SO_LC_LIFECYCLE_STRATEGY = BlocksPackage.BLOCK_FEATURE_COUNT + 3;
-
-	/**
-	 * The feature id for the '<em><b>Localclouddesign</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SYSTEM_OF_LOCALCLOUDS_DESIGN__LOCALCLOUDDESIGN = BlocksPackage.BLOCK_FEATURE_COUNT + 4;
-
-	/**
-	 * The number of structural features of the '<em>System of Localclouds Design</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SYSTEM_OF_LOCALCLOUDS_DESIGN_FEATURE_COUNT = BlocksPackage.BLOCK_FEATURE_COUNT + 5;
-
-	/**
-	 * The operation id for the '<em>Get References</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SYSTEM_OF_LOCALCLOUDS_DESIGN___GET_REFERENCES = BlocksPackage.BLOCK___GET_REFERENCES;
-
-	/**
-	 * The operation id for the '<em>Get Parts</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SYSTEM_OF_LOCALCLOUDS_DESIGN___GET_PARTS = BlocksPackage.BLOCK___GET_PARTS;
-
-	/**
-	 * The operation id for the '<em>Get Flow Properties</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SYSTEM_OF_LOCALCLOUDS_DESIGN___GET_FLOW_PROPERTIES = BlocksPackage.BLOCK___GET_FLOW_PROPERTIES;
-
-	/**
-	 * The number of operations of the '<em>System of Localclouds Design</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SYSTEM_OF_LOCALCLOUDS_DESIGN_OPERATION_COUNT = BlocksPackage.BLOCK_OPERATION_COUNT + 0;
+	int SYSTEM_OF_LOCALCLOUDS_DESIGN = 5;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.impl.ArrowheadDSLRequirementImpl <em>Requirement</em>}' class.
@@ -562,7 +301,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getArrowheadDSLRequirement()
 	 * @generated
 	 */
-	int ARROWHEAD_DSL_REQUIREMENT = 4;
+	int ARROWHEAD_DSL_REQUIREMENT = 2;
 
 	/**
 	 * The feature id for the '<em><b>Base Named Element</b></em>' reference.
@@ -761,7 +500,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getArrowheadUseCase()
 	 * @generated
 	 */
-	int ARROWHEAD_USE_CASE = 5;
+	int ARROWHEAD_USE_CASE = 3;
 
 	/**
 	 * The feature id for the '<em><b>Base Use Case</b></em>' reference.
@@ -798,6 +537,231 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @ordered
 	 */
 	int ARROWHEAD_USE_CASE_OPERATION_COUNT = 0;
+
+	/**
+	 * The feature id for the '<em><b>Base Class</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LOCAL_CLOUD_DESIGN__BASE_CLASS = BlocksPackage.BLOCK__BASE_CLASS;
+
+	/**
+	 * The feature id for the '<em><b>Is Encapsulated</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LOCAL_CLOUD_DESIGN__IS_ENCAPSULATED = BlocksPackage.BLOCK__IS_ENCAPSULATED;
+
+	/**
+	 * The feature id for the '<em><b>LC Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LOCAL_CLOUD_DESIGN__LC_NAME = BlocksPackage.BLOCK_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Functional Properties</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LOCAL_CLOUD_DESIGN__FUNCTIONAL_PROPERTIES = BlocksPackage.BLOCK_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>LC Security Strategy</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LOCAL_CLOUD_DESIGN__LC_SECURITY_STRATEGY = BlocksPackage.BLOCK_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>LC Business Strategy</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LOCAL_CLOUD_DESIGN__LC_BUSINESS_STRATEGY = BlocksPackage.BLOCK_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>LC Lifecycle Strategy</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LOCAL_CLOUD_DESIGN__LC_LIFECYCLE_STRATEGY = BlocksPackage.BLOCK_FEATURE_COUNT + 4;
+
+	/**
+	 * The feature id for the '<em><b>System of localcloudsdesign</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LOCAL_CLOUD_DESIGN__SYSTEM_OF_LOCALCLOUDSDESIGN = BlocksPackage.BLOCK_FEATURE_COUNT + 5;
+
+	/**
+	 * The number of structural features of the '<em>Local Cloud Design</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LOCAL_CLOUD_DESIGN_FEATURE_COUNT = BlocksPackage.BLOCK_FEATURE_COUNT + 6;
+
+	/**
+	 * The operation id for the '<em>Get References</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LOCAL_CLOUD_DESIGN___GET_REFERENCES = BlocksPackage.BLOCK___GET_REFERENCES;
+
+	/**
+	 * The operation id for the '<em>Get Parts</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LOCAL_CLOUD_DESIGN___GET_PARTS = BlocksPackage.BLOCK___GET_PARTS;
+
+	/**
+	 * The operation id for the '<em>Get Flow Properties</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LOCAL_CLOUD_DESIGN___GET_FLOW_PROPERTIES = BlocksPackage.BLOCK___GET_FLOW_PROPERTIES;
+
+	/**
+	 * The number of operations of the '<em>Local Cloud Design</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LOCAL_CLOUD_DESIGN_OPERATION_COUNT = BlocksPackage.BLOCK_OPERATION_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Base Class</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM_OF_LOCALCLOUDS_DESIGN__BASE_CLASS = BlocksPackage.BLOCK__BASE_CLASS;
+
+	/**
+	 * The feature id for the '<em><b>Is Encapsulated</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM_OF_LOCALCLOUDS_DESIGN__IS_ENCAPSULATED = BlocksPackage.BLOCK__IS_ENCAPSULATED;
+
+	/**
+	 * The feature id for the '<em><b>So LC Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM_OF_LOCALCLOUDS_DESIGN__SO_LC_NAME = BlocksPackage.BLOCK_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>So LC Security Strategy</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM_OF_LOCALCLOUDS_DESIGN__SO_LC_SECURITY_STRATEGY = BlocksPackage.BLOCK_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>So LC Business Strategy</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM_OF_LOCALCLOUDS_DESIGN__SO_LC_BUSINESS_STRATEGY = BlocksPackage.BLOCK_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>So LC Lifecycle Strategy</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM_OF_LOCALCLOUDS_DESIGN__SO_LC_LIFECYCLE_STRATEGY = BlocksPackage.BLOCK_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Localclouddesign</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM_OF_LOCALCLOUDS_DESIGN__LOCALCLOUDDESIGN = BlocksPackage.BLOCK_FEATURE_COUNT + 4;
+
+	/**
+	 * The number of structural features of the '<em>System of Localclouds Design</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM_OF_LOCALCLOUDS_DESIGN_FEATURE_COUNT = BlocksPackage.BLOCK_FEATURE_COUNT + 5;
+
+	/**
+	 * The operation id for the '<em>Get References</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM_OF_LOCALCLOUDS_DESIGN___GET_REFERENCES = BlocksPackage.BLOCK___GET_REFERENCES;
+
+	/**
+	 * The operation id for the '<em>Get Parts</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM_OF_LOCALCLOUDS_DESIGN___GET_PARTS = BlocksPackage.BLOCK___GET_PARTS;
+
+	/**
+	 * The operation id for the '<em>Get Flow Properties</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM_OF_LOCALCLOUDS_DESIGN___GET_FLOW_PROPERTIES = BlocksPackage.BLOCK___GET_FLOW_PROPERTIES;
+
+	/**
+	 * The number of operations of the '<em>System of Localclouds Design</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM_OF_LOCALCLOUDS_DESIGN_OPERATION_COUNT = BlocksPackage.BLOCK_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.impl.DeviceDesignImpl <em>Device Design</em>}' class.
@@ -1599,15 +1563,6 @@ public interface ArrowheadDSLPackage extends EPackage {
 	int LOCALCLOUD_DESIGN_DESCRIPTION__SYSTEM_OF_LOCALCLOUDSDESIGN = LOCAL_CLOUD_DESIGN__SYSTEM_OF_LOCALCLOUDSDESIGN;
 
 	/**
-	 * The feature id for the '<em><b>Sysd</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LOCALCLOUD_DESIGN_DESCRIPTION__SYSD = LOCAL_CLOUD_DESIGN__SYSD;
-
-	/**
 	 * The feature id for the '<em><b>LC workflow</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1635,22 +1590,13 @@ public interface ArrowheadDSLPackage extends EPackage {
 	int LOCALCLOUD_DESIGN_DESCRIPTION__SYSTEMOFLOCACLOUDDESIGNDESCRIPTION = LOCAL_CLOUD_DESIGN_FEATURE_COUNT + 2;
 
 	/**
-	 * The feature id for the '<em><b>Sysdd</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LOCALCLOUD_DESIGN_DESCRIPTION__SYSDD = LOCAL_CLOUD_DESIGN_FEATURE_COUNT + 3;
-
-	/**
 	 * The number of structural features of the '<em>Localcloud Design Description</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int LOCALCLOUD_DESIGN_DESCRIPTION_FEATURE_COUNT = LOCAL_CLOUD_DESIGN_FEATURE_COUNT + 4;
+	int LOCALCLOUD_DESIGN_DESCRIPTION_FEATURE_COUNT = LOCAL_CLOUD_DESIGN_FEATURE_COUNT + 3;
 
 	/**
 	 * The operation id for the '<em>Get References</em>' operation.
@@ -1841,160 +1787,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getSysDD()
 	 * @generated
 	 */
-	int SYS_DD = 14;
-
-	/**
-	 * The feature id for the '<em><b>Base Class</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SYS_DD__BASE_CLASS = SYS_D__BASE_CLASS;
-
-	/**
-	 * The feature id for the '<em><b>Is Encapsulated</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SYS_DD__IS_ENCAPSULATED = SYS_D__IS_ENCAPSULATED;
-
-	/**
-	 * The feature id for the '<em><b>Microsystem Name</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SYS_DD__MICROSYSTEM_NAME = SYS_D__MICROSYSTEM_NAME;
-
-	/**
-	 * The feature id for the '<em><b>Functional Properties</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SYS_DD__FUNCTIONAL_PROPERTIES = SYS_D__FUNCTIONAL_PROPERTIES;
-
-	/**
-	 * The feature id for the '<em><b>System Database</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SYS_DD__SYSTEM_DATABASE = SYS_D__SYSTEM_DATABASE;
-
-	/**
-	 * The feature id for the '<em><b>Microsystem Behaviour</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SYS_DD__MICROSYSTEM_BEHAVIOUR = SYS_D__MICROSYSTEM_BEHAVIOUR;
-
-	/**
-	 * The feature id for the '<em><b>Sd</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SYS_DD__SD = SYS_D__SD;
-
-	/**
-	 * The feature id for the '<em><b>Localclouddesign</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SYS_DD__LOCALCLOUDDESIGN = SYS_D__LOCALCLOUDDESIGN;
-
-	/**
-	 * The feature id for the '<em><b>Timeformat</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SYS_DD__TIMEFORMAT = SYS_D_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Arrowhead Certificate</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SYS_DD__ARROWHEAD_CERTIFICATE = SYS_D_FEATURE_COUNT + 1;
-
-	/**
-	 * The feature id for the '<em><b>Idd</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SYS_DD__IDD = SYS_D_FEATURE_COUNT + 2;
-
-	/**
-	 * The feature id for the '<em><b>Localclouddesigndescription</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SYS_DD__LOCALCLOUDDESIGNDESCRIPTION = SYS_D_FEATURE_COUNT + 3;
-
-	/**
-	 * The number of structural features of the '<em>Sys DD</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SYS_DD_FEATURE_COUNT = SYS_D_FEATURE_COUNT + 4;
-
-	/**
-	 * The operation id for the '<em>Get References</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SYS_DD___GET_REFERENCES = SYS_D___GET_REFERENCES;
-
-	/**
-	 * The operation id for the '<em>Get Parts</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SYS_DD___GET_PARTS = SYS_D___GET_PARTS;
-
-	/**
-	 * The operation id for the '<em>Get Flow Properties</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SYS_DD___GET_FLOW_PROPERTIES = SYS_D___GET_FLOW_PROPERTIES;
-
-	/**
-	 * The number of operations of the '<em>Sys DD</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SYS_DD_OPERATION_COUNT = SYS_D_OPERATION_COUNT + 0;
+	int SYS_DD = 17;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.impl.IDDImpl <em>IDD</em>}' class.
@@ -2004,196 +1797,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getIDD()
 	 * @generated
 	 */
-	int IDD = 15;
-
-	/**
-	 * The feature id for the '<em><b>Base Class</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IDD__BASE_CLASS = SD__BASE_CLASS;
-
-	/**
-	 * The feature id for the '<em><b>Is Encapsulated</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IDD__IS_ENCAPSULATED = SD__IS_ENCAPSULATED;
-
-	/**
-	 * The feature id for the '<em><b>Microservice Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IDD__MICROSERVICE_NAME = SD__MICROSERVICE_NAME;
-
-	/**
-	 * The feature id for the '<em><b>Sysd</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IDD__SYSD = SD__SYSD;
-
-	/**
-	 * The feature id for the '<em><b>Port</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IDD__PORT = SD_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Protocol</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IDD__PROTOCOL = SD_FEATURE_COUNT + 1;
-
-	/**
-	 * The feature id for the '<em><b>Encoding</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IDD__ENCODING = SD_FEATURE_COUNT + 2;
-
-	/**
-	 * The feature id for the '<em><b>Security</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IDD__SECURITY = SD_FEATURE_COUNT + 3;
-
-	/**
-	 * The feature id for the '<em><b>Compression</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IDD__COMPRESSION = SD_FEATURE_COUNT + 4;
-
-	/**
-	 * The feature id for the '<em><b>Certificate level</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IDD__CERTIFICATE_LEVEL = SD_FEATURE_COUNT + 5;
-
-	/**
-	 * The feature id for the '<em><b>Token</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IDD__TOKEN = SD_FEATURE_COUNT + 6;
-
-	/**
-	 * The feature id for the '<em><b>Crypto algorithm</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IDD__CRYPTO_ALGORITHM = SD_FEATURE_COUNT + 7;
-
-	/**
-	 * The feature id for the '<em><b>Datamodel</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IDD__DATAMODEL = SD_FEATURE_COUNT + 8;
-
-	/**
-	 * The feature id for the '<em><b>Sysdd</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IDD__SYSDD = SD_FEATURE_COUNT + 9;
-
-	/**
-	 * The number of structural features of the '<em>IDD</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IDD_FEATURE_COUNT = SD_FEATURE_COUNT + 10;
-
-	/**
-	 * The operation id for the '<em>Get References</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IDD___GET_REFERENCES = SD___GET_REFERENCES;
-
-	/**
-	 * The operation id for the '<em>Get Parts</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IDD___GET_PARTS = SD___GET_PARTS;
-
-	/**
-	 * The operation id for the '<em>Get Flow Properties</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IDD___GET_FLOW_PROPERTIES = SD___GET_FLOW_PROPERTIES;
-
-	/**
-	 * The operation id for the '<em>Get Conjugated</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IDD___GET_CONJUGATED = SD___GET_CONJUGATED;
-
-	/**
-	 * The operation id for the '<em>Operation</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IDD___OPERATION = SD___OPERATION;
-
-	/**
-	 * The number of operations of the '<em>IDD</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IDD_OPERATION_COUNT = SD_OPERATION_COUNT + 0;
+	int IDD = 19;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.impl.System_of_LocalcloudsImplementationImpl <em>System of Localclouds Implementation</em>}' class.
@@ -2203,7 +1807,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getSystem_of_LocalcloudsImplementation()
 	 * @generated
 	 */
-	int SYSTEM_OF_LOCALCLOUDS_IMPLEMENTATION = 16;
+	int SYSTEM_OF_LOCALCLOUDS_IMPLEMENTATION = 14;
 
 	/**
 	 * The feature id for the '<em><b>Base Class</b></em>' reference.
@@ -2366,7 +1970,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getLocalcloudImplementation()
 	 * @generated
 	 */
-	int LOCALCLOUD_IMPLEMENTATION = 17;
+	int LOCALCLOUD_IMPLEMENTATION = 15;
 
 	/**
 	 * The feature id for the '<em><b>Base Class</b></em>' reference.
@@ -2441,15 +2045,6 @@ public interface ArrowheadDSLPackage extends EPackage {
 	int LOCALCLOUD_IMPLEMENTATION__SYSTEM_OF_LOCALCLOUDSDESIGN = LOCALCLOUD_DESIGN_DESCRIPTION__SYSTEM_OF_LOCALCLOUDSDESIGN;
 
 	/**
-	 * The feature id for the '<em><b>Sysd</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LOCALCLOUD_IMPLEMENTATION__SYSD = LOCALCLOUD_DESIGN_DESCRIPTION__SYSD;
-
-	/**
 	 * The feature id for the '<em><b>LC workflow</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2475,15 +2070,6 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @ordered
 	 */
 	int LOCALCLOUD_IMPLEMENTATION__SYSTEMOFLOCACLOUDDESIGNDESCRIPTION = LOCALCLOUD_DESIGN_DESCRIPTION__SYSTEMOFLOCACLOUDDESIGNDESCRIPTION;
-
-	/**
-	 * The feature id for the '<em><b>Sysdd</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LOCALCLOUD_IMPLEMENTATION__SYSDD = LOCALCLOUD_DESIGN_DESCRIPTION__SYSDD;
 
 	/**
 	 * The feature id for the '<em><b>LC Documentation</b></em>' attribute.
@@ -2558,6 +2144,123 @@ public interface ArrowheadDSLPackage extends EPackage {
 	int LOCALCLOUD_IMPLEMENTATION_OPERATION_COUNT = LOCALCLOUD_DESIGN_DESCRIPTION_OPERATION_COUNT + 0;
 
 	/**
+	 * The feature id for the '<em><b>Base Class</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYS_DD__BASE_CLASS = SYS_D__BASE_CLASS;
+
+	/**
+	 * The feature id for the '<em><b>Is Encapsulated</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYS_DD__IS_ENCAPSULATED = SYS_D__IS_ENCAPSULATED;
+
+	/**
+	 * The feature id for the '<em><b>Microsystem Name</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYS_DD__MICROSYSTEM_NAME = SYS_D__MICROSYSTEM_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Functional Properties</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYS_DD__FUNCTIONAL_PROPERTIES = SYS_D__FUNCTIONAL_PROPERTIES;
+
+	/**
+	 * The feature id for the '<em><b>System Database</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYS_DD__SYSTEM_DATABASE = SYS_D__SYSTEM_DATABASE;
+
+	/**
+	 * The feature id for the '<em><b>Microsystem Behaviour</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYS_DD__MICROSYSTEM_BEHAVIOUR = SYS_D__MICROSYSTEM_BEHAVIOUR;
+
+	/**
+	 * The feature id for the '<em><b>Timeformat</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYS_DD__TIMEFORMAT = SYS_D_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Arrowhead Certificate</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYS_DD__ARROWHEAD_CERTIFICATE = SYS_D_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of structural features of the '<em>Sys DD</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYS_DD_FEATURE_COUNT = SYS_D_FEATURE_COUNT + 2;
+
+	/**
+	 * The operation id for the '<em>Get References</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYS_DD___GET_REFERENCES = SYS_D___GET_REFERENCES;
+
+	/**
+	 * The operation id for the '<em>Get Parts</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYS_DD___GET_PARTS = SYS_D___GET_PARTS;
+
+	/**
+	 * The operation id for the '<em>Get Flow Properties</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYS_DD___GET_FLOW_PROPERTIES = SYS_D___GET_FLOW_PROPERTIES;
+
+	/**
+	 * The number of operations of the '<em>Sys DD</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYS_DD_OPERATION_COUNT = SYS_D_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link ArrowheadDSL.impl.System_ImplementationImpl <em>System Implementation</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2565,7 +2268,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getSystem_Implementation()
 	 * @generated
 	 */
-	int SYSTEM_IMPLEMENTATION = 18;
+	int SYSTEM_IMPLEMENTATION = 16;
 
 	/**
 	 * The feature id for the '<em><b>Base Class</b></em>' reference.
@@ -2622,24 +2325,6 @@ public interface ArrowheadDSLPackage extends EPackage {
 	int SYSTEM_IMPLEMENTATION__MICROSYSTEM_BEHAVIOUR = SYS_DD__MICROSYSTEM_BEHAVIOUR;
 
 	/**
-	 * The feature id for the '<em><b>Sd</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SYSTEM_IMPLEMENTATION__SD = SYS_DD__SD;
-
-	/**
-	 * The feature id for the '<em><b>Localclouddesign</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SYSTEM_IMPLEMENTATION__LOCALCLOUDDESIGN = SYS_DD__LOCALCLOUDDESIGN;
-
-	/**
 	 * The feature id for the '<em><b>Timeformat</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2656,24 +2341,6 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @ordered
 	 */
 	int SYSTEM_IMPLEMENTATION__ARROWHEAD_CERTIFICATE = SYS_DD__ARROWHEAD_CERTIFICATE;
-
-	/**
-	 * The feature id for the '<em><b>Idd</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SYSTEM_IMPLEMENTATION__IDD = SYS_DD__IDD;
-
-	/**
-	 * The feature id for the '<em><b>Localclouddesigndescription</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SYSTEM_IMPLEMENTATION__LOCALCLOUDDESIGNDESCRIPTION = SYS_DD__LOCALCLOUDDESIGNDESCRIPTION;
 
 	/**
 	 * The feature id for the '<em><b>Idd implementation</b></em>' reference list.
@@ -2739,6 +2406,177 @@ public interface ArrowheadDSLPackage extends EPackage {
 	int SYSTEM_IMPLEMENTATION_OPERATION_COUNT = SYS_DD_OPERATION_COUNT + 0;
 
 	/**
+	 * The feature id for the '<em><b>Base Class</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IDD__BASE_CLASS = SD__BASE_CLASS;
+
+	/**
+	 * The feature id for the '<em><b>Is Encapsulated</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IDD__IS_ENCAPSULATED = SD__IS_ENCAPSULATED;
+
+	/**
+	 * The feature id for the '<em><b>Microservice Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IDD__MICROSERVICE_NAME = SD__MICROSERVICE_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Port</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IDD__PORT = SD_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Protocol</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IDD__PROTOCOL = SD_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Encoding</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IDD__ENCODING = SD_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Security</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IDD__SECURITY = SD_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Compression</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IDD__COMPRESSION = SD_FEATURE_COUNT + 4;
+
+	/**
+	 * The feature id for the '<em><b>Certificate level</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IDD__CERTIFICATE_LEVEL = SD_FEATURE_COUNT + 5;
+
+	/**
+	 * The feature id for the '<em><b>Token</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IDD__TOKEN = SD_FEATURE_COUNT + 6;
+
+	/**
+	 * The feature id for the '<em><b>Crypto algorithm</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IDD__CRYPTO_ALGORITHM = SD_FEATURE_COUNT + 7;
+
+	/**
+	 * The feature id for the '<em><b>Datamodel</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IDD__DATAMODEL = SD_FEATURE_COUNT + 8;
+
+	/**
+	 * The number of structural features of the '<em>IDD</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IDD_FEATURE_COUNT = SD_FEATURE_COUNT + 9;
+
+	/**
+	 * The operation id for the '<em>Get References</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IDD___GET_REFERENCES = SD___GET_REFERENCES;
+
+	/**
+	 * The operation id for the '<em>Get Parts</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IDD___GET_PARTS = SD___GET_PARTS;
+
+	/**
+	 * The operation id for the '<em>Get Flow Properties</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IDD___GET_FLOW_PROPERTIES = SD___GET_FLOW_PROPERTIES;
+
+	/**
+	 * The operation id for the '<em>Get Conjugated</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IDD___GET_CONJUGATED = SD___GET_CONJUGATED;
+
+	/**
+	 * The operation id for the '<em>Operation</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IDD___OPERATION = SD___OPERATION;
+
+	/**
+	 * The number of operations of the '<em>IDD</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IDD_OPERATION_COUNT = SD_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link ArrowheadDSL.impl.IDD_ImplementationImpl <em>IDD Implementation</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2746,7 +2584,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getIDD_Implementation()
 	 * @generated
 	 */
-	int IDD_IMPLEMENTATION = 19;
+	int IDD_IMPLEMENTATION = 18;
 
 	/**
 	 * The feature id for the '<em><b>Base Class</b></em>' reference.
@@ -2774,15 +2612,6 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @ordered
 	 */
 	int IDD_IMPLEMENTATION__MICROSERVICE_NAME = IDD__MICROSERVICE_NAME;
-
-	/**
-	 * The feature id for the '<em><b>Sysd</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IDD_IMPLEMENTATION__SYSD = IDD__SYSD;
 
 	/**
 	 * The feature id for the '<em><b>Port</b></em>' attribute.
@@ -2864,15 +2693,6 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @ordered
 	 */
 	int IDD_IMPLEMENTATION__DATAMODEL = IDD__DATAMODEL;
-
-	/**
-	 * The feature id for the '<em><b>Sysdd</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IDD_IMPLEMENTATION__SYSDD = IDD__SYSDD;
 
 	/**
 	 * The feature id for the '<em><b>Systemimplementation</b></em>' reference list.
@@ -3587,28 +3407,6 @@ public interface ArrowheadDSLPackage extends EPackage {
 	EAttribute getSysD_MicrosystemBehaviour();
 
 	/**
-	 * Returns the meta object for the reference list '{@link ArrowheadDSL.SysD#getSd <em>Sd</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Sd</em>'.
-	 * @see ArrowheadDSL.SysD#getSd()
-	 * @see #getSysD()
-	 * @generated
-	 */
-	EReference getSysD_Sd();
-
-	/**
-	 * Returns the meta object for the reference list '{@link ArrowheadDSL.SysD#getLocalclouddesign <em>Localclouddesign</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Localclouddesign</em>'.
-	 * @see ArrowheadDSL.SysD#getLocalclouddesign()
-	 * @see #getSysD()
-	 * @generated
-	 */
-	EReference getSysD_Localclouddesign();
-
-	/**
 	 * Returns the meta object for class '{@link ArrowheadDSL.SD <em>SD</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3628,17 +3426,6 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getSD_MicroserviceName();
-
-	/**
-	 * Returns the meta object for the reference list '{@link ArrowheadDSL.SD#getSysd <em>Sysd</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Sysd</em>'.
-	 * @see ArrowheadDSL.SD#getSysd()
-	 * @see #getSD()
-	 * @generated
-	 */
-	EReference getSD_Sysd();
 
 	/**
 	 * Returns the meta object for the '{@link ArrowheadDSL.SD#Operation() <em>Operation</em>}' operation.
@@ -3725,17 +3512,6 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getLocalCloudDesign_System_of_localcloudsdesign();
-
-	/**
-	 * Returns the meta object for the reference list '{@link ArrowheadDSL.LocalCloudDesign#getSysd <em>Sysd</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Sysd</em>'.
-	 * @see ArrowheadDSL.LocalCloudDesign#getSysd()
-	 * @see #getLocalCloudDesign()
-	 * @generated
-	 */
-	EReference getLocalCloudDesign_Sysd();
 
 	/**
 	 * Returns the meta object for class '{@link ArrowheadDSL.System_of_LocalcloudsDesign <em>System of Localclouds Design</em>}'.
@@ -4201,17 +3977,6 @@ public interface ArrowheadDSLPackage extends EPackage {
 	EReference getLocalcloudDesignDescription_Systemoflocaclouddesigndescription();
 
 	/**
-	 * Returns the meta object for the reference list '{@link ArrowheadDSL.LocalcloudDesignDescription#getSysdd <em>Sysdd</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Sysdd</em>'.
-	 * @see ArrowheadDSL.LocalcloudDesignDescription#getSysdd()
-	 * @see #getLocalcloudDesignDescription()
-	 * @generated
-	 */
-	EReference getLocalcloudDesignDescription_Sysdd();
-
-	/**
 	 * Returns the meta object for class '{@link ArrowheadDSL.System_of_LocacloudsDesignDescription <em>System of Locaclouds Design Description</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4285,28 +4050,6 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getSysDD_ArrowheadCertificate();
-
-	/**
-	 * Returns the meta object for the reference list '{@link ArrowheadDSL.SysDD#getIdd <em>Idd</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Idd</em>'.
-	 * @see ArrowheadDSL.SysDD#getIdd()
-	 * @see #getSysDD()
-	 * @generated
-	 */
-	EReference getSysDD_Idd();
-
-	/**
-	 * Returns the meta object for the reference list '{@link ArrowheadDSL.SysDD#getLocalclouddesigndescription <em>Localclouddesigndescription</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Localclouddesigndescription</em>'.
-	 * @see ArrowheadDSL.SysDD#getLocalclouddesigndescription()
-	 * @see #getSysDD()
-	 * @generated
-	 */
-	EReference getSysDD_Localclouddesigndescription();
 
 	/**
 	 * Returns the meta object for class '{@link ArrowheadDSL.IDD <em>IDD</em>}'.
@@ -4416,17 +4159,6 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getIDD_Datamodel();
-
-	/**
-	 * Returns the meta object for the reference list '{@link ArrowheadDSL.IDD#getSysdd <em>Sysdd</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Sysdd</em>'.
-	 * @see ArrowheadDSL.IDD#getSysdd()
-	 * @see #getIDD()
-	 * @generated
-	 */
-	EReference getIDD_Sysdd();
 
 	/**
 	 * Returns the meta object for class '{@link ArrowheadDSL.System_of_LocalcloudsImplementation <em>System of Localclouds Implementation</em>}'.
@@ -5126,22 +4858,6 @@ public interface ArrowheadDSLPackage extends EPackage {
 		EAttribute SYS_D__MICROSYSTEM_BEHAVIOUR = eINSTANCE.getSysD_MicrosystemBehaviour();
 
 		/**
-		 * The meta object literal for the '<em><b>Sd</b></em>' reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference SYS_D__SD = eINSTANCE.getSysD_Sd();
-
-		/**
-		 * The meta object literal for the '<em><b>Localclouddesign</b></em>' reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference SYS_D__LOCALCLOUDDESIGN = eINSTANCE.getSysD_Localclouddesign();
-
-		/**
 		 * The meta object literal for the '{@link ArrowheadDSL.impl.SDImpl <em>SD</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -5158,14 +4874,6 @@ public interface ArrowheadDSLPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute SD__MICROSERVICE_NAME = eINSTANCE.getSD_MicroserviceName();
-
-		/**
-		 * The meta object literal for the '<em><b>Sysd</b></em>' reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference SD__SYSD = eINSTANCE.getSD_Sysd();
 
 		/**
 		 * The meta object literal for the '<em><b>Operation</b></em>' operation.
@@ -5232,14 +4940,6 @@ public interface ArrowheadDSLPackage extends EPackage {
 		 * @generated
 		 */
 		EReference LOCAL_CLOUD_DESIGN__SYSTEM_OF_LOCALCLOUDSDESIGN = eINSTANCE.getLocalCloudDesign_System_of_localcloudsdesign();
-
-		/**
-		 * The meta object literal for the '<em><b>Sysd</b></em>' reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference LOCAL_CLOUD_DESIGN__SYSD = eINSTANCE.getLocalCloudDesign_Sysd();
 
 		/**
 		 * The meta object literal for the '{@link ArrowheadDSL.impl.System_of_LocalcloudsDesignImpl <em>System of Localclouds Design</em>}' class.
@@ -5606,14 +5306,6 @@ public interface ArrowheadDSLPackage extends EPackage {
 		EReference LOCALCLOUD_DESIGN_DESCRIPTION__SYSTEMOFLOCACLOUDDESIGNDESCRIPTION = eINSTANCE.getLocalcloudDesignDescription_Systemoflocaclouddesigndescription();
 
 		/**
-		 * The meta object literal for the '<em><b>Sysdd</b></em>' reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference LOCALCLOUD_DESIGN_DESCRIPTION__SYSDD = eINSTANCE.getLocalcloudDesignDescription_Sysdd();
-
-		/**
 		 * The meta object literal for the '{@link ArrowheadDSL.impl.System_of_LocacloudsDesignDescriptionImpl <em>System of Locaclouds Design Description</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -5672,22 +5364,6 @@ public interface ArrowheadDSLPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute SYS_DD__ARROWHEAD_CERTIFICATE = eINSTANCE.getSysDD_ArrowheadCertificate();
-
-		/**
-		 * The meta object literal for the '<em><b>Idd</b></em>' reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference SYS_DD__IDD = eINSTANCE.getSysDD_Idd();
-
-		/**
-		 * The meta object literal for the '<em><b>Localclouddesigndescription</b></em>' reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference SYS_DD__LOCALCLOUDDESIGNDESCRIPTION = eINSTANCE.getSysDD_Localclouddesigndescription();
 
 		/**
 		 * The meta object literal for the '{@link ArrowheadDSL.impl.IDDImpl <em>IDD</em>}' class.
@@ -5770,14 +5446,6 @@ public interface ArrowheadDSLPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute IDD__DATAMODEL = eINSTANCE.getIDD_Datamodel();
-
-		/**
-		 * The meta object literal for the '<em><b>Sysdd</b></em>' reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference IDD__SYSDD = eINSTANCE.getIDD_Sysdd();
 
 		/**
 		 * The meta object literal for the '{@link ArrowheadDSL.impl.System_of_LocalcloudsImplementationImpl <em>System of Localclouds Implementation</em>}' class.

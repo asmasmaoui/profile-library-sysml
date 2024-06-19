@@ -88,20 +88,6 @@ public class ArrowheadDSLSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case ArrowheadDSLPackage.LOCAL_CLOUD_DESIGN: {
-				LocalCloudDesign localCloudDesign = (LocalCloudDesign)theEObject;
-				T result = caseLocalCloudDesign(localCloudDesign);
-				if (result == null) result = caseBlock(localCloudDesign);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case ArrowheadDSLPackage.SYSTEM_OF_LOCALCLOUDS_DESIGN: {
-				System_of_LocalcloudsDesign system_of_LocalcloudsDesign = (System_of_LocalcloudsDesign)theEObject;
-				T result = caseSystem_of_LocalcloudsDesign(system_of_LocalcloudsDesign);
-				if (result == null) result = caseBlock(system_of_LocalcloudsDesign);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case ArrowheadDSLPackage.ARROWHEAD_DSL_REQUIREMENT: {
 				ArrowheadDSLRequirement arrowheadDSLRequirement = (ArrowheadDSLRequirement)theEObject;
 				T result = caseArrowheadDSLRequirement(arrowheadDSLRequirement);
@@ -113,6 +99,20 @@ public class ArrowheadDSLSwitch<T> extends Switch<T> {
 			case ArrowheadDSLPackage.ARROWHEAD_USE_CASE: {
 				ArrowheadUseCase arrowheadUseCase = (ArrowheadUseCase)theEObject;
 				T result = caseArrowheadUseCase(arrowheadUseCase);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ArrowheadDSLPackage.LOCAL_CLOUD_DESIGN: {
+				LocalCloudDesign localCloudDesign = (LocalCloudDesign)theEObject;
+				T result = caseLocalCloudDesign(localCloudDesign);
+				if (result == null) result = caseBlock(localCloudDesign);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ArrowheadDSLPackage.SYSTEM_OF_LOCALCLOUDS_DESIGN: {
+				System_of_LocalcloudsDesign system_of_LocalcloudsDesign = (System_of_LocalcloudsDesign)theEObject;
+				T result = caseSystem_of_LocalcloudsDesign(system_of_LocalcloudsDesign);
+				if (result == null) result = caseBlock(system_of_LocalcloudsDesign);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -177,23 +177,6 @@ public class ArrowheadDSLSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case ArrowheadDSLPackage.SYS_DD: {
-				SysDD sysDD = (SysDD)theEObject;
-				T result = caseSysDD(sysDD);
-				if (result == null) result = caseSysD(sysDD);
-				if (result == null) result = caseBlock(sysDD);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case ArrowheadDSLPackage.IDD: {
-				IDD idd = (IDD)theEObject;
-				T result = caseIDD(idd);
-				if (result == null) result = caseSD(idd);
-				if (result == null) result = caseInterfaceBlock(idd);
-				if (result == null) result = caseBlock(idd);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case ArrowheadDSLPackage.SYSTEM_OF_LOCALCLOUDS_IMPLEMENTATION: {
 				System_of_LocalcloudsImplementation system_of_LocalcloudsImplementation = (System_of_LocalcloudsImplementation)theEObject;
 				T result = caseSystem_of_LocalcloudsImplementation(system_of_LocalcloudsImplementation);
@@ -221,6 +204,14 @@ public class ArrowheadDSLSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case ArrowheadDSLPackage.SYS_DD: {
+				SysDD sysDD = (SysDD)theEObject;
+				T result = caseSysDD(sysDD);
+				if (result == null) result = caseSysD(sysDD);
+				if (result == null) result = caseBlock(sysDD);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case ArrowheadDSLPackage.IDD_IMPLEMENTATION: {
 				IDD_Implementation idD_Implementation = (IDD_Implementation)theEObject;
 				T result = caseIDD_Implementation(idD_Implementation);
@@ -228,6 +219,15 @@ public class ArrowheadDSLSwitch<T> extends Switch<T> {
 				if (result == null) result = caseSD(idD_Implementation);
 				if (result == null) result = caseInterfaceBlock(idD_Implementation);
 				if (result == null) result = caseBlock(idD_Implementation);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ArrowheadDSLPackage.IDD: {
+				IDD idd = (IDD)theEObject;
+				T result = caseIDD(idd);
+				if (result == null) result = caseSD(idd);
+				if (result == null) result = caseInterfaceBlock(idd);
+				if (result == null) result = caseBlock(idd);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}

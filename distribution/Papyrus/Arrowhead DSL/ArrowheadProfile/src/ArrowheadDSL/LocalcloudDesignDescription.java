@@ -16,7 +16,6 @@ import org.eclipse.emf.common.util.EList;
  *   <li>{@link ArrowheadDSL.LocalcloudDesignDescription#getLC_workflow <em>LC workflow</em>}</li>
  *   <li>{@link ArrowheadDSL.LocalcloudDesignDescription#getLC_orchestration <em>LC orchestration</em>}</li>
  *   <li>{@link ArrowheadDSL.LocalcloudDesignDescription#getSystemoflocaclouddesigndescription <em>Systemoflocaclouddesigndescription</em>}</li>
- *   <li>{@link ArrowheadDSL.LocalcloudDesignDescription#getSysdd <em>Sysdd</em>}</li>
  * </ul>
  *
  * @see ArrowheadDSL.ArrowheadDSLPackage#getLocalcloudDesignDescription()
@@ -94,23 +93,5 @@ public interface LocalcloudDesignDescription extends LocalCloudDesign {
 	 * @generated
 	 */
 	EList<System_of_LocacloudsDesignDescription> getSystemoflocaclouddesigndescription();
-
-	/**
-	 * Returns the value of the '<em><b>Sysdd</b></em>' reference list.
-	 * The list contents are of type {@link ArrowheadDSL.SysDD}.
-	 * It is bidirectional and its opposite is '{@link ArrowheadDSL.SysDD#getLocalclouddesigndescription <em>Localclouddesigndescription</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Sysdd</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Sysdd</em>' reference list.
-	 * @see ArrowheadDSL.ArrowheadDSLPackage#getLocalcloudDesignDescription_Sysdd()
-	 * @see ArrowheadDSL.SysDD#getLocalclouddesigndescription
-	 * @model opposite="localclouddesigndescription" ordered="false"
-	 * @generated
-	 */
-	EList<SysDD> getSysdd();
 
 } // LocalcloudDesignDescription

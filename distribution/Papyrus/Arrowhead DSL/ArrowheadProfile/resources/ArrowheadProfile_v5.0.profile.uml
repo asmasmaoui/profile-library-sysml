@@ -84,14 +84,6 @@
       <ownedAttribute xmi:type="uml:Property" xmi:id="_vV5_kJR3Ee6U99HogCXF3A" name="MicrosystemBehaviour" type="_g-fskLaOEe6et-4ox6TWyg" isUnique="false">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vV5_kZR3Ee6U99HogCXF3A" value="*"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_d8kAcD9MEe6BGOWVtNQ9Cw" name="sd" type="_awzE4D0kEe60840L8fIbKA" association="_d8gWED9MEe6BGOWVtNQ9Cw">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-m41QLd0Ee6i2JWyFlnI5w"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nuKdYD9MEe6BGOWVtNQ9Cw" value="*"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_VK7JEDOCEe6hdPlp_7DYew" name="localclouddesign" type="_ILHE8DLYEe6ldMRwfXEyUg" association="_VKzNQDOCEe6hdPlp_7DYew">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SBYfELd1Ee6i2JWyFlnI5w"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SCJUELd1Ee6i2JWyFlnI5w" value="*"/>
-      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_Y58WkDLUEe6ldMRwfXEyUg" name="ArrowheadDSLRequirement">
       <generalization xmi:type="uml:Generalization" xmi:id="_6tVYkDLUEe6ldMRwfXEyUg">
@@ -131,19 +123,10 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ccPx8pR3Ee6U99HogCXF3A" value="*"/>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_ccPx85R3Ee6U99HogCXF3A" name="LC_LifecycleStrategy" type="_g-iI3LaOEe6et-4ox6TWyg" isUnique="false"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_VK4FwDOCEe6hdPlp_7DYew" name="sysd" type="_2RtnADLCEe6ldMRwfXEyUg" association="_VKzNQDOCEe6hdPlp_7DYew">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SnJekLd1Ee6i2JWyFlnI5w"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d-V_sEULEe6otvzTLJeGww" value="*"/>
-      </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_iHob0LdzEe6i2JWyFlnI5w" name="system_of_localcloudsdesign" type="_k2DlMDOCEe6hdPlp_7DYew" association="_iHi8QLdzEe6i2JWyFlnI5w">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nRbnMLdzEe6i2JWyFlnI5w"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nSUYALdzEe6i2JWyFlnI5w" value="*"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_VKzNQDOCEe6hdPlp_7DYew" memberEnd="_VK4FwDOCEe6hdPlp_7DYew _VK7JEDOCEe6hdPlp_7DYew">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VK1pgDOCEe6hdPlp_7DYew" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VK2QkDOCEe6hdPlp_7DYew" key="nature" value="UML_Nature"/>
-      </eAnnotations>
     </packagedElement>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_k2DlMDOCEe6hdPlp_7DYew" name="System_of_LocalcloudsDesign">
       <generalization xmi:type="uml:Generalization" xmi:id="_A-WsoDODEe6hdPlp_7DYew">
@@ -297,10 +280,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0hR3MLd0Ee6i2JWyFlnI5w"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0iEhYLd0Ee6i2JWyFlnI5w" value="*"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_BdenoI6TEe6cjupWzwXjHg" name="sysdd" type="_7a8dcI6SEe6cjupWzwXjHg" association="_BdcycI6TEe6cjupWzwXjHg">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YvJ-oLd1Ee6i2JWyFlnI5w"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Yv9P4Ld1Ee6i2JWyFlnI5w" value="*"/>
-      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_Lovj0DXVEe6Jk_FX_xio9g" name="System_of_LocacloudsDesignDescription">
       <generalization xmi:type="uml:Generalization" xmi:id="_Qq5PEDXVEe6Jk_FX_xio9g" general="_k2DlMDOCEe6hdPlp_7DYew"/>
@@ -327,16 +306,7 @@
       <ownedAttribute xmi:type="uml:Property" xmi:id="_k3ExUD0kEe60840L8fIbKA" name="MicroserviceName" isStatic="true" isUnique="false">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_d8kAcT9MEe6BGOWVtNQ9Cw" name="sysd" type="_2RtnADLCEe6ldMRwfXEyUg" association="_d8gWED9MEe6BGOWVtNQ9Cw">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AMXlULd1Ee6i2JWyFlnI5w"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ANp-wLd1Ee6i2JWyFlnI5w" value="*"/>
-      </ownedAttribute>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_NXI7gJB7Ee69oeBOw5VrOQ" name="Operation"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_d8gWED9MEe6BGOWVtNQ9Cw" memberEnd="_d8kAcD9MEe6BGOWVtNQ9Cw _d8kAcT9MEe6BGOWVtNQ9Cw">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_d8jZYD9MEe6BGOWVtNQ9Cw" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_d8jZYT9MEe6BGOWVtNQ9Cw" key="nature" value="UML_Nature"/>
-      </eAnnotations>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_mGpHgFDHEe6dd44TFP4A2A" memberEnd="_mGq8sFDHEe6dd44TFP4A2A _mGrjwFDHEe6dd44TFP4A2A">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mGqVoFDHEe6dd44TFP4A2A" source="org.eclipse.papyrus">
@@ -408,33 +378,11 @@
       <ownedAttribute xmi:type="uml:Property" xmi:id="_tIg1wJSJEe6U99HogCXF3A" name="Token" type="_g-lzMLaOEe6et-4ox6TWyg" isUnique="false"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_tIjSAJSJEe6U99HogCXF3A" name="Crypto_algorithm" type="_g-g6sLaOEe6et-4ox6TWyg" isUnique="false"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_tIoKgJSJEe6U99HogCXF3A" name="Datamodel" type="_g-g6t7aOEe6et-4ox6TWyg" isUnique="false"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_FbYno46TEe6cjupWzwXjHg" name="sysdd" type="_7a8dcI6SEe6cjupWzwXjHg" association="_FbYAkI6TEe6cjupWzwXjHg">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AVJjULd0Ee6i2JWyFlnI5w"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AWvewLd0Ee6i2JWyFlnI5w" value="*"/>
-      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_7a8dcI6SEe6cjupWzwXjHg" name="SysDD">
       <generalization xmi:type="uml:Generalization" xmi:id="_981LYI6SEe6cjupWzwXjHg" general="_2RtnADLCEe6ldMRwfXEyUg"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_ezGZ8JSKEe6U99HogCXF3A" name="Timeformat" type="_g-lMJraOEe6et-4ox6TWyg" isUnique="false"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_i_Y0MJSKEe6U99HogCXF3A" name="ArrowheadCertificate" type="_g-fFgLaOEe6et-4ox6TWyg" isUnique="false"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_FbYnoo6TEe6cjupWzwXjHg" name="idd" type="_bDW0EI4vEe6ZtIoJ221FFA" association="_FbYAkI6TEe6cjupWzwXjHg">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__HSpELdzEe6i2JWyFlnI5w"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__IzsALdzEe6i2JWyFlnI5w" value="*"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_Bdgc0I6TEe6cjupWzwXjHg" name="localclouddesigndescription" type="_Z4_oQDXTEe6Jk_FX_xio9g" association="_BdcycI6TEe6cjupWzwXjHg">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZTpLwLd1Ee6i2JWyFlnI5w"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZUdEELd1Ee6i2JWyFlnI5w" value="*"/>
-      </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_BdcycI6TEe6cjupWzwXjHg" memberEnd="_BdenoI6TEe6cjupWzwXjHg _Bdgc0I6TEe6cjupWzwXjHg">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BdeAkI6TEe6cjupWzwXjHg" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BdeAkY6TEe6cjupWzwXjHg" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_FbYAkI6TEe6cjupWzwXjHg" memberEnd="_FbYnoo6TEe6cjupWzwXjHg _FbYno46TEe6cjupWzwXjHg">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_FbYnoI6TEe6cjupWzwXjHg" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_FbYnoY6TEe6cjupWzwXjHg" key="nature" value="UML_Nature"/>
-      </eAnnotations>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_dzLFkJB6Ee69oeBOw5VrOQ" memberEnd="_dzOI4JB6Ee69oeBOw5VrOQ _dzOv8JB6Ee69oeBOw5VrOQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dzM6wJB6Ee69oeBOw5VrOQ" source="org.eclipse.papyrus">
@@ -759,7 +707,7 @@
     <packagedElement xmi:type="uml:Extension" xmi:id="_raENQPyPEe6MDucytuqm6Q" name="E_FullPort_Port1" memberEnd="_raE0UPyPEe6MDucytuqm6Q _raE0UfyPEe6MDucytuqm6Q">
       <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_raE0UPyPEe6MDucytuqm6Q" name="extension_FullPort" type="_oXf0IPyPEe6MDucytuqm6Q" aggregation="composite" association="_raENQPyPEe6MDucytuqm6Q"/>
     </packagedElement>
-     <packagedElement xmi:type="uml:Enumeration" xmi:id="_qEsekBIAEe-Pu-YQlZuncw" name="StatusKodKind">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_qEsekBIAEe-Pu-YQlZuncw" name="StatusKodKind">
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_NAvKsBIBEe-Pu-YQlZuncw" name="100 - Continue">
         <specification xmi:type="uml:LiteralString" xmi:id="_kGb68BIBEe-Pu-YQlZuncw" value="The server has received the request headers and the client should proceed to send the request body (in the case of a request for which a body needs to be sent; for example, a POST request). Sending a large request body to a server after a request has been rejected for inappropriate headers would be inefficient. To have a server check the request's headers, a client must send Expect: 100-continue as a header in its initial request and receive a 100 Continue status code in response before sending the body. If the client receives an error code such as 403 (Forbidden) or 405 (Method Not Allowed) then it should not send the request's body. The response 417 Expectation Failed indicates that the request should be repeated without the Expect header as it indicates that the server does not support expectations (this is the case, for example, of HTTP/1.0 servers)"/>
       </ownedLiteral>

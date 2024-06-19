@@ -2,8 +2,6 @@
  */
 package ArrowheadDSL;
 
-import org.eclipse.emf.common.util.EList;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Sys DD</b></em>'.
@@ -15,8 +13,6 @@ import org.eclipse.emf.common.util.EList;
  * <ul>
  *   <li>{@link ArrowheadDSL.SysDD#getTimeformat <em>Timeformat</em>}</li>
  *   <li>{@link ArrowheadDSL.SysDD#getArrowheadCertificate <em>Arrowhead Certificate</em>}</li>
- *   <li>{@link ArrowheadDSL.SysDD#getIdd <em>Idd</em>}</li>
- *   <li>{@link ArrowheadDSL.SysDD#getLocalclouddesigndescription <em>Localclouddesigndescription</em>}</li>
  * </ul>
  *
  * @see ArrowheadDSL.ArrowheadDSLPackage#getSysDD()
@@ -81,41 +77,5 @@ public interface SysDD extends SysD {
 	 * @generated
 	 */
 	void setArrowheadCertificate(ArrowheadCertificateKind value);
-
-	/**
-	 * Returns the value of the '<em><b>Idd</b></em>' reference list.
-	 * The list contents are of type {@link ArrowheadDSL.IDD}.
-	 * It is bidirectional and its opposite is '{@link ArrowheadDSL.IDD#getSysdd <em>Sysdd</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Idd</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Idd</em>' reference list.
-	 * @see ArrowheadDSL.ArrowheadDSLPackage#getSysDD_Idd()
-	 * @see ArrowheadDSL.IDD#getSysdd
-	 * @model opposite="sysdd" ordered="false"
-	 * @generated
-	 */
-	EList<IDD> getIdd();
-
-	/**
-	 * Returns the value of the '<em><b>Localclouddesigndescription</b></em>' reference list.
-	 * The list contents are of type {@link ArrowheadDSL.LocalcloudDesignDescription}.
-	 * It is bidirectional and its opposite is '{@link ArrowheadDSL.LocalcloudDesignDescription#getSysdd <em>Sysdd</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Localclouddesigndescription</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Localclouddesigndescription</em>' reference list.
-	 * @see ArrowheadDSL.ArrowheadDSLPackage#getSysDD_Localclouddesigndescription()
-	 * @see ArrowheadDSL.LocalcloudDesignDescription#getSysdd
-	 * @model opposite="sysdd" ordered="false"
-	 * @generated
-	 */
-	EList<LocalcloudDesignDescription> getLocalclouddesigndescription();
 
 } // SysDD

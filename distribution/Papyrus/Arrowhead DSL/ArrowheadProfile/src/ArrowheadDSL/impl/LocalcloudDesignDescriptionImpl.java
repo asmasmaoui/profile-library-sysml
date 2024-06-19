@@ -4,7 +4,6 @@ package ArrowheadDSL.impl;
 
 import ArrowheadDSL.ArrowheadDSLPackage;
 import ArrowheadDSL.LocalcloudDesignDescription;
-import ArrowheadDSL.SysDD;
 import ArrowheadDSL.System_of_LocacloudsDesignDescription;
 
 import java.util.Collection;
@@ -33,7 +32,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link ArrowheadDSL.impl.LocalcloudDesignDescriptionImpl#getLC_workflow <em>LC workflow</em>}</li>
  *   <li>{@link ArrowheadDSL.impl.LocalcloudDesignDescriptionImpl#getLC_orchestration <em>LC orchestration</em>}</li>
  *   <li>{@link ArrowheadDSL.impl.LocalcloudDesignDescriptionImpl#getSystemoflocaclouddesigndescription <em>Systemoflocaclouddesigndescription</em>}</li>
- *   <li>{@link ArrowheadDSL.impl.LocalcloudDesignDescriptionImpl#getSysdd <em>Sysdd</em>}</li>
  * </ul>
  *
  * @generated
@@ -88,16 +86,6 @@ public class LocalcloudDesignDescriptionImpl extends LocalCloudDesignImpl implem
 	 * @ordered
 	 */
 	protected EList<System_of_LocacloudsDesignDescription> systemoflocaclouddesigndescription;
-
-	/**
-	 * The cached value of the '{@link #getSysdd() <em>Sysdd</em>}' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getSysdd()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<SysDD> sysdd;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -182,27 +170,12 @@ public class LocalcloudDesignDescriptionImpl extends LocalCloudDesignImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<SysDD> getSysdd() {
-		if (sysdd == null) {
-			sysdd = new EObjectWithInverseResolvingEList.ManyInverse<SysDD>(SysDD.class, this, ArrowheadDSLPackage.LOCALCLOUD_DESIGN_DESCRIPTION__SYSDD, ArrowheadDSLPackage.SYS_DD__LOCALCLOUDDESIGNDESCRIPTION);
-		}
-		return sysdd;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case ArrowheadDSLPackage.LOCALCLOUD_DESIGN_DESCRIPTION__SYSTEMOFLOCACLOUDDESIGNDESCRIPTION:
 				return ((InternalEList<InternalEObject>)(InternalEList<?>)getSystemoflocaclouddesigndescription()).basicAdd(otherEnd, msgs);
-			case ArrowheadDSLPackage.LOCALCLOUD_DESIGN_DESCRIPTION__SYSDD:
-				return ((InternalEList<InternalEObject>)(InternalEList<?>)getSysdd()).basicAdd(otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
 	}
@@ -217,8 +190,6 @@ public class LocalcloudDesignDescriptionImpl extends LocalCloudDesignImpl implem
 		switch (featureID) {
 			case ArrowheadDSLPackage.LOCALCLOUD_DESIGN_DESCRIPTION__SYSTEMOFLOCACLOUDDESIGNDESCRIPTION:
 				return ((InternalEList<?>)getSystemoflocaclouddesigndescription()).basicRemove(otherEnd, msgs);
-			case ArrowheadDSLPackage.LOCALCLOUD_DESIGN_DESCRIPTION__SYSDD:
-				return ((InternalEList<?>)getSysdd()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -237,8 +208,6 @@ public class LocalcloudDesignDescriptionImpl extends LocalCloudDesignImpl implem
 				return getLC_orchestration();
 			case ArrowheadDSLPackage.LOCALCLOUD_DESIGN_DESCRIPTION__SYSTEMOFLOCACLOUDDESIGNDESCRIPTION:
 				return getSystemoflocaclouddesigndescription();
-			case ArrowheadDSLPackage.LOCALCLOUD_DESIGN_DESCRIPTION__SYSDD:
-				return getSysdd();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -262,10 +231,6 @@ public class LocalcloudDesignDescriptionImpl extends LocalCloudDesignImpl implem
 				getSystemoflocaclouddesigndescription().clear();
 				getSystemoflocaclouddesigndescription().addAll((Collection<? extends System_of_LocacloudsDesignDescription>)newValue);
 				return;
-			case ArrowheadDSLPackage.LOCALCLOUD_DESIGN_DESCRIPTION__SYSDD:
-				getSysdd().clear();
-				getSysdd().addAll((Collection<? extends SysDD>)newValue);
-				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -287,9 +252,6 @@ public class LocalcloudDesignDescriptionImpl extends LocalCloudDesignImpl implem
 			case ArrowheadDSLPackage.LOCALCLOUD_DESIGN_DESCRIPTION__SYSTEMOFLOCACLOUDDESIGNDESCRIPTION:
 				getSystemoflocaclouddesigndescription().clear();
 				return;
-			case ArrowheadDSLPackage.LOCALCLOUD_DESIGN_DESCRIPTION__SYSDD:
-				getSysdd().clear();
-				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -308,8 +270,6 @@ public class LocalcloudDesignDescriptionImpl extends LocalCloudDesignImpl implem
 				return LC_ORCHESTRATION_EDEFAULT == null ? lC_orchestration != null : !LC_ORCHESTRATION_EDEFAULT.equals(lC_orchestration);
 			case ArrowheadDSLPackage.LOCALCLOUD_DESIGN_DESCRIPTION__SYSTEMOFLOCACLOUDDESIGNDESCRIPTION:
 				return systemoflocaclouddesigndescription != null && !systemoflocaclouddesigndescription.isEmpty();
-			case ArrowheadDSLPackage.LOCALCLOUD_DESIGN_DESCRIPTION__SYSDD:
-				return sysdd != null && !sysdd.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}
