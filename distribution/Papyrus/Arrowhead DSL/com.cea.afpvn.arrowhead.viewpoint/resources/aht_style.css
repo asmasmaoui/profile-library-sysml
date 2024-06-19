@@ -9,7 +9,30 @@ Property > Compartment[kind="internalstructure"]{
     visible:true;
 }
 
-
+[appliedStereotypes~="ArrowheadDSL::SysDD"] > Compartment[kind=attributes],
+[appliedStereotypes~="ArrowheadDSL::SysDD"] > Compartment[kind=operations],
+[appliedStereotypes~="ArrowheadDSL::SysDD"] > Compartment[type=StereotypeCompartment]{
+	visible: true;
+	showTitle: true;
+}
+[appliedStereotypes~="ArrowheadDSL::SysD"] > Compartment[kind=attributes],
+[appliedStereotypes~="ArrowheadDSL::SysD"] > Compartment[kind=operations],
+[appliedStereotypes~="ArrowheadDSL::SysD"] > Compartment[type=StereotypeCompartment]{
+	visible: true;
+	showTitle: true;
+}
+[appliedStereotypes~="ArrowheadDSL::IDD"] > Compartment[kind=attributes],
+[appliedStereotypes~="ArrowheadDSL::IDD"] > Compartment[kind=operations],
+[appliedStereotypes~="ArrowheadDSL::IDD"] > Compartment[type=StereotypeCompartment]{
+	visible: true;
+	showTitle: true;
+}
+[appliedStereotypes~="ArrowheadDSL::SD"] > Compartment[kind=attributes],
+[appliedStereotypes~="ArrowheadDSL::SD"] > Compartment[kind=operations],
+[appliedStereotypes~="ArrowheadDSL::SD"] > Compartment[type=StereotypeCompartment]{
+	visible: true;
+	showTitle: true;
+}
 
 Class[appliedStereotypes~="ArrowheadDSL::System_Implementation"]{
 	fillColor: #ff8000;
