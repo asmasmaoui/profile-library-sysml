@@ -26,7 +26,7 @@ import java.util.List;
 import java.util.Map;
 import java.io.File;
 
-import org.eclipse.core.resources.IContainer;
+import org.eclipse.core.commands.ExecutionException;
 import org.eclipse.core.resources.IFile;
 import org.eclipse.core.resources.IProject;
 import org.eclipse.core.resources.IProjectDescription;
@@ -51,9 +51,7 @@ import org.eclipse.papyrus.infra.core.services.ExtensionServicesRegistry;
 import org.eclipse.papyrus.infra.core.services.ServiceException;
 import org.eclipse.papyrus.infra.core.services.ServicesRegistry;
 import org.eclipse.papyrus.uml.diagram.wizards.Activator;
-import org.eclipse.papyrus.uml.diagram.wizards.messages.Messages;
 import org.eclipse.papyrus.uml.diagram.wizards.pages.NewModelWizardData;
-import org.eclipse.papyrus.uml.diagram.wizards.pages.PapyrusProjectCreationPage;
 import org.eclipse.papyrus.uml.diagram.wizards.pages.SelectArchitectureContextPage;
 import org.eclipse.papyrus.uml.diagram.wizards.pages.SelectRepresentationKindPage;
 import org.eclipse.papyrus.uml.diagram.wizards.pages.SelectStorageProviderPage;
@@ -89,8 +87,6 @@ public class ImportAFPVNWizard extends CreateModelWizard implements INewWizard {
 
 	/** The Constant NEW_MODEL_SETTINGS. */
 	public static final String NEW_MODEL_SETTINGS = "NewModelWizard"; //$NON-NLS-1$
-	
-	private PapyrusProjectCreationPage myProjectPage;
 
 	private SelectStorageProviderPage selectStorageProviderPage;
 
@@ -121,15 +117,13 @@ public class ImportAFPVNWizard extends CreateModelWizard implements INewWizard {
 
 	protected IWizardPage newProjectPage;
 
-	private final NewModelWizardData wizardData = new NewModelWizardData();
+	//private final NewModelWizardData wizardData = new NewModelWizardData();
 
-	protected static final String EXTENSION_POINT_ID = "org.eclipse.papyrus.uml.diagram.wizards.templates"; //$NON-NLS-1$
+	//protected static final String EXTENSION_POINT_ID = "org.eclipse.papyrus.uml.diagram.wizards.templates"; //$NON-NLS-1$
 
 	private ImportFilePage importPage;
 
 	private IProject project;
-	
-	private static String fileName;
 
 	private IStructuredSelection selection;
 
@@ -164,6 +158,7 @@ public class ImportAFPVNWizard extends CreateModelWizard implements INewWizard {
 				if (page != null) {
 					pageList.add(page);
 					providersByPage.put(page, next);
+					page.setDescription("Choise the project for Sysml2 transformation");
 					if (!page.equals(getSelectedStorageProvider().getArchitectureContextPage())) {
 						addPage(page);
 					}
@@ -175,9 +170,9 @@ public class ImportAFPVNWizard extends CreateModelWizard implements INewWizard {
 
 		
 
-		projectPath = project.getFullPath();	
+		projectPath = project.getFullPath();
+		
 		this.importPage = new ImportFilePage(workbench, selection, allowedFiles, projectPath);
-		//fileName = projectPath.lastSegment();
 		addPage(this.importPage);
 	}
 
@@ -209,7 +204,10 @@ public class ImportAFPVNWizard extends CreateModelWizard implements INewWizard {
 
 		this.selection = selection;
 		initStorageProvider(workbench, selection);
-		setWindowTitle("New Transformation Project");
+		setWindowTitle("New Import for transformation"); 
+		
+		
+
 		IDialogSettings workbenchSettings = Activator.getDefault().getDialogSettings();
 		IDialogSettings section = workbenchSettings.getSection(NEW_MODEL_SETTINGS);
 		if (section == null) {
@@ -224,7 +222,6 @@ public class ImportAFPVNWizard extends CreateModelWizard implements INewWizard {
 		}
 
 		selectRepresentationKindPage = createSelectRepresentationKindPage();
-		
 
 		try {
 
@@ -254,8 +251,19 @@ public class ImportAFPVNWizard extends CreateModelWizard implements INewWizard {
 	 */
 	@Override
 	public boolean performFinish() {
-		saveInProject( project);
 		
+				//importPage.finish();// import the UML file 
+				// execute the transformation
+				ImportSysml2Handler importer = new ImportSysml2Handler();
+				try {
+					((ImportSysml2Handler) importer).execute(project);
+				} catch (ExecutionException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				String fileName = "Transformation";
+				
+				saveInProject( project,fileName);
 		return true;
 
 	}
@@ -325,6 +333,7 @@ public class ImportAFPVNWizard extends CreateModelWizard implements INewWizard {
 		return getSelectedStorageProvider().createEditorInput(uri);
 	}
 
+	@SuppressWarnings("deprecation")
 	protected String getPreferredEditorID(IEditorInput input) throws PartInitException {
 		IEditorDescriptor desc;
 
@@ -447,7 +456,7 @@ public class ImportAFPVNWizard extends CreateModelWizard implements INewWizard {
 	public IWizardPage getNextPage(IWizardPage page) {
 		final List<IWizardPage> allPages = Arrays.asList(getPages());
 		IWizardPage result = null;
-	
+
 		INewModelStorageProvider provider = providersByPage.get(page);
 		if (provider != null) {
 			// it's contributed by a provider. Get the next in the list
@@ -575,9 +584,9 @@ public class ImportAFPVNWizard extends CreateModelWizard implements INewWizard {
 	}
 	/// save file into project//
 	
-	protected static void saveInProject(IProject project) {
+	protected static void saveInProject(IProject project,String fileName) {
 		if( project!=null) {
-			IFile file = project.getFile(fileName);
+			IFile file = project.getFile(fileName+".sysml");
 			File myfile = new File(file.getLocationURI());
 
 			generateFile(myfile, project);
@@ -606,16 +615,5 @@ public class ImportAFPVNWizard extends CreateModelWizard implements INewWizard {
 		} catch (CoreException e) {
 			e.printStackTrace();
 		}
-	}
-	public IFile findFileRecursively(IResource container, String extention) throws CoreException {
-		if (container != null && container instanceof IContainer) {
-
-			for (IResource r : ((IContainer) container).members()) {
-				if (r instanceof IFile && r.getFileExtension().equals("uml")) {
-					return (IFile) r;
-				}
-			}
-		}
-		return null;
 	}
 }

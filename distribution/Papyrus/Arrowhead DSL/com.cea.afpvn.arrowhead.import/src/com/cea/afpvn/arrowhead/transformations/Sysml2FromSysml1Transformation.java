@@ -13,6 +13,7 @@
  *  Asma Smaoui (CEA LIST) asma.smaoui@cea.fr - Initial API and implementation
  *
  *****************************************************************************/
+
 package com.cea.afpvn.arrowhead.transformations;
 
 import java.util.Collection;
@@ -40,12 +41,10 @@ import org.eclipse.papyrus.uml.m2m.qvto.common.transformation.MigrationResourceS
 import org.eclipse.uml2.uml.resource.UMLResource;
 import org.eclipse.uml2.uml.util.UMLUtil;
 
-import com.cea.afpvn.arrowhead.handler.Activator;
+import com.cea.afpvn.arrowhead.wizards.Activator;
 
-import io.shell.admin.aas._2._0._0Package;
-import io.shell.admin.aas._2._0.util._0ResourceFactoryImpl;
 
-public class UMLFromAASXTransformation extends AbstractImportTransformation {
+public class Sysml2FromSysml1Transformation extends AbstractImportTransformation {
 
 	protected URI umlResourceURI;
 	protected Resource umlResource;
@@ -59,7 +58,7 @@ public class UMLFromAASXTransformation extends AbstractImportTransformation {
 	 * @param config         The thread config.
 	 * @param analysisHelper The analyses helper.
 	 */
-	public UMLFromAASXTransformation(final URI sourceURI, final ThreadConfig config,
+	public Sysml2FromSysml1Transformation(final URI sourceURI, final ThreadConfig config,
 			final IDependencyAnalysisHelper analysisHelper) {
 		super(sourceURI, config, analysisHelper);
 		DEBUG = true;
@@ -70,11 +69,11 @@ public class UMLFromAASXTransformation extends AbstractImportTransformation {
 	 *
 	 * @param sourceURI The source URI.
 	 */
-	public UMLFromAASXTransformation(final URI sourceURI) {
+	public Sysml2FromSysml1Transformation(final URI sourceURI) {
 		super(sourceURI);
 	}
 
-	public UMLFromAASXTransformation(final URI sourceURI, final ThreadConfig config,
+	public Sysml2FromSysml1Transformation(final URI sourceURI, final ThreadConfig config,
 			final IDependencyAnalysisHelper analysisHelper, IResource project) {
 		super(sourceURI, config, analysisHelper);
 		this.project = project;
@@ -150,7 +149,7 @@ public class UMLFromAASXTransformation extends AbstractImportTransformation {
 
 			// Run the transformations here and get the output file (uml file)
 
-			AAS2UMLSwitch aas2uml = new AAS2UMLSwitch();
+			SysmtoSysml2Switch aas2uml = new SysmtoSysml2Switch();
 
 			umlResource = aas2uml.doTransform(aasxResource, umlResource);
 
@@ -255,33 +254,26 @@ public class UMLFromAASXTransformation extends AbstractImportTransformation {
 		resourceSet.getLoadOptions().put(XMLResource.OPTION_LAX_FEATURE_PROCESSING, Boolean.TRUE);
 		resourceSet.getLoadOptions().put(XMLResource.OPTION_RECORD_UNKNOWN_FEATURE, Boolean.TRUE);
 		resourceSet.getLoadOptions().put(XMLResource.OPTION_USE_PACKAGE_NS_URI_AS_LOCATION, Boolean.TRUE);
-		// load AASX Register Factory and AASX resource to be loaded by an EMF
-		// resourceSet
-		resourceSet.getResourceFactoryRegistry().getExtensionToFactoryMap().put("xml", new _0ResourceFactoryImpl());
-		resourceSet.getPackageRegistry().put(_0Package.eNS_URI, _0Package.eINSTANCE);
-
 		monitor.subTask("Loading source model " + getModelName());
-
-		try {
+	}
+		/*try {
 
 			aasxResource = resourceSet.getResource(sourceURI, true);
 			if (aasxResource != null) {
-				configureResource((XMLResource) aasxResource);
-				IFile umlFile = findFileRecursively(project, "uml");
+				IFile umlFile = findFileRecursively(project, "sysml");
 				umlResourceURI = URI.createPlatformResourceURI(umlFile.getFullPath().toString(), true);
 				umlResource = resourceSet.getResource(umlResourceURI, true);
-				configureResource((XMLResource) umlResource);
 			}
 		} catch (Exception ex) {
 			Activator.log.error("An error occurred while loading " + getModelName(), ex);
 		}
-	}
+	}*/ // IK 18/06/24
 
 	public IFile findFileRecursively(IResource container, String extention) throws CoreException {
 		if (container != null && container instanceof IContainer) {
 
 			for (IResource r : ((IContainer) container).members()) {
-				if (r instanceof IFile && r.getFileExtension().equals("uml")) {
+				if (r instanceof IFile && r.getFileExtension().equals("sysml")) {
 					return (IFile) r;
 				}
 			}

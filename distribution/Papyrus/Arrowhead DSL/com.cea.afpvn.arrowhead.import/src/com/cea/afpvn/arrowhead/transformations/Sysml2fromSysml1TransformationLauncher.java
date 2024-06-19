@@ -40,7 +40,7 @@ import org.eclipse.ui.statushandlers.StatusManager;
 /**
  * The launcher of the SysML migration.
  */
-public class UMLfromAASXTransformationLauncher extends AbstractImportTransformationLauncher {
+public class Sysml2fromSysml1TransformationLauncher extends AbstractImportTransformationLauncher {
 
 
 	public IResource project =null;
@@ -53,7 +53,7 @@ public class UMLfromAASXTransformationLauncher extends AbstractImportTransformat
 	 *            The base control.
 	 * @param project 
 	 */
-	public UMLfromAASXTransformationLauncher(final ThreadConfig config, final Control baseControl, IResource project) {
+	public Sysml2fromSysml1TransformationLauncher(final ThreadConfig config, final Control baseControl, IResource project) {
 		super(null, baseControl);
 		this.project=project;
 		
@@ -77,7 +77,7 @@ public class UMLfromAASXTransformationLauncher extends AbstractImportTransformat
 	 */
 	@Override
 	protected IImportTransformation createTransformation(final URI transformationURI, final ThreadConfig config, final IDependencyAnalysisHelper analysisHelper) {
-		return new UMLFromAASXTransformation(transformationURI, null, analysisHelper,project);
+		return new Sysml2FromSysml1Transformation(transformationURI, null, analysisHelper,project);
 	}
 	
 	/**

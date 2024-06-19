@@ -32,8 +32,6 @@ public class Messages extends NLS {
 	public static String SelectTheFileToImport ; 
 	
 	public static String RELS_FILE_EXTENSION ;
-	
-	
 
 	
 	static {

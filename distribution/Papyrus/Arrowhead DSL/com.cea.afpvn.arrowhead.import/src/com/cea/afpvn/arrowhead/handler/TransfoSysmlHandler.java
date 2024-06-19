@@ -13,7 +13,7 @@
  *  Asma Smaoui (CEA LIST) asma.smaoui@cea.fr - Initial API and implementation
  *
  *****************************************************************************/
-package com.cea.afpvn.arrowhead.wizards;
+package com.cea.afpvn.arrowhead.handler;
 
 import java.io.File;
 import java.io.IOException;
@@ -45,12 +45,14 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
+import com.cea.afpvn.arrowhead.transformations.Sysml2fromSysml1TransformationLauncher;
+import com.cea.afpvn.arrowhead.wizards.Messages;
 import com.google.common.collect.Sets;
 
 /**
  * The handler to run AASX import action when a file is selected.
  */
-public class ImportAASXHandler {
+public class TransfoSysmlHandler {
 
 	/**
 	 * the extensions of the files to import
@@ -62,7 +64,7 @@ public class ImportAASXHandler {
 	/**
 	 * Constructor.
 	 */
-	public ImportAASXHandler() {
+	public TransfoSysmlHandler() {
 
 		extensionOfFilesToImport = Sets.newHashSet(Messages.RELS_FILE_EXTENSION);
 	}
@@ -71,7 +73,7 @@ public class ImportAASXHandler {
 
 		Control baseControl = PlatformUI.getWorkbench().getActiveWorkbenchWindow().getShell();
 
-		//runTransformation(null, baseControl, filesToImport);
+		runTransformation(null, baseControl, filesToImport);
 
 	}
 
@@ -157,13 +159,13 @@ public class ImportAASXHandler {
 				doc.getDocumentElement().normalize();
 
 				System.out.println("Root element :" + doc.getDocumentElement().getNodeName());
-				NodeList relationships = doc.getElementsByTagName("Relationship"); // IK???
+				NodeList relationships = doc.getElementsByTagName("Relationship");
 				for (int temp = 0; temp < relationships.getLength(); temp++) {
 					Node nNode = relationships.item(temp);
 					if (nNode.getNodeType() == Node.ELEMENT_NODE) {
 						Element eElement = (Element) nNode;
 						if (eElement.getAttribute("Type")
-								.equals("http://www.admin-shell.io/aasx/relationships/aas-spec")) { /// IK ???
+								.equals("http://www.admin-shell.io/aasx/relationships/aas-spec")) {
 							aasx_path = eElement.getAttribute("Target");
 							IWorkspaceRoot myWorkspaceRoot = ResourcesPlugin.getWorkspace().getRoot();
 							IProject myProject = myWorkspaceRoot.getProject(project.getName());
@@ -218,7 +220,7 @@ public class ImportAASXHandler {
 							IResource[] iResources3 = container3.members();
 							for (IResource iR3 : iResources3) {
 								if (iR3 instanceof IFile) {
-									if ("rels".equalsIgnoreCase(iR3.getFileExtension()) // IK ????
+									if ("rels".equalsIgnoreCase(iR3.getFileExtension())
 											&& iR3.getName().equals(file_name))
 										returnedfile = (IFile) iR3;
 								}
@@ -238,24 +240,23 @@ public class ImportAASXHandler {
 		return returnedfile;
 	}
 
-	/*
-	 * protected void runTransformation(final ThreadConfig config, final Control
-	 * baseControl, final Set<IFile> filesToImport) { List<URI> urisToImport = new
-	 * LinkedList<URI>();
-	 * 
-	 * for (IFile selectedFile : filesToImport) {
-	 * 
-	 * URI uri =
-	 * URI.createPlatformResourceURI(selectedFile.getFullPath().toString(), true);
-	 * 
-	 * urisToImport.add(uri); } runTransformation(config, baseControl, urisToImport,
-	 * project); }
-	 */
+	protected void runTransformation(final ThreadConfig config, final Control baseControl,
+			final Set<IFile> filesToImport) {
+		List<URI> urisToImport = new LinkedList<URI>();
 
-	//protected void runTransformation(final ThreadConfig config, final Control baseControl, final List<URI> urisToImport,
-	//		IResource project) {
-	//	UMLfromAASXTransformationLauncher launcher = new UMLfromAASXTransformationLauncher(config, baseControl,
-	//			project);
-	//	launcher.run(urisToImport);
-	//}
+		for (IFile selectedFile : filesToImport) {
+
+			URI uri = URI.createPlatformResourceURI(selectedFile.getFullPath().toString(), true);
+
+			urisToImport.add(uri);
+		}
+		runTransformation(config, baseControl, urisToImport, project);
+	}
+
+	protected void runTransformation(final ThreadConfig config, final Control baseControl, final List<URI> urisToImport,
+			IResource project) {
+		Sysml2fromSysml1TransformationLauncher launcher = new Sysml2fromSysml1TransformationLauncher(config, baseControl,
+				project);
+		launcher.run(urisToImport);
+	}
 }
