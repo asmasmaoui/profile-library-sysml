@@ -41,7 +41,7 @@ public interface SysD extends Block {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Microsystem Name</em>' attribute list.
 	 * @see ArrowheadDSL.ArrowheadDSLPackage#getSysD_MicrosystemName()
-	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
+	 * @model default="Inherit from generalization SysD" dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
 	EList<String> getMicrosystemName();

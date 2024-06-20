@@ -26,9 +26,7 @@ public enum ArrowheadCertificateKind implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	DEVICE(0, "Device", "Device"),
-
-	/**
+	DEVICE(0, "Device", "Device"), /**
 	 * The '<em><b>Application System</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

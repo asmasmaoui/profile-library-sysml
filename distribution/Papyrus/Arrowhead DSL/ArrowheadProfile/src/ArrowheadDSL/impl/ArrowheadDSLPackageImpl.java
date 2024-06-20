@@ -2152,13 +2152,13 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(sysDEClass, SysD.class, "SysD", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getSysD_MicrosystemName(), theTypesPackage.getString(), "MicrosystemName", null, 0, -1, SysD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getSysD_MicrosystemName(), theTypesPackage.getString(), "MicrosystemName", "Inherit from generalization SysD", 0, -1, SysD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getSysD_FunctionalProperties(), theTypesPackage.getUnlimitedNatural(), "FunctionalProperties", null, 1, -1, SysD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getSysD_SystemDatabase(), this.getSystemDatabaseKind(), "SystemDatabase", null, 1, 1, SysD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getSysD_MicrosystemBehaviour(), this.getBusinessPolicyKind(), "MicrosystemBehaviour", null, 1, -1, SysD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(sdEClass, ArrowheadDSL.SD.class, "SD", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getSD_MicroserviceName(), theTypesPackage.getString(), "MicroserviceName", null, 1, 1, ArrowheadDSL.SD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getSD_MicroserviceName(), theTypesPackage.getString(), "MicroserviceName", "Inherit from generalization SD", 1, 1, ArrowheadDSL.SD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEOperation(getSD__Operation(), null, "Operation", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
@@ -2249,7 +2249,7 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 		initEReference(getIDD_Implementation_Systemimplementation(), this.getSystem_Implementation(), this.getSystem_Implementation_Idd_implementation(), "systemimplementation", null, 0, -1, IDD_Implementation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(iddEClass, ArrowheadDSL.IDD.class, "IDD", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getIDD_Port(), theTypesPackage.getInteger(), "Port", null, 1, 1, ArrowheadDSL.IDD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getIDD_Port(), theTypesPackage.getInteger(), "Port", "0", 1, 1, ArrowheadDSL.IDD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getIDD_Protocol(), this.getApplicationProtocolKind(), "Protocol", null, 1, 1, ArrowheadDSL.IDD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getIDD_Encoding(), this.getEncodingKind(), "Encoding", null, 1, 1, ArrowheadDSL.IDD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getIDD_Security(), this.getArrowheadSecurityKind(), "Security", null, 1, 1, ArrowheadDSL.IDD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -2365,6 +2365,7 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 		addEEnumLiteral(cryptoAlgorithmKindEEnum, CryptoAlgorithmKind.OTHER);
 
 		initEEnum(datamodelStandardKindEEnum, DatamodelStandardKind.class, "DatamodelStandardKind");
+		addEEnumLiteral(datamodelStandardKindEEnum, DatamodelStandardKind.OTHER_DATAMODEL_STANDARD);
 		addEEnumLiteral(datamodelStandardKindEEnum, DatamodelStandardKind.ISO_10303);
 		addEEnumLiteral(datamodelStandardKindEEnum, DatamodelStandardKind.ISO_15926);
 		addEEnumLiteral(datamodelStandardKindEEnum, DatamodelStandardKind.SEN_ML);
@@ -2372,7 +2373,6 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 		addEEnumLiteral(datamodelStandardKindEEnum, DatamodelStandardKind.IEC_81346);
 		addEEnumLiteral(datamodelStandardKindEEnum, DatamodelStandardKind.ISO_15739_IFC);
 		addEEnumLiteral(datamodelStandardKindEEnum, DatamodelStandardKind.IEC_61850);
-		addEEnumLiteral(datamodelStandardKindEEnum, DatamodelStandardKind.OTHER_DATAMODEL_STANDARD);
 
 		initEEnum(certificateKindEEnum, CertificateKind.class, "CertificateKind");
 		addEEnumLiteral(certificateKindEEnum, CertificateKind.X509_ARROWHEAD);

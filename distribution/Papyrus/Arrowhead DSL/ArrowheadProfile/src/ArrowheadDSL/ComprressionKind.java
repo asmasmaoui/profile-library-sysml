@@ -26,9 +26,7 @@ public enum ComprressionKind implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	EXI(0, "EXI", "EXI"),
-
-	/**
+	EXI(0, "EXI", "EXI"), /**
 	 * The '<em><b>None</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

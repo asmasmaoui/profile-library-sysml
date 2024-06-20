@@ -26,9 +26,7 @@ public enum EncodingKind implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	XML(0, "XML", "XML"),
-
-	/**
+	XML(0, "XML", "XML"), /**
 	 * The '<em><b>JSON</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

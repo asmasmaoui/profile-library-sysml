@@ -112,6 +112,7 @@
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//CryptoAlgorithmKind/Other"/>
     </genEnums>
     <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="ArrowheadDSL.ecore#//DatamodelStandardKind">
+      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//DatamodelStandardKind/OtherDatamodelStandard"/>
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//DatamodelStandardKind/ISO_10303"/>
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//DatamodelStandardKind/ISO_15926"/>
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//DatamodelStandardKind/SenML"/>
@@ -119,7 +120,6 @@
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//DatamodelStandardKind/IEC_81346"/>
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//DatamodelStandardKind/ISO_15739_IFC"/>
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//DatamodelStandardKind/IEC_61850"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//DatamodelStandardKind/OtherDatamodelStandard"/>
     </genEnums>
     <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="ArrowheadDSL.ecore#//CertificateKind">
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//CertificateKind/x509_Arrowhead"/>

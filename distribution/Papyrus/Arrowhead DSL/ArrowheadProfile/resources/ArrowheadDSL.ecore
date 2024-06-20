@@ -7,7 +7,8 @@
       <details key="documentation" value="Microservies SD to be added to a microsystem (SysD) as a full port."/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="MicrosystemName" ordered="false"
-        upperBound="-1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+        upperBound="-1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"
+        defaultValueLiteral="Inherit from generalization SysD"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="FunctionalProperties" ordered="false"
         unique="false" lowerBound="1" upperBound="-1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//UnlimitedNatural"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="SystemDatabase" ordered="false"
@@ -31,7 +32,8 @@
     </eAnnotations>
     <eOperations name="Operation" ordered="false" lowerBound="1"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="MicroserviceName" ordered="false"
-        unique="false" lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+        unique="false" lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"
+        defaultValueLiteral="Inherit from generalization SD"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ArrowheadDSLRequirement" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//requirements/Requirement">
     <eStructuralFeatures xsi:type="ecore:EReference" name="arrowheadusecase" ordered="false"
@@ -230,7 +232,8 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="IDD" eSuperTypes="#//SD">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Port" ordered="false" lowerBound="1"
-        eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"/>
+        eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"
+        defaultValueLiteral="0"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Protocol" ordered="false"
         unique="false" lowerBound="1" eType="#//ApplicationProtocolKind"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Encoding" ordered="false"
@@ -284,14 +287,14 @@
     <eLiterals name="Other" value="5"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="DatamodelStandardKind">
-    <eLiterals name="ISO_10303"/>
-    <eLiterals name="ISO_15926" value="1"/>
-    <eLiterals name="SenML" value="2"/>
-    <eLiterals name="ISO_12006" value="3"/>
-    <eLiterals name="IEC_81346" value="4"/>
-    <eLiterals name="ISO_15739_IFC" value="5"/>
-    <eLiterals name="IEC_61850" value="6"/>
-    <eLiterals name="OtherDatamodelStandard" value="7"/>
+    <eLiterals name="OtherDatamodelStandard"/>
+    <eLiterals name="ISO_10303" value="1"/>
+    <eLiterals name="ISO_15926" value="2"/>
+    <eLiterals name="SenML" value="3"/>
+    <eLiterals name="ISO_12006" value="4"/>
+    <eLiterals name="IEC_81346" value="5"/>
+    <eLiterals name="ISO_15739_IFC" value="6"/>
+    <eLiterals name="IEC_61850" value="7"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="CertificateKind">
     <eLiterals name="x509_Arrowhead"/>

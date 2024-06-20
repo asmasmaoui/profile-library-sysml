@@ -34,7 +34,7 @@ public class SDImpl extends InterfaceBlockImpl implements SD {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String MICROSERVICE_NAME_EDEFAULT = null;
+	protected static final String MICROSERVICE_NAME_EDEFAULT = "Inherit from generalization SD";
 
 	/**
 	 * The cached value of the '{@link #getMicroserviceName() <em>Microservice Name</em>}' attribute.

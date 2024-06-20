@@ -206,7 +206,7 @@ public class IDDImpl extends SDImpl implements IDD {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final DatamodelStandardKind DATAMODEL_EDEFAULT = DatamodelStandardKind.ISO_10303;
+	protected static final DatamodelStandardKind DATAMODEL_EDEFAULT = DatamodelStandardKind.OTHER_DATAMODEL_STANDARD;
 
 	/**
 	 * The cached value of the '{@link #getDatamodel() <em>Datamodel</em>}' attribute.

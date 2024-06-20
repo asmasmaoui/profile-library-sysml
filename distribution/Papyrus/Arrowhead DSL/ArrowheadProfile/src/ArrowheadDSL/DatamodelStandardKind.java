@@ -19,76 +19,6 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum DatamodelStandardKind implements Enumerator {
 	/**
-	 * The '<em><b>ISO 10303</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #ISO_10303_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	ISO_10303(0, "ISO_10303", "ISO_10303"),
-
-	/**
-	 * The '<em><b>ISO 15926</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #ISO_15926_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	ISO_15926(1, "ISO_15926", "ISO_15926"),
-
-	/**
-	 * The '<em><b>Sen ML</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #SEN_ML_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	SEN_ML(2, "SenML", "SenML"),
-
-	/**
-	 * The '<em><b>ISO 12006</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #ISO_12006_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	ISO_12006(3, "ISO_12006", "ISO_12006"),
-
-	/**
-	 * The '<em><b>IEC 81346</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #IEC_81346_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	IEC_81346(4, "IEC_81346", "IEC_81346"),
-
-	/**
-	 * The '<em><b>ISO 15739 IFC</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #ISO_15739_IFC_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	ISO_15739_IFC(5, "ISO_15739_IFC", "ISO_15739_IFC"),
-
-	/**
-	 * The '<em><b>IEC 61850</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #IEC_61850_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	IEC_61850(6, "IEC_61850", "IEC_61850"),
-
-	/**
 	 * The '<em><b>Other Datamodel Standard</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -96,84 +26,63 @@ public enum DatamodelStandardKind implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	OTHER_DATAMODEL_STANDARD(7, "OtherDatamodelStandard", "OtherDatamodelStandard");
-
-	/**
-	 * The '<em><b>ISO 10303</b></em>' literal value.
+	OTHER_DATAMODEL_STANDARD(0, "OtherDatamodelStandard", "OtherDatamodelStandard"), /**
+	 * The '<em><b>ISO 10303</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #ISO_10303
-	 * @model
+	 * @see #ISO_10303_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ISO_10303_VALUE = 0;
-
-	/**
-	 * The '<em><b>ISO 15926</b></em>' literal value.
+	ISO_10303(1, "ISO_10303", "ISO_10303"), /**
+	 * The '<em><b>ISO 15926</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #ISO_15926
-	 * @model
+	 * @see #ISO_15926_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ISO_15926_VALUE = 1;
-
-	/**
-	 * The '<em><b>Sen ML</b></em>' literal value.
+	ISO_15926(2, "ISO_15926", "ISO_15926"), /**
+	 * The '<em><b>Sen ML</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #SEN_ML
-	 * @model name="SenML"
+	 * @see #SEN_ML_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	public static final int SEN_ML_VALUE = 2;
-
-	/**
-	 * The '<em><b>ISO 12006</b></em>' literal value.
+	SEN_ML(3, "SenML", "SenML"), /**
+	 * The '<em><b>ISO 12006</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #ISO_12006
-	 * @model
+	 * @see #ISO_12006_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ISO_12006_VALUE = 3;
-
-	/**
-	 * The '<em><b>IEC 81346</b></em>' literal value.
+	ISO_12006(4, "ISO_12006", "ISO_12006"), /**
+	 * The '<em><b>IEC 81346</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #IEC_81346
-	 * @model
+	 * @see #IEC_81346_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	public static final int IEC_81346_VALUE = 4;
-
-	/**
-	 * The '<em><b>ISO 15739 IFC</b></em>' literal value.
+	IEC_81346(5, "IEC_81346", "IEC_81346"), /**
+	 * The '<em><b>ISO 15739 IFC</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #ISO_15739_IFC
-	 * @model
+	 * @see #ISO_15739_IFC_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ISO_15739_IFC_VALUE = 5;
-
-	/**
-	 * The '<em><b>IEC 61850</b></em>' literal value.
+	ISO_15739_IFC(6, "ISO_15739_IFC", "ISO_15739_IFC"), /**
+	 * The '<em><b>IEC 61850</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #IEC_61850
-	 * @model
+	 * @see #IEC_61850_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	public static final int IEC_61850_VALUE = 6;
+	IEC_61850(7, "IEC_61850", "IEC_61850");
 
 	/**
 	 * The '<em><b>Other Datamodel Standard</b></em>' literal value.
@@ -184,7 +93,84 @@ public enum DatamodelStandardKind implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int OTHER_DATAMODEL_STANDARD_VALUE = 7;
+	public static final int OTHER_DATAMODEL_STANDARD_VALUE = 0;
+
+	/**
+	 * The '<em><b>ISO 10303</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ISO_10303
+	 * @model
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ISO_10303_VALUE = 1;
+
+	/**
+	 * The '<em><b>ISO 15926</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ISO_15926
+	 * @model
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ISO_15926_VALUE = 2;
+
+	/**
+	 * The '<em><b>Sen ML</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #SEN_ML
+	 * @model name="SenML"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int SEN_ML_VALUE = 3;
+
+	/**
+	 * The '<em><b>ISO 12006</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ISO_12006
+	 * @model
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ISO_12006_VALUE = 4;
+
+	/**
+	 * The '<em><b>IEC 81346</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #IEC_81346
+	 * @model
+	 * @generated
+	 * @ordered
+	 */
+	public static final int IEC_81346_VALUE = 5;
+
+	/**
+	 * The '<em><b>ISO 15739 IFC</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ISO_15739_IFC
+	 * @model
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ISO_15739_IFC_VALUE = 6;
+
+	/**
+	 * The '<em><b>IEC 61850</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #IEC_61850
+	 * @model
+	 * @generated
+	 * @ordered
+	 */
+	public static final int IEC_61850_VALUE = 7;
 
 	/**
 	 * An array of all the '<em><b>Datamodel Standard Kind</b></em>' enumerators.
@@ -194,6 +180,7 @@ public enum DatamodelStandardKind implements Enumerator {
 	 */
 	private static final DatamodelStandardKind[] VALUES_ARRAY =
 		new DatamodelStandardKind[] {
+			OTHER_DATAMODEL_STANDARD,
 			ISO_10303,
 			ISO_15926,
 			SEN_ML,
@@ -201,7 +188,6 @@ public enum DatamodelStandardKind implements Enumerator {
 			IEC_81346,
 			ISO_15739_IFC,
 			IEC_61850,
-			OTHER_DATAMODEL_STANDARD,
 		};
 
 	/**
@@ -258,6 +244,7 @@ public enum DatamodelStandardKind implements Enumerator {
 	 */
 	public static DatamodelStandardKind get(int value) {
 		switch (value) {
+			case OTHER_DATAMODEL_STANDARD_VALUE: return OTHER_DATAMODEL_STANDARD;
 			case ISO_10303_VALUE: return ISO_10303;
 			case ISO_15926_VALUE: return ISO_15926;
 			case SEN_ML_VALUE: return SEN_ML;
@@ -265,7 +252,6 @@ public enum DatamodelStandardKind implements Enumerator {
 			case IEC_81346_VALUE: return IEC_81346;
 			case ISO_15739_IFC_VALUE: return ISO_15739_IFC;
 			case IEC_61850_VALUE: return IEC_61850;
-			case OTHER_DATAMODEL_STANDARD_VALUE: return OTHER_DATAMODEL_STANDARD;
 		}
 		return null;
 	}
