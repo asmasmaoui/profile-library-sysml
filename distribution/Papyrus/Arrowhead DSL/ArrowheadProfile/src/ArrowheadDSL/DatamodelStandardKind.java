@@ -19,14 +19,6 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum DatamodelStandardKind implements Enumerator {
 	/**
-	 * The '<em><b>Other Datamodel Standard</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #OTHER_DATAMODEL_STANDARD_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	OTHER_DATAMODEL_STANDARD(0, "OtherDatamodelStandard", "OtherDatamodelStandard"), /**
 	 * The '<em><b>ISO 10303</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -34,7 +26,15 @@ public enum DatamodelStandardKind implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ISO_10303(1, "ISO_10303", "ISO_10303"), /**
+	ISO_10303(0, "ISO_10303", "ISO_10303"), /**
+	 * The '<em><b>Other Datamodel Standard</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #OTHER_DATAMODEL_STANDARD_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	OTHER_DATAMODEL_STANDARD(1, "OtherDatamodelStandard", "OtherDatamodelStandard"), /**
 	 * The '<em><b>ISO 15926</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -85,17 +85,6 @@ public enum DatamodelStandardKind implements Enumerator {
 	IEC_61850(7, "IEC_61850", "IEC_61850");
 
 	/**
-	 * The '<em><b>Other Datamodel Standard</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #OTHER_DATAMODEL_STANDARD
-	 * @model name="OtherDatamodelStandard"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int OTHER_DATAMODEL_STANDARD_VALUE = 0;
-
-	/**
 	 * The '<em><b>ISO 10303</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -104,7 +93,18 @@ public enum DatamodelStandardKind implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ISO_10303_VALUE = 1;
+	public static final int ISO_10303_VALUE = 0;
+
+	/**
+	 * The '<em><b>Other Datamodel Standard</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #OTHER_DATAMODEL_STANDARD
+	 * @model name="OtherDatamodelStandard"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int OTHER_DATAMODEL_STANDARD_VALUE = 1;
 
 	/**
 	 * The '<em><b>ISO 15926</b></em>' literal value.
@@ -180,8 +180,8 @@ public enum DatamodelStandardKind implements Enumerator {
 	 */
 	private static final DatamodelStandardKind[] VALUES_ARRAY =
 		new DatamodelStandardKind[] {
-			OTHER_DATAMODEL_STANDARD,
 			ISO_10303,
+			OTHER_DATAMODEL_STANDARD,
 			ISO_15926,
 			SEN_ML,
 			ISO_12006,
@@ -244,8 +244,8 @@ public enum DatamodelStandardKind implements Enumerator {
 	 */
 	public static DatamodelStandardKind get(int value) {
 		switch (value) {
-			case OTHER_DATAMODEL_STANDARD_VALUE: return OTHER_DATAMODEL_STANDARD;
 			case ISO_10303_VALUE: return ISO_10303;
+			case OTHER_DATAMODEL_STANDARD_VALUE: return OTHER_DATAMODEL_STANDARD;
 			case ISO_15926_VALUE: return ISO_15926;
 			case SEN_ML_VALUE: return SEN_ML;
 			case ISO_12006_VALUE: return ISO_12006;

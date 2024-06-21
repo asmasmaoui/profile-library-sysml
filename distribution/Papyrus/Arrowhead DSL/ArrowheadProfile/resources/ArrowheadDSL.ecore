@@ -145,8 +145,8 @@
     <eLiterals name="ROS" value="4"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="ArrowheadCertificateKind">
-    <eLiterals name="Device"/>
-    <eLiterals name="ApplicationSystem" value="1"/>
+    <eLiterals name="ApplicationSystem"/>
+    <eLiterals name="Device" value="1"/>
     <eLiterals name="CoreSystem" value="2"/>
     <eLiterals name="Management" value="3"/>
     <eLiterals name="InterCloud" value="4"/>
@@ -259,8 +259,8 @@
     <eLiterals name="OtherApplicationProtocol" value="4"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="EncodingKind">
-    <eLiterals name="XML"/>
-    <eLiterals name="JSON" value="1"/>
+    <eLiterals name="JSON"/>
+    <eLiterals name="XML" value="1"/>
     <eLiterals name="CBOR" value="2"/>
     <eLiterals name="OtherEncoding" value="3"/>
   </eClassifiers>
@@ -270,8 +270,8 @@
     <eLiterals name="NOT_SECURE" value="2"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="ComprressionKind">
-    <eLiterals name="EXI"/>
-    <eLiterals name="None" value="1"/>
+    <eLiterals name="None"/>
+    <eLiterals name="EXI" value="1"/>
     <eLiterals name="OtherCompression" value="2"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="TokenKind">
@@ -287,8 +287,8 @@
     <eLiterals name="Other" value="5"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="DatamodelStandardKind">
-    <eLiterals name="OtherDatamodelStandard"/>
-    <eLiterals name="ISO_10303" value="1"/>
+    <eLiterals name="ISO_10303"/>
+    <eLiterals name="OtherDatamodelStandard" value="1"/>
     <eLiterals name="ISO_15926" value="2"/>
     <eLiterals name="SenML" value="3"/>
     <eLiterals name="ISO_12006" value="4"/>

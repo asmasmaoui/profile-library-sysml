@@ -19,14 +19,6 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum ArrowheadCertificateKind implements Enumerator {
 	/**
-	 * The '<em><b>Device</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #DEVICE_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	DEVICE(0, "Device", "Device"), /**
 	 * The '<em><b>Application System</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -34,7 +26,15 @@ public enum ArrowheadCertificateKind implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	APPLICATION_SYSTEM(1, "ApplicationSystem", "ApplicationSystem"),
+	APPLICATION_SYSTEM(0, "ApplicationSystem", "ApplicationSystem"), /**
+	 * The '<em><b>Device</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #DEVICE_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	DEVICE(1, "Device", "Device"),
 
 	/**
 	 * The '<em><b>Core System</b></em>' literal object.
@@ -77,17 +77,6 @@ public enum ArrowheadCertificateKind implements Enumerator {
 	OTHER(5, "Other", "Other");
 
 	/**
-	 * The '<em><b>Device</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #DEVICE
-	 * @model name="Device"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int DEVICE_VALUE = 0;
-
-	/**
 	 * The '<em><b>Application System</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -96,7 +85,18 @@ public enum ArrowheadCertificateKind implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int APPLICATION_SYSTEM_VALUE = 1;
+	public static final int APPLICATION_SYSTEM_VALUE = 0;
+
+	/**
+	 * The '<em><b>Device</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #DEVICE
+	 * @model name="Device"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int DEVICE_VALUE = 1;
 
 	/**
 	 * The '<em><b>Core System</b></em>' literal value.
@@ -150,8 +150,8 @@ public enum ArrowheadCertificateKind implements Enumerator {
 	 */
 	private static final ArrowheadCertificateKind[] VALUES_ARRAY =
 		new ArrowheadCertificateKind[] {
-			DEVICE,
 			APPLICATION_SYSTEM,
+			DEVICE,
 			CORE_SYSTEM,
 			MANAGEMENT,
 			INTER_CLOUD,
@@ -212,8 +212,8 @@ public enum ArrowheadCertificateKind implements Enumerator {
 	 */
 	public static ArrowheadCertificateKind get(int value) {
 		switch (value) {
-			case DEVICE_VALUE: return DEVICE;
 			case APPLICATION_SYSTEM_VALUE: return APPLICATION_SYSTEM;
+			case DEVICE_VALUE: return DEVICE;
 			case CORE_SYSTEM_VALUE: return CORE_SYSTEM;
 			case MANAGEMENT_VALUE: return MANAGEMENT;
 			case INTER_CLOUD_VALUE: return INTER_CLOUD;

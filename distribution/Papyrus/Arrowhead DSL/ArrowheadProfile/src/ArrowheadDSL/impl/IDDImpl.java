@@ -86,7 +86,7 @@ public class IDDImpl extends SDImpl implements IDD {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final EncodingKind ENCODING_EDEFAULT = EncodingKind.XML;
+	protected static final EncodingKind ENCODING_EDEFAULT = EncodingKind.JSON;
 
 	/**
 	 * The cached value of the '{@link #getEncoding() <em>Encoding</em>}' attribute.
@@ -126,7 +126,7 @@ public class IDDImpl extends SDImpl implements IDD {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final ComprressionKind COMPRESSION_EDEFAULT = ComprressionKind.EXI;
+	protected static final ComprressionKind COMPRESSION_EDEFAULT = ComprressionKind.NONE;
 
 	/**
 	 * The cached value of the '{@link #getCompression() <em>Compression</em>}' attribute.
@@ -146,7 +146,7 @@ public class IDDImpl extends SDImpl implements IDD {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final ArrowheadCertificateKind CERTIFICATE_LEVEL_EDEFAULT = ArrowheadCertificateKind.DEVICE;
+	protected static final ArrowheadCertificateKind CERTIFICATE_LEVEL_EDEFAULT = ArrowheadCertificateKind.APPLICATION_SYSTEM;
 
 	/**
 	 * The cached value of the '{@link #getCertificate_level() <em>Certificate level</em>}' attribute.
@@ -206,7 +206,7 @@ public class IDDImpl extends SDImpl implements IDD {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final DatamodelStandardKind DATAMODEL_EDEFAULT = DatamodelStandardKind.OTHER_DATAMODEL_STANDARD;
+	protected static final DatamodelStandardKind DATAMODEL_EDEFAULT = DatamodelStandardKind.ISO_10303;
 
 	/**
 	 * The cached value of the '{@link #getDatamodel() <em>Datamodel</em>}' attribute.

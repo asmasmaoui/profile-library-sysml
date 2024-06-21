@@ -381,7 +381,7 @@
       <ownedAttribute xmi:type="uml:Property" xmi:id="_tIg1wJSJEe6U99HogCXF3A" name="Token" type="_g-lzMLaOEe6et-4ox6TWyg" isUnique="false"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_tIjSAJSJEe6U99HogCXF3A" name="Crypto_algorithm" type="_g-g6sLaOEe6et-4ox6TWyg" isUnique="false"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_tIoKgJSJEe6U99HogCXF3A" name="Datamodel" type="_g-g6t7aOEe6et-4ox6TWyg" isUnique="false">
-        <defaultValue xmi:type="uml:LiteralString" xmi:id="_hMgOIC8FEe-AALyjOR-iJA"/>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_la83YC-8Ee-fpd63Izxx-g"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_7a8dcI6SEe6cjupWzwXjHg" name="SysDD">
@@ -402,8 +402,8 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-d3ZbaOEe6et-4ox6TWyg" name="OtherApplicationProtocol"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_g-fFgLaOEe6et-4ox6TWyg" name="ArrowheadCertificateKind">
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-fFgbaOEe6et-4ox6TWyg" name="Device"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-fFgraOEe6et-4ox6TWyg" name="ApplicationSystem"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-fFgbaOEe6et-4ox6TWyg" name="Device"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-fFg7aOEe6et-4ox6TWyg" name="CoreSystem"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-fFhLaOEe6et-4ox6TWyg" name="Management"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-fFhbaOEe6et-4ox6TWyg" name="InterCloud"/>
@@ -431,8 +431,8 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-gTpbaOEe6et-4ox6TWyg" name="OtherCoAPMethod"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_g-gTpraOEe6et-4ox6TWyg" name="ComprressionKind">
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-gTp7aOEe6et-4ox6TWyg" name="EXI"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-gTqLaOEe6et-4ox6TWyg" name="None"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-gTp7aOEe6et-4ox6TWyg" name="EXI"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-gTqbaOEe6et-4ox6TWyg" name="OtherCompression"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_g-g6sLaOEe6et-4ox6TWyg" name="CryptoAlgorithmKind">
@@ -444,8 +444,8 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-g6traOEe6et-4ox6TWyg" name="Other"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_g-g6t7aOEe6et-4ox6TWyg" name="DatamodelStandardKind">
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-g6v7aOEe6et-4ox6TWyg" name="OtherDatamodelStandard"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-g6uLaOEe6et-4ox6TWyg" name="ISO_10303"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-g6v7aOEe6et-4ox6TWyg" name="OtherDatamodelStandard"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-g6ubaOEe6et-4ox6TWyg" name="ISO_15926"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-g6uraOEe6et-4ox6TWyg" name="SenML"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-g6u7aOEe6et-4ox6TWyg" name="ISO_12006"/>
@@ -454,8 +454,8 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-g6vraOEe6et-4ox6TWyg" name="IEC_61850"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_g-hhwLaOEe6et-4ox6TWyg" name="EncodingKind">
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-hhwbaOEe6et-4ox6TWyg" name="XML"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-hhwraOEe6et-4ox6TWyg" name="JSON"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-hhwbaOEe6et-4ox6TWyg" name="XML"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-hhw7aOEe6et-4ox6TWyg" name="CBOR"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-hhxLaOEe6et-4ox6TWyg" name="OtherEncoding"/>
     </packagedElement>

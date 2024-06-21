@@ -19,14 +19,6 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum EncodingKind implements Enumerator {
 	/**
-	 * The '<em><b>XML</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #XML_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	XML(0, "XML", "XML"), /**
 	 * The '<em><b>JSON</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -34,7 +26,15 @@ public enum EncodingKind implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	JSON(1, "JSON", "JSON"),
+	JSON(0, "JSON", "JSON"), /**
+	 * The '<em><b>XML</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #XML_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	XML(1, "XML", "XML"),
 
 	/**
 	 * The '<em><b>CBOR</b></em>' literal object.
@@ -57,17 +57,6 @@ public enum EncodingKind implements Enumerator {
 	OTHER_ENCODING(3, "OtherEncoding", "OtherEncoding");
 
 	/**
-	 * The '<em><b>XML</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #XML
-	 * @model
-	 * @generated
-	 * @ordered
-	 */
-	public static final int XML_VALUE = 0;
-
-	/**
 	 * The '<em><b>JSON</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -76,7 +65,18 @@ public enum EncodingKind implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int JSON_VALUE = 1;
+	public static final int JSON_VALUE = 0;
+
+	/**
+	 * The '<em><b>XML</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #XML
+	 * @model
+	 * @generated
+	 * @ordered
+	 */
+	public static final int XML_VALUE = 1;
 
 	/**
 	 * The '<em><b>CBOR</b></em>' literal value.
@@ -108,8 +108,8 @@ public enum EncodingKind implements Enumerator {
 	 */
 	private static final EncodingKind[] VALUES_ARRAY =
 		new EncodingKind[] {
-			XML,
 			JSON,
+			XML,
 			CBOR,
 			OTHER_ENCODING,
 		};
@@ -168,8 +168,8 @@ public enum EncodingKind implements Enumerator {
 	 */
 	public static EncodingKind get(int value) {
 		switch (value) {
-			case XML_VALUE: return XML;
 			case JSON_VALUE: return JSON;
+			case XML_VALUE: return XML;
 			case CBOR_VALUE: return CBOR;
 			case OTHER_ENCODING_VALUE: return OTHER_ENCODING;
 		}

@@ -2316,8 +2316,8 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 		addEEnumLiteral(osKindEEnum, OSKind.ROS);
 
 		initEEnum(arrowheadCertificateKindEEnum, ArrowheadCertificateKind.class, "ArrowheadCertificateKind");
-		addEEnumLiteral(arrowheadCertificateKindEEnum, ArrowheadCertificateKind.DEVICE);
 		addEEnumLiteral(arrowheadCertificateKindEEnum, ArrowheadCertificateKind.APPLICATION_SYSTEM);
+		addEEnumLiteral(arrowheadCertificateKindEEnum, ArrowheadCertificateKind.DEVICE);
 		addEEnumLiteral(arrowheadCertificateKindEEnum, ArrowheadCertificateKind.CORE_SYSTEM);
 		addEEnumLiteral(arrowheadCertificateKindEEnum, ArrowheadCertificateKind.MANAGEMENT);
 		addEEnumLiteral(arrowheadCertificateKindEEnum, ArrowheadCertificateKind.INTER_CLOUD);
@@ -2337,8 +2337,8 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 		addEEnumLiteral(applicationProtocolKindEEnum, ApplicationProtocolKind.OTHER_APPLICATION_PROTOCOL);
 
 		initEEnum(encodingKindEEnum, EncodingKind.class, "EncodingKind");
-		addEEnumLiteral(encodingKindEEnum, EncodingKind.XML);
 		addEEnumLiteral(encodingKindEEnum, EncodingKind.JSON);
+		addEEnumLiteral(encodingKindEEnum, EncodingKind.XML);
 		addEEnumLiteral(encodingKindEEnum, EncodingKind.CBOR);
 		addEEnumLiteral(encodingKindEEnum, EncodingKind.OTHER_ENCODING);
 
@@ -2348,8 +2348,8 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 		addEEnumLiteral(arrowheadSecurityKindEEnum, ArrowheadSecurityKind.NOT_SECURE);
 
 		initEEnum(comprressionKindEEnum, ComprressionKind.class, "ComprressionKind");
-		addEEnumLiteral(comprressionKindEEnum, ComprressionKind.EXI);
 		addEEnumLiteral(comprressionKindEEnum, ComprressionKind.NONE);
+		addEEnumLiteral(comprressionKindEEnum, ComprressionKind.EXI);
 		addEEnumLiteral(comprressionKindEEnum, ComprressionKind.OTHER_COMPRESSION);
 
 		initEEnum(tokenKindEEnum, TokenKind.class, "TokenKind");
@@ -2365,8 +2365,8 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 		addEEnumLiteral(cryptoAlgorithmKindEEnum, CryptoAlgorithmKind.OTHER);
 
 		initEEnum(datamodelStandardKindEEnum, DatamodelStandardKind.class, "DatamodelStandardKind");
-		addEEnumLiteral(datamodelStandardKindEEnum, DatamodelStandardKind.OTHER_DATAMODEL_STANDARD);
 		addEEnumLiteral(datamodelStandardKindEEnum, DatamodelStandardKind.ISO_10303);
+		addEEnumLiteral(datamodelStandardKindEEnum, DatamodelStandardKind.OTHER_DATAMODEL_STANDARD);
 		addEEnumLiteral(datamodelStandardKindEEnum, DatamodelStandardKind.ISO_15926);
 		addEEnumLiteral(datamodelStandardKindEEnum, DatamodelStandardKind.SEN_ML);
 		addEEnumLiteral(datamodelStandardKindEEnum, DatamodelStandardKind.ISO_12006);

@@ -19,14 +19,6 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum ComprressionKind implements Enumerator {
 	/**
-	 * The '<em><b>EXI</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #EXI_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	EXI(0, "EXI", "EXI"), /**
 	 * The '<em><b>None</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -34,7 +26,15 @@ public enum ComprressionKind implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	NONE(1, "None", "None"),
+	NONE(0, "None", "None"), /**
+	 * The '<em><b>EXI</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #EXI_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	EXI(1, "EXI", "EXI"),
 
 	/**
 	 * The '<em><b>Other Compression</b></em>' literal object.
@@ -47,17 +47,6 @@ public enum ComprressionKind implements Enumerator {
 	OTHER_COMPRESSION(2, "OtherCompression", "OtherCompression");
 
 	/**
-	 * The '<em><b>EXI</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #EXI
-	 * @model
-	 * @generated
-	 * @ordered
-	 */
-	public static final int EXI_VALUE = 0;
-
-	/**
 	 * The '<em><b>None</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -66,7 +55,18 @@ public enum ComprressionKind implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int NONE_VALUE = 1;
+	public static final int NONE_VALUE = 0;
+
+	/**
+	 * The '<em><b>EXI</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #EXI
+	 * @model
+	 * @generated
+	 * @ordered
+	 */
+	public static final int EXI_VALUE = 1;
 
 	/**
 	 * The '<em><b>Other Compression</b></em>' literal value.
@@ -87,8 +87,8 @@ public enum ComprressionKind implements Enumerator {
 	 */
 	private static final ComprressionKind[] VALUES_ARRAY =
 		new ComprressionKind[] {
-			EXI,
 			NONE,
+			EXI,
 			OTHER_COMPRESSION,
 		};
 
@@ -146,8 +146,8 @@ public enum ComprressionKind implements Enumerator {
 	 */
 	public static ComprressionKind get(int value) {
 		switch (value) {
-			case EXI_VALUE: return EXI;
 			case NONE_VALUE: return NONE;
+			case EXI_VALUE: return EXI;
 			case OTHER_COMPRESSION_VALUE: return OTHER_COMPRESSION;
 		}
 		return null;

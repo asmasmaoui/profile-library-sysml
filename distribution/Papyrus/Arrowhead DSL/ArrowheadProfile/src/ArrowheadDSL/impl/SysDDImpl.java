@@ -53,7 +53,7 @@ public class SysDDImpl extends SysDImpl implements SysDD {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final ArrowheadCertificateKind ARROWHEAD_CERTIFICATE_EDEFAULT = ArrowheadCertificateKind.DEVICE;
+	protected static final ArrowheadCertificateKind ARROWHEAD_CERTIFICATE_EDEFAULT = ArrowheadCertificateKind.APPLICATION_SYSTEM;
 
 	/**
 	 * The cached value of the '{@link #getArrowheadCertificate() <em>Arrowhead Certificate</em>}' attribute.
