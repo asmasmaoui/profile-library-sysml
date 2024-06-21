@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<architecture:ArchitectureDomain xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:architecture="http://www.eclipse.org/papyrus/infra/core/architecture" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:gmfdiagrepresentation="http://www.eclipse.org/papyrus/infra/gmfdiag/representation" xmlns:nattableconfiguration="http://www.eclipse.org/papyrus/nattable/model/nattableconfiguration" xmlns:nattablerepresentation="http://www.eclipse.org/papyrus/infra/nattable/representation" xmlns:paletteconfiguration="http://www.eclipse.org/papyrus/diagram/paletteconfiguration/0.8" xmlns:representation="http://www.eclipse.org/papyrus/infra/core/architecture/representation" xmi:id="_mWEBIGwyEe6CubzOdD5h_Q" id="com.cea.arrowhead" name="ArrowHead" description="ArrowHead DSL to create SOA Architecture models" icon="platform:/plugin/ArrowheadProfile/icons/arrowhead_icon.png">
+<architecture:ArchitectureDomain xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:architecture="http://www.eclipse.org/papyrus/infra/core/architecture" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:gmfdiagrepresentation="http://www.eclipse.org/papyrus/infra/gmfdiag/representation" xmlns:paletteconfiguration="http://www.eclipse.org/papyrus/diagram/paletteconfiguration/0.8" xmlns:representation="http://www.eclipse.org/papyrus/infra/core/architecture/representation" xmi:id="_mWEBIGwyEe6CubzOdD5h_Q" id="com.cea.arrowhead" name="ArrowHead" description="ArrowHead DSL to create SOA Architecture models" icon="platform:/plugin/ArrowheadProfile/icons/arrowhead_icon.png">
   <stakeholders xmi:type="architecture:Stakeholder" xmi:id="__epPIGwyEe6CubzOdD5h_Q" id="arrowhead_designer" name="arrowhead_designer" description="Arrowhead System designer" icon="platform:/plugin/org.eclipse.papyrus.oldas.profile/icons/ODD.png" concerns="_GpRCwGwzEe6CubzOdD5h_Q"/>
   <concerns xmi:type="architecture:Concern" xmi:id="_GpRCwGwzEe6CubzOdD5h_Q" id="arrowhead.design" name="ArrowHead Architecture Design" description="Arrowhead System Architecture" icon="platform:/plugin/ArrowheadProfile/icons/arrowhead_icon.png"/>
   <contexts xmi:type="architecture:ArchitectureDescriptionLanguage" xmi:id="_730GMLhAEe6pZqc0ssvC1Q" id="Arrowhead" name="Arrowhead" icon="platform:/plugin/ArrowheadProfile/icons/arrowhead_icon.png" defaultViewpoints="org.eclipse.papyrus.sysml16.standard.modeling" creationCommandClass="com.cea.afpvn.arrowhead.viewpoint.CreateArrowHeadModelCommand">
-    <viewpoints xmi:type="architecture:ArchitectureViewpoint" xmi:id="org.eclipse.papyrus.sysml16.standard.modeling" id="arrowhead.vp" name="ArrowHead SoA Modeling" description="A viewpoint allowing standard modeling with ArrowHead DSL" icon="platform:/plugin/org.eclipse.papyrus.uml.architecture/icons/viewpoint.gif" concerns="_GpRCwGwzEe6CubzOdD5h_Q" representationKinds="org.eclipse.papyrus.sysml16.diagram.blockdefinition _OiGnui8JEe-AALyjOR-iJA _OiHOwi8JEe-AALyjOR-iJA _OiGnvS8JEe-AALyjOR-iJA _OiHOyC8JEe-AALyjOR-iJA _OiC9UC8JEe-AALyjOR-iJA _OiDkaS8JEe-AALyjOR-iJA _OiDkZi8JEe-AALyjOR-iJA _OiDkbC8JEe-AALyjOR-iJA _OiELdy8JEe-AALyjOR-iJA _OiELey8JEe-AALyjOR-iJA _OiEyhy8JEe-AALyjOR-iJA _OiEyjS8JEe-AALyjOR-iJA _OiFZky8JEe-AALyjOR-iJA _OiFZly8JEe-AALyjOR-iJA _OiGApC8JEe-AALyjOR-iJA _OiGntC8JEe-AALyjOR-iJA _OiHOxS8JEe-AALyjOR-iJA"/>
+    <viewpoints xmi:type="architecture:ArchitectureViewpoint" xmi:id="org.eclipse.papyrus.sysml16.standard.modeling" id="arrowhead.vp" name="ArrowHead SoA Modeling" description="A viewpoint allowing standard modeling with ArrowHead DSL" icon="platform:/plugin/org.eclipse.papyrus.uml.architecture/icons/viewpoint.gif" concerns="_GpRCwGwzEe6CubzOdD5h_Q" representationKinds="org.eclipse.papyrus.sysml16.diagram.blockdefinition _OiC9UC8JEe-AALyjOR-iJA _OiDkbC8JEe-AALyjOR-iJA _OiELdy8JEe-AALyjOR-iJA _OiELey8JEe-AALyjOR-iJA _OiEyhy8JEe-AALyjOR-iJA _OiFZly8JEe-AALyjOR-iJA _OiGApC8JEe-AALyjOR-iJA _OiGntC8JEe-AALyjOR-iJA"/>
     <elementTypes xmi:type="elementtypesconfigurations:ElementTypeSetConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16.service.types.elementTypeSet.extension"/>
     <elementTypes xmi:type="elementtypesconfigurations:ElementTypeSetConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.sysml16.service.types.elementTypeSet"/>
     <elementTypes xmi:type="elementtypesconfigurations:ElementTypeSetConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.elementTypeSet.extension"/>
@@ -50,24 +50,6 @@
       <childRules xmi:type="gmfdiagrepresentation:ChildRule" xmi:id="_OiDkZS8JEe-AALyjOR-iJA" permit="true"/>
       <palettes xmi:type="paletteconfiguration:PaletteConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.architecture/resources/SysMLAnnotation.paletteconfiguration#/"/>
       <palettes xmi:type="paletteconfiguration:PaletteConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.architecture/resources/SysMLActivity.paletteconfiguration#/"/>
-    </representationKinds>
-    <representationKinds xmi:type="nattablerepresentation:PapyrusTable" xmi:id="_OiDkZi8JEe-AALyjOR-iJA" id="org.eclipse.papyrus.sysml16.table.allocation.arrowhead" name="SysML 1.6 Allocation Table" icon="platform:/plugin/org.eclipse.papyrus.sysml16.nattable.allocation/icons/table_SysML_Allocation.png" concerns="_GpRCwGwzEe6CubzOdD5h_Q" implementationID="PapyrusSysML16AllocationTable">
-      <modelRules xmi:type="representation:ModelRule" xmi:id="_OiDkZy8JEe-AALyjOR-iJA" permit="true" elementMultiplicity="1" multiplicity="-1">
-        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
-      </modelRules>
-      <owningRules xmi:type="representation:OwningRule" xmi:id="_OiDkaC8JEe-AALyjOR-iJA" permit="true" multiplicity="-1">
-        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
-      </owningRules>
-      <configuration xmi:type="nattableconfiguration:TableConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.nattable.allocation/resources/allocation.nattableconfiguration#_Tn9sgF9WEeibbMBxjCBt2w"/>
-    </representationKinds>
-    <representationKinds xmi:type="nattablerepresentation:PapyrusTable" xmi:id="_OiDkaS8JEe-AALyjOR-iJA" id="org.eclipse.papyrus.sysml16.matrix.allocation.arrowhead" name="SysML 1.6 Allocation Matrix" icon="platform:/plugin/org.eclipse.papyrus.sysml16.nattable.allocation/icons/table_SysML_Allocation.png" concerns="_GpRCwGwzEe6CubzOdD5h_Q" implementationID="AllocationRequirementMatrix">
-      <modelRules xmi:type="representation:ModelRule" xmi:id="_OiDkai8JEe-AALyjOR-iJA" permit="true" elementMultiplicity="1" multiplicity="-1">
-        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
-      </modelRules>
-      <owningRules xmi:type="representation:OwningRule" xmi:id="_OiDkay8JEe-AALyjOR-iJA" permit="true" multiplicity="-1">
-        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
-      </owningRules>
-      <configuration xmi:type="nattableconfiguration:TableConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.nattable.allocation/resources/allocationMatrix.nattableconfiguration#Allocation_Requirment_Matrix"/>
     </representationKinds>
     <representationKinds xmi:type="gmfdiagrepresentation:PapyrusDiagram" xmi:id="_OiDkbC8JEe-AALyjOR-iJA" id="org.eclipse.papyrus.sysml16.diagram.internalblock.arrowhead" name="SysML 1.6 Internal Block Diagram" description="SysML 1.6 Internal Block" icon="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.internalblock/resources/icons/obj16/Diagram_InternalBlock.gif" concerns="_GpRCwGwzEe6CubzOdD5h_Q" implementationID="CompositeStructure" customStyle="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.internalblock/resources/style/internalBlockDiagram.css" creationCommandClass="org.eclipse.papyrus.uml.diagram.composite.CreateCompositeDiagramCommand">
       <modelRules xmi:type="representation:ModelRule" xmi:id="_OiELcC8JEe-AALyjOR-iJA" permit="true" elementMultiplicity="1" multiplicity="-1">
@@ -156,32 +138,6 @@
       <palettes xmi:type="paletteconfiguration:PaletteConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.architecture/resources/SysMLStructure.paletteconfiguration#/"/>
       <palettes xmi:type="paletteconfiguration:PaletteConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.architecture/resources/SysMLViewpoint.paletteconfiguration#/"/>
       <palettes xmi:type="paletteconfiguration:PaletteConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.requirement/resources/palette/requirementDiagram.paletteconfiguration#/"/>
-    </representationKinds>
-    <representationKinds xmi:type="nattablerepresentation:PapyrusTable" xmi:id="_OiEyjS8JEe-AALyjOR-iJA" id="org.eclipse.papyrus.sysml16.table.requirement.arrowhead" name="SysML 1.6 Requirement Table" icon="platform:/plugin/org.eclipse.papyrus.sysml16.nattable.requirement/icons/table_SysML_Requirement.png" concerns="_GpRCwGwzEe6CubzOdD5h_Q" implementationID="PapyrusSysML16RequirementTable">
-      <modelRules xmi:type="representation:ModelRule" xmi:id="_OiFZkC8JEe-AALyjOR-iJA" permit="true" elementMultiplicity="1" multiplicity="-1">
-        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
-      </modelRules>
-      <modelRules xmi:type="representation:ModelRule" xmi:id="_OiFZkS8JEe-AALyjOR-iJA" permit="true" elementMultiplicity="1" multiplicity="-1">
-        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
-        <stereotypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements/Requirement"/>
-      </modelRules>
-      <owningRules xmi:type="representation:OwningRule" xmi:id="_OiFZki8JEe-AALyjOR-iJA" permit="true" multiplicity="-1">
-        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
-      </owningRules>
-      <configuration xmi:type="nattableconfiguration:TableConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.nattable.requirement/resources/requirement.nattableconfiguration#__qulcG1gEeijMr8XjU8gCg"/>
-    </representationKinds>
-    <representationKinds xmi:type="nattablerepresentation:PapyrusTable" xmi:id="_OiFZky8JEe-AALyjOR-iJA" id="org.eclipse.papyrus.sysml16.table.requirementTree.arrowhead" name="SysML 1.6 Requirement Tree Table" icon="platform:/plugin/org.eclipse.papyrus.sysml16.nattable.requirement/icons/table_SysML_Tree_Requirement.png" concerns="_GpRCwGwzEe6CubzOdD5h_Q" implementationID="PapyrusSysML16RequirementTreeTable">
-      <modelRules xmi:type="representation:ModelRule" xmi:id="_OiFZlC8JEe-AALyjOR-iJA" permit="true" elementMultiplicity="1" multiplicity="-1">
-        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
-      </modelRules>
-      <modelRules xmi:type="representation:ModelRule" xmi:id="_OiFZlS8JEe-AALyjOR-iJA" permit="true" elementMultiplicity="1" multiplicity="-1">
-        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
-        <stereotypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements/Requirement"/>
-      </modelRules>
-      <owningRules xmi:type="representation:OwningRule" xmi:id="_OiFZli8JEe-AALyjOR-iJA" permit="true" multiplicity="-1">
-        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
-      </owningRules>
-      <configuration xmi:type="nattableconfiguration:TableConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.nattable.requirement/resources/requirementTree.nattableconfiguration#_QpaQsF9WEeibbMBxjCBt2w"/>
     </representationKinds>
     <representationKinds xmi:type="gmfdiagrepresentation:PapyrusDiagram" xmi:id="_OiFZly8JEe-AALyjOR-iJA" id="org.eclipse.papyrus.sysml16.diagram.sequence.arrowhead" name="SysML 1.6 Sequence Diagram" icon="platform:/plugin/org.eclipse.papyrus.sysml16.architecture/resources/icons/obj16/Diagram_SysML_Sequence.gif" concerns="_GpRCwGwzEe6CubzOdD5h_Q" implementationID="PapyrusUMLSequenceDiagram" creationCommandClass="org.eclipse.papyrus.uml.diagram.sequence.CreateSequenceDiagramCommand">
       <modelRules xmi:type="representation:ModelRule" xmi:id="_OiFZmC8JEe-AALyjOR-iJA" permit="true" elementMultiplicity="1" multiplicity="-1">
@@ -275,51 +231,6 @@
       <childRules xmi:type="gmfdiagrepresentation:ChildRule" xmi:id="_OiGnuS8JEe-AALyjOR-iJA" permit="true"/>
       <palettes xmi:type="paletteconfiguration:PaletteConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.architecture/resources/SysMLAnnotation.paletteconfiguration#/"/>
       <palettes xmi:type="paletteconfiguration:PaletteConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.architecture/resources/SysMLUseCase.paletteconfiguration#/"/>
-    </representationKinds>
-    <representationKinds xmi:type="nattablerepresentation:PapyrusTable" xmi:id="_OiGnui8JEe-AALyjOR-iJA" id="org.eclipse.papyrus.sysml16.table.classTree.arrowhead" name="Class Tree Table" icon="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/icons/uml_generic_table.png" concerns="_GpRCwGwzEe6CubzOdD5h_Q" grayedIcon="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/icons/uml_generic_table_grayed.png" implementationID="PapyrusClassTreeTable">
-      <modelRules xmi:type="representation:ModelRule" xmi:id="_OiGnuy8JEe-AALyjOR-iJA" permit="true" elementMultiplicity="1" multiplicity="-1">
-        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
-      </modelRules>
-      <owningRules xmi:type="representation:OwningRule" xmi:id="_OiGnvC8JEe-AALyjOR-iJA" permit="true" multiplicity="-1">
-        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
-      </owningRules>
-      <configuration xmi:type="nattableconfiguration:TableConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.clazz.config/configs/class_synchronized_tree.nattableconfiguration#PapyrusClassTreeTable_XMI_ID"/>
-    </representationKinds>
-    <representationKinds xmi:type="nattablerepresentation:PapyrusTable" xmi:id="_OiGnvS8JEe-AALyjOR-iJA" id="org.eclipse.papyrus.sysml16.table.genericTree.arrowhead" name="Generic Tree Table" icon="platform:/plugin/org.eclipse.papyrus.uml.nattable/icons/uml_generic_table.png" concerns="_GpRCwGwzEe6CubzOdD5h_Q" grayedIcon="platform:/plugin/org.eclipse.papyrus.uml.nattable/icons/uml_generic_table_grayed.png" implementationID="PapyrusUMLGenericTreeTable">
-      <modelRules xmi:type="representation:ModelRule" xmi:id="_OiHOwC8JEe-AALyjOR-iJA" permit="true" elementMultiplicity="1" multiplicity="-1">
-        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
-      </modelRules>
-      <owningRules xmi:type="representation:OwningRule" xmi:id="_OiHOwS8JEe-AALyjOR-iJA" permit="true" multiplicity="-1">
-        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
-      </owningRules>
-      <configuration xmi:type="nattableconfiguration:TableConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.nattable/configs/genericTreeTable.nattableconfiguration#PapyrusUMLGenericTreeTable_XMI_ID"/>
-    </representationKinds>
-    <representationKinds xmi:type="nattablerepresentation:PapyrusTable" xmi:id="_OiHOwi8JEe-AALyjOR-iJA" id="org.eclipse.papyrus.sysml16.table.generic.arrowhead" name="Generic Table" icon="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/icons/uml_generic_table.png" concerns="_GpRCwGwzEe6CubzOdD5h_Q" grayedIcon="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/icons/uml_generic_table_grayed.png" implementationID="PapyrusGenericTable">
-      <modelRules xmi:type="representation:ModelRule" xmi:id="_OiHOwy8JEe-AALyjOR-iJA" permit="true" elementMultiplicity="1" multiplicity="-1">
-        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement"/>
-      </modelRules>
-      <owningRules xmi:type="representation:OwningRule" xmi:id="_OiHOxC8JEe-AALyjOR-iJA" permit="true" multiplicity="-1">
-        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement"/>
-      </owningRules>
-      <configuration xmi:type="nattableconfiguration:TableConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#PapyrusGenericTable_XMI_ID"/>
-    </representationKinds>
-    <representationKinds xmi:type="nattablerepresentation:PapyrusTable" xmi:id="_OiHOxS8JEe-AALyjOR-iJA" id="org.eclipse.papyrus.sysml16.table.view.arrowhead" name="View Table" icon="platform:/plugin/org.eclipse.papyrus.infra.nattable.views.config/icons/nattablepageeditor.png" concerns="_GpRCwGwzEe6CubzOdD5h_Q" grayedIcon="platform:/plugin/org.eclipse.papyrus.infra.nattable.views.config/icons/nattablepageeditor_grayed.png" implementationID="PapyrusViewsTable">
-      <modelRules xmi:type="representation:ModelRule" xmi:id="_OiHOxi8JEe-AALyjOR-iJA" permit="true" elementMultiplicity="1" multiplicity="-1">
-        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement"/>
-      </modelRules>
-      <owningRules xmi:type="representation:OwningRule" xmi:id="_OiHOxy8JEe-AALyjOR-iJA" permit="true" multiplicity="-1">
-        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement"/>
-      </owningRules>
-      <configuration xmi:type="nattableconfiguration:TableConfiguration" href="platform:/plugin/org.eclipse.papyrus.infra.nattable.views.config/resources/viewpage.nattableconfiguration#PapyrusViewsTable_XMI_ID"/>
-    </representationKinds>
-    <representationKinds xmi:type="nattablerepresentation:PapyrusTable" xmi:id="_OiHOyC8JEe-AALyjOR-iJA" id="org.eclipse.papyrus.sysml16.table.matrix.arrowhead" name="Relationship Generic Matrix" icon="platform:/plugin/org.eclipse.papyrus.uml.nattable.matrix/icons/uml_generic_matrix_relationships.png" concerns="_GpRCwGwzEe6CubzOdD5h_Q" grayedIcon="platform:/plugin/org.eclipse.papyrus.uml.nattable.matrix/icons/uml_generic_matrix_relationships_grayed.png" implementationID="UMLGenericMatrixOfRelationships">
-      <modelRules xmi:type="representation:ModelRule" xmi:id="_OiHOyS8JEe-AALyjOR-iJA" permit="true" elementMultiplicity="1" multiplicity="-1">
-        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
-      </modelRules>
-      <owningRules xmi:type="representation:OwningRule" xmi:id="_OiHOyi8JEe-AALyjOR-iJA" permit="true" multiplicity="-1">
-        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
-      </owningRules>
-      <configuration xmi:type="nattableconfiguration:TableConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.matrix/configs/generic_matrix_of_relationships.nattableconfiguration#UMLGenericMatrixOfRelationships_XMI_ID"/>
     </representationKinds>
     <representationKinds xmi:type="gmfdiagrepresentation:PapyrusDiagram" xmi:id="org.eclipse.papyrus.sysml16.diagram.blockdefinition" id="org.eclipse.papyrus.sysml16.diagram.blockdefinition.arrowhead" name="ArrowHead Block Definition Diagram" description="BDD diagram" icon="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.blockdefinition/resources/icons/obj16/Diagram_BlockDefinition.gif" concerns="_GpRCwGwzEe6CubzOdD5h_Q" implementationID="PapyrusUMLClassDiagram" customStyle="platform:/plugin/com.cea.afpvn.arrowhead.viewpoint/resources/aht_style.css" creationCommandClass="org.eclipse.papyrus.uml.diagram.clazz.CreateClassDiagramCommand">
       <modelRules xmi:type="representation:ModelRule" xmi:id="_ZrBf4ZaBEeS8eNvSwD0lgA" permit="true" elementMultiplicity="1" multiplicity="-1">
