@@ -14,6 +14,7 @@ import ArrowheadDSL.IDD;
 import ArrowheadDSL.TokenKind;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
+
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 /**
@@ -206,7 +207,7 @@ public class IDDImpl extends SDImpl implements IDD {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final DatamodelStandardKind DATAMODEL_EDEFAULT = DatamodelStandardKind.ISO_10303;
+	protected static final DatamodelStandardKind DATAMODEL_EDEFAULT = DatamodelStandardKind.__;
 
 	/**
 	 * The cached value of the '{@link #getDatamodel() <em>Datamodel</em>}' attribute.

@@ -184,6 +184,46 @@ public interface ArrowheadDSLPackage extends EPackage {
 	int SD = 1;
 
 	/**
+	 * The meta object id for the '{@link ArrowheadDSL.impl.LocalCloudDesignImpl <em>Local Cloud Design</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see ArrowheadDSL.impl.LocalCloudDesignImpl
+	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getLocalCloudDesign()
+	 * @generated
+	 */
+	int LOCAL_CLOUD_DESIGN = 4;
+
+	/**
+	 * The meta object id for the '{@link ArrowheadDSL.impl.System_of_LocalcloudsDesignImpl <em>System of Localclouds Design</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see ArrowheadDSL.impl.System_of_LocalcloudsDesignImpl
+	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getSystem_of_LocalcloudsDesign()
+	 * @generated
+	 */
+	int SYSTEM_OF_LOCALCLOUDS_DESIGN = 5;
+
+	/**
+	 * The meta object id for the '{@link ArrowheadDSL.impl.ArrowheadDSLRequirementImpl <em>Requirement</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see ArrowheadDSL.impl.ArrowheadDSLRequirementImpl
+	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getArrowheadDSLRequirement()
+	 * @generated
+	 */
+	int ARROWHEAD_DSL_REQUIREMENT = 2;
+
+	/**
+	 * The meta object id for the '{@link ArrowheadDSL.impl.ArrowheadUseCaseImpl <em>Arrowhead Use Case</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see ArrowheadDSL.impl.ArrowheadUseCaseImpl
+	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getArrowheadUseCase()
+	 * @generated
+	 */
+	int ARROWHEAD_USE_CASE = 3;
+
+	/**
 	 * The feature id for the '<em><b>Base Class</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -272,36 +312,6 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @ordered
 	 */
 	int SD_OPERATION_COUNT = PortsAndFlowsPackage.INTERFACE_BLOCK_OPERATION_COUNT + 1;
-
-	/**
-	 * The meta object id for the '{@link ArrowheadDSL.impl.LocalCloudDesignImpl <em>Local Cloud Design</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see ArrowheadDSL.impl.LocalCloudDesignImpl
-	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getLocalCloudDesign()
-	 * @generated
-	 */
-	int LOCAL_CLOUD_DESIGN = 4;
-
-	/**
-	 * The meta object id for the '{@link ArrowheadDSL.impl.System_of_LocalcloudsDesignImpl <em>System of Localclouds Design</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see ArrowheadDSL.impl.System_of_LocalcloudsDesignImpl
-	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getSystem_of_LocalcloudsDesign()
-	 * @generated
-	 */
-	int SYSTEM_OF_LOCALCLOUDS_DESIGN = 5;
-
-	/**
-	 * The meta object id for the '{@link ArrowheadDSL.impl.ArrowheadDSLRequirementImpl <em>Requirement</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see ArrowheadDSL.impl.ArrowheadDSLRequirementImpl
-	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getArrowheadDSLRequirement()
-	 * @generated
-	 */
-	int ARROWHEAD_DSL_REQUIREMENT = 2;
 
 	/**
 	 * The feature id for the '<em><b>Base Named Element</b></em>' reference.
@@ -491,16 +501,6 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @ordered
 	 */
 	int ARROWHEAD_DSL_REQUIREMENT_OPERATION_COUNT = RequirementsPackage.REQUIREMENT_OPERATION_COUNT + 0;
-
-	/**
-	 * The meta object id for the '{@link ArrowheadDSL.impl.ArrowheadUseCaseImpl <em>Arrowhead Use Case</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see ArrowheadDSL.impl.ArrowheadUseCaseImpl
-	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getArrowheadUseCase()
-	 * @generated
-	 */
-	int ARROWHEAD_USE_CASE = 3;
 
 	/**
 	 * The feature id for the '<em><b>Base Use Case</b></em>' reference.
@@ -1810,6 +1810,16 @@ public interface ArrowheadDSLPackage extends EPackage {
 	int SYSTEM_OF_LOCALCLOUDS_IMPLEMENTATION = 14;
 
 	/**
+	 * The meta object id for the '{@link ArrowheadDSL.impl.LocalcloudImplementationImpl <em>Localcloud Implementation</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see ArrowheadDSL.impl.LocalcloudImplementationImpl
+	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getLocalcloudImplementation()
+	 * @generated
+	 */
+	int LOCALCLOUD_IMPLEMENTATION = 15;
+
+	/**
 	 * The feature id for the '<em><b>Base Class</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1961,16 +1971,6 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @ordered
 	 */
 	int SYSTEM_OF_LOCALCLOUDS_IMPLEMENTATION_OPERATION_COUNT = SYSTEM_OF_LOCACLOUDS_DESIGN_DESCRIPTION_OPERATION_COUNT + 0;
-
-	/**
-	 * The meta object id for the '{@link ArrowheadDSL.impl.LocalcloudImplementationImpl <em>Localcloud Implementation</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see ArrowheadDSL.impl.LocalcloudImplementationImpl
-	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getLocalcloudImplementation()
-	 * @generated
-	 */
-	int LOCALCLOUD_IMPLEMENTATION = 15;
 
 	/**
 	 * The feature id for the '<em><b>Base Class</b></em>' reference.

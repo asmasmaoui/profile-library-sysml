@@ -28,7 +28,6 @@ import org.eclipse.papyrus.sysml16.portsandflows.InterfaceBlock;
 public interface SD extends InterfaceBlock {
 	/**
 	 * Returns the value of the '<em><b>Microservice Name</b></em>' attribute.
-	 * The default value is <code>"Inherit from generalization SD"</code>.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Microservice Name</em>' attribute isn't clear,
@@ -38,7 +37,7 @@ public interface SD extends InterfaceBlock {
 	 * @return the value of the '<em>Microservice Name</em>' attribute.
 	 * @see #setMicroserviceName(String)
 	 * @see ArrowheadDSL.ArrowheadDSLPackage#getSD_MicroserviceName()
-	 * @model default="Inherit from generalization SD" unique="false" dataType="org.eclipse.uml2.types.String" required="true" ordered="false"
+	 * @model unique="false" dataType="org.eclipse.uml2.types.String" required="true" transient="true" volatile="true" derived="true" ordered="false"
 	 * @generated
 	 */
 	String getMicroserviceName();

@@ -8,7 +8,7 @@
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="MicrosystemName" ordered="false"
         upperBound="-1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"
-        defaultValueLiteral="Inherit from generalization SysD"/>
+        volatile="true" transient="true" derived="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="FunctionalProperties" ordered="false"
         unique="false" lowerBound="1" upperBound="-1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//UnlimitedNatural"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="SystemDatabase" ordered="false"
@@ -33,7 +33,11 @@
     <eOperations name="Operation" ordered="false" lowerBound="1"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="MicroserviceName" ordered="false"
         unique="false" lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"
-        defaultValueLiteral="Inherit from generalization SD"/>
+        volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="get" value="// get  MicrosystemName Element&#xA;&#x9;&#x9;&#x9;&#x9;String name = null;&#xA;&#x9;&#x9;&#x9;&#x9;if (getBase_Class() != null) {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;name = getBase_Class().getName();&#xA;&#x9;&#x9;&#x9;&#x9;} else if (this instanceof SD) {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;SD sd= (SD) this;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;name = sd.getMicroserviceName();&#xA;&#x9;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;&#x9;// remove space&#xA;&#x9;&#x9;&#x9;&#x9;if (name != null) {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;String idShort = name.replace(&quot; &quot;, &quot;&quot;);&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;return idShort;&#xA;&#x9;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;&#x9;return null;"/>
+      </eAnnotations>
+    </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ArrowheadDSLRequirement" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//requirements/Requirement">
     <eStructuralFeatures xsi:type="ecore:EReference" name="arrowheadusecase" ordered="false"
@@ -232,8 +236,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="IDD" eSuperTypes="#//SD">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Port" ordered="false" lowerBound="1"
-        eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"
-        defaultValueLiteral="0"/>
+        eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Protocol" ordered="false"
         unique="false" lowerBound="1" eType="#//ApplicationProtocolKind"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Encoding" ordered="false"
@@ -287,14 +290,15 @@
     <eLiterals name="Other" value="5"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="DatamodelStandardKind">
-    <eLiterals name="ISO_10303"/>
-    <eLiterals name="OtherDatamodelStandard" value="1"/>
+    <eLiterals name="_"/>
+    <eLiterals name="ISO_10303" value="1"/>
     <eLiterals name="ISO_15926" value="2"/>
     <eLiterals name="SenML" value="3"/>
     <eLiterals name="ISO_12006" value="4"/>
     <eLiterals name="IEC_81346" value="5"/>
     <eLiterals name="ISO_15739_IFC" value="6"/>
     <eLiterals name="IEC_61850" value="7"/>
+    <eLiterals name="OtherDatamodelStandard" value="8"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="CertificateKind">
     <eLiterals name="x509_Arrowhead"/>

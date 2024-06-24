@@ -112,14 +112,15 @@
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//CryptoAlgorithmKind/Other"/>
     </genEnums>
     <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="ArrowheadDSL.ecore#//DatamodelStandardKind">
+      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//DatamodelStandardKind/_"/>
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//DatamodelStandardKind/ISO_10303"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//DatamodelStandardKind/OtherDatamodelStandard"/>
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//DatamodelStandardKind/ISO_15926"/>
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//DatamodelStandardKind/SenML"/>
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//DatamodelStandardKind/ISO_12006"/>
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//DatamodelStandardKind/IEC_81346"/>
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//DatamodelStandardKind/ISO_15739_IFC"/>
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//DatamodelStandardKind/IEC_61850"/>
+      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//DatamodelStandardKind/OtherDatamodelStandard"/>
     </genEnums>
     <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="ArrowheadDSL.ecore#//CertificateKind">
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//CertificateKind/x509_Arrowhead"/>
@@ -247,13 +248,15 @@
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//StatusKodKind/_208AlreadyReported"/>
     </genEnums>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//SysD">
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//SysD/MicrosystemName"/>
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//SysD/MicrosystemName"
+          get="// get the MicrosystemName&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;EList&lt;String> name = null;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;if (getBase_Class() != null) {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;} else if (this instanceof SysD) {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;SysD sysd= (SysD) this;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;name = sysd.getMicrosystemName();&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;return null;&#xA;"/>
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//SysD/FunctionalProperties"/>
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//SysD/SystemDatabase"/>
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//SysD/MicrosystemBehaviour"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//SD">
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//SD/MicroserviceName"/>
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//SD/MicroserviceName"
+          get="// get  MicrosystemName Element&#xA;&#x9;&#x9;&#x9;&#x9;String name = null;&#xA;&#x9;&#x9;&#x9;&#x9;if (getBase_Class() != null) {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;name = getBase_Class().getName();&#xA;&#x9;&#x9;&#x9;&#x9;} else if (this instanceof SD) {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;SD sd= (SD) this;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;name = sd.getMicroserviceName();&#xA;&#x9;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;&#x9;// remove space&#xA;&#x9;&#x9;&#x9;&#x9;if (name != null) {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;String idShort = name.replace(&quot; &quot;, &quot;&quot;);&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;return idShort;&#xA;&#x9;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;&#x9;return null;"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ArrowheadDSL.ecore#//SD/Operation"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//ArrowheadDSLRequirement">

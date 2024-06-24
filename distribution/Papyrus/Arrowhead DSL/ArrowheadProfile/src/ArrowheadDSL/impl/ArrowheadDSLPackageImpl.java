@@ -101,13 +101,6 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass sdEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	private EClass localCloudDesignEClass = null;
 
 	/**
@@ -116,6 +109,13 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	private EClass system_of_LocalcloudsDesignEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass sdEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -199,13 +199,6 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass iddEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	private EClass system_of_LocalcloudsImplementationEClass = null;
 
 	/**
@@ -228,6 +221,13 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	private EClass idD_ImplementationEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass iddEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -597,36 +597,6 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public EClass getSD() {
-		return sdEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getSD_MicroserviceName() {
-		return (EAttribute)sdEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSD__Operation() {
-		return sdEClass.getEOperations().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getLocalCloudDesign() {
 		return localCloudDesignEClass;
 	}
@@ -749,6 +719,36 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	@Override
 	public EReference getSystem_of_LocalcloudsDesign_Localclouddesign() {
 		return (EReference)system_of_LocalcloudsDesignEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getSD() {
+		return sdEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSD_MicroserviceName() {
+		return (EAttribute)sdEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getSD__Operation() {
+		return sdEClass.getEOperations().get(0);
 	}
 
 	/**
@@ -1197,106 +1197,6 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public EClass getIDD() {
-		return iddEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getIDD_Port() {
-		return (EAttribute)iddEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getIDD_Protocol() {
-		return (EAttribute)iddEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getIDD_Encoding() {
-		return (EAttribute)iddEClass.getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getIDD_Security() {
-		return (EAttribute)iddEClass.getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getIDD_Compression() {
-		return (EAttribute)iddEClass.getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getIDD_Certificate_level() {
-		return (EAttribute)iddEClass.getEStructuralFeatures().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getIDD_Token() {
-		return (EAttribute)iddEClass.getEStructuralFeatures().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getIDD_Crypto_algorithm() {
-		return (EAttribute)iddEClass.getEStructuralFeatures().get(7);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getIDD_Datamodel() {
-		return (EAttribute)iddEClass.getEStructuralFeatures().get(8);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getSystem_of_LocalcloudsImplementation() {
 		return system_of_LocalcloudsImplementationEClass;
 	}
@@ -1409,6 +1309,106 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	@Override
 	public EReference getIDD_Implementation_Systemimplementation() {
 		return (EReference)idD_ImplementationEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getIDD() {
+		return iddEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getIDD_Port() {
+		return (EAttribute)iddEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getIDD_Protocol() {
+		return (EAttribute)iddEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getIDD_Encoding() {
+		return (EAttribute)iddEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getIDD_Security() {
+		return (EAttribute)iddEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getIDD_Compression() {
+		return (EAttribute)iddEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getIDD_Certificate_level() {
+		return (EAttribute)iddEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getIDD_Token() {
+		return (EAttribute)iddEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getIDD_Crypto_algorithm() {
+		return (EAttribute)iddEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getIDD_Datamodel() {
+		return (EAttribute)iddEClass.getEStructuralFeatures().get(8);
 	}
 
 	/**
@@ -2152,13 +2152,13 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(sysDEClass, SysD.class, "SysD", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getSysD_MicrosystemName(), theTypesPackage.getString(), "MicrosystemName", "Inherit from generalization SysD", 0, -1, SysD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getSysD_MicrosystemName(), theTypesPackage.getString(), "MicrosystemName", null, 0, -1, SysD.class, IS_TRANSIENT, IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getSysD_FunctionalProperties(), theTypesPackage.getUnlimitedNatural(), "FunctionalProperties", null, 1, -1, SysD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getSysD_SystemDatabase(), this.getSystemDatabaseKind(), "SystemDatabase", null, 1, 1, SysD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getSysD_MicrosystemBehaviour(), this.getBusinessPolicyKind(), "MicrosystemBehaviour", null, 1, -1, SysD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(sdEClass, ArrowheadDSL.SD.class, "SD", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getSD_MicroserviceName(), theTypesPackage.getString(), "MicroserviceName", "Inherit from generalization SD", 1, 1, ArrowheadDSL.SD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getSD_MicroserviceName(), theTypesPackage.getString(), "MicroserviceName", null, 1, 1, ArrowheadDSL.SD.class, IS_TRANSIENT, IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, IS_DERIVED, !IS_ORDERED);
 
 		initEOperation(getSD__Operation(), null, "Operation", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
@@ -2249,7 +2249,7 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 		initEReference(getIDD_Implementation_Systemimplementation(), this.getSystem_Implementation(), this.getSystem_Implementation_Idd_implementation(), "systemimplementation", null, 0, -1, IDD_Implementation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(iddEClass, ArrowheadDSL.IDD.class, "IDD", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getIDD_Port(), theTypesPackage.getInteger(), "Port", "0", 1, 1, ArrowheadDSL.IDD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getIDD_Port(), theTypesPackage.getInteger(), "Port", null, 1, 1, ArrowheadDSL.IDD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getIDD_Protocol(), this.getApplicationProtocolKind(), "Protocol", null, 1, 1, ArrowheadDSL.IDD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getIDD_Encoding(), this.getEncodingKind(), "Encoding", null, 1, 1, ArrowheadDSL.IDD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getIDD_Security(), this.getArrowheadSecurityKind(), "Security", null, 1, 1, ArrowheadDSL.IDD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -2365,14 +2365,15 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 		addEEnumLiteral(cryptoAlgorithmKindEEnum, CryptoAlgorithmKind.OTHER);
 
 		initEEnum(datamodelStandardKindEEnum, DatamodelStandardKind.class, "DatamodelStandardKind");
+		addEEnumLiteral(datamodelStandardKindEEnum, DatamodelStandardKind.__);
 		addEEnumLiteral(datamodelStandardKindEEnum, DatamodelStandardKind.ISO_10303);
-		addEEnumLiteral(datamodelStandardKindEEnum, DatamodelStandardKind.OTHER_DATAMODEL_STANDARD);
 		addEEnumLiteral(datamodelStandardKindEEnum, DatamodelStandardKind.ISO_15926);
 		addEEnumLiteral(datamodelStandardKindEEnum, DatamodelStandardKind.SEN_ML);
 		addEEnumLiteral(datamodelStandardKindEEnum, DatamodelStandardKind.ISO_12006);
 		addEEnumLiteral(datamodelStandardKindEEnum, DatamodelStandardKind.IEC_81346);
 		addEEnumLiteral(datamodelStandardKindEEnum, DatamodelStandardKind.ISO_15739_IFC);
 		addEEnumLiteral(datamodelStandardKindEEnum, DatamodelStandardKind.IEC_61850);
+		addEEnumLiteral(datamodelStandardKindEEnum, DatamodelStandardKind.OTHER_DATAMODEL_STANDARD);
 
 		initEEnum(certificateKindEEnum, CertificateKind.class, "CertificateKind");
 		addEEnumLiteral(certificateKindEEnum, CertificateKind.X509_ARROWHEAD);

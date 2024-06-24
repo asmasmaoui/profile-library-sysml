@@ -71,11 +71,10 @@
       <generalization xmi:type="uml:Generalization" xmi:id="_xtHrYDLLEe6ldMRwfXEyUg">
         <general xmi:type="uml:Stereotype" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks.stereotype_packagedElement_Block"/>
       </generalization>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_iFXTYDLLEe6ldMRwfXEyUg" name="MicrosystemName">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_iFXTYDLLEe6ldMRwfXEyUg" name="MicrosystemName" isDerived="true">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iFXTYTLLEe6ldMRwfXEyUg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iFXTYjLLEe6ldMRwfXEyUg" value="*"/>
-        <defaultValue xmi:type="uml:LiteralString" xmi:id="_IKh3EC8IEe-AALyjOR-iJA" value="Inherit from generalization SysD"/>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_uJ1vcDXMEe6Jk_FX_xio9g" name="FunctionalProperties" visibility="public" isUnique="false">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
@@ -304,9 +303,11 @@
       <generalization xmi:type="uml:Generalization" xmi:id="_CboLIPWPEe6gO_-x_7DuDg">
         <general xmi:type="uml:Stereotype" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Ports_u0026Flows.stereotype_packagedElement_InterfaceBlock"/>
       </generalization>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_k3ExUD0kEe60840L8fIbKA" name="MicroserviceName" isStatic="true" isUnique="false">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_k3ExUD0kEe60840L8fIbKA" name="MicroserviceName" isStatic="true" isUnique="false" isDerived="true">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ze26ADIMEe-MadynLEjMpQ" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ze26ATIMEe-MadynLEjMpQ" key="get" value="// get  MicrosystemName Element&#xA;&#x9;&#x9;&#x9;&#x9;String name = null;&#xA;&#x9;&#x9;&#x9;&#x9;if (getBase_Class() != null) {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;name = getBase_Class().getName();&#xA;&#x9;&#x9;&#x9;&#x9;} else if (this instanceof SD) {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;SD sd= (SD) this;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;name = sd.getMicroserviceName();&#xA;&#x9;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;&#x9;// remove space&#xA;&#x9;&#x9;&#x9;&#x9;if (name != null) {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;String idShort = name.replace(&quot; &quot;, &quot;&quot;);&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;return idShort;&#xA;&#x9;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;&#x9;return null;"/>
+        </eAnnotations>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        <defaultValue xmi:type="uml:LiteralString" xmi:id="_OpOgMC8FEe-AALyjOR-iJA" value="Inherit from generalization SD"/>
       </ownedAttribute>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_NXI7gJB7Ee69oeBOw5VrOQ" name="Operation"/>
     </packagedElement>
@@ -371,7 +372,6 @@
       <generalization xmi:type="uml:Generalization" xmi:id="_hz3ekI4vEe6ZtIoJ221FFA" general="_awzE4D0kEe60840L8fIbKA"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_5GFn4I4vEe6ZtIoJ221FFA" name="Port">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-        <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_TftuAC8FEe-AALyjOR-iJA"/>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_tIV2oJSJEe6U99HogCXF3A" name="Protocol" visibility="public" type="_g-d3YLaOEe6et-4ox6TWyg" isUnique="false"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_tIYS4JSJEe6U99HogCXF3A" name="Encoding" type="_g-hhwLaOEe6et-4ox6TWyg" isUnique="false"/>
@@ -380,9 +380,7 @@
       <ownedAttribute xmi:type="uml:Property" xmi:id="_tIeZgJSJEe6U99HogCXF3A" name="Certificate_level" type="_g-fFgLaOEe6et-4ox6TWyg" isUnique="false"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_tIg1wJSJEe6U99HogCXF3A" name="Token" type="_g-lzMLaOEe6et-4ox6TWyg" isUnique="false"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_tIjSAJSJEe6U99HogCXF3A" name="Crypto_algorithm" type="_g-g6sLaOEe6et-4ox6TWyg" isUnique="false"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_tIoKgJSJEe6U99HogCXF3A" name="Datamodel" type="_g-g6t7aOEe6et-4ox6TWyg" isUnique="false">
-        <defaultValue xmi:type="uml:Expression" xmi:id="_la83YC-8Ee-fpd63Izxx-g"/>
-      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_tIoKgJSJEe6U99HogCXF3A" name="Datamodel" type="_g-g6t7aOEe6et-4ox6TWyg" isUnique="false"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_7a8dcI6SEe6cjupWzwXjHg" name="SysDD">
       <generalization xmi:type="uml:Generalization" xmi:id="_981LYI6SEe6cjupWzwXjHg" general="_2RtnADLCEe6ldMRwfXEyUg"/>
@@ -444,14 +442,15 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-g6traOEe6et-4ox6TWyg" name="Other"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_g-g6t7aOEe6et-4ox6TWyg" name="DatamodelStandardKind">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_YakRcDIFEe-MadynLEjMpQ"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-g6uLaOEe6et-4ox6TWyg" name="ISO_10303"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-g6v7aOEe6et-4ox6TWyg" name="OtherDatamodelStandard"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-g6ubaOEe6et-4ox6TWyg" name="ISO_15926"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-g6uraOEe6et-4ox6TWyg" name="SenML"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-g6u7aOEe6et-4ox6TWyg" name="ISO_12006"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-g6vLaOEe6et-4ox6TWyg" name="IEC_81346"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-g6vbaOEe6et-4ox6TWyg" name="ISO_15739_IFC"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-g6vraOEe6et-4ox6TWyg" name="IEC_61850"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-g6v7aOEe6et-4ox6TWyg" name="OtherDatamodelStandard"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_g-hhwLaOEe6et-4ox6TWyg" name="EncodingKind">
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-hhwraOEe6et-4ox6TWyg" name="JSON"/>

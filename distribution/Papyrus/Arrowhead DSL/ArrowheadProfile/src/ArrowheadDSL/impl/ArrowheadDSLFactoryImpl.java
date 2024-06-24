@@ -247,17 +247,6 @@ public class ArrowheadDSLFactoryImpl extends EFactoryImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public SD createSD() {
-		SDImpl sd = new SDImpl();
-		return sd;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public LocalCloudDesign createLocalCloudDesign() {
 		LocalCloudDesignImpl localCloudDesign = new LocalCloudDesignImpl();
 		return localCloudDesign;
@@ -272,6 +261,17 @@ public class ArrowheadDSLFactoryImpl extends EFactoryImpl implements ArrowheadDS
 	public System_of_LocalcloudsDesign createSystem_of_LocalcloudsDesign() {
 		System_of_LocalcloudsDesignImpl system_of_LocalcloudsDesign = new System_of_LocalcloudsDesignImpl();
 		return system_of_LocalcloudsDesign;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public SD createSD() {
+		SDImpl sd = new SDImpl();
+		return sd;
 	}
 
 	/**
@@ -401,17 +401,6 @@ public class ArrowheadDSLFactoryImpl extends EFactoryImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
-	public IDD createIDD() {
-		IDDImpl idd = new IDDImpl();
-		return idd;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public System_of_LocalcloudsImplementation createSystem_of_LocalcloudsImplementation() {
 		System_of_LocalcloudsImplementationImpl system_of_LocalcloudsImplementation = new System_of_LocalcloudsImplementationImpl();
 		return system_of_LocalcloudsImplementation;
@@ -448,6 +437,17 @@ public class ArrowheadDSLFactoryImpl extends EFactoryImpl implements ArrowheadDS
 	public IDD_Implementation createIDD_Implementation() {
 		IDD_ImplementationImpl idD_Implementation = new IDD_ImplementationImpl();
 		return idD_Implementation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public IDD createIDD() {
+		IDDImpl idd = new IDDImpl();
+		return idd;
 	}
 
 	/**

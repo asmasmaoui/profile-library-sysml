@@ -16,7 +16,6 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 import org.eclipse.emf.ecore.util.EDataTypeEList;
-import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
 import org.eclipse.papyrus.sysml16.blocks.internal.impl.BlockImpl;
 
 /**
@@ -36,16 +35,6 @@ import org.eclipse.papyrus.sysml16.blocks.internal.impl.BlockImpl;
  * @generated
  */
 public class SysDImpl extends BlockImpl implements SysD {
-	/**
-	 * The cached value of the '{@link #getMicrosystemName() <em>Microsystem Name</em>}' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getMicrosystemName()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<String> microsystemName;
-
 	/**
 	 * The cached value of the '{@link #getFunctionalProperties() <em>Functional Properties</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -112,10 +101,16 @@ public class SysDImpl extends BlockImpl implements SysD {
 	 */
 	@Override
 	public EList<String> getMicrosystemName() {
-		if (microsystemName == null) {
-			microsystemName = new EDataTypeUniqueEList<String>(String.class, this, ArrowheadDSLPackage.SYS_D__MICROSYSTEM_NAME);
-		}
-		return microsystemName;
+		// get the MicrosystemName
+								EList<String> name = null;
+								if (getBase_Class() != null) {
+								} else if (this instanceof SysD) {
+									SysD sysd= (SysD) this;
+									name = sysd.getMicrosystemName();
+								}
+								
+								return null;
+		
 	}
 
 	/**
@@ -248,7 +243,7 @@ public class SysDImpl extends BlockImpl implements SysD {
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case ArrowheadDSLPackage.SYS_D__MICROSYSTEM_NAME:
-				return microsystemName != null && !microsystemName.isEmpty();
+				return !getMicrosystemName().isEmpty();
 			case ArrowheadDSLPackage.SYS_D__FUNCTIONAL_PROPERTIES:
 				return functionalProperties != null && !functionalProperties.isEmpty();
 			case ArrowheadDSLPackage.SYS_D__SYSTEM_DATABASE:
@@ -269,9 +264,7 @@ public class SysDImpl extends BlockImpl implements SysD {
 		if (eIsProxy()) return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (MicrosystemName: ");
-		result.append(microsystemName);
-		result.append(", FunctionalProperties: ");
+		result.append(" (FunctionalProperties: ");
 		result.append(functionalProperties);
 		result.append(", SystemDatabase: ");
 		result.append(systemDatabase);

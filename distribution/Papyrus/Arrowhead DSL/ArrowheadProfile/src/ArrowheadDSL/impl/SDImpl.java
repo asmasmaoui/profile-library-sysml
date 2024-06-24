@@ -5,11 +5,9 @@ package ArrowheadDSL.impl;
 import ArrowheadDSL.ArrowheadDSLPackage;
 import ArrowheadDSL.SD;
 import java.lang.reflect.InvocationTargetException;
-import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.papyrus.sysml16.portsandflows.internal.impl.InterfaceBlockImpl;
 
 /**
@@ -34,17 +32,7 @@ public class SDImpl extends InterfaceBlockImpl implements SD {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String MICROSERVICE_NAME_EDEFAULT = "Inherit from generalization SD";
-
-	/**
-	 * The cached value of the '{@link #getMicroserviceName() <em>Microservice Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getMicroserviceName()
-	 * @generated
-	 * @ordered
-	 */
-	protected String microserviceName = MICROSERVICE_NAME_EDEFAULT;
+	protected static final String MICROSERVICE_NAME_EDEFAULT = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -72,7 +60,20 @@ public class SDImpl extends InterfaceBlockImpl implements SD {
 	 */
 	@Override
 	public String getMicroserviceName() {
-		return microserviceName;
+		// get  MicrosystemName Element
+						String name = null;
+						if (getBase_Class() != null) {
+							name = getBase_Class().getName();
+						} else if (this instanceof SD) {
+							SD sd= (SD) this;
+							name = sd.getMicroserviceName();
+						}
+						// remove space
+						if (name != null) {
+							String idShort = name.replace(" ", "");
+							return idShort;
+						}
+						return null;
 	}
 
 	/**
@@ -82,10 +83,9 @@ public class SDImpl extends InterfaceBlockImpl implements SD {
 	 */
 	@Override
 	public void setMicroserviceName(String newMicroserviceName) {
-		String oldMicroserviceName = microserviceName;
-		microserviceName = newMicroserviceName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ArrowheadDSLPackage.SD__MICROSERVICE_NAME, oldMicroserviceName, microserviceName));
+		// TODO: implement this method to set the 'Microservice Name' attribute
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
 	}
 
 	/**
@@ -153,7 +153,7 @@ public class SDImpl extends InterfaceBlockImpl implements SD {
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case ArrowheadDSLPackage.SD__MICROSERVICE_NAME:
-				return MICROSERVICE_NAME_EDEFAULT == null ? microserviceName != null : !MICROSERVICE_NAME_EDEFAULT.equals(microserviceName);
+				return MICROSERVICE_NAME_EDEFAULT == null ? getMicroserviceName() != null : !MICROSERVICE_NAME_EDEFAULT.equals(getMicroserviceName());
 		}
 		return super.eIsSet(featureID);
 	}
@@ -171,22 +171,6 @@ public class SDImpl extends InterfaceBlockImpl implements SD {
 				return null;
 		}
 		return super.eInvoke(operationID, arguments);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String toString() {
-		if (eIsProxy()) return super.toString();
-
-		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (MicroserviceName: ");
-		result.append(microserviceName);
-		result.append(')');
-		return result.toString();
 	}
 
 } //SDImpl
