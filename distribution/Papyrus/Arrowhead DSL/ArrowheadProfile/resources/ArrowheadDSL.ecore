@@ -7,8 +7,7 @@
       <details key="documentation" value="Microservies SD to be added to a microsystem (SysD) as a full port."/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="MicrosystemName" ordered="false"
-        upperBound="-1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"
-        volatile="true" transient="true" derived="true"/>
+        upperBound="-1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="FunctionalProperties" ordered="false"
         unique="false" lowerBound="1" upperBound="-1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//UnlimitedNatural"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="SystemDatabase" ordered="false"

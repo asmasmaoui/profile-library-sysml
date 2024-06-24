@@ -35,7 +35,8 @@ Property > Compartment[kind="internalstructure"]{
 }
 
 Class[appliedStereotypes~="ArrowheadDSL::System_Implementation"]{
-	fillColor: #ff8000;
+	fillColor: #FF8000;
+	gradient: none;
 	lineColor: black;
 	lineWidth: 2;
 	bold: true; 
@@ -50,7 +51,8 @@ Class[appliedStereotypes~="ArrowheadDSL::System_Implementation"]{
 	}
 	
 Class[appliedStereotypes~="ArrowheadDSL::SysDD"]{
-	fillColor: #808080; 
+	fillColor: #FF8000;
+	gradient: none;
 	lineColor: black;
 	lineWidth: 2;
 	bold: true; 
@@ -94,7 +96,8 @@ Class[appliedStereotypes~="ArrowheadDSL::IntercloudNetworkDesign"]{
 	displayStereotypes: true;
 }
 Class[appliedStereotypes~="ArrowheadDSL::IDD_Implementation"]{
-	fillColor: #808080; 
+	fillColor: #9BC7CC;
+	gradient: none;
 	lineColor: black;
 	lineWidth: 2;
 	bold: true; 
@@ -109,7 +112,8 @@ Class[appliedStereotypes~="ArrowheadDSL::System_of_LocalcloudsImplementation"]{
 	displayStereotypes: true;
 }
 Class[appliedStereotypes~="ArrowheadDSL::IDD"]{
-	fillColor: #808080; 
+	fillColor: #9BC7CC;
+	gradient: none;
 	lineColor: black;
 	lineWidth: 2;
 	bold: true; 
@@ -155,21 +159,23 @@ Class[appliedStereotypes~="ArrowheadDSL::IntercloudNetworkDesignDescription"]{
 }
 Class[appliedStereotypes~="ArrowheadDSL::SysD"]{
 	fillColor: #FF8000;
+	gradient: none;
 	lineColor: black;
 	lineWidth: 2;
 	bold: true; 
 	displayStereotypes: true;
-	gradient: none;
+	
 }
 
 
 Class[appliedStereotypes~="ArrowheadDSL::SD"]{
 	fillColor: #9BC7CC;
+	gradient: none;
 	lineColor: black;
 	lineWidth: 2;
 	bold: true; 
 	displayStereotypes: true;
-	gradient: none;
+	
 }
 Class[appliedStereotypes~="ArrowheadDSL::ArrowheadDSLRequirement"]{
 	fillColor: #dfd869;
