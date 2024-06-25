@@ -235,7 +235,8 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="IDD" eSuperTypes="#//SD">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Port" ordered="false" lowerBound="1"
-        eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"/>
+        eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"
+        defaultValueLiteral="999"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Protocol" ordered="false"
         unique="false" lowerBound="1" eType="#//ApplicationProtocolKind"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Encoding" ordered="false"
@@ -289,7 +290,7 @@
     <eLiterals name="Other" value="5"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="DatamodelStandardKind">
-    <eLiterals name="_"/>
+    <eLiterals name="NONE"/>
     <eLiterals name="ISO_10303" value="1"/>
     <eLiterals name="ISO_15926" value="2"/>
     <eLiterals name="SenML" value="3"/>

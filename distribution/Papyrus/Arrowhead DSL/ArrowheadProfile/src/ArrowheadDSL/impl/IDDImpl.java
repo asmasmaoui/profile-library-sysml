@@ -47,7 +47,7 @@ public class IDDImpl extends SDImpl implements IDD {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final int PORT_EDEFAULT = 0;
+	protected static final int PORT_EDEFAULT = 999;
 
 	/**
 	 * The cached value of the '{@link #getPort() <em>Port</em>}' attribute.
@@ -207,7 +207,7 @@ public class IDDImpl extends SDImpl implements IDD {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final DatamodelStandardKind DATAMODEL_EDEFAULT = DatamodelStandardKind.__;
+	protected static final DatamodelStandardKind DATAMODEL_EDEFAULT = DatamodelStandardKind.NONE;
 
 	/**
 	 * The cached value of the '{@link #getDatamodel() <em>Datamodel</em>}' attribute.

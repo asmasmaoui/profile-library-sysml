@@ -19,14 +19,14 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum DatamodelStandardKind implements Enumerator {
 	/**
-	 * The '<em><b></b></em>' literal object.
+	 * The '<em><b>NONE</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #___VALUE
+	 * @see #NONE_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	__(0, "__", "_"), /**
+	NONE(0, "NONE", "NONE"), /**
 	 * The '<em><b>ISO 10303</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -93,15 +93,15 @@ public enum DatamodelStandardKind implements Enumerator {
 	OTHER_DATAMODEL_STANDARD(8, "OtherDatamodelStandard", "OtherDatamodelStandard");
 
 	/**
-	 * The '<em><b></b></em>' literal value.
+	 * The '<em><b>NONE</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #__
-	 * @model literal="_"
+	 * @see #NONE
+	 * @model
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ___VALUE = 0;
+	public static final int NONE_VALUE = 0;
 
 	/**
 	 * The '<em><b>ISO 10303</b></em>' literal value.
@@ -199,7 +199,7 @@ public enum DatamodelStandardKind implements Enumerator {
 	 */
 	private static final DatamodelStandardKind[] VALUES_ARRAY =
 		new DatamodelStandardKind[] {
-			__,
+			NONE,
 			ISO_10303,
 			ISO_15926,
 			SEN_ML,
@@ -264,7 +264,7 @@ public enum DatamodelStandardKind implements Enumerator {
 	 */
 	public static DatamodelStandardKind get(int value) {
 		switch (value) {
-			case ___VALUE: return __;
+			case NONE_VALUE: return NONE;
 			case ISO_10303_VALUE: return ISO_10303;
 			case ISO_15926_VALUE: return ISO_15926;
 			case SEN_ML_VALUE: return SEN_ML;

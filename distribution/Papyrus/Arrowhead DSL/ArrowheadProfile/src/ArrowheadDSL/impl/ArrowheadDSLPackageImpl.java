@@ -2249,7 +2249,7 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 		initEReference(getIDD_Implementation_Systemimplementation(), this.getSystem_Implementation(), this.getSystem_Implementation_Idd_implementation(), "systemimplementation", null, 0, -1, IDD_Implementation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(iddEClass, ArrowheadDSL.IDD.class, "IDD", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getIDD_Port(), theTypesPackage.getInteger(), "Port", null, 1, 1, ArrowheadDSL.IDD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getIDD_Port(), theTypesPackage.getInteger(), "Port", "999", 1, 1, ArrowheadDSL.IDD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getIDD_Protocol(), this.getApplicationProtocolKind(), "Protocol", null, 1, 1, ArrowheadDSL.IDD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getIDD_Encoding(), this.getEncodingKind(), "Encoding", null, 1, 1, ArrowheadDSL.IDD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getIDD_Security(), this.getArrowheadSecurityKind(), "Security", null, 1, 1, ArrowheadDSL.IDD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -2365,7 +2365,7 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 		addEEnumLiteral(cryptoAlgorithmKindEEnum, CryptoAlgorithmKind.OTHER);
 
 		initEEnum(datamodelStandardKindEEnum, DatamodelStandardKind.class, "DatamodelStandardKind");
-		addEEnumLiteral(datamodelStandardKindEEnum, DatamodelStandardKind.__);
+		addEEnumLiteral(datamodelStandardKindEEnum, DatamodelStandardKind.NONE);
 		addEEnumLiteral(datamodelStandardKindEEnum, DatamodelStandardKind.ISO_10303);
 		addEEnumLiteral(datamodelStandardKindEEnum, DatamodelStandardKind.ISO_15926);
 		addEEnumLiteral(datamodelStandardKindEEnum, DatamodelStandardKind.SEN_ML);
