@@ -372,7 +372,6 @@
       <generalization xmi:type="uml:Generalization" xmi:id="_hz3ekI4vEe6ZtIoJ221FFA" general="_awzE4D0kEe60840L8fIbKA"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_5GFn4I4vEe6ZtIoJ221FFA" name="Port">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-        <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_abtHEDLnEe-wiqlcxUElEg" value="999"/>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_tIV2oJSJEe6U99HogCXF3A" name="Protocol" visibility="public" type="_g-d3YLaOEe6et-4ox6TWyg" isUnique="false"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_tIYS4JSJEe6U99HogCXF3A" name="Encoding" type="_g-hhwLaOEe6et-4ox6TWyg" isUnique="false"/>

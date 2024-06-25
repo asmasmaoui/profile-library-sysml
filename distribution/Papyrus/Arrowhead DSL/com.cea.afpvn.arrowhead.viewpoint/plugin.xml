@@ -23,4 +23,57 @@
 </extension>
 
 
+<extension
+         point="org.eclipse.emf.validation.constraintBindings">
+      <binding
+            context="com.cea.afpvn.arrowhead.viewpoint.clientContext">
+         <category
+               ref="com.cea.afpvn.arrowhead.viewpoint.category">
+         </category>
+      </binding>
+      <clientContext
+            default="false"
+            id="com.cea.afpvn.arrowhead.viewpoint.clientContext">
+         <selector
+               class="com.cea.afpvn.arrowhead.validation.ClientSelector">
+         </selector>
+      </clientContext>
+   </extension>
+   <extension
+         point="org.eclipse.emf.validation.constraintProviders">
+      <category
+            id="com.cea.afpvn.arrowhead.viewpoint.category"
+            mandatory="true"
+            name="AFPVN rules validation ">
+      </category>
+      <constraintProvider
+            mode="Batch">
+         <package
+               namespaceUri="http://www.eclipse.org/uml2/5.0.0/UML">
+         </package>
+         <constraints
+               categories="com.cea.afpvn.arrowhead.viewpoint.category">
+            <constraint
+                  class="com.cea.afpvn.arrowhead.validation.PortRule"
+                  id="com.cea.afpvn.arrowhead.viewpoint.RulePort"
+                  isEnabledByDefault="true"
+                  lang="Java"
+                  mode="Batch"
+                  name="Port Rule : The IDD Port artibute value should be set"
+                  severity="ERROR"
+                  statusCode="1">
+               <target
+                     class="Class">
+               </target>
+               <message>
+                  Port Rule : The IDD Port artibute value should be set
+               </message>
+               <description>
+                  Port Rule : The IDD Port artibute value should be set
+               </description>
+            </constraint>
+          </constraints>
+      </constraintProvider>
+   </extension>
+
 </plugin>

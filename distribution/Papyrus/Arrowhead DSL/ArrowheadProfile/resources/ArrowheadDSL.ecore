@@ -235,8 +235,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="IDD" eSuperTypes="#//SD">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Port" ordered="false" lowerBound="1"
-        eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"
-        defaultValueLiteral="999"/>
+        eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Protocol" ordered="false"
         unique="false" lowerBound="1" eType="#//ApplicationProtocolKind"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Encoding" ordered="false"

@@ -47,7 +47,7 @@ public class IDDImpl extends SDImpl implements IDD {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final int PORT_EDEFAULT = 999;
+	protected static final int PORT_EDEFAULT = 0;
 
 	/**
 	 * The cached value of the '{@link #getPort() <em>Port</em>}' attribute.

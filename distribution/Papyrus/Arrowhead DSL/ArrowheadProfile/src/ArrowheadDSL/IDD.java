@@ -29,7 +29,6 @@ package ArrowheadDSL;
 public interface IDD extends SD {
 	/**
 	 * Returns the value of the '<em><b>Port</b></em>' attribute.
-	 * The default value is <code>"999"</code>.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Port</em>' attribute isn't clear,
@@ -39,7 +38,7 @@ public interface IDD extends SD {
 	 * @return the value of the '<em>Port</em>' attribute.
 	 * @see #setPort(int)
 	 * @see ArrowheadDSL.ArrowheadDSLPackage#getIDD_Port()
-	 * @model default="999" dataType="org.eclipse.uml2.types.Integer" required="true" ordered="false"
+	 * @model dataType="org.eclipse.uml2.types.Integer" required="true" ordered="false"
 	 * @generated
 	 */
 	int getPort();
