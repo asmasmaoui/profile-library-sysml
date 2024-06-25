@@ -3,17 +3,19 @@
 package ArrowheadDSL.impl;
 
 import ArrowheadDSL.ArrowheadDSLPackage;
+import ArrowheadDSL.IDD;
+import ArrowheadDSL.IDD_Implementation;
 import ArrowheadDSL.SD;
 import java.lang.reflect.InvocationTargetException;
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.papyrus.sysml16.portsandflows.internal.impl.InterfaceBlockImpl;
+import org.eclipse.uml2.uml.Classifier;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>SD</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object
+ * '<em><b>SD</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
@@ -26,8 +28,7 @@ import org.eclipse.papyrus.sysml16.portsandflows.internal.impl.InterfaceBlockImp
 public class SDImpl extends InterfaceBlockImpl implements SD {
 	/**
 	 * The default value of the '{@link #getMicroserviceName() <em>Microservice Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #getMicroserviceName()
 	 * @generated
 	 * @ordered
@@ -35,8 +36,7 @@ public class SDImpl extends InterfaceBlockImpl implements SD {
 	protected static final String MICROSERVICE_NAME_EDEFAULT = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	protected SDImpl() {
@@ -44,8 +44,7 @@ public class SDImpl extends InterfaceBlockImpl implements SD {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -54,31 +53,33 @@ public class SDImpl extends InterfaceBlockImpl implements SD {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
 	public String getMicroserviceName() {
-		// get  MicrosystemName Element
-						String name = null;
-						if (getBase_Class() != null) {
-							name = getBase_Class().getName();
-						} else if (this instanceof SD) {
-							SD sd= (SD) this;
-							name = sd.getMicroserviceName();
-						}
-						// remove space
-						if (name != null) {
-							String idShort = name.replace(" ", "");
-							return idShort;
-						}
-						return null;
+		// get MicrosystemName Element
+				String name = null;
+				if (this instanceof IDD_Implementation) {
+					Classifier classifier = this.getBase_Class();
+					if (classifier.getGenerals() != null && !classifier.getGenerals().isEmpty())
+						name = classifier.getGenerals().get(0).getName();
+					
+				}else if (this instanceof IDD) {
+					Classifier classifier = this.getBase_Class();
+					if (classifier.getGenerals() != null && !classifier.getGenerals().isEmpty())
+						name = classifier.getGenerals().get(0).getName();
+					
+				} else if (this instanceof SD) {
+					SD sdElement = (SD) this;
+					name = sdElement.getBase_Class().getName();
+				}
+		
+				return name;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -89,8 +90,7 @@ public class SDImpl extends InterfaceBlockImpl implements SD {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public void Operation() {
@@ -100,8 +100,7 @@ public class SDImpl extends InterfaceBlockImpl implements SD {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -114,8 +113,7 @@ public class SDImpl extends InterfaceBlockImpl implements SD {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -130,8 +128,7 @@ public class SDImpl extends InterfaceBlockImpl implements SD {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -145,8 +142,7 @@ public class SDImpl extends InterfaceBlockImpl implements SD {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -159,8 +155,7 @@ public class SDImpl extends InterfaceBlockImpl implements SD {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -173,4 +168,4 @@ public class SDImpl extends InterfaceBlockImpl implements SD {
 		return super.eInvoke(operationID, arguments);
 	}
 
-} //SDImpl
+} // SDImpl
