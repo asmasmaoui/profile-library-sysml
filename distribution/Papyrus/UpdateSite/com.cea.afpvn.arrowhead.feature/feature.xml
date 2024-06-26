@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
       id="com.cea.afpvn.arrowhead.feature"
-      label="AFPVN feature"
+      label="AFPVN Feature"
       version="1.0.0.qualifier"
       provider-name="CEA">
 
@@ -21,28 +21,21 @@
          id="com.cea.afpvn.arrowhead.types"
          download-size="0"
          install-size="0"
-         version="1.0.0.qualifier"
-         unpack="false"/>
-
-   <plugin
-         id="com.cea.afpvn.arrowhead.import"
-         download-size="0"
-         install-size="0"
-         version="1.0.0.qualifier"
-         unpack="false"/>
-
-   <plugin
-         id="ArrowheadProfile"
-         download-size="0"
-         install-size="0"
-         version="1.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.cea.afpvn.arrowhead.viewpoint"
          download-size="0"
          install-size="0"
-         version="1.0.0.qualifier"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="ArrowheadProfile"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
          unpack="false"/>
 
 </feature>
