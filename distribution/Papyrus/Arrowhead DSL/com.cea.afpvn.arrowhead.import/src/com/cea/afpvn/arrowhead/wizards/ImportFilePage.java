@@ -18,6 +18,7 @@ package com.cea.afpvn.arrowhead.wizards;
 
 import org.eclipse.core.runtime.IPath;
 import org.eclipse.jface.dialogs.IDialogSettings;
+import org.eclipse.jface.resource.CompositeImageDescriptor;
 import org.eclipse.jface.viewers.IStructuredSelection;
 import org.eclipse.ui.IWorkbench;
 import org.eclipse.ui.internal.wizards.datatransfer.WizardFileSystemResourceImportPage1;
@@ -55,14 +56,16 @@ public class ImportFilePage extends WizardFileSystemResourceImportPage1{
 	public ImportFilePage(IWorkbench name,
 			IStructuredSelection selection, String[] allowedfiles) {
 		super(name,selection);
-		
 		this.selectedFilePath = null;
+		this.setTitle("Imoprt page");
+		this.setImageDescriptor(null);
 	}
 
 	public ImportFilePage(IWorkbench workbench, IStructuredSelection selection, String[] allowedfiles,
 			IPath newFilePath) {
 		super(workbench,selection);
 		this.selectedFilePath = newFilePath;
+		System.out.println(this.selectedFilePath.lastSegment());//IK
 		setContainerFieldValue(newFilePath.lastSegment());
 		// TODO Auto-generated constructor stub
 	}

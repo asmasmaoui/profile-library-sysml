@@ -39,6 +39,7 @@ import org.eclipse.core.runtime.SubProgressMonitor;
 import org.eclipse.emf.common.ui.URIEditorInput;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.jface.dialogs.IDialogSettings;
+import org.eclipse.jface.viewers.ISelection;
 import org.eclipse.jface.viewers.ISelectionChangedListener;
 import org.eclipse.jface.viewers.IStructuredSelection;
 import org.eclipse.jface.viewers.SelectionChangedEvent;
@@ -59,6 +60,7 @@ import org.eclipse.papyrus.uml.diagram.wizards.providers.INewModelStorageProvide
 import org.eclipse.papyrus.uml.diagram.wizards.providers.NewModelStorageProviderRegistry;
 import org.eclipse.papyrus.uml.diagram.wizards.providers.WorkspaceNewModelStorageProvider;
 import org.eclipse.papyrus.uml.diagram.wizards.wizards.CreateModelWizard;
+import org.eclipse.swt.widgets.FileDialog;
 import org.eclipse.ui.IEditorDescriptor;
 import org.eclipse.ui.IEditorInput;
 import org.eclipse.ui.IFileEditorInput;
@@ -66,6 +68,7 @@ import org.eclipse.ui.INewWizard;
 import org.eclipse.ui.IURIEditorInput;
 import org.eclipse.ui.IWorkbench;
 import org.eclipse.ui.PartInitException;
+import org.eclipse.ui.PlatformUI;
 import org.eclipse.ui.ide.IDE;
 import org.eclipse.ui.services.IEvaluationService;
 
@@ -124,7 +127,7 @@ public class ImportAFPVNWizard extends CreateModelWizard implements INewWizard {
 	private ImportFilePage importPage;
 
 	private IProject project;
-
+	private IFile file;
 	private IStructuredSelection selection;
 
 	private static final String[] allowedFiles = new String[] { "*.uml" }; /// IK which files types we have to allowed 
@@ -141,17 +144,11 @@ public class ImportAFPVNWizard extends CreateModelWizard implements INewWizard {
 	 */
 	@Override
 	public void addPages() {
-		// ModelCreation: the selectDiagramCategoryPage exists
-		if (getSelectedStorageProvider().getArchitectureContextPage() != null) {
-			// addPageIfNotNull(getSelectedStorageProvider().getArchitectureContextPage());
-		} else {
-			// addPageIfNotNull(selectArchitectureContextPage);
-		}
 
 		addPageIfNotNull(selectStorageProviderPage);
 		//addPageIfNotNull(newProjectPage);
 
-		startProviderPageIndex = getPageCount() - 1;
+		startProviderPageIndex = getPageCount();
 		for (INewModelStorageProvider next : getStorageProviders()) {
 			List<IWizardPage> pageList = new java.util.ArrayList<>(3);
 			for (IWizardPage page : next.createPages()) {
@@ -177,7 +174,7 @@ public class ImportAFPVNWizard extends CreateModelWizard implements INewWizard {
 	}
 
 	protected void setNewProjectPage(IWizardPage page) {
-		this.newProjectPage = page;
+	this.newProjectPage = page;
 	}
 
 	public boolean isInitModelWizard() {
@@ -209,38 +206,42 @@ public class ImportAFPVNWizard extends CreateModelWizard implements INewWizard {
 		
 
 		IDialogSettings workbenchSettings = Activator.getDefault().getDialogSettings();
-		IDialogSettings section = workbenchSettings.getSection(NEW_MODEL_SETTINGS);
-		if (section == null) {
-			section = workbenchSettings.addNewSection(NEW_MODEL_SETTINGS);
-		}
-		setDialogSettings(section);
-
-		selectStorageProviderPage = createSelectStorageProviderPage();
-
-		for (INewModelStorageProvider next : getStorageProviders()) {
-			next.init(this, selection);
-		}
-
-		selectRepresentationKindPage = createSelectRepresentationKindPage();
-
-		try {
-
-			TreeSelection treeselection = (TreeSelection) selection;
-
-			if (treeselection != null && treeselection.getPaths() != null && treeselection.getFirstElement() != null
-					&& treeselection.getFirstElement() instanceof IProject) {
-				project = (IProject) treeselection.getFirstElement();
-
-			} else {
-				project = createNewProject();
+		/*
+		 * IDialogSettings section = workbenchSettings.getSection(NEW_MODEL_SETTINGS);
+		 * if (section == null) { section =
+		 * workbenchSettings.addNewSection(NEW_MODEL_SETTINGS); }
+		 * setDialogSettings(section);
+		 * 
+		 * selectStorageProviderPage = createSelectStorageProviderPage();
+		 * 
+		 * for (INewModelStorageProvider next : getStorageProviders()) { next.init(this,
+		 * selection); }
+		 * 
+		 * selectRepresentationKindPage = createSelectRepresentationKindPage();
+		 * 
+		 * try {
+		 * 
+		 * TreeSelection treeselection = (TreeSelection) selection;
+		 * 
+		 * if (treeselection != null && treeselection.getPaths() != null &&
+		 * treeselection.getFirstElement() != null && treeselection.getFirstElement()
+		 * instanceof IProject) { project = (IProject) treeselection.getFirstElement();
+		 * 
+		 * } else {
+		 */ //IK to drop the papyrus model page.
+				try {
+					project = createNewProject();
+				} catch (CoreException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 				
 				
 				
-			}
-		} catch (CoreException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+				/*
+				 * } } catch (CoreException e) { // TODO Auto-generated catch block
+				 * e.printStackTrace(); }
+				 *///IK to drop the papyrus model page.
 
 	}
 
@@ -249,12 +250,17 @@ public class ImportAFPVNWizard extends CreateModelWizard implements INewWizard {
 	 *
 	 * @return true, if successful {@inheritDoc}
 	 */
+	@SuppressWarnings("restriction")
 	@Override
 	public boolean performFinish() {
 		
-				//importPage.finish();// import the UML file 
+		  
+				//importPage.finish();// import the UML file // IK
 				// execute the transformation
+		/*FileDialog fileDialog = new FileDialog(PlatformUI.getWorkbench().getModalDialogShellProvider().getShell()); 
+		String selectedFile = (String)( fileDialog).open();*/ // IK: to open a dialogue 
 				ImportSysml2Handler importer = new ImportSysml2Handler();
+				
 				try {
 					((ImportSysml2Handler) importer).execute(project);
 				} catch (ExecutionException e) {
@@ -280,40 +286,7 @@ public class ImportAFPVNWizard extends CreateModelWizard implements INewWizard {
 		return result;
 	}
 
-	protected ServicesRegistry createServicesRegistry() {
-		ServicesRegistry result = null;
-
-		try {
-			result = new ExtensionServicesRegistry(org.eclipse.papyrus.infra.core.Activator.PLUGIN_ID);
-		} catch (ServiceException e) {
-			// couldn't create the registry? Fatal problem
-			Activator.log.error(e);
-		}
-
-		try {
-			// have to create the model set and populate it with the DI model
-			// before initializing other services that actually need the DI
-			// model, such as the SashModel Manager service
-			result.startServicesByClassKeys(ModelSet.class);
-		} catch (ServiceException ex) {
-			// Ignore this exception: some services may not have been loaded,
-			// which is probably normal at this point
-		}
-
-		return result;
-	}
-
-	protected void initServicesRegistry(ServicesRegistry registry) throws ServiceException {
-		try {
-			registry.startRegistry();
-		} catch (ServiceException ex) {
-			// Ignore this exception: some services may not have been loaded,
-			// which is probably normal at this point
-		}
-
-		registry.getService(IPageManager.class);
-	}
-
+	
 	
 
 	/**
