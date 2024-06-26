@@ -429,7 +429,7 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-gTpbaOEe6et-4ox6TWyg" name="OtherCoAPMethod"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_g-gTpraOEe6et-4ox6TWyg" name="ComprressionKind">
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-gTqLaOEe6et-4ox6TWyg" name="None"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-gTqLaOEe6et-4ox6TWyg" name="NONE"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-gTp7aOEe6et-4ox6TWyg" name="EXI"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-gTqbaOEe6et-4ox6TWyg" name="OtherCompression"/>
     </packagedElement>

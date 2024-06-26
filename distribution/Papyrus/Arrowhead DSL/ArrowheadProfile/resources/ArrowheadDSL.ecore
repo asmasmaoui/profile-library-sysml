@@ -272,7 +272,7 @@
     <eLiterals name="NOT_SECURE" value="2"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="ComprressionKind">
-    <eLiterals name="None"/>
+    <eLiterals name="NONE"/>
     <eLiterals name="EXI" value="1"/>
     <eLiterals name="OtherCompression" value="2"/>
   </eClassifiers>
