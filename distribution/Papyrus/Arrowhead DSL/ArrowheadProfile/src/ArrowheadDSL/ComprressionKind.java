@@ -19,14 +19,14 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum ComprressionKind implements Enumerator {
 	/**
-	 * The '<em><b>None</b></em>' literal object.
+	 * The '<em><b>NONE</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #NONE_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	NONE(0, "None", "None"), /**
+	NONE(0, "NONE", "NONE"), /**
 	 * The '<em><b>EXI</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -47,11 +47,11 @@ public enum ComprressionKind implements Enumerator {
 	OTHER_COMPRESSION(2, "OtherCompression", "OtherCompression");
 
 	/**
-	 * The '<em><b>None</b></em>' literal value.
+	 * The '<em><b>NONE</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #NONE
-	 * @model name="None"
+	 * @model
 	 * @generated
 	 * @ordered
 	 */

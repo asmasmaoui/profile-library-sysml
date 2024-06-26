@@ -95,7 +95,7 @@
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//ArrowheadSecurityKind/NOT_SECURE"/>
     </genEnums>
     <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="ArrowheadDSL.ecore#//ComprressionKind">
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//ComprressionKind/None"/>
+      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//ComprressionKind/NONE"/>
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//ComprressionKind/EXI"/>
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ArrowheadDSL.ecore#//ComprressionKind/OtherCompression"/>
     </genEnums>
