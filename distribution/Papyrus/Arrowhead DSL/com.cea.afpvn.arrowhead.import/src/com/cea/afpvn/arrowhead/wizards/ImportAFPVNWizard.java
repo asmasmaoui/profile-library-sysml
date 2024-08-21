@@ -20,8 +20,10 @@ package com.cea.afpvn.arrowhead.wizards;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.io.File;
@@ -69,7 +71,10 @@ import org.eclipse.ui.IURIEditorInput;
 import org.eclipse.ui.IWorkbench;
 import org.eclipse.ui.PartInitException;
 import org.eclipse.ui.PlatformUI;
+import org.eclipse.ui.dialogs.FileSystemElement;
+import org.eclipse.ui.dialogs.WizardResourceImportPage;
 import org.eclipse.ui.ide.IDE;
+import org.eclipse.ui.internal.wizards.datatransfer.WizardFileSystemResourceImportPage1;
 import org.eclipse.ui.services.IEvaluationService;
 
 /**
@@ -83,7 +88,7 @@ import org.eclipse.ui.services.IEvaluationService;
  *
  * Those files can be used with the PapyrusEditor (see plugin.xml).
  */
-public class ImportAFPVNWizard extends CreateModelWizard implements INewWizard {
+public class ImportAFPVNWizard extends CreateModelWizard  implements INewWizard {
 
 	/** The Constant WIZARD_ID. */
 	public static final String WIZARD_ID = "org.eclipse.papyrus.uml.diagram.wizards.createmodel"; //$NON-NLS-1$
@@ -119,6 +124,8 @@ public class ImportAFPVNWizard extends CreateModelWizard implements INewWizard {
 	private int endProviderPageIndex; // index of first page after provider pages
 
 	protected IWizardPage newProjectPage;
+	
+
 
 	//private final NewModelWizardData wizardData = new NewModelWizardData();
 
@@ -168,7 +175,7 @@ public class ImportAFPVNWizard extends CreateModelWizard implements INewWizard {
 		
 
 		projectPath = project.getFullPath();
-		
+	
 		this.importPage = new ImportFilePage(workbench, selection, allowedFiles, projectPath);
 		addPage(this.importPage);
 	}
@@ -206,43 +213,13 @@ public class ImportAFPVNWizard extends CreateModelWizard implements INewWizard {
 		
 
 		IDialogSettings workbenchSettings = Activator.getDefault().getDialogSettings();
-		/*
-		 * IDialogSettings section = workbenchSettings.getSection(NEW_MODEL_SETTINGS);
-		 * if (section == null) { section =
-		 * workbenchSettings.addNewSection(NEW_MODEL_SETTINGS); }
-		 * setDialogSettings(section);
-		 * 
-		 * selectStorageProviderPage = createSelectStorageProviderPage();
-		 * 
-		 * for (INewModelStorageProvider next : getStorageProviders()) { next.init(this,
-		 * selection); }
-		 * 
-		 * selectRepresentationKindPage = createSelectRepresentationKindPage();
-		 * 
-		 * try {
-		 * 
-		 * TreeSelection treeselection = (TreeSelection) selection;
-		 * 
-		 * if (treeselection != null && treeselection.getPaths() != null &&
-		 * treeselection.getFirstElement() != null && treeselection.getFirstElement()
-		 * instanceof IProject) { project = (IProject) treeselection.getFirstElement();
-		 * 
-		 * } else {
-		 */ //IK to drop the papyrus model page.
+		
 				try {
 					project = createNewProject();
 				} catch (CoreException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-				
-				
-				
-				/*
-				 * } } catch (CoreException e) { // TODO Auto-generated catch block
-				 * e.printStackTrace(); }
-				 *///IK to drop the papyrus model page.
-
 	}
 
 	/**
@@ -254,11 +231,23 @@ public class ImportAFPVNWizard extends CreateModelWizard implements INewWizard {
 	@Override
 	public boolean performFinish() {
 		
-		  
-				//importPage.finish();// import the UML file // IK
-				// execute the transformation
-		/*FileDialog fileDialog = new FileDialog(PlatformUI.getWorkbench().getModalDialogShellProvider().getShell()); 
-		String selectedFile = (String)( fileDialog).open();*/ // IK: to open a dialogue 
+		/////// IK
+		/*
+		WizardFileSystemResourceImportAFPVN pageInformation =new WizardFileSystemResourceImportAFPVN(DEFAULT_IMAGE, selection);
+		Iterator<IResource> resourcesEnum = pageInformation.getSelectedResourcesAfpvn().iterator();
+		List<IResource> fileSystemObjects = new ArrayList<IResource>();
+		while (resourcesEnum.hasNext()) {
+			fileSystemObjects.add((IResource) ((FileSystemElement) resourcesEnum.next())
+					.getFileSystemObject());
+			
+			System.out.println(fileSystemObjects.toString());
+		}
+		*///
+				importPage.finish();// import the UML file // IK
+				
+		//////		
+				
+				
 				ImportSysml2Handler importer = new ImportSysml2Handler();
 				
 				try {
@@ -557,9 +546,10 @@ public class ImportAFPVNWizard extends CreateModelWizard implements INewWizard {
 	}
 	/// save file into project//
 	
-	protected static void saveInProject(IProject project,String fileName) {
+	public static void saveInProject(IProject project,String fileName) {
 		if( project!=null) {
-			IFile file = project.getFile(fileName+".sysml");
+			String fileNameWithoutExtension = fileName.substring(1, fileName.lastIndexOf('.'));
+			IFile file = project.getFile("Sysml2"+fileNameWithoutExtension+".sysml2");
 			File myfile = new File(file.getLocationURI());
 
 			generateFile(myfile, project);
@@ -589,4 +579,5 @@ public class ImportAFPVNWizard extends CreateModelWizard implements INewWizard {
 			e.printStackTrace();
 		}
 	}
+
 }

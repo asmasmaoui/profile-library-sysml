@@ -2,11 +2,13 @@ package com.cea.afpvn.arrowhead.wizards;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
 
+import javax.lang.model.util.Elements;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
@@ -16,11 +18,13 @@ import org.eclipse.core.resources.IContainer;
 import org.eclipse.core.resources.IFile;
 import org.eclipse.core.resources.IProject;
 import org.eclipse.core.resources.IResource;
+import org.eclipse.core.resources.IResourceFilterDescription;
 import org.eclipse.core.resources.IWorkspaceRoot;
 import org.eclipse.core.resources.ResourcesPlugin;
 import org.eclipse.core.runtime.CoreException;
 import org.eclipse.core.runtime.IPath;
 import org.eclipse.emf.common.util.URI;
+import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.papyrus.uml.m2m.qvto.common.MigrationParameters.ThreadConfig;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.ui.PlatformUI;
@@ -31,6 +35,7 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
 import com.cea.afpvn.arrowhead.transformations.Sysml2fromSysml1TransformationLauncher;
+import com.cea.afpvn.arrowhead.transformations.SysmtoSysml2Switch;
 
 public class ImportSysml2Handler {
 	IResource project;
@@ -50,9 +55,32 @@ public class ImportSysml2Handler {
 	public Object execute(IProject project) throws ExecutionException {
 
 		// get the Project and parse its sub folder
-
+		SysmtoSysml2Switch transformation = new SysmtoSysml2Switch();
+		ImportAFPVNWizard  addfile = new ImportAFPVNWizard();
+		Set<IResource> sysmlElements = new HashSet<IResource>();
 		Set<IFile> filesToImport = new HashSet<IFile>();
         importFiles(filesToImport);
+        try {
+			IResource[] elements = project.members();
+			for (IResource elem : elements) {
+
+				System.out.println( elem.getName());
+				System.out.println( "/////////////////////////////////////////");
+				System.out.println( "/////////////////////////////////////////");
+				System.out.println( "/////////////////////////////////////////");
+				if (elem.getName().endsWith(".sysml"))
+						{
+					sysmlElements.add(elem);
+					addfile.saveInProject(project, elem.getName());
+					transformation.doTransform(elem);
+						}
+				
+			}
+		} catch (CoreException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+      
 
 		return null;
 	}
@@ -80,5 +108,32 @@ public class ImportSysml2Handler {
 				project);
 		launcher.run(urisToImport);
 	}
+///////////// IK 
+public ArrayList<File> browseRep( File rep, String ext )
+{
+ArrayList<File> result = new ArrayList<File>();
 
+if( rep.isDirectory() )
+{
+internalBrowseRep( result, rep, ext );
+}
+
+return result;
+}
+
+private void internalBrowseRep( ArrayList<File> result, File rep, String ext )
+{
+for( File fichier : rep.listFiles() )
+{
+if( fichier.isDirectory() )
+{
+	internalBrowseRep( result, fichier, ext );
+}
+else if( fichier.getName().endsWith( ext ) )
+{
+	result.add( fichier );
+}
+}
+}
+///////////////
 }

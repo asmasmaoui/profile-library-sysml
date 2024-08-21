@@ -1,14 +1,16 @@
 package com.cea.afpvn.arrowhead.transformations;
 
+import org.eclipse.core.resources.IResource;
 import org.eclipse.emf.ecore.resource.Resource;
 
 
 public class SysmtoSysml2Switch {
 
-	public Resource doTransform(Resource aasxResource, Resource umlResource) {
+	public void doTransform( IResource elem) {
 		// TODO Auto-generated method stub
-	System.out.println("lancer la transformation de Sysml a Sysml2 ");
-		return null;
+	System.out.println("Sysml transformation ");
+	
+		
 	}
 
 	

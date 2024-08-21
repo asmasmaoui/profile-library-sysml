@@ -151,7 +151,7 @@ public class Sysml2FromSysml1Transformation extends AbstractImportTransformation
 
 			SysmtoSysml2Switch aas2uml = new SysmtoSysml2Switch();
 
-			umlResource = aas2uml.doTransform(aasxResource, umlResource);
+			//umlResource = aas2uml.doTransform(aasxResource, umlResource);
 
 			// populate the xml Resource
 
