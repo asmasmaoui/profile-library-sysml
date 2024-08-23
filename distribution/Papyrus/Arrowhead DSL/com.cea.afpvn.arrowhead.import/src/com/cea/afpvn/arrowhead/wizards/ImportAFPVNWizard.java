@@ -27,6 +27,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.io.File;
+import com.google.common.io.Files;
 
 import org.eclipse.core.commands.ExecutionException;
 import org.eclipse.core.resources.IFile;
@@ -256,9 +257,7 @@ public class ImportAFPVNWizard extends CreateModelWizard  implements INewWizard 
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-				String fileName = "Transformation";
 				
-				saveInProject( project,fileName);
 		return true;
 
 	}
@@ -294,37 +293,6 @@ public class ImportAFPVNWizard extends CreateModelWizard  implements INewWizard 
 	protected IEditorInput createEditorInput(URI uri) {
 		return getSelectedStorageProvider().createEditorInput(uri);
 	}
-
-	@SuppressWarnings("deprecation")
-	protected String getPreferredEditorID(IEditorInput input) throws PartInitException {
-		IEditorDescriptor desc;
-
-		if (input instanceof IFileEditorInput) {
-			desc = IDE.getEditorDescriptor(((IFileEditorInput) input).getFile());
-		} else {
-			// try to get a URI
-			URI uri = null;
-			if (input instanceof IURIEditorInput) {
-				uri = URI.createURI(((IURIEditorInput) input).getURI().toString(), true);
-			} else if (input instanceof URIEditorInput) {
-				uri = ((URIEditorInput) input).getURI();
-			}
-
-			if (uri != null) {
-				desc = IDE.getEditorDescriptor(uri.lastSegment());
-			} else {
-				// hope that the input name is the file name
-				desc = IDE.getEditorDescriptor(input.getName());
-			}
-		}
-
-		return (desc == null) ? "org.eclipse.papyrus.infra.core.papyrusEditor" : desc.getId(); //$NON-NLS-1$
-	}
-
-
-
-	
-
 	protected void initStorageProvider(IWorkbench workbench, IStructuredSelection selection) {
 
 		NewModelStorageProviderRegistry registry = new NewModelStorageProviderRegistry(
@@ -541,15 +509,29 @@ public class ImportAFPVNWizard extends CreateModelWizard  implements INewWizard 
 		} else {
 			project.open(new SubProgressMonitor(progressMonitor, 1));
 		}
-
+		/* to check the nature of the project and modify it according to needs. */
+		 try {
+			   if (!project.hasNature("org.eclipse.xtext.ui.shared.xtextNature")) {
+			      IProjectDescription description = project.getDescription();
+			      description.setNatureIds(new String[] { "org.eclipse.xtext.ui.shared.xtextNature" });
+			      project.setDescription(description, null);
+			      
+			   }
+			 } catch (CoreException e) {
+			   e.printStackTrace();
+		         }
+		
+		 
 		return project;
 	}
 	/// save file into project//
 	
 	public static void saveInProject(IProject project,String fileName) {
 		if( project!=null) {
-			String fileNameWithoutExtension = fileName.substring(1, fileName.lastIndexOf('.'));
-			IFile file = project.getFile("Sysml2"+fileNameWithoutExtension+".sysml2");
+			//String fileNameWithoutExtension = fileName.substring(1, fileName.lastIndexOf('.'));
+			//String fileNameWithoutExtension = FilenameUtils.removeExtension(fileName);
+			String fileNameWithoutExtension = Files.getNameWithoutExtension(fileName);
+			IFile file = project.getFile("Sysml2"+fileNameWithoutExtension+".sysml");
 			File myfile = new File(file.getLocationURI());
 
 			generateFile(myfile, project);

@@ -65,10 +65,8 @@ public class ImportSysml2Handler {
 			for (IResource elem : elements) {
 
 				System.out.println( elem.getName());
-				System.out.println( "/////////////////////////////////////////");
-				System.out.println( "/////////////////////////////////////////");
-				System.out.println( "/////////////////////////////////////////");
-				if (elem.getName().endsWith(".sysml"))
+				
+				if (elem.getName().endsWith(".uml"))
 						{
 					sysmlElements.add(elem);
 					addfile.saveInProject(project, elem.getName());

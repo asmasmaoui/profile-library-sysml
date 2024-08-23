@@ -23,6 +23,7 @@ public class WizardFileSystemResourceImportAFPVN extends WizardResourceImportPag
 	 * constructor stub }
 	 */
 
+	@SuppressWarnings("rawtypes")
 	public java.util.List getSelectedResourcesAfpvn()
 	{
 		return getSelectedResources();

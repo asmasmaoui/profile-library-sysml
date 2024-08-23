@@ -13,4 +13,43 @@
                                   </description>
                                </wizard>
                             </extension>
+                            <extension
+                                  point="org.eclipse.ui.menus">
+                               <menuContribution
+                                     allPopups="false"
+                                     locationURI="popup:org.eclipse.papyrus.views.modelexplorer.modelexplorer.popup">
+                                  <command
+                                        commandId="com.cea.afpvn.arrowhead.import.commandSysml2"
+                                        label="AFPVN">
+                                     <visibleWhen
+                                           checkEnabled="true">
+                                        <with
+                                              variable="selection">
+                                           <iterate>
+                                              <adapt
+                                                    type="org.eclipse.emf.ecore.EObject">
+                                              </adapt>
+                                              <or>
+                                                 <instanceof
+                                                       value="org.eclipse.uml2.uml.Classifier">
+                                                 </instanceof>
+                                                 <instanceof
+                                                       value="org.eclipse.uml2.uml.Package">
+                                                 </instanceof>
+                                              </or>
+                                           </iterate>
+                                        </with>
+                                     </visibleWhen>
+                                  </command>
+                               </menuContribution>
+                            </extension>
+                            <extension
+                                  point="org.eclipse.ui.commands">
+                               <command
+                                     categoryId="org.eclipse.papyrus.editor.category"
+                                     description="Generate Code"
+                                     id="com.cea.afpvn.arrowhead.import.commandSysml2"
+                                     name="Generate Sysml2 transforamtion">
+                               </command>
+                            </extension>
 </plugin>
