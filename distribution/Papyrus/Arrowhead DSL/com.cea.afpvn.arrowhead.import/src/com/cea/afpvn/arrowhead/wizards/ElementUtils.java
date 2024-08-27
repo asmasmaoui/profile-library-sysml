@@ -33,7 +33,6 @@ import org.eclipse.uml2.uml.InstanceSpecification;
 import org.eclipse.uml2.uml.NamedElement;
 import org.eclipse.uml2.uml.Package;
 import org.eclipse.uml2.uml.resource.UMLResource;
-import org.eclipse.uml2.uml.util.UMLUtil;
 
 
 // TODO: Auto-generated Javadoc

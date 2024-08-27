@@ -147,14 +147,6 @@ public class Sysml2FromSysml1Transformation extends AbstractImportTransformation
 
 			monitor.subTask("Importing semantic model...");
 
-			// Run the transformations here and get the output file (uml file)
-
-			SysmtoSysml2Switch aas2uml = new SysmtoSysml2Switch();
-
-			//umlResource = aas2uml.doTransform(aasxResource, umlResource);
-
-			// populate the xml Resource
-
 			final Collection<Resource> resourcesToSave = new HashSet<>();
 			resourcesToSave.add(umlResource);
 

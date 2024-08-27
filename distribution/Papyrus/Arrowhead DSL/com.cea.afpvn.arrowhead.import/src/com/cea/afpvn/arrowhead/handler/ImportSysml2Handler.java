@@ -1,41 +1,22 @@
-package com.cea.afpvn.arrowhead.wizards;
+package com.cea.afpvn.arrowhead.handler;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
 
-import javax.lang.model.util.Elements;
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
-
 import org.eclipse.core.commands.ExecutionException;
-import org.eclipse.core.resources.IContainer;
 import org.eclipse.core.resources.IFile;
 import org.eclipse.core.resources.IProject;
 import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.IResourceFilterDescription;
-import org.eclipse.core.resources.IWorkspaceRoot;
-import org.eclipse.core.resources.ResourcesPlugin;
 import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IPath;
 import org.eclipse.emf.common.util.URI;
-import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.papyrus.uml.m2m.qvto.common.MigrationParameters.ThreadConfig;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.ui.PlatformUI;
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
-import org.xml.sax.SAXException;
-
 import com.cea.afpvn.arrowhead.transformations.Sysml2fromSysml1TransformationLauncher;
 import com.cea.afpvn.arrowhead.transformations.SysmtoSysml2Switch;
+import com.cea.afpvn.arrowhead.wizards.ImportAFPVNWizard;
 
 public class ImportSysml2Handler {
 	IResource project;
@@ -73,6 +54,7 @@ public class ImportSysml2Handler {
 					transformation.doTransform(elem);
 						}
 				
+				
 			}
 		} catch (CoreException e) {
 			// TODO Auto-generated catch block
@@ -106,32 +88,5 @@ public class ImportSysml2Handler {
 				project);
 		launcher.run(urisToImport);
 	}
-///////////// IK 
-public ArrayList<File> browseRep( File rep, String ext )
-{
-ArrayList<File> result = new ArrayList<File>();
 
-if( rep.isDirectory() )
-{
-internalBrowseRep( result, rep, ext );
-}
-
-return result;
-}
-
-private void internalBrowseRep( ArrayList<File> result, File rep, String ext )
-{
-for( File fichier : rep.listFiles() )
-{
-if( fichier.isDirectory() )
-{
-	internalBrowseRep( result, fichier, ext );
-}
-else if( fichier.getName().endsWith( ext ) )
-{
-	result.add( fichier );
-}
-}
-}
-///////////////
 }

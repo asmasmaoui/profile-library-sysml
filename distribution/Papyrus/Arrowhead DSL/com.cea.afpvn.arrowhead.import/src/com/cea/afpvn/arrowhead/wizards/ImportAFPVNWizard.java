@@ -17,17 +17,16 @@ package com.cea.afpvn.arrowhead.wizards;
  *****************************************************************************/
 
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.io.File;
+
+import com.cea.afpvn.arrowhead.handler.ImportSysml2Handler;
 import com.google.common.io.Files;
+
 
 import org.eclipse.core.commands.ExecutionException;
 import org.eclipse.core.resources.IFile;
@@ -39,43 +38,21 @@ import org.eclipse.core.runtime.CoreException;
 import org.eclipse.core.runtime.IPath;
 import org.eclipse.core.runtime.NullProgressMonitor;
 import org.eclipse.core.runtime.SubProgressMonitor;
-import org.eclipse.emf.common.ui.URIEditorInput;
 import org.eclipse.emf.common.util.URI;
-import org.eclipse.jface.dialogs.IDialogSettings;
-import org.eclipse.jface.viewers.ISelection;
 import org.eclipse.jface.viewers.ISelectionChangedListener;
 import org.eclipse.jface.viewers.IStructuredSelection;
 import org.eclipse.jface.viewers.SelectionChangedEvent;
-import org.eclipse.jface.viewers.TreeSelection;
 import org.eclipse.jface.wizard.IWizardPage;
 import org.eclipse.papyrus.infra.core.architecture.RepresentationKind;
-import org.eclipse.papyrus.infra.core.resource.ModelSet;
-import org.eclipse.papyrus.infra.core.sashwindows.di.service.IPageManager;
-import org.eclipse.papyrus.infra.core.services.ExtensionServicesRegistry;
-import org.eclipse.papyrus.infra.core.services.ServiceException;
-import org.eclipse.papyrus.infra.core.services.ServicesRegistry;
-import org.eclipse.papyrus.uml.diagram.wizards.Activator;
-import org.eclipse.papyrus.uml.diagram.wizards.pages.NewModelWizardData;
 import org.eclipse.papyrus.uml.diagram.wizards.pages.SelectArchitectureContextPage;
-import org.eclipse.papyrus.uml.diagram.wizards.pages.SelectRepresentationKindPage;
 import org.eclipse.papyrus.uml.diagram.wizards.pages.SelectStorageProviderPage;
 import org.eclipse.papyrus.uml.diagram.wizards.providers.INewModelStorageProvider;
 import org.eclipse.papyrus.uml.diagram.wizards.providers.NewModelStorageProviderRegistry;
 import org.eclipse.papyrus.uml.diagram.wizards.providers.WorkspaceNewModelStorageProvider;
 import org.eclipse.papyrus.uml.diagram.wizards.wizards.CreateModelWizard;
-import org.eclipse.swt.widgets.FileDialog;
-import org.eclipse.ui.IEditorDescriptor;
 import org.eclipse.ui.IEditorInput;
-import org.eclipse.ui.IFileEditorInput;
 import org.eclipse.ui.INewWizard;
-import org.eclipse.ui.IURIEditorInput;
 import org.eclipse.ui.IWorkbench;
-import org.eclipse.ui.PartInitException;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.dialogs.FileSystemElement;
-import org.eclipse.ui.dialogs.WizardResourceImportPage;
-import org.eclipse.ui.ide.IDE;
-import org.eclipse.ui.internal.wizards.datatransfer.WizardFileSystemResourceImportPage1;
 import org.eclipse.ui.services.IEvaluationService;
 
 /**
@@ -89,6 +66,7 @@ import org.eclipse.ui.services.IEvaluationService;
  *
  * Those files can be used with the PapyrusEditor (see plugin.xml).
  */
+@SuppressWarnings("deprecation")
 public class ImportAFPVNWizard extends CreateModelWizard  implements INewWizard {
 
 	/** The Constant WIZARD_ID. */
@@ -98,9 +76,6 @@ public class ImportAFPVNWizard extends CreateModelWizard  implements INewWizard 
 	public static final String NEW_MODEL_SETTINGS = "NewModelWizard"; //$NON-NLS-1$
 
 	private SelectStorageProviderPage selectStorageProviderPage;
-
-	/** Select kind of new diagram the wizard must create. */
-	private SelectRepresentationKindPage selectRepresentationKindPage;
 
 	/**
 	 * The select architecture context page.
@@ -127,15 +102,9 @@ public class ImportAFPVNWizard extends CreateModelWizard  implements INewWizard 
 	protected IWizardPage newProjectPage;
 	
 
-
-	//private final NewModelWizardData wizardData = new NewModelWizardData();
-
-	//protected static final String EXTENSION_POINT_ID = "org.eclipse.papyrus.uml.diagram.wizards.templates"; //$NON-NLS-1$
-
 	private ImportFilePage importPage;
 
 	private IProject project;
-	private IFile file;
 	private IStructuredSelection selection;
 
 	private static final String[] allowedFiles = new String[] { "*.uml" }; /// IK which files types we have to allowed 
@@ -213,9 +182,7 @@ public class ImportAFPVNWizard extends CreateModelWizard  implements INewWizard 
 		
 		
 
-		IDialogSettings workbenchSettings = Activator.getDefault().getDialogSettings();
-		
-				try {
+		try {
 					project = createNewProject();
 				} catch (CoreException e) {
 					// TODO Auto-generated catch block
@@ -232,21 +199,10 @@ public class ImportAFPVNWizard extends CreateModelWizard  implements INewWizard 
 	@Override
 	public boolean performFinish() {
 		
-		/////// IK
-		/*
-		WizardFileSystemResourceImportAFPVN pageInformation =new WizardFileSystemResourceImportAFPVN(DEFAULT_IMAGE, selection);
-		Iterator<IResource> resourcesEnum = pageInformation.getSelectedResourcesAfpvn().iterator();
-		List<IResource> fileSystemObjects = new ArrayList<IResource>();
-		while (resourcesEnum.hasNext()) {
-			fileSystemObjects.add((IResource) ((FileSystemElement) resourcesEnum.next())
-					.getFileSystemObject());
-			
-			System.out.println(fileSystemObjects.toString());
-		}
-		*///
+	
 				importPage.finish();// import the UML file // IK
 				
-		//////		
+			
 				
 				
 				ImportSysml2Handler importer = new ImportSysml2Handler();
@@ -495,6 +451,7 @@ public class ImportAFPVNWizard extends CreateModelWizard  implements INewWizard 
 	}
 
 
+	
 	protected IProject createNewProject() throws CoreException {
 		// get a project handle
 
@@ -509,12 +466,30 @@ public class ImportAFPVNWizard extends CreateModelWizard  implements INewWizard 
 		} else {
 			project.open(new SubProgressMonitor(progressMonitor, 1));
 		}
-		/* to check the nature of the project and modify it according to needs. */
+		 
+		
+		/* to check the nature of the project and modify it according to needs + add references to the project */
 		 try {
+			
 			   if (!project.hasNature("org.eclipse.xtext.ui.shared.xtextNature")) {
 			      IProjectDescription description = project.getDescription();
 			      description.setNatureIds(new String[] { "org.eclipse.xtext.ui.shared.xtextNature" });
 			      project.setDescription(description, null);
+			      
+					/*
+					 * ////////// add ref part///////// IProject[] projectRefTab = null; final
+					 * IProject projectRef=
+					 * ResourcesPlugin.getWorkspace().getRoot().getProject("AFPVNtest");
+					 * NullProgressMonitor progressMonitor2 = new NullProgressMonitor();
+					 * projectRef.open(new SubProgressMonitor(progressMonitor2, 1));
+					 * System.out.println("projectRef"+projectRef.getDescription().getName());
+					 * List<IProject> arrListprojectRefTab = new
+					 * ArrayList<>(Arrays.asList(projectRefTab));
+					 * arrListprojectRefTab.add(projectRef); projectRefTab =
+					 * arrListprojectRefTab.toArray(projectRefTab);
+					 * description.setReferencedProjects(projectRefTab);
+					 */
+			      
 			      
 			   }
 			 } catch (CoreException e) {
@@ -528,8 +503,6 @@ public class ImportAFPVNWizard extends CreateModelWizard  implements INewWizard 
 	
 	public static void saveInProject(IProject project,String fileName) {
 		if( project!=null) {
-			//String fileNameWithoutExtension = fileName.substring(1, fileName.lastIndexOf('.'));
-			//String fileNameWithoutExtension = FilenameUtils.removeExtension(fileName);
 			String fileNameWithoutExtension = Files.getNameWithoutExtension(fileName);
 			IFile file = project.getFile("Sysml2"+fileNameWithoutExtension+".sysml");
 			File myfile = new File(file.getLocationURI());

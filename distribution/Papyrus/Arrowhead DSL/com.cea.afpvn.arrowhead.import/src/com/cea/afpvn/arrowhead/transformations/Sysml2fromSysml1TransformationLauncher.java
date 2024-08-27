@@ -27,7 +27,6 @@ import org.eclipse.core.runtime.jobs.IJobChangeEvent;
 import org.eclipse.core.runtime.jobs.Job;
 import org.eclipse.core.runtime.jobs.JobChangeAdapter;
 import org.eclipse.emf.common.util.URI;
-import org.eclipse.jface.dialogs.MessageDialog;
 import org.eclipse.papyrus.uml.m2m.qvto.common.Activator;
 import org.eclipse.papyrus.uml.m2m.qvto.common.MigrationParameters.ThreadConfig;
 import org.eclipse.papyrus.uml.m2m.qvto.common.transformation.AbstractImportTransformationLauncher;
@@ -187,9 +186,6 @@ public class Sysml2fromSysml1TransformationLauncher extends AbstractImportTransf
 
 				multiStatus.merge(event.getResult());
 
-				for (IImportTransformation transformation : transformations) {
-			//		multiStatus.merge(transformation.getStatus());
-				}
 
 				int severity = multiStatus.getSeverity();
 				String message;
