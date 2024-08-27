@@ -25,13 +25,9 @@ public class Messages extends NLS {
 	
 	private static final String BUNDLE_NAME = "com.cea.afpvn.arrowhead.wizards.messages"; //$NON-NLS-1$
 	
-
-	public static String WizardTitle ; 
 	
-	
-	public static String SelectTheFileToImport ; 
-	
-	public static String RELS_FILE_EXTENSION ;
+	public static String CONTENU_Project_File;
+	public static String EXTENSION;
 
 	
 	static {

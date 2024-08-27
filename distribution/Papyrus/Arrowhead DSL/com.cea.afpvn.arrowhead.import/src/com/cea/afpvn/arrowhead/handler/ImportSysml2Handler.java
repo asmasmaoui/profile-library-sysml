@@ -1,5 +1,9 @@
 package com.cea.afpvn.arrowhead.handler;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
@@ -17,6 +21,7 @@ import org.eclipse.ui.PlatformUI;
 import com.cea.afpvn.arrowhead.transformations.Sysml2fromSysml1TransformationLauncher;
 import com.cea.afpvn.arrowhead.transformations.SysmtoSysml2Switch;
 import com.cea.afpvn.arrowhead.wizards.ImportAFPVNWizard;
+import com.cea.afpvn.arrowhead.wizards.Messages;
 
 public class ImportSysml2Handler {
 	IResource project;
@@ -41,6 +46,7 @@ public class ImportSysml2Handler {
 		Set<IResource> sysmlElements = new HashSet<IResource>();
 		Set<IFile> filesToImport = new HashSet<IFile>();
         importFiles(filesToImport);
+        
         try {
 			IResource[] elements = project.members();
 			for (IResource elem : elements) {
@@ -53,8 +59,22 @@ public class ImportSysml2Handler {
 					addfile.saveInProject(project, elem.getName());
 					transformation.doTransform(elem);
 						}
+				////// add dependancy using Filwriter////
 				
-				
+//				  if (elem.getName().endsWith(".project")) {
+//				  
+//				  try { 
+//					  // Création d'un fileWriter pour écrire dans un fichier 
+//					  FileWriter fileWriter = new FileWriter(elem.getLocation().toString(), false);
+//				  BufferedWriter writer = new BufferedWriter(fileWriter);
+//				  
+//				  //ajout d'un texte à notre fichier
+//				  writer.write(Messages.CONTENU_Project_File);
+//				  
+//				  writer.close(); } catch (IOException e) { e.printStackTrace(); } }
+//				 
+				////////////////////////
+				 
 			}
 		} catch (CoreException e) {
 			// TODO Auto-generated catch block

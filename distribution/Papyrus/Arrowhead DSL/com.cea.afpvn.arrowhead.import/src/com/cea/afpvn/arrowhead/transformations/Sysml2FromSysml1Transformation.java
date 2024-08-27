@@ -248,18 +248,7 @@ public class Sysml2FromSysml1Transformation extends AbstractImportTransformation
 		resourceSet.getLoadOptions().put(XMLResource.OPTION_USE_PACKAGE_NS_URI_AS_LOCATION, Boolean.TRUE);
 		monitor.subTask("Loading source model " + getModelName());
 	}
-		/*try {
-
-			aasxResource = resourceSet.getResource(sourceURI, true);
-			if (aasxResource != null) {
-				IFile umlFile = findFileRecursively(project, "sysml");
-				umlResourceURI = URI.createPlatformResourceURI(umlFile.getFullPath().toString(), true);
-				umlResource = resourceSet.getResource(umlResourceURI, true);
-			}
-		} catch (Exception ex) {
-			Activator.log.error("An error occurred while loading " + getModelName(), ex);
-		}
-	}*/ // IK 18/06/24
+		
 
 	public IFile findFileRecursively(IResource container, String extention) throws CoreException {
 		if (container != null && container instanceof IContainer) {

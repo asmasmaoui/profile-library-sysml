@@ -18,6 +18,7 @@ package com.cea.afpvn.arrowhead.wizards;
 
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -474,27 +475,42 @@ public class ImportAFPVNWizard extends CreateModelWizard  implements INewWizard 
 			   if (!project.hasNature("org.eclipse.xtext.ui.shared.xtextNature")) {
 			      IProjectDescription description = project.getDescription();
 			      description.setNatureIds(new String[] { "org.eclipse.xtext.ui.shared.xtextNature" });
-			      project.setDescription(description, null);
-			      
-					/*
-					 * ////////// add ref part///////// IProject[] projectRefTab = null; final
-					 * IProject projectRef=
-					 * ResourcesPlugin.getWorkspace().getRoot().getProject("AFPVNtest");
-					 * NullProgressMonitor progressMonitor2 = new NullProgressMonitor();
-					 * projectRef.open(new SubProgressMonitor(progressMonitor2, 1));
-					 * System.out.println("projectRef"+projectRef.getDescription().getName());
-					 * List<IProject> arrListprojectRefTab = new
-					 * ArrayList<>(Arrays.asList(projectRefTab));
-					 * arrListprojectRefTab.add(projectRef); projectRefTab =
-					 * arrListprojectRefTab.toArray(projectRefTab);
-					 * description.setReferencedProjects(projectRefTab);
-					 */
-			      
+				project.setDescription(description, null);
 			      
 			   }
-			 } catch (CoreException e) {
-			   e.printStackTrace();
-		         }
+				  
+				 } catch (CoreException e) {
+				   e.printStackTrace();
+			         }
+	                      ////////// add ref part///////// 
+		 
+						  IProject[] projectRefTab = new IProject[2]; 
+						  
+						  IProjectDescription description2 = project.getDescription();
+						  
+						  final IProject projectRef= ResourcesPlugin.getWorkspace().getRoot().getProject("sysml.library");
+						 
+						  System.out.println("projectRef"+projectRef.getDescription().getName());
+						  
+						  NullProgressMonitor progressMonitor2 = new NullProgressMonitor();
+						  
+						  projectRef.open(new SubProgressMonitor(progressMonitor2, 1));
+						  
+		
+						  
+						  List<IProject> arrListprojectRefTab = new ArrayList<IProject>(Arrays.asList(projectRefTab));
+						  
+						  arrListprojectRefTab.add(projectRef); 
+						  
+						  System.out.println("projectReflist = "+ arrListprojectRefTab.toString());
+						 
+						  projectRefTab = arrListprojectRefTab.toArray(projectRefTab);
+						  
+						  description2.setReferencedProjects(projectRefTab);
+						  
+						  project.setDescription(description2, null);
+						  
+			 
 		
 		 
 		return project;
