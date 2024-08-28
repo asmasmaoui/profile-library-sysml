@@ -484,12 +484,13 @@ public class ImportAFPVNWizard extends CreateModelWizard  implements INewWizard 
 			         }
 	                      ////////// add ref part///////// 
 		 
-						  IProject[] projectRefTab = new IProject[2]; 
+						  IProject[] projectRefTab = new IProject[0]; 
 						  
 						  IProjectDescription description2 = project.getDescription();
 						  
 						  final IProject projectRef= ResourcesPlugin.getWorkspace().getRoot().getProject("sysml.library");
-						 
+						  if (!projectRef.exists())
+						  {
 						  System.out.println("projectRef"+projectRef.getDescription().getName());
 						  
 						  NullProgressMonitor progressMonitor2 = new NullProgressMonitor();
@@ -508,8 +509,8 @@ public class ImportAFPVNWizard extends CreateModelWizard  implements INewWizard 
 						  
 						  description2.setReferencedProjects(projectRefTab);
 						  
-						  project.setDescription(description2, null);
-						  
+						  project.setDescription(description2, progressMonitor);
+						  }
 			 
 		
 		 
