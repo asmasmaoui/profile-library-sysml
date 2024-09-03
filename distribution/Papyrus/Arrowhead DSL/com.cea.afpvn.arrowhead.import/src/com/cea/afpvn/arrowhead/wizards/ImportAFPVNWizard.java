@@ -40,6 +40,7 @@ import org.eclipse.core.runtime.IPath;
 import org.eclipse.core.runtime.NullProgressMonitor;
 import org.eclipse.core.runtime.SubProgressMonitor;
 import org.eclipse.emf.common.util.URI;
+import org.eclipse.jface.dialogs.MessageDialog;
 import org.eclipse.jface.viewers.ISelectionChangedListener;
 import org.eclipse.jface.viewers.IStructuredSelection;
 import org.eclipse.jface.viewers.SelectionChangedEvent;
@@ -54,6 +55,7 @@ import org.eclipse.papyrus.uml.diagram.wizards.wizards.CreateModelWizard;
 import org.eclipse.ui.IEditorInput;
 import org.eclipse.ui.INewWizard;
 import org.eclipse.ui.IWorkbench;
+import org.eclipse.ui.PlatformUI;
 import org.eclipse.ui.services.IEvaluationService;
 
 /**
@@ -345,18 +347,8 @@ public class ImportAFPVNWizard extends CreateModelWizard  implements INewWizard 
 		IWizardPage result = null;
 
 		INewModelStorageProvider provider = providersByPage.get(page);
-		if (provider != null) {
-			// it's contributed by a provider. Get the next in the list
-			List<IWizardPage> pages = providerPages.get(provider);
-			int index = pages.indexOf(page);
-			if ((index >= 0) && (index < (pages.size() - 1))) {
-				result = pages.get(index + 1);
-			} else {
-				// get the first page after the provider pages
-				if (endProviderPageIndex < allPages.size()) {
-					result = allPages.get(endProviderPageIndex);
-				}
-			}
+		if (provider == null) {
+			// this part is to  disable  "NEXT" in th wizard.
 		} else if (allPages.indexOf(page) == startProviderPageIndex) {
 			// get the first page of the selected provider
 			List<IWizardPage> pages = providerPages.get(getSelectedStorageProvider());
@@ -366,11 +358,14 @@ public class ImportAFPVNWizard extends CreateModelWizard  implements INewWizard 
 				// get the first page after the provider pages
 				if (endProviderPageIndex < allPages.size()) {
 					result = allPages.get(endProviderPageIndex);
+					
 				}
 			}
 		} else {
 			// somewhere away from the boundary of the provider pages
 			result = super.getNextPage(page);
+			
+
 		}
 
 		return result;
