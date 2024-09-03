@@ -483,38 +483,35 @@ public class ImportAFPVNWizard extends CreateModelWizard  implements INewWizard 
 				   e.printStackTrace();
 			         }
 	                      ////////// add ref part///////// 
-		 
-						  IProject[] projectRefTab = new IProject[0]; 
-						  
-						  IProjectDescription description2 = project.getDescription();
-						  
-						  final IProject projectRef= ResourcesPlugin.getWorkspace().getRoot().getProject("sysml.library");
-						  if (!projectRef.exists())
-						  {
-						  System.out.println("projectRef"+projectRef.getDescription().getName());
-						  
-						  NullProgressMonitor progressMonitor2 = new NullProgressMonitor();
-						  
-						  projectRef.open(new SubProgressMonitor(progressMonitor2, 1));
-						  
-		
-						  
-						  List<IProject> arrListprojectRefTab = new ArrayList<IProject>(Arrays.asList(projectRefTab));
-						  
-						  arrListprojectRefTab.add(projectRef); 
-						  
-						  System.out.println("projectReflist = "+ arrListprojectRefTab.toString());
-						 
-						  projectRefTab = arrListprojectRefTab.toArray(projectRefTab);
-						  
-						  description2.setReferencedProjects(projectRefTab);
-						  
-						  project.setDescription(description2, progressMonitor);
-						  }
-			 
-		
-		 
-		return project;
+
+		 IProject[] projectRefTab = new IProject[0]; 
+
+		 IProjectDescription description2 = project.getDescription();
+
+		 final IProject projectRef= ResourcesPlugin.getWorkspace().getRoot().getProject("sysml.library");
+
+		 System.out.println("projectRef"+projectRef.getDescription().getName());
+
+		 NullProgressMonitor progressMonitor2 = new NullProgressMonitor();
+
+		 projectRef.open(new SubProgressMonitor(progressMonitor2, 1));
+
+		 List<IProject> arrListprojectRefTab = new ArrayList<IProject>(Arrays.asList(projectRefTab));
+
+		 arrListprojectRefTab.add(projectRef); 
+
+		 System.out.println("projectReflist = "+ arrListprojectRefTab.toString());
+
+		 projectRefTab = arrListprojectRefTab.toArray(projectRefTab);
+
+		 description2.setReferencedProjects(projectRefTab);
+
+		 project.setDescription(description2, progressMonitor);
+
+
+
+
+		 return project;
 	}
 	/// save file into project//
 	
