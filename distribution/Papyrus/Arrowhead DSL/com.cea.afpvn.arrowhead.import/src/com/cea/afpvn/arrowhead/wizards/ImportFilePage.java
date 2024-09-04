@@ -64,7 +64,6 @@ public class ImportFilePage extends WizardFileSystemResourceImportPage1{
 			IPath newFilePath) {
 		super(workbench,selection);
 		this.selectedFilePath = newFilePath;
-		System.out.println(this.selectedFilePath.lastSegment());//IK
 		setContainerFieldValue(newFilePath.lastSegment());
 		// TODO Auto-generated constructor stub
 	}
