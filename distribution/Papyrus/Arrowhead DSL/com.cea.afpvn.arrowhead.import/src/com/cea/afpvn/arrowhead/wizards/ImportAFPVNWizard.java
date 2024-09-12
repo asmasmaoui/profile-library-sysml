@@ -102,10 +102,10 @@ public class ImportAFPVNWizard extends CreateModelWizard  implements INewWizard 
 
 	protected IWizardPage newProjectPage;
 	
-
 	private ImportFilePage importPage;
 
 	private IProject project;
+	
 	private IStructuredSelection selection;
 
 	private static final String[] allowedFiles = new String[] { "*.uml" }; /// IK which files types we have to allowed 
@@ -508,13 +508,12 @@ public class ImportAFPVNWizard extends CreateModelWizard  implements INewWizard 
 	}
 	/// save file into project//
 	
-	public static void saveInProject(IProject project,String fileName) {
+	public static IFile saveInProject(IProject project,String fileName) {
+		String fileNameWithoutExtension = Files.getNameWithoutExtension(fileName);
+		IFile file = project.getFile("Sysml2"+fileNameWithoutExtension+".sysml");
+		File myfile = new File(file.getLocationURI());
 		if( project!=null) {
-			String fileNameWithoutExtension = Files.getNameWithoutExtension(fileName);
-			IFile file = project.getFile("Sysml2"+fileNameWithoutExtension+".sysml");
-			File myfile = new File(file.getLocationURI());
-
-			generateFile(myfile, project);
+		generateFile(myfile, project);
 
 			try {
 				project.refreshLocal(0, new NullProgressMonitor());
@@ -522,6 +521,9 @@ public class ImportAFPVNWizard extends CreateModelWizard  implements INewWizard 
 				e1.printStackTrace();
 			}
 		}
+		 System.out.println("file cree est  = "+ file.getName() + "location" + file.getFullPath() );
+		return file;
+		
 	}
 	////file creation///
 	private static void generateFile(File file, IProject project) {

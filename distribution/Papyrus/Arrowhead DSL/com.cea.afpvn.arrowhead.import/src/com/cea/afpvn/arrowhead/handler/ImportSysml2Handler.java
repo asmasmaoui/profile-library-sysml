@@ -43,6 +43,7 @@ public class ImportSysml2Handler {
 		Set<IResource> sysmlElements = new HashSet<IResource>();
 		Set<IFile> filesToImport = new HashSet<IFile>();
 		importFiles(filesToImport);
+		IFile fileSources;
 
 		try {
 			IResource[] elements =  project.members();
@@ -53,8 +54,10 @@ public class ImportSysml2Handler {
 				if (elem.getName().endsWith(".uml"))
 				{
 					sysmlElements.add(elem);
-					addfile.saveInProject(project, elem.getName());
-					transformation.doTransform(elem);
+					
+					fileSources= addfile.saveInProject(project, elem.getName());
+					 
+					transformation.doTransform(elem,fileSources);
 				}
 			}
 			if (sysmlElements.isEmpty())
