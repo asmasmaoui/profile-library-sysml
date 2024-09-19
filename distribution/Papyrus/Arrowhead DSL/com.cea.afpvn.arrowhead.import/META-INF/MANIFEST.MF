@@ -32,8 +32,11 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.gmf.runtime.emf.type.core,
  org.eclipse.papyrus.infra.emf.gmf,
  org.eclipse.papyrus.uml.service.types,
- org.eclipse.papyrus.infra.services.edit
+ org.eclipse.papyrus.infra.services.edit,
+ org.eclipse.uml2.uml.profile.standard,
+ org.eclipse.xtext
 Bundle-Vendor: CEA
 Automatic-Module-Name: com.cea.afpvn.arrowhead.import
 Bundle-RequiredExecutionEnvironment: JavaSE-17
-Import-Package: org.eclipse.papyrus.infra.core.log
+Import-Package: org.eclipse.papyrus.infra.core.log,
+ org.omg.sysml.lang.sysml.util
