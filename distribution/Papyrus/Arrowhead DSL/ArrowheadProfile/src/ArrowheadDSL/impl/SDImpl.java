@@ -59,23 +59,24 @@ public class SDImpl extends InterfaceBlockImpl implements SD {
 	@Override
 	public String getMicroserviceName() {
 		// get MicrosystemName Element
-				String name = null;
-				if (this instanceof IDD_Implementation) {
-					Classifier classifier = this.getBase_Class();
-					if (classifier.getGenerals() != null && !classifier.getGenerals().isEmpty())
-						name = classifier.getGenerals().get(0).getName();
-					
-				}else if (this instanceof IDD) {
-					Classifier classifier = this.getBase_Class();
-					if (classifier.getGenerals() != null && !classifier.getGenerals().isEmpty())
-						name = classifier.getGenerals().get(0).getName();
-					
-				} else if (this instanceof SD) {
-					SD sdElement = (SD) this;
-					name = sdElement.getBase_Class().getName();
-				}
-		
-				return name;
+						String name = null;
+						if (this instanceof IDD_Implementation) {
+							Classifier classifier = this.getBase_Class();
+							if (classifier.getGenerals() != null && !classifier.getGenerals().isEmpty())
+								name = classifier.allParents().get(0).getGenerals().get(0).getName();
+							
+						}else if (this instanceof IDD) {
+							Classifier classifier = this.getBase_Class();
+							if (classifier.getGenerals() != null && !classifier.getGenerals().isEmpty())
+								name = classifier.getGenerals().get(0).getName();
+							
+						} else if (this instanceof SD) {
+							SD sdElement = (SD) this;
+							name = sdElement.getBase_Class().getName();
+						}
+				
+						return name;
+			
 	}
 
 	/**
