@@ -9,6 +9,7 @@ import java.util.Map;
 
 import org.eclipse.core.resources.IFile;
 import org.eclipse.core.resources.IResource;
+import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
@@ -48,21 +49,25 @@ public class SysmtoSysml2Switch extends  BlocksSwitch<EObject> {
 	/** The sysml elements. */
 	List<EObject> sysmlElements = new ArrayList<>();
 	
-	public Resource doTransform( IResource elem, IFile fileSources) {
-		// TODO Auto-generated method stub
-		this.umlResource = umlResource;
-		this.sysmlResource = sysmlResource;
-		ServicesRegistry registry = createServicesRegistry();
-		this.domain = getTransactionalDomain(registry);
+	public Resource doTransform( IResource source, IFile destination) {
 		Iterator<EObject> iter = umlResource.getAllContents();
 	    System.out.println("Sysml transformation");
+		
+	    
+	    umlResource.setURI((URI) source.getLocation()); //// ? ik 
+		System.out.println(umlResource.toString());
+		
+		sysmlResource.setURI((URI) destination.getLocation());
+		System.out.println(sysmlResource.toString());
+		
+		
 	     // call transfo for all diagrams
 			while (iter.hasNext()) {
 				// IK appel a la fonction de transformation selon l'objet
 				EObject eObject = iter.next();
 				transform(eObject);
 			}
-			sysmlResource.getContents().addAll(sysmlElements);
+			//sysmlResource.getContents().addAll(sysmlElements);
 
 			try {
 				sysmlResource.save(null);
@@ -90,7 +95,17 @@ public class SysmtoSysml2Switch extends  BlocksSwitch<EObject> {
 		return ret;
 	}
 	
-	
+	/**
+	 * Do switch.
+	 *
+	 * @param object the object
+	 * @param result the result
+	 * @return the e object
+	 */
+	private EObject doSwitch(EObject object, EObject result) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 	@Override
 	public EObject caseBlock(Block object) {
@@ -117,6 +132,7 @@ public class SysmtoSysml2Switch extends  BlocksSwitch<EObject> {
 		// set the stereotype properties Values
 		//setPropertiesValues(object, element);
 		return element;
+		
 		
 		
 	}
@@ -177,65 +193,7 @@ public class SysmtoSysml2Switch extends  BlocksSwitch<EObject> {
 	}
 	
 
-	/**
-	 * Creates the services registry.
-	 *
-	 * @return the services registry
-	 */
-	protected ServicesRegistry createServicesRegistry() {
-
-		ServicesRegistry result = null;
-
-		try {
-			result = new ExtensionServicesRegistry(org.eclipse.papyrus.infra.core.Activator.PLUGIN_ID);
-		} catch (ServiceException e) {
-			// couldn't create the registry? Fatal problem
-			e.printStackTrace();
-		}
-
-		try {
-			// have to create the model set and populate it with the DI model
-			// before initializing other services that actually need the DI
-			// model, such as the SashModel Manager service
-			result.startServicesByClassKeys(ModelSet.class);
-
-		} catch (ServiceException ex) {
-			// Ignore this exception: some services may not have been loaded,
-			// which is probably normal at this point
-		}
-
-		return result;
-	}
-	/**
-	 * Gets the transactional domain.
-	 *
-	 * @param registry the registry
-	 * @return the transactional domain
-	 */
-	public TransactionalEditingDomain getTransactionalDomain(ServicesRegistry registry) {
-		TransactionalEditingDomain domain = null;
-		if (this.sysmlResource != null && this.sysmlResource.getResourceSet() != null) {
-			ResourceSet res = this.sysmlResource.getResourceSet();
-			domain = TransactionalEditingDomain.Factory.INSTANCE.createEditingDomain(res);
-		}
-
-		if (domain == null && registry != null) {
-
-			// have to create the model set and populate it with the DI model
-			// before initializing other services that actually need the DI
-			// model, such as the SashModel Manager service
-			try {
-				ModelSet modelSet = registry.getService(ModelSet.class);
-				// initServicesRegistry(registry);
-				domain = TransactionalEditingDomain.Factory.INSTANCE.createEditingDomain(modelSet);
-			} catch (ServiceException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-
-		}
-		return domain;
-	}
+	
 
 
 }

@@ -34,7 +34,8 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.papyrus.uml.service.types,
  org.eclipse.papyrus.infra.services.edit,
  org.eclipse.uml2.uml.profile.standard,
- org.eclipse.xtext
+ org.eclipse.xtext,
+ org.eclipse.papyrus.sysml16
 Bundle-Vendor: CEA
 Automatic-Module-Name: com.cea.afpvn.arrowhead.import
 Bundle-RequiredExecutionEnvironment: JavaSE-17
