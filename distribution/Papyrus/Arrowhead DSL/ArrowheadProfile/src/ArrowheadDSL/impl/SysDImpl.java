@@ -5,19 +5,22 @@ package ArrowheadDSL.impl;
 import ArrowheadDSL.ArrowheadDSLPackage;
 import ArrowheadDSL.BusinessPolicyKind;
 import ArrowheadDSL.SysD;
+import ArrowheadDSL.SysDD;
 import ArrowheadDSL.SystemDatabaseKind;
+import ArrowheadDSL.System_Implementation;
 
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 import org.eclipse.emf.ecore.util.EDataTypeEList;
-import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
 import org.eclipse.papyrus.sysml16.blocks.internal.impl.BlockImpl;
+import org.eclipse.uml2.uml.Classifier;
 
 /**
  * <!-- begin-user-doc -->
@@ -36,16 +39,6 @@ import org.eclipse.papyrus.sysml16.blocks.internal.impl.BlockImpl;
  * @generated
  */
 public class SysDImpl extends BlockImpl implements SysD {
-	/**
-	 * The cached value of the '{@link #getMicrosystemName() <em>Microsystem Name</em>}' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getMicrosystemName()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<String> microsystemName;
-
 	/**
 	 * The cached value of the '{@link #getFunctionalProperties() <em>Functional Properties</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -112,10 +105,27 @@ public class SysDImpl extends BlockImpl implements SysD {
 	 */
 	@Override
 	public EList<String> getMicrosystemName() {
-		if (microsystemName == null) {
-			microsystemName = new EDataTypeUniqueEList<String>(String.class, this, ArrowheadDSLPackage.SYS_D__MICROSYSTEM_NAME);
-		}
-		return microsystemName;
+		// get MicrosystemName Element
+										EList<String> name = new BasicEList<String>() ;
+										
+										  if (this instanceof System_Implementation) { Classifier classifier =
+										  this.getBase_Class(); if (classifier.getGenerals() != null &&
+										  !classifier.getGenerals().isEmpty())
+										  name.add(classifier.allParents().get(0).getGenerals().get(0).getName());
+										  
+										  }else
+										  if (this instanceof SysDD) {
+											Classifier classifier = this.getBase_Class();
+											if (classifier.getGenerals() != null && !classifier.getGenerals().isEmpty())
+												name.add (classifier.getGenerals().get(0).getName());
+											
+										} else if (this instanceof SysD) {
+											SysD sdElement = (SysD) this;
+											name.add(sdElement.getBase_Class().getName());
+										}
+								
+										return name;
+							
 	}
 
 	/**
@@ -248,7 +258,7 @@ public class SysDImpl extends BlockImpl implements SysD {
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case ArrowheadDSLPackage.SYS_D__MICROSYSTEM_NAME:
-				return microsystemName != null && !microsystemName.isEmpty();
+				return !getMicrosystemName().isEmpty();
 			case ArrowheadDSLPackage.SYS_D__FUNCTIONAL_PROPERTIES:
 				return functionalProperties != null && !functionalProperties.isEmpty();
 			case ArrowheadDSLPackage.SYS_D__SYSTEM_DATABASE:
@@ -269,9 +279,7 @@ public class SysDImpl extends BlockImpl implements SysD {
 		if (eIsProxy()) return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (MicrosystemName: ");
-		result.append(microsystemName);
-		result.append(", FunctionalProperties: ");
+		result.append(" (FunctionalProperties: ");
 		result.append(functionalProperties);
 		result.append(", SystemDatabase: ");
 		result.append(systemDatabase);
