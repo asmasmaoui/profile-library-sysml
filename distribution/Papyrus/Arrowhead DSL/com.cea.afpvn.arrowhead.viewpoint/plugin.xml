@@ -14,8 +14,34 @@
             model="resources/configuration/blockDefinitionDiagramConfigArrowhead.expansionmodel">
       </diagramexpansion>
    </extension>
+   <extension
+         point="org.eclipse.emf.ecore.uri_mapping">
+      <mapping
+            source="pathmap://AFPVN_LIB/"
+            target="platform:/plugin/com.cea.afpvn.arrowhead.viewpoint/template/">
+      </mapping>
+   </extension>
+   <extension point="org.eclipse.papyrus.uml.diagram.wizards.templates">
+      <template
+            di_file="template/Orchestration.di"
+            file="template/Orchestration.uml"
+            id="com.cea.afpvn.arrowhead.viewpoint.template.Orchestration"
+            language="SysML16"
+            name="Orchestration"
+            notation_file="template/Orchestration.notation">
+      </template>
+     </extension>                                 
    
  <!-- Parser provider declaration -->
+   <extension point="org.eclipse.papyrus.uml.extensionpoints.UMLLibrary">
+      <library
+            description="Template for AFPVN"
+            iconpath="icons/arrowhead_icon.png"
+            name="Orchestration"
+            path="pathmap://AFPVN_LIB/Orchestration.uml"
+            provider="CEA LIST">
+      </library>
+   </extension>
 <extension point="org.eclipse.gmf.runtime.common.ui.services.parserProviders">
 	<ParserProvider class="com.cea.afpvn.arrowhead.viewpoint.provider.ParserProvider">
 		<Priority name="Lowest"/>
