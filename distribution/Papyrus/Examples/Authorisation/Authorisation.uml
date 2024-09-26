@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ArrowheadDSL="http://www.eclipse.org/papyrus/arrowhead" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Model xmi:id="_t_y1wHv5Ee-4gqEWx168lA" name="Authorisation">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_uB_OIHv5Ee-4gqEWx168lA">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_uCGi4Hv5Ee-4gqEWx168lA">
+      <importedPackage xmi:type="uml:Package" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_AIEpwHv6Ee-4gqEWx168lA" name="ConsumptionAuthorisation_Design">
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_h0pSEHv6Ee-4gqEWx168lA" name="ServiceOrchestration" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_iUTCgHv6Ee-4gqEWx168lA" name="ServiceDiscoveery" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_i4iYAHv6Ee-4gqEWx168lA" name="AuthorisationManagement" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_jW69IHv6Ee-4gqEWx168lA" name="GetPublicKey" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_jsCRgHv6Ee-4gqEWx168lA" name="TokenGeneration" aggregation="composite"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_BINREHv6Ee-4gqEWx168lA" name="ConsumptionAuthorisation_DesignDescription">
+      <generalization xmi:type="uml:Generalization" xmi:id="_7tPnwHv6Ee-4gqEWx168lA" general="_AIEpwHv6Ee-4gqEWx168lA"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_APcnoHv7Ee-4gqEWx168lA" name="ServiceOrchestration_HTTP" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_BAUD4Hv7Ee-4gqEWx168lA" name="ServiceDiscoveery_HTTP" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_BhoBMHv7Ee-4gqEWx168lA" name="AuthorisationManagement_HTTP" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_CBjecHv7Ee-4gqEWx168lA" name="GetPublicKey_HTTP" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_CgZ9oHv7Ee-4gqEWx168lA" name="TokenGeneration_HTTP" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_YB-E0Hv_Ee-4gqEWx168lA" name="OrchestrationStoreManagement-HTTP" aggregation="composite"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_vVHbMHv_Ee-4gqEWx168lA" name="GetPublicKey">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_07YjUHwDEe-4gqEWx168lA" name="GetPublicKey"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_v_w6sHv_Ee-4gqEWx168lA" name="GetPublicKey_HTTP">
+      <generalization xmi:type="uml:Generalization" xmi:id="_w_zbYHv_Ee-4gqEWx168lA" general="_vVHbMHv_Ee-4gqEWx168lA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_x5O9wHv_Ee-4gqEWx168lA" name="TokenGeneration">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_a_jokHwFEe-4gqEWx168lA" name="TokenGeneration"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_yl4BUHv_Ee-4gqEWx168lA" name="TokenGeneration_HTTP">
+      <generalization xmi:type="uml:Generalization" xmi:id="_zjRdsHv_Ee-4gqEWx168lA" general="_x5O9wHv_Ee-4gqEWx168lA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_n2absHwEEe-4gqEWx168lA" name="AuthorisationManagement">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_aJDMcHwHEe-4gqEWx168lA" name="Get all intra cloud rules"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_apSLsHwHEe-4gqEWx168lA" name="Add intracloud rules"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_bByyUHwHEe-4gqEWx168lA" name="Get an intracloud rule by ID"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_bRn-EHwHEe-4gqEWx168lA" name="Delete an intracloud rule by ID"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_biymkHwHEe-4gqEWx168lA" name="Get all intercloud rules"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_cWYmsHwHEe-4gqEWx168lA" name="Add intercloud rules"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_tE2vIHwHEe-4gqEWx168lA" name="Get an intercloud rule by ID"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_vI2AIHwHEe-4gqEWx168lA" name="Delete an intercloud rule by ID"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_rmxu8HwEEe-4gqEWx168lA" name="AuthorisationManagement_HTTP">
+      <generalization xmi:type="uml:Generalization" xmi:id="_5Sa4MHwHEe-4gqEWx168lA" general="_n2absHwEEe-4gqEWx168lA"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_uATMEHv5Ee-4gqEWx168lA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uAW2cHv5Ee-4gqEWx168lA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/arrowhead#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Arrowhead_Profile/ArrowheadProfile_v5.0.profile.uml#_sX4gkDIREe6ldMRwfXEyUg"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_uB5ukHv5Ee-4gqEWx168lA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uB5ukXv5Ee-4gqEWx168lA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_uB6VoHv5Ee-4gqEWx168lA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uB68sHv5Ee-4gqEWx168lA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//activities"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Activities"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_uB9Y8Hv5Ee-4gqEWx168lA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uB9Y8Xv5Ee-4gqEWx168lA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//allocations"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Allocations"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_uB-AAHv5Ee-4gqEWx168lA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uB-AAXv5Ee-4gqEWx168lA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_uB-AAnv5Ee-4gqEWx168lA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uB-AA3v5Ee-4gqEWx168lA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//constraintblocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ConstraintBlocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_uB-ABHv5Ee-4gqEWx168lA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uB-ABXv5Ee-4gqEWx168lA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//deprecatedelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_DeprecatedElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_uB-ABnv5Ee-4gqEWx168lA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uB-AB3v5Ee-4gqEWx168lA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//modelelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ModelElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_uB-nEHv5Ee-4gqEWx168lA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uB-nEXv5Ee-4gqEWx168lA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Ports_u0026Flows"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_uB-nEnv5Ee-4gqEWx168lA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uB-nE3v5Ee-4gqEWx168lA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_uB-nFHv5Ee-4gqEWx168lA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uB-nFXv5Ee-4gqEWx168lA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <ArrowheadDSL:SysD xmi:id="_AILXcHv6Ee-4gqEWx168lA" base_Class="_AIEpwHv6Ee-4gqEWx168lA">
+    <MicrosystemName>ConsumptionAuthorisation_Design</MicrosystemName>
+  </ArrowheadDSL:SysD>
+  <ArrowheadDSL:SysDD xmi:id="_BISJkHv6Ee-4gqEWx168lA" base_Class="_BINREHv6Ee-4gqEWx168lA">
+    <MicrosystemName>ConsumptionAuthorisation_Design</MicrosystemName>
+  </ArrowheadDSL:SysDD>
+  <ArrowheadDSL:FullPort xmi:id="_h0ruUHv6Ee-4gqEWx168lA" base_Port="_h0pSEHv6Ee-4gqEWx168lA"/>
+  <ArrowheadDSL:FullPort xmi:id="_iUU3sHv6Ee-4gqEWx168lA" base_Port="_iUTCgHv6Ee-4gqEWx168lA"/>
+  <ArrowheadDSL:FullPort xmi:id="_i4k0QHv6Ee-4gqEWx168lA" base_Port="_i4iYAHv6Ee-4gqEWx168lA"/>
+  <ArrowheadDSL:FullPort xmi:id="_jW9ZYHv6Ee-4gqEWx168lA" base_Port="_jW69IHv6Ee-4gqEWx168lA"/>
+  <ArrowheadDSL:FullPort xmi:id="_jsEGsHv6Ee-4gqEWx168lA" base_Port="_jsCRgHv6Ee-4gqEWx168lA"/>
+  <ArrowheadDSL:ProxyPort xmi:id="_APfD4Hv7Ee-4gqEWx168lA" base_Port="_APcnoHv7Ee-4gqEWx168lA"/>
+  <ArrowheadDSL:ProxyPort xmi:id="_BAV5EHv7Ee-4gqEWx168lA" base_Port="_BAUD4Hv7Ee-4gqEWx168lA"/>
+  <ArrowheadDSL:ProxyPort xmi:id="_Bhp2YHv7Ee-4gqEWx168lA" base_Port="_BhoBMHv7Ee-4gqEWx168lA"/>
+  <ArrowheadDSL:ProxyPort xmi:id="_CBlToHv7Ee-4gqEWx168lA" base_Port="_CBjecHv7Ee-4gqEWx168lA"/>
+  <ArrowheadDSL:ProxyPort xmi:id="_Cgby0Hv7Ee-4gqEWx168lA" base_Port="_CgZ9oHv7Ee-4gqEWx168lA"/>
+  <ArrowheadDSL:ProxyPort xmi:id="_YCAhEHv_Ee-4gqEWx168lA" base_Port="_YB-E0Hv_Ee-4gqEWx168lA"/>
+  <ArrowheadDSL:SD xmi:id="_vVJQYHv_Ee-4gqEWx168lA" base_Class="_vVHbMHv_Ee-4gqEWx168lA"/>
+  <ArrowheadDSL:IDD xmi:id="_v_yv4Hv_Ee-4gqEWx168lA" base_Class="_v_w6sHv_Ee-4gqEWx168lA"/>
+  <ArrowheadDSL:SD xmi:id="_x5Qy8Hv_Ee-4gqEWx168lA" base_Class="_x5O9wHv_Ee-4gqEWx168lA"/>
+  <ArrowheadDSL:IDD xmi:id="_yl6dkHv_Ee-4gqEWx168lA" base_Class="_yl4BUHv_Ee-4gqEWx168lA"/>
+  <ArrowheadDSL:ArrowHeadServiceInterfaceHTTP xmi:id="_H6WuwHwEEe-4gqEWx168lA" base_Operation="_07YjUHwDEe-4gqEWx168lA"/>
+  <ArrowheadDSL:SD xmi:id="_n2cQ4HwEEe-4gqEWx168lA" base_Class="_n2absHwEEe-4gqEWx168lA"/>
+  <ArrowheadDSL:IDD xmi:id="_rmzkIHwEEe-4gqEWx168lA" base_Class="_rmxu8HwEEe-4gqEWx168lA"/>
+  <ArrowheadDSL:ArrowHeadServiceInterfaceHTTP xmi:id="_dG69sHwFEe-4gqEWx168lA" base_Operation="_a_jokHwFEe-4gqEWx168lA"/>
+  <ArrowheadDSL:ArrowHeadServiceInterfaceHTTP xmi:id="_aJFBoHwHEe-4gqEWx168lA" base_Operation="_aJDMcHwHEe-4gqEWx168lA"/>
+  <ArrowheadDSL:ArrowHeadServiceInterfaceHTTP xmi:id="_apUA4HwHEe-4gqEWx168lA" base_Operation="_apSLsHwHEe-4gqEWx168lA"/>
+  <ArrowheadDSL:ArrowHeadServiceInterfaceHTTP xmi:id="_bB0ngHwHEe-4gqEWx168lA" base_Operation="_bByyUHwHEe-4gqEWx168lA"/>
+  <ArrowheadDSL:ArrowHeadServiceInterfaceHTTP xmi:id="_bRpzQHwHEe-4gqEWx168lA" base_Operation="_bRn-EHwHEe-4gqEWx168lA"/>
+  <ArrowheadDSL:ArrowHeadServiceInterfaceHTTP xmi:id="_biz0sHwHEe-4gqEWx168lA" base_Operation="_biymkHwHEe-4gqEWx168lA"/>
+  <ArrowheadDSL:ArrowHeadServiceInterfaceHTTP xmi:id="_cWab4HwHEe-4gqEWx168lA" base_Operation="_cWYmsHwHEe-4gqEWx168lA"/>
+  <ArrowheadDSL:ArrowHeadServiceInterfaceHTTP xmi:id="_tE4kUHwHEe-4gqEWx168lA" base_Operation="_tE2vIHwHEe-4gqEWx168lA"/>
+  <ArrowheadDSL:ArrowHeadServiceInterfaceHTTP xmi:id="_vI4cYHwHEe-4gqEWx168lA" base_Operation="_vI2AIHwHEe-4gqEWx168lA"/>
+</xmi:XMI>
