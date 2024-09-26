@@ -38,9 +38,27 @@
             name="ServiceRegistry"
             notation_file="template/ServiceRegistry.notation">
       </template>
+      <template
+            di_file="template/Authorisation.di"
+            file="template/Authorisation.uml"
+            id="com.cea.afpvn.arrowhead.viewpoint.template.Authorisation"
+            language="SysML16"
+            name="Authorisation"
+            notation_file="template/Authorisation.notation">
+      </template>
      </extension>                                 
    
  <!-- Parser provider declaration -->
+   <extension point="org.eclipse.papyrus.uml.extensionpoints.UMLLibrary">
+      <library
+            description="Template for AFPVN"
+            iconpath="icons/arrowhead_icon.png"
+            name="Authorisation"
+            path="pathmap://AFPVN_LIB/Authorisation.uml"
+            provider="CEA LIST">
+      </library>
+   </extension>
+   <!-- Parser provider declaration -->
    <extension point="org.eclipse.papyrus.uml.extensionpoints.UMLLibrary">
       <library
             description="Template for AFPVN"
