@@ -30,6 +30,14 @@
             name="Orchestration"
             notation_file="template/Orchestration.notation">
       </template>
+      <template
+            di_file="template/ServiceRegistry.di"
+            file="template/ServiceRegistry.uml"
+            id="com.cea.afpvn.arrowhead.viewpoint.template.ServiceRegistry"
+            language="SysML16"
+            name="ServiceRegistry"
+            notation_file="template/ServiceRegistry.notation">
+      </template>
      </extension>                                 
    
  <!-- Parser provider declaration -->
@@ -39,6 +47,16 @@
             iconpath="icons/arrowhead_icon.png"
             name="Orchestration"
             path="pathmap://AFPVN_LIB/Orchestration.uml"
+            provider="CEA LIST">
+      </library>
+   </extension>
+   <!-- Parser provider declaration -->
+   <extension point="org.eclipse.papyrus.uml.extensionpoints.UMLLibrary">
+      <library
+            description="Template for AFPVN"
+            iconpath="icons/arrowhead_icon.png"
+            name="ServiceRegistry"
+            path="pathmap://AFPVN_LIB/ServiceRegistry.uml"
             provider="CEA LIST">
       </library>
    </extension>
