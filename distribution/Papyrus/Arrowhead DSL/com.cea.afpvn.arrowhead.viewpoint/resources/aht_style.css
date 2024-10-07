@@ -3,12 +3,6 @@
 	elementIcon: false;
 	
 }
-
-
-Property > Compartment[kind="internalstructure"]{
-    visible:true;
-}
-
 [appliedStereotypes~="ArrowheadDSL::SysDD"] > Compartment[kind=attributes],
 [appliedStereotypes~="ArrowheadDSL::SysDD"] > Compartment[kind=operations],
 [appliedStereotypes~="ArrowheadDSL::SysDD"] > Compartment[type=StereotypeCompartment]{
@@ -50,7 +44,14 @@ Class[appliedStereotypes~="ArrowheadDSL::System_Implementation"]{
 	bold: true; 
 	displayStereotypes: true;
 	}
-	Class[appliedStereotypes~="ArrowheadDSL::LocalcloudImplementation"]{
+[appliedStereotypes~="ArrowheadDSL::System_Implementation"] > Compartment[kind=attributes],
+[appliedStereotypes~="ArrowheadDSL::System_Implementation"] > Compartment[kind=operations],
+[appliedStereotypes~="ArrowheadDSL::System_Implementation"] > Compartment[type=StereotypeCompartment]{
+	visible: true;
+	showTitle: true;
+}
+	
+Class[appliedStereotypes~="ArrowheadDSL::LocalcloudImplementation"]{
 	fillColor: #ff8000;
 	lineColor: black;
 	lineWidth: 2;
@@ -110,6 +111,16 @@ Class[appliedStereotypes~="ArrowheadDSL::IDD_Implementation"]{
 	lineWidth: 2;
 	bold: true; 
 	displayStereotypes: true;
+}
+[appliedStereotypes~="IDD_Implementation"] > Compartment[kind=attributes]{
+	visible: false;
+	showTitle: false;
+}
+
+[appliedStereotypes~="IDD_Implementation"] > Compartment[kind=operations],
+[appliedStereotypes~="IDD_Implementation"] > Compartment[type=StereotypeCompartment]{
+	visible: true;
+	showTitle: true;
 }
 
 Class[appliedStereotypes~="ArrowheadDSL::System_of_LocalcloudsImplementation"]{
@@ -203,12 +214,23 @@ Class[appliedStereotypes~="ArrowheadDSL::ArrowheadDSLRequirement"]{
 	fillColor: #9BC7CC;
 	visibile: true;
 	gradient: none;
+	maskLabel: name visibility;
+	
 }
 [appliedStereotypes~="ArrowheadDSL::ProxyPort"]{
 	fillColor: #9BC7CC;
 	visibile: true;
 	gradient: none;
+	maskLabel: name visibility;
 }
 Shape {
 	shapeVisibility: true;
 }
+[appliedStereotypes~="ArrowheadDSL::ArrowHeadServiceInterfaceHTTP"]{
+	lineWidth: 8;
+	fillColor: #9BC7CC; 
+	maskLabel: name parametersName ;
+	
+}
+
+
