@@ -25,6 +25,8 @@ import org.eclipse.gmf.runtime.notation.Shape;
 import org.eclipse.gmf.runtime.notation.View;
 import org.eclipse.jface.preference.IPreferenceStore;
 import org.eclipse.papyrus.uml.diagram.common.helper.PreferenceInitializerForElementHelper;
+import org.eclipse.uml2.uml.Port;
+import org.eclipse.uml2.uml.VisibilityKind;
 
 public class PortViewFactory extends AbstractBasicViewFactory {
 
@@ -52,6 +54,11 @@ public class PortViewFactory extends AbstractBasicViewFactory {
 		Location location5125 = (Location) label5125.getLayoutConstraint();
 		location5125.setX(25);
 		location5125.setY(3);
+		if (domainElement instanceof Port)
+		{
+			Port port = (Port) domainElement;
+			port.setVisibility(VisibilityKind.PUBLIC_LITERAL);
+		}
 		return node;
 	}
 
