@@ -23,61 +23,27 @@
    </extension>
    <extension point="org.eclipse.papyrus.uml.diagram.wizards.templates">
       <template
-            di_file="template/Orchestration.di"
-            file="template/Orchestration.uml"
-            id="com.cea.afpvn.arrowhead.viewpoint.template.Orchestration"
+            di_file="template/Arrowhead-5.0.di"
+            file="template/Arrowhead-5.0.uml"
+            id="com.cea.afpvn.arrowhead.viewpoint.template.Arrowhead-5.0"
             language="SysML16"
-            name="Orchestration"
-            notation_file="template/Orchestration.notation">
-      </template>
-      <template
-            di_file="template/ServiceRegistry.di"
-            file="template/ServiceRegistry.uml"
-            id="com.cea.afpvn.arrowhead.viewpoint.template.ServiceRegistry"
-            language="SysML16"
-            name="ServiceRegistry"
-            notation_file="template/ServiceRegistry.notation">
-      </template>
-      <template
-            di_file="template/Authorisation.di"
-            file="template/Authorisation.uml"
-            id="com.cea.afpvn.arrowhead.viewpoint.template.Authorisation"
-            language="SysML16"
-            name="Authorisation"
-            notation_file="template/Authorisation.notation">
+            name="Arrowhead-5.0"
+            notation_file="template/Arrowhead-5.0.notation">
       </template>
      </extension>                                 
    
  <!-- Parser provider declaration -->
-   <extension point="org.eclipse.papyrus.uml.extensionpoints.UMLLibrary">
-      <library
-            description="Template for AFPVN"
-            iconpath="icons/arrowhead_icon.png"
-            name="Authorisation"
-            path="pathmap://AFPVN_LIB/Authorisation.uml"
-            provider="CEA LIST">
-      </library>
-   </extension>
    <!-- Parser provider declaration -->
    <extension point="org.eclipse.papyrus.uml.extensionpoints.UMLLibrary">
       <library
             description="Template for AFPVN"
             iconpath="icons/arrowhead_icon.png"
-            name="Orchestration"
-            path="pathmap://AFPVN_LIB/Orchestration.uml"
+            name="Arrowhead-5.0"
+            path="pathmap://AFPVN_LIB/Arrowhead-5.0.uml"
             provider="CEA LIST">
       </library>
    </extension>
    <!-- Parser provider declaration -->
-   <extension point="org.eclipse.papyrus.uml.extensionpoints.UMLLibrary">
-      <library
-            description="Template for AFPVN"
-            iconpath="icons/arrowhead_icon.png"
-            name="ServiceRegistry"
-            path="pathmap://AFPVN_LIB/ServiceRegistry.uml"
-            provider="CEA LIST">
-      </library>
-   </extension>
 <extension point="org.eclipse.gmf.runtime.common.ui.services.parserProviders">
 	<ParserProvider class="com.cea.afpvn.arrowhead.viewpoint.provider.ParserProvider">
 		<Priority name="Lowest"/>
