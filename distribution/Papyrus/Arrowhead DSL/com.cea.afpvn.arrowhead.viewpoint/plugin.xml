@@ -13,6 +13,9 @@
       <diagramexpansion
             model="resources/configuration/blockDefinitionDiagramConfigArrowhead.expansionmodel">
       </diagramexpansion>
+      <diagramexpansion
+            model="resources/configuration/internaBlockDiagramConfigArrowhead.expansionmodel">
+      </diagramexpansion>
    </extension>
    <extension
          point="org.eclipse.emf.ecore.uri_mapping">
@@ -21,16 +24,6 @@
             target="platform:/plugin/com.cea.afpvn.arrowhead.viewpoint/template/">
       </mapping>
    </extension>
-   <extension point="org.eclipse.papyrus.uml.diagram.wizards.templates">
-      <template
-            di_file="template/Arrowhead-5.0.di"
-            file="template/Arrowhead-5.0.uml"
-            id="com.cea.afpvn.arrowhead.viewpoint.template.Arrowhead-5.0"
-            language="SysML16"
-            name="Arrowhead-5.0"
-            notation_file="template/Arrowhead-5.0.notation">
-      </template>
-     </extension>                                 
    
  <!-- Parser provider declaration -->
    <!-- Parser provider declaration -->

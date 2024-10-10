@@ -51,7 +51,7 @@
       <palettes xmi:type="paletteconfiguration:PaletteConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.architecture/resources/SysMLAnnotation.paletteconfiguration#/"/>
       <palettes xmi:type="paletteconfiguration:PaletteConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.architecture/resources/SysMLActivity.paletteconfiguration#/"/>
     </representationKinds>
-    <representationKinds xmi:type="gmfdiagrepresentation:PapyrusDiagram" xmi:id="_OiDkbC8JEe-AALyjOR-iJA" id="org.eclipse.papyrus.sysml16.diagram.internalblock.arrowhead" name="SysML 1.6 Internal Block Diagram" description="SysML 1.6 Internal Block" icon="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.internalblock/resources/icons/obj16/Diagram_InternalBlock.gif" concerns="_GpRCwGwzEe6CubzOdD5h_Q" implementationID="CompositeStructure" customStyle="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.internalblock/resources/style/internalBlockDiagram.css" creationCommandClass="org.eclipse.papyrus.uml.diagram.composite.CreateCompositeDiagramCommand">
+    <representationKinds xmi:type="gmfdiagrepresentation:PapyrusDiagram" xmi:id="_OiDkbC8JEe-AALyjOR-iJA" id="org.eclipse.papyrus.sysml16.diagram.internalblock.arrowhead" name="Arrowhead Internal Block Diagram" description="SysML 1.6 Internal Block" icon="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.internalblock/resources/icons/obj16/Diagram_InternalBlock.gif" concerns="_GpRCwGwzEe6CubzOdD5h_Q" implementationID="CompositeStructure" customStyle="platform:/plugin/com.cea.afpvn.arrowhead.viewpoint/resources/internalBlockDiagram.css" creationCommandClass="org.eclipse.papyrus.uml.diagram.composite.CreateCompositeDiagramCommand">
       <modelRules xmi:type="representation:ModelRule" xmi:id="_OiELcC8JEe-AALyjOR-iJA" permit="true" elementMultiplicity="1" multiplicity="-1">
         <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
         <stereotypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks/Block"/>
@@ -59,6 +59,38 @@
       <modelRules xmi:type="representation:ModelRule" xmi:id="_OiELcS8JEe-AALyjOR-iJA" permit="true" elementMultiplicity="1" multiplicity="-1">
         <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
         <stereotypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//constraintblocks/ConstraintBlock"/>
+      </modelRules>
+      <modelRules xmi:type="representation:ModelRule" xmi:id="_c1P04IY3Ee-EWpT8aQK_2w" permit="true" elementMultiplicity="1" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        <stereotypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/arrowhead#//SD"/>
+      </modelRules>
+      <modelRules xmi:type="representation:ModelRule" xmi:id="_2RisQIY7Ee-EWpT8aQK_2w" permit="true" elementMultiplicity="1" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        <stereotypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/arrowhead#//IDD"/>
+      </modelRules>
+      <modelRules xmi:type="representation:ModelRule" xmi:id="_AlbjoIZMEe-EWpT8aQK_2w" permit="true" elementMultiplicity="1" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        <stereotypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/arrowhead#//SysD"/>
+      </modelRules>
+      <modelRules xmi:type="representation:ModelRule" xmi:id="_R-7mEIZMEe-EWpT8aQK_2w" permit="true" elementMultiplicity="1" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        <stereotypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/arrowhead#//SysDD"/>
+      </modelRules>
+      <modelRules xmi:type="representation:ModelRule" xmi:id="_fJdtsIZMEe-EWpT8aQK_2w" permit="true" elementMultiplicity="1" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        <stereotypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/arrowhead#//DeviceDesign"/>
+      </modelRules>
+      <modelRules xmi:type="representation:ModelRule" xmi:id="_bIcS0IZNEe-EWpT8aQK_2w" permit="true" elementMultiplicity="1" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier"/>
+        <stereotypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/arrowhead#//System_Implementation"/>
+      </modelRules>
+      <modelRules xmi:type="representation:ModelRule" xmi:id="_zajy4IZNEe-EWpT8aQK_2w" permit="true" elementMultiplicity="1" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        <stereotypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/arrowhead#//DeviceDesignDescription"/>
+      </modelRules>
+      <modelRules xmi:type="representation:ModelRule" xmi:id="_EfRREIZOEe-EWpT8aQK_2w" permit="true" elementMultiplicity="1" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        <stereotypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/arrowhead#//IDD_Implementation"/>
       </modelRules>
       <owningRules xmi:type="representation:OwningRule" xmi:id="_OiELci8JEe-AALyjOR-iJA" permit="true" multiplicity="-1">
         <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
@@ -74,9 +106,66 @@
           <feature xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package/packagedElement"/>
         </newModelPath>
       </owningRules>
+      <owningRules xmi:type="representation:OwningRule" xmi:id="_sbyE4IY3Ee-EWpT8aQK_2w" permit="true" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        <stereotypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/arrowhead#//SD"/>
+      </owningRules>
+      <owningRules xmi:type="representation:OwningRule" xmi:id="_54HKUIY7Ee-EWpT8aQK_2w" permit="true" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        <stereotypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/arrowhead#//IDD"/>
+      </owningRules>
+      <owningRules xmi:type="representation:OwningRule" xmi:id="_HGCJ4IZMEe-EWpT8aQK_2w" permit="true" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        <stereotypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/arrowhead#//SysD"/>
+      </owningRules>
+      <owningRules xmi:type="representation:OwningRule" xmi:id="_W--YgIZMEe-EWpT8aQK_2w" permit="true" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        <stereotypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/arrowhead#//SysDD"/>
+      </owningRules>
+      <owningRules xmi:type="representation:OwningRule" xmi:id="_mX1_8IZMEe-EWpT8aQK_2w" permit="true" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        <stereotypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/arrowhead#//DeviceDesign"/>
+      </owningRules>
+      <owningRules xmi:type="representation:OwningRule" xmi:id="_jsWNkIZNEe-EWpT8aQK_2w" permit="true" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        <stereotypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/arrowhead#//System_Implementation"/>
+      </owningRules>
+      <owningRules xmi:type="representation:OwningRule" xmi:id="_6t5doIZNEe-EWpT8aQK_2w" permit="true" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        <stereotypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/arrowhead#//DeviceDesignDescription"/>
+      </owningRules>
+      <owningRules xmi:type="representation:OwningRule" xmi:id="_LoVlgIZOEe-EWpT8aQK_2w" permit="true" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        <stereotypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/arrowhead#//IDD_Implementation"/>
+      </owningRules>
       <paletteRules xmi:type="gmfdiagrepresentation:PaletteRule" xmi:id="_OiELdi8JEe-AALyjOR-iJA" permit="false" element="composite.group.*"/>
-      <palettes xmi:type="paletteconfiguration:PaletteConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.architecture/resources/SysMLAnnotation.paletteconfiguration#/"/>
-      <palettes xmi:type="paletteconfiguration:PaletteConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.internalblock/resources/palette/internalBlockDiagram.paletteconfiguration#/"/>
+      <palettes xmi:type="paletteconfiguration:PaletteConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.viewpoint/resources/ibd.paletteconfiguration#/"/>
+    </representationKinds>
+    <representationKinds xmi:type="gmfdiagrepresentation:PapyrusDiagram" xmi:id="org.eclipse.papyrus.sysml16.diagram.blockdefinition" id="org.eclipse.papyrus.sysml16.diagram.blockdefinition.arrowhead" name="ArrowHead Block Definition Diagram" description="BDD diagram" icon="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.blockdefinition/resources/icons/obj16/Diagram_BlockDefinition.gif" concerns="_GpRCwGwzEe6CubzOdD5h_Q" implementationID="PapyrusUMLClassDiagram" customStyle="platform:/plugin/com.cea.afpvn.arrowhead.viewpoint/resources/aht_style.css" creationCommandClass="org.eclipse.papyrus.uml.diagram.clazz.CreateClassDiagramCommand">
+      <modelRules xmi:type="representation:ModelRule" xmi:id="_ZrBf4ZaBEeS8eNvSwD0lgA" permit="true" elementMultiplicity="1" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
+      </modelRules>
+      <modelRules xmi:type="representation:ModelRule" xmi:id="_izoMsEoqEemhF82MMhP0eA" permit="true" elementMultiplicity="1" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        <stereotypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks/Block"/>
+      </modelRules>
+      <modelRules xmi:type="representation:ModelRule" xmi:id="_pJ81kEoqEemhF82MMhP0eA" permit="true" elementMultiplicity="1" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        <stereotypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//constraintblocks/ConstraintBlock"/>
+      </modelRules>
+      <owningRules xmi:type="representation:OwningRule" xmi:id="_ZrBf45aBEeS8eNvSwD0lgA" permit="true" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
+      </owningRules>
+      <owningRules xmi:type="representation:OwningRule" xmi:id="_s8WJIEoqEemhF82MMhP0eA" permit="true" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        <stereotypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks/Block"/>
+      </owningRules>
+      <owningRules xmi:type="representation:OwningRule" xmi:id="_tSjCoEoqEemhF82MMhP0eA" permit="true" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        <stereotypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//constraintblocks/ConstraintBlock"/>
+      </owningRules>
+      <paletteRules xmi:type="gmfdiagrepresentation:PaletteRule" xmi:id="_ne2N0Pi-Ee6_EKg1vsD2Cg" permit="false" element="clazz.group.*"/>
+      <palettes xmi:type="paletteconfiguration:PaletteConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.viewpoint/resources/aht.paletteconfiguration#/"/>
     </representationKinds>
     <representationKinds xmi:type="gmfdiagrepresentation:PapyrusDiagram" xmi:id="_OiELdy8JEe-AALyjOR-iJA" id="org.eclipse.papyrus.sysml16.diagram.package.arrowhead" name="SysML 1.6 Package Diagram" description="" icon="platform:/plugin/org.eclipse.papyrus.sysml16.architecture/resources/icons/obj16/Diagram_SysML_Package.gif" concerns="_GpRCwGwzEe6CubzOdD5h_Q" implementationID="PapyrusUMLClassDiagram" creationCommandClass="org.eclipse.papyrus.uml.diagram.clazz.CreateClassDiagramCommand">
       <modelRules xmi:type="representation:ModelRule" xmi:id="_OiELeC8JEe-AALyjOR-iJA" permit="true" elementMultiplicity="1" multiplicity="-1">
@@ -231,32 +320,6 @@
       <childRules xmi:type="gmfdiagrepresentation:ChildRule" xmi:id="_OiGnuS8JEe-AALyjOR-iJA" permit="true"/>
       <palettes xmi:type="paletteconfiguration:PaletteConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.architecture/resources/SysMLAnnotation.paletteconfiguration#/"/>
       <palettes xmi:type="paletteconfiguration:PaletteConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.architecture/resources/SysMLUseCase.paletteconfiguration#/"/>
-    </representationKinds>
-    <representationKinds xmi:type="gmfdiagrepresentation:PapyrusDiagram" xmi:id="org.eclipse.papyrus.sysml16.diagram.blockdefinition" id="org.eclipse.papyrus.sysml16.diagram.blockdefinition.arrowhead" name="ArrowHead Block Definition Diagram" description="BDD diagram" icon="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.blockdefinition/resources/icons/obj16/Diagram_BlockDefinition.gif" concerns="_GpRCwGwzEe6CubzOdD5h_Q" implementationID="PapyrusUMLClassDiagram" customStyle="platform:/plugin/com.cea.afpvn.arrowhead.viewpoint/resources/aht_style.css" creationCommandClass="org.eclipse.papyrus.uml.diagram.clazz.CreateClassDiagramCommand">
-      <modelRules xmi:type="representation:ModelRule" xmi:id="_ZrBf4ZaBEeS8eNvSwD0lgA" permit="true" elementMultiplicity="1" multiplicity="-1">
-        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
-      </modelRules>
-      <modelRules xmi:type="representation:ModelRule" xmi:id="_izoMsEoqEemhF82MMhP0eA" permit="true" elementMultiplicity="1" multiplicity="-1">
-        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
-        <stereotypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks/Block"/>
-      </modelRules>
-      <modelRules xmi:type="representation:ModelRule" xmi:id="_pJ81kEoqEemhF82MMhP0eA" permit="true" elementMultiplicity="1" multiplicity="-1">
-        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
-        <stereotypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//constraintblocks/ConstraintBlock"/>
-      </modelRules>
-      <owningRules xmi:type="representation:OwningRule" xmi:id="_ZrBf45aBEeS8eNvSwD0lgA" permit="true" multiplicity="-1">
-        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
-      </owningRules>
-      <owningRules xmi:type="representation:OwningRule" xmi:id="_s8WJIEoqEemhF82MMhP0eA" permit="true" multiplicity="-1">
-        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
-        <stereotypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks/Block"/>
-      </owningRules>
-      <owningRules xmi:type="representation:OwningRule" xmi:id="_tSjCoEoqEemhF82MMhP0eA" permit="true" multiplicity="-1">
-        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
-        <stereotypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//constraintblocks/ConstraintBlock"/>
-      </owningRules>
-      <paletteRules xmi:type="gmfdiagrepresentation:PaletteRule" xmi:id="_ne2N0Pi-Ee6_EKg1vsD2Cg" permit="false" element="clazz.group.*"/>
-      <palettes xmi:type="paletteconfiguration:PaletteConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.viewpoint/resources/aht.paletteconfiguration#/"/>
     </representationKinds>
     <metamodel xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML#/"/>
     <profiles xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/arrowhead#/"/>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <elementtypesconfigurations:ElementTypeSetConfiguration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:stereotypematcher="http://www.eclipse.org/papyrus/uml/types/stereotypematcher/1.1" xmi:id="com.example.arrowheadDSL.elementTypes" identifier="com.example.arrowheadDSL.elementTypes" name="ArrowheadDSL" metamodelNsURI="http://www.eclipse.org/uml2/5.0.0/UML">
   <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_aE8SUAPTEe-BKJM5JZGesg" identifier="com.example.arrowheadDSL.FullPort" name="FullPort_A" hint="UML::Port" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_dQAwYBEqEe-8pedTrDdzWw">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_szcnsIYbEe-zLrE69YWP1w" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/ArrowheadProfile/resources/ArrowheadProfile_v5.0.profile.uml#_oXf0IPyPEe6MDucytuqm6Q"/>
     <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_aE8SUQPTEe-BKJM5JZGesg" iconPath="/icons/full/obj16/Port.gif" bundleId="org.eclipse.uml2.uml.edit"/>
     <ownedConfigurations xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_aE8SUgPTEe-BKJM5JZGesg" profileUri="http://www.eclipse.org/papyrus/arrowhead">
       <stereotypesQualifiedNames>ArrowheadDSL::FullPort</stereotypesQualifiedNames>
@@ -11,6 +12,7 @@
     <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Port"/>
   </elementTypeConfigurations>
   <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Q8OvcAPVEe-BKJM5JZGesg" identifier="com.example.arrowheadDSL.ProxyPort" name="ProxyPort_A" hint="UML::Port" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_UzvK0BEuEe-8pedTrDdzWw">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_vdCgIIYbEe-zLrE69YWP1w" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/ArrowheadProfile/resources/ArrowheadProfile_v5.0.profile.uml#_o2e2MPyPEe6MDucytuqm6Q"/>
     <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_Q8OvcQPVEe-BKJM5JZGesg" iconPath="/icons/full/obj16/Port.gif" bundleId="org.eclipse.uml2.uml.edit"/>
     <ownedConfigurations xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_Q8OvcgPVEe-BKJM5JZGesg" profileUri="http://www.eclipse.org/papyrus/arrowhead">
       <stereotypesQualifiedNames>ArrowheadDSL::ProxyPort</stereotypesQualifiedNames>
