@@ -49,6 +49,7 @@ public class SysMLConnectorViewFactory extends AbstractBasicViewFactory {
 	 * @see org.eclipse.papyrus.sysml16.diagram.common.internal.factory.IBasicViewFactory#createElementView(org.eclipse.emf.ecore.EObject, org.eclipse.gmf.runtime.notation.View, java.lang.String, int, boolean,
 	 *      org.eclipse.gmf.runtime.diagram.core.preferences.PreferencesHint)
 	 */
+	@SuppressWarnings("restriction")
 	@Override
 	public View createElementView(EObject domainElement, View containerView, String semanticHint, int index, boolean persisted, PreferencesHint preferencesHint) {
 		Connector edge = NotationFactory.eINSTANCE.createConnector();

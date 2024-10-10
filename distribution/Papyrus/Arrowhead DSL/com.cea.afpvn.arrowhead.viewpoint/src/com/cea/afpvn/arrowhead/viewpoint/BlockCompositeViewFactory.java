@@ -35,6 +35,7 @@ import org.eclipse.papyrus.uml.diagram.composite.part.UMLVisualIDRegistry;
 /**
  * Extraction from classdiagram UML view Provider.
  */
+@SuppressWarnings("restriction")
 public class BlockCompositeViewFactory extends AbstractBasicViewFactory {
 
 	/**

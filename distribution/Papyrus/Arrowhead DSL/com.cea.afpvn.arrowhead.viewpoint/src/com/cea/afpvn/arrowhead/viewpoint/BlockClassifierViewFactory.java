@@ -26,7 +26,6 @@ import org.eclipse.jface.preference.IPreferenceStore;
 import org.eclipse.papyrus.uml.diagram.clazz.edit.parts.ClassAttributeCompartmentEditPart;
 import org.eclipse.papyrus.uml.diagram.clazz.edit.parts.ClassFloatingNameEditPart;
 import org.eclipse.papyrus.uml.diagram.clazz.edit.parts.ClassNameEditPart;
-import org.eclipse.papyrus.uml.diagram.clazz.edit.parts.ClassNestedClassifierCompartmentEditPart;
 import org.eclipse.papyrus.uml.diagram.clazz.edit.parts.ClassOperationCompartmentEditPart;
 import org.eclipse.papyrus.uml.diagram.clazz.part.UMLVisualIDRegistry;
 import org.eclipse.papyrus.uml.diagram.common.helper.PreferenceInitializerForElementHelper;
