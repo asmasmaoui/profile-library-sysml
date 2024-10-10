@@ -92,6 +92,46 @@
         <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
         <stereotypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/arrowhead#//IDD_Implementation"/>
       </modelRules>
+      <modelRules xmi:type="representation:ModelRule" xmi:id="_L1LDYIcZEe-VJLZWtDBhuw" permit="true" elementMultiplicity="1" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        <stereotypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/arrowhead#//IntercloudNetworkDesign"/>
+      </modelRules>
+      <modelRules xmi:type="representation:ModelRule" xmi:id="_MRfzAIcZEe-VJLZWtDBhuw" permit="true" elementMultiplicity="1" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        <stereotypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/arrowhead#//IntercloudNetworkDesignDescription"/>
+      </modelRules>
+      <modelRules xmi:type="representation:ModelRule" xmi:id="_MoL0sIcZEe-VJLZWtDBhuw" permit="true" elementMultiplicity="1" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        <stereotypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/arrowhead#//IntracloudNetworkDesign"/>
+      </modelRules>
+      <modelRules xmi:type="representation:ModelRule" xmi:id="_NCgZMIcZEe-VJLZWtDBhuw" permit="true" elementMultiplicity="1" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        <stereotypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/arrowhead#//IntracloudNetworkDesignDescription"/>
+      </modelRules>
+      <modelRules xmi:type="representation:ModelRule" xmi:id="_NgZ2IIcZEe-VJLZWtDBhuw" permit="true" elementMultiplicity="1" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        <stereotypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/arrowhead#//LocalCloudDesign"/>
+      </modelRules>
+      <modelRules xmi:type="representation:ModelRule" xmi:id="_N7Yh8IcZEe-VJLZWtDBhuw" permit="true" elementMultiplicity="1" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        <stereotypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/arrowhead#//LocalcloudImplementation"/>
+      </modelRules>
+      <modelRules xmi:type="representation:ModelRule" xmi:id="_OWDEsIcZEe-VJLZWtDBhuw" permit="true" elementMultiplicity="1" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        <stereotypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/arrowhead#//LocalcloudDesignDescription"/>
+      </modelRules>
+      <modelRules xmi:type="representation:ModelRule" xmi:id="_O3OfIIcZEe-VJLZWtDBhuw" permit="true" elementMultiplicity="1" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        <stereotypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/arrowhead#//System_of_LocalcloudsDesign"/>
+      </modelRules>
+      <modelRules xmi:type="representation:ModelRule" xmi:id="_PZ8KoIcZEe-VJLZWtDBhuw" permit="true" elementMultiplicity="1" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        <stereotypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/arrowhead#//System_of_LocalcloudsImplementation"/>
+      </modelRules>
+      <modelRules xmi:type="representation:ModelRule" xmi:id="_P7W1oIcZEe-VJLZWtDBhuw" permit="true" elementMultiplicity="1" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        <stereotypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/arrowhead#//System_of_LocacloudsDesignDescription"/>
+      </modelRules>
       <owningRules xmi:type="representation:OwningRule" xmi:id="_OiELci8JEe-AALyjOR-iJA" permit="true" multiplicity="-1">
         <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
         <stereotypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks/Block"/>
@@ -138,8 +178,48 @@
         <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
         <stereotypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/arrowhead#//IDD_Implementation"/>
       </owningRules>
+      <owningRules xmi:type="representation:OwningRule" xmi:id="_dk9e4IcZEe-VJLZWtDBhuw" permit="true" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        <stereotypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/arrowhead#//IntercloudNetworkDesign"/>
+      </owningRules>
+      <owningRules xmi:type="representation:OwningRule" xmi:id="_f5H54IcZEe-VJLZWtDBhuw" permit="true" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        <stereotypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/arrowhead#//IntercloudNetworkDesignDescription"/>
+      </owningRules>
+      <owningRules xmi:type="representation:OwningRule" xmi:id="_gX6usIcZEe-VJLZWtDBhuw" permit="true" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        <stereotypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/arrowhead#//IntracloudNetworkDesign"/>
+      </owningRules>
+      <owningRules xmi:type="representation:OwningRule" xmi:id="_g-eYYIcZEe-VJLZWtDBhuw" permit="true" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        <stereotypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/arrowhead#//IntracloudNetworkDesignDescription"/>
+      </owningRules>
+      <owningRules xmi:type="representation:OwningRule" xmi:id="_hnJh8IcZEe-VJLZWtDBhuw" permit="true" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        <stereotypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/arrowhead#//LocalCloudDesign"/>
+      </owningRules>
+      <owningRules xmi:type="representation:OwningRule" xmi:id="_iKVHgIcZEe-VJLZWtDBhuw" permit="true" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        <stereotypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/arrowhead#//LocalcloudImplementation"/>
+      </owningRules>
+      <owningRules xmi:type="representation:OwningRule" xmi:id="_iuQ7AIcZEe-VJLZWtDBhuw" permit="true" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        <stereotypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/arrowhead#//LocalcloudDesignDescription"/>
+      </owningRules>
+      <owningRules xmi:type="representation:OwningRule" xmi:id="_jXYJcIcZEe-VJLZWtDBhuw" permit="true" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        <stereotypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/arrowhead#//System_of_LocalcloudsDesign"/>
+      </owningRules>
+      <owningRules xmi:type="representation:OwningRule" xmi:id="_j4iVwIcZEe-VJLZWtDBhuw" permit="true" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        <stereotypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/arrowhead#//System_of_LocalcloudsImplementation"/>
+      </owningRules>
+      <owningRules xmi:type="representation:OwningRule" xmi:id="_lRFdEIcZEe-VJLZWtDBhuw" permit="true" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        <stereotypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/arrowhead#//System_of_LocacloudsDesignDescription"/>
+      </owningRules>
       <paletteRules xmi:type="gmfdiagrepresentation:PaletteRule" xmi:id="_OiELdi8JEe-AALyjOR-iJA" permit="false" element="composite.group.*"/>
-      <palettes xmi:type="paletteconfiguration:PaletteConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.viewpoint/resources/ibd.paletteconfiguration#/"/>
+      <palettes xmi:type="paletteconfiguration:PaletteConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.viewpoint/resources/internalBlockDiagram.paletteconfiguration#/"/>
     </representationKinds>
     <representationKinds xmi:type="gmfdiagrepresentation:PapyrusDiagram" xmi:id="org.eclipse.papyrus.sysml16.diagram.blockdefinition" id="org.eclipse.papyrus.sysml16.diagram.blockdefinition.arrowhead" name="ArrowHead Block Definition Diagram" description="BDD diagram" icon="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.blockdefinition/resources/icons/obj16/Diagram_BlockDefinition.gif" concerns="_GpRCwGwzEe6CubzOdD5h_Q" implementationID="PapyrusUMLClassDiagram" customStyle="platform:/plugin/com.cea.afpvn.arrowhead.viewpoint/resources/aht_style.css" creationCommandClass="org.eclipse.papyrus.uml.diagram.clazz.CreateClassDiagramCommand">
       <modelRules xmi:type="representation:ModelRule" xmi:id="_ZrBf4ZaBEeS8eNvSwD0lgA" permit="true" elementMultiplicity="1" multiplicity="-1">
