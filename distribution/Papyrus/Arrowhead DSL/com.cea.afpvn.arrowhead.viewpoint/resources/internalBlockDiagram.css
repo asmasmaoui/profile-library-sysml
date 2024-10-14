@@ -34,101 +34,8 @@ Model > Compartment[kind="packagedelements"]{
 	lineColor: orange;
 }
 
-[appliedStereotypes~="ConstraintBlock"] > Compartment[kind=parameters],
-[appliedStereotypes~="ConstraintBlock"] > Compartment[kind=constraints]{
-	visible: true;
-}
 
-[appliedStereotypes~="FlowSpecification"]{
-	elementIcon:false;
-	displayIcon:false;
-}
 
-[appliedStereotypes~="FlowSpecification"] > Compartment[kind=flowproperties]{
-	visible: true;
-}
-
-[appliedStereotypes~="ValueType"] > Compartment[kind=attributes],
-[appliedStereotypes~="ValueType"] > Compartment[kind=operations]{
-	visible: true;
-}
-
-/*
- * Comment
- */
-Class[appliedStereotypes~="Comment"]{
-	visible:true;
-}
-
-/*
- * Stereotype ElementGroup
- */
- 
-Class[appliedStereotypes~="ElementGroup"] {
-    visible:true;
-    showTitle:true;
-}
-
-Class[appliedStereotypes~="ElementGroup"] > Compartment[type=StereotypeCompartment] {
-    visible:true;
-    showTitle:false;
-}
-
-Class[appliedStereotypes~="ElementGroup"] > Compartment[type=StereotypeCompartment] > [property="name"]{
-	visible:true;
-}
-Class[appliedStereotypes~="ElementGroup"] > Compartment[type=StereotypeCompartment] > [property="criterion"]{
-	visible:true;
-}
-Class[appliedStereotypes~="ElementGroup"] > Compartment[type=StereotypeCompartment] > [property="size"]{
-	visible:true;
-}
-Class[appliedStereotypes~="ElementGroup"] > Compartment[type=StereotypeCompartment] > [property="member"]{
-	visible:true;
-}
-
-Class[appliedStereotypes~="ElementGroup"] > Compartment[type=StereotypeCompartment] > [property="orderedMember"]{
-	visible:true;
-}
-
-/*
- * Problem
- */
-Class[appliedStereotypes~="Problem"]{
-	visible:true;
-}
-
-/*
- * Rationale
- */
-Class[appliedStereotypes~="Rational"]{
-	visible:true;
-}
-
-/*
- * Stakeholder
- */
-Class[appliedStereotypes~="Stakeholder"] > Compartment[type=StereotypeCompartment] {
-    visible:true;
-    showTitle:false;
-} 
- 
-[appliedStereotypes~="Stakeholder"] > Compartment[kind=attributes],
-[appliedStereotypes~="Stakeholder"] > Compartment[kind=operations],
-[appliedStereotypes~="Stakeholder"] > Compartment[kind=constraints]{
-	visible: true;
-}
-
-Class[appliedStereotypes~="Stakeholder"] > Compartment[type=StereotypeCompartment] > [property="concernList"]{
-	visible:true;
-}
-Class[appliedStereotypes~="Stakeholder"] > Compartment[type=StereotypeCompartment] > [property="concern"]{
-	visible:true;
-}
-
-/*
- * Stereotype View
- */
 Class[appliedStereotypes~="View"] > Compartment[kind=attributes],
 Class[appliedStereotypes~="View"] > Compartment[kind=operations]{
     visible:true;
@@ -153,50 +60,6 @@ Class[appliedStereotypes~="View"] > Compartment[type=StereotypeCompartment] > [p
 	visible:true;
 }
 
-/*
- * Stereotype Viewpoint
- */
-Class[appliedStereotypes~="Viewpoint"] > Compartment[type=StereotypeCompartment] {
-    visible:true;
-    showTitle:false;
-} 
- 
-[appliedStereotypes~="Viewpoint"] > Compartment[kind=attributes],
-[appliedStereotypes~="Viewpoint"] > Compartment[kind=operations]{
-	visible:true;
-}
-
-[appliedStereotypes~="Viewpoint"] > Compartment[kind="internal structure"],
-[appliedStereotypes~="Viewpoint"] > Compartment[kind="symbol"]
-{
-	visible:false;
-}
-
-Class[appliedStereotypes~="Viewpoint"] > Compartment[type=StereotypeCompartment] > [property="stakeholder"]{
-	visible:true;
-}
-
-Class[appliedStereotypes~="Viewpoint"] > Compartment[type=StereotypeCompartment] > [property="purpose"]{
-	visible:true;
-}
-
-Class[appliedStereotypes~="Viewpoint"] > Compartment[type=StereotypeCompartment] > [property="concernList"]{
-	visible:true;
-}
-
-Class[appliedStereotypes~="Viewpoint"] > Compartment[type=StereotypeCompartment] > [property="language"]{
-	visible:true;
-}
-Class[appliedStereotypes~="Viewpoint"] > Compartment[type=StereotypeCompartment] > [property="method"]{
-	visible:true;
-}
-
-Class[appliedStereotypes~="Viewpoint"] > Compartment[type=StereotypeCompartment] > [property="presentation"]{
-	visible:true;
-}
-Class[appliedStereotypes~="Viewpoint"] > Compartment[type=StereotypeCompartment] > [property="concern"]{
-	visible:true;
-}
 
 /*
  * SPECIFIC ELEMENTS
@@ -223,10 +86,33 @@ Property > Compartment[kind=structure]{
 Property > Compartment[kind=internalstructure]{
 	visible: true;
 }
-Property > Compartment[kind=BorderItems]{
+
+Property > Compartment[type=BorderItems]{
+	visible: true;
+}
+Property > Compartment[type="Border Items"]{
 	visible: true;
 }
 
+Property > Compartment[type=borderItems]{
+	visible: true;
+}
+Property > Compartment[kind=BorderItems]{
+	visible: true;
+}
+Property > Compartment[kind="Border Items"]{
+	visible: true;
+}
+Property > Compartment[kind=borderItems]{
+	visible: true;
+}
+Property > Compartment[Representation=borderItems]{
+	visible: true;
+}
+Property > Compartment[subRepresentations=borderItems]{
+	visible: true;
+}
+subRepresentations
 /*
  * Stereotype Block
  */
@@ -499,4 +385,202 @@ Class[appliedStereotypes~="ArrowheadDSL::ArrowheadDSLRequirement"] > Compartment
 	visibile: true;
 	gradient: none;
 	maskLabel: name visibility;
+}
+/* part */
+
+Property[typeAppliedStereotypes~="ArrowheadDSL::System_Implementation"]{
+	fillColor: #FF8000;
+	gradient: none;
+	lineColor: black;
+	lineWidth: 2;
+	bold: true; 
+	displayStereotypes: true;
+	}
+Property[typeAppliedStereotypes~="ArrowheadDSL::System_Implementation"] > Compartment[kind=internalstructure]{
+	visible: true;
+}	
+Property[typeAppliedStereotypes~="ArrowheadDSL::LocalcloudImplementation"]{
+	fillColor: #ff8000;
+	lineColor: black;
+	lineWidth: 2;
+	bold: true; 
+	displayStereotypes: true;
+	}
+Property[typeAppliedStereotypes~="ArrowheadDSL::LocalcloudImplementation"] > Compartment[kind=internalstructure]{
+	visible: true;
+}		
+Property[typeAppliedStereotypes~="ArrowheadDSL::SysDD"]{
+	fillColor: #FF8000;
+	gradient: none;
+	lineColor: black;
+	lineWidth: 2;
+	bold: true; 
+	displayStereotypes: true;
+}
+Property[typeAppliedStereotypes~="ArrowheadDSL::SysDD"] > Compartment[kind=internalstructure]{
+	visible: true;
+}
+Property[typeAppliedStereotypes~="ArrowheadDSL::System_of_LocalcloudsDesign"]{
+	fillColor: #808080; 
+	lineColor: black;
+	lineWidth: 2;
+	bold: true; 
+	displayStereotypes: true;
+}
+Property[typeAppliedStereotypes~="ArrowheadDSL::System_of_LocalcloudsDesign"] > Compartment[kind=internalstructure]{
+	visible: true;
+}
+Property[typeAppliedStereotypes~="ArrowheadDSL::DeviceDesign"]{
+	fillColor: #808080; 
+	lineColor: black;
+	lineWidth: 2;
+	bold: true; 
+	displayStereotypes: true;
+}
+Property[typeAppliedStereotypes~="ArrowheadDSL::DeviceDesign"] > Compartment[kind=internalstructure]{
+	visible: true;
+}
+Property[typeAppliedStereotypes~="ArrowheadDSL::LocalCloudDesign"]{
+	fillColor: #808080; 
+	lineColor: black;
+	lineWidth: 2;
+	bold: true; 
+	displayStereotypes: true;
+}
+Property[typeAppliedStereotypes~="ArrowheadDSL::LocalCloudDesign"] > Compartment[kind=internalstructure]{
+	visible: true;
+}
+Property[typeAppliedStereotypes~="ArrowheadDSL::IntracloudNetworkDesign"]{
+	fillColor: #808080; 
+	lineColor: black;
+	lineWidth: 2;
+	bold: true; 
+	displayStereotypes: true;
+}
+Property[typeAppliedStereotypes~="ArrowheadDSL::IntracloudNetworkDesign"] > Compartment[kind=internalstructure]{
+	visible: true;
+}
+Property[typeAppliedStereotypes~="ArrowheadDSL::IntercloudNetworkDesign"]{
+	fillColor: #808080; 
+	lineColor: black;
+	lineWidth: 2;
+	bold: true; 
+	displayStereotypes: true;
+}
+Property[typeAppliedStereotypes~="ArrowheadDSL::IntercloudNetworkDesign"] > Compartment[kind=internalstructure]{
+	visible: true;
+}
+Property[typeAppliedStereotypes~="ArrowheadDSL::IDD_Implementation"]{
+	fillColor: #9BC7CC;
+	gradient: none;
+	lineColor: black;
+	lineWidth: 2;
+	bold: true; 
+	displayStereotypes: true;
+}
+Property[typeAppliedStereotypes~="ArrowheadDSL::IDD_Implementation"] > Compartment[kind=internalstructure]{
+	visible: true;
+}
+Property[typeAppliedStereotypes~="ArrowheadDSL::System_of_LocalcloudsImplementation"]{
+	fillColor: #808080; 
+	lineColor: black;
+	lineWidth: 2;
+	bold: true; 
+	displayStereotypes: true;
+}
+Property[typeAppliedStereotypes~="ArrowheadDSL::System_of_LocalcloudsImplementation"] > Compartment[kind=internalstructure]{
+	visible: true;
+}
+Property[typeAppliedStereotypes~="ArrowheadDSL::IDD"]{
+	fillColor: #9BC7CC;
+	gradient: none;
+	lineColor: black;
+	lineWidth: 2;
+	bold: true; 
+	displayStereotypes: true;
+}
+Property[typeAppliedStereotypes~="ArrowheadDSL::IDD"] > Compartment[kind=internalstructure]{
+	visible: true;
+}
+Property[typeAppliedStereotypes~="ArrowheadDSL::System_of_LocacloudsDesignDescription"]{
+	fillColor: #808080; 
+	lineColor: black;
+	lineWidth: 2;
+	bold: true; 
+	displayStereotypes: true;
+}
+Property[typeAppliedStereotypes~="ArrowheadDSL::System_of_LocacloudsDesignDescription"] > Compartment[kind=internalstructure]{
+	visible: true;
+}
+Property[typeAppliedStereotypes~="ArrowheadDSL::LocalcloudDesignDescription"]{
+	fillColor: #808080; 
+	lineColor: black;
+	lineWidth: 2;
+	bold: true; 
+	displayStereotypes: true;
+}
+Property[typeAppliedStereotypes~="ArrowheadDSL::LocalcloudDesignDescription"] > Compartment[kind=internalstructure]{
+	visible: true;
+}
+Property[typeAppliedStereotypes~="ArrowheadDSL::DeviceDesignDescription"]{
+	fillColor: #808080; 
+	lineColor: black;
+	lineWidth: 2;
+	bold: true; 
+	displayStereotypes: true;
+}
+Property[typeAppliedStereotypes~="ArrowheadDSL::DeviceDesignDescription"] > Compartment[kind=internalstructure]{
+	visible: true;
+}
+Property[typeAppliedStereotypes~="ArrowheadDSL::IntracloudNetworkDesignDescription"]{
+	fillColor: #808080; 
+	lineColor: black;
+	lineWidth: 2;
+	bold: true; 
+	displayStereotypes: true;
+}
+Property[typeAppliedStereotypes~="ArrowheadDSL::IntracloudNetworkDesignDescription"] > Compartment[kind=internalstructure]{
+	visible: true;
+}
+Property[typeAppliedStereotypes~="ArrowheadDSL::IntercloudNetworkDesignDescription"]{
+	fillColor: #808080; 
+	lineColor: black;
+	lineWidth: 2;
+	bold: true; 
+	displayStereotypes: true;
+}
+Property[typeAppliedStereotypes~="ArrowheadDSL::IntercloudNetworkDesignDescription"] > Compartment[kind=internalstructure]{
+	visible: true;
+}
+Property[typeAppliedStereotypes~="ArrowheadDSL::SysD"]{
+	fillColor: #FF8000;
+	gradient: none;
+	lineColor: black;
+	lineWidth: 2;
+	bold: true; 
+	displayStereotypes: true;
+	
+}
+Property[typeAppliedStereotypes~="ArrowheadDSL::SysD"] > Compartment[kind=internalstructure]{
+	visible: true;
+}
+
+Property[typeAppliedStereotypes~="ArrowheadDSL::SD"]{
+	fillColor: #9BC7CC;
+	gradient: none;
+	lineColor: black;
+	lineWidth: 2;
+	bold: true; 
+	displayStereotypes: true;
+	
+}
+Property[typeAppliedStereotypes~="ArrowheadDSL::SD"] > Compartment[kind=internalstructure]{
+	visible: true;
+}
+Property[typeAppliedStereotypes~="ArrowheadDSL::ArrowheadDSLRequirement"]{
+	fillColor: #dfd869;
+	lineColor: black;
+	lineWidth: 2;
+	bold: true; 
+	displayStereotypes: true;
 }
