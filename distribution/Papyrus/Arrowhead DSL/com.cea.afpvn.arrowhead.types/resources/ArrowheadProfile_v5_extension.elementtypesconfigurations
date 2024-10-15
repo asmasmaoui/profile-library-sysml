@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elementtypesconfigurations:ElementTypeSetConfiguration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmi:id="com.example.arrowheadDSL.elementTypes" identifier="com.example.arrowheadDSL.elementTypes" name="ArrowheadDSL_extension" metamodelNsURI="http://www.eclipse.org/uml2/5.0.0/UML">
+  <adviceBindingsConfigurations xmi:type="elementtypesconfigurations:AdviceBindingConfiguration" xmi:id="_tQmywIoWEe-4geYwV58AIA" description="satisfy org.eclipse.papyrus.sysml16.service.types.REQ_004" identifier="com.example.arrowheadDSL.Part" target="_mAw9YIoVEe-4geYwV58AIA" inheritance="all" editHelperAdviceClassName="com.cea.afpvn.arrowhead.types.advices.PartCreationEditHelperAdvice">
+    <matcherConfiguration xmi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_tQmywYoWEe-4geYwV58AIA" matcherClassName="com.cea.afpvn.arrowhead.types.matcher.ArrowheadProfileMatcher"/>
+  </adviceBindingsConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_mAw9YIoVEe-4geYwV58AIA" description="Create a part" identifier="com.example.arrowheadDSL.Part" name="Part_AFPVN" hint="UML::Property" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" editHelperAdviceConfiguration="_mAw9YYoVEe-4geYwV58AIA" matcherConfiguration="_mAw9YooVEe-4geYwV58AIA">
+    <ownedConfigurations xmi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_mAw9YYoVEe-4geYwV58AIA" description="" target="_mAw9YIoVEe-4geYwV58AIA" editHelperAdviceClassName="com.cea.afpvn.arrowhead.types.advices.AfterConfigureCommandEditHelperAdvice"/>
+    <ownedConfigurations xmi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_mAw9YooVEe-4geYwV58AIA" matchedType="_mAw9YIoVEe-4geYwV58AIA" matcherClassName="com.cea.afpvn.arrowhead.types.matcher.ArrowheadProfileMatcher"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Property"/>
+  </elementTypeConfigurations>
+</elementtypesconfigurations:ElementTypeSetConfiguration>

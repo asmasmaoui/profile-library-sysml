@@ -16,7 +16,14 @@
    </extension>
    
      <extension point="org.eclipse.papyrus.infra.types.core.elementTypeSetConfiguration">
-      <elementTypeSet clientContextID="org.eclipse.papyrus.infra.services.edit.TypeContext" path="resources/ArrowheadProfile_v5di_extension.elementtypesconfigurations"/>
+      <elementTypeSet clientContextID="org.eclipse.papyrus.infra.services.edit.TypeContext" path="resources/ArrowheadProfile_v5_extension.elementtypesconfigurations"/>
    </extension>
+     <extension
+           point="org.eclipse.papyrus.infra.types.core.elementTypeSetConfiguration">
+        <elementTypeSet
+              clientContextID="org.eclipse.papyrus.infra.services.edit.TypeContext"
+              path="resources/ArrowheadProfile_v5di_extension.elementtypesconfigurations">
+        </elementTypeSet>
+     </extension>
    
 </plugin>
