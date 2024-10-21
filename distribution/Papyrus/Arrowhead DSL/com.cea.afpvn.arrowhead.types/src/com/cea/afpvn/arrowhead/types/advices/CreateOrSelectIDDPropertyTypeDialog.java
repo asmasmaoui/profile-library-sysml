@@ -34,27 +34,16 @@ import ArrowheadDSL.ArrowheadDSLPackage;
 /**
  * Dialog for initialization of Part (Property) type (the type is either selected or created).
  */
-public class CreateOrSelectBlockPropertyTypeDialog extends CreateOrSelectTypeWithNameDialog {
+public class CreateOrSelectIDDPropertyTypeDialog extends CreateOrSelectTypeWithNameDialog {
 
-	public CreateOrSelectBlockPropertyTypeDialog(Shell shell, NamedElement owner) {
-		super(shell, owner, ElementTypeRegistry.getInstance().getType(SysMLServiceTypeUtil.ORG_ECLIPSE_PAPYRUS_SYSML16_BLOCK), UMLPackage.eINSTANCE.getTypedElement_Type(), BlocksPackage.eINSTANCE.getBlock(), UMLElementTypes.PACKAGE,
-				UMLPackage.eINSTANCE.getPackage_PackagedElement(), null, getConstraintBlockAsStereotype());
+	public CreateOrSelectIDDPropertyTypeDialog(Shell shell, NamedElement owner/*,IElementType elementType*/) {
+		super(shell, owner, ElementTypeRegistry.getInstance().getType("com.example.arrowheadDSL.IDD_UML::Class"),
+				UMLPackage.eINSTANCE.getTypedElement_Type(),  ArrowheadDSLPackage.eINSTANCE.getIDD(), 
+				UMLElementTypes.PACKAGE, UMLPackage.eINSTANCE.getPackage_PackagedElement(), null);
 	}
 	
-	/**
-	 * If we create a Part type by a ConstraintBlock, thisPart will become a ConstraintProperty and representation will immediately disappear.
-	 * So we filter ConstraintBlock type => Only strict Block are allowed
-	 *
-	 * @return
-	 */
-	private static List<?> getConstraintBlockAsStereotype() {
-		// We create a mock Stereotype to pass in the good code section of SemanticUMLContentProvider.isCompatibleMetaclass (bad gestion of static stereotypes)
-		Stereotype mockStereotype = UMLFactory.eINSTANCE.createStereotype();
-		// We use this stereotype with namespace instead of ConstraintsPackage.eINSTANCE.getConstraintBlock()
-		mockStereotype.setName("SysML::Constraints::ConstraintBlock");
-		return Arrays.asList(mockStereotype);
-	}
-
+	
+	
 	 
 }
 

@@ -34,22 +34,16 @@ import ArrowheadDSL.ArrowheadDSLPackage;
 /**
  * Dialog for initialization of Part (Property) type (the type is either selected or created).
  */
-public class CreateOrSelectBlockPropertyTypeDialog extends CreateOrSelectTypeWithNameDialog {
+public class CreateOrSelectSysDPropertyTypeDialog extends CreateOrSelectTypeWithNameDialog {
 
-	public CreateOrSelectBlockPropertyTypeDialog(Shell shell, NamedElement owner) {
-		super(shell, owner, ElementTypeRegistry.getInstance().getType("com.example.arrowheadDSL.SD_UML::Class"), UMLPackage.eINSTANCE.getTypedElement_Type(), ArrowheadDSLPackage.eINSTANCE.getSD(), UMLElementTypes.PACKAGE, UMLPackage.eINSTANCE.getPackage_PackagedElement(), null);
+	public CreateOrSelectSysDPropertyTypeDialog(Shell shell, NamedElement owner/*,IElementType elementType*/) {
+		super(shell, owner, ElementTypeRegistry.getInstance().getType("com.example.arrowheadDSL.SysD_UML::Class"),
+				UMLPackage.eINSTANCE.getTypedElement_Type(),  ArrowheadDSLPackage.eINSTANCE.getSysD(), 
+				UMLElementTypes.PACKAGE, UMLPackage.eINSTANCE.getPackage_PackagedElement(), null);
 	}
 	
 	
-	/*
-	 * public static EClass getEclass (String id) { if (id== null) return null; else
-	 * if (id.equals("com.example.arrowheadDSL.SD_UML::Class")) return
-	 * ArrowheadDSLPackage.eINSTANCE.getSD(); return null; }
-	 * 
-	 * 
-	 * public static String getSemanticElementType (IElementType elementType) { if
-	 * (elementType== null) return null; else if
-	 * (elementType.getId().equals("com.example.arrowheadDSL.sd_shape")) return
-	 * "com.example.arrowheadDSL.SD_UML::Class"; return null; }
-	 */
+	
+	 
 }
+

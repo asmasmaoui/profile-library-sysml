@@ -40,7 +40,7 @@ import org.eclipse.uml2.uml.Type;
 /**
  * Add a popup to create or select a Block for the property type of the element using this advice
  */
-public class CreateOrSelectBlockPropertyTypeEditHelperAdvice extends AbstractEditHelperAdvice {
+public class CreateOrSelectSysDDPropertyTypeEditHelperAdvice extends AbstractEditHelperAdvice {
 
 	/**
 	 * @see org.eclipse.gmf.runtime.emf.type.core.edithelper.AbstractEditHelperAdvice#getBeforeConfigureCommand(org.eclipse.gmf.runtime.emf.type.core.requests.ConfigureRequest)
@@ -67,7 +67,7 @@ public class CreateOrSelectBlockPropertyTypeEditHelperAdvice extends AbstractEdi
 		Package owner = property.getNearestPackage();
 
 		
-		CreateOrSelectBlockPropertyTypeDialog dialog = new CreateOrSelectBlockPropertyTypeDialog(shell, owner);
+		CreateOrSelectSysDDPropertyTypeDialog dialog = new CreateOrSelectSysDDPropertyTypeDialog(shell, owner);
 
 		dialog.open();
 		if (dialog.getReturnCode() == Window.OK) {
