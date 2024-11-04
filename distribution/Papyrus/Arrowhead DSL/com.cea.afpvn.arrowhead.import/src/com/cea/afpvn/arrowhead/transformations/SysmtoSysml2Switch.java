@@ -50,33 +50,28 @@ public class SysmtoSysml2Switch extends  BlocksSwitch<EObject> {
 	List<EObject> sysmlElements = new ArrayList<>();
 	
 	public Resource doTransform( IResource source, IFile destination) {
-		Iterator<EObject> iter = umlResource.getAllContents();
+		//Iterator<EObject> iter = umlResource.getAllContents();
 	    System.out.println("Sysml transformation");
 		
 	    
-	    umlResource.setURI((URI) source.getLocation()); //// ? ik 
-		System.out.println(umlResource.toString());
-		
-		sysmlResource.setURI((URI) destination.getLocation());
-		System.out.println(sysmlResource.toString());
-		
-		
-	     // call transfo for all diagrams
-			while (iter.hasNext()) {
-				// IK appel a la fonction de transformation selon l'objet
-				EObject eObject = iter.next();
-				transform(eObject);
-			}
-			//sysmlResource.getContents().addAll(sysmlElements);
-
-			try {
-				sysmlResource.save(null);
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-
-			// deleteTemporaryFiles();
+	   // umlResource.setURI((URI) source.getLocation()); 
+	   //System.out.println(umlResource.toString());
+	   //sysmlResource.setURI((URI) destination.getLocation());
+	   //System.out.println(sysmlResource.toString());
+	   // call transfo for all diagrams
+	   //while (iter.hasNext()) {
+	   // IK appel a la fonction de transformation selon l'objet
+	   //EObject eObject = iter.next();
+	   //transform(eObject);
+	   //}
+	   //sysmlResource.getContents().addAll(sysmlElements);
+	   //try {
+	   //sysmlResource.save(null);
+	   //} catch (IOException e) {
+	   // TODO Auto-generated catch block
+	   //	e.printStackTrace();
+	   //}
+	   // deleteTemporaryFiles();
 			return sysmlResource;
 		}
 
@@ -109,12 +104,9 @@ public class SysmtoSysml2Switch extends  BlocksSwitch<EObject> {
 	
 	@Override
 	public EObject caseBlock(Block object) {
-		// we create an Asset
 				EObject result = null;
 				if (object != null) {
-
 					result = createPartDefinition(object);
-
 				}
 				transformedMap.put(object, result);
 				sysmlElements.add(result);
@@ -129,8 +121,6 @@ public class SysmtoSysml2Switch extends  BlocksSwitch<EObject> {
 		// apply sysml::PartDefinition Stereotype on Class
 		Stereotype stereotype = element.getApplicableStereotype("sysml::PartDefinition");
 		applyRequiredStereotype(element, stereotype);
-		// set the stereotype properties Values
-		//setPropertiesValues(object, element);
 		return element;
 		
 		
