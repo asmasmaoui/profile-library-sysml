@@ -75,44 +75,6 @@ InternalBlockDiagram Compartment{
 	showTitle: true;
 }
 
-
-
-
-
-InternalBlockDiagram [appliedStereotypes~="Block"] > Compartment[kind=structure],
-Property > Compartment[kind=structure]{
-	visible: true;
-}
-Property > Compartment[kind=internalstructure]{
-	visible: true;
-}
-
-Property > Compartment[type=BorderItems]{
-	visible: true;
-}
-Property > Compartment[type="Border Items"]{
-	visible: true;
-}
-
-Property > Compartment[type=borderItems]{
-	visible: true;
-}
-Property > Compartment[kind=BorderItems]{
-	visible: true;
-}
-Property > Compartment[kind="Border Items"]{
-	visible: true;
-}
-Property > Compartment[kind=borderItems]{
-	visible: true;
-}
-Property > Compartment[Representation=borderItems]{
-	visible: true;
-}
-Property > Compartment[subRepresentations=borderItems]{
-	visible: true;
-}
-subRepresentations
 /*
  * Stereotype Block
  */
@@ -584,3 +546,112 @@ Property[typeAppliedStereotypes~="ArrowheadDSL::ArrowheadDSLRequirement"]{
 	bold: true; 
 	displayStereotypes: true;
 }
+
+/*specify the display of ProxyPorts for DesignDescription */
+
+Property {
+	canonical:true;
+}
+Class[appliedStereotypes~="ArrowheadDSL::IDD"] Property Port[appliedStereotypes~="FullPort"] {
+	visible:false;
+}
+Class[appliedStereotypes~="ArrowheadDSL::IDD"] Property Port[appliedStereotypes~="ProxyPort"] {
+	visible:true;
+}
+Class[appliedStereotypes~="ArrowheadDSL::SysDD"] Property Port[appliedStereotypes~="FullPort"] {
+	visible:false;
+}
+Class[appliedStereotypes~="ArrowheadDSL::SysDD"] Property Port[appliedStereotypes~="ProxyPort"] {
+	visible:true;
+}
+Class[appliedStereotypes~="ArrowheadDSL::System_of_LocacloudsDesignDescription"] Property Port[appliedStereotypes~="FullPort"] {
+	visible:false;
+}
+Class[appliedStereotypes~="ArrowheadDSL::System_of_LocacloudsDesignDescription"] Property Port[appliedStereotypes~="ProxyPort"] {
+	visible:true;
+}
+Class[appliedStereotypes~="ArrowheadDSL::LocalcloudDesignDescription"] Property Port[appliedStereotypes~="FullPort"] {
+	visible:false;
+}
+Class[appliedStereotypes~="ArrowheadDSL::LocalcloudDesignDescription"] Property Port[appliedStereotypes~="ProxyPort"] {
+	visible:true;
+}
+Class[appliedStereotypes~="ArrowheadDSL::DeviceDesignDescription"] Property Port[appliedStereotypes~="FullPort"] {
+	visible:false;
+}
+Class[appliedStereotypes~="ArrowheadDSL::DeviceDesignDescription"] Property Port[appliedStereotypes~="ProxyPort"] {
+	visible:true;
+}
+Class[appliedStereotypes~="ArrowheadDSL::IntracloudNetworkDesignDescription"] Property Port[appliedStereotypes~="FullPort"] {
+	visible:false;
+}
+Class[appliedStereotypes~="ArrowheadDSL::IntracloudNetworkDesignDescription"] Property Port[appliedStereotypes~="ProxyPort"] {
+	visible:true;
+}
+Class[appliedStereotypes~="ArrowheadDSL::IntercloudNetworkDesignDescription"] Property Port[appliedStereotypes~="FullPort"] {
+	visible:false;
+}
+Class[appliedStereotypes~="ArrowheadDSL::IntercloudNetworkDesignDescription"] Property Port[appliedStereotypes~="ProxyPort"] {
+	visible:true;
+}
+/* 
+Property[typeAppliedStereotypes~="ArrowheadDSL::SysDD"] Port[appliedStereotypes~="ProxyPort"] {
+	visible:false;
+}
+Property[typeAppliedStereotypes~="ArrowheadDSL::SysDD"] Port[appliedStereotypes~="fullPort"] {
+	visible:true;
+}
+
+Property[typeAppliedStereotypes~="ArrowheadDSL::IDD"] Port[appliedStereotypes~="ProxyPort"] {
+	visible:false;
+}
+Property[typeAppliedStereotypes~="ArrowheadDSL::IDD"] Port[appliedStereotypes~="fullPort"] {
+	visible:true;
+}
+Property[typeAppliedStereotypes~="ArrowheadDSL::System_of_LocacloudsDesignDescription"] Port[appliedStereotypes~="ProxyPort"] {
+	visible:false;
+}
+Property[typeAppliedStereotypes~="ArrowheadDSL::System_of_LocacloudsDesignDescription"] Port[appliedStereotypes~="fullPort"] {
+	visible:true;
+}
+Property[typeAppliedStereotypes~="ArrowheadDSL::LocalcloudDesignDescription"] Port[appliedStereotypes~="ProxyPort"] {
+	visible:false;
+}
+Property[typeAppliedStereotypes~="ArrowheadDSL::LocalcloudDesignDescription"] Port[appliedStereotypes~="fullPort"] {
+	visible:true;
+}
+Property[typeAppliedStereotypes~="ArrowheadDSL::DeviceDesignDescription"] Port[appliedStereotypes~="ProxyPort"] {
+	visible:false;
+}
+Property[typeAppliedStereotypes~="ArrowheadDSL::DeviceDesignDescription"] Port[appliedStereotypes~="fullPort"] {
+	visible:true;
+}
+Property[typeAppliedStereotypes~="ArrowheadDSL::IntracloudNetworkDesignDescription"] Port[appliedStereotypes~="ProxyPort"] {
+	visible:false;
+}
+Property[typeAppliedStereotypes~="ArrowheadDSL::IntracloudNetworkDesignDescription"] Port[appliedStereotypes~="fullPort"] {
+	visible:true;
+}
+Property[typeAppliedStereotypes~="ArrowheadDSL::IntercloudNetworkDesignDescription"] Port[appliedStereotypes~="ProxyPort"] {
+	visible:false;
+}
+Property[typeAppliedStereotypes~="ArrowheadDSL::IntercloudNetworkDesignDescription"] Port[appliedStereotypes~="fullPort"] {
+	visible:true;
+}
+*/
+
+ 
+/*propagation des couleurs de la lib dans le model */
+/*Property[type="Authentication-Design"] {
+	fillColor:#e8090d;
+}
+Property[type="ConsumptionAuthorisation-Design"] {
+	fillColor:#e8090d;
+}
+Property[type="ConsumptionAuthorisation_DesignDescription"] {
+	fillColor:#e8090d;
+}
+Property[type="Authentication-DesignDescription"] {
+	fillColor:#e8090d;
+}
+*/
