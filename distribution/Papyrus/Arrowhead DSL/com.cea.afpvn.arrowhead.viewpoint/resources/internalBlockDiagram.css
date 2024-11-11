@@ -642,7 +642,8 @@ Property[typeAppliedStereotypes~="ArrowheadDSL::IntercloudNetworkDesignDescripti
 
  
 /*propagation des couleurs de la lib dans le model */
-/*Property[type="Authentication-Design"] {
+/*red*/
+Property[type="Authentication-Design"] {
 	fillColor:#e8090d;
 }
 Property[type="ConsumptionAuthorisation-Design"] {
@@ -654,4 +655,48 @@ Property[type="ConsumptionAuthorisation_DesignDescription"] {
 Property[type="Authentication-DesignDescription"] {
 	fillColor:#e8090d;
 }
-*/
+/*yellow*/
+Property[type="Gatekeeper-Design"] {
+	fillColor:yellow;
+}
+Property[type="GateKeeper-DesignDescription"] {
+	fillColor:yellow;
+}
+Property[type="Gatekeeper-Implementation"] {
+	fillColor:yellow;
+}
+Property[type="GateTunnel-Design"] {
+	fillColor:yellow;
+}
+Property[type="GateTunnel-DesignDescription"] {
+	fillColor:yellow;
+}
+Property[type="CertificateAuthority-Design"] {
+	fillColor:yellow;
+}
+Property[type="CertificatreAuthority-DesignDescription"] {
+	fillColor:yellow;
+}
+Property[type="MicrosystemMonitor-Design"] {
+	fillColor:yellow;
+}
+Property[type="MicrosystemMonitor-DesignDescription"] {
+	fillColor:yellow;
+}
+/*blue*/
+Property[type="ServiceRegister_Design"] {
+	fillColor:#0096ff;
+}
+Property[type="ServiceRegister_DesignDescription"] {
+	fillColor:#0096ff;
+}
+Property[type="System_Implementation26"] {
+	fillColor:#0096ff;
+}
+/*green*/
+Property[type="ServiceOrchestration-Design"] {
+	fillColor:#72fa78;
+}
+Property[type="ServiceOrchestration-DesignDescription"] {
+	fillColor:#72fa78;
+}
