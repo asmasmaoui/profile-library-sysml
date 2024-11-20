@@ -30,7 +30,13 @@ Require-Bundle: org.eclipse.emf.common;bundle-version="2.26.0",
  org.eclipse.papyrus.uml.import;bundle-version="2.0.0",
  org.eclipse.gmf.runtime.diagram.ui;bundle-version="1.9.1",
  org.eclipse.papyrus.infra.gmfdiag.common;bundle-version="4.3.0",
- org.eclipse.papyrus.uml.diagram.activity;bundle-version="5.0.0"
+ org.eclipse.papyrus.uml.diagram.activity;bundle-version="5.0.0",
+ org.eclipse.papyrus.infra.services.edit,
+ org.eclipse.papyrus.infra.emf.gmf,
+ org.eclipse.papyrus.infra.gmfdiag.commands;bundle-version="4.0.0",
+ org.eclipse.papyrus.infra.viewpoints.policy;bundle-version="4.0.0",
+ org.eclipse.gef
 Bundle-Vendor: CEA
 Automatic-Module-Name: com.cea.afpvn.arrowhead.viewpoint
 Bundle-RequiredExecutionEnvironment: JavaSE-17
+Import-Package: org.eclipse.papyrus.infra.emf.utils

@@ -75,6 +75,14 @@ public class CreateArrowHeadModelCommand extends ModelCreationCommandBase implem
 			pi.setImportedPackage(sysmlLibrary);
 			packageOwner.getPackageImports().add(pi);
 		}
+		/*AFPVN library*/
+		Package AFPVNLibrary = PackageUtil.loadPackage(URI.createURI("pathmap://AFPVN_LIB/Arrowhead-5.0.uml"), owner.eResource().getResourceSet());
+		if (AFPVNLibrary != null) {
+			PackageImport pi = UMLFactory.eINSTANCE.createPackageImport();
+			pi.setImportedPackage(AFPVNLibrary);
+			packageOwner.getPackageImports().add(pi);
+			//System.out.println(AFPVNLibrary.getPackagedElements());
+		}
 
 	}
 
