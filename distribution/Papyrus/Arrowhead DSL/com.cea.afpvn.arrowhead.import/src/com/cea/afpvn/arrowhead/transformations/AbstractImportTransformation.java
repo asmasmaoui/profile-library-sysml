@@ -140,7 +140,7 @@ public abstract class AbstractImportTransformation implements IImportTransformat
 	 */
 	public void run(final boolean isUserJob) {
 
-		job = new Job("Import du .uml") {
+		job = new Job("Import " + getModelName()) {
 
 			@Override
 			protected IStatus run(IProgressMonitor monitor) {

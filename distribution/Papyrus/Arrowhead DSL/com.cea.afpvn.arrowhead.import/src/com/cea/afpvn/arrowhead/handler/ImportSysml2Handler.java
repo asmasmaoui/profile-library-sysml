@@ -7,17 +7,38 @@ import java.util.Set;
 
 import org.eclipse.core.commands.ExecutionException;
 import org.eclipse.core.resources.IFile;
+import org.eclipse.core.resources.IFolder;
+import org.eclipse.core.resources.IProject;
+import org.eclipse.core.resources.IWorkspaceRoot;
+import org.eclipse.core.resources.ResourcesPlugin;
+import org.eclipse.core.resources.IResource;
+import org.eclipse.core.resources.IWorkspace;
+import org.eclipse.core.commands.ExecutionException;
+import org.eclipse.core.resources.IContainer;
+import org.eclipse.core.resources.IFile;
 import org.eclipse.core.resources.IProject;
 import org.eclipse.core.resources.IResource;
+
 import org.eclipse.core.runtime.CoreException;
+import org.eclipse.core.runtime.IPath;
 import org.eclipse.emf.common.util.URI;
-import org.eclipse.jface.dialogs.MessageDialog;
+
 import org.eclipse.papyrus.uml.m2m.qvto.common.MigrationParameters.ThreadConfig;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.ui.PlatformUI;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+import org.xml.sax.SAXException;
+
+import com.google.common.collect.Sets;
+import org.eclipse.emf.common.util.URI;
+import org.eclipse.papyrus.uml.m2m.qvto.common.MigrationParameters.ThreadConfig;
+import org.eclipse.swt.widgets.Control;
+import org.eclipse.ui.PlatformUI;
+
 import com.cea.afpvn.arrowhead.transformations.Sysml2fromSysml1TransformationLauncher;
-import com.cea.afpvn.arrowhead.transformations.SysmtoSysml2Switch;
-import com.cea.afpvn.arrowhead.wizards.ImportAFPVNWizard;
 
 public class ImportSysml2Handler {
 	IResource project;
@@ -38,37 +59,14 @@ public class ImportSysml2Handler {
 	public Object execute(IProject project) throws ExecutionException {
 
 		// get the Project and parse its sub folder
-		SysmtoSysml2Switch transformation = new SysmtoSysml2Switch();
-		ImportAFPVNWizard  addfile = new ImportAFPVNWizard();
-		Set<IResource> sysmlElements = new HashSet<IResource>();
-		Set<IFile> filesToImport = new HashSet<IFile>();
-		importFiles(filesToImport);
-		IFile fileSources;
 
-		try {
-			IResource[] elements =  project.members();
-			for (IResource elem : elements) {
+				Set<IFile> filesToImport = new HashSet<IFile>();
 
-				System.out.println( elem.getName());
+				IFile selectedFile = getUMLRootFile(project);
 
-				if (elem.getName().endsWith(".uml"))
-				{
-					sysmlElements.add(elem);
-					
-					fileSources= addfile.saveInProject(project, elem.getName());
-					 
-					transformation.doTransform(elem,fileSources);
-				}
-			}
-			if (sysmlElements.isEmpty())
-			{
-				MessageDialog.openWarning(PlatformUI.getWorkbench().getActiveWorkbenchWindow().getShell(),"Sources Problems","No '.uml' file selected");
-			}
-		} catch (CoreException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+				filesToImport.add(selectedFile);
 
+				importFiles(filesToImport);
 
 		return null;
 	}
@@ -76,6 +74,44 @@ public class ImportSysml2Handler {
 
 
 
+
+	private IFile getUMLRootFile(IProject project) {
+		this.project = project;
+		IFile returnedfile = null;
+		IWorkspace myWorkspaceRoot = ResourcesPlugin.getWorkspace();
+		IPath path =myWorkspaceRoot.getRoot().getLocation();
+		IContainer container = myWorkspaceRoot.getRoot().getContainerForLocation(path);
+		IResource[] iResources;
+		try {
+			iResources = container.members();
+
+			for (IResource iR : iResources) {
+				
+				
+				if (iR.getType() == IResource.PROJECT) {
+
+					IPath path2 = iR.getLocation();
+					IContainer container2 = myWorkspaceRoot.getRoot().getContainerForLocation(path2);
+					IResource[] iResources2 = container2.members();
+					for (IResource iR2 : iResources2) {
+						if (iR2 instanceof IFile) {
+							if ("uml".equalsIgnoreCase(iR2.getFileExtension()))
+								returnedfile = (IFile) iR2;
+						}
+					}
+				}
+								
+								
+
+			}
+		} catch (CoreException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		return returnedfile;
+
+		}
 
 	protected void runTransformation(final ThreadConfig config, final Control baseControl,
 			final Set<IFile> filesToImport) {

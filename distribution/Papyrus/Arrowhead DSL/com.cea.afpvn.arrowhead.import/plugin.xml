@@ -7,9 +7,9 @@
                                      class="com.cea.afpvn.arrowhead.wizards.ImportAFPVNWizard"
                                      icon="icons/import_wiz_16x16-papyrusColor.gif"
                                      id="org.eclipse.papyrus.aasx.import.category"
-                                     name="Transformation_Sysml1toSysml2">
+                                     name="Transform Sysml1.6 Model to SysML2 model">
                                   <description>
-                                     This wizard allows tranformation from UML1 to UML2 for AFPVN
+                                     This wizard allows tranformation from SysML1 model to SysML2 model for AFPVN
                                   </description>
                                </wizard>
                             </extension>

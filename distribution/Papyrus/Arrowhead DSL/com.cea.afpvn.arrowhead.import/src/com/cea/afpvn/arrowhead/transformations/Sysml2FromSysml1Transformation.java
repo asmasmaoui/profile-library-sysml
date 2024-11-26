@@ -20,10 +20,13 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Map;
 
+import org.eclipse.core.internal.resources.File;
 import org.eclipse.core.resources.IContainer;
 import org.eclipse.core.resources.IFile;
+import org.eclipse.core.resources.IProject;
 import org.eclipse.core.resources.IResource;
 import org.eclipse.core.runtime.CoreException;
 import org.eclipse.core.runtime.IProgressMonitor;
@@ -35,20 +38,24 @@ import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.xmi.XMLResource;
+import org.eclipse.m2m.qvt.oml.ExecutionContextImpl;
+import org.eclipse.m2m.qvt.oml.ModelExtent;
 import org.eclipse.papyrus.uml.m2m.qvto.common.MigrationParameters.ThreadConfig;
+import org.eclipse.papyrus.uml.m2m.qvto.common.transformation.AbstractImportTransformation;
 import org.eclipse.papyrus.uml.m2m.qvto.common.transformation.IDependencyAnalysisHelper;
 import org.eclipse.papyrus.uml.m2m.qvto.common.transformation.MigrationResourceSetImpl;
 import org.eclipse.uml2.uml.resource.UMLResource;
 import org.eclipse.uml2.uml.util.UMLUtil;
 
-import com.cea.afpvn.arrowhead.wizards.Activator;
+import com.cea.afpvn.arrowhead.wizards.ImportAFPVNWizard;
+
 
 
 public class Sysml2FromSysml1Transformation extends AbstractImportTransformation {
 
-	protected URI umlResourceURI;
+	protected URI sysmlResourceURI;
 	protected Resource umlResource;
-	protected Resource aasxResource;
+	protected Resource sysmlResource;
 	protected IResource project;
 
 	/**
@@ -128,7 +135,7 @@ public class Sysml2FromSysml1Transformation extends AbstractImportTransformation
 		monitor.subTask("Loading transformations (This may take a few seconds for the first import)...");
 
 		String statusMessage = String.format("Import %s", getModelName());
-		MultiStatus generationStatus = new MultiStatus(Activator.PLUGIN_ID, IStatus.OK, statusMessage, null);
+		MultiStatus generationStatus = new MultiStatus("com.cea.afpvn.arrowhead.import", IStatus.OK, statusMessage, null);
 
 		try {
 
@@ -147,6 +154,17 @@ public class Sysml2FromSysml1Transformation extends AbstractImportTransformation
 
 			monitor.subTask("Importing semantic model...");
 
+			SysmtoSysml2Switch aas2uml = new SysmtoSysml2Switch();
+			
+			// create the sysml resource
+		   // ImportAFPVNWizard  addfile = new ImportAFPVNWizard();
+			IFile umlFile = findFileRecursively(project, "uml");
+		    IFile sysmlFile= ImportAFPVNWizard.saveInProject((IProject) project, umlFile.getName());
+		   
+		    sysmlResource= resourceSet.createResource(URI.createPlatformResourceURI(sysmlFile.getFullPath().toString(), true));
+
+			sysmlResource = aas2uml.doTransform(umlResource, sysmlResource);
+			
 			final Collection<Resource> resourcesToSave = new HashSet<>();
 			resourcesToSave.add(umlResource);
 
@@ -154,11 +172,11 @@ public class Sysml2FromSysml1Transformation extends AbstractImportTransformation
 
 			try {
 
-				umlResource.save(null);
+				sysmlResource.save(null);
 			} catch (Exception ex) {
-				Activator.log.error(ex);
+				//Activator.log.error(ex);
 				generationStatus
-						.add(new Status(IStatus.ERROR, Activator.PLUGIN_ID, "An exception occurred during save", ex));
+						.add(new Status(IStatus.ERROR, "com.cea.afpvn.arrowhead.import", "An exception occurred during save", ex));
 			}
 
 			long startExtensionsAfter = System.nanoTime();
@@ -166,6 +184,9 @@ public class Sysml2FromSysml1Transformation extends AbstractImportTransformation
 			long endExtensionsAfter = System.nanoTime();
 			this.importExtensionsTime += endExtensionsAfter - startExtensionsAfter;
 
+		} catch (CoreException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		} finally {
 			// Do nothing
 		}
@@ -194,12 +215,8 @@ public class Sysml2FromSysml1Transformation extends AbstractImportTransformation
 	 * 
 	 * @see org.eclipse.papyrus.migration.common.transformation.AbstractImportTransformation#getInOutUMLModel()
 	 */
-	@Override
-	public URI getInOutUMLModel() {
-		Resource oldUMLResource = resourceSet.getResource(sourceURI, true);
-
-		return oldUMLResource.getURI();
-	}
+	
+	
 
 	protected void configureResource(XMLResource resource) {
 		Map<Object, Object> saveOptions = new HashMap<>();
@@ -247,6 +264,20 @@ public class Sysml2FromSysml1Transformation extends AbstractImportTransformation
 		resourceSet.getLoadOptions().put(XMLResource.OPTION_RECORD_UNKNOWN_FEATURE, Boolean.TRUE);
 		resourceSet.getLoadOptions().put(XMLResource.OPTION_USE_PACKAGE_NS_URI_AS_LOCATION, Boolean.TRUE);
 		monitor.subTask("Loading source model " + getModelName());
+		
+		try {
+
+			umlResource = resourceSet.getResource(sourceURI, true);
+			if (umlResource != null) {
+				configureResource((XMLResource) umlResource);
+				IFile umlFile = findFileRecursively(project, "uml");
+				sysmlResourceURI = URI.createPlatformResourceURI(umlFile.getFullPath().toString(), true);
+				sysmlResource = resourceSet.getResource(sysmlResourceURI, true);
+				configureResource((XMLResource) sysmlResource);
+			}
+		} catch (Exception ex) {
+			
+		}
 	}
 		
 
@@ -254,7 +285,7 @@ public class Sysml2FromSysml1Transformation extends AbstractImportTransformation
 		if (container != null && container instanceof IContainer) {
 
 			for (IResource r : ((IContainer) container).members()) {
-				if (r instanceof IFile && r.getFileExtension().equals("sysml")) {
+				if (r instanceof IFile && r.getFileExtension().equals("uml")) {
 					return (IFile) r;
 				}
 			}
@@ -279,6 +310,42 @@ public class Sysml2FromSysml1Transformation extends AbstractImportTransformation
 
 	@Override
 	protected Collection<URI> getDiagramTransformationURIs() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	protected URI convertToPapyrus(URI arg0, String arg1) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	protected Collection<URI> getAllTransformationURIs() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	protected List<ModelExtent> getModelExtents() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	protected URI getSemanticTransformationURI() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	protected void initTransformationProperties(ExecutionContextImpl arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public ModelExtent getInOutUMLModel() {
 		// TODO Auto-generated method stub
 		return null;
 	}

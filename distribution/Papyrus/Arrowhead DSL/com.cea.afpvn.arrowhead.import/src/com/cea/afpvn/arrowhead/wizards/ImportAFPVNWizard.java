@@ -201,11 +201,7 @@ public class ImportAFPVNWizard extends CreateModelWizard  implements INewWizard 
 	public boolean performFinish() {
 		
 	
-				importPage.finish();// import the UML file // IK
-				
-			
-				
-				
+				importPage.finish();// import the UML file // IK			
 				ImportSysml2Handler importer = new ImportSysml2Handler();
 				
 				try {

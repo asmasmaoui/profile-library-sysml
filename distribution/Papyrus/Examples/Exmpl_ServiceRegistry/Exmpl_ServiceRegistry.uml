@@ -13,8 +13,8 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_LN1qYBNZEe-QDpCYPjiDnA" name="ServiceRegistry_DesignDescription">
       <generalization xmi:type="uml:Generalization" xmi:id="_PQiq0BNZEe-QDpCYPjiDnA" general="_FKoKwBNZEe-QDpCYPjiDnA"/>
-      <ownedAttribute xmi:type="uml:Port" xmi:id="_yoGxIBNgEe-QDpCYPjiDnA" name="ServiceDiscovery_HTTP" aggregation="composite" subsettedProperty="_0ECAwBNZEe-QDpCYPjiDnA"/>
-      <ownedAttribute xmi:type="uml:Port" xmi:id="_A18v4BNhEe-QDpCYPjiDnA" name="ServiceManagement_HTTP" aggregation="composite" subsettedProperty="_zhD2kBNZEe-QDpCYPjiDnA"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_yoGxIBNgEe-QDpCYPjiDnA" name="ServiceDiscovery_HTTP" visibility="public" aggregation="composite" subsettedProperty="_0ECAwBNZEe-QDpCYPjiDnA"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_A18v4BNhEe-QDpCYPjiDnA" name="ServiceManagement_HTTP" visibility="public" aggregation="composite" subsettedProperty="_zhD2kBNZEe-QDpCYPjiDnA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_wSocoBNiEe-QDpCYPjiDnA" name="ServiceDiscovery">
       <ownedOperation xmi:type="uml:Operation" xmi:id="_J3ZQUBNjEe-QDpCYPjiDnA" name="Register"/>
@@ -44,6 +44,13 @@
     <packagedElement xmi:type="uml:Class" xmi:id="_DwPPYBNkEe-QDpCYPjiDnA" name="Monitor_HTTP">
       <generalization xmi:type="uml:Generalization" xmi:id="_ZeZk8BNkEe-QDpCYPjiDnA" general="_6UGsIBNjEe-QDpCYPjiDnA"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_QvOP4JUtEe-Z0d2A8F2VuQ" name="LocalcloudDesignDescription23">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_SuMeAJUtEe-Z0d2A8F2VuQ" name="IntracloudNetworkDesign1">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_g6lrQJUtEe-Z0d2A8F2VuQ" name="Property1" type="_LN1qYBNZEe-QDpCYPjiDnA"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_pL0sMJUuEe-Z0d2A8F2VuQ" name="Property2" type="_rZItwJUtEe-Z0d2A8F2VuQ"/>
+      </nestedClassifier>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_rZItwJUtEe-Z0d2A8F2VuQ" name="SysDD1"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ba1iQPDPEe6-wOgcBdOMfw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ba1iQfDPEe6-wOgcBdOMfw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/arrowhead#/"/>
@@ -117,8 +124,12 @@
       <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
     </profileApplication>
   </uml:Model>
-  <ArrowheadDSL:SysD xmi:id="_FKr1IBNZEe-QDpCYPjiDnA" base_Class="_FKoKwBNZEe-QDpCYPjiDnA"/>
-  <ArrowheadDSL:SysDD xmi:id="_LN4tsBNZEe-QDpCYPjiDnA" base_Class="_LN1qYBNZEe-QDpCYPjiDnA"/>
+  <ArrowheadDSL:SysD xmi:id="_FKr1IBNZEe-QDpCYPjiDnA" base_Class="_FKoKwBNZEe-QDpCYPjiDnA">
+    <MicrosystemName>ServiceRegistry_Design</MicrosystemName>
+  </ArrowheadDSL:SysD>
+  <ArrowheadDSL:SysDD xmi:id="_LN4tsBNZEe-QDpCYPjiDnA" base_Class="_LN1qYBNZEe-QDpCYPjiDnA">
+    <MicrosystemName>ServiceRegistry_Design</MicrosystemName>
+  </ArrowheadDSL:SysDD>
   <ArrowheadDSL:ProxyPort xmi:id="_yoKbgBNgEe-QDpCYPjiDnA" base_Port="_yoGxIBNgEe-QDpCYPjiDnA"/>
   <ArrowheadDSL:ProxyPort xmi:id="_A1_zMBNhEe-QDpCYPjiDnA" base_Port="_A18v4BNhEe-QDpCYPjiDnA"/>
   <ArrowheadDSL:SD xmi:id="_wSrf8BNiEe-QDpCYPjiDnA" base_Class="_wSocoBNiEe-QDpCYPjiDnA"/>
@@ -140,4 +151,7 @@
   <ArrowheadDSL:ArrowHeadServiceInterfaceHTTP xmi:id="_e-iXQBNlEe-QDpCYPjiDnA" base_Operation="_-9-aQBNjEe-QDpCYPjiDnA"/>
   <ArrowheadDSL:FullPort xmi:id="_eHX2sBwhEe-zz8M_4YmCJw" base_Port="_zhD2kBNZEe-QDpCYPjiDnA"/>
   <ArrowheadDSL:FullPort xmi:id="_gGqN4BwhEe-zz8M_4YmCJw" base_Port="_0ECAwBNZEe-QDpCYPjiDnA"/>
+  <ArrowheadDSL:LocalcloudDesignDescription xmi:id="_QvhK0JUtEe-Z0d2A8F2VuQ" base_Class="_QvOP4JUtEe-Z0d2A8F2VuQ"/>
+  <ArrowheadDSL:IntracloudNetworkDesign xmi:id="_SuUZ0JUtEe-Z0d2A8F2VuQ" base_Class="_SuMeAJUtEe-Z0d2A8F2VuQ"/>
+  <ArrowheadDSL:SysDD xmi:id="_rZM_MJUtEe-Z0d2A8F2VuQ" base_Class="_rZItwJUtEe-Z0d2A8F2VuQ"/>
 </xmi:XMI>
