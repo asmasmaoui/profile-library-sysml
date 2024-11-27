@@ -232,5 +232,16 @@ Shape {
 	maskLabel: name parametersName ;
 	
 }
-
+[appliedStereotypes~="ArrowheadDSL::ArrowHeadServiceInterfaceCOAP"]{
+	lineWidth: 8;
+	fillColor: #9BC7CC; 
+	maskLabel: name parametersName ;
+	
+}
+[appliedStereotypes~="ArrowheadDSL::ArrowHeadServiceInterfaceWebsocket"]{
+	lineWidth: 8;
+	fillColor: #9BC7CC; 
+	maskLabel: name parametersName ;
+	
+}
 
