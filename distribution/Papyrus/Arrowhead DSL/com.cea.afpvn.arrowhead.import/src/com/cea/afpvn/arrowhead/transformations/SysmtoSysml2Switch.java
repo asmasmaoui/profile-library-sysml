@@ -83,9 +83,8 @@ public class SysmtoSysml2Switch extends  BlocksSwitch<EObject> {
 		{
 			namesapce = (Namespace) resource.getContents().get(0);
 			
-//				domain = getEditingDomainFor(namespace);
-//				PartDefinition element = createPartDef(name);
-//				addMemberTo(namespace, element);
+			domain = getEditingDomainFor(sysmlResource); // this domain is null can not edit using EMF
+				
 			
 		}
 	
@@ -158,9 +157,6 @@ public class SysmtoSysml2Switch extends  BlocksSwitch<EObject> {
 		
 		PartDefinition element = createPartDef(name);
 		
-	
-		addOwnedMemberTo(namesapce, element);
-		
 		Model model = getModel();
 		String modelname = model.getName();
 		
@@ -174,21 +170,26 @@ public class SysmtoSysml2Switch extends  BlocksSwitch<EObject> {
 			@Override
 			protected void doExecute() {
 				try {
-					nameSpace.setName(modelname);
-					PartDefinition element = createPartDef(name);
-					addOwnedMemberTo(nameSpace, element);
-					element2=element;
+					// we can not edit : should find a solution to be able to edit the sysml2resource
+					//nameSpace.setQualifiedName(modelname);
+					//PartDefinition element = createPartDef(name);
+					//addOwnedMemberTo(nameSpace, element);
+					//element2=element;
 				} catch (ClassCastException e) {
 					
 				}
 
 			}
 		};
+		if (domain !=null)
+		{
 		domain.getCommandStack().execute(setName);
-				
 		;
 		Collection<EObject> list =(Collection<EObject>) setName.getResult();
 		return (EObject) list.toArray()[0];
+		}
+				
+		return null;
 		
 		
 		//return element;
@@ -246,9 +247,9 @@ public class SysmtoSysml2Switch extends  BlocksSwitch<EObject> {
 	}
 	
 
-	static public EditingDomain getEditingDomainFor(EObject object)
+	static public EditingDomain getEditingDomainFor(Resource resource)
 	{
-	Resource resource = object.eResource();
+	
 	if (resource != null)
 	{
 	IEditingDomainProvider editingDomainProvider =
