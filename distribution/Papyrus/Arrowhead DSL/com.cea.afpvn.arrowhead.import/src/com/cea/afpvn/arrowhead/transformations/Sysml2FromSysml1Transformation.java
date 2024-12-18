@@ -22,8 +22,9 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.io.File;
 
-import org.eclipse.core.internal.resources.File;
+import org.eclipse.core.internal.resources.Project;
 import org.eclipse.core.resources.IContainer;
 import org.eclipse.core.resources.IFile;
 import org.eclipse.core.resources.IProject;
@@ -48,6 +49,7 @@ import org.eclipse.uml2.uml.resource.UMLResource;
 import org.eclipse.uml2.uml.util.UMLUtil;
 
 import com.cea.afpvn.arrowhead.wizards.ImportAFPVNWizard;
+import com.cea.afpvn.arrowhead.xtend.Partdef;
 
 
 
@@ -55,7 +57,7 @@ public class Sysml2FromSysml1Transformation extends AbstractImportTransformation
 
 	protected URI sysmlResourceURI;
 	protected Resource umlResource;
-	protected Resource sysmlResource;
+	protected String sysmlResourcestr;
 	protected IResource project;
 
 	/**
@@ -154,25 +156,26 @@ public class Sysml2FromSysml1Transformation extends AbstractImportTransformation
 
 			monitor.subTask("Importing semantic model...");
 
-			SysmtoSysml2Switch aas2uml = new SysmtoSysml2Switch();
+			SysmtoSysml2 Sysml2= new SysmtoSysml2();
 			
 			// create the sysml resource
 		   // ImportAFPVNWizard  addfile = new ImportAFPVNWizard();
 			IFile umlFile = findFileRecursively(project, "uml");
-		    IFile sysmlFile= ImportAFPVNWizard.saveInProject((IProject) project, umlFile.getName());
+		    //IFile sysmlFile= ImportAFPVNWizard.saveInProject((IProject) project, umlFile.getName());
 		   
-		    sysmlResource= resourceSet.createResource(URI.createPlatformResourceURI(sysmlFile.getFullPath().toString(), true));
+		    //  sysmlResource= resourceSet.createResource(URI.createPlatformResourceURI(sysmlFile.getFullPath().toString(), true));
 
-			sysmlResource = aas2uml.doTransform(umlResource, sysmlResource);
+			sysmlResourcestr = Sysml2.doTransformSysml1toSysml2(umlResource);
 			
+			generateFile("Sysml2"+umlFile.getName().replaceAll(".uml", ".sysml"), sysmlResourcestr);
 			final Collection<Resource> resourcesToSave = new HashSet<>();
-			resourcesToSave.add(umlResource);
+			//resourcesToSave.add(umlResource);
 
 			// save resources
 
 			try {
 
-				sysmlResource.save(null);
+				//sysmlResource.save(null);
 			} catch (Exception ex) {
 				//Activator.log.error(ex);
 				generationStatus
@@ -196,6 +199,7 @@ public class Sysml2FromSysml1Transformation extends AbstractImportTransformation
 		dispose();
 
 		monitor.done();
+		
 		return generationStatus;
 	}
 
@@ -272,8 +276,8 @@ public class Sysml2FromSysml1Transformation extends AbstractImportTransformation
 				configureResource((XMLResource) umlResource);
 				IFile umlFile = findFileRecursively(project, "uml");
 				sysmlResourceURI = URI.createPlatformResourceURI(umlFile.getFullPath().toString(), true);
-				sysmlResource = resourceSet.getResource(sysmlResourceURI, true);
-				configureResource((XMLResource) sysmlResource);
+				//sysmlResource = resourceSet.getResource(sysmlResourceURI, true);
+				//configureResource((XMLResource) sysmlResource);
 			}
 		} catch (Exception ex) {
 			
@@ -350,4 +354,22 @@ public class Sysml2FromSysml1Transformation extends AbstractImportTransformation
 		return null;
 	}
 
+	protected void generateFile(String fileName, String content) {
+		
+		if (project instanceof IProject )
+		{
+		IPFileSystemAccess fileSystemAccess = FileSystemAccessFactory.create((IProject) project);
+			// make sure, the file exists
+			if (fileSystemAccess instanceof IFileExists) {
+				if (!((IFileExists) fileSystemAccess).existsFile(fileName)) {
+					fileSystemAccess.generateFile(fileName, "");
+				}
+			} else {
+				fileSystemAccess.generateFile(fileName, "");
+			}
+			// now write formatted content
+			fileSystemAccess.generateFile(fileName, content);
+		} 
+	}
+	
 }

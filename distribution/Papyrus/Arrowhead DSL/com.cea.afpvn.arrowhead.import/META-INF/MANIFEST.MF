@@ -36,11 +36,17 @@ Require-Bundle: org.eclipse.core.resources,
  org.eclipse.uml2.uml.profile.standard,
  org.eclipse.xtext,
  org.eclipse.papyrus.sysml16,
- org.omg.sysml;bundle-version="0.37.0",
+ org.omg.sysml;bundle-version="0.35.0",
  org.omg.sysml.xtext,
- org.eclipse.emf.edit
+ org.eclipse.emf.edit,
+ org.eclipse.xtext.xbase.lib,
+ org.eclipse.xtend.lib,
+ org.eclipse.xtend.lib.macro,
+ org.eclipse.core.expressions,
+ org.eclipse.ocl.pivot
 Bundle-Vendor: CEA
 Automatic-Module-Name: com.cea.afpvn.arrowhead.import
 Bundle-RequiredExecutionEnvironment: JavaSE-17
 Import-Package: org.eclipse.papyrus.infra.core.log,
+ org.omg.sysml.lang.sysml,
  org.omg.sysml.lang.sysml.util
