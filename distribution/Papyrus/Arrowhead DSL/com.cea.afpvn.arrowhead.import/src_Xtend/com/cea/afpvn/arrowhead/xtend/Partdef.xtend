@@ -20,9 +20,9 @@ import java.nio.file.Files
 
 
  class Partdef {
- def String createPartDef(String name, String attr )
+ def String createPartDef(String name, String elem )
     {
-     var str= "part def '" +name+"' {" +attr+ "};" 
+     var str= "part def '" +name+"' {" +elem+ "};" 
       str
      }
 }
@@ -34,6 +34,25 @@ import java.nio.file.Files
      var str= "attribute " +name+":" +type+ ";"
       str
      }
-}
+     }
+     
+     
+ class InterfaceBlok {
+ def String createInterfaceBlok(String name, String elem)
+    {
+     var str= "port def '" +name+"' {" +elem+ "};"
+      str
+     }
+     }
+     
+     
+ class Port {
+ def String createPort(String name, String type)
+    {
+     var str= "port " +name+":" +type+ ";"
+      str
+     }
+     }
+
 	  	
 	

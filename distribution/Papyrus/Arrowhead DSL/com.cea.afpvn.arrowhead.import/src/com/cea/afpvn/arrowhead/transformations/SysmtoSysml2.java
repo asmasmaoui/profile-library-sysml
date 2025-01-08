@@ -38,6 +38,9 @@ import org.eclipse.papyrus.infra.services.edit.service.IElementEditService;
 import org.eclipse.papyrus.sysml16.blocks.Block;
 import org.eclipse.papyrus.sysml16.blocks.BlocksPackage;
 import org.eclipse.papyrus.sysml16.blocks.util.BlocksSwitch;
+import org.eclipse.papyrus.sysml16.portsandflows.FullPort;
+import org.eclipse.papyrus.sysml16.portsandflows.InterfaceBlock;
+import org.eclipse.papyrus.sysml16.portsandflows.ProxyPort;
 import org.eclipse.papyrus.uml.service.types.element.UMLElementTypes;
 import org.eclipse.papyrus.uml.tools.commands.ApplyStereotypeCommand;
 import org.eclipse.uml2.uml.Model;
@@ -56,7 +59,9 @@ import org.omg.sysml.lang.sysml.SysMLFactory;
 import org.omg.sysml.xtext.SysMLStandaloneSetupGenerated;
 import com.cea.afpvn.arrowhead.wizards.ImportAFPVNWizard;
 import com.cea.afpvn.arrowhead.xtend.Attribute;
+import com.cea.afpvn.arrowhead.xtend.InterfaceBlok;
 import com.cea.afpvn.arrowhead.xtend.Partdef;
+import com.cea.afpvn.arrowhead.xtend.Port;
 import com.google.inject.Injector;
 
 public class SysmtoSysml2 extends  BlocksSwitch<EObject> {
@@ -71,33 +76,62 @@ public class SysmtoSysml2 extends  BlocksSwitch<EObject> {
 	    String result;
 	    umlResource.getClass().getName();
 		Iterator<EObject> iter = umlResource.getAllContents();
+		
 	     // call transfo for all diagrams
 			while (iter.hasNext()) {
 				EObject eObject = iter.next();
-				//System.out.println(eObject.toString());
-				//if (eObject instanceof Block)
-				//{
-					//System.out.println("block"+eObject.toString());
-				//}
-				transform(eObject);
+				System.out.println("eObject type name "+eObject.getClass().getTypeName());
+				System.out.println("eObject name "+eObject.toString());
+				eObject.getClass().getTypeName();
+				 if (eObject instanceof InterfaceBlock )
+					{
+						System.out.println("InterfaceBlock :"+eObject.toString());
+						caseInterfaceBlock((InterfaceBlock) eObject);
+						
+					}
+				 else
+				if (eObject instanceof Block)
+				{
+					System.out.println("block :"+eObject.toString());
+					caseBlock((Block) eObject);
+				}
+				 
+			  
 			}
 			
 			return sysmlResourceString;
 		}
 
-	private EObject transform(EObject object) {
-		EObject ret = null;
-		if (object != null) {
-			if (ret == null) {
-				ret = doSwitch(object);
-
-			}
-		}
-
-		return ret;
-	}
 	
-	@Override
+	
+	private void caseInterfaceBlock(InterfaceBlock eObject) {
+		EObject result = null;
+		if (eObject != null) {
+			EList<Property> props =eObject.getBase_Class().getOwnedAttributes();
+			String strprop="";
+			if (props!=null){
+				for (Property prop : props) {
+					prop.getName();
+					prop.getStereotypeApplications();
+					prop.getType();
+					//System.out.println(" name"+prop.getName());
+					//System.out.println(" type name"+prop.getType().getName());
+					//System.out.println(" Eclasse "+prop.eClass());
+					//System.out.println(" streotype "+prop.getStereotypeApplications());
+					strprop =strprop.concat("\n");
+					strprop =strprop.concat(createAttribute(prop.getName(),prop.getType().getName()));
+					strprop =strprop.concat("\n");
+					//System.out.println("la valeur de la prop est "+strprop);
+					
+				}
+			}
+			
+		this.sysmlResourceString=this.sysmlResourceString.concat(createInterfaceBlok(eObject,strprop));
+		this.sysmlResourceString=this.sysmlResourceString.concat("\n");	
+		}
+	
+		
+	}	
 	public EObject caseBlock(Block object) { 
 				EObject result = null;
 				if (object != null) {
@@ -105,14 +139,30 @@ public class SysmtoSysml2 extends  BlocksSwitch<EObject> {
 					String strprop="";
 					if (props!=null){
 						for (Property prop : props) {
+							if (prop.eClass().getName().equals("Port"))
+									{
+								System.out.println("C'est un Port ");
+								strprop =strprop.concat("\n");
+								strprop =strprop.concat(createPort(prop.getName(),prop.getType().getName()));
+								strprop =strprop.concat("\n");
+									}
+							else if (prop.getClass().getTypeName().equals("org.eclipse.uml2.uml.internal.impl.ClassImpl"))
+							{
+						System.out.println("C'est une part ");
+						strprop =strprop.concat("\n");
+						//strprop =strprop.concat(createPort(prop.getName(),prop.getType().getName()));
+						strprop =strprop.concat("\n");
+							}
+							else
+							{
+								System.out.println("C'est un attribut ");
 							prop.getName();
+							prop.getStereotypeApplications();
 							prop.getType();
-							System.out.println(prop.getName());
-							System.out.println(prop.getType().getName());
 							strprop =strprop.concat("\n");
 							strprop =strprop.concat(createAttribute(prop.getName(),prop.getType().getName()));
 							strprop =strprop.concat("\n");
-							System.out.println("la valeur de la prop est "+strprop);
+							}
 							
 						}
 					}
@@ -130,18 +180,31 @@ public class SysmtoSysml2 extends  BlocksSwitch<EObject> {
 	
 
 
-	private String createPartDefinition(Block object, String attributs ) {
+private String createPartDefinition(Block object, String attributs ) {
 		String name = object.getBase_Class().getName();
 		Partdef partdef=new Partdef();
 		String element = partdef.createPartDef(name,attributs);
 		return element;
 	}
-	private String createAttribute(String name, String type) {
-		//prop.getName();
-		//prop.getType();
+private String createAttribute(String name, String type) {
+		
 		Attribute attr= new Attribute();
 		String element = attr.createAttribute(name,type);
 		return element;
 	}
+private String createPort(String name, String type) {
+		
+		Port port= new Port();
+		String element = port.createPort(name,type);
+		return element;
+	}
+private String createInterfaceBlok(InterfaceBlock eObject, String attributs) {
+		String name = eObject.getBase_Class().getName();
+		InterfaceBlok  interfaceBlok =new InterfaceBlok();
+		String element = interfaceBlok.createInterfaceBlok(name,attributs);
+		return element;
+		
+	}
+
 
 }
