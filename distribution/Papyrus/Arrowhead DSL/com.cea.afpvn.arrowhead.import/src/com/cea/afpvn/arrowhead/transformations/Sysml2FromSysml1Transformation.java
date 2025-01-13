@@ -49,7 +49,6 @@ import org.eclipse.uml2.uml.resource.UMLResource;
 import org.eclipse.uml2.uml.util.UMLUtil;
 
 import com.cea.afpvn.arrowhead.wizards.ImportAFPVNWizard;
-import com.cea.afpvn.arrowhead.xtend.Partdef;
 
 
 

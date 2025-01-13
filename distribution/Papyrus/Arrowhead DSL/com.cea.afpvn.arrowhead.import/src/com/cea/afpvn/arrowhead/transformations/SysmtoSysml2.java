@@ -35,14 +35,17 @@ import org.eclipse.papyrus.infra.emf.gmf.command.GMFtoEMFCommandWrapper;
 import org.eclipse.papyrus.infra.emf.utils.ServiceUtilsForEObject;
 import org.eclipse.papyrus.infra.services.edit.service.ElementEditServiceUtils;
 import org.eclipse.papyrus.infra.services.edit.service.IElementEditService;
+import org.eclipse.papyrus.sysml16.blocks.BindingConnector;
 import org.eclipse.papyrus.sysml16.blocks.Block;
 import org.eclipse.papyrus.sysml16.blocks.BlocksPackage;
+import org.eclipse.papyrus.sysml16.blocks.internal.impl.NestedConnectorEndImpl;
 import org.eclipse.papyrus.sysml16.blocks.util.BlocksSwitch;
 import org.eclipse.papyrus.sysml16.portsandflows.FullPort;
 import org.eclipse.papyrus.sysml16.portsandflows.InterfaceBlock;
 import org.eclipse.papyrus.sysml16.portsandflows.ProxyPort;
 import org.eclipse.papyrus.uml.service.types.element.UMLElementTypes;
 import org.eclipse.papyrus.uml.tools.commands.ApplyStereotypeCommand;
+import org.eclipse.uml2.uml.Connector;
 import org.eclipse.uml2.uml.Model;
 import org.eclipse.uml2.uml.Profile;
 import org.eclipse.uml2.uml.Property;
@@ -61,6 +64,7 @@ import com.cea.afpvn.arrowhead.wizards.ImportAFPVNWizard;
 import com.cea.afpvn.arrowhead.xtend.Attribute;
 import com.cea.afpvn.arrowhead.xtend.InterfaceBlok;
 import com.cea.afpvn.arrowhead.xtend.Partdef;
+import com.cea.afpvn.arrowhead.xtend.PartdefProp;
 import com.cea.afpvn.arrowhead.xtend.Port;
 import com.google.inject.Injector;
 
@@ -86,6 +90,7 @@ public class SysmtoSysml2 extends  BlocksSwitch<EObject> {
 				 if (eObject instanceof InterfaceBlock )
 					{
 						System.out.println("InterfaceBlock :"+eObject.toString());
+						System.out.println("InterfaceBlock container:"+eObject.eContainer());
 						caseInterfaceBlock((InterfaceBlock) eObject);
 						
 					}
@@ -93,13 +98,27 @@ public class SysmtoSysml2 extends  BlocksSwitch<EObject> {
 				if (eObject instanceof Block)
 				{
 					System.out.println("block :"+eObject.toString());
+					System.out.println("Block container:"+eObject.eContainer());
 					caseBlock((Block) eObject);
+					
 				}
+				else 
+					if (eObject instanceof Connector)
+					{
+						System.out.println("Connector :"+eObject.toString());
+						
+						Connector val = ((Connector) eObject);
+						//System.out.println("Connector base 1 "+ ((NestedConnectorEndImpl) eObject).getBase_Element());
+						//System.out.println("Connector end  1"+ ((NestedConnectorEndImpl) eObject).basicGetBase_Element().getClass().getName());
+						
+					}
+				 
+					
 				 
 			  
 			}
 			
-			return sysmlResourceString;
+			return sysmlResourceString=sysmlResourceString.concat(";");
 		}
 
 	
@@ -134,6 +153,7 @@ public class SysmtoSysml2 extends  BlocksSwitch<EObject> {
 	}	
 	public EObject caseBlock(Block object) { 
 				EObject result = null;
+				System.out.println("eObject contenue "+object.getParts());
 				if (object != null) {
 					EList<Property> props =object.getBase_Class().getOwnedAttributes();
 					String strprop="";
@@ -146,30 +166,31 @@ public class SysmtoSysml2 extends  BlocksSwitch<EObject> {
 								strprop =strprop.concat(createPort(prop.getName(),prop.getType().getName()));
 								strprop =strprop.concat("\n");
 									}
-							else if (prop.getClass().getTypeName().equals("org.eclipse.uml2.uml.internal.impl.ClassImpl"))
+							else
 							{
-						System.out.println("C'est une part ");
-						strprop =strprop.concat("\n");
-						//strprop =strprop.concat(createPort(prop.getName(),prop.getType().getName()));
-						strprop =strprop.concat("\n");
+							System.out.println("C'est un attribut ");
+							prop.getName();
+							prop.allOwnedElements();
+							System.out.println(prop.isComposite());
+							if (prop.isComposite())
+							{
+								strprop =strprop.concat("\n");
+								strprop =strprop.concat(createPartDefinitionPrperty(prop.getName()));
+								strprop =strprop.concat("\n");
 							}
 							else
 							{
-								System.out.println("C'est un attribut ");
-							prop.getName();
+							System.out.println(prop.allOwnedElements());
 							prop.getStereotypeApplications();
 							prop.getType();
 							strprop =strprop.concat("\n");
 							strprop =strprop.concat(createAttribute(prop.getName(),prop.getType().getName()));
 							strprop =strprop.concat("\n");
 							}
+							}
 							
 						}
 					}
-						else
-						{
-							
-						}
 					
 				this.sysmlResourceString=this.sysmlResourceString.concat(createPartDefinition(object,strprop));
 				this.sysmlResourceString=this.sysmlResourceString.concat("\n");	
@@ -186,6 +207,11 @@ private String createPartDefinition(Block object, String attributs ) {
 		String element = partdef.createPartDef(name,attributs);
 		return element;
 	}
+private String createPartDefinitionPrperty(String name ) {
+	PartdefProp partdefPop=new PartdefProp();
+	String element = partdefPop.createPartDefProp(name);
+	return element;
+}
 private String createAttribute(String name, String type) {
 		
 		Attribute attr= new Attribute();
@@ -193,7 +219,6 @@ private String createAttribute(String name, String type) {
 		return element;
 	}
 private String createPort(String name, String type) {
-		
 		Port port= new Port();
 		String element = port.createPort(name,type);
 		return element;

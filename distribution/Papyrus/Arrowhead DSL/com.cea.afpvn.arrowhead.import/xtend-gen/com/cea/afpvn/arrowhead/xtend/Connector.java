@@ -1,11 +1,11 @@
 package com.cea.afpvn.arrowhead.xtend;
 
 @SuppressWarnings("all")
-public class Partdef {
-  public String createPartDef(final String name, final String elem) {
+public class Connector {
+  public String createConnector(final String name1, final String name2) {
     String _xblockexpression = null;
     {
-      String str = (((("part def \'" + name) + "\' {") + elem) + "}");
+      String str = (((("connect " + name1) + " to ") + name2) + ";");
       _xblockexpression = str;
     }
     return _xblockexpression;
