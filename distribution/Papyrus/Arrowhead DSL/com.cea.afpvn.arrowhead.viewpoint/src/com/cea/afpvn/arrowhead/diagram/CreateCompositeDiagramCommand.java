@@ -51,6 +51,7 @@ import org.eclipse.gmf.runtime.emf.type.core.requests.CreateElementRequest;
 import org.eclipse.gmf.runtime.notation.Bounds;
 import org.eclipse.gmf.runtime.notation.Diagram;
 import org.eclipse.gmf.runtime.notation.Node;
+import org.eclipse.gmf.runtime.notation.Shape;
 import org.eclipse.gmf.runtime.notation.View;
 import org.eclipse.jface.viewers.ISelection;
 import org.eclipse.jface.viewers.IStructuredSelection;
@@ -237,11 +238,13 @@ public class CreateCompositeDiagramCommand extends AbstractPapyrusGmfCreateDiagr
 			viewBounds.setWidth(DEFAULT_WIDTH);
 		}
 
+		
 		IWorkbenchPart part = PlatformUI.getWorkbench().getActiveWorkbenchWindow().getActivePage().getActiveEditor()
 				.getSite().getPart();
 		//if (part instanceof IDiagramWorkbenchPart) {
 		
-			IDiagramGraphicalViewer viewer =  ((IDiagramWorkbenchPart) part).getDiagramGraphicalViewer();
+		IDiagramGraphicalViewer viewer =null;
+	//		IDiagramGraphicalViewer viewer =  ((IDiagramWorkbenchPart) part).getDiagramGraphicalViewer();
 			//IDiagramGraphicalViewer viewer =  (IDiagramGraphicalViewer)((IDiagramWorkbenchPart) part).getDiagramGraphicalViewer();
 
 			/* AFPVN Library: extract elemnts to add in the diagram */
@@ -264,6 +267,29 @@ public class CreateCompositeDiagramCommand extends AbstractPapyrusGmfCreateDiagr
 
 				}
 
+				// Create a view for the canvasDomainElement in the new diagram
+				if (view instanceof Shape)
+				{
+					List<EObject> list = view.getPersistedChildren();
+					for (EObject eo: list) {
+						//if (eo instanceof Class_StructureCompartment)
+						{
+							
+						}
+					}
+				}
+				View view2 = ViewService.getInstance().createView(Node.class, new EObjectAdapter(canvasDomainElement), view ,
+						"Property_Shape", ViewUtil.APPEND, true, UMLDiagramEditorPlugin.DIAGRAM_PREFERENCES_HINT);
+
+				if (view2 instanceof Node) {
+					// Update the view position and size (should adapt to canvas current size)
+					Bounds viewBounds = (Bounds) ((Node) view).getLayoutConstraint();
+					viewBounds.setX(DEFAULT_MARGIN);
+					viewBounds.setY(DEFAULT_MARGIN);
+					viewBounds.setHeight(DEFAULT_HEIGHT);
+					viewBounds.setWidth(DEFAULT_WIDTH);
+				}
+
 				/***************/
 				// diagram.insertChild(view, isListenerAttached());
 
@@ -273,6 +299,7 @@ public class CreateCompositeDiagramCommand extends AbstractPapyrusGmfCreateDiagr
 				// - drop from the model explorer
 				// - drop intra diagram form its container to outside of this class
 				// - the edit part of a the dropped element already exist?
+				if (viewer!=null) {
 				Element droppedElement = elemsToAdd.get(0);
 				EditPart droppedElementEditPart = findEditPartFor(viewer.getEditPartRegistry(), elemsToAdd.get(0));
 				// Is is contained into a class ?
@@ -320,7 +347,7 @@ public class CreateCompositeDiagramCommand extends AbstractPapyrusGmfCreateDiagr
 							(IAdaptable) containedNodeCreationCommand.getCommandResult().getReturnValue(), location));
 
 					domain.getCommandStack().execute(GMFtoEMFCommandWrapper.wrap(cc));
-
+				}
 					// }
 				}
 			/*
