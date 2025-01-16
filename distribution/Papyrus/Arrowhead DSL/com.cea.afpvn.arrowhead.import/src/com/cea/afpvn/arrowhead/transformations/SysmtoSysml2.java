@@ -15,6 +15,7 @@ import org.eclipse.core.resources.IProject;
 import org.eclipse.core.resources.IResource;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.common.util.URI;
+import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
@@ -46,6 +47,7 @@ import org.eclipse.papyrus.sysml16.portsandflows.ProxyPort;
 import org.eclipse.papyrus.uml.service.types.element.UMLElementTypes;
 import org.eclipse.papyrus.uml.tools.commands.ApplyStereotypeCommand;
 import org.eclipse.uml2.uml.Connector;
+import org.eclipse.uml2.uml.ConnectorEnd;
 import org.eclipse.uml2.uml.Model;
 import org.eclipse.uml2.uml.Profile;
 import org.eclipse.uml2.uml.Property;
@@ -62,6 +64,7 @@ import org.omg.sysml.lang.sysml.SysMLFactory;
 import org.omg.sysml.xtext.SysMLStandaloneSetupGenerated;
 import com.cea.afpvn.arrowhead.wizards.ImportAFPVNWizard;
 import com.cea.afpvn.arrowhead.xtend.Attribute;
+import com.cea.afpvn.arrowhead.xtend.ConnectorPart;
 import com.cea.afpvn.arrowhead.xtend.InterfaceBlok;
 import com.cea.afpvn.arrowhead.xtend.Partdef;
 import com.cea.afpvn.arrowhead.xtend.PartdefProp;
@@ -84,47 +87,65 @@ public class SysmtoSysml2 extends  BlocksSwitch<EObject> {
 	     // call transfo for all diagrams
 			while (iter.hasNext()) {
 				EObject eObject = iter.next();
-				System.out.println("eObject type name "+eObject.getClass().getTypeName());
-				System.out.println("eObject name "+eObject.toString());
+				//System.out.println("eObject type name "+eObject.getClass().getTypeName());
+				//System.out.println("eObject name "+eObject.toString());
 				eObject.getClass().getTypeName();
 				 if (eObject instanceof InterfaceBlock )
 					{
-						System.out.println("InterfaceBlock :"+eObject.toString());
-						System.out.println("InterfaceBlock container:"+eObject.eContainer());
+						//System.out.println("InterfaceBlock :"+eObject.toString());
+						//System.out.println("InterfaceBlock container:"+eObject.eContainer());
 						caseInterfaceBlock((InterfaceBlock) eObject);
 						
 					}
 				 else
 				if (eObject instanceof Block)
 				{
-					System.out.println("block :"+eObject.toString());
-					System.out.println("Block container:"+eObject.eContainer());
+					//System.out.println("block :"+eObject.toString());
+					//System.out.println("Block container:"+eObject.eContainer());
 					caseBlock((Block) eObject);
 					
 				}
 				else 
 					if (eObject instanceof Connector)
 					{
-						System.out.println("Connector :"+eObject.toString());
-						
-						Connector val = ((Connector) eObject);
-						//System.out.println("Connector base 1 "+ ((NestedConnectorEndImpl) eObject).getBase_Element());
-						//System.out.println("Connector end  1"+ ((NestedConnectorEndImpl) eObject).basicGetBase_Element().getClass().getName());
+						//System.out.println("Connector :"+eObject.toString());
+						caseConnector((Connector)eObject);
 						
 					}
-				 
-					
-				 
-			  
 			}
 			
 			return sysmlResourceString=sysmlResourceString.concat(";");
 		}
 
 	
+	private String caseConnector(Connector eObject) {
+		String strConnector ="";
+		String ConnectStart ="";
+	    String ConnectEnd ="";
+		if (eObject != null) {
+			Connector val = ((Connector) eObject);
+			//int  rsize= 0;
+			EList<ConnectorEnd> connectorEnds =val.getEnds();
+			//int size=connectorEnds.size();
+			connectorEnds.get(0).getPartWithPort().getName();
+			connectorEnds.get(0).getRole().getName();
+			//Start
+			 ConnectStart = ConnectStart.concat(connectorEnds.get(0).getPartWithPort().getName()+"."+connectorEnds.get(0).getRole().getName());
+			
+			connectorEnds.get(1).getPartWithPort().getName();
+			connectorEnds.get(1).getRole().getName();
+			//end
+			ConnectEnd = ConnectEnd.concat(connectorEnds.get(1).getPartWithPort().getName()+"."+connectorEnds.get(1).getRole().getName());
+			
+			}
+			
+		strConnector=createConnector(ConnectStart,ConnectEnd);
+		return 	strConnector;
+		}
+	
+		
 	
 	private void caseInterfaceBlock(InterfaceBlock eObject) {
-		EObject result = null;
 		if (eObject != null) {
 			EList<Property> props =eObject.getBase_Class().getOwnedAttributes();
 			String strprop="";
@@ -133,14 +154,9 @@ public class SysmtoSysml2 extends  BlocksSwitch<EObject> {
 					prop.getName();
 					prop.getStereotypeApplications();
 					prop.getType();
-					//System.out.println(" name"+prop.getName());
-					//System.out.println(" type name"+prop.getType().getName());
-					//System.out.println(" Eclasse "+prop.eClass());
-					//System.out.println(" streotype "+prop.getStereotypeApplications());
 					strprop =strprop.concat("\n");
 					strprop =strprop.concat(createAttribute(prop.getName(),prop.getType().getName()));
 					strprop =strprop.concat("\n");
-					//System.out.println("la valeur de la prop est "+strprop);
 					
 				}
 			}
@@ -153,34 +169,38 @@ public class SysmtoSysml2 extends  BlocksSwitch<EObject> {
 	}	
 	public EObject caseBlock(Block object) { 
 				EObject result = null;
-				System.out.println("eObject contenue "+object.getParts());
+				System.out.println("contenue "+object.getParts());
 				if (object != null) {
 					EList<Property> props =object.getBase_Class().getOwnedAttributes();
+					System.out.println("les OwnedElement de l'object "+object.getBase_Class().getOwnedAttributes().toString());
 					String strprop="";
+					object.getBase_Class().getOwnedConnectors();
 					if (props!=null){
 						for (Property prop : props) {
 							if (prop.eClass().getName().equals("Port"))
 									{
-								System.out.println("C'est un Port ");
+								//System.out.println("C'est un Port ");
+								//System.out.println("les OwnedElement du bloc : port "+prop.allOwnedElements());
 								strprop =strprop.concat("\n");
 								strprop =strprop.concat(createPort(prop.getName(),prop.getType().getName()));
+								EClass classe = prop.eClass();
 								strprop =strprop.concat("\n");
 									}
 							else
 							{
-							System.out.println("C'est un attribut ");
 							prop.getName();
 							prop.allOwnedElements();
-							System.out.println(prop.isComposite());
+							
 							if (prop.isComposite())
 							{
+								//System.out.println("les OwnedElement du bloc: part def "+prop.allOwnedElements());
 								strprop =strprop.concat("\n");
 								strprop =strprop.concat(createPartDefinitionPrperty(prop.getName()));
 								strprop =strprop.concat("\n");
 							}
 							else
 							{
-							System.out.println(prop.allOwnedElements());
+							//System.out.println("les OwnedElement du bloc "+prop.allOwnedElements());
 							prop.getStereotypeApplications();
 							prop.getType();
 							strprop =strprop.concat("\n");
@@ -189,6 +209,13 @@ public class SysmtoSysml2 extends  BlocksSwitch<EObject> {
 							}
 							}
 							
+						}
+						EList<Connector> connectors =object.getBase_Class().getOwnedConnectors();
+						for (Connector conect : connectors) {
+							strprop =strprop.concat("\n");
+							strprop =strprop.concat(caseConnector(conect));
+							strprop =strprop.concat("\n");
+						
 						}
 					}
 					
@@ -199,7 +226,12 @@ public class SysmtoSysml2 extends  BlocksSwitch<EObject> {
 	}
 	
 	
-
+private String createConnector(String connectStart, String connectEnd) {
+		
+	ConnectorPart connect= new ConnectorPart();
+		String element = connect.createConnector(connectStart,connectEnd);
+		return element;
+	}
 
 private String createPartDefinition(Block object, String attributs ) {
 		String name = object.getBase_Class().getName();

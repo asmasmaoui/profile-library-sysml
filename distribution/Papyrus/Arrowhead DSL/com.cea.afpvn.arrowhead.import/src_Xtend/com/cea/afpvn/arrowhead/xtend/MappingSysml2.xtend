@@ -3,7 +3,7 @@ package com.cea.afpvn.arrowhead.xtend
 class Partdef{
  def String createPartDef(String name, String elem )
     {
-     var str= "part def '" +name+"' {" +elem+ "}" 
+     var str= "part def " +name+" {" +elem+ "}" 
       str
      }
 }
@@ -27,7 +27,7 @@ class PartdefProp {
  class InterfaceBlok {
  def String createInterfaceBlok(String name, String elem)
     {
-     var str= "port def '" +name+"' {" +elem+ "}"
+     var str= "port def " +name+" {" +elem+ "}"
       str
      }
      }
@@ -40,10 +40,10 @@ class PartdefProp {
       str
      }
      }
-class Connector {
- def String createConnector(String name1, String name2)
+class ConnectorPart {
+ def String createConnector(String elem1,String elem2)
     {
-     var str= "connect " +name1+" to " +name2+ ";"
+     var str= "connect " +elem1+ " to "+elem2+ ";"
       str
      }
      }
