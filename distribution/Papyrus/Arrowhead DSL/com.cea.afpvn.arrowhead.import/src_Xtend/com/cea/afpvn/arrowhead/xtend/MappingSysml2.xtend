@@ -10,7 +10,7 @@ class Partdef{
 class PartdefProp {
  def String createPartDefProp(String name)
     {
-     var str= "part def " +name+";" 
+     var str= "part  " +name+";" 
       str
      }
 }

@@ -2,28 +2,28 @@ package com.cea.afpvn.arrowhead.xtend;
 
 @SuppressWarnings("all")
 public class ScalarValues {
-  public String createString(final String elem) {
+  public String createFahrenheit(final String elem) {
     String _xblockexpression = null;
     {
-      String str = elem;
+      String str = (elem + "Fahrenheit");
       _xblockexpression = str;
     }
     return _xblockexpression;
   }
 
-  public String createInteger(final String elem) {
+  public String createCelsius(final String elem) {
     String _xblockexpression = null;
     {
-      String str = (elem + "°C");
+      String str = (elem + "Celsius");
       _xblockexpression = str;
     }
     return _xblockexpression;
   }
 
-  public String createFloat(final String elem) {
+  public String createRankine(final String elem) {
     String _xblockexpression = null;
     {
-      String str = (elem + "°C");
+      String str = (elem + "Rankine");
       _xblockexpression = str;
     }
     return _xblockexpression;

@@ -1,22 +1,36 @@
 package com.cea.afpvn.arrowhead.xtend
 
 class ScalarValues {
-	def String createString(String elem)
+//	def String createString(String elem)
+//    {
+//     var str= elem 
+//      str
+//     }
+//     def String createInteger(String elem)
+//    {
+//     var str= elem+"°C"
+//      str
+//     }
+//     def String createFloat(String elem)
+//    {
+//     var str= elem+"°C"
+//      str
+//     }
+     def String createFahrenheit(String elem)
     {
-     var str= elem 
+     var str= elem+"Fahrenheit"
       str
      }
-     def String createInteger(String elem)
+      def String createCelsius(String elem)
     {
-     var str= elem+"°C"
+     var str= elem+"Celsius"
       str
      }
-     def String createFloat(String elem)
+     def String createRankine(String elem)
     {
-     var str= elem+"°C"
+     var str= elem+"Rankine"
       str
      }
-     
      }
      
     //  Pour convertir en degrés Celsius une température donnée en degrés Fahrenheit,
