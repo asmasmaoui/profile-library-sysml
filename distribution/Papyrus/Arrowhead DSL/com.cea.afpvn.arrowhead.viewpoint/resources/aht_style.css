@@ -245,3 +245,62 @@ Shape {
 	
 }
 
+/*propagation des couleurs de la lib dans le model */
+/*red*/
+Class[appliedStereotypes~="ArrowheadDSL::SysD"][name="Authentication-Design"] {
+	fillColor:#e8090d;
+}
+Class[appliedStereotypes~="ArrowheadDSL::SysD"][name="ConsumptionAuthorisation-Design"] {
+	fillColor:#e8090d;
+}
+Class[appliedStereotypes~="ArrowheadDSL::SysD"][name="ConsumptionAuthorisation_DesignDescription"] {
+	fillColor:#e8090d;
+}
+Class[appliedStereotypes~="ArrowheadDSL::SysD"][name="Authentication-DesignDescription"] {
+	fillColor:#e8090d;
+}
+/*yellow*/
+Class[appliedStereotypes~="ArrowheadDSL::SysD"][name="Gatekeeper-Design"] {
+	fillColor:yellow;
+}
+Class[appliedStereotypes~="ArrowheadDSL::SysD"][name="GateKeeper-DesignDescription"] {
+	fillColor:yellow;
+}
+Class[appliedStereotypes~="ArrowheadDSL::SysD"][name="Gatekeeper-Implementation"] {
+	fillColor:yellow;
+}
+Class[appliedStereotypes~="ArrowheadDSL::SysD"][name="GateTunnel-Design"] {
+	fillColor:yellow;
+}
+Class[appliedStereotypes~="ArrowheadDSL::SysD"][name="GateTunnel-DesignDescription"] {
+	fillColor:yellow;
+}
+Class[appliedStereotypes~="ArrowheadDSL::SysD"][name="CertificateAuthority-Design"] {
+	fillColor:yellow;
+}
+Class[appliedStereotypes~="ArrowheadDSL::SysD"][name="CertificatreAuthority-DesignDescription"] {
+	fillColor:yellow;
+}
+Class[appliedStereotypes~="ArrowheadDSL::SysD"][name="MicrosystemMonitor-Design"] {
+	fillColor:yellow;
+}
+Class[appliedStereotypes~="ArrowheadDSL::SysD"][name="MicrosystemMonitor-DesignDescription"] {
+	fillColor:yellow;
+}
+/*blue*/
+Class[appliedStereotypes~="ArrowheadDSL::SysD"][name="ServiceRegister_Design"] {
+	fillColor:#0096ff;
+}
+Class[appliedStereotypes~="ArrowheadDSL::SysD"][name="ServiceRegister_DesignDescription"] {
+	fillColor:#0096ff;
+}
+Class[appliedStereotypes~="ArrowheadDSL::SysD"][name="System_Implementation26"] {
+	fillColor:#0096ff;
+}
+/*green*/
+Class[appliedStereotypes~="ArrowheadDSL::SysD"][name="ServiceOrchestration-Design"] {
+	fillColor:#72fa78;
+}
+Class[appliedStereotypes~="ArrowheadDSL::SysD"][name="ServiceOrchestration-DesignDescription"] {
+	fillColor:#72fa78;
+}
