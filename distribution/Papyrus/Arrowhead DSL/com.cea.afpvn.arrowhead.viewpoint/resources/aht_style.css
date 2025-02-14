@@ -2,7 +2,9 @@
 	maskLabel: name;
 	elementIcon: false;
 	
+	
 }
+
 [appliedStereotypes~="ArrowheadDSL::SysDD"] > Compartment[kind=attributes],
 [appliedStereotypes~="ArrowheadDSL::SysDD"] > Compartment[kind=operations],
 [appliedStereotypes~="ArrowheadDSL::SysDD"] > Compartment[type=StereotypeCompartment]{
@@ -226,22 +228,41 @@ Class[appliedStereotypes~="ArrowheadDSL::ArrowheadDSLRequirement"]{
 Shape {
 	shapeVisibility: true;
 }
+
+
+
+
+
+
+
 [appliedStereotypes~="ArrowheadDSL::ArrowHeadServiceInterfaceHTTP"]{
 	lineWidth: 8;
 	fillColor: #9BC7CC; 
 	maskLabel: name parametersName ;
+	displayStereotypes: InBraces;
+	
 	
 }
 [appliedStereotypes~="ArrowheadDSL::ArrowHeadServiceInterfaceCOAP"]{
 	lineWidth: 8;
 	fillColor: #9BC7CC; 
 	maskLabel: name parametersName ;
+	displayStereotypes: true;
 	
 }
 [appliedStereotypes~="ArrowheadDSL::ArrowHeadServiceInterfaceWebsocket"]{
 	lineWidth: 8;
 	fillColor: #9BC7CC; 
 	maskLabel: name parametersName ;
+	displayStereotypes: true;
+	
+}
+[appliedStereotypes~="ArrowheadDSL::ArrowHeadServiceInterfaceMQTT"]{
+	lineWidth: 8;
+	fillColor: #9BC7CC; 
+	maskLabel: name parametersName ;
+	
+	
 	
 }
 
@@ -304,3 +325,18 @@ Class[appliedStereotypes~="ArrowheadDSL::SysD"][name="ServiceOrchestration-Desig
 Class[appliedStereotypes~="ArrowheadDSL::SysD"][name="ServiceOrchestration-DesignDescription"] {
 	fillColor:#72fa78;
 }
+
+/*to let "method" and "SubURL" visible  */
+[appliedStereotypes~="ArrowheadDSL::ArrowHeadServiceInterfaceHTTP"] > Compartment[type=StereotypeBrace]{
+	visible:true;
+}
+[appliedStereotypes~="ArrowheadDSL::ArrowHeadServiceInterfaceCOAP"] > Compartment[type=StereotypeBrace]{
+	visible:true;
+}
+[appliedStereotypes~="ArrowheadDSL::ArrowHeadServiceInterfaceWebsocket"] > Compartment[type=StereotypeBrace]{
+	visible:true;
+}
+[appliedStereotypes~="ArrowheadDSL::ArrowHeadServiceInterfaceMQTT"] > Compartment[type=StereotypeBrace]{
+	visible:true;
+}
+/****/
