@@ -179,7 +179,7 @@ Class[appliedStereotypes~="ArrowheadDSL::IntercloudNetworkDesignDescription"]{
 	displayStereotypes: true;
 }
 Class[appliedStereotypes~="ArrowheadDSL::SysD"]{
-	fillColor: #FF8000;
+	fillColor:yellow;
 	gradient: none;
 	lineColor: black;
 	lineWidth: 2;
