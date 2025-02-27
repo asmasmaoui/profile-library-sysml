@@ -27,7 +27,7 @@ import org.eclipse.uml2.uml.Operation;
 public interface ArrowHeadServiceInterfaceMQTT extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Method</b></em>' attribute.
-	 * The literals are from the enumeration {@link ArrowheadDSL.HTTP11MethodKind}.
+	 * The literals are from the enumeration {@link ArrowheadDSL.MQTT50MessageTypeKind}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Method</em>' attribute isn't clear,
@@ -35,24 +35,24 @@ public interface ArrowHeadServiceInterfaceMQTT extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Method</em>' attribute.
-	 * @see ArrowheadDSL.HTTP11MethodKind
-	 * @see #setMethod(HTTP11MethodKind)
+	 * @see ArrowheadDSL.MQTT50MessageTypeKind
+	 * @see #setMethod(MQTT50MessageTypeKind)
 	 * @see ArrowheadDSL.ArrowheadDSLPackage#getArrowHeadServiceInterfaceMQTT_Method()
 	 * @model required="true" ordered="false"
 	 * @generated
 	 */
-	HTTP11MethodKind getMethod();
+	MQTT50MessageTypeKind getMethod();
 
 	/**
 	 * Sets the value of the '{@link ArrowheadDSL.ArrowHeadServiceInterfaceMQTT#getMethod <em>Method</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Method</em>' attribute.
-	 * @see ArrowheadDSL.HTTP11MethodKind
+	 * @see ArrowheadDSL.MQTT50MessageTypeKind
 	 * @see #getMethod()
 	 * @generated
 	 */
-	void setMethod(HTTP11MethodKind value);
+	void setMethod(MQTT50MessageTypeKind value);
 
 	/**
 	 * Returns the value of the '<em><b>Topic</b></em>' attribute.

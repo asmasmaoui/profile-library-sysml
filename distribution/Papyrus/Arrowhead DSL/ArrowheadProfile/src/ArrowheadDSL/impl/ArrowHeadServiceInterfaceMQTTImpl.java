@@ -4,8 +4,7 @@ package ArrowheadDSL.impl;
 
 import ArrowheadDSL.ArrowHeadServiceInterfaceMQTT;
 import ArrowheadDSL.ArrowheadDSLPackage;
-import ArrowheadDSL.HTTP11MethodKind;
-
+import ArrowheadDSL.MQTT50MessageTypeKind;
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.ecore.EClass;
@@ -40,7 +39,7 @@ public class ArrowHeadServiceInterfaceMQTTImpl extends MinimalEObjectImpl.Contai
 	 * @generated
 	 * @ordered
 	 */
-	protected static final HTTP11MethodKind METHOD_EDEFAULT = HTTP11MethodKind.POST;
+	protected static final MQTT50MessageTypeKind METHOD_EDEFAULT = MQTT50MessageTypeKind.CONNECT;
 
 	/**
 	 * The cached value of the '{@link #getMethod() <em>Method</em>}' attribute.
@@ -50,7 +49,7 @@ public class ArrowHeadServiceInterfaceMQTTImpl extends MinimalEObjectImpl.Contai
 	 * @generated
 	 * @ordered
 	 */
-	protected HTTP11MethodKind method = METHOD_EDEFAULT;
+	protected MQTT50MessageTypeKind method = METHOD_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getTopic() <em>Topic</em>}' attribute.
@@ -107,7 +106,7 @@ public class ArrowHeadServiceInterfaceMQTTImpl extends MinimalEObjectImpl.Contai
 	 * @generated
 	 */
 	@Override
-	public HTTP11MethodKind getMethod() {
+	public MQTT50MessageTypeKind getMethod() {
 		return method;
 	}
 
@@ -117,8 +116,8 @@ public class ArrowHeadServiceInterfaceMQTTImpl extends MinimalEObjectImpl.Contai
 	 * @generated
 	 */
 	@Override
-	public void setMethod(HTTP11MethodKind newMethod) {
-		HTTP11MethodKind oldMethod = method;
+	public void setMethod(MQTT50MessageTypeKind newMethod) {
+		MQTT50MessageTypeKind oldMethod = method;
 		method = newMethod == null ? METHOD_EDEFAULT : newMethod;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_MQTT__METHOD, oldMethod, method));
@@ -215,7 +214,7 @@ public class ArrowHeadServiceInterfaceMQTTImpl extends MinimalEObjectImpl.Contai
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_MQTT__METHOD:
-				setMethod((HTTP11MethodKind)newValue);
+				setMethod((MQTT50MessageTypeKind)newValue);
 				return;
 			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_MQTT__TOPIC:
 				setTopic((String)newValue);

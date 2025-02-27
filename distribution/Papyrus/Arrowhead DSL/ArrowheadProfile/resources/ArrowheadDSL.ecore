@@ -473,7 +473,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ArrowHeadServiceInterfaceMQTT">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Method" ordered="false"
-        lowerBound="1" eType="#//HTTP11MethodKind"/>
+        lowerBound="1" eType="#//MQTT50MessageTypeKind"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Topic" ordered="false"
         lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="base_Operation" ordered="false"
