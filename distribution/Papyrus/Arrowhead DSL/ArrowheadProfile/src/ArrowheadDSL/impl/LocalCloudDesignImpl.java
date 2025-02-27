@@ -7,13 +7,14 @@ import ArrowheadDSL.BusinessPolicyKind;
 import ArrowheadDSL.LifecyclePolicyKind;
 import ArrowheadDSL.LocalCloudDesign;
 import ArrowheadDSL.SecurityPolicyKind;
+import ArrowheadDSL.SysD;
 import ArrowheadDSL.System_of_LocalcloudsDesign;
 
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
-
+import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
@@ -162,6 +163,9 @@ public class LocalCloudDesignImpl extends BlockImpl implements LocalCloudDesign 
 	 */
 	@Override
 	public String getLC_Name() {
+		String name ;
+		LocalCloudDesign LCDElement = (LocalCloudDesign) this;
+		lC_Name=(LCDElement.getBase_Class().getName());
 		return lC_Name;
 	}
 
