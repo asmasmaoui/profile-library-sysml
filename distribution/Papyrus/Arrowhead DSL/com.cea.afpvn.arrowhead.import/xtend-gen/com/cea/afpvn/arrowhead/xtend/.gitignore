@@ -15,3 +15,12 @@
 /.Connector.java._trace
 /.ScalarValues.java._trace
 /.ConnectorPart.java._trace
+/.MappingSysml2.xtendbin
+/.ScalarValues.xtendbin
+/Attribute.java
+/ConnectorPart.java
+/InterfaceBlok.java
+/Partdef.java
+/PartdefProp.java
+/Port.java
+/ScalarValues.java

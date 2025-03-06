@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="com.cea.afpvn.arrowhead.feature"
-      label="AFPVN Feature"
+      id="com.cea.afpvn.arrowhead.featureAFPVN"
+      label="FeatureAFPVN"
       version="1.0.0.qualifier"
       provider-name="CEA">
 
