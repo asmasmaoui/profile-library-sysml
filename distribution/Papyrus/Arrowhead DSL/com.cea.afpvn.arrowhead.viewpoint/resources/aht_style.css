@@ -191,8 +191,7 @@ Class[appliedStereotypes~="ArrowheadDSL::SysD"]{
 
 
 Class[appliedStereotypes~="ArrowheadDSL::SD"]{
-	/*fillColor: #9BC7CC;*/
-	fillColor:yellow;
+	fillColor: #9BC7CC;
 	gradient: none;
 	lineColor: black;
 	lineWidth: 2;
