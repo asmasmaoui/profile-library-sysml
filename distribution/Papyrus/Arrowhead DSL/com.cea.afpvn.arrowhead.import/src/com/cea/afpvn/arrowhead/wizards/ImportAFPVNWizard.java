@@ -471,23 +471,27 @@ public class ImportAFPVNWizard extends CreateModelWizard  implements INewWizard 
 				 } catch (CoreException e) {
 				   e.printStackTrace();
 			         }
-	                      ////////// add ref part///////// 
+	                      ////////// add ref part for sysml.library and AFPVN.library ///////// 
 
 		 IProject[] projectRefTab = new IProject[0]; 
 
 		 IProjectDescription description2 = project.getDescription();
 
 		 final IProject projectRef= ResourcesPlugin.getWorkspace().getRoot().getProject("sysml.library");
+		 final IProject projectRefAFPVN= ResourcesPlugin.getWorkspace().getRoot().getProject("SysmlV2AFPVN.library");
 
 		 System.out.println("projectRef"+projectRef.getDescription().getName());
 
 		 NullProgressMonitor progressMonitor2 = new NullProgressMonitor();
+		 NullProgressMonitor progressMonitor3 = new NullProgressMonitor();
 
 		 projectRef.open(new SubProgressMonitor(progressMonitor2, 1));
-
+		 projectRefAFPVN.open(new SubProgressMonitor(progressMonitor3, 1));
+		 
 		 List<IProject> arrListprojectRefTab = new ArrayList<IProject>(Arrays.asList(projectRefTab));
 
 		 arrListprojectRefTab.add(projectRef); 
+		 arrListprojectRefTab.add(projectRefAFPVN); 
 
 		 System.out.println("projectReflist = "+ arrListprojectRefTab.toString());
 
@@ -496,6 +500,7 @@ public class ImportAFPVNWizard extends CreateModelWizard  implements INewWizard 
 		 description2.setReferencedProjects(projectRefTab);
 
 		 project.setDescription(description2, progressMonitor);
+		 
 
 
 
