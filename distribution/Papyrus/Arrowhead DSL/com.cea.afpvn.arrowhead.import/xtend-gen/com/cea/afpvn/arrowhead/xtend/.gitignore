@@ -1,5 +1,6 @@
 /.tranformation_SysmlTOSysml2.java._trace
 /.SysmtoSysml2SwitchXtend.java._trace
+/.SysmtoSysml2AFPVNSwitchXtend.java._trace
 /.testTofile.java._trace
 /.MyDslGenerator.java._trace
 /.HelloWorld.java._trace
@@ -24,3 +25,7 @@
 /PartdefProp.java
 /Port.java
 /ScalarValues.java
+/.Usecase.java._trace
+/.Requirement.java._trace
+/.Operation.java._trace
+/.Requirements.java._trace

@@ -1,11 +1,11 @@
 package com.cea.afpvn.arrowhead.xtend;
 
 @SuppressWarnings("all")
-public class Port {
-  public String createPort(final String name, final String type) {
+public class Operation {
+  public String createOperation(final String name) {
     String _xblockexpression = null;
     {
-      String str = (("port " + name) + type);
+      String str = (("action " + name) + ";");
       _xblockexpression = str;
     }
     return _xblockexpression;

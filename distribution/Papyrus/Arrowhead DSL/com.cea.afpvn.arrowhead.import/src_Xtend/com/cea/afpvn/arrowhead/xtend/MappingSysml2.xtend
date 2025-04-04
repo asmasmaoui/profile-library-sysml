@@ -36,7 +36,7 @@ class PartdefProp {
  class Port {
  def String createPort(String name, String type)
     {
-     var str= "port " +name+":" +type+ ";"
+     var str= "port " +name+type
       str
      }
      }
@@ -47,5 +47,24 @@ class ConnectorPart {
       str
      }
      }
-	  	
-	
+class Usecase {
+ def String createUsecase(String elem1)
+    {
+     var str= "use case def " +elem1+ ";"
+      str
+     }
+     }
+class Requirements {
+ def String createRequirement(String elem1)
+    {
+     var str= "requirement def " +elem1
+      str
+     }
+     }  	
+class Operation {
+ def String createOperation(String name)
+    {
+     var str= "action " +name+";"
+      str
+     }
+     }

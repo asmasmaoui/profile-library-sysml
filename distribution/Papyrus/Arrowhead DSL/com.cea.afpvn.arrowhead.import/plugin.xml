@@ -52,4 +52,55 @@
                                      name="Generate Sysml2 transforamtion">
                                </command>
                             </extension>
+                            <extension
+                                  point="org.eclipse.ui.importWizards">
+                               <wizard
+                                     category="org.eclipse.papyrus.infra.core.importcategory"
+                                     class="com.cea.afpvn.arrowhead.wizards.ImportAFPVNWizardSYSML2"
+                                     id="org.eclipse.papyrus.aasx.import.category"
+                                     name="ArrouwheadDSL to Sysmlv2">
+                                  <description>
+                                     This wizard allows tranformation from SysML1AFPVN model to SysML2 model for AFPVN
+                                  </description>
+                               </wizard>
+                            </extension>
+                            <extension
+                                  point="org.eclipse.ui.menus">
+                               <menuContribution
+                                     allPopups="false"
+                                     locationURI="popup:org.eclipse.papyrus.views.modelexplorer.modelexplorer.popup">
+                                  <command
+                                        commandId="com.cea.afpvn.arrowhead.import.commandSysml2AFPVN"
+                                        label="AFPVNDSL">
+                                     <visibleWhen
+                                           checkEnabled="true">
+                                        <with
+                                              variable="selection">
+                                           <iterate>
+                                              <adapt
+                                                    type="org.eclipse.emf.ecore.EObject">
+                                              </adapt>
+                                              <or>
+                                                 <instanceof
+                                                       value="org.eclipse.uml2.uml.Classifier">
+                                                 </instanceof>
+                                                 <instanceof
+                                                       value="org.eclipse.uml2.uml.Package">
+                                                 </instanceof>
+                                              </or>
+                                           </iterate>
+                                        </with>
+                                     </visibleWhen>
+                                  </command>
+                               </menuContribution>
+                            </extension>
+                            <extension
+                                  point="org.eclipse.ui.commands">
+                               <command
+                                     categoryId="org.eclipse.papyrus.editor.category"
+                                     description="Generate Code"
+                                     id="com.cea.afpvn.arrowhead.import.commandSysml2AFPVN"
+                                     name="Generate Sysml2 transforamtion from ArrouwheadDSL">
+                               </command>
+                            </extension>
 </plugin>
