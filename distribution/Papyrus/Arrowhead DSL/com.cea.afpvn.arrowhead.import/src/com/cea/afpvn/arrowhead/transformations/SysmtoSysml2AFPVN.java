@@ -12,13 +12,14 @@ import org.eclipse.uml2.uml.Connector;
 import org.eclipse.uml2.uml.ConnectorEnd;
 import org.eclipse.uml2.uml.Generalization;
 import org.eclipse.uml2.uml.Property;
+import org.eclipse.uml2.uml.Operation;
 import org.eclipse.uml2.uml.UseCase;
 import org.eclipse.uml2.uml.internal.impl.UseCaseImpl;
 
 import com.cea.afpvn.arrowhead.xtend.Attribute;
 import com.cea.afpvn.arrowhead.xtend.ConnectorPart;
 import com.cea.afpvn.arrowhead.xtend.InterfaceBlok;
-import com.cea.afpvn.arrowhead.xtend.Operation;
+import com.cea.afpvn.arrowhead.xtend.Operations;
 import com.cea.afpvn.arrowhead.xtend.Partdef;
 import com.cea.afpvn.arrowhead.xtend.PartdefProp;
 import com.cea.afpvn.arrowhead.xtend.Port;
@@ -119,10 +120,10 @@ public class SysmtoSysml2AFPVN extends BlocksSwitch<EObject> {
 	}
 
 	private void caseInterfaceBlock(InterfaceBlock eObject) {
-		System.out.println("elem " +eObject.toString()+"::::"+eObject.getClass().getSuperclass());
+		//System.out.println("elem " +eObject.toString()+"::::"+eObject.getClass().getSuperclass());
 		if (eObject != null) {
 			String generalization="";
-			System.out.println("le stereotype appliqué est : "+ eObject.getBase_Class().getStereotypeApplications());
+			//System.out.println("le stereotype appliqué est : "+ eObject.getBase_Class().getStereotypeApplications());
 			/**** generalization***/
 			if (!eObject.getBase_Class().getGeneralizations().isEmpty())
 			{
@@ -132,6 +133,18 @@ public class SysmtoSysml2AFPVN extends BlocksSwitch<EObject> {
 			String streotype = eObject.getBase_Class().getAppliedStereotypes().get(0).getName();
 			String strprop = "";
 			strprop=strprop.concat("@"+streotype+";");
+			/********************* Operation**************/
+			EList<Operation> operat = eObject.getBase_Class().getOwnedOperations();
+			if (operat!=null) {
+				for (Operation op : operat) {
+					System.out.println("C'est une operation ");
+					strprop = strprop.concat("\n");	
+					String streotypeop = op.getAppliedStereotypes().get(0).getName();
+					strprop = strprop.concat(createOperation(op.getName()));
+					strprop=strprop.concat("{@"+streotypeop+";}");
+				}
+			}
+			/****************************************/
 			EList<Property> props = eObject.getBase_Class().getOwnedAttributes();
 			if (props != null) {
 				for (Property prop : props) {
@@ -177,7 +190,7 @@ public class SysmtoSysml2AFPVN extends BlocksSwitch<EObject> {
 		String generalisation="";
 		
 		if (object != null) {
-			System.out.println("le stereotype appliqué est : "+object.getBase_Class().getAppliedStereotypes().get(0).getName());
+			//System.out.println("le stereotype appliqué est : "+object.getBase_Class().getAppliedStereotypes().get(0).getName());
 			String streotype = object.getBase_Class().getAppliedStereotypes().get(0).getName();
 			/**** generalization***/
 			if (!object.getBase_Class().getGeneralizations().isEmpty())
@@ -186,7 +199,19 @@ public class SysmtoSysml2AFPVN extends BlocksSwitch<EObject> {
 			}
 			/*********************/
 			String strprop = "";
-			strprop=strprop.concat("@"+streotype+";");		
+			strprop=strprop.concat("@"+streotype+";");	
+			/********************* Operation**************/
+			EList<Operation> operat = object.getBase_Class().getOwnedOperations();
+			if (operat!=null) {
+				for (Operation op : operat) {
+					System.out.println("C'est une operation ");
+					strprop = strprop.concat("\n");	
+					String streotypeop = op.getAppliedStereotypes().get(0).getName();
+					strprop = strprop.concat(createOperation(op.getName()));
+					strprop=strprop.concat("{@"+streotypeop+";}");
+				}
+			}
+			/****************************************/
 			EList<Property> props = object.getBase_Class().getOwnedAttributes();
 			System.out.println("les OwnedElement de l'object " + object.getBase_Class().getOwnedAttributes().toString());
 			object.getBase_Class().getOwnedConnectors();
@@ -309,7 +334,7 @@ public class SysmtoSysml2AFPVN extends BlocksSwitch<EObject> {
 		return element;
 	}
 	private String createOperation(String name) {
-		Operation operation = new Operation();
+		Operations operation = new Operations();
 		String element = operation.createOperation(name);
 		return element;
 	}

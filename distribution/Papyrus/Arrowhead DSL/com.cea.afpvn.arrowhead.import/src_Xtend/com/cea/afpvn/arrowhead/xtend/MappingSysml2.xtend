@@ -61,10 +61,10 @@ class Requirements {
       str
      }
      }  	
-class Operation {
+class Operations {
  def String createOperation(String name)
     {
-     var str= "action " +name+";"
+     var str= "action def " +name
       str
      }
      }
