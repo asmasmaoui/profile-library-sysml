@@ -4,6 +4,7 @@ import java.util.Iterator;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.resource.Resource;
+import org.eclipse.papyrus.sysml16.blocks.BindingConnector;
 import org.eclipse.papyrus.sysml16.blocks.Block;
 import org.eclipse.papyrus.sysml16.blocks.util.BlocksSwitch;
 import org.eclipse.papyrus.sysml16.portsandflows.InterfaceBlock;
@@ -50,7 +51,6 @@ public class SysmtoSysml2AFPVN extends BlocksSwitch<EObject> {
 			System.out.println("elem " +eObject.toString()+"::::"+eObject.eResource());
 			
 			if (eObject instanceof UseCase) {
-				//caseUseCase((UseCase) eObject);
 				System.out.println("c'est un UseCase " );
 			}
 			else if(eObject instanceof InterfaceBlock) {
@@ -60,7 +60,10 @@ public class SysmtoSysml2AFPVN extends BlocksSwitch<EObject> {
 				caseBlock((Block) eObject);
 
 			} else if (eObject instanceof Connector) {
-				caseConnector((Connector) eObject);
+				//caseConnector((Connector) eObject);
+
+			}else if (eObject instanceof BindingConnector) {
+				//caseConnector((Connector) eObject);
 
 			}
 			
@@ -101,19 +104,22 @@ public class SysmtoSysml2AFPVN extends BlocksSwitch<EObject> {
 		if (eObject != null) {
 			Connector val = ((Connector) eObject);
 			EList<ConnectorEnd> connectorEnds = val.getEnds();
-			connectorEnds.get(0).getPartWithPort().getName();
-			connectorEnds.get(0).getRole().getName();
+			
+			//connectorEnds.get(0).getPartWithPort().getName();
+			//connectorEnds.get(0).getRole().getName();
 			// Start
-			ConnectStart = ConnectStart.concat(
-					connectorEnds.get(0).getPartWithPort().getName() + "." + connectorEnds.get(0).getRole().getName());
-
-			connectorEnds.get(1).getPartWithPort().getName();
-			connectorEnds.get(1).getRole().getName();
+			ConnectStart = ConnectStart.concat(connectorEnds.get(0).getPartWithPort().getName() + "." + connectorEnds.get(0).getRole().getName());
+			System.out.println("ConnectStart:"+ ConnectStart  );
+			//connectorEnds.get(1).getPartWithPort().getName();
+			//connectorEnds.get(1).getRole().getName();
 			// end
-			ConnectEnd = ConnectEnd.concat(
-					connectorEnds.get(1).getPartWithPort().getName() + "." + connectorEnds.get(1).getRole().getName());
-
-		}
+			if (connectorEnds.get(1).getPartWithPort()!=null)
+			{
+			ConnectEnd = ConnectEnd.concat(connectorEnds.get(1).getPartWithPort().getName()+ "." + connectorEnds.get(1).getRole().getName());
+			System.out.println("ConnectEnd:"+ ConnectEnd  );
+			}
+			}
+			
 
 		strConnector = createConnector(ConnectStart, ConnectEnd);
 		return strConnector;
@@ -139,43 +145,39 @@ public class SysmtoSysml2AFPVN extends BlocksSwitch<EObject> {
 				for (Operation op : operat) {
 					System.out.println("C'est une operation ");
 					strprop = strprop.concat("\n");	
+					if (op.getAppliedStereotypes().isEmpty())
+					{
+						
+					}else {
 					String streotypeop = op.getAppliedStereotypes().get(0).getName();
 					strprop = strprop.concat(createOperation(op.getName()));
 					strprop=strprop.concat("{@"+streotypeop+";}");
+					}
 				}
 			}
 			/****************************************/
-			EList<Property> props = eObject.getBase_Class().getOwnedAttributes();
-			if (props != null) {
-				for (Property prop : props) {
-					if (prop.eClass().getName().equals("Port")) {
+			EList<org.eclipse.uml2.uml.Port> ports = eObject.getBase_Class().getOwnedPorts();
+			if (ports != null) {
+				for (Property port : ports) {
 						System.out.println("C'est un Port ");
-						System.out.println("les OwnedElement du bloc : port " + prop.allOwnedElements());
+						System.out.println("les OwnedElement du bloc : port " + port.allOwnedElements());
 			
 						strprop = strprop.concat("\n");	
-						Property propPort = prop;
-						if (prop.getType()==null){
+						Property propPort = port;
+						if (port.getType()==null){
 							String typeName="";
-							String streotypeport = prop.getAppliedStereotypes().get(0).getName();
-							strprop = strprop.concat(createPort(prop.getName(), typeName));
+							String streotypeport = port.getAppliedStereotypes().get(0).getName();
+							strprop = strprop.concat(createPort(port.getName(), typeName));
 							strprop=strprop.concat("{@"+streotypeport+";}");
 						}
 						else {
-						strprop = strprop.concat(createPort(prop.getName(),":"+ prop.getType().getName()));
-						String streotypeport = prop.getAppliedStereotypes().get(0).getName();
+						strprop = strprop.concat(createPort(port.getName(),":"+ port.getType().getName()));
+						String streotypeport = port.getAppliedStereotypes().get(0).getName();
 						strprop=strprop.concat("{@"+streotypeport+";}");
 						strprop = strprop.concat("\n");
 					} 
-					}else {
-					prop.getName();
-					prop.getStereotypeApplications();
-					prop.getType();
-					String tempprovisoir="ThermodynamicTemperatureValue";
-					strprop = strprop.concat("\n");
-					strprop = strprop.concat(createAttribute(prop.getName(),tempprovisoir ));
-					strprop = strprop.concat("\n");
-
-				}
+					
+				
 				}
 			}
 			String name = eObject.getBase_Class().getName();
@@ -206,9 +208,16 @@ public class SysmtoSysml2AFPVN extends BlocksSwitch<EObject> {
 				for (Operation op : operat) {
 					System.out.println("C'est une operation ");
 					strprop = strprop.concat("\n");	
+					if (op.getAppliedStereotypes().isEmpty())
+					{
+						strprop = strprop.concat(createOperation(op.getName()));
+					
+					}else 
+					{
 					String streotypeop = op.getAppliedStereotypes().get(0).getName();
 					strprop = strprop.concat(createOperation(op.getName()));
 					strprop=strprop.concat("{@"+streotypeop+";}");
+					}
 				}
 			}
 			/****************************************/
@@ -222,17 +231,24 @@ public class SysmtoSysml2AFPVN extends BlocksSwitch<EObject> {
 						System.out.println("les OwnedElement du bloc : port " + prop.allOwnedElements());
 			
 						strprop = strprop.concat("\n");	
-						Property propPort = prop;
 						if (prop.getType()==null){
 							String typeName="";
 							String streotypeport = prop.getAppliedStereotypes().get(0).getName();
 							strprop = strprop.concat(createPort(prop.getName(), typeName));
+							strprop=strprop.concat("{@"+streotypeport+";}");										
+							strprop = strprop.concat("\n");
 						}
-						else
+						else {
 						strprop = strprop.concat(createPort(prop.getName(),":"+ prop.getType().getName()));
+						if (prop.getAppliedStereotypes().isEmpty())
+						{
+							strprop = strprop.concat("\n");	
+						}else {
 						String streotypeport = prop.getAppliedStereotypes().get(0).getName();
 						strprop=strprop.concat("{@"+streotypeport+";}");										
 						strprop = strprop.concat("\n");
+						}
+						}
 					} else {
 						prop.getName();
 						prop.allOwnedElements();
@@ -241,43 +257,28 @@ public class SysmtoSysml2AFPVN extends BlocksSwitch<EObject> {
 							prop.getType().getName();
 							prop.getType().allOwnedElements();
 							System.out.println(prop.getType().getName() + prop.getType().allOwnedElements());
-							/******************* Port **************/
 							if (prop.getType().allOwnedElements() != null) {
-
-								/*
-								 * if(prop.getType().allOwnedElements().get(0).eClass().getName().equals("Port")
-								 * ) { org.eclipse.uml2.uml.Element elem=
-								 * prop.getType().allOwnedElements().get(0); String name =((Property)
-								 * prop.getType().allOwnedElements().get(0)).getName(); String type =((Property)
-								 * prop.getType().allOwnedElements().get(0)).getType().getName(); String
-								 * attribute=""; attribute =attribute.concat("\n"); attribute =
-								 * attribute.concat(createPort(name,type)); strprop =strprop.concat("\n");
-								 * System.out.println("c'est un port"+prop.getType().allOwnedElements().get(0));
-								 * String nameprop =prop.getName()+":"+prop.getType().getName();
-								 * strprop=strprop.concat(createPartDefinition(nameprop,attribute)); strprop
-								 * =strprop.concat("\n");
-								 *//*
-																			 * } } else {
-																			 */
-
 								strprop = strprop.concat("\n");
-								String name = prop.getName() + ":" + prop.getType().getName();
+								String name = prop.getName() + ":" + prop.getType().getName().replace(" ","").replace("-","");
 								strprop = strprop.concat(createPartDefinitionPrperty(name));
 								strprop = strprop.concat("\n");
 							}
 
 						} else {
-							// System.out.println("les OwnedElement du bloc "+prop.allOwnedElements());
 							prop.getStereotypeApplications();
 							prop.getType();
 							strprop = strprop.concat("\n");
-							strprop = strprop.concat(createAttribute(prop.getName(), prop.getType().getName()));
+							if (prop.getType()==null){
+								strprop = strprop.concat(createAttribute(prop.getName(),""));	
+							}else {
+							strprop = strprop.concat(createAttribute(prop.getName(),":"+ prop.getType().getName()));
 							strprop = strprop.concat("\n");
+							}
 						}
 					}
 
 				}
-				EList<Connector> connectors = object.getBase_Class().getOwnedConnectors();
+			EList<Connector> connectors = object.getBase_Class().getOwnedConnectors();
 				for (Connector conect : connectors) {
 					strprop = strprop.concat("\n");
 					strprop = strprop.concat(caseConnector(conect));
@@ -293,52 +294,74 @@ public class SysmtoSysml2AFPVN extends BlocksSwitch<EObject> {
 	}
 
 	private String createConnector(String connectStart, String connectEnd) {
-
+		connectStart = connectStart.replace(" ", "");
+		connectStart = connectStart.replace("-", "");
+		connectEnd = connectEnd.replace(" ", "");
+		connectEnd = connectEnd.replace("-", "");
 		ConnectorPart connect = new ConnectorPart();
 		String element = connect.createConnector(connectStart, connectEnd);
 		return element;
 	}
 
 	private String createPartDefinition(String name, String attributs) {
+		name = name.replace(" ", "");
+		name = name.replace("-", "");
 		Partdef partdef = new Partdef();
 		String element = partdef.createPartDef(name, attributs);
 		return element;
 	}
 
 	private String createPartDefinitionPrperty(String name) {
+		name = name.replace(" ", "");
+		name = name.replace("-", "");
 		PartdefProp partdefPop = new PartdefProp();
 		String element = partdefPop.createPartDefProp(name);
 		return element;
 	}
 
 	private String createAttribute(String name, String type) {
-
+		name = name.replace(" ", "");
+		name = name.replace("-", "");
+		type = type.replace(" ", "");
+		type = type.replace("-", "");
 		Attribute attr = new Attribute();
 		String element = attr.createAttribute(name, type);
 		return element;
 	}
 
 	private String createPort(String name, String type) {
+		name = name.replace(" ", "");
+		name = name.replace("-", "");
+		type = type.replace(" ", "");
+		type = type.replace("-", "");
 		Port port = new Port();
 		String element = port.createPort(name, type);
 		return element;
 	}
 	private String createUsecase(String name) {
+		name = name.replace(" ", "");
+		name = name.replace("-", "");
 		Usecase usecase = new Usecase();
 		String element = usecase.createUsecase(name);
 		return element;
 	}
 	private String createRequirements(String name) {
+		name = name.replace(" ", "");
+		name = name.replace("-", "");
 		Requirements requirement = new Requirements();
 		String element = requirement.createRequirement(name);
 		return element;
 	}
 	private String createOperation(String name) {
+		name = name.replace(" ", "");
+		name = name.replace("-", "");
 		Operations operation = new Operations();
 		String element = operation.createOperation(name);
 		return element;
 	}
 	private String createInterfaceBlok(String name, String attributs) {
+		name = name.replace(" ", "");
+		name = name.replace("-", "");
 		InterfaceBlok interfaceBlok = new InterfaceBlok();
 		String element = interfaceBlok.createInterfaceBlok(name, attributs);
 		return element;

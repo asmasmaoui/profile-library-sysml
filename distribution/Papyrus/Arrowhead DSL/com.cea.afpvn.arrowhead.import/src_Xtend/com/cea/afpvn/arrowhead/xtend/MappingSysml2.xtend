@@ -18,7 +18,7 @@ class PartdefProp {
  class Attribute {
  def String createAttribute(String name, String type)
     {
-     var str= "attribute " +name+":" +type+ ";"
+     var str= "attribute " +name +type+ ";"
       str
      }
      }
