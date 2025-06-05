@@ -511,19 +511,19 @@
     <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="aht.operationDDS" label="ServiceInterface DDS" kind="CreationTool">
       <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.uml2.uml.edit" iconPath="/icons/full/obj16/Operation.gif"/>
       <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_YuYPoTuxEfC5pu1CdeTqNQ"/>
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_5r1a9EIOEfC_HMLdhGyCIA"/>
       </elementDescriptors>
       <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_YuYPozuxEfC5pu1CdeTqNQ"/>
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_5r1a9kIOEfC_HMLdhGyCIA"/>
       </elementDescriptors>
       <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_YuYPpTuxEfC5pu1CdeTqNQ"/>
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_5r1a-EIOEfC_HMLdhGyCIA"/>
       </elementDescriptors>
       <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_YuXokjuxEfC5pu1CdeTqNQ"/>
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_5r1a8kIOEfC_HMLdhGyCIA"/>
       </elementDescriptors>
       <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_YuYPqTuxEfC5pu1CdeTqNQ"/>
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/com.cea.afpvn.arrowhead.types/resources/ArrowheadProfile_v5di.elementtypesconfigurations#_5r1a_EIOEfC_HMLdhGyCIA"/>
       </elementDescriptors>
     </ownedConfigurations>
     <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="aht.operationAMQP" label="ServiceInterface AMQP" kind="CreationTool">
