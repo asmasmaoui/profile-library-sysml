@@ -1070,4 +1070,12 @@
     </ownedConfigurations>
     <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Operation"/>
   </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_dXkwkEINEfC_HMLdhGyCIA" identifier="com.example.arrowheadDSL.arrowHeadServiceInterfaceDDS" name="ArrowHeadServiceInterfaceDDS" hint="UML::Operation" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_dXkwk0INEfC_HMLdhGyCIA">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_dXkwkUINEfC_HMLdhGyCIA" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/ArrowheadProfile/resources/ArrowheadProfile_v5.0.profile.uml#_t1y94EIKEfC_HMLdhGyCIA"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_dXkwkkINEfC_HMLdhGyCIA" iconPath="/icons/full/obj16/Operation.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_dXkwk0INEfC_HMLdhGyCIA" description="Apply Stereotype ArrowHeadServiceInterfaceDDS" identifier="com.example.arrowheadDSL.ArrowHeadServiceInterfaceDDS" target="_dXkwkEINEfC_HMLdhGyCIA" matchedType="_dXkwkEINEfC_HMLdhGyCIA">
+      <stereotypesQualifiedNames>ArrowheadDSL::ArrowHeadServiceInterfaceDDS</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Operation"/>
+  </elementTypeConfigurations>
 </elementtypesconfigurations:ElementTypeSetConfiguration>
