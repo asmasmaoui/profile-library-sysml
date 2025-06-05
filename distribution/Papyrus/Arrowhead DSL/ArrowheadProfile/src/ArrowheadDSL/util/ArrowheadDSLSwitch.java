@@ -267,6 +267,12 @@ public class ArrowheadDSLSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE: {
+				ArrowHeadServiceInterface arrowHeadServiceInterface = (ArrowHeadServiceInterface)theEObject;
+				T result = caseArrowHeadServiceInterface(arrowHeadServiceInterface);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_AMQP: {
 				ArrowHeadServiceInterfaceAMQP arrowHeadServiceInterfaceAMQP = (ArrowHeadServiceInterfaceAMQP)theEObject;
 				T result = caseArrowHeadServiceInterfaceAMQP(arrowHeadServiceInterfaceAMQP);
@@ -276,12 +282,6 @@ public class ArrowheadDSLSwitch<T> extends Switch<T> {
 			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_DDS: {
 				ArrowHeadServiceInterfaceDDS arrowHeadServiceInterfaceDDS = (ArrowHeadServiceInterfaceDDS)theEObject;
 				T result = caseArrowHeadServiceInterfaceDDS(arrowHeadServiceInterfaceDDS);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE: {
-				ArrowHeadServiceInterface arrowHeadServiceInterface = (ArrowHeadServiceInterface)theEObject;
-				T result = caseArrowHeadServiceInterface(arrowHeadServiceInterface);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}

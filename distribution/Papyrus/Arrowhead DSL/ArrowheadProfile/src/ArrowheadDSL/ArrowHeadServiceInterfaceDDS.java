@@ -19,7 +19,7 @@ import org.eclipse.uml2.uml.Operation;
  * </ul>
  *
  * @see ArrowheadDSL.ArrowheadDSLPackage#getArrowHeadServiceInterfaceDDS()
- * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='ArrowHeadServiceInterfaceDDS '"
+ * @model
  * @generated
  */
 public interface ArrowHeadServiceInterfaceDDS extends EObject {

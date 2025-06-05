@@ -179,16 +179,16 @@ public class ArrowheadDSLAdapterFactory extends AdapterFactoryImpl {
 				return createProxyPortAdapter();
 			}
 			@Override
+			public Adapter caseArrowHeadServiceInterface(ArrowHeadServiceInterface object) {
+				return createArrowHeadServiceInterfaceAdapter();
+			}
+			@Override
 			public Adapter caseArrowHeadServiceInterfaceAMQP(ArrowHeadServiceInterfaceAMQP object) {
 				return createArrowHeadServiceInterfaceAMQPAdapter();
 			}
 			@Override
 			public Adapter caseArrowHeadServiceInterfaceDDS(ArrowHeadServiceInterfaceDDS object) {
 				return createArrowHeadServiceInterfaceDDSAdapter();
-			}
-			@Override
-			public Adapter caseArrowHeadServiceInterface(ArrowHeadServiceInterface object) {
-				return createArrowHeadServiceInterfaceAdapter();
 			}
 			@Override
 			public Adapter caseBlock(Block object) {

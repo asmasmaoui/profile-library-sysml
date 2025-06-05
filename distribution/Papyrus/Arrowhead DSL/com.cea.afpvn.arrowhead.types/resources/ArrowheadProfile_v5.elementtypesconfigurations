@@ -1062,10 +1062,10 @@
     </ownedConfigurations>
     <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Operation"/>
   </elementTypeConfigurations>
-  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_HA7SID-xEfCU5LM4cJ733A" identifier="com.example.arrowheadDSL.arrowHeadServiceInterfaceAMQP" name="ArrowHeadServiceInterfaceAMQP" hint="UML::Operation" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_HA75MD-xEfCU5LM4cJ733A">
-    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_HA7SIT-xEfCU5LM4cJ733A" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/ArrowheadProfile/resources/ArrowheadProfile_v5.0.profile.uml#_YFcM8DrYEfCz49RyTubNTA"/>
-    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_HA7SIj-xEfCU5LM4cJ733A" iconPath="/icons/full/obj16/Operation.gif" bundleId="org.eclipse.uml2.uml.edit"/>
-    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_HA75MD-xEfCU5LM4cJ733A" description="Apply Stereotype ArrowHeadServiceInterfaceAMQP" identifier="com.example.arrowheadDSL.ArrowHeadServiceInterfaceAMQP" target="_HA7SID-xEfCU5LM4cJ733A" matchedType="_HA7SID-xEfCU5LM4cJ733A">
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Im2pwEIEEfC_HMLdhGyCIA" identifier="com.example.arrowheadDSL.arrowHeadServiceInterfaceAMQP" name="ArrowHeadServiceInterfaceAMQP" hint="UML::Operation" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_Im2pw0IEEfC_HMLdhGyCIA">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_Im2pwUIEEfC_HMLdhGyCIA" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/ArrowheadProfile/resources/ArrowheadProfile_v5.0.profile.uml#_tIfL8EIKEfC_HMLdhGyCIA"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_Im2pwkIEEfC_HMLdhGyCIA" iconPath="/icons/full/obj16/Operation.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_Im2pw0IEEfC_HMLdhGyCIA" description="Apply Stereotype ArrowHeadServiceInterfaceAMQP" identifier="com.example.arrowheadDSL.ArrowHeadServiceInterfaceAMQP" target="_Im2pwEIEEfC_HMLdhGyCIA" matchedType="_Im2pwEIEEfC_HMLdhGyCIA">
       <stereotypesQualifiedNames>ArrowheadDSL::ArrowHeadServiceInterfaceAMQP</stereotypesQualifiedNames>
     </ownedConfigurations>
     <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Operation"/>

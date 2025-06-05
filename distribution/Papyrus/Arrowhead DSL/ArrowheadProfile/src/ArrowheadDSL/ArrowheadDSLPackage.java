@@ -3068,7 +3068,54 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getArrowHeadServiceInterfaceAMQP()
 	 * @generated
 	 */
-	int ARROW_HEAD_SERVICE_INTERFACE_AMQP = 26;
+	int ARROW_HEAD_SERVICE_INTERFACE_AMQP = 27;
+
+	/**
+	 * The meta object id for the '{@link ArrowheadDSL.impl.ArrowHeadServiceInterfaceDDSImpl <em>Arrow Head Service Interface DDS</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see ArrowheadDSL.impl.ArrowHeadServiceInterfaceDDSImpl
+	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getArrowHeadServiceInterfaceDDS()
+	 * @generated
+	 */
+	int ARROW_HEAD_SERVICE_INTERFACE_DDS = 28;
+
+	/**
+	 * The meta object id for the '{@link ArrowheadDSL.impl.ArrowHeadServiceInterfaceImpl <em>Arrow Head Service Interface</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see ArrowheadDSL.impl.ArrowHeadServiceInterfaceImpl
+	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getArrowHeadServiceInterface()
+	 * @generated
+	 */
+	int ARROW_HEAD_SERVICE_INTERFACE = 26;
+
+	/**
+	 * The feature id for the '<em><b>Base Operation</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ARROW_HEAD_SERVICE_INTERFACE__BASE_OPERATION = 0;
+
+	/**
+	 * The number of structural features of the '<em>Arrow Head Service Interface</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ARROW_HEAD_SERVICE_INTERFACE_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>Arrow Head Service Interface</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ARROW_HEAD_SERVICE_INTERFACE_OPERATION_COUNT = 0;
 
 	/**
 	 * The feature id for the '<em><b>Base Operation</b></em>' reference.
@@ -3098,16 +3145,6 @@ public interface ArrowheadDSLPackage extends EPackage {
 	int ARROW_HEAD_SERVICE_INTERFACE_AMQP_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link ArrowheadDSL.impl.ArrowHeadServiceInterfaceDDSImpl <em>Arrow Head Service Interface DDS</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see ArrowheadDSL.impl.ArrowHeadServiceInterfaceDDSImpl
-	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getArrowHeadServiceInterfaceDDS()
-	 * @generated
-	 */
-	int ARROW_HEAD_SERVICE_INTERFACE_DDS = 27;
-
-	/**
 	 * The feature id for the '<em><b>Base Operation</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3133,43 +3170,6 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @ordered
 	 */
 	int ARROW_HEAD_SERVICE_INTERFACE_DDS_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link ArrowheadDSL.impl.ArrowHeadServiceInterfaceImpl <em>Arrow Head Service Interface</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see ArrowheadDSL.impl.ArrowHeadServiceInterfaceImpl
-	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getArrowHeadServiceInterface()
-	 * @generated
-	 */
-	int ARROW_HEAD_SERVICE_INTERFACE = 28;
-
-	/**
-	 * The feature id for the '<em><b>Base Operation</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ARROW_HEAD_SERVICE_INTERFACE__BASE_OPERATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Arrow Head Service Interface</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ARROW_HEAD_SERVICE_INTERFACE_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Arrow Head Service Interface</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ARROW_HEAD_SERVICE_INTERFACE_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.SystemDatabaseKind <em>System Database Kind</em>}' enum.

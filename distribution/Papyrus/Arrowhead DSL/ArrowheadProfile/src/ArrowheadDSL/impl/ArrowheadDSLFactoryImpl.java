@@ -83,9 +83,9 @@ public class ArrowheadDSLFactoryImpl extends EFactoryImpl implements ArrowheadDS
 			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_WEBSOCKET: return createArrowHeadServiceInterfaceWebsocket();
 			case ArrowheadDSLPackage.FULL_PORT: return createFullPort();
 			case ArrowheadDSLPackage.PROXY_PORT: return createProxyPort();
+			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE: return createArrowHeadServiceInterface();
 			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_AMQP: return createArrowHeadServiceInterfaceAMQP();
 			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_DDS: return createArrowHeadServiceInterfaceDDS();
-			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE: return createArrowHeadServiceInterface();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
