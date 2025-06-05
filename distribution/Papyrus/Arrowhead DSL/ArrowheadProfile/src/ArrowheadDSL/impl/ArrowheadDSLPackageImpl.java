@@ -3,7 +3,10 @@
 package ArrowheadDSL.impl;
 
 import ArrowheadDSL.ApplicationProtocolKind;
+import ArrowheadDSL.ArrowHeadServiceInterface;
+import ArrowheadDSL.ArrowHeadServiceInterfaceAMQP;
 import ArrowheadDSL.ArrowHeadServiceInterfaceCOAP;
+import ArrowheadDSL.ArrowHeadServiceInterfaceDDS;
 import ArrowheadDSL.ArrowHeadServiceInterfaceHTTP;
 import ArrowheadDSL.ArrowHeadServiceInterfaceMQTT;
 import ArrowheadDSL.ArrowHeadServiceInterfaceWebsocket;
@@ -270,6 +273,27 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	private EClass proxyPortEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass arrowHeadServiceInterfaceAMQPEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass arrowHeadServiceInterfaceDDSEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass arrowHeadServiceInterfaceEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1617,6 +1641,66 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
+	public EClass getArrowHeadServiceInterfaceAMQP() {
+		return arrowHeadServiceInterfaceAMQPEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getArrowHeadServiceInterfaceAMQP_Base_Operation() {
+		return (EReference)arrowHeadServiceInterfaceAMQPEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getArrowHeadServiceInterfaceDDS() {
+		return arrowHeadServiceInterfaceDDSEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getArrowHeadServiceInterfaceDDS_Base_Operation() {
+		return (EReference)arrowHeadServiceInterfaceDDSEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getArrowHeadServiceInterface() {
+		return arrowHeadServiceInterfaceEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getArrowHeadServiceInterface_Base_Operation() {
+		return (EReference)arrowHeadServiceInterfaceEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EEnum getSystemDatabaseKind() {
 		return systemDatabaseKindEEnum;
 	}
@@ -2063,6 +2147,15 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 		proxyPortEClass = createEClass(PROXY_PORT);
 		createEReference(proxyPortEClass, PROXY_PORT__BASE_PORT);
 
+		arrowHeadServiceInterfaceAMQPEClass = createEClass(ARROW_HEAD_SERVICE_INTERFACE_AMQP);
+		createEReference(arrowHeadServiceInterfaceAMQPEClass, ARROW_HEAD_SERVICE_INTERFACE_AMQP__BASE_OPERATION);
+
+		arrowHeadServiceInterfaceDDSEClass = createEClass(ARROW_HEAD_SERVICE_INTERFACE_DDS);
+		createEReference(arrowHeadServiceInterfaceDDSEClass, ARROW_HEAD_SERVICE_INTERFACE_DDS__BASE_OPERATION);
+
+		arrowHeadServiceInterfaceEClass = createEClass(ARROW_HEAD_SERVICE_INTERFACE);
+		createEReference(arrowHeadServiceInterfaceEClass, ARROW_HEAD_SERVICE_INTERFACE__BASE_OPERATION);
+
 		// Create enums
 		systemDatabaseKindEEnum = createEEnum(SYSTEM_DATABASE_KIND);
 		businessPolicyKindEEnum = createEEnum(BUSINESS_POLICY_KIND);
@@ -2284,6 +2377,15 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 
 		initEClass(proxyPortEClass, ProxyPort.class, "ProxyPort", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getProxyPort_Base_Port(), theUMLPackage.getPort(), null, "base_Port", null, 0, 1, ProxyPort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(arrowHeadServiceInterfaceAMQPEClass, ArrowHeadServiceInterfaceAMQP.class, "ArrowHeadServiceInterfaceAMQP", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getArrowHeadServiceInterfaceAMQP_Base_Operation(), theUMLPackage.getOperation(), null, "base_Operation", null, 0, 1, ArrowHeadServiceInterfaceAMQP.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(arrowHeadServiceInterfaceDDSEClass, ArrowHeadServiceInterfaceDDS.class, "ArrowHeadServiceInterfaceDDS", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getArrowHeadServiceInterfaceDDS_Base_Operation(), theUMLPackage.getOperation(), null, "base_Operation", null, 0, 1, ArrowHeadServiceInterfaceDDS.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(arrowHeadServiceInterfaceEClass, ArrowHeadServiceInterface.class, "ArrowHeadServiceInterface", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getArrowHeadServiceInterface_Base_Operation(), theUMLPackage.getOperation(), null, "base_Operation", null, 0, 1, ArrowHeadServiceInterface.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		// Initialize enums and add enum literals
 		initEEnum(systemDatabaseKindEEnum, SystemDatabaseKind.class, "SystemDatabaseKind");
@@ -2683,6 +2785,18 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 		   source,
 		   new String[] {
 			   "originalName", "208 - Already Reported"
+		   });
+		addAnnotation
+		  (arrowHeadServiceInterfaceAMQPEClass,
+		   source,
+		   new String[] {
+			   "originalName", "ArrowHeadServiceInterfaceAMQP "
+		   });
+		addAnnotation
+		  (arrowHeadServiceInterfaceDDSEClass,
+		   source,
+		   new String[] {
+			   "originalName", "ArrowHeadServiceInterfaceDDS "
 		   });
 	}
 

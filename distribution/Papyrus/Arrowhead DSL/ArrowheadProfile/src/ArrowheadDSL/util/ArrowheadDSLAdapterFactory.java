@@ -179,6 +179,18 @@ public class ArrowheadDSLAdapterFactory extends AdapterFactoryImpl {
 				return createProxyPortAdapter();
 			}
 			@Override
+			public Adapter caseArrowHeadServiceInterfaceAMQP(ArrowHeadServiceInterfaceAMQP object) {
+				return createArrowHeadServiceInterfaceAMQPAdapter();
+			}
+			@Override
+			public Adapter caseArrowHeadServiceInterfaceDDS(ArrowHeadServiceInterfaceDDS object) {
+				return createArrowHeadServiceInterfaceDDSAdapter();
+			}
+			@Override
+			public Adapter caseArrowHeadServiceInterface(ArrowHeadServiceInterface object) {
+				return createArrowHeadServiceInterfaceAdapter();
+			}
+			@Override
 			public Adapter caseBlock(Block object) {
 				return createBlockAdapter();
 			}
@@ -575,6 +587,48 @@ public class ArrowheadDSLAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createProxyPortAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ArrowheadDSL.ArrowHeadServiceInterfaceAMQP <em>Arrow Head Service Interface AMQP</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ArrowheadDSL.ArrowHeadServiceInterfaceAMQP
+	 * @generated
+	 */
+	public Adapter createArrowHeadServiceInterfaceAMQPAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ArrowheadDSL.ArrowHeadServiceInterfaceDDS <em>Arrow Head Service Interface DDS</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ArrowheadDSL.ArrowHeadServiceInterfaceDDS
+	 * @generated
+	 */
+	public Adapter createArrowHeadServiceInterfaceDDSAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ArrowheadDSL.ArrowHeadServiceInterface <em>Arrow Head Service Interface</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ArrowheadDSL.ArrowHeadServiceInterface
+	 * @generated
+	 */
+	public Adapter createArrowHeadServiceInterfaceAdapter() {
 		return null;
 	}
 

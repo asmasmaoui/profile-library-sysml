@@ -256,6 +256,33 @@ public interface ArrowheadDSLFactory extends EFactory {
 	ProxyPort createProxyPort();
 
 	/**
+	 * Returns a new object of class '<em>Arrow Head Service Interface AMQP</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Arrow Head Service Interface AMQP</em>'.
+	 * @generated
+	 */
+	ArrowHeadServiceInterfaceAMQP createArrowHeadServiceInterfaceAMQP();
+
+	/**
+	 * Returns a new object of class '<em>Arrow Head Service Interface DDS</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Arrow Head Service Interface DDS</em>'.
+	 * @generated
+	 */
+	ArrowHeadServiceInterfaceDDS createArrowHeadServiceInterfaceDDS();
+
+	/**
+	 * Returns a new object of class '<em>Arrow Head Service Interface</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Arrow Head Service Interface</em>'.
+	 * @generated
+	 */
+	ArrowHeadServiceInterface createArrowHeadServiceInterface();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

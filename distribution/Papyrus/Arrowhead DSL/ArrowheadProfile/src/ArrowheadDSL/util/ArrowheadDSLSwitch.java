@@ -267,6 +267,24 @@ public class ArrowheadDSLSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_AMQP: {
+				ArrowHeadServiceInterfaceAMQP arrowHeadServiceInterfaceAMQP = (ArrowHeadServiceInterfaceAMQP)theEObject;
+				T result = caseArrowHeadServiceInterfaceAMQP(arrowHeadServiceInterfaceAMQP);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_DDS: {
+				ArrowHeadServiceInterfaceDDS arrowHeadServiceInterfaceDDS = (ArrowHeadServiceInterfaceDDS)theEObject;
+				T result = caseArrowHeadServiceInterfaceDDS(arrowHeadServiceInterfaceDDS);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE: {
+				ArrowHeadServiceInterface arrowHeadServiceInterface = (ArrowHeadServiceInterface)theEObject;
+				T result = caseArrowHeadServiceInterface(arrowHeadServiceInterface);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			default: return defaultCase(theEObject);
 		}
 	}
@@ -658,6 +676,51 @@ public class ArrowheadDSLSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseProxyPort(ProxyPort object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Arrow Head Service Interface AMQP</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Arrow Head Service Interface AMQP</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseArrowHeadServiceInterfaceAMQP(ArrowHeadServiceInterfaceAMQP object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Arrow Head Service Interface DDS</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Arrow Head Service Interface DDS</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseArrowHeadServiceInterfaceDDS(ArrowHeadServiceInterfaceDDS object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Arrow Head Service Interface</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Arrow Head Service Interface</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseArrowHeadServiceInterface(ArrowHeadServiceInterface object) {
 		return null;
 	}
 

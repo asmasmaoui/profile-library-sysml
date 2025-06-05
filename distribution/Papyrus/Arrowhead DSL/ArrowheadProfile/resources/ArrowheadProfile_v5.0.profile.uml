@@ -735,11 +735,56 @@
         <specification xmi:type="uml:LiteralString" xmi:id="_zlgycBKNEe-2EvZLzkcjBQ"/>
       </ownedLiteral>
     </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_YFcM8DrYEfCz49RyTubNTA" name="ArrowHeadServiceInterfaceAMQP ">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_YFcM8zrYEfCz49RyTubNTA" name="base_Operation">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Operation"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YFcM9DrYEfCz49RyTubNTA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Mb1lMTrbEfCz49RyTubNTA" name="base_Operation" association="_MbzwADrbEfCz49RyTubNTA">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Operation"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Mb1lMjrbEfCz49RyTubNTA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_wQQyMDrYEfCz49RyTubNTA" name="ArrowHeadServiceInterfaceDDS ">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_wQRZQDrYEfCz49RyTubNTA" name="base_Operation">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Operation"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wQRZQTrYEfCz49RyTubNTA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_QnVVQDrbEfCz49RyTubNTA" name="base_Operation" association="_QnUuMDrbEfCz49RyTubNTA">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Operation"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QnVVQTrbEfCz49RyTubNTA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_1Jnb4DraEfCz49RyTubNTA" name="ArrowHeadServiceInterface">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_1Jnb4zraEfCz49RyTubNTA" name="base_Operation">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Operation"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1Jnb5DraEfCz49RyTubNTA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Ui4k0TrbEfCz49RyTubNTA" name="base_Operation" association="_Ui39wDrbEfCz49RyTubNTA">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Operation"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ui4k0jrbEfCz49RyTubNTA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_MbzwADrbEfCz49RyTubNTA" name="E_ArrowHeadServiceInterfaceAMQP _Operation99" memberEnd="_Mb1lMDrbEfCz49RyTubNTA _Mb1lMTrbEfCz49RyTubNTA">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_Mb1lMDrbEfCz49RyTubNTA" name="extension_ArrowHeadServiceInterfaceAMQP " type="_YFcM8DrYEfCz49RyTubNTA" aggregation="composite" association="_MbzwADrbEfCz49RyTubNTA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_QnUuMDrbEfCz49RyTubNTA" name="E_ArrowHeadServiceInterfaceDDS _Operation100" memberEnd="_QnUuMTrbEfCz49RyTubNTA _QnVVQDrbEfCz49RyTubNTA">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_QnUuMTrbEfCz49RyTubNTA" name="extension_ArrowHeadServiceInterfaceDDS " type="_wQQyMDrYEfCz49RyTubNTA" aggregation="composite" association="_QnUuMDrbEfCz49RyTubNTA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_Ui39wDrbEfCz49RyTubNTA" name="E_ArrowHeadServiceInterface_Operation101" memberEnd="_Ui4k0DrbEfCz49RyTubNTA _Ui4k0TrbEfCz49RyTubNTA">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_Ui4k0DrbEfCz49RyTubNTA" name="extension_ArrowHeadServiceInterface" type="_1Jnb4DraEfCz49RyTubNTA" aggregation="composite" association="_Ui39wDrbEfCz49RyTubNTA"/>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_HPL28LaoEe6zC_b0ESqWTw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HPgAALaoEe6zC_b0ESqWTw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_slqIsDrYEfCz49RyTubNTA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sltMADrYEfCz49RyTubNTA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
     </profileApplication>
   </uml:Profile>
   <Ecore:EPackage xmi:id="_JUhy0LaoEe6zC_b0ESqWTw" base_Package="_sX4gkDIREe6ldMRwfXEyUg" nsURI="http://www.eclipse.org/papyrus/arrowhead"/>

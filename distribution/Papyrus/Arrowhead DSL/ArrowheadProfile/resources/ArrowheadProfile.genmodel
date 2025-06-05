@@ -409,5 +409,17 @@
       <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
           propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//ProxyPort/base_Port"/>
     </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//ArrowHeadServiceInterfaceAMQP">
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//ArrowHeadServiceInterfaceAMQP/base_Operation"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//ArrowHeadServiceInterfaceDDS">
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//ArrowHeadServiceInterfaceDDS/base_Operation"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//ArrowHeadServiceInterface">
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//ArrowHeadServiceInterface/base_Operation"/>
+    </genClasses>
   </genPackages>
 </genmodel:GenModel>

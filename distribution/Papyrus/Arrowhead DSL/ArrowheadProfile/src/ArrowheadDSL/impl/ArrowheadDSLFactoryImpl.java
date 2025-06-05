@@ -83,6 +83,9 @@ public class ArrowheadDSLFactoryImpl extends EFactoryImpl implements ArrowheadDS
 			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_WEBSOCKET: return createArrowHeadServiceInterfaceWebsocket();
 			case ArrowheadDSLPackage.FULL_PORT: return createFullPort();
 			case ArrowheadDSLPackage.PROXY_PORT: return createProxyPort();
+			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_AMQP: return createArrowHeadServiceInterfaceAMQP();
+			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE_DDS: return createArrowHeadServiceInterfaceDDS();
+			case ArrowheadDSLPackage.ARROW_HEAD_SERVICE_INTERFACE: return createArrowHeadServiceInterface();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -514,6 +517,39 @@ public class ArrowheadDSLFactoryImpl extends EFactoryImpl implements ArrowheadDS
 	public ProxyPort createProxyPort() {
 		ProxyPortImpl proxyPort = new ProxyPortImpl();
 		return proxyPort;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ArrowHeadServiceInterfaceAMQP createArrowHeadServiceInterfaceAMQP() {
+		ArrowHeadServiceInterfaceAMQPImpl arrowHeadServiceInterfaceAMQP = new ArrowHeadServiceInterfaceAMQPImpl();
+		return arrowHeadServiceInterfaceAMQP;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ArrowHeadServiceInterfaceDDS createArrowHeadServiceInterfaceDDS() {
+		ArrowHeadServiceInterfaceDDSImpl arrowHeadServiceInterfaceDDS = new ArrowHeadServiceInterfaceDDSImpl();
+		return arrowHeadServiceInterfaceDDS;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ArrowHeadServiceInterface createArrowHeadServiceInterface() {
+		ArrowHeadServiceInterfaceImpl arrowHeadServiceInterface = new ArrowHeadServiceInterfaceImpl();
+		return arrowHeadServiceInterface;
 	}
 
 	/**
