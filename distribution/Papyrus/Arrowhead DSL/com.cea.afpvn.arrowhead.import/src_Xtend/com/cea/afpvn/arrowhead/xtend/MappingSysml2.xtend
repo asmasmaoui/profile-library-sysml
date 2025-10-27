@@ -47,6 +47,16 @@ class ConnectorPart {
       str
      }
      }
+     
+     class BindingConnectorPart {
+ def String createBindingConnector(String elem1,String elem2,String elem3)
+    {
+    	
+     var str= "binding " +elem1+ " bind "+elem2+" = "+elem3+ ";"
+      str
+     }
+     }
+     
 class Usecase {
  def String createUsecase(String elem1)
     {
