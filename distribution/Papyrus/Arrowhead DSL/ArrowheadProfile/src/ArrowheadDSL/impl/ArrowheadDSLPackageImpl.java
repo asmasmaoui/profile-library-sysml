@@ -1031,6 +1031,16 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
+	public EAttribute getDeviceDesignDescription_PhysicalLayerKind() {
+		return (EAttribute)deviceDesignDescriptionEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getIntercloudNetworkDesignDescription() {
 		return intercloudNetworkDesignDescriptionEClass;
 	}
@@ -1061,8 +1071,18 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
+	public EAttribute getIntercloudNetworkDesignDescription_NetworkPhysicalLayer() {
+		return (EAttribute)intercloudNetworkDesignDescriptionEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EReference getIntercloudNetworkDesignDescription_Devicedesigndescription() {
-		return (EReference)intercloudNetworkDesignDescriptionEClass.getEStructuralFeatures().get(2);
+		return (EReference)intercloudNetworkDesignDescriptionEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -1101,8 +1121,18 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
+	public EAttribute getIntracloudNetworkDesignDescription_NetworkPhysicalLayer() {
+		return (EAttribute)intracloudNetworkDesignDescriptionEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EReference getIntracloudNetworkDesignDescription_Devicedesigndescription() {
-		return (EReference)intracloudNetworkDesignDescriptionEClass.getEStructuralFeatures().get(2);
+		return (EReference)intracloudNetworkDesignDescriptionEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -2069,15 +2099,18 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 		createEAttribute(deviceDesignDescriptionEClass, DEVICE_DESIGN_DESCRIPTION__ARROWHEAD_CERTIFICATE);
 		createEReference(deviceDesignDescriptionEClass, DEVICE_DESIGN_DESCRIPTION__INTERCLOUDNETWORKDESIGNDESCRIPTION);
 		createEReference(deviceDesignDescriptionEClass, DEVICE_DESIGN_DESCRIPTION__INTRACLOUDNETWORKDESIGNDESCRIPTION);
+		createEAttribute(deviceDesignDescriptionEClass, DEVICE_DESIGN_DESCRIPTION__PHYSICAL_LAYER_KIND);
 
 		intercloudNetworkDesignDescriptionEClass = createEClass(INTERCLOUD_NETWORK_DESIGN_DESCRIPTION);
 		createEAttribute(intercloudNetworkDesignDescriptionEClass, INTERCLOUD_NETWORK_DESIGN_DESCRIPTION__INTER_NETWORK_ROUTER);
 		createEAttribute(intercloudNetworkDesignDescriptionEClass, INTERCLOUD_NETWORK_DESIGN_DESCRIPTION__INTER_NETWORK_ROUTER_CONFIG);
+		createEAttribute(intercloudNetworkDesignDescriptionEClass, INTERCLOUD_NETWORK_DESIGN_DESCRIPTION__NETWORK_PHYSICAL_LAYER);
 		createEReference(intercloudNetworkDesignDescriptionEClass, INTERCLOUD_NETWORK_DESIGN_DESCRIPTION__DEVICEDESIGNDESCRIPTION);
 
 		intracloudNetworkDesignDescriptionEClass = createEClass(INTRACLOUD_NETWORK_DESIGN_DESCRIPTION);
 		createEAttribute(intracloudNetworkDesignDescriptionEClass, INTRACLOUD_NETWORK_DESIGN_DESCRIPTION__INTRA_NETWORK_ROUTER);
 		createEAttribute(intracloudNetworkDesignDescriptionEClass, INTRACLOUD_NETWORK_DESIGN_DESCRIPTION__INTRA_NETWORK_ROUTER_CONFIG);
+		createEAttribute(intracloudNetworkDesignDescriptionEClass, INTRACLOUD_NETWORK_DESIGN_DESCRIPTION__NETWORK_PHYSICAL_LAYER);
 		createEReference(intracloudNetworkDesignDescriptionEClass, INTRACLOUD_NETWORK_DESIGN_DESCRIPTION__DEVICEDESIGNDESCRIPTION);
 
 		localcloudDesignDescriptionEClass = createEClass(LOCALCLOUD_DESIGN_DESCRIPTION);
@@ -2300,15 +2333,18 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 		initEAttribute(getDeviceDesignDescription_ArrowheadCertificate(), this.getArrowheadCertificateKind(), "ArrowheadCertificate", null, 1, 1, DeviceDesignDescription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getDeviceDesignDescription_Intercloudnetworkdesigndescription(), this.getIntercloudNetworkDesignDescription(), this.getIntercloudNetworkDesignDescription_Devicedesigndescription(), "intercloudnetworkdesigndescription", null, 0, -1, DeviceDesignDescription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getDeviceDesignDescription_Intracloudnetworkdesigndescription(), this.getIntracloudNetworkDesignDescription(), this.getIntracloudNetworkDesignDescription_Devicedesigndescription(), "intracloudnetworkdesigndescription", null, 0, -1, DeviceDesignDescription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDeviceDesignDescription_PhysicalLayerKind(), theTypesPackage.getString(), "PhysicalLayerKind", null, 1, 1, DeviceDesignDescription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(intercloudNetworkDesignDescriptionEClass, IntercloudNetworkDesignDescription.class, "IntercloudNetworkDesignDescription", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getIntercloudNetworkDesignDescription_InterNetworkRouter(), theTypesPackage.getUnlimitedNatural(), "InterNetworkRouter", null, 0, -1, IntercloudNetworkDesignDescription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getIntercloudNetworkDesignDescription_InterNetworkRouterConfig(), theTypesPackage.getUnlimitedNatural(), "InterNetworkRouterConfig", null, 0, -1, IntercloudNetworkDesignDescription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getIntercloudNetworkDesignDescription_NetworkPhysicalLayer(), theTypesPackage.getString(), "NetworkPhysicalLayer", null, 1, 1, IntercloudNetworkDesignDescription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getIntercloudNetworkDesignDescription_Devicedesigndescription(), this.getDeviceDesignDescription(), this.getDeviceDesignDescription_Intercloudnetworkdesigndescription(), "devicedesigndescription", null, 0, -1, IntercloudNetworkDesignDescription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(intracloudNetworkDesignDescriptionEClass, IntracloudNetworkDesignDescription.class, "IntracloudNetworkDesignDescription", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getIntracloudNetworkDesignDescription_IntraNetworkRouter(), theTypesPackage.getUnlimitedNatural(), "IntraNetworkRouter", null, 1, -1, IntracloudNetworkDesignDescription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getIntracloudNetworkDesignDescription_IntraNetworkRouterConfig(), theTypesPackage.getUnlimitedNatural(), "IntraNetworkRouterConfig", null, 1, -1, IntracloudNetworkDesignDescription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getIntracloudNetworkDesignDescription_NetworkPhysicalLayer(), theTypesPackage.getString(), "NetworkPhysicalLayer", null, 1, 1, IntracloudNetworkDesignDescription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getIntracloudNetworkDesignDescription_Devicedesigndescription(), this.getDeviceDesignDescription(), this.getDeviceDesignDescription_Intracloudnetworkdesigndescription(), "devicedesigndescription", null, 0, -1, IntracloudNetworkDesignDescription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(localcloudDesignDescriptionEClass, LocalcloudDesignDescription.class, "LocalcloudDesignDescription", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

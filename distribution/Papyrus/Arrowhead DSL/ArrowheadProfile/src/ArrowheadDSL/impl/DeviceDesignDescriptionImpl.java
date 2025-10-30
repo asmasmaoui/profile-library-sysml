@@ -41,6 +41,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link ArrowheadDSL.impl.DeviceDesignDescriptionImpl#getArrowheadCertificate <em>Arrowhead Certificate</em>}</li>
  *   <li>{@link ArrowheadDSL.impl.DeviceDesignDescriptionImpl#getIntercloudnetworkdesigndescription <em>Intercloudnetworkdesigndescription</em>}</li>
  *   <li>{@link ArrowheadDSL.impl.DeviceDesignDescriptionImpl#getIntracloudnetworkdesigndescription <em>Intracloudnetworkdesigndescription</em>}</li>
+ *   <li>{@link ArrowheadDSL.impl.DeviceDesignDescriptionImpl#getPhysicalLayerKind <em>Physical Layer Kind</em>}</li>
  * </ul>
  *
  * @generated
@@ -135,6 +136,26 @@ public class DeviceDesignDescriptionImpl extends DeviceDesignImpl implements Dev
 	 * @ordered
 	 */
 	protected EList<IntracloudNetworkDesignDescription> intracloudnetworkdesigndescription;
+
+	/**
+	 * The default value of the '{@link #getPhysicalLayerKind() <em>Physical Layer Kind</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPhysicalLayerKind()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String PHYSICAL_LAYER_KIND_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getPhysicalLayerKind() <em>Physical Layer Kind</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPhysicalLayerKind()
+	 * @generated
+	 * @ordered
+	 */
+	protected String physicalLayerKind = PHYSICAL_LAYER_KIND_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -271,6 +292,29 @@ public class DeviceDesignDescriptionImpl extends DeviceDesignImpl implements Dev
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
+	public String getPhysicalLayerKind() {
+		return physicalLayerKind;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPhysicalLayerKind(String newPhysicalLayerKind) {
+		String oldPhysicalLayerKind = physicalLayerKind;
+		physicalLayerKind = newPhysicalLayerKind;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__PHYSICAL_LAYER_KIND, oldPhysicalLayerKind, physicalLayerKind));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
@@ -321,6 +365,8 @@ public class DeviceDesignDescriptionImpl extends DeviceDesignImpl implements Dev
 				return getIntercloudnetworkdesigndescription();
 			case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__INTRACLOUDNETWORKDESIGNDESCRIPTION:
 				return getIntracloudnetworkdesigndescription();
+			case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__PHYSICAL_LAYER_KIND:
+				return getPhysicalLayerKind();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -360,6 +406,9 @@ public class DeviceDesignDescriptionImpl extends DeviceDesignImpl implements Dev
 				getIntracloudnetworkdesigndescription().clear();
 				getIntracloudnetworkdesigndescription().addAll((Collection<? extends IntracloudNetworkDesignDescription>)newValue);
 				return;
+			case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__PHYSICAL_LAYER_KIND:
+				setPhysicalLayerKind((String)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -393,6 +442,9 @@ public class DeviceDesignDescriptionImpl extends DeviceDesignImpl implements Dev
 			case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__INTRACLOUDNETWORKDESIGNDESCRIPTION:
 				getIntracloudnetworkdesigndescription().clear();
 				return;
+			case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__PHYSICAL_LAYER_KIND:
+				setPhysicalLayerKind(PHYSICAL_LAYER_KIND_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -419,6 +471,8 @@ public class DeviceDesignDescriptionImpl extends DeviceDesignImpl implements Dev
 				return intercloudnetworkdesigndescription != null && !intercloudnetworkdesigndescription.isEmpty();
 			case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__INTRACLOUDNETWORKDESIGNDESCRIPTION:
 				return intracloudnetworkdesigndescription != null && !intracloudnetworkdesigndescription.isEmpty();
+			case ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__PHYSICAL_LAYER_KIND:
+				return PHYSICAL_LAYER_KIND_EDEFAULT == null ? physicalLayerKind != null : !PHYSICAL_LAYER_KIND_EDEFAULT.equals(physicalLayerKind);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -443,6 +497,8 @@ public class DeviceDesignDescriptionImpl extends DeviceDesignImpl implements Dev
 		result.append(operatingSystem);
 		result.append(", ArrowheadCertificate: ");
 		result.append(arrowheadCertificate);
+		result.append(", PhysicalLayerKind: ");
+		result.append(physicalLayerKind);
 		result.append(')');
 		return result.toString();
 	}

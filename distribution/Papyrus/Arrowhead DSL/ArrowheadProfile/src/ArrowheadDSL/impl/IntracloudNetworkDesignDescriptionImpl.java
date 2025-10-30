@@ -8,6 +8,7 @@ import ArrowheadDSL.IntracloudNetworkDesignDescription;
 
 import java.util.Collection;
 
+import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
 
 import org.eclipse.emf.common.util.EList;
@@ -15,6 +16,7 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.util.EDataTypeEList;
 import org.eclipse.emf.ecore.util.EObjectWithInverseResolvingEList;
 import org.eclipse.emf.ecore.util.InternalEList;
@@ -29,6 +31,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <ul>
  *   <li>{@link ArrowheadDSL.impl.IntracloudNetworkDesignDescriptionImpl#getIntraNetworkRouter <em>Intra Network Router</em>}</li>
  *   <li>{@link ArrowheadDSL.impl.IntracloudNetworkDesignDescriptionImpl#getIntraNetworkRouterConfig <em>Intra Network Router Config</em>}</li>
+ *   <li>{@link ArrowheadDSL.impl.IntracloudNetworkDesignDescriptionImpl#getNetworkPhysicalLayer <em>Network Physical Layer</em>}</li>
  *   <li>{@link ArrowheadDSL.impl.IntracloudNetworkDesignDescriptionImpl#getDevicedesigndescription <em>Devicedesigndescription</em>}</li>
  * </ul>
  *
@@ -54,6 +57,26 @@ public class IntracloudNetworkDesignDescriptionImpl extends IntracloudNetworkDes
 	 * @ordered
 	 */
 	protected EList<Integer> intraNetworkRouterConfig;
+
+	/**
+	 * The default value of the '{@link #getNetworkPhysicalLayer() <em>Network Physical Layer</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getNetworkPhysicalLayer()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String NETWORK_PHYSICAL_LAYER_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getNetworkPhysicalLayer() <em>Network Physical Layer</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getNetworkPhysicalLayer()
+	 * @generated
+	 * @ordered
+	 */
+	protected String networkPhysicalLayer = NETWORK_PHYSICAL_LAYER_EDEFAULT;
 
 	/**
 	 * The cached value of the '{@link #getDevicedesigndescription() <em>Devicedesigndescription</em>}' reference list.
@@ -116,6 +139,29 @@ public class IntracloudNetworkDesignDescriptionImpl extends IntracloudNetworkDes
 	 * @generated
 	 */
 	@Override
+	public String getNetworkPhysicalLayer() {
+		return networkPhysicalLayer;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setNetworkPhysicalLayer(String newNetworkPhysicalLayer) {
+		String oldNetworkPhysicalLayer = networkPhysicalLayer;
+		networkPhysicalLayer = newNetworkPhysicalLayer;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ArrowheadDSLPackage.INTRACLOUD_NETWORK_DESIGN_DESCRIPTION__NETWORK_PHYSICAL_LAYER, oldNetworkPhysicalLayer, networkPhysicalLayer));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EList<DeviceDesignDescription> getDevicedesigndescription() {
 		if (devicedesigndescription == null) {
 			devicedesigndescription = new EObjectWithInverseResolvingEList.ManyInverse<DeviceDesignDescription>(DeviceDesignDescription.class, this, ArrowheadDSLPackage.INTRACLOUD_NETWORK_DESIGN_DESCRIPTION__DEVICEDESIGNDESCRIPTION, ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__INTRACLOUDNETWORKDESIGNDESCRIPTION);
@@ -164,6 +210,8 @@ public class IntracloudNetworkDesignDescriptionImpl extends IntracloudNetworkDes
 				return getIntraNetworkRouter();
 			case ArrowheadDSLPackage.INTRACLOUD_NETWORK_DESIGN_DESCRIPTION__INTRA_NETWORK_ROUTER_CONFIG:
 				return getIntraNetworkRouterConfig();
+			case ArrowheadDSLPackage.INTRACLOUD_NETWORK_DESIGN_DESCRIPTION__NETWORK_PHYSICAL_LAYER:
+				return getNetworkPhysicalLayer();
 			case ArrowheadDSLPackage.INTRACLOUD_NETWORK_DESIGN_DESCRIPTION__DEVICEDESIGNDESCRIPTION:
 				return getDevicedesigndescription();
 		}
@@ -187,6 +235,9 @@ public class IntracloudNetworkDesignDescriptionImpl extends IntracloudNetworkDes
 				getIntraNetworkRouterConfig().clear();
 				getIntraNetworkRouterConfig().addAll((Collection<? extends Integer>)newValue);
 				return;
+			case ArrowheadDSLPackage.INTRACLOUD_NETWORK_DESIGN_DESCRIPTION__NETWORK_PHYSICAL_LAYER:
+				setNetworkPhysicalLayer((String)newValue);
+				return;
 			case ArrowheadDSLPackage.INTRACLOUD_NETWORK_DESIGN_DESCRIPTION__DEVICEDESIGNDESCRIPTION:
 				getDevicedesigndescription().clear();
 				getDevicedesigndescription().addAll((Collection<? extends DeviceDesignDescription>)newValue);
@@ -209,6 +260,9 @@ public class IntracloudNetworkDesignDescriptionImpl extends IntracloudNetworkDes
 			case ArrowheadDSLPackage.INTRACLOUD_NETWORK_DESIGN_DESCRIPTION__INTRA_NETWORK_ROUTER_CONFIG:
 				getIntraNetworkRouterConfig().clear();
 				return;
+			case ArrowheadDSLPackage.INTRACLOUD_NETWORK_DESIGN_DESCRIPTION__NETWORK_PHYSICAL_LAYER:
+				setNetworkPhysicalLayer(NETWORK_PHYSICAL_LAYER_EDEFAULT);
+				return;
 			case ArrowheadDSLPackage.INTRACLOUD_NETWORK_DESIGN_DESCRIPTION__DEVICEDESIGNDESCRIPTION:
 				getDevicedesigndescription().clear();
 				return;
@@ -228,6 +282,8 @@ public class IntracloudNetworkDesignDescriptionImpl extends IntracloudNetworkDes
 				return intraNetworkRouter != null && !intraNetworkRouter.isEmpty();
 			case ArrowheadDSLPackage.INTRACLOUD_NETWORK_DESIGN_DESCRIPTION__INTRA_NETWORK_ROUTER_CONFIG:
 				return intraNetworkRouterConfig != null && !intraNetworkRouterConfig.isEmpty();
+			case ArrowheadDSLPackage.INTRACLOUD_NETWORK_DESIGN_DESCRIPTION__NETWORK_PHYSICAL_LAYER:
+				return NETWORK_PHYSICAL_LAYER_EDEFAULT == null ? networkPhysicalLayer != null : !NETWORK_PHYSICAL_LAYER_EDEFAULT.equals(networkPhysicalLayer);
 			case ArrowheadDSLPackage.INTRACLOUD_NETWORK_DESIGN_DESCRIPTION__DEVICEDESIGNDESCRIPTION:
 				return devicedesigndescription != null && !devicedesigndescription.isEmpty();
 		}
@@ -248,6 +304,8 @@ public class IntracloudNetworkDesignDescriptionImpl extends IntracloudNetworkDes
 		result.append(intraNetworkRouter);
 		result.append(", IntraNetworkRouterConfig: ");
 		result.append(intraNetworkRouterConfig);
+		result.append(", NetworkPhysicalLayer: ");
+		result.append(networkPhysicalLayer);
 		result.append(')');
 		return result.toString();
 	}

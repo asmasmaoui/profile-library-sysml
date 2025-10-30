@@ -238,6 +238,9 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1-oZ4LcPEe6kWpre1ze5sg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1_WyoLcPEe6kWpre1ze5sg" value="*"/>
       </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_cFBTkLV8EfCt6dVNMEBp5g" name="PhysicalLayerKind">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_Plc20DRdEe6hdPlp_7DYew" name="IntracloudNetworkDesignDescription">
       <generalization xmi:type="uml:Generalization" xmi:id="_os41UDRdEe6hdPlp_7DYew" general="_q6FuwDODEe6hdPlp_7DYew"/>
@@ -252,6 +255,9 @@
       <ownedAttribute xmi:type="uml:Property" xmi:id="_i4z_kLcPEe6kWpre1ze5sg" name="devicedesigndescription" type="_ErU_gDRFEe6hdPlp_7DYew" association="_i4JRMLcPEe6kWpre1ze5sg">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2e9fwLcPEe6kWpre1ze5sg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2fSP4LcPEe6kWpre1ze5sg" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_4LlLELV7EfCt6dVNMEBp5g" name="NetworkPhysicalLayer">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_4aMWgDRvEe6hdPlp_7DYew" name="IntercloudNetworkDesignDescription">
@@ -269,6 +275,9 @@
       <ownedAttribute xmi:type="uml:Property" xmi:id="_txTMELcPEe6kWpre1ze5sg" name="devicedesigndescription" type="_ErU_gDRFEe6hdPlp_7DYew" association="_txR98LcPEe6kWpre1ze5sg">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5C2Y0LcPEe6kWpre1ze5sg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5DQogLcPEe6kWpre1ze5sg" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_90CBULV7EfCt6dVNMEBp5g" name="NetworkPhysicalLayer">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_Z4_oQDXTEe6Jk_FX_xio9g" name="LocalcloudDesignDescription">

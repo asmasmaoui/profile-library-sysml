@@ -20,6 +20,7 @@ import org.eclipse.emf.common.util.EList;
  *   <li>{@link ArrowheadDSL.DeviceDesignDescription#getArrowheadCertificate <em>Arrowhead Certificate</em>}</li>
  *   <li>{@link ArrowheadDSL.DeviceDesignDescription#getIntercloudnetworkdesigndescription <em>Intercloudnetworkdesigndescription</em>}</li>
  *   <li>{@link ArrowheadDSL.DeviceDesignDescription#getIntracloudnetworkdesigndescription <em>Intracloudnetworkdesigndescription</em>}</li>
+ *   <li>{@link ArrowheadDSL.DeviceDesignDescription#getPhysicalLayerKind <em>Physical Layer Kind</em>}</li>
  * </ul>
  *
  * @see ArrowheadDSL.ArrowheadDSLPackage#getDeviceDesignDescription()
@@ -169,5 +170,31 @@ public interface DeviceDesignDescription extends DeviceDesign {
 	 * @generated
 	 */
 	EList<IntracloudNetworkDesignDescription> getIntracloudnetworkdesigndescription();
+
+	/**
+	 * Returns the value of the '<em><b>Physical Layer Kind</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Physical Layer Kind</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Physical Layer Kind</em>' attribute.
+	 * @see #setPhysicalLayerKind(String)
+	 * @see ArrowheadDSL.ArrowheadDSLPackage#getDeviceDesignDescription_PhysicalLayerKind()
+	 * @model dataType="org.eclipse.uml2.types.String" required="true" ordered="false"
+	 * @generated
+	 */
+	String getPhysicalLayerKind();
+
+	/**
+	 * Sets the value of the '{@link ArrowheadDSL.DeviceDesignDescription#getPhysicalLayerKind <em>Physical Layer Kind</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Physical Layer Kind</em>' attribute.
+	 * @see #getPhysicalLayerKind()
+	 * @generated
+	 */
+	void setPhysicalLayerKind(String value);
 
 } // DeviceDesignDescription

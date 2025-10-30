@@ -144,6 +144,8 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="intracloudnetworkdesigndescription"
         ordered="false" upperBound="-1" eType="#//IntracloudNetworkDesignDescription"
         eOpposite="#//IntracloudNetworkDesignDescription/devicedesigndescription"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="PhysicalLayerKind" ordered="false"
+        lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="OSKind">
     <eLiterals name="Windows"/>
@@ -166,6 +168,8 @@
         unique="false" upperBound="-1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//UnlimitedNatural"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="InterNetworkRouterConfig"
         ordered="false" unique="false" upperBound="-1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//UnlimitedNatural"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="NetworkPhysicalLayer" ordered="false"
+        lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="devicedesigndescription"
         ordered="false" upperBound="-1" eType="#//DeviceDesignDescription" eOpposite="#//DeviceDesignDescription/intercloudnetworkdesigndescription"/>
   </eClassifiers>
@@ -175,6 +179,8 @@
         unique="false" lowerBound="1" upperBound="-1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//UnlimitedNatural"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="IntraNetworkRouterConfig"
         ordered="false" unique="false" lowerBound="1" upperBound="-1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//UnlimitedNatural"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="NetworkPhysicalLayer" ordered="false"
+        lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="devicedesigndescription"
         ordered="false" upperBound="-1" eType="#//DeviceDesignDescription" eOpposite="#//DeviceDesignDescription/intracloudnetworkdesigndescription"/>
   </eClassifiers>

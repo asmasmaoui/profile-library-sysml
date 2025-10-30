@@ -315,16 +315,19 @@
           propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//DeviceDesignDescription/intercloudnetworkdesigndescription"/>
       <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
           propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//DeviceDesignDescription/intracloudnetworkdesigndescription"/>
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//DeviceDesignDescription/PhysicalLayerKind"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//IntercloudNetworkDesignDescription">
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//IntercloudNetworkDesignDescription/InterNetworkRouter"/>
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//IntercloudNetworkDesignDescription/InterNetworkRouterConfig"/>
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//IntercloudNetworkDesignDescription/NetworkPhysicalLayer"/>
       <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
           propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//IntercloudNetworkDesignDescription/devicedesigndescription"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="ArrowheadDSL.ecore#//IntracloudNetworkDesignDescription">
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//IntracloudNetworkDesignDescription/IntraNetworkRouter"/>
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//IntracloudNetworkDesignDescription/IntraNetworkRouterConfig"/>
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute ArrowheadDSL.ecore#//IntracloudNetworkDesignDescription/NetworkPhysicalLayer"/>
       <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
           propertySortChoices="true" ecoreFeature="ecore:EReference ArrowheadDSL.ecore#//IntracloudNetworkDesignDescription/devicedesigndescription"/>
     </genClasses>

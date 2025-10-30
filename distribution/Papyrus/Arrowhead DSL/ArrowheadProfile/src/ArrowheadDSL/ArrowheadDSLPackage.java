@@ -1182,13 +1182,22 @@ public interface ArrowheadDSLPackage extends EPackage {
 	int DEVICE_DESIGN_DESCRIPTION__INTRACLOUDNETWORKDESIGNDESCRIPTION = DEVICE_DESIGN_FEATURE_COUNT + 6;
 
 	/**
+	 * The feature id for the '<em><b>Physical Layer Kind</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DEVICE_DESIGN_DESCRIPTION__PHYSICAL_LAYER_KIND = DEVICE_DESIGN_FEATURE_COUNT + 7;
+
+	/**
 	 * The number of structural features of the '<em>Device Design Description</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DEVICE_DESIGN_DESCRIPTION_FEATURE_COUNT = DEVICE_DESIGN_FEATURE_COUNT + 7;
+	int DEVICE_DESIGN_DESCRIPTION_FEATURE_COUNT = DEVICE_DESIGN_FEATURE_COUNT + 8;
 
 	/**
 	 * The operation id for the '<em>Get References</em>' operation.
@@ -1300,13 +1309,22 @@ public interface ArrowheadDSLPackage extends EPackage {
 	int INTERCLOUD_NETWORK_DESIGN_DESCRIPTION__INTER_NETWORK_ROUTER_CONFIG = INTERCLOUD_NETWORK_DESIGN_FEATURE_COUNT + 1;
 
 	/**
+	 * The feature id for the '<em><b>Network Physical Layer</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERCLOUD_NETWORK_DESIGN_DESCRIPTION__NETWORK_PHYSICAL_LAYER = INTERCLOUD_NETWORK_DESIGN_FEATURE_COUNT + 2;
+
+	/**
 	 * The feature id for the '<em><b>Devicedesigndescription</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERCLOUD_NETWORK_DESIGN_DESCRIPTION__DEVICEDESIGNDESCRIPTION = INTERCLOUD_NETWORK_DESIGN_FEATURE_COUNT + 2;
+	int INTERCLOUD_NETWORK_DESIGN_DESCRIPTION__DEVICEDESIGNDESCRIPTION = INTERCLOUD_NETWORK_DESIGN_FEATURE_COUNT + 3;
 
 	/**
 	 * The number of structural features of the '<em>Intercloud Network Design Description</em>' class.
@@ -1315,7 +1333,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERCLOUD_NETWORK_DESIGN_DESCRIPTION_FEATURE_COUNT = INTERCLOUD_NETWORK_DESIGN_FEATURE_COUNT + 3;
+	int INTERCLOUD_NETWORK_DESIGN_DESCRIPTION_FEATURE_COUNT = INTERCLOUD_NETWORK_DESIGN_FEATURE_COUNT + 4;
 
 	/**
 	 * The operation id for the '<em>Get References</em>' operation.
@@ -1427,13 +1445,22 @@ public interface ArrowheadDSLPackage extends EPackage {
 	int INTRACLOUD_NETWORK_DESIGN_DESCRIPTION__INTRA_NETWORK_ROUTER_CONFIG = INTRACLOUD_NETWORK_DESIGN_FEATURE_COUNT + 1;
 
 	/**
+	 * The feature id for the '<em><b>Network Physical Layer</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTRACLOUD_NETWORK_DESIGN_DESCRIPTION__NETWORK_PHYSICAL_LAYER = INTRACLOUD_NETWORK_DESIGN_FEATURE_COUNT + 2;
+
+	/**
 	 * The feature id for the '<em><b>Devicedesigndescription</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTRACLOUD_NETWORK_DESIGN_DESCRIPTION__DEVICEDESIGNDESCRIPTION = INTRACLOUD_NETWORK_DESIGN_FEATURE_COUNT + 2;
+	int INTRACLOUD_NETWORK_DESIGN_DESCRIPTION__DEVICEDESIGNDESCRIPTION = INTRACLOUD_NETWORK_DESIGN_FEATURE_COUNT + 3;
 
 	/**
 	 * The number of structural features of the '<em>Intracloud Network Design Description</em>' class.
@@ -1442,7 +1469,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTRACLOUD_NETWORK_DESIGN_DESCRIPTION_FEATURE_COUNT = INTRACLOUD_NETWORK_DESIGN_FEATURE_COUNT + 3;
+	int INTRACLOUD_NETWORK_DESIGN_DESCRIPTION_FEATURE_COUNT = INTRACLOUD_NETWORK_DESIGN_FEATURE_COUNT + 4;
 
 	/**
 	 * The operation id for the '<em>Get References</em>' operation.
@@ -3959,6 +3986,17 @@ public interface ArrowheadDSLPackage extends EPackage {
 	EReference getDeviceDesignDescription_Intracloudnetworkdesigndescription();
 
 	/**
+	 * Returns the meta object for the attribute '{@link ArrowheadDSL.DeviceDesignDescription#getPhysicalLayerKind <em>Physical Layer Kind</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Physical Layer Kind</em>'.
+	 * @see ArrowheadDSL.DeviceDesignDescription#getPhysicalLayerKind()
+	 * @see #getDeviceDesignDescription()
+	 * @generated
+	 */
+	EAttribute getDeviceDesignDescription_PhysicalLayerKind();
+
+	/**
 	 * Returns the meta object for class '{@link ArrowheadDSL.IntercloudNetworkDesignDescription <em>Intercloud Network Design Description</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3989,6 +4027,17 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getIntercloudNetworkDesignDescription_InterNetworkRouterConfig();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ArrowheadDSL.IntercloudNetworkDesignDescription#getNetworkPhysicalLayer <em>Network Physical Layer</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Network Physical Layer</em>'.
+	 * @see ArrowheadDSL.IntercloudNetworkDesignDescription#getNetworkPhysicalLayer()
+	 * @see #getIntercloudNetworkDesignDescription()
+	 * @generated
+	 */
+	EAttribute getIntercloudNetworkDesignDescription_NetworkPhysicalLayer();
 
 	/**
 	 * Returns the meta object for the reference list '{@link ArrowheadDSL.IntercloudNetworkDesignDescription#getDevicedesigndescription <em>Devicedesigndescription</em>}'.
@@ -4032,6 +4081,17 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getIntracloudNetworkDesignDescription_IntraNetworkRouterConfig();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ArrowheadDSL.IntracloudNetworkDesignDescription#getNetworkPhysicalLayer <em>Network Physical Layer</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Network Physical Layer</em>'.
+	 * @see ArrowheadDSL.IntracloudNetworkDesignDescription#getNetworkPhysicalLayer()
+	 * @see #getIntracloudNetworkDesignDescription()
+	 * @generated
+	 */
+	EAttribute getIntracloudNetworkDesignDescription_NetworkPhysicalLayer();
 
 	/**
 	 * Returns the meta object for the reference list '{@link ArrowheadDSL.IntracloudNetworkDesignDescription#getDevicedesigndescription <em>Devicedesigndescription</em>}'.
@@ -5378,6 +5438,14 @@ public interface ArrowheadDSLPackage extends EPackage {
 		EReference DEVICE_DESIGN_DESCRIPTION__INTRACLOUDNETWORKDESIGNDESCRIPTION = eINSTANCE.getDeviceDesignDescription_Intracloudnetworkdesigndescription();
 
 		/**
+		 * The meta object literal for the '<em><b>Physical Layer Kind</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DEVICE_DESIGN_DESCRIPTION__PHYSICAL_LAYER_KIND = eINSTANCE.getDeviceDesignDescription_PhysicalLayerKind();
+
+		/**
 		 * The meta object literal for the '{@link ArrowheadDSL.impl.IntercloudNetworkDesignDescriptionImpl <em>Intercloud Network Design Description</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -5402,6 +5470,14 @@ public interface ArrowheadDSLPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute INTERCLOUD_NETWORK_DESIGN_DESCRIPTION__INTER_NETWORK_ROUTER_CONFIG = eINSTANCE.getIntercloudNetworkDesignDescription_InterNetworkRouterConfig();
+
+		/**
+		 * The meta object literal for the '<em><b>Network Physical Layer</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INTERCLOUD_NETWORK_DESIGN_DESCRIPTION__NETWORK_PHYSICAL_LAYER = eINSTANCE.getIntercloudNetworkDesignDescription_NetworkPhysicalLayer();
 
 		/**
 		 * The meta object literal for the '<em><b>Devicedesigndescription</b></em>' reference list feature.
@@ -5436,6 +5512,14 @@ public interface ArrowheadDSLPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute INTRACLOUD_NETWORK_DESIGN_DESCRIPTION__INTRA_NETWORK_ROUTER_CONFIG = eINSTANCE.getIntracloudNetworkDesignDescription_IntraNetworkRouterConfig();
+
+		/**
+		 * The meta object literal for the '<em><b>Network Physical Layer</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INTRACLOUD_NETWORK_DESIGN_DESCRIPTION__NETWORK_PHYSICAL_LAYER = eINSTANCE.getIntracloudNetworkDesignDescription_NetworkPhysicalLayer();
 
 		/**
 		 * The meta object literal for the '<em><b>Devicedesigndescription</b></em>' reference list feature.

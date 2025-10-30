@@ -8,6 +8,7 @@ import ArrowheadDSL.IntercloudNetworkDesignDescription;
 
 import java.util.Collection;
 
+import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
 
 import org.eclipse.emf.common.util.EList;
@@ -15,6 +16,7 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.util.EDataTypeEList;
 import org.eclipse.emf.ecore.util.EObjectWithInverseResolvingEList;
 import org.eclipse.emf.ecore.util.InternalEList;
@@ -29,6 +31,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <ul>
  *   <li>{@link ArrowheadDSL.impl.IntercloudNetworkDesignDescriptionImpl#getInterNetworkRouter <em>Inter Network Router</em>}</li>
  *   <li>{@link ArrowheadDSL.impl.IntercloudNetworkDesignDescriptionImpl#getInterNetworkRouterConfig <em>Inter Network Router Config</em>}</li>
+ *   <li>{@link ArrowheadDSL.impl.IntercloudNetworkDesignDescriptionImpl#getNetworkPhysicalLayer <em>Network Physical Layer</em>}</li>
  *   <li>{@link ArrowheadDSL.impl.IntercloudNetworkDesignDescriptionImpl#getDevicedesigndescription <em>Devicedesigndescription</em>}</li>
  * </ul>
  *
@@ -54,6 +57,26 @@ public class IntercloudNetworkDesignDescriptionImpl extends IntercloudNetworkDes
 	 * @ordered
 	 */
 	protected EList<Integer> interNetworkRouterConfig;
+
+	/**
+	 * The default value of the '{@link #getNetworkPhysicalLayer() <em>Network Physical Layer</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getNetworkPhysicalLayer()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String NETWORK_PHYSICAL_LAYER_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getNetworkPhysicalLayer() <em>Network Physical Layer</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getNetworkPhysicalLayer()
+	 * @generated
+	 * @ordered
+	 */
+	protected String networkPhysicalLayer = NETWORK_PHYSICAL_LAYER_EDEFAULT;
 
 	/**
 	 * The cached value of the '{@link #getDevicedesigndescription() <em>Devicedesigndescription</em>}' reference list.
@@ -116,6 +139,29 @@ public class IntercloudNetworkDesignDescriptionImpl extends IntercloudNetworkDes
 	 * @generated
 	 */
 	@Override
+	public String getNetworkPhysicalLayer() {
+		return networkPhysicalLayer;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setNetworkPhysicalLayer(String newNetworkPhysicalLayer) {
+		String oldNetworkPhysicalLayer = networkPhysicalLayer;
+		networkPhysicalLayer = newNetworkPhysicalLayer;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ArrowheadDSLPackage.INTERCLOUD_NETWORK_DESIGN_DESCRIPTION__NETWORK_PHYSICAL_LAYER, oldNetworkPhysicalLayer, networkPhysicalLayer));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EList<DeviceDesignDescription> getDevicedesigndescription() {
 		if (devicedesigndescription == null) {
 			devicedesigndescription = new EObjectWithInverseResolvingEList.ManyInverse<DeviceDesignDescription>(DeviceDesignDescription.class, this, ArrowheadDSLPackage.INTERCLOUD_NETWORK_DESIGN_DESCRIPTION__DEVICEDESIGNDESCRIPTION, ArrowheadDSLPackage.DEVICE_DESIGN_DESCRIPTION__INTERCLOUDNETWORKDESIGNDESCRIPTION);
@@ -164,6 +210,8 @@ public class IntercloudNetworkDesignDescriptionImpl extends IntercloudNetworkDes
 				return getInterNetworkRouter();
 			case ArrowheadDSLPackage.INTERCLOUD_NETWORK_DESIGN_DESCRIPTION__INTER_NETWORK_ROUTER_CONFIG:
 				return getInterNetworkRouterConfig();
+			case ArrowheadDSLPackage.INTERCLOUD_NETWORK_DESIGN_DESCRIPTION__NETWORK_PHYSICAL_LAYER:
+				return getNetworkPhysicalLayer();
 			case ArrowheadDSLPackage.INTERCLOUD_NETWORK_DESIGN_DESCRIPTION__DEVICEDESIGNDESCRIPTION:
 				return getDevicedesigndescription();
 		}
@@ -187,6 +235,9 @@ public class IntercloudNetworkDesignDescriptionImpl extends IntercloudNetworkDes
 				getInterNetworkRouterConfig().clear();
 				getInterNetworkRouterConfig().addAll((Collection<? extends Integer>)newValue);
 				return;
+			case ArrowheadDSLPackage.INTERCLOUD_NETWORK_DESIGN_DESCRIPTION__NETWORK_PHYSICAL_LAYER:
+				setNetworkPhysicalLayer((String)newValue);
+				return;
 			case ArrowheadDSLPackage.INTERCLOUD_NETWORK_DESIGN_DESCRIPTION__DEVICEDESIGNDESCRIPTION:
 				getDevicedesigndescription().clear();
 				getDevicedesigndescription().addAll((Collection<? extends DeviceDesignDescription>)newValue);
@@ -209,6 +260,9 @@ public class IntercloudNetworkDesignDescriptionImpl extends IntercloudNetworkDes
 			case ArrowheadDSLPackage.INTERCLOUD_NETWORK_DESIGN_DESCRIPTION__INTER_NETWORK_ROUTER_CONFIG:
 				getInterNetworkRouterConfig().clear();
 				return;
+			case ArrowheadDSLPackage.INTERCLOUD_NETWORK_DESIGN_DESCRIPTION__NETWORK_PHYSICAL_LAYER:
+				setNetworkPhysicalLayer(NETWORK_PHYSICAL_LAYER_EDEFAULT);
+				return;
 			case ArrowheadDSLPackage.INTERCLOUD_NETWORK_DESIGN_DESCRIPTION__DEVICEDESIGNDESCRIPTION:
 				getDevicedesigndescription().clear();
 				return;
@@ -228,6 +282,8 @@ public class IntercloudNetworkDesignDescriptionImpl extends IntercloudNetworkDes
 				return interNetworkRouter != null && !interNetworkRouter.isEmpty();
 			case ArrowheadDSLPackage.INTERCLOUD_NETWORK_DESIGN_DESCRIPTION__INTER_NETWORK_ROUTER_CONFIG:
 				return interNetworkRouterConfig != null && !interNetworkRouterConfig.isEmpty();
+			case ArrowheadDSLPackage.INTERCLOUD_NETWORK_DESIGN_DESCRIPTION__NETWORK_PHYSICAL_LAYER:
+				return NETWORK_PHYSICAL_LAYER_EDEFAULT == null ? networkPhysicalLayer != null : !NETWORK_PHYSICAL_LAYER_EDEFAULT.equals(networkPhysicalLayer);
 			case ArrowheadDSLPackage.INTERCLOUD_NETWORK_DESIGN_DESCRIPTION__DEVICEDESIGNDESCRIPTION:
 				return devicedesigndescription != null && !devicedesigndescription.isEmpty();
 		}
@@ -248,6 +304,8 @@ public class IntercloudNetworkDesignDescriptionImpl extends IntercloudNetworkDes
 		result.append(interNetworkRouter);
 		result.append(", InterNetworkRouterConfig: ");
 		result.append(interNetworkRouterConfig);
+		result.append(", NetworkPhysicalLayer: ");
+		result.append(networkPhysicalLayer);
 		result.append(')');
 		return result.toString();
 	}

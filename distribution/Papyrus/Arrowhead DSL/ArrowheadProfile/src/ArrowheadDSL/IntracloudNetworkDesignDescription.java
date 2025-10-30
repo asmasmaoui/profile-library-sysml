@@ -15,6 +15,7 @@ import org.eclipse.emf.common.util.EList;
  * <ul>
  *   <li>{@link ArrowheadDSL.IntracloudNetworkDesignDescription#getIntraNetworkRouter <em>Intra Network Router</em>}</li>
  *   <li>{@link ArrowheadDSL.IntracloudNetworkDesignDescription#getIntraNetworkRouterConfig <em>Intra Network Router Config</em>}</li>
+ *   <li>{@link ArrowheadDSL.IntracloudNetworkDesignDescription#getNetworkPhysicalLayer <em>Network Physical Layer</em>}</li>
  *   <li>{@link ArrowheadDSL.IntracloudNetworkDesignDescription#getDevicedesigndescription <em>Devicedesigndescription</em>}</li>
  * </ul>
  *
@@ -54,6 +55,32 @@ public interface IntracloudNetworkDesignDescription extends IntracloudNetworkDes
 	 * @generated
 	 */
 	EList<Integer> getIntraNetworkRouterConfig();
+
+	/**
+	 * Returns the value of the '<em><b>Network Physical Layer</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Network Physical Layer</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Network Physical Layer</em>' attribute.
+	 * @see #setNetworkPhysicalLayer(String)
+	 * @see ArrowheadDSL.ArrowheadDSLPackage#getIntracloudNetworkDesignDescription_NetworkPhysicalLayer()
+	 * @model dataType="org.eclipse.uml2.types.String" required="true" ordered="false"
+	 * @generated
+	 */
+	String getNetworkPhysicalLayer();
+
+	/**
+	 * Sets the value of the '{@link ArrowheadDSL.IntracloudNetworkDesignDescription#getNetworkPhysicalLayer <em>Network Physical Layer</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Network Physical Layer</em>' attribute.
+	 * @see #getNetworkPhysicalLayer()
+	 * @generated
+	 */
+	void setNetworkPhysicalLayer(String value);
 
 	/**
 	 * Returns the value of the '<em><b>Devicedesigndescription</b></em>' reference list.
