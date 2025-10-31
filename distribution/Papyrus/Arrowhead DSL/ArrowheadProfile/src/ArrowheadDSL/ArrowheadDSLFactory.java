@@ -274,6 +274,15 @@ public interface ArrowheadDSLFactory extends EFactory {
 	ArrowHeadServiceInterfaceDDS createArrowHeadServiceInterfaceDDS();
 
 	/**
+	 * Returns a new object of class '<em>Device Implementation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Device Implementation</em>'.
+	 * @generated
+	 */
+	DeviceImplementation createDeviceImplementation();
+
+	/**
 	 * Returns a new object of class '<em>Arrow Head Service Interface</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

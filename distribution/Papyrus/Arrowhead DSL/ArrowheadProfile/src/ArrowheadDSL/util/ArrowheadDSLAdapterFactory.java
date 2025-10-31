@@ -191,6 +191,10 @@ public class ArrowheadDSLAdapterFactory extends AdapterFactoryImpl {
 				return createArrowHeadServiceInterfaceDDSAdapter();
 			}
 			@Override
+			public Adapter caseDeviceImplementation(DeviceImplementation object) {
+				return createDeviceImplementationAdapter();
+			}
+			@Override
 			public Adapter caseBlock(Block object) {
 				return createBlockAdapter();
 			}
@@ -615,6 +619,20 @@ public class ArrowheadDSLAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createArrowHeadServiceInterfaceDDSAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ArrowheadDSL.DeviceImplementation <em>Device Implementation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ArrowheadDSL.DeviceImplementation
+	 * @generated
+	 */
+	public Adapter createDeviceImplementationAdapter() {
 		return null;
 	}
 

@@ -285,6 +285,15 @@ public class ArrowheadDSLSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case ArrowheadDSLPackage.DEVICE_IMPLEMENTATION: {
+				DeviceImplementation deviceImplementation = (DeviceImplementation)theEObject;
+				T result = caseDeviceImplementation(deviceImplementation);
+				if (result == null) result = caseDeviceDesignDescription(deviceImplementation);
+				if (result == null) result = caseDeviceDesign(deviceImplementation);
+				if (result == null) result = caseBlock(deviceImplementation);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			default: return defaultCase(theEObject);
 		}
 	}
@@ -706,6 +715,21 @@ public class ArrowheadDSLSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseArrowHeadServiceInterfaceDDS(ArrowHeadServiceInterfaceDDS object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Device Implementation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Device Implementation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDeviceImplementation(DeviceImplementation object) {
 		return null;
 	}
 

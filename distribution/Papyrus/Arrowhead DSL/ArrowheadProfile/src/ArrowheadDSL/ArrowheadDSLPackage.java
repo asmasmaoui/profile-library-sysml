@@ -3199,6 +3199,178 @@ public interface ArrowheadDSLPackage extends EPackage {
 	int ARROW_HEAD_SERVICE_INTERFACE_DDS_OPERATION_COUNT = 0;
 
 	/**
+	 * The meta object id for the '{@link ArrowheadDSL.impl.DeviceImplementationImpl <em>Device Implementation</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see ArrowheadDSL.impl.DeviceImplementationImpl
+	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getDeviceImplementation()
+	 * @generated
+	 */
+	int DEVICE_IMPLEMENTATION = 29;
+
+	/**
+	 * The feature id for the '<em><b>Base Class</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DEVICE_IMPLEMENTATION__BASE_CLASS = DEVICE_DESIGN_DESCRIPTION__BASE_CLASS;
+
+	/**
+	 * The feature id for the '<em><b>Is Encapsulated</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DEVICE_IMPLEMENTATION__IS_ENCAPSULATED = DEVICE_DESIGN_DESCRIPTION__IS_ENCAPSULATED;
+
+	/**
+	 * The feature id for the '<em><b>Device Name</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DEVICE_IMPLEMENTATION__DEVICE_NAME = DEVICE_DESIGN_DESCRIPTION__DEVICE_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Intercloudnetworkdesign</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DEVICE_IMPLEMENTATION__INTERCLOUDNETWORKDESIGN = DEVICE_DESIGN_DESCRIPTION__INTERCLOUDNETWORKDESIGN;
+
+	/**
+	 * The feature id for the '<em><b>Intracloudnetworkdesign</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DEVICE_IMPLEMENTATION__INTRACLOUDNETWORKDESIGN = DEVICE_DESIGN_DESCRIPTION__INTRACLOUDNETWORKDESIGN;
+
+	/**
+	 * The feature id for the '<em><b>IOports</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DEVICE_IMPLEMENTATION__IOPORTS = DEVICE_DESIGN_DESCRIPTION__IOPORTS;
+
+	/**
+	 * The feature id for the '<em><b>Memory</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DEVICE_IMPLEMENTATION__MEMORY = DEVICE_DESIGN_DESCRIPTION__MEMORY;
+
+	/**
+	 * The feature id for the '<em><b>Processor</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DEVICE_IMPLEMENTATION__PROCESSOR = DEVICE_DESIGN_DESCRIPTION__PROCESSOR;
+
+	/**
+	 * The feature id for the '<em><b>Operating System</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DEVICE_IMPLEMENTATION__OPERATING_SYSTEM = DEVICE_DESIGN_DESCRIPTION__OPERATING_SYSTEM;
+
+	/**
+	 * The feature id for the '<em><b>Arrowhead Certificate</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DEVICE_IMPLEMENTATION__ARROWHEAD_CERTIFICATE = DEVICE_DESIGN_DESCRIPTION__ARROWHEAD_CERTIFICATE;
+
+	/**
+	 * The feature id for the '<em><b>Intercloudnetworkdesigndescription</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DEVICE_IMPLEMENTATION__INTERCLOUDNETWORKDESIGNDESCRIPTION = DEVICE_DESIGN_DESCRIPTION__INTERCLOUDNETWORKDESIGNDESCRIPTION;
+
+	/**
+	 * The feature id for the '<em><b>Intracloudnetworkdesigndescription</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DEVICE_IMPLEMENTATION__INTRACLOUDNETWORKDESIGNDESCRIPTION = DEVICE_DESIGN_DESCRIPTION__INTRACLOUDNETWORKDESIGNDESCRIPTION;
+
+	/**
+	 * The feature id for the '<em><b>Physical Layer Kind</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DEVICE_IMPLEMENTATION__PHYSICAL_LAYER_KIND = DEVICE_DESIGN_DESCRIPTION__PHYSICAL_LAYER_KIND;
+
+	/**
+	 * The number of structural features of the '<em>Device Implementation</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DEVICE_IMPLEMENTATION_FEATURE_COUNT = DEVICE_DESIGN_DESCRIPTION_FEATURE_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Get References</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DEVICE_IMPLEMENTATION___GET_REFERENCES = DEVICE_DESIGN_DESCRIPTION___GET_REFERENCES;
+
+	/**
+	 * The operation id for the '<em>Get Parts</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DEVICE_IMPLEMENTATION___GET_PARTS = DEVICE_DESIGN_DESCRIPTION___GET_PARTS;
+
+	/**
+	 * The operation id for the '<em>Get Flow Properties</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DEVICE_IMPLEMENTATION___GET_FLOW_PROPERTIES = DEVICE_DESIGN_DESCRIPTION___GET_FLOW_PROPERTIES;
+
+	/**
+	 * The number of operations of the '<em>Device Implementation</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DEVICE_IMPLEMENTATION_OPERATION_COUNT = DEVICE_DESIGN_DESCRIPTION_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link ArrowheadDSL.SystemDatabaseKind <em>System Database Kind</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3206,7 +3378,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getSystemDatabaseKind()
 	 * @generated
 	 */
-	int SYSTEM_DATABASE_KIND = 29;
+	int SYSTEM_DATABASE_KIND = 30;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.BusinessPolicyKind <em>Business Policy Kind</em>}' enum.
@@ -3216,7 +3388,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getBusinessPolicyKind()
 	 * @generated
 	 */
-	int BUSINESS_POLICY_KIND = 30;
+	int BUSINESS_POLICY_KIND = 31;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.SecurityPolicyKind <em>Security Policy Kind</em>}' enum.
@@ -3226,7 +3398,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getSecurityPolicyKind()
 	 * @generated
 	 */
-	int SECURITY_POLICY_KIND = 31;
+	int SECURITY_POLICY_KIND = 32;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.LifecyclePolicyKind <em>Lifecycle Policy Kind</em>}' enum.
@@ -3236,7 +3408,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getLifecyclePolicyKind()
 	 * @generated
 	 */
-	int LIFECYCLE_POLICY_KIND = 32;
+	int LIFECYCLE_POLICY_KIND = 33;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.MacLayerKind <em>Mac Layer Kind</em>}' enum.
@@ -3246,7 +3418,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getMacLayerKind()
 	 * @generated
 	 */
-	int MAC_LAYER_KIND = 33;
+	int MAC_LAYER_KIND = 34;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.OSKind <em>OS Kind</em>}' enum.
@@ -3256,7 +3428,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getOSKind()
 	 * @generated
 	 */
-	int OS_KIND = 34;
+	int OS_KIND = 35;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.ArrowheadCertificateKind <em>Arrowhead Certificate Kind</em>}' enum.
@@ -3266,7 +3438,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getArrowheadCertificateKind()
 	 * @generated
 	 */
-	int ARROWHEAD_CERTIFICATE_KIND = 35;
+	int ARROWHEAD_CERTIFICATE_KIND = 36;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.TimeFormatKind <em>Time Format Kind</em>}' enum.
@@ -3276,7 +3448,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getTimeFormatKind()
 	 * @generated
 	 */
-	int TIME_FORMAT_KIND = 36;
+	int TIME_FORMAT_KIND = 37;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.ApplicationProtocolKind <em>Application Protocol Kind</em>}' enum.
@@ -3286,7 +3458,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getApplicationProtocolKind()
 	 * @generated
 	 */
-	int APPLICATION_PROTOCOL_KIND = 37;
+	int APPLICATION_PROTOCOL_KIND = 38;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.EncodingKind <em>Encoding Kind</em>}' enum.
@@ -3296,7 +3468,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getEncodingKind()
 	 * @generated
 	 */
-	int ENCODING_KIND = 38;
+	int ENCODING_KIND = 39;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.ArrowheadSecurityKind <em>Arrowhead Security Kind</em>}' enum.
@@ -3306,7 +3478,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getArrowheadSecurityKind()
 	 * @generated
 	 */
-	int ARROWHEAD_SECURITY_KIND = 39;
+	int ARROWHEAD_SECURITY_KIND = 40;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.ComprressionKind <em>Comprression Kind</em>}' enum.
@@ -3316,7 +3488,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getComprressionKind()
 	 * @generated
 	 */
-	int COMPRRESSION_KIND = 40;
+	int COMPRRESSION_KIND = 41;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.TokenKind <em>Token Kind</em>}' enum.
@@ -3326,7 +3498,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getTokenKind()
 	 * @generated
 	 */
-	int TOKEN_KIND = 41;
+	int TOKEN_KIND = 42;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.CryptoAlgorithmKind <em>Crypto Algorithm Kind</em>}' enum.
@@ -3336,7 +3508,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getCryptoAlgorithmKind()
 	 * @generated
 	 */
-	int CRYPTO_ALGORITHM_KIND = 42;
+	int CRYPTO_ALGORITHM_KIND = 43;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.DatamodelStandardKind <em>Datamodel Standard Kind</em>}' enum.
@@ -3346,7 +3518,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getDatamodelStandardKind()
 	 * @generated
 	 */
-	int DATAMODEL_STANDARD_KIND = 43;
+	int DATAMODEL_STANDARD_KIND = 44;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.CertificateKind <em>Certificate Kind</em>}' enum.
@@ -3356,7 +3528,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getCertificateKind()
 	 * @generated
 	 */
-	int CERTIFICATE_KIND = 44;
+	int CERTIFICATE_KIND = 45;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.CoAPMethodKind <em>Co AP Method Kind</em>}' enum.
@@ -3366,7 +3538,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getCoAPMethodKind()
 	 * @generated
 	 */
-	int CO_AP_METHOD_KIND = 45;
+	int CO_AP_METHOD_KIND = 46;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.HTTP11MethodKind <em>HTTP11 Method Kind</em>}' enum.
@@ -3376,7 +3548,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getHTTP11MethodKind()
 	 * @generated
 	 */
-	int HTTP11_METHOD_KIND = 46;
+	int HTTP11_METHOD_KIND = 47;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.HTTP2FrameKind <em>HTTP2 Frame Kind</em>}' enum.
@@ -3386,7 +3558,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getHTTP2FrameKind()
 	 * @generated
 	 */
-	int HTTP2_FRAME_KIND = 47;
+	int HTTP2_FRAME_KIND = 48;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.MACProtocolKind <em>MAC Protocol Kind</em>}' enum.
@@ -3396,7 +3568,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getMACProtocolKind()
 	 * @generated
 	 */
-	int MAC_PROTOCOL_KIND = 48;
+	int MAC_PROTOCOL_KIND = 49;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.MonitoringPolicyKind <em>Monitoring Policy Kind</em>}' enum.
@@ -3406,7 +3578,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getMonitoringPolicyKind()
 	 * @generated
 	 */
-	int MONITORING_POLICY_KIND = 49;
+	int MONITORING_POLICY_KIND = 50;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.MQTT311MessageTypeKind <em>MQTT311 Message Type Kind</em>}' enum.
@@ -3416,7 +3588,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getMQTT311MessageTypeKind()
 	 * @generated
 	 */
-	int MQTT311_MESSAGE_TYPE_KIND = 50;
+	int MQTT311_MESSAGE_TYPE_KIND = 51;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.MQTT50MessageTypeKind <em>MQTT50 Message Type Kind</em>}' enum.
@@ -3426,7 +3598,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getMQTT50MessageTypeKind()
 	 * @generated
 	 */
-	int MQTT50_MESSAGE_TYPE_KIND = 51;
+	int MQTT50_MESSAGE_TYPE_KIND = 52;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.PayloadEncryptionKind <em>Payload Encryption Kind</em>}' enum.
@@ -3436,7 +3608,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getPayloadEncryptionKind()
 	 * @generated
 	 */
-	int PAYLOAD_ENCRYPTION_KIND = 52;
+	int PAYLOAD_ENCRYPTION_KIND = 53;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.PhysicalLayerKind <em>Physical Layer Kind</em>}' enum.
@@ -3446,7 +3618,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getPhysicalLayerKind()
 	 * @generated
 	 */
-	int PHYSICAL_LAYER_KIND = 53;
+	int PHYSICAL_LAYER_KIND = 54;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.TransportLayerKind <em>Transport Layer Kind</em>}' enum.
@@ -3456,7 +3628,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getTransportLayerKind()
 	 * @generated
 	 */
-	int TRANSPORT_LAYER_KIND = 54;
+	int TRANSPORT_LAYER_KIND = 55;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.WebsocketDataFramingTypeKind <em>Websocket Data Framing Type Kind</em>}' enum.
@@ -3466,7 +3638,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getWebsocketDataFramingTypeKind()
 	 * @generated
 	 */
-	int WEBSOCKET_DATA_FRAMING_TYPE_KIND = 55;
+	int WEBSOCKET_DATA_FRAMING_TYPE_KIND = 56;
 
 	/**
 	 * The meta object id for the '{@link ArrowheadDSL.WorkflowKind <em>Workflow Kind</em>}' enum.
@@ -3476,7 +3648,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getWorkflowKind()
 	 * @generated
 	 */
-	int WORKFLOW_KIND = 56;
+	int WORKFLOW_KIND = 57;
 
 
 	/**
@@ -3487,7 +3659,7 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getStatusKodKind()
 	 * @generated
 	 */
-	int STATUS_KOD_KIND = 57;
+	int STATUS_KOD_KIND = 58;
 
 
 	/**
@@ -4714,6 +4886,16 @@ public interface ArrowheadDSLPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getArrowHeadServiceInterfaceDDS_Base_Operation();
+
+	/**
+	 * Returns the meta object for class '{@link ArrowheadDSL.DeviceImplementation <em>Device Implementation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Device Implementation</em>'.
+	 * @see ArrowheadDSL.DeviceImplementation
+	 * @generated
+	 */
+	EClass getDeviceImplementation();
 
 	/**
 	 * Returns the meta object for class '{@link ArrowheadDSL.ArrowHeadServiceInterface <em>Arrow Head Service Interface</em>}'.
@@ -6016,6 +6198,16 @@ public interface ArrowheadDSLPackage extends EPackage {
 		 * @generated
 		 */
 		EReference ARROW_HEAD_SERVICE_INTERFACE_DDS__BASE_OPERATION = eINSTANCE.getArrowHeadServiceInterfaceDDS_Base_Operation();
+
+		/**
+		 * The meta object literal for the '{@link ArrowheadDSL.impl.DeviceImplementationImpl <em>Device Implementation</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see ArrowheadDSL.impl.DeviceImplementationImpl
+		 * @see ArrowheadDSL.impl.ArrowheadDSLPackageImpl#getDeviceImplementation()
+		 * @generated
+		 */
+		EClass DEVICE_IMPLEMENTATION = eINSTANCE.getDeviceImplementation();
 
 		/**
 		 * The meta object literal for the '{@link ArrowheadDSL.impl.ArrowHeadServiceInterfaceImpl <em>Arrow Head Service Interface</em>}' class.

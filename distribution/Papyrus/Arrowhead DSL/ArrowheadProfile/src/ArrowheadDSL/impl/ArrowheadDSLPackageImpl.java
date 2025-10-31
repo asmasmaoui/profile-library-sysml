@@ -24,6 +24,7 @@ import ArrowheadDSL.CryptoAlgorithmKind;
 import ArrowheadDSL.DatamodelStandardKind;
 import ArrowheadDSL.DeviceDesign;
 import ArrowheadDSL.DeviceDesignDescription;
+import ArrowheadDSL.DeviceImplementation;
 import ArrowheadDSL.EncodingKind;
 import ArrowheadDSL.FullPort;
 import ArrowheadDSL.HTTP11MethodKind;
@@ -287,6 +288,13 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	private EClass arrowHeadServiceInterfaceDDSEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass deviceImplementationEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1711,6 +1719,16 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 	 * @generated
 	 */
 	@Override
+	public EClass getDeviceImplementation() {
+		return deviceImplementationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getArrowHeadServiceInterface() {
 		return arrowHeadServiceInterfaceEClass;
 	}
@@ -2189,6 +2207,8 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 		arrowHeadServiceInterfaceDDSEClass = createEClass(ARROW_HEAD_SERVICE_INTERFACE_DDS);
 		createEReference(arrowHeadServiceInterfaceDDSEClass, ARROW_HEAD_SERVICE_INTERFACE_DDS__BASE_OPERATION);
 
+		deviceImplementationEClass = createEClass(DEVICE_IMPLEMENTATION);
+
 		// Create enums
 		systemDatabaseKindEEnum = createEEnum(SYSTEM_DATABASE_KIND);
 		businessPolicyKindEEnum = createEEnum(BUSINESS_POLICY_KIND);
@@ -2275,6 +2295,7 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 		sysDDEClass.getESuperTypes().add(this.getSysD());
 		idD_ImplementationEClass.getESuperTypes().add(this.getIDD());
 		iddEClass.getESuperTypes().add(this.getSD());
+		deviceImplementationEClass.getESuperTypes().add(this.getDeviceDesignDescription());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(sysDEClass, SysD.class, "SysD", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -2422,6 +2443,8 @@ public class ArrowheadDSLPackageImpl extends EPackageImpl implements ArrowheadDS
 
 		initEClass(arrowHeadServiceInterfaceDDSEClass, ArrowHeadServiceInterfaceDDS.class, "ArrowHeadServiceInterfaceDDS", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getArrowHeadServiceInterfaceDDS_Base_Operation(), theUMLPackage.getOperation(), null, "base_Operation", null, 0, 1, ArrowHeadServiceInterfaceDDS.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(deviceImplementationEClass, DeviceImplementation.class, "DeviceImplementation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		// Initialize enums and add enum literals
 		initEEnum(systemDatabaseKindEEnum, SystemDatabaseKind.class, "SystemDatabaseKind");

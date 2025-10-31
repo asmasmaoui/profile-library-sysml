@@ -588,4 +588,5 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="base_Operation" ordered="false"
         eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Operation"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DeviceImplementation" eSuperTypes="#//DeviceDesignDescription"/>
 </ecore:EPackage>

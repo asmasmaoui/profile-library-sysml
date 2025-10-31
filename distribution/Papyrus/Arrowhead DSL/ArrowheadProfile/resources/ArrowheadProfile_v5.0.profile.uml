@@ -775,6 +775,9 @@
     <packagedElement xmi:type="uml:Extension" xmi:id="_9N_P4EIKEfC_HMLdhGyCIA" name="E_ArrowHeadServiceInterfaceDDS_Operation102" memberEnd="_9N_P4UIKEfC_HMLdhGyCIA _9N_28EIKEfC_HMLdhGyCIA">
       <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_9N_P4UIKEfC_HMLdhGyCIA" name="extension_ArrowHeadServiceInterfaceDDS" type="_t1y94EIKEfC_HMLdhGyCIA" aggregation="composite" association="_9N_P4EIKEfC_HMLdhGyCIA"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_e8ix4LZOEfCJsNHF5um9gg" name="DeviceImplementation">
+      <generalization xmi:type="uml:Generalization" xmi:id="_k8dF4LZOEfCJsNHF5um9gg" general="_ErU_gDRFEe6hdPlp_7DYew"/>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_HPL28LaoEe6zC_b0ESqWTw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HPgAALaoEe6zC_b0ESqWTw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
