@@ -266,10 +266,19 @@ public class SysmtoSysml2AFPVN extends BlocksSwitch<EObject> {
 						strprop = strprop.concat("\n");
 						if (prop.getType() == null) {
 							String typeName = "";
-							String streotypeport = prop.getAppliedStereotypes().get(0).getName();
-							strprop = strprop.concat(createPort(prop.getName(), typeName));
-							strprop = strprop.concat("{@" + streotypeport + ";}");
-							strprop = strprop.concat("\n");
+							if (!prop.getAppliedStereotypes().isEmpty())
+							{
+								String streotypeport = prop.getAppliedStereotypes().get(0).getName();
+								strprop = strprop.concat(createPort(prop.getName(), typeName));
+								strprop = strprop.concat("{@" + streotypeport + ";}");
+								strprop = strprop.concat("\n");	
+							}else 
+							{
+								strprop = strprop.concat(createPort(prop.getName(), typeName));
+								strprop = strprop.concat("\n");
+							}
+							
+							
 						} else {
 							strprop = strprop.concat(createPort(prop.getName(), ":" + prop.getType().getName()));
 							if (prop.getAppliedStereotypes().isEmpty()) {
