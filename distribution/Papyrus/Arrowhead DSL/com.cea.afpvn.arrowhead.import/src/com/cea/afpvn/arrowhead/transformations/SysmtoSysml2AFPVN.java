@@ -107,9 +107,16 @@ public class SysmtoSysml2AFPVN extends BlocksSwitch<EObject> {
 
 			
 			// Start
+			if (connectorEnds.get(0).getRole().getName()!=null) {
 			ConnectStart = ConnectStart.concat(
 					connectorEnds.get(0).getPartWithPort().getName() + "." + connectorEnds.get(0).getRole().getName());
 			System.out.println("ConnectStart:" + ConnectStart);
+			}
+			else 
+			{
+				ConnectStart = ConnectStart.concat(
+						connectorEnds.get(0).getPartWithPort().getName());	
+			}
 			
 			// end
 			if (connectorEnds.get(1).getPartWithPort() != null) {
@@ -264,7 +271,7 @@ public class SysmtoSysml2AFPVN extends BlocksSwitch<EObject> {
 						// prop.allOwnedElements());
 
 						strprop = strprop.concat("\n");
-						if (prop.getType() == null) {
+						if ((prop.getType() == null)||(prop.getType().getName()==null))  {
 							String typeName = "";
 							if (!prop.getAppliedStereotypes().isEmpty())
 							{
@@ -310,11 +317,11 @@ public class SysmtoSysml2AFPVN extends BlocksSwitch<EObject> {
 							prop.getStereotypeApplications();
 							prop.getType();
 							strprop = strprop.concat("\n");
-							if (prop.getType() == null) {
+							if ((prop.getType() == null)||(prop.getType().getName()==null)) {
 								strprop = strprop.concat(createAttribute(prop.getName(), ""));
 							} else {
-								strprop = strprop
-										.concat(createAttribute(prop.getName(), ":" + prop.getType().getName()));
+								
+								strprop = strprop.concat(createAttribute(prop.getName(), ":" + prop.getType().getName()));
 								strprop = strprop.concat("\n");
 							}
 						}
