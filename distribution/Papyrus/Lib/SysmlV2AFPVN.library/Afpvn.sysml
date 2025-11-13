@@ -357,6 +357,18 @@ metadata def ArrowheadDSLRequirement :> SemanticMetadata;
 	attribute processor:String[*];
 	attribute operatingSystem:OSKind[1];
 	attribute ArrowheadCertificate:ArrowheadCertificateKind[1];	
+    attribute PhysicalLayerKind:String[*];
+	
+  } 
+ 
+	
+  } 
+   metadata def  DeviceImplementation:>DeviceDesignDescription{	
+    @ SysML::PartUsage;
+	attribute intercloudnetworkdesigndescription:intercloudNetworkdesignDescription[*];
+	attribute intracloudnetworkdesigndescription:intracloudNetworkdesignDescription[*];
+	attribute intercloudnetworkdesign:IntercloudNetworkDesign[*];
+	attribute intracloudnetworkdesign:IntracloudNetworkDesign[*];
   } 
  
  /*IntracloudNetworkDesign-IntracloudNetworkDesignDescription*/ 
@@ -371,6 +383,8 @@ metadata def ArrowheadDSLRequirement :> SemanticMetadata;
      attribute IntraNetworkRouter:String[1..*];
    	 attribute IntraNetworkRouterConfig:String[1..*];
    	 attribute IntraNetworkDomain:String[1];
+   	 attribute NetworkPhysicalLayer:String[1];
+   	 
    }
   /*IntercloudNetworkDesign-IntercloudNetworkDesignDescription */
      metadata def IntercloudNetworkDesign{
@@ -383,6 +397,8 @@ metadata def ArrowheadDSLRequirement :> SemanticMetadata;
      	 attribute InterNetworkRouter:String[*];
    	     attribute InterNetworkRouterConfig:String[*];
    	     attribute InterNetworkDomain:String[*];
+   	     attribute NetworkPhysicalLayer:String[1];
+   	    
      }
     
 /*les Association*/
