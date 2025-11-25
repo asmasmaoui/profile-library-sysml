@@ -187,7 +187,7 @@ public class SysmtoSysml2AFPVN extends BlocksSwitch<EObject> {
 					// System.out.println("C'est une operation ");
 					strprop = strprop.concat("\n");
 					if (op.getAppliedStereotypes().isEmpty()) {
-
+						strprop = strprop.concat(createOperation(op.getName()));
 					} else {
 						String streotypeop = op.getAppliedStereotypes().get(0).getName();
 						strprop = strprop.concat(createOperation(op.getName()));

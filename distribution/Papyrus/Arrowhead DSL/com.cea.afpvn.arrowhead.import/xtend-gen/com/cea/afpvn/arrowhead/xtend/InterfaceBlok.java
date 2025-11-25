@@ -1,13 +1,17 @@
 package com.cea.afpvn.arrowhead.xtend;
 
+import org.eclipse.xtend2.lib.StringConcatenation;
+
 @SuppressWarnings("all")
 public class InterfaceBlok {
   public String createInterfaceBlok(final String name, final String elem) {
-    String _xblockexpression = null;
-    {
-      String str = (((("port def " + name) + " {") + elem) + "}");
-      _xblockexpression = str;
-    }
-    return _xblockexpression;
+    StringConcatenation _builder = new StringConcatenation();
+    _builder.append("port def ");
+    _builder.append(name);
+    _builder.append(" { ");
+    _builder.append(elem);
+    _builder.append(" }");
+    _builder.newLineIfNotEmpty();
+    return _builder.toString();
   }
 }
