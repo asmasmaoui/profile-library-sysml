@@ -52,6 +52,7 @@ class PartdefProp {
      // str
     // }
      }
+     
 class ConnectorPart {
  def String createConnector(String elem1,String elem2)'''
  connect «elem1» to «elem2» ;

@@ -1,6 +1,7 @@
 package com.cea.afpvn.arrowhead.transformations;
 
 import java.util.Iterator;
+
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.resource.Resource;
@@ -11,12 +12,9 @@ import org.eclipse.papyrus.sysml16.portsandflows.InterfaceBlock;
 import org.eclipse.papyrus.sysml16.requirements.Requirement;
 import org.eclipse.uml2.uml.Connector;
 import org.eclipse.uml2.uml.ConnectorEnd;
-import org.eclipse.uml2.uml.Generalization;
-import org.eclipse.uml2.uml.Property;
-import org.eclipse.uml2.uml.TemplateBinding;
 import org.eclipse.uml2.uml.Operation;
+import org.eclipse.uml2.uml.Property;
 import org.eclipse.uml2.uml.UseCase;
-import org.eclipse.uml2.uml.internal.impl.UseCaseImpl;
 
 import com.cea.afpvn.arrowhead.xtend.Attribute;
 import com.cea.afpvn.arrowhead.xtend.BindingConnectorPart;
@@ -207,13 +205,30 @@ public class SysmtoSysml2AFPVN extends BlocksSwitch<EObject> {
 					Property propPort = port;
 					if (port.getType() == null) {
 						String typeName = "";
-						String streotypeport = port.getAppliedStereotypes().get(0).getName();
-						strprop = strprop.concat(createPort(port.getName(), typeName));
-						strprop = strprop.concat("{@" + streotypeport + ";}");
+						String streotypeport = port.getAppliedStereotypes().get(0).getName();//ici
+						if (streotypeport.equals("FullPort")) {
+							strprop = strprop.concat(createPort(port.getName(), typeName));
+						}
+						else if (streotypeport.equals("ProxyPort"))
+						{
+							strprop = strprop.concat(createPort(port.getSubsettedProperties().get(0).getName(), typeName));
+							
+						}
+						
 					} else {
-						strprop = strprop.concat(createPort(port.getName(), ":" + port.getType().getName()));
-						String streotypeport = port.getAppliedStereotypes().get(0).getName();
-						strprop = strprop.concat("{@" + streotypeport + ";}");
+						String streotypeport = port.getAppliedStereotypes().get(0).getName();//ici
+						if (streotypeport.equals("FullPort")) {
+							strprop = strprop.concat(createPort(port.getName(), ":" + port.getType().getName()));
+							
+						}
+						else if (streotypeport.equals("ProxyPort"))
+						{
+							strprop = strprop.concat(createPort(port.getSubsettedProperties().get(0).getName(), ":" + port.getType().getName()));
+							String strport = port.getSubsettedProperties().toString();
+							 System.out.println("le subsetted type est :"+strport);
+							
+						}
+						
 						strprop = strprop.concat("\n");
 					}
 
@@ -275,24 +290,52 @@ public class SysmtoSysml2AFPVN extends BlocksSwitch<EObject> {
 							String typeName = "";
 							if (!prop.getAppliedStereotypes().isEmpty())
 							{
-								String streotypeport = prop.getAppliedStereotypes().get(0).getName();
-								strprop = strprop.concat(createPort(prop.getName(), typeName));
-								strprop = strprop.concat("{@" + streotypeport + ";}");
+								String streotypeport = prop.getAppliedStereotypes().get(0).getName();//ici
+								if (streotypeport.equals("FullPort"))
+								{
+									strprop = strprop.concat(createPort(prop.getName(), typeName));
+								}
+								else if (streotypeport.equals("ProxyPort"))
+								{
+								
+							strprop = strprop.concat(createPort(prop.getSubsettedProperties().get(0).getName(), typeName ));
+								String strport = prop.getSubsettedProperties().toString();
+								 System.out.println("le subsetted type est :"+strport);
+								//strprop = strprop.concat("{@" + streotypeport + ";}");
+								}
 								strprop = strprop.concat("\n");	
 							}else 
 							{
+								
 								strprop = strprop.concat(createPort(prop.getName(), typeName));
 								strprop = strprop.concat("\n");
 							}
 							
 							
 						} else {
-							strprop = strprop.concat(createPort(prop.getName(), ":" + prop.getType().getName()));
-							if (prop.getAppliedStereotypes().isEmpty()) {
-								strprop = strprop.concat("\n");
-							} else {
-								String streotypeport = prop.getAppliedStereotypes().get(0).getName();
-								strprop = strprop.concat("{@" + streotypeport + ";}");
+							
+							//strprop = strprop.concat(createPort(prop.getName(), ":" + prop.getType().getName()));
+							if (!prop.getAppliedStereotypes().isEmpty())
+							{
+							String streotypeport = prop.getAppliedStereotypes().get(0).getName();//ici
+							if (streotypeport.equals("FullPort"))
+							{
+								strprop = strprop.concat(createPort(prop.getName(), ":" + prop.getType().getName()));
+							}
+							else if (streotypeport.equals("ProxyPort"))
+							{
+								String strport = prop.getSubsettedProperties().toString();
+								System.out.println("le subsetted type est :"+strport); 
+						
+							strprop = strprop.concat(createPort(prop.getSubsettedProperties().get(0).getName(), ":" + prop.getType().getName() ));
+							System.out.println("le subsetted type est :"+strport);
+							//strprop = strprop.concat("{@" + streotypeport + ";}");
+							}
+							strprop = strprop.concat("\n");
+							}else 
+							{
+								
+								strprop = strprop.concat(createPort(prop.getName(), prop.getType().getName()));
 								strprop = strprop.concat("\n");
 							}
 						}

@@ -219,13 +219,6 @@ attribute def Int;
 			enum '207 - Multi-Status';
 			enum '208 - Already Reported';	/*null */	
 		}
-
-		/*les ports */
-metadata def FullPort :> SemanticMetadata;
-
-metadata def ProxyPort :> SemanticMetadata;
-		
-		}
 		
 library package ArrowheadProfile {
 	private import Metaobjects::SemanticMetadata;
